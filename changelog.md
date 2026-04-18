@@ -22,6 +22,13 @@ El formato sigue una adaptacion simple de Keep a Changelog y usa versionado sema
 - `Tutorial/articulo_02_accion_lagrangiana_y_noether.md`.
 - `Tutorial/articulo_03_cuantizacion_canonica_del_campo_escalar.md`.
 - `Tutorial/articulo_04_interacciones_y_diagramas_de_feynman.md`.
+- Modulos `01_relatividad_y_campos/`, `02_accion_lagrangiana_y_simetrias/`, `03_cuantizacion_del_campo_escalar/` y `04_interacciones_y_perturbaciones/`.
+- Ocho documentos extensos nuevos que desarrollan en mayor profundidad los bloques introductorios del tutorial.
+
+### Changed
+
+- Los articulos introductorios dejaron de ser el tratamiento principal y pasaron a funcionar como portadas de navegacion hacia modulos mas amplios.
+- `Tutorial/README.md` se reorganizo para reflejar la nueva arquitectura modular.
 
 ## [0.1.0] - 2026-04-18
 

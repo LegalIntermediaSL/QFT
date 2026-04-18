@@ -127,3 +127,38 @@ Comenzar la redaccion efectiva del tutorial con un bloque inicial autocontenido 
 - Desarrollar una nota sobre la ecuacion de Dirac y los campos fermionicos.
 - Abrir un modulo dedicado a integral de camino.
 - Empezar una seccion de ejercicios de comprobacion.
+
+## Entrada de ampliacion estructural
+
+### Fecha
+
+2026-04-18
+
+### Objetivo
+
+Convertir el bloque inicial del tutorial en una estructura mas cercana a un curso real, con modulos y subdocumentos mas extensos.
+
+### Situacion detectada
+
+- Los articulos iniciales funcionaban bien como introduccion, pero resultaban demasiado breves para sostener una lectura profunda.
+- Varias ideas importantes aparecian apenas enunciadas y no suficientemente desarrolladas.
+- La estructura plana de archivos limitaba la posibilidad de crecer por temas.
+
+### Trabajo realizado
+
+- Se reorganizo `Tutorial/` por modulos tematicos.
+- Se crearon cuatro carpetas nuevas para relatividad, accion y simetrias, cuantizacion, e interacciones.
+- Se añadieron ocho documentos extensos nuevos.
+- Los articulos originales pasaron a funcionar como portadas e indices de navegacion.
+- Se actualizo el `Tutorial/README.md` para reflejar la nueva arquitectura.
+
+### Resultado
+
+El tutorial paso de una coleccion corta de notas introductorias a una base modular con mas de mil lineas de contenido, suficiente para comenzar a desarrollar un recorrido sostenido.
+
+### Pendientes inmediatos
+
+- Incorporar ejercicios y problemas al final de cada modulo.
+- Añadir un modulo de prerrequisitos matematicos.
+- Abrir el bloque de campos fermionicos.
+- Mantener consistencia de estilo y notacion entre los nuevos modulos.
