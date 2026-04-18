@@ -6,15 +6,19 @@ Buena parte de la elegancia de la Teoria Cuantica de Campos proviene de que su d
 
 ## 1. La accion en teoria de campos
 
-Para un sistema de campos `phi_a(x)`, la accion se escribe como:
+Para un sistema de campos $\phi_a(x)$, la accion se escribe como:
 
-`S[phi] = integral d^4x L(phi_a, partial_mu phi_a)`
+$$
+S[\phi] = \int d^4x\, \mathcal{L}\bigl(\phi_a, \partial_\mu \phi_a\bigr)
+$$
 
-Aqui `L` es la densidad lagrangiana, no la lagrangiana mecanica ordinaria. Su dependencia local en el campo y sus derivadas permite formular la teoria de manera relativista y covariante.
+Aqui $\mathcal{L}$ es la densidad lagrangiana, no la lagrangiana mecanica ordinaria. Su dependencia local en el campo y sus derivadas permite formular la teoria de manera relativista y covariante.
 
 El principio variacional dice que la dinamica fisica satisface:
 
-`delta S = 0`
+$$
+\delta S = 0
+$$
 
 frente a variaciones admisibles del campo.
 
@@ -22,17 +26,24 @@ frente a variaciones admisibles del campo.
 
 Al variar la accion se obtiene:
 
-`partial L / partial phi_a - partial_mu (partial L / partial (partial_mu phi_a)) = 0`
+$$
+\frac{\partial \mathcal{L}}{\partial \phi_a}
+- \partial_\mu\left(\frac{\partial \mathcal{L}}{\partial(\partial_\mu \phi_a)}\right) = 0
+$$
 
 Estas son las ecuaciones de Euler-Lagrange en teoria de campos. A partir de una sola expresion generadora, la teoria produce las ecuaciones dinamicas del sistema.
 
 Ejemplo para un campo escalar libre real:
 
-`L = 1/2 partial_mu phi partial^mu phi - 1/2 m^2 phi^2`
+$$
+\mathcal{L} = \frac{1}{2}\partial_\mu \phi \, \partial^\mu \phi - \frac{1}{2}m^2\phi^2
+$$
 
 La ecuacion correspondiente es:
 
-`(partial_mu partial^mu + m^2) phi = 0`
+$$
+\left(\partial_\mu \partial^\mu + m^2\right)\phi = 0
+$$
 
 que es precisamente la ecuacion de Klein-Gordon.
 
@@ -75,17 +86,19 @@ Ejemplos clasicos:
 
 ## 6. Ejemplo de simetria de fase
 
-Consideremos un campo escalar complejo `phi`. Si la teoria es invariante bajo:
+Consideremos un campo escalar complejo $\phi$. Si la teoria es invariante bajo:
 
-`phi -> exp(i alpha) phi`
+$$
+\phi \to e^{i\alpha}\phi
+$$
 
-con `alpha` constante, entonces existe una corriente conservada asociada. Esa simetria global `U(1)` es un modelo pedagogico central porque anticipa la estructura de teorias gauge mas ricas.
+con $\alpha$ constante, entonces existe una corriente conservada asociada. Esa simetria global $U(1)$ es un modelo pedagogico central porque anticipa la estructura de teorias gauge mas ricas.
 
 La leccion importante es que las cantidades conservadas no aparecen como accidentes; brotan de la estructura simetrica de la accion.
 
 ## 7. De simetria global a simetria local
 
-Si el parametro `alpha` deja de ser constante y pasa a depender de `x`, la teoria ya no suele permanecer invariante sin introducir nuevos campos compensadores. De esta exigencia emerge la idea de simetria gauge.
+Si el parametro $\alpha$ deja de ser constante y pasa a depender de $x$, la teoria ya no suele permanecer invariante sin introducir nuevos campos compensadores. De esta exigencia emerge la idea de simetria gauge.
 
 Este paso es crucial en la fisica moderna:
 

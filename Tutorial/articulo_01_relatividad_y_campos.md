@@ -8,11 +8,13 @@ Este articulo explica por que esa tension aparece y por que el concepto de campo
 
 ## 1. El problema de una sola particula relativista
 
-En mecanica cuantica no relativista, una particula puede describirse con una funcion de onda `psi(x,t)` cuya interpretacion probabilistica es estable. El numero de particulas se mantiene fijo y la ecuacion de Schrodinger ofrece una evolucion temporal clara.
+En mecanica cuantica no relativista, una particula puede describirse con una funcion de onda $\psi(x,t)$ cuya interpretacion probabilistica es estable. El numero de particulas se mantiene fijo y la ecuacion de Schrodinger ofrece una evolucion temporal clara.
 
 Al intentar imponer relatividad, uno busca una ecuacion compatible con la relacion:
 
-`E^2 = p^2 + m^2`
+$$
+E^2 = p^2 + m^2
+$$
 
 en unidades naturales.
 
@@ -51,11 +53,13 @@ En otras palabras, el campo no es un adorno matematico: es la forma adecuada de 
 
 ## 4. El ejemplo del campo escalar
 
-El caso mas simple es un campo escalar real `phi(x)`. Su ecuacion libre relativista es la ecuacion de Klein-Gordon:
+El caso mas simple es un campo escalar real $\phi(x)$. Su ecuacion libre relativista es la ecuacion de Klein-Gordon:
 
-`(partial_mu partial^mu + m^2) phi = 0`
+$$
+\left(\partial_\mu \partial^\mu + m^2\right)\phi = 0
+$$
 
-Vista solo como ecuacion clasica, describe la evolucion de un campo continuo. Pero al cuantizarla, sus modos normales se convierten en osciladores cuanticos, y los cuantos asociados se interpretan como particulas escalares de masa `m`.
+Vista solo como ecuacion clasica, describe la evolucion de un campo continuo. Pero al cuantizarla, sus modos normales se convierten en osciladores cuanticos, y los cuantos asociados se interpretan como particulas escalares de masa $m$.
 
 Este ejemplo enseña una leccion decisiva: la particula emerge del campo cuantizado.
 

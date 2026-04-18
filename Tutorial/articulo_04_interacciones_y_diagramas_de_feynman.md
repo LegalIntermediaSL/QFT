@@ -10,9 +10,11 @@ Una teoria libre tiene ecuaciones lineales y soluciones relativamente simples. P
 
 Ejemplo esquematico:
 
-`L = L_libre + L_int`
+$$
+\mathcal{L} = \mathcal{L}_{\text{libre}} + \mathcal{L}_{\text{int}}
+$$
 
-donde `L_int` podria contener terminos como `lambda phi^4`.
+donde $\mathcal{L}_{\text{int}}$ podria contener terminos como $\lambda \phi^4$.
 
 Esos terminos permiten que los cuantos del campo se influyan mutuamente y produzcan procesos no triviales.
 
@@ -25,7 +27,7 @@ En lugar de seguir trayectorias clasicas puntuales, la QFT calcula amplitudes de
 - probabilidades de dispersion;
 - correcciones a masas y acoplamientos.
 
-El objeto central suele estar relacionado con el operador `S`, que conecta estados asintoticos del pasado y del futuro.
+El objeto central suele estar relacionado con el operador $S$, que conecta estados asintoticos del pasado y del futuro.
 
 ## 3. Expansion perturbativa
 
@@ -64,7 +66,7 @@ Asi, el diagrama no reemplaza el calculo: lo organiza.
 
 ## 6. Un ejemplo conceptual simple
 
-En una teoria `phi^4`, un vertice elemental conecta cuatro lineas del campo escalar. A orden mas bajo, ese vertice ya permite procesos de dispersion entre dos particulas entrantes y dos salientes.
+En una teoria $\phi^4$, un vertice elemental conecta cuatro lineas del campo escalar. A orden mas bajo, ese vertice ya permite procesos de dispersion entre dos particulas entrantes y dos salientes.
 
 Incluso un ejemplo tan simple muestra ideas profundas:
 

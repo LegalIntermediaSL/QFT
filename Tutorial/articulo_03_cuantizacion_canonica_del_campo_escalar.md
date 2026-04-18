@@ -8,31 +8,41 @@ El campo escalar libre es la puerta de entrada clasica a la Teoria Cuantica de C
 
 Consideremos la densidad lagrangiana:
 
-`L = 1/2 partial_mu phi partial^mu phi - 1/2 m^2 phi^2`
+$$
+\mathcal{L} = \frac{1}{2}\partial_\mu \phi \, \partial^\mu \phi - \frac{1}{2}m^2\phi^2
+$$
 
 De las ecuaciones de Euler-Lagrange se obtiene:
 
-`(partial_mu partial^mu + m^2) phi = 0`
+$$
+\left(\partial_\mu \partial^\mu + m^2\right)\phi = 0
+$$
 
-El campo `phi(x)` puede expandirse en modos de Fourier. Cada modo se comporta de forma analoga a un oscilador armonico.
+El campo $\phi(x)$ puede expandirse en modos de Fourier. Cada modo se comporta de forma analoga a un oscilador armonico.
 
 ## 2. Momento conjugado
 
 En cuantizacion canonica se identifica primero el momento conjugado al campo:
 
-`pi(x) = partial L / partial (partial_0 phi) = dot phi(x)`
+$$
+\pi(x) = \frac{\partial \mathcal{L}}{\partial(\partial_0 \phi)} = \dot{\phi}(x)
+$$
 
-El par `(phi, pi)` juega un papel similar al de posicion y momento en mecanica cuantica ordinaria.
+El par $(\phi, \pi)$ juega un papel similar al de posicion y momento en mecanica cuantica ordinaria.
 
 ## 3. Promocion a operadores
 
-El paso cuantico consiste en promover `phi` y `pi` a operadores que satisfacen relaciones de conmutacion a tiempo igual:
+El paso cuantico consiste en promover $\phi$ y $\pi$ a operadores que satisfacen relaciones de conmutacion a tiempo igual:
 
-`[phi(t,x), pi(t,y)] = i delta^3(x-y)`
+$$
+[\phi(t,x), \pi(t,y)] = i\delta^{(3)}(x-y)
+$$
 
 y
 
-`[phi(t,x), phi(t,y)] = [pi(t,x), pi(t,y)] = 0`
+$$
+[\phi(t,x), \phi(t,y)] = [\pi(t,x), \pi(t,y)] = 0
+$$
 
 Estas relaciones codifican la estructura cuantica del sistema.
 
@@ -40,36 +50,42 @@ Estas relaciones codifican la estructura cuantica del sistema.
 
 El campo cuantizado se escribe tipicamente como:
 
-`phi(x) = integral d^3p [ a(p) exp(-ipx) + a^dagger(p) exp(ipx) ]`
+$$
+\phi(x) = \int d^3p \left[a(p)e^{-ipx} + a^\dagger(p)e^{ipx}\right]
+$$
 
 omitiendo factores de normalizacion para resaltar la estructura.
 
 Aqui:
 
-- `a(p)` actua como operador de aniquilacion;
-- `a^dagger(p)` actua como operador de creacion.
+- $a(p)$ actua como operador de aniquilacion;
+- $a^\dagger(p)$ actua como operador de creacion.
 
 No son simples artificios algebraicos. Son los objetos que permiten construir el espacio de estados de la teoria.
 
 ## 5. Vacio y estados de particulas
 
-Se define un estado de vacio `|0>` por la condicion:
+Se define un estado de vacio $|0\rangle$ por la condicion:
 
-`a(p) |0> = 0`
+$$
+a(p)|0\rangle = 0
+$$
 
 para todo `p`.
 
 Aplicando operadores de creacion se generan estados excitados:
 
-`a^dagger(p) |0>`
+$$
+a^\dagger(p)|0\rangle
+$$
 
-representa un estado de una particula con momento `p`, mientras que productos sucesivos de operadores de creacion generan estados de muchas particulas.
+representa un estado de una particula con momento $p$, mientras que productos sucesivos de operadores de creacion generan estados de muchas particulas.
 
 Este es el momento conceptual clave: el espacio de Hilbert de la teoria ya no describe una sola particula, sino sectores con numero variable de excitaciones.
 
 ## 6. Hamiltoniano
 
-El hamiltoniano del campo libre puede reescribirse en terminos de los operadores `a` y `a^dagger`. Su forma revela que el sistema equivale a una coleccion infinita de osciladores armonicos cuanticos desacoplados, uno por cada modo de momento.
+El hamiltoniano del campo libre puede reescribirse en terminos de los operadores $a$ y $a^\dagger$. Su forma revela que el sistema equivale a una coleccion infinita de osciladores armonicos cuanticos desacoplados, uno por cada modo de momento.
 
 Esto explica por que la cuantizacion del campo escalar resulta manejable:
 

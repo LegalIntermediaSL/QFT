@@ -29,9 +29,9 @@ Ideas clave:
 
 Ejemplos:
 
-- campo escalar `phi(x)`;
-- campo electromagnetico `A_mu(x)`;
-- campo fermionico `psi(x)`.
+- campo escalar $\phi(x)$;
+- campo electromagnetico $A_\mu(x)$;
+- campo fermionico $\psi(x)$.
 
 ## 3. Espacio-tiempo y relatividad
 
@@ -63,9 +63,11 @@ Las simetrias no solo simplifican el formalismo. Tambien determinan cantidades c
 
 La formulacion moderna de una teoria de campos se apoya en la accion:
 
-`S = integral d^4x L`
+$$
+S = \int d^4x\, \mathcal{L}
+$$
 
-donde `L` es la densidad lagrangiana. La dinamica se obtiene exigiendo que la accion sea estacionaria frente a variaciones del campo. De ahi emergen las ecuaciones de Euler-Lagrange.
+donde $\mathcal{L}$ es la densidad lagrangiana. La dinamica se obtiene exigiendo que la accion sea estacionaria frente a variaciones del campo. De ahi emergen las ecuaciones de Euler-Lagrange.
 
 Esta formulacion es central por varias razones:
 
@@ -82,7 +84,7 @@ En QFT aparecen dos grandes lenguajes:
 - cuantizacion canonica;
 - integral de camino.
 
-En la cuantizacion canonica, el campo y su momento conjugado satisfacen relaciones de conmutacion o anticonmutacion. En la integral de camino, las amplitudes se obtienen sumando contribuciones de todas las configuraciones del campo ponderadas por `exp(iS)`.
+En la cuantizacion canonica, el campo y su momento conjugado satisfacen relaciones de conmutacion o anticonmutacion. En la integral de camino, las amplitudes se obtienen sumando contribuciones de todas las configuraciones del campo ponderadas por $e^{iS}$.
 
 ## 7. Particulas como excitaciones
 
