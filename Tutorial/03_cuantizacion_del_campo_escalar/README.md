@@ -9,6 +9,12 @@ Este modulo da el salto desde el campo clasico hasta el campo cuantizado usando 
 1. `01_campo_escalar_clasico_y_modos_normales.md`
 2. `02_cuantizacion_canonica_y_espacio_de_fock.md`
 
+## Apoyo recomendado
+
+Este modulo se entiende mucho mejor si antes se ha leido:
+
+- `../que_es_un_campo_cuantico.md`
+
 ## Hilo conceptual
 
 La idea principal es mostrar que la cuantizacion del campo no es un acto misterioso. Se apoya en una observacion muy concreta:

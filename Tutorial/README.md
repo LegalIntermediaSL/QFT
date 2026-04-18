@@ -12,16 +12,21 @@ Este directorio contiene el cuerpo principal del tutorial. A diferencia de la pr
 Si estas empezando desde cero, el orden sugerido es:
 
 1. `conceptos_fundamentales.md`
-2. `01_relatividad_y_campos/README.md`
-3. `02_accion_lagrangiana_y_simetrias/README.md`
-4. `03_cuantizacion_del_campo_escalar/README.md`
-5. `04_interacciones_y_perturbaciones/README.md`
+2. `principios_estructurales_de_la_qft.md`
+3. `que_es_un_campo_cuantico.md`
+4. `01_relatividad_y_campos/README.md`
+5. `02_accion_lagrangiana_y_simetrias/README.md`
+6. `03_cuantizacion_del_campo_escalar/README.md`
+7. `04_interacciones_y_perturbaciones/README.md`
 
 ## Estructura actual
 
 ### Documentos marco
 
 - `conceptos_fundamentales.md`: mapa conceptual global del tutorial.
+- `principios_estructurales_de_la_qft.md`: principios fisicos y matematicos que restringen y organizan toda teoria cuantica de campos consistente.
+- `que_es_un_campo_cuantico.md`: explicacion conceptual y formal de por que los campos cuanticos son los objetos fundamentales y las particulas sus excitaciones.
+- `lagrangiano_del_modelo_estandar.md`: panoramica estructurada del Lagrangiano del Modelo Estandar como teoria gauge cuantica renormalizable.
 
 ### Modulo 1. Relatividad y campos
 
@@ -67,3 +72,9 @@ Despues de estos modulos introductorios, la expansion natural del tutorial es:
 - integral de camino;
 - renormalizacion y grupo de renormalizacion;
 - teorias gauge no abelianas.
+
+## Lecturas avanzadas ya disponibles
+
+Estas notas no son el siguiente paso pedagogico obligatorio, pero sirven para mostrar hacia donde apunta el formalismo:
+
+- `lagrangiano_del_modelo_estandar.md`

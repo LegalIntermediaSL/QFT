@@ -16,6 +16,12 @@ Este modulo explica por que la Teoria Cuantica de Campos no es una decoracion so
 1. `01_choque_entre_mq_y_relatividad.md`
 2. `02_campos_localidad_y_causalidad.md`
 
+## Apoyo recomendado
+
+Antes o durante este modulo conviene leer tambien:
+
+- `../que_es_un_campo_cuantico.md`
+
 ## Resultado esperado
 
 Al terminar este bloque, deberia quedar claro que:
