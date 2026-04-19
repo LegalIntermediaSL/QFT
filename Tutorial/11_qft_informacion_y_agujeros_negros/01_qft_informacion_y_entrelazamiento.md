@@ -1,0 +1,96 @@
+# QFT, informacion y entrelazamiento
+
+## 1. Por que este tema pertenece a un tutorial de QFT
+
+Puede parecer que la teoria de la informacion cuantica y la fisica de agujeros negros pertenecen a otra clase de curso. Sin embargo, una mirada mas cuidadosa muestra que muchas de las ideas centrales de estos temas nacen precisamente dentro del lenguaje de la teoria cuantica de campos.
+
+La razon es simple: en QFT el vacio no es una nada trivial. Es un estado altamente estructurado, con correlaciones entre regiones espaciales distintas. Cuando el espacio se divide en subregiones y solo una parte de los grados de libertad es accesible, el estado efectivo deja de ser puro y pasa a describirse por una matriz de densidad reducida.
+
+Ese hecho, que puede formularse sin introducir gravedad, ya contiene la semilla conceptual de temas como:
+
+- entropia de entrelazamiento;
+- termicidad efectiva para observadores parciales;
+- dependencia del concepto de particula respecto del observador;
+- tension entre localidad, horizonte y unitaridad.
+
+## 2. El vacio cuantico como estado correlacionado
+
+En mecanica cuantica elemental solemos pensar en el estado fundamental de un sistema como el estado de menor energia. En QFT esto sigue siendo cierto, pero el contenido fisico es mucho mas rico. El vacio de un campo libre no es simplemente un estado "sin particulas" en un sentido clasico. Es el estado aniquilado por todos los operadores de destruccion:
+
+$$
+a_{\mathbf p} |0\rangle = 0
+\quad
+\text{para todo } \mathbf p.
+$$
+
+Sin embargo, ese estado posee correlaciones no triviales entre observables localizados en distintas regiones del espacio-tiempo. Por eso el vacio no se comporta como un producto simple de estados independientes en cada punto del espacio.
+
+De forma esquematica, si dividimos el espacio en una region $A$ y su complemento $\bar A$, el estado global puede ser puro y, aun asi, la descripcion restringida a $A$ ser mixta.
+
+## 3. Matrices de densidad reducidas
+
+Si el sistema completo esta descrito por una matriz de densidad $\rho$, el estado efectivo accesible a un observador que solo controla la region $A$ se obtiene trazando sobre los grados de libertad invisibles:
+
+$$
+\rho_A = \mathrm{Tr}_{\bar A} \, \rho.
+$$
+
+La entropia asociada es la entropia de von Neumann:
+
+$$
+S_A = - \mathrm{Tr}(\rho_A \log \rho_A).
+$$
+
+Cuando el estado global es puro, esta cantidad mide entrelazamiento entre $A$ y $\bar A$. En sistemas de muchos cuerpos y en QFT, esta entropia suele crecer con el area de la frontera entre regiones, una pista conceptual importante en la conexion con la termodinamica de agujeros negros.
+
+## 4. Por que la entropia de entrelazamiento importa en QFT
+
+La entropia de entrelazamiento no es un accesorio de moda importado desde la informacion cuantica. En QFT cumple varias funciones profundas:
+
+- cuantifica correlaciones del vacio;
+- ayuda a caracterizar fases cuanticas;
+- revela la estructura de grados de libertad accesibles e inaccesibles;
+- conecta con propiedades termicas efectivas de observadores acelerados o confinados a ciertas regiones.
+
+En otras palabras, la QFT no solo describe amplitudes de scattering. Tambien describe que informacion queda disponible cuando el observador no puede acceder a todo el sistema.
+
+## 5. Observadores, regiones y termicidad efectiva
+
+Una idea que reaparece una y otra vez es que el concepto de particula depende de la forma en que se descompone el campo en modos positivos y negativos. En espacio-tiempo plano esto ya aparece en el efecto Unruh: un observador acelerado interpreta el vacio de Minkowski como un baño termico.
+
+La leccion general es:
+
+- el estado global puede ser puro;
+- la descripcion reducida para un observador parcial puede parecer termica;
+- esa termicidad no implica necesariamente que el sistema completo haya perdido informacion.
+
+Este punto es esencial para preparar la discusion sobre radiacion de Hawking.
+
+## 6. Localidad y tensiones emergentes
+
+La QFT local fue construida para respetar causalidad relativista. Sin embargo, cuando una particion espacial o un horizonte ocultan parte de los grados de libertad, la descripcion efectiva del subsistema puede parecer no local o termica.
+
+Eso no significa que la teoria fundamental haya abandonado la localidad. Significa que la informacion disponible para un observador parcial se obtiene tras una operacion de traza que descarta variables. El resultado es una teoria efectiva con menos acceso a la informacion microscopica.
+
+## 7. Hacia agujeros negros
+
+Esta estructura conceptual se vuelve dramaticamente importante en presencia de horizontes. Un agujero negro divide el espacio-tiempo en regiones con accesibilidad distinta para distintos observadores. Si la QFT en espacio-tiempo curvo predice radiacion termica y evaporacion, entonces la informacion codificada en el estado inicial parece quedar en peligro.
+
+La paradoja de la informacion de agujeros negros nace precisamente de este cruce:
+
+- la semiclasica sugiere termicidad;
+- la mecanica cuantica exige unitaridad;
+- la QFT proporciona el lenguaje para formular la tension.
+
+## 8. Ideas clave para retener
+
+- El vacio en QFT es un estado altamente correlacionado.
+- La informacion accesible depende de que region del sistema pueda observarse.
+- La entropia de entrelazamiento aparece al restringir el estado global a una subregion.
+- Los horizontes convierten este tema en una cuestion fisica central, no solo formal.
+
+## 9. Ejercicios sugeridos
+
+1. Explicar con tus propias palabras por que un estado global puro puede producir un estado reducido mixto.
+2. Relacionar el concepto de entropia de entrelazamiento con la idea de grados de libertad inaccesibles.
+3. Discutir por que este tema prepara naturalmente la aparicion de la radiacion de Hawking.

@@ -23,7 +23,8 @@ flowchart TD
     H --> I["08 Integral de camino"]
     I --> J["09 Renormalizacion"]
     J --> K["10 Modelo Estandar"]
-    K --> L["99 Apendices"]
+    K --> L["11 QFT, informacion y agujeros negros"]
+    L --> M["99 Apendices"]
 ```
 
 ## Ruta recomendada de lectura
@@ -37,6 +38,7 @@ Si estas empezando desde cero, el orden sugerido es:
 5. `04_cuantizacion_del_campo_escalar/README.md`
 6. `05_interacciones_y_perturbaciones/README.md`
 7. `10_modelo_estandar/README.md` como lectura avanzada
+8. `11_qft_informacion_y_agujeros_negros/README.md` como frontera conceptual avanzada
 
 ## Flujo conceptual
 
@@ -91,6 +93,13 @@ Este bloque fija el lenguaje: que problema resuelve la QFT, que principios la re
 
 Lecturas avanzadas donde el formalismo se conecta con la teoria fisica concreta mas importante de la fisica de particulas no gravitatoria.
 
+### `11_qft_informacion_y_agujeros_negros/`
+
+- `01_qft_informacion_y_entrelazamiento.md`
+- `02_agujeros_negros_radiacion_de_hawking_y_paradoja_de_la_informacion.md`
+
+Modulo de frontera donde la QFT se cruza con teoria de la informacion cuantica, horizontes, termicidad efectiva y la paradoja de la informacion de agujeros negros.
+
 ### `99_apendices/`
 
 Espacio reservado para convenciones, bibliografia comentada, tablas de notacion y ejercicios resueltos.
@@ -130,3 +139,4 @@ Las extensiones mas naturales del tutorial siguen siendo:
 - `08_integral_de_camino/`
 - `09_renormalizacion/`
 - ampliacion de `10_modelo_estandar/`
+- consolidacion de `11_qft_informacion_y_agujeros_negros/`

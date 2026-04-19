@@ -50,6 +50,16 @@ El formato sigue una adaptacion simple de Keep a Changelog y usa versionado sema
 - Directorio `Imagenes/` con estructura para `diagramas/`, `figuras/`, `referencias/` y `exportadas/`.
 - `Imagenes/README.md` para organizar el material visual del proyecto.
 - Documentos iniciales para `06_fermiones_y_dirac/`, `07_gauge_y_qed/`, `08_integral_de_camino/` y `09_renormalizacion/`.
+- Modulo `Tutorial/11_qft_informacion_y_agujeros_negros/` con dos documentos avanzados.
+- `Cuadernos/ejemplos/08_entrelazamiento_y_horizontes.ipynb`.
+- `Cuadernos/problemas_resueltos/12_qft_informacion_y_agujeros_negros.ipynb`.
+
+### Changed
+
+- Desarrollo sustancial de los notebooks de `Cuadernos/ejemplos/01` a `08`.
+- Desarrollo sustancial de los notebooks de `Cuadernos/problemas_resueltos/06` a `12`.
+- `Tutorial/README.md` ahora incluye el modulo avanzado sobre informacion y agujeros negros.
+- `Cuadernos/README.md` se amplio para reflejar la nueva cobertura practica del proyecto.
 
 ## [0.1.0] - 2026-04-18
 

@@ -296,3 +296,32 @@ Seguir transformando modulos placeholder en contenido real y no dejar huecos gra
 ### Resultado
 
 La segunda mitad del recorrido del tutorial ya no esta compuesta solo por promesas de contenido, sino por una primera estructura textual consistente sobre fermiones, gauge, integral de camino y renormalizacion.
+
+## Entrada de consolidacion de cuadernos y frontera avanzada
+
+### Fecha
+
+2026-04-19
+
+### Objetivo
+
+Convertir la carpeta `Cuadernos/` en una capa practica real del proyecto y abrir un modulo avanzado que conecte QFT con informacion cuantica y agujeros negros.
+
+### Trabajo realizado
+
+- Se desarrollaron los notebooks de `Cuadernos/ejemplos/01` a `08`.
+- Se ampliaron los notebooks de `Cuadernos/problemas_resueltos/06` a `12`.
+- Se incorporaron celdas con contexto teorico, formulas en LaTeX y pequenos calculos simbolicos o numericos.
+- Se abrio el modulo `Tutorial/11_qft_informacion_y_agujeros_negros/`.
+- Se añadieron documentos sobre entrelazamiento, radiacion de Hawking y paradoja de la informacion.
+- Se actualizo la navegacion principal del tutorial y la portada de `Cuadernos/`.
+
+### Resultado
+
+La capa de notebooks deja de ser principalmente esqueletica y pasa a funcionar como apoyo pedagogico real. Ademas, el tutorial incorpora una frontera conceptual nueva donde la QFT se conecta con termicidad, entropia y unitaridad en presencia de horizontes.
+
+### Pendientes inmediatos
+
+- Profundizar tambien los notebooks de problemas resueltos `01` a `05`.
+- Añadir diagramas o figuras para el modulo 11.
+- Extender con mas detalle computacional los cuadernos de renormalizacion y gauge.

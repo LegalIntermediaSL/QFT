@@ -28,6 +28,14 @@ Se añaden notebooks progresivamente para:
 - interacciones y perturbaciones;
 - modelo estandar como lectura avanzada.
 
+### Modulo 11. QFT, informacion y agujeros negros
+
+Tambien se incorporan cuadernos para:
+
+- entrelazamiento y estados reducidos;
+- horizontes y termicidad efectiva;
+- radiacion de Hawking y paradoja de la informacion.
+
 ## Uso sugerido
 
 Los cuadernos no reemplazan el desarrollo teorico del tutorial. Deben usarse para:
