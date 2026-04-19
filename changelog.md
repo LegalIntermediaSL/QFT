@@ -47,6 +47,8 @@ El formato sigue una adaptacion simple de Keep a Changelog y usa versionado sema
 - Dos notebooks base para iniciar ejemplos y problemas resueltos.
 - Directorio `Notas/` con estructura para `pdf/`, `notas_utiles/`, `resumenes/` y `referencias/`.
 - `Notas/README.md` con criterios de uso para alimentar futuras ampliaciones del tutorial.
+- Directorio `Imagenes/` con estructura para `diagramas/`, `figuras/`, `referencias/` y `exportadas/`.
+- `Imagenes/README.md` para organizar el material visual del proyecto.
 
 ## [0.1.0] - 2026-04-18
 

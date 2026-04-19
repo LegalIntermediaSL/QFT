@@ -78,6 +78,7 @@ Aunque el contenido tecnico todavia esta en una fase temprana, el repositorio ya
 - `Tutorial/`: primer bloque de contenido tecnico del tutorial.
 - `Cuadernos/`: notebooks Jupyter para ejemplos y problemas resueltos.
 - `Notas/`: deposito de PDFs, apuntes, resumenes y referencias para ampliar el tutorial.
+- `Imagenes/`: recursos visuales para diagramas, figuras y material grafico del proyecto.
 
 ## Hoja de ruta sugerida
 

@@ -254,3 +254,23 @@ Crear un espacio donde almacenar material bruto y notas de trabajo que luego pue
 ### Resultado
 
 El proyecto ya cuenta con una zona intermedia entre fuente y publicacion, util para organizar material externo antes de integrarlo en `Tutorial/`.
+
+## Entrada de recursos visuales
+
+### Fecha
+
+2026-04-19
+
+### Objetivo
+
+Crear un espacio especifico para almacenar imagenes, diagramas y material grafico que acompañe el desarrollo del tutorial.
+
+### Trabajo realizado
+
+- Se creo el directorio `Imagenes/`.
+- Se añadieron las subcarpetas `diagramas/`, `figuras/`, `referencias/` y `exportadas/`.
+- Se documento la carpeta en `Imagenes/README.md`.
+
+### Resultado
+
+El proyecto ya dispone de una zona dedicada a recursos visuales, preparada para alojar figuras pedagogicas y diagramas de apoyo.
