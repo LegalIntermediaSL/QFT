@@ -77,6 +77,7 @@ Aunque el contenido tecnico todavia esta en una fase temprana, el repositorio ya
 - `changelog.md`: historial de cambios relevantes del repositorio.
 - `Tutorial/`: primer bloque de contenido tecnico del tutorial.
 - `Cuadernos/`: notebooks Jupyter para ejemplos y problemas resueltos.
+- `Notas/`: deposito de PDFs, apuntes, resumenes y referencias para ampliar el tutorial.
 
 ## Hoja de ruta sugerida
 

@@ -234,3 +234,23 @@ Abrir un espacio especifico para notebooks Jupyter que complemente el tutorial e
 ### Resultado
 
 El repositorio ya dispone de una zona practica preparada para material computacional y ejercicios guiados, en paralelo al tutorial teorico.
+
+## Entrada de notas de apoyo
+
+### Fecha
+
+2026-04-19
+
+### Objetivo
+
+Crear un espacio donde almacenar material bruto y notas de trabajo que luego puedan convertirse en contenido del tutorial.
+
+### Trabajo realizado
+
+- Se creo el directorio `Notas/`.
+- Se añadieron las subcarpetas `pdf/`, `notas_utiles/`, `resumenes/` y `referencias/`.
+- Se documento el uso del directorio en `Notas/README.md`.
+
+### Resultado
+
+El proyecto ya cuenta con una zona intermedia entre fuente y publicacion, util para organizar material externo antes de integrarlo en `Tutorial/`.
