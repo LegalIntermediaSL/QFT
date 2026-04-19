@@ -220,10 +220,10 @@ De forma muy resumida, suele pensarse el Lagrangiano del Modelo Estandar como
 $$
 \begin{aligned}
 \mathcal{L}_{\text{SM}}
-&= \mathcal{L}_{\text{gauge}}
-+ \mathcal{L}_{\text{ferm}}
-+ \mathcal{L}_{\text{Higgs}}
-+ \mathcal{L}_{\text{Yukawa}}.
+&= \mathcal{L}_{\text{gauge}} \\
+&\quad + \mathcal{L}_{\text{ferm}} \\
+&\quad + \mathcal{L}_{\text{Higgs}} \\
+&\quad + \mathcal{L}_{\text{Yukawa}}.
 \end{aligned}
 $$
 
