@@ -2,12 +2,29 @@
 
 ## Objetivo
 
-Este modulo introducira el formalismo de integral de camino como alternativa y complemento a la cuantizacion canonica.
+Este modulo introduce el formalismo de integral de camino como alternativa y complemento a la cuantizacion canonica.
 
-## Contenido previsto
+## Documentos del modulo
 
-1. amplitudes como suma sobre historias;
-2. funcional generador;
-3. correladores;
-4. relacion con teoria de perturbaciones;
-5. intuicion semiclasica.
+1. `01_introduccion_a_la_integral_de_camino.md`
+2. `02_funcional_generador_y_correladores.md`
+
+## Mapa del modulo
+
+```mermaid
+flowchart TD
+    A["Suma sobre historias"] --> B["Peso e^{iS}"]
+    B --> C["Integral funcional"]
+    C --> D["Funcional generador"]
+    D --> E["Correladores"]
+    E --> F["Teoria de perturbaciones"]
+```
+
+## Resultado esperado
+
+Al terminar este modulo, deberia poder entenderse:
+
+- por que la amplitud puede verse como suma sobre configuraciones;
+- como aparece el peso $e^{iS}$;
+- que es un funcional generador;
+- como se extraen correladores del formalismo.

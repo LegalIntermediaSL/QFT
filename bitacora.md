@@ -274,3 +274,25 @@ Crear un espacio especifico para almacenar imagenes, diagramas y material grafic
 ### Resultado
 
 El proyecto ya dispone de una zona dedicada a recursos visuales, preparada para alojar figuras pedagogicas y diagramas de apoyo.
+
+## Entrada de ampliacion de modulos avanzados
+
+### Fecha
+
+2026-04-19
+
+### Objetivo
+
+Seguir transformando modulos placeholder en contenido real y no dejar huecos grandes en la progresion del curso.
+
+### Trabajo realizado
+
+- Se desarrollaron contenidos iniciales en `06_fermiones_y_dirac/`.
+- Se desarrollaron contenidos iniciales en `07_gauge_y_qed/`.
+- Se añadieron bases teoricas para `08_integral_de_camino/`.
+- Se añadieron bases teoricas para `09_renormalizacion/`.
+- Se ampliaron los `README.md` de estos modulos con mapas y resultados esperados.
+
+### Resultado
+
+La segunda mitad del recorrido del tutorial ya no esta compuesta solo por promesas de contenido, sino por una primera estructura textual consistente sobre fermiones, gauge, integral de camino y renormalizacion.

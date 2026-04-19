@@ -49,6 +49,7 @@ El formato sigue una adaptacion simple de Keep a Changelog y usa versionado sema
 - `Notas/README.md` con criterios de uso para alimentar futuras ampliaciones del tutorial.
 - Directorio `Imagenes/` con estructura para `diagramas/`, `figuras/`, `referencias/` y `exportadas/`.
 - `Imagenes/README.md` para organizar el material visual del proyecto.
+- Documentos iniciales para `06_fermiones_y_dirac/`, `07_gauge_y_qed/`, `08_integral_de_camino/` y `09_renormalizacion/`.
 
 ## [0.1.0] - 2026-04-18
 

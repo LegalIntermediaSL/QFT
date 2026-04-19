@@ -2,12 +2,29 @@
 
 ## Objetivo
 
-Este modulo quedara dedicado a la descripcion relativista de fermiones, espinores y ecuacion de Dirac.
+Este modulo desarrolla la descripcion relativista de fermiones, espinores y ecuacion de Dirac, y muestra como la cuantizacion de campos fermionicos completa el cuadro iniciado con el campo escalar.
 
-## Contenido previsto
+## Documentos del modulo
 
-1. motivacion de la ecuacion de Dirac;
-2. algebra de matrices gamma;
-3. soluciones de Dirac y corriente conservada;
-4. cuantizacion de campos fermionicos;
-5. antiparticulas y mar de Dirac en perspectiva historica.
+1. `01_motivacion_y_ecuacion_de_dirac.md`
+2. `02_cuantizacion_de_campos_fermionicos.md`
+
+## Mapa del modulo
+
+```mermaid
+flowchart TD
+    A["Relacion relativista energia-momento"] --> B["Linealizacion de Dirac"]
+    B --> C["Espinores y matrices gamma"]
+    C --> D["Soluciones de particula y antiparticula"]
+    D --> E["Cuantizacion fermionica"]
+    E --> F["Anticonmutadores y estadistica de Fermi"]
+```
+
+## Resultado esperado
+
+Al terminar este modulo, deberia quedar claro:
+
+- por que la ecuacion de Dirac fue necesaria historica y conceptualmente;
+- que son los espinores y la algebra gamma;
+- como aparecen antiparticulas en el formalismo fermionico;
+- por que los campos fermionicos se cuantizan con anticonmutadores.
