@@ -9,11 +9,26 @@ Este modulo da el salto desde el campo clasico hasta el campo cuantizado usando 
 1. `01_campo_escalar_clasico_y_modos_normales.md`
 2. `02_cuantizacion_canonica_y_espacio_de_fock.md`
 
+## Mapa del modulo
+
+```mermaid
+flowchart TD
+    A["Campo escalar clasico"] --> B["Expansion en modos"]
+    B --> C["Osciladores cuanticos"]
+    C --> D["Creacion y aniquilacion"]
+    D --> E["Espacio de Fock"]
+```
+
 ## Apoyo recomendado
 
 Este modulo se entiende mucho mejor si antes se ha leido:
 
 - `../01_fundamentos_conceptuales/03_que_es_un_campo_cuantico.md`
+
+## Cuadernos asociados
+
+- `../../Cuadernos/ejemplos/05_cuantizacion_del_campo_escalar.ipynb`
+- `../../Cuadernos/problemas_resueltos/09_cuantizacion_del_campo_escalar.ipynb`
 
 ## Hilo conceptual
 

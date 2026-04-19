@@ -9,6 +9,17 @@ Este modulo introduce el paso desde teorias libres a teorias interactuantes y pr
 1. `01_teoria_de_perturbaciones_y_matriz_s.md`
 2. `02_diagramas_de_feynman_y_reglas.md`
 
+## Mapa del modulo
+
+```mermaid
+flowchart LR
+    A["Teoria libre"] --> B["Separacion L0 + Lint"]
+    B --> C["Matriz S"]
+    C --> D["Serie de Dyson"]
+    D --> E["Diagramas de Feynman"]
+    E --> F["Amplitudes observables"]
+```
+
 ## Hilo conceptual
 
 Las ideas clave del modulo son:
@@ -17,6 +28,11 @@ Las ideas clave del modulo son:
 - las interacciones se codifican localmente en la lagrangiana;
 - muchas amplitudes se estudian como expansion en potencias del acoplamiento;
 - los diagramas de Feynman son una sintaxis de esa expansion.
+
+## Cuadernos asociados
+
+- `../../Cuadernos/ejemplos/06_diagramas_de_feynman_basicos.ipynb`
+- `../../Cuadernos/problemas_resueltos/10_interacciones_y_perturbaciones.ipynb`
 
 ## Resultado esperado
 

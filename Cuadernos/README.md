@@ -7,6 +7,27 @@ Este directorio reune notebooks de apoyo para el tutorial de Teoria Cuantica de 
 - `ejemplos/`: notebooks breves orientados a ilustrar una idea, formula o tecnica.
 - `problemas_resueltos/`: notebooks mas largos orientados a resolver ejercicios paso a paso.
 
+## Cobertura actual
+
+### Modulo 00. Prerrequisitos
+
+- problemas resueltos de relatividad especial minima;
+- notacion tensorial y convenciones;
+- oscilador armonico cuantico;
+- simetrias y grupos basicos;
+- delta de Dirac y Fourier.
+
+### Modulos 01 a 05 y lectura avanzada
+
+Se añaden notebooks progresivamente para:
+
+- fundamentos conceptuales;
+- relatividad y campos;
+- accion y simetrias;
+- cuantizacion del campo escalar;
+- interacciones y perturbaciones;
+- modelo estandar como lectura avanzada.
+
 ## Uso sugerido
 
 Los cuadernos no reemplazan el desarrollo teorico del tutorial. Deben usarse para:
@@ -22,3 +43,4 @@ Los cuadernos no reemplazan el desarrollo teorico del tutorial. Deben usarse par
 - Añadir una celda inicial con objetivo, prerequisitos y resultado esperado.
 - Preferir notebooks pequeños y enfocados antes que cuadernos demasiado generales.
 - Si un notebook depende de librerias externas, documentarlo al inicio.
+- Siempre que sea posible, enlazar el notebook con el documento teorico correspondiente del directorio `Tutorial/`.
