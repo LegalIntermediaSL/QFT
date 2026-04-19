@@ -1,9 +1,9 @@
 # Articulo 4: Interacciones, Amplitudes y Diagramas de Feynman
 
-Este archivo pasa a ser la portada del cuarto modulo. El contenido ampliado se divide en:
+Este archivo pasa a ser la portada del modulo de interacciones y perturbaciones. El contenido ampliado se divide en:
 
-- `04_interacciones_y_perturbaciones/01_teoria_de_perturbaciones_y_matriz_s.md`
-- `04_interacciones_y_perturbaciones/02_diagramas_de_feynman_y_reglas.md`
+- `05_interacciones_y_perturbaciones/01_teoria_de_perturbaciones_y_matriz_s.md`
+- `05_interacciones_y_perturbaciones/02_diagramas_de_feynman_y_reglas.md`
 
 ## Que se amplia respecto de la version breve
 

@@ -1,4 +1,4 @@
-# Modulo 3: Cuantizacion del Campo Escalar
+# Modulo 04: Cuantizacion del Campo Escalar
 
 ## Objetivo
 
@@ -13,7 +13,7 @@ Este modulo da el salto desde el campo clasico hasta el campo cuantizado usando 
 
 Este modulo se entiende mucho mejor si antes se ha leido:
 
-- `../que_es_un_campo_cuantico.md`
+- `../01_fundamentos_conceptuales/03_que_es_un_campo_cuantico.md`
 
 ## Hilo conceptual
 

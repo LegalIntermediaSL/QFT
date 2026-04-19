@@ -30,6 +30,18 @@ El formato sigue una adaptacion simple de Keep a Changelog y usa versionado sema
 - Los articulos introductorios dejaron de ser el tratamiento principal y pasaron a funcionar como portadas de navegacion hacia modulos mas amplios.
 - `Tutorial/README.md` se reorganizo para reflejar la nueva arquitectura modular.
 - Se ampliaron varios articulos de los modulos de relatividad y perturbaciones con mas desarrollo conceptual, secciones nuevas y ejercicios sugeridos.
+- `Tutorial/` se reorganizo con una estructura curricular numerada, nuevos indices de modulo y diagramas Mermaid en la portada principal.
+
+### Added
+
+- `Tutorial/00_prerrequisitos/README.md`
+- `Tutorial/01_fundamentos_conceptuales/README.md`
+- `Tutorial/06_fermiones_y_dirac/README.md`
+- `Tutorial/07_gauge_y_qed/README.md`
+- `Tutorial/08_integral_de_camino/README.md`
+- `Tutorial/09_renormalizacion/README.md`
+- `Tutorial/10_modelo_estandar/README.md`
+- `Tutorial/99_apendices/README.md`
 
 ## [0.1.0] - 2026-04-18
 

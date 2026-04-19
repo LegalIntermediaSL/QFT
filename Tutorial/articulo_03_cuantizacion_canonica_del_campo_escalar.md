@@ -1,9 +1,9 @@
 # Articulo 3: Cuantizacion Canonica del Campo Escalar Libre
 
-Este articulo deja de ser el tratamiento completo del tema y pasa a servir como indice del tercer modulo. El contenido ampliado queda distribuido en:
+Este articulo deja de ser el tratamiento completo del tema y pasa a servir como indice del modulo de cuantizacion del campo escalar. El contenido ampliado queda distribuido en:
 
-- `03_cuantizacion_del_campo_escalar/01_campo_escalar_clasico_y_modos_normales.md`
-- `03_cuantizacion_del_campo_escalar/02_cuantizacion_canonica_y_espacio_de_fock.md`
+- `04_cuantizacion_del_campo_escalar/01_campo_escalar_clasico_y_modos_normales.md`
+- `04_cuantizacion_del_campo_escalar/02_cuantizacion_canonica_y_espacio_de_fock.md`
 
 ## Por que dividir este bloque
 

@@ -1,9 +1,9 @@
 # Articulo 1: Relatividad Especial y Nacimiento de la Idea de Campo
 
-Este articulo ahora funciona como portada del primer modulo ampliado. El tratamiento detallado ya no vive en una sola nota breve, sino en un bloque dividido en dos documentos largos:
+Este articulo ahora funciona como portada del modulo de relatividad y campos. El tratamiento detallado ya no vive en una sola nota breve, sino en un bloque dividido en dos documentos largos:
 
-- `01_relatividad_y_campos/01_choque_entre_mq_y_relatividad.md`
-- `01_relatividad_y_campos/02_campos_localidad_y_causalidad.md`
+- `02_relatividad_y_campos/01_choque_entre_mq_y_relatividad.md`
+- `02_relatividad_y_campos/02_campos_localidad_y_causalidad.md`
 
 ## Que cubre este modulo
 
@@ -18,11 +18,11 @@ El modulo desarrolla con mucha mas calma cuatro ideas:
 
 Primero conviene leer la motivacion fisica:
 
-- `01_relatividad_y_campos/01_choque_entre_mq_y_relatividad.md`
+- `02_relatividad_y_campos/01_choque_entre_mq_y_relatividad.md`
 
 Despues, el documento estructural del modulo:
 
-- `01_relatividad_y_campos/02_campos_localidad_y_causalidad.md`
+- `02_relatividad_y_campos/02_campos_localidad_y_causalidad.md`
 
 ## Idea central
 

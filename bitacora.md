@@ -190,3 +190,26 @@ Los cuatro documentos pasaron a sumar 686 lineas de contenido, con mejor continu
 - Repetir esta profundizacion en los modulos de accion y cuantizacion.
 - Añadir ejercicios tambien a los documentos marco.
 - Empezar el bloque de fermiones y ecuacion de Dirac.
+
+## Entrada de reorganizacion curricular
+
+### Fecha
+
+2026-04-19
+
+### Objetivo
+
+Pasar de una estructura mixta de notas y modulos a una arquitectura mas curricular, con recorrido numerado, indices mas claros y soporte visual.
+
+### Trabajo realizado
+
+- Se reorganizo `Tutorial/` en bloques `00`, `01`, `02`, etc.
+- Se movieron los documentos marco al modulo `01_fundamentos_conceptuales/`.
+- Se renumeraron los modulos tecnicos ya existentes.
+- Se añadieron `README.md` nuevos para prerrequisitos, fundamentos, Modelo Estandar y apendices.
+- Se crearon modulos placeholder para fermiones, gauge, integral de camino y renormalizacion.
+- Se incorporaron diagramas Mermaid a la portada principal del tutorial.
+
+### Resultado
+
+El tutorial ahora se parece mas a un curso navegable que a una coleccion de archivos. La progresion conceptual y tecnica queda mas clara desde la carpeta raiz.

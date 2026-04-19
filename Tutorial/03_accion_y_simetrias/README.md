@@ -1,4 +1,4 @@
-# Modulo 2: Accion, Lagrangiana y Simetrias
+# Modulo 03: Accion, Lagrangiana y Simetrias
 
 ## Objetivo
 

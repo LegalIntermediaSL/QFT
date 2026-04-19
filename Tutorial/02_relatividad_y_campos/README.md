@@ -1,4 +1,4 @@
-# Modulo 1: Relatividad y Campos
+# Modulo 02: Relatividad y Campos
 
 ## Objetivo
 
@@ -20,7 +20,7 @@ Este modulo explica por que la Teoria Cuantica de Campos no es una decoracion so
 
 Antes o durante este modulo conviene leer tambien:
 
-- `../que_es_un_campo_cuantico.md`
+- `../01_fundamentos_conceptuales/03_que_es_un_campo_cuantico.md`
 
 ## Resultado esperado
 
