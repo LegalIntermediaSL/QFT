@@ -20,7 +20,20 @@ $$
 
 La utilidad de esta separacion es que la teoria libre se resuelve exactamente y la interaccion se trata como correccion organizada.
 
-## 3. Estados asintoticos
+Esta separacion no es solo tecnica. Refleja una estrategia fisica: partimos de un problema cuyo espacio de estados controlamos bien y construimos sobre el una expansion que captura progresivamente la complejidad de las interacciones reales.
+
+## 3. Que significa resolver la teoria libre
+
+Resolver la teoria libre significa, en esencia:
+
+- conocer sus modos normales;
+- cuantizar los campos;
+- construir su espacio de Fock;
+- identificar su hamiltoniano y sus excitaciones asintoticas.
+
+Sin esa base, la teoria de perturbaciones carece de punto de apoyo. Por eso el estudio de campos libres no es una etapa preliminar aburrida, sino la infraestructura sobre la que se construye todo el formalismo perturbativo.
+
+## 4. Estados asintoticos
 
 En el enfoque de scattering suponemos que muy lejos en el pasado y en el futuro las particulas pueden tratarse como aproximadamente libres. Eso permite definir:
 
@@ -30,7 +43,9 @@ En el enfoque de scattering suponemos que muy lejos en el pasado y en el futuro 
 
 La idea no es que la interaccion desaparezca siempre literalmente, sino que hay regimens asintoticos donde la descripcion libre vuelve a ser una buena aproximacion operacional.
 
-## 4. Matriz S
+En ese sentido, los estados asintoticos son una interfaz entre la descripcion teorica y el laboratorio: representan las configuraciones de entrada y salida que un detector puede preparar o medir con relativa claridad.
+
+## 5. Matriz S
 
 El objeto central es la matriz $S$, que conecta estados iniciales y finales:
 
@@ -40,7 +55,9 @@ $$
 
 Sus elementos de matriz contienen la informacion observable necesaria para calcular secciones eficaces y tasas de decaimiento.
 
-## 5. Imagen de interaccion
+Conviene subrayar que la matriz $S$ no es un observable cualquiera. Es el organizador global de la teoria de scattering. En ella se condensan las amplitudes que luego se traducen en predicciones experimentales.
+
+## 6. Imagen de interaccion
 
 Una forma muy util de organizar la teoria de perturbaciones es la imagen de interaccion. En ella:
 
@@ -50,7 +67,9 @@ Una forma muy util de organizar la teoria de perturbaciones es la imagen de inte
 
 Este esquema hace transparente la expansion en potencias del acoplamiento.
 
-## 6. Serie de Dyson
+La imagen de interaccion resulta especialmente natural porque separa con claridad el problema exactamente soluble de la parte libre y la complejidad introducida por la interaccion. Sin esa separacion, la serie perturbativa seria mucho menos transparente.
+
+## 7. Serie de Dyson
 
 Formalmente, la matriz $S$ puede expresarse como una serie de Dyson:
 
@@ -60,9 +79,16 @@ $$
 
 donde $T$ denota orden temporal. Expandiendo la exponencial se obtiene una suma de terminos con numero creciente de inserciones de la interaccion.
 
-Cada orden en esta expansion corresponde a una clase de contribuciones perturbativas.
+Cada orden en esta expansion corresponde a una clase de contribuciones perturbativas. Es util escribir los primeros terminos:
 
-## 7. Que se calcula realmente
+$$
+S = 1 - i\int d^4x\, \mathcal{H}_{\text{int}}(x)
+ - \frac{1}{2}\int d^4x\, d^4y \, T\left\{\mathcal{H}_{\text{int}}(x)\mathcal{H}_{\text{int}}(y)\right\} + \cdots
+$$
+
+Asi se ve con claridad que cada orden añade nuevas inserciones de la interaccion y, por tanto, nuevas clases de procesos y correcciones.
+
+## 8. Que se calcula realmente
 
 En QFT no se calculan trayectorias clasicas de particulas individuales. Se calculan amplitudes. De ellas se derivan probabilidades y observables experimentales despues de tomar modulos cuadrados, promedios, sumas sobre polarizaciones y fases de espacio apropiadas.
 
@@ -72,11 +98,24 @@ Esta diferencia conceptual es clave:
 - probabilidad no es seccion eficaz;
 - diagrama no es trayectoria.
 
-## 8. Parametro pequeno y validez perturbativa
+## 9. Del elemento de matriz al observable
+
+Entre una amplitud y un numero experimental hay varios pasos intermedios. En problemas de scattering, por ejemplo, suele extraerse una amplitud invariante $\mathcal{M}$ a partir del elemento de matriz de $S$, y luego se construyen:
+
+- secciones eficaces diferenciales;
+- secciones eficaces totales;
+- anchos de decaimiento;
+- distribuciones angulares.
+
+Esto es importante pedagogicamente porque ayuda a no confundir el formalismo perturbativo con el dato final del experimento. El formalismo produce amplitudes; el puente hacia el laboratorio pasa por una capa adicional de interpretacion cinemática.
+
+## 10. Parametro pequeno y validez perturbativa
 
 La teoria de perturbaciones funciona cuando el acoplamiento relevante es suficientemente pequeno como para que la expansion ordenada tenga sentido practico. Si la interaccion es fuerte, la serie puede converger mal o ser poco util. Eso explica por que hay regimens donde los metodos perturbativos son extraordinarios y otros donde resultan insuficientes.
 
-## 9. Correcciones de orden superior
+Tambien conviene recordar que "pequeno" puede depender de la escala. Un acoplamiento puede ser manejable perturbativamente en cierto rango de energias y dejar de serlo en otro. Por eso la teoria de perturbaciones se conecta de manera natural con la idea de corrida de acoplamientos y grupo de renormalizacion.
+
+## 11. Correcciones de orden superior
 
 Los primeros ordenes de la expansion suelen capturar el comportamiento dominante. Los terminos de orden superior introducen:
 
@@ -87,19 +126,42 @@ Los primeros ordenes de la expansion suelen capturar el comportamiento dominante
 
 Por eso la expansion perturbativa no solo es una aproximacion; tambien es una manera de clasificar sistematicamente efectos fisicos.
 
-## 10. Advertencias utiles
+## 12. Ejemplo conceptual en teoria $\phi^4$
+
+En una teoria con
+
+$$
+\mathcal{L}_{\text{int}} = -\frac{\lambda}{4!}\phi^4,
+$$
+
+el primer proceso de scattering $2\to2$ aparece ya a orden $\lambda$. A ordenes superiores aparecen lazos que corrigen:
+
+- la propagacion efectiva;
+- la intensidad del acoplamiento;
+- la dependencia con la energia del proceso.
+
+Este ejemplo simple basta para mostrar todo el esqueleto del formalismo perturbativo sin necesidad de introducir aun las complicaciones del Modelo Estandar.
+
+## 13. Advertencias utiles
 
 - No toda teoria interactuante es bien tratable perturbativamente.
 - La matriz $S$ requiere cuidado conceptual cuando no hay estados asintoticos libres bien definidos.
 - La serie de Dyson es una expansion formal, no una licencia para ignorar los dominios de validez.
 
-## 11. Preguntas de control
+## 14. Preguntas de control
 
 - Que papel cumple la separacion entre $\mathcal{L}_0$ y $\mathcal{L}_{\text{int}}$.
+- Por que la teoria libre es la base indispensable del formalismo perturbativo.
 - Que significa que los estados sean asintoticamente libres.
 - Que informa un elemento de matriz de $S$.
 - Por que una amplitud no debe confundirse con una probabilidad ya final.
 
-## 12. Cierre
+## 15. Ejercicios sugeridos
+
+1. Escribe los tres primeros terminos de la expansion de Dyson y explica verbalmente que representa cada uno.
+2. Describe la diferencia entre estado asintotico libre, amplitud de scattering y seccion eficaz.
+3. Explica por que la teoria de perturbaciones no es simplemente "hacer una aproximacion", sino tambien una forma de clasificar tipos de efectos fisicos.
+
+## 16. Cierre
 
 La teoria de perturbaciones ofrece un puente entre la estructura abstracta de la teoria y los numeros que se comparan con experimentos. Ese puente se vuelve especialmente poderoso cuando se reorganiza graficamente en diagramas de Feynman.

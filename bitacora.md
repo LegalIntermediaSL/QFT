@@ -162,3 +162,31 @@ El tutorial paso de una coleccion corta de notas introductorias a una base modul
 - Añadir un modulo de prerrequisitos matematicos.
 - Abrir el bloque de campos fermionicos.
 - Mantener consistencia de estilo y notacion entre los nuevos modulos.
+
+## Entrada de profundizacion de articulos
+
+### Fecha
+
+2026-04-19
+
+### Objetivo
+
+Aumentar la densidad pedagogica de varios articulos clave para que funcionen mejor como material de estudio y no solo como introducciones conceptuales.
+
+### Trabajo realizado
+
+- Se amplió `Tutorial/01_relatividad_y_campos/01_choque_entre_mq_y_relatividad.md`.
+- Se amplió `Tutorial/01_relatividad_y_campos/02_campos_localidad_y_causalidad.md`.
+- Se amplió `Tutorial/04_interacciones_y_perturbaciones/01_teoria_de_perturbaciones_y_matriz_s.md`.
+- Se amplió `Tutorial/04_interacciones_y_perturbaciones/02_diagramas_de_feynman_y_reglas.md`.
+- Se añadieron nuevas secciones de contexto, ejemplos conceptuales y ejercicios sugeridos.
+
+### Resultado
+
+Los cuatro documentos pasaron a sumar 686 lineas de contenido, con mejor continuidad entre conceptos, mas advertencias metodologicas y un nivel mas cercano al de un curso escrito.
+
+### Pendientes inmediatos
+
+- Repetir esta profundizacion en los modulos de accion y cuantizacion.
+- Añadir ejercicios tambien a los documentos marco.
+- Empezar el bloque de fermiones y ecuacion de Dirac.

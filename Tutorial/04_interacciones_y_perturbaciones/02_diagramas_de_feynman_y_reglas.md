@@ -14,6 +14,8 @@ Cada diagrama representa:
 - un orden determinado en el acoplamiento;
 - una contribucion precisa a la amplitud.
 
+Ese origen es importante porque evita un error muy comun: el diagrama no es el punto de partida del calculo. El punto de partida real es el lagrangiano y la expansion de Dyson. El diagrama aparece despues, como un sistema de organizacion.
+
 ## 3. Ingredientes basicos
 
 En un diagrama aparecen tres elementos fundamentales:
@@ -23,6 +25,8 @@ En un diagrama aparecen tres elementos fundamentales:
 - vertices, asociados a inserciones del termino de interaccion.
 
 Esta sintaxis visual permite leer de un vistazo la estructura combinatoria del calculo.
+
+Ademas, la representacion permite separar de manera intuitiva que partes del problema vienen de la dinamica libre y cuales de la interaccion local. Las lineas internas heredan la cinematica libre; los vertices heredan la estructura del lagrangiano interactuante.
 
 ## 4. Propagador
 
@@ -34,11 +38,22 @@ $$
 
 Ese factor aparece cada vez que una linea interna transporta momento entre vertices.
 
+El termino $i\epsilon$ no es un adorno notacional. Codifica la prescripcion correcta para tratar polos y fijar la estructura causal del propagador de Feynman.
+
 ## 5. Vertices e interaccion
 
 Un vertice codifica la estructura local de la interaccion. En una teoria $\phi^4$, por ejemplo, un vertice conecta cuatro lineas del campo. El factor asociado depende de la normalizacion elegida, pero esquematicamente esta controlado por el acoplamiento $\lambda$.
 
 De nuevo, el diagrama no inventa la interaccion: la traduce desde la lagrangiana.
+
+En teorias mas ricas, distintos vertices pueden coexistir y llevar:
+
+- diferentes constantes de acoplamiento;
+- diferentes estructuras de espin;
+- indices internos de color o sabor;
+- factores de grupo.
+
+Por eso aprender reglas de Feynman no consiste en memorizar dibujos, sino en saber leer el lagrangiano como generador de reglas.
 
 ## 6. Conservacion del momento
 
@@ -50,6 +65,8 @@ $$
 
 Esto refleja la invariancia traslacional de la teoria y conecta el calculo diagramatico con el teorema de Noether.
 
+En la practica, estas deltas permiten eliminar parte de las integrales y reducir el calculo a los grados de libertad internos realmente independientes.
+
 ## 7. Lazos y momentos internos
 
 Cuando un diagrama contiene lazos cerrados, aparecen momentos internos no fijados por las condiciones externas. Debe integrarse sobre ellos:
@@ -60,6 +77,8 @@ $$
 
 Es justamente aqui donde suelen nacer las divergencias ultravioletas y donde la renormalizacion se vuelve necesaria.
 
+Los lazos introducen ademas informacion genuinamente cuantica que no existe en un tratamiento puramente clasico o de arbol. Son responsables de desplazamientos de masas, corridas de acoplamientos y muchas de las predicciones de precision mas importantes de la teoria.
+
 ## 8. Arboles y lazos
 
 Conviene distinguir:
@@ -69,7 +88,20 @@ Conviene distinguir:
 
 Esta distincion no es solo topologica. Marca tambien el paso desde efectos basicos de interaccion hacia correcciones radiativas propiamente cuanticas.
 
-## 9. Procedimiento practico de lectura
+En ese sentido, un diagrama de arbol suele capturar el esqueleto del proceso, mientras que los lazos capturan su refinamiento cuantico.
+
+## 9. Simetria, factores combinatorios y suma sobre diagramas
+
+Un mismo proceso fisico rara vez queda representado por un unico diagrama. A un orden dado suelen contribuir varios diagramas diferentes, y ademas cada uno puede venir acompañado por factores combinatorios o de simetria.
+
+Esto enseña una leccion importante:
+
+- el significado fisico final nunca pertenece a un diagrama aislado;
+- pertenece a la suma coherente de todas las contribuciones pertinentes del orden considerado.
+
+La interferencia entre diagramas es una parte esencial de la prediccion cuantica.
+
+## 10. Procedimiento practico de lectura
 
 Al ver un diagrama, una rutina util es:
 
@@ -80,7 +112,21 @@ Al ver un diagrama, una rutina util es:
 5. integrar sobre momentos internos independientes;
 6. sumar todos los diagramas del mismo orden compatibles con el proceso.
 
-## 10. Lo que un diagrama no es
+En problemas con espin, color u otros grados de libertad internos, a esa rutina hay que añadir la algebra correspondiente. Por eso la sintaxis visual simplifica mucho, pero no elimina la necesidad de manipular expresiones analiticas con cuidado.
+
+## 11. Ejemplo conceptual: scattering $2\to2$ en $\phi^4$
+
+Para una teoria $\phi^4$, el proceso mas basico de scattering entre dos particulas entrantes y dos salientes aparece ya con un vertice elemental. A orden mas bajo:
+
+- hay cuatro lineas externas;
+- no hay lazos;
+- el orden en el acoplamiento es $\lambda$.
+
+A orden superior pueden aparecer diagramas con lazos en los canales usuales, lo que introduce dependencia mas rica en los invariantes cinematicos y obliga a renormalizar.
+
+Este ejemplo es valioso porque muestra, en su forma mas simple, todo el vocabulario del formalismo.
+
+## 12. Lo que un diagrama no es
 
 Conviene insistir en varios puntos:
 
@@ -89,7 +135,7 @@ Conviene insistir en varios puntos:
 - no es por si solo una probabilidad observable;
 - no reemplaza las reglas analiticas: las resume.
 
-## 11. Poder conceptual de la representacion
+## 13. Poder conceptual de la representacion
 
 Pese a estas advertencias, los diagramas son extraordinarios porque permiten:
 
@@ -100,7 +146,14 @@ Pese a estas advertencias, los diagramas son extraordinarios porque permiten:
 
 Por eso su valor no es solo estetico ni pedagogico: es tambien computacional.
 
-## 12. Preguntas de control
+Tambien tienen un valor heuristico muy fuerte. Ayudan a anticipar:
+
+- que procesos estan permitidos o prohibidos;
+- que orden en el acoplamiento domina;
+- donde cabe esperar divergencias;
+- que canales de intercambio pueden contribuir.
+
+## 14. Preguntas de control
 
 - Que representa exactamente una linea interna.
 - De donde sale el propagador escalar.
@@ -108,6 +161,12 @@ Por eso su valor no es solo estetico ni pedagogico: es tambien computacional.
 - Por que los lazos obligan a integrar sobre momentos internos.
 - Que distingue una amplitud de la interpretacion visual ingenua del diagrama.
 
-## 13. Cierre
+## 15. Ejercicios sugeridos
+
+1. Explica por que un diagrama de Feynman debe entenderse como termino de una expansion y no como representacion literal de un suceso microscopico.
+2. Describe el papel del propagador, del vertice y de la delta de conservacion del momento en un diagrama sencillo.
+3. Compara un diagrama de arbol con uno de lazo y explica que informacion cuantica adicional aparece en el segundo.
+
+## 16. Cierre
 
 Los diagramas de Feynman son la gramatica visual de la teoria de perturbaciones. Entendidos correctamente, muestran como la estructura local de la lagrangiana se convierte en reglas sistematicas para calcular amplitudes observables.

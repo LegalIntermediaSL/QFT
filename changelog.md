@@ -29,6 +29,7 @@ El formato sigue una adaptacion simple de Keep a Changelog y usa versionado sema
 
 - Los articulos introductorios dejaron de ser el tratamiento principal y pasaron a funcionar como portadas de navegacion hacia modulos mas amplios.
 - `Tutorial/README.md` se reorganizo para reflejar la nueva arquitectura modular.
+- Se ampliaron varios articulos de los modulos de relatividad y perturbaciones con mas desarrollo conceptual, secciones nuevas y ejercicios sugeridos.
 
 ## [0.1.0] - 2026-04-18
 
