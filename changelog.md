@@ -42,6 +42,9 @@ El formato sigue una adaptacion simple de Keep a Changelog y usa versionado sema
 - `Tutorial/09_renormalizacion/README.md`
 - `Tutorial/10_modelo_estandar/README.md`
 - `Tutorial/99_apendices/README.md`
+- Directorio `Cuadernos/` con subcarpetas para `ejemplos/` y `problemas_resueltos/`.
+- `Cuadernos/README.md` con convenciones y objetivo de los notebooks.
+- Dos notebooks base para iniciar ejemplos y problemas resueltos.
 
 ## [0.1.0] - 2026-04-18
 

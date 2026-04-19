@@ -76,6 +76,7 @@ Aunque el contenido tecnico todavia esta en una fase temprana, el repositorio ya
 - `bitacora.md`: registro narrativo del progreso, decisiones y siguientes pasos.
 - `changelog.md`: historial de cambios relevantes del repositorio.
 - `Tutorial/`: primer bloque de contenido tecnico del tutorial.
+- `Cuadernos/`: notebooks Jupyter para ejemplos y problemas resueltos.
 
 ## Hoja de ruta sugerida
 

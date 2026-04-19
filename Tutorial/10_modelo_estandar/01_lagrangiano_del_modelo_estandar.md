@@ -218,11 +218,13 @@ La renormalizabilidad aqui no es un detalle tecnico secundario. Es parte de la r
 De forma muy resumida, suele pensarse el Lagrangiano del Modelo Estandar como
 
 $$
+\begin{aligned}
 \mathcal{L}_{\text{SM}}
-= \mathcal{L}_{\text{gauge}}
+&= \mathcal{L}_{\text{gauge}}
 + \mathcal{L}_{\text{ferm}}
 + \mathcal{L}_{\text{Higgs}}
 + \mathcal{L}_{\text{Yukawa}}.
+\end{aligned}
 $$
 
 Este esquema no muestra todos los indices, generaciones y estructuras de grupo, pero si deja clara la arquitectura conceptual de la teoria.

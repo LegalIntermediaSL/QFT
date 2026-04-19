@@ -213,3 +213,24 @@ Pasar de una estructura mixta de notas y modulos a una arquitectura mas curricul
 ### Resultado
 
 El tutorial ahora se parece mas a un curso navegable que a una coleccion de archivos. La progresion conceptual y tecnica queda mas clara desde la carpeta raiz.
+
+## Entrada de cuadernos
+
+### Fecha
+
+2026-04-19
+
+### Objetivo
+
+Abrir un espacio especifico para notebooks Jupyter que complemente el tutorial escrito con ejemplos y problemas resueltos.
+
+### Trabajo realizado
+
+- Se creo el directorio `Cuadernos/`.
+- Se separaron las subcarpetas `ejemplos/` y `problemas_resueltos/`.
+- Se añadio un `README.md` para documentar el uso de los cuadernos.
+- Se crearon dos notebooks iniciales como punto de partida.
+
+### Resultado
+
+El repositorio ya dispone de una zona practica preparada para material computacional y ejercicios guiados, en paralelo al tutorial teorico.
