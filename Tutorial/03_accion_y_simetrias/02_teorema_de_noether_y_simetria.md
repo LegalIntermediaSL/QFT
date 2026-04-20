@@ -111,3 +111,16 @@ Por ahora basta con registrar la idea: la accion puede tener mas simetria que el
 ## 13. Cierre
 
 El teorema de Noether enseña una de las lecciones mas profundas de la fisica teorica: la conservacion es la sombra dinamica de la simetria. En QFT, esa conexion no es perifrica; es uno de los hilos que organizan casi toda la disciplina.
+
+## 14. Referencias y lecturas recomendadas
+
+- Base: Tong, Noether y corrientes conservadas.
+- Complementaria: Srednicki, formulacion lagrangiana de simetrias continuas.
+- Profundizacion: textos clasicos sobre accion, simetria y cantidades conservadas.
+
+
+---
+
+## Navegacion del tutorial
+
+[(anterior) Principio de Accion y Ecuaciones de Campo](01_principio_de_accion_y_ecuaciones_de_campo.md) | [(siguiente) Portada 03: Cuantizacion Canonica del Campo Escalar Libre](../portada_03_cuantizacion_canonica_del_campo_escalar.md)

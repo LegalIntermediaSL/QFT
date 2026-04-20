@@ -4,6 +4,11 @@
 
 Este modulo explica por que la Teoria Cuantica de Campos no es una decoracion sofisticada de la mecanica cuantica ordinaria, sino el marco natural para describir sistemas cuanticos relativistas con numero variable de particulas.
 
+## Prerequisitos
+
+- [00 Prerrequisitos](../00_prerrequisitos/README.md), en especial relatividad especial minima y notacion tensorial.
+- [01 Fundamentos Conceptuales](../01_fundamentos_conceptuales/README.md), sobre todo la idea de campo y principios estructurales.
+
 ## Preguntas que responde
 
 - Por que falla la intuicion de una sola particula relativista como fundamento general.
@@ -43,3 +48,15 @@ Al terminar este bloque, deberia quedar claro que:
 - el numero de particulas no puede tratarse como cantidad fija en un marco relativista general;
 - las excitaciones fisicas deben organizarse sobre objetos definidos en el espacio-tiempo;
 - la QFT no se entiende bien si se aprende solo como una tecnica de diagramas.
+
+## Lecturas y referencias recomendadas
+
+- Introductorio: Tong, notas de QFT sobre motivacion relativista.
+- Intermedio: Peskin y Schroeder, introduccion conceptual.
+- Complementario: Weinberg, volumen I, para una perspectiva mas estructural sobre localidad y simetria.
+
+## Navegacion
+
+Anterior: [01 Fundamentos Conceptuales](../01_fundamentos_conceptuales/README.md)
+
+Siguiente: [03 Accion y Simetrias](../03_accion_y_simetrias/README.md)

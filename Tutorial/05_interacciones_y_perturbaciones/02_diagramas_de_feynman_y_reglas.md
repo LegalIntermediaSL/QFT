@@ -170,3 +170,16 @@ Tambien tienen un valor heuristico muy fuerte. Ayudan a anticipar:
 ## 16. Cierre
 
 Los diagramas de Feynman son la gramatica visual de la teoria de perturbaciones. Entendidos correctamente, muestran como la estructura local de la lagrangiana se convierte en reglas sistematicas para calcular amplitudes observables.
+
+## 17. Referencias y lecturas recomendadas
+
+- Base: Peskin y Schroeder, reglas de Feynman y propagadores.
+- Complementaria: Tong, lectura pedagogica de diagramas y amplitudes.
+- Profundizacion: Schwartz, organizacion moderna de reglas y calculos perturbativos.
+
+
+---
+
+## Navegacion del tutorial
+
+[(anterior) Teoria de Perturbaciones y Matriz S](01_teoria_de_perturbaciones_y_matriz_s.md) | [(siguiente) Reduccion LSZ y Correladores Amputados](03_reduccion_lsz_y_correladores_amputados.md)

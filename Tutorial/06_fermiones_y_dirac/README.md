@@ -4,11 +4,19 @@
 
 Este modulo desarrolla la descripcion relativista de fermiones, espinores y ecuacion de Dirac, y muestra como la cuantizacion de campos fermionicos completa el cuadro iniciado con el campo escalar.
 
+## Prerequisitos
+
+- [02 Relatividad y Campos](../02_relatividad_y_campos/README.md).
+- [04 Cuantizacion del Campo Escalar](../04_cuantizacion_del_campo_escalar/README.md).
+- Manejo comodo de lagrangianos relativistas y espacio de Fock.
+
 ## Documentos del modulo
 
 1. `01_motivacion_y_ecuacion_de_dirac.md`
 2. `02_cuantizacion_de_campos_fermionicos.md`
-3. `03_weyl_majorana_y_teoria_de_grupos.md`
+3. `03_algebra_gamma_y_bilineales_de_dirac.md`
+4. `04_corriente_de_dirac_y_limite_no_relativista.md`
+5. `05_quiralidad_weyl_y_majorana.md`
 
 ```mermaid
 flowchart TD
@@ -17,11 +25,26 @@ flowchart TD
     C --> D["Matrices Gamma (Base de Weyl/Dirac)"]
     D --> E["Espinores de Dirac (4 componentes)"]
     E --> F["Adjunto de Dirac (ψ_bar = ψ†γ0)"]
-    F --> G["Lagrangiano de Dirac"]
-    G --> H["Soluciones (u, v) Plane Wave"]
-    H --> I["Cuantización (Anticonmutadores)"]
-    I --> J["Espacio de Fock Fermiónico"]
+    F --> G["Bilineales y corrientes"]
+    G --> H["Lagrangiano de Dirac"]
+    H --> I["Soluciones (u, v) Plane Wave"]
+    I --> J["Cuantización (Anticonmutadores)"]
+    J --> K["Espacio de Fock Fermiónico"]
+    G --> L["Limite no relativista"]
+    D --> M["Quiralidad y Weyl/Majorana"]
 ```
+
+## Cuadernos asociados
+
+- `../../Cuadernos/problemas_resueltos/06_fundamentos_conceptuales.ipynb`
+- `../../Cuadernos/problemas_resueltos/07_relatividad_y_campos.ipynb`
+- `../../Cuadernos/problemas_resueltos/09_cuantizacion_del_campo_escalar.ipynb`
+
+Uso sugerido:
+
+- el cuaderno de `06_fundamentos_conceptuales` sirve para reforzar la idea de campo y simetria antes del paso fermionico;
+- el de `07_relatividad_y_campos` sirve como apoyo del trasfondo relativista que hace necesaria la ecuacion de Dirac;
+- el de `09_cuantizacion_del_campo_escalar` sirve como contraste con el caso bosonico al estudiar cuantizacion y espacio de Fock.
 
 ## Conceptos Clave Añadidos
 
@@ -40,4 +63,32 @@ Al terminar este modulo, deberia quedar claro:
 - por que la ecuacion de Dirac fue necesaria historica y conceptualmente;
 - que son los espinores y la algebra gamma;
 - como aparecen antiparticulas en el formalismo fermionico;
-- por que los campos fermionicos se cuantizan con anticonmutadores.
+- por que los campos fermionicos se cuantizan con anticonmutadores;
+- como se organizan los bilineales de Dirac;
+- por que la corriente conservada y el limite no relativista son pruebas importantes de consistencia fisica.
+
+## Ejercicios sugeridos
+
+1. Explica por que la ecuacion de Klein-Gordon no era suficiente como teoria relativista satisfactoria para fermiones de espin $1/2$.
+2. Deriva la corriente conservada asociada al lagrangiano de Dirac y comenta su interpretacion fisica.
+3. Compara conmutadores bosonicos y anticonmutadores fermionicos y explica por que el espacio de Fock fermionico implementa el principio de exclusion.
+4. Clasifica los bilineales $\bar{\psi}\psi$, $\bar{\psi}\gamma^\mu\psi$ y $\bar{\psi}\gamma^\mu\gamma^5\psi$ y comenta que tipo de objetos fisicos representan.
+5. Explica el papel de los proyectores quirales y resume la diferencia entre espinores de Dirac, Weyl y Majorana.
+
+## Ampliaciones prioritarias
+
+- conectar con simetrias discretas $C$, $P$ y $T$;
+- ampliar un tratamiento futuro de neutrinos y masas de Majorana;
+- profundizar proyectores quirales y corrientes axiales.
+
+## Lecturas y referencias recomendadas
+
+- Introductorio: Tong, secciones sobre fermiones relativistas.
+- Intermedio: Srednicki, tratamiento de espinores y cuantizacion fermionica.
+- Consulta: Peskin y Schroeder, capitulo de Dirac y espinores.
+
+## Navegacion
+
+Anterior: [05 Interacciones y Perturbaciones](../05_interacciones_y_perturbaciones/README.md)
+
+Siguiente: [07 Gauge y QED](../07_gauge_y_qed/README.md)

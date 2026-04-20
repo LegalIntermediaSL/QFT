@@ -190,3 +190,16 @@ Esta reformulacion no es solo mas general. Es la estructura correcta si queremos
 ## 17. Cierre
 
 El choque entre mecanica cuantica y relatividad no destruye ninguna de las dos teorias. Obliga, mas bien, a subir de lenguaje. La QFT es ese nuevo lenguaje: uno donde los campos son primarios y las particulas aparecen como excitaciones cuanticas de esos campos.
+
+## 18. Referencias y lecturas recomendadas
+
+- Base: Tong, motivacion relativista de la QFT.
+- Complementaria: Peskin y Schroeder, introduccion conceptual al fracaso de la teoria de una sola particula.
+- Profundizacion: Weinberg I, lectura estructural del paso a campos.
+
+
+---
+
+## Navegacion del tutorial
+
+[(anterior) Portada 01: Relatividad Especial y Nacimiento de la Idea de Campo](../portada_01_relatividad_y_campos.md) | [(siguiente) Campos, Localidad y Causalidad Microfisica](02_campos_localidad_y_causalidad.md)

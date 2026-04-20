@@ -149,7 +149,7 @@ Convertir el bloque inicial del tutorial en una estructura mas cercana a un curs
 - Se reorganizo `Tutorial/` por modulos tematicos.
 - Se crearon cuatro carpetas nuevas para relatividad, accion y simetrias, cuantizacion, e interacciones.
 - Se añadieron ocho documentos extensos nuevos.
-- Los articulos originales pasaron a funcionar como portadas e indices de navegacion.
+- Las portadas originales pasaron a funcionar como indices de navegacion.
 - Se actualizo el `Tutorial/README.md` para reflejar la nueva arquitectura.
 
 ### Resultado

@@ -115,3 +115,16 @@ Una simetria gauge no es simplemente una simetria global hecha mas complicada. A
 ## 13. Cierre
 
 La QFT es, en gran medida, una teoria de campos guiada por simetrias. Entender grupos, generadores y representaciones convierte muchas formulas que parecen arbitrarias en consecuencias estructurales naturales.
+
+## 14. Referencias y lecturas recomendadas
+
+- Base: introducciones breves a grupos continuos y simetrias para fisicos.
+- Complementaria: Zee, intuicion sobre simetria como principio organizador.
+- Profundizacion: textos de grupos de Lie y representaciones orientados a fisica de particulas.
+
+
+---
+
+## Navegacion del tutorial
+
+[(anterior) Oscilador Armonico Cuantico](03_oscilador_armonico_cuantico.md) | [(siguiente) Delta de Dirac y Transformadas de Fourier](05_delta_de_dirac_y_transformadas_de_fourier.md)

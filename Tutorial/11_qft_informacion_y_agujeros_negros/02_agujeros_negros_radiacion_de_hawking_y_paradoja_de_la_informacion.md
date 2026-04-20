@@ -93,8 +93,30 @@ Desde este punto de vista, los agujeros negros actuan como un laboratorio extrem
 - La entropia del agujero negro conecta gravedad, termodinamica e informacion.
 - La paradoja de la informacion es una ventana hacia la gravedad cuantica, no un detalle tecnico marginal.
 
-## 9. Ejercicios sugeridos
+## 9. Ejemplo corto de lectura
+
+Si la radiacion observada parece termica, la pregunta correcta no es solo "¿sale calor del agujero negro?", sino "¿de que sistema global se ha trazado informacion para que el observador exterior vea un estado aparentemente termico?". Esa reformulacion vuelve la paradoja mucho mas precisa.
+
+## 10. Cuaderno asociado
+
+- `../../Cuadernos/ejemplos/08_entrelazamiento_y_horizontes.ipynb`: usarlo para conectar termicidad efectiva y acceso parcial a grados de libertad.
+- `../../Cuadernos/problemas_resueltos/12_qft_informacion_y_agujeros_negros.ipynb`: usarlo para revisar Hawking, Bekenstein-Hawking y la formulacion basica de la paradoja.
+
+## 11. Ejercicios sugeridos
 
 1. Explicar por que un observador exterior describe un estado reducido y no el estado global completo.
 2. Discutir por que la termicidad efectiva no implica automaticamente perdida fundamental de informacion.
 3. Relacionar la ley de area de la entropia de Bekenstein-Hawking con la intuicion holografica.
+
+## 12. Referencias y lecturas recomendadas
+
+- Base: reseñas pedagogicas sobre radiacion de Hawking.
+- Complementaria: Birrell y Davies, campos cuanticos en espacio-tiempo curvo.
+- Profundizacion: revisiones modernas sobre paradoja de la informacion, unitaridad y holografia.
+
+
+---
+
+## Navegacion del tutorial
+
+[(anterior) QFT, informacion y entrelazamiento](01_qft_informacion_y_entrelazamiento.md) | [(siguiente) Efecto Unruh y Vacio de Rindler](03_efecto_unruh_y_vacio_de_rindler.md)

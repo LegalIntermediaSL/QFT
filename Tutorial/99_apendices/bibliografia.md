@@ -1,41 +1,104 @@
 # Bibliografía y Referencias Comentadas
 
-Esta sección recopila los textos y recursos fundamentales utilizados para la elaboración de este tutorial, con breves comentarios sobre su enfoque y nivel de dificultad.
+Esta seccion recopila textos y recursos fundamentales para la elaboracion del tutorial. La idea no es solo listar referencias, sino orientar el estudio segun nivel, estilo y bloque tematico.
 
-## Libros de Texto Clásicos
+## Ruta corta recomendada
 
-1. **Peskin, M. E., & Schroeder, D. V. (1995). An Introduction to Quantum Field Theory.**
-   - *Comentario*: Es el estándar en la mayoría de los cursos de posgrado. Muy completo en técnicas de cálculo y diagramas de Feynman. A veces puede ser denso en las derivaciones, por lo que se recomienda tener a mano un texto más conceptual.
+Si hubiera que empezar con una seleccion minima y equilibrada:
 
-2. **Srednicki, M. (2007). Quantum Field Theory.**
-   - *Comentario*: Organizado en tres secciones muy claras (Campos escalares, espinores y gauge). Es famoso por su pedagogía y por tratar la integral de camino desde el principio.
+- **Tong, D. Lectures on Quantum Field Theory.**
+  - Comentario: Muy claras, gratuitas y modernas. Funcionan muy bien como columna vertebral pedagogica.
+- **Srednicki, M. Quantum Field Theory.**
+  - Comentario: Excelente para pasar de intuicion a calculo con una progresion limpia.
+- **Peskin, M. E., & Schroeder, D. V. An Introduction to Quantum Field Theory.**
+  - Comentario: Referencia estandar para amplitudes, diagramas y renormalizacion.
+- **Zee, A. Quantum Field Theory in a Nutshell.**
+  - Comentario: Ideal para no perder la intuicion fisica mientras el formalismo crece.
 
-3. **Zee, A. (2010). Quantum Field Theory in a Nutshell.**
-   - *Comentario*: Enfocado en la intuición física y la belleza del formalismo. No es el mejor para aprender a calcular secciones eficaces paso a paso, pero es insuperable para entender "de qué trata todo esto".
+## Referencias por nivel
 
-4. **Tong, D. Lectures on Quantum Field Theory.**
-   - *Comentario*: Disponibles gratuitamente online. Son extremadamente claras y modernas. El enfoque de David Tong es muy valorado por estudiantes de todo el mundo.
+### Introductorias
 
-5. **Itzykson, C., & Zuber, J. B. (1980). Quantum Field Theory.**
-   - *Comentario*: Un tomo enciclopédico. Muy riguroso y detallado, aunque puede resultar abrumador como primer contacto.
+1. **Tong, D. Lectures on Quantum Field Theory.**
+   - Comentario: Recomendadas como entrada principal por claridad y secuencia.
 
-## Temas Modernos y Avanzados (EFT, Información, Agujeros Negros)
+2. **Zee, A. Quantum Field Theory in a Nutshell.**
+   - Comentario: Refuerza intuicion, motivacion y panorama conceptual.
 
-1. **Manohar, A. V. (2018). Introduction to Effective Field Theories.**
-   - *Comentario*: Un curso excelente y moderno sobre cómo construir y utilizar EFTs en física de partículas.
-2. **Harlow, D. (2016). Jerusalem Lectures on Black Holes and Quantum Information.**
-   - *Comentario*: Una introducción moderna que conecta la relatividad general, la QFT y la información cuántica. Crucial para entender el estado actual del debate sobre la paradoja de la información.
-3. **Preskill, J. Lecture Notes on Quantum Computation.**
-   - *Comentario*: Aunque es de computación cuántica, los capítulos sobre información y entrelazamiento en sistemas cuánticos son la base para la QFT de información.
+3. **Schwartz, M. D. Quantum Field Theory and the Standard Model.**
+   - Comentario: Muy bueno para quien quiera una transicion ordenada hacia gauge, amplitudes y Modelo Estandar.
 
-## Herramientas Computacionales
+### Intermedias
 
-1. **FeynCalc (Mathematica)**: [https://feyncalc.github.io/](https://feyncalc.github.io/)
-   - La herramienta estándar para cálculos automáticos de trazas, diagramas y amplitudes.
-2. **SymPy (Python)**: [https://www.sympy.org/](https://www.sympy.org/)
-   - Suite de matemáticas simbólicas para Python utilizada en este tutorial para álgebra de Dirac y manipulaciones básicas.
-3. **Pyfeyn2**: [https://pyfeyn2.readthedocs.io/](https://pyfeyn2.readthedocs.io/)
-   - Librería para dibujar diagramas de Feynman con calidad de publicación usando Python.
+1. **Srednicki, M. Quantum Field Theory.**
+   - Comentario: Muy fuerte para campo escalar, fermiones, gauge e integral de camino.
+
+2. **Peskin, M. E., & Schroeder, D. V. An Introduction to Quantum Field Theory.**
+   - Comentario: Texto de referencia clasico para teoria perturbativa y renormalizacion.
+
+3. **Weinberg, S. The Quantum Theory of Fields, Vol. I.**
+   - Comentario: Mas abstracto y estructural. Muy valioso para entender por que la teoria toma la forma que toma.
+
+### Avanzadas o de consulta
+
+1. **Itzykson, C., & Zuber, J. B. Quantum Field Theory.**
+   - Comentario: Enciclopedico y detallado. Muy util como obra de consulta.
+
+2. **Weinberg, S. The Quantum Theory of Fields, Vols. I-III.**
+   - Comentario: Referencia de largo alcance para formalismo, simetrias y aplicaciones avanzadas.
+
+3. **Birrell, N. D., & Davies, P. C. W. Quantum Fields in Curved Space.**
+   - Comentario: Referencia natural para el bloque de Hawking, Unruh y espacio-tiempo curvo.
+
+## Referencias por bloque del tutorial
+
+### 00-02: Fundamentos, relatividad y campos
+
+- Tong para motivacion fisica y claridad secuencial.
+- Zee para intuicion sobre por que los campos desplazan a las particulas como objetos fundamentales.
+- Weinberg I para una lectura mas estructural de simetria y localidad.
+
+### 03-05: Accion, cuantizacion e interacciones
+
+- Srednicki para accion, cuantizacion y funcional generador.
+- Peskin y Schroeder para matriz S, reglas de Feynman y amplitudes.
+- Schwartz para un tono muy didactico en teoria perturbativa.
+
+### 06-07: Fermiones, gauge y QED
+
+- Srednicki para espinores y gauge.
+- Peskin y Schroeder para QED y reglas de Feynman.
+- Schwartz para una presentacion muy clara de la estructura del Modelo Estandar que empieza ya en QED.
+
+### 08-09: Integral de camino y renormalizacion
+
+- Srednicki para integral funcional y correladores.
+- Peskin y Schroeder para renormalizacion perturbativa.
+- Zee para intuicion sobre grupo de renormalizacion y escalas.
+
+### 10: Modelo Estandar
+
+- Schwartz como texto particularmente util para presentar el lagrangiano y la fenomenologia minima.
+- Peskin y Schroeder para el lenguaje de amplitudes y sectores gauge.
+- **Particle Data Group (PDG)** para parametros, masas, decaimientos y tablas de referencia.
+
+### 11: QFT, informacion y agujeros negros
+
+- Birrell y Davies para campos en espacio-tiempo curvo.
+- Revisiones pedagogicas sobre efecto Unruh y radiacion de Hawking.
+- Articulos y notas de informacion cuantica para entrelazamiento, entropia y estados reducidos.
+
+## Recursos Online
+
+- [arXiv.org](https://arxiv.org/): repositorio principal de articulos de investigacion en fisica de altas energias y temas afines.
+- [Particle Data Group (PDG)](https://pdg.lbl.gov/): referencia oficial para masas, acoplamientos, anchos de decaimiento y panorama experimental del Modelo Estandar.
+- [Notas de David Tong](https://www.damtp.cam.ac.uk/user/tong/qft.html): uno de los mejores puntos de entrada gratuitos al tema.
+
+## Uso sugerido dentro del repositorio
+
+- Cada modulo deberia terminar con una seccion breve de referencias y lecturas recomendadas.
+- Cada documento tecnico deberia citar al menos una referencia base y una complementaria.
+- Los apendices pueden crecer con bibliografia tematica mas fina segun se desarrollen nuevos bloques.
 
 ---
 [Volver al Índice del Tutorial](../README.md)

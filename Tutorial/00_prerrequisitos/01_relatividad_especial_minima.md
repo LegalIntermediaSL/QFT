@@ -159,3 +159,16 @@ Todo esto empuja de forma natural hacia el lenguaje de campos cuanticos.
 ## 13. Cierre
 
 La relatividad especial es el esqueleto cinemático de la QFT. Sin ella, conceptos como causalidad microfisica, covariancia de Lorentz y clasificacion de particulas por masa y espin no tendrian el mismo sentido estructural.
+
+## 14. Referencias y lecturas recomendadas
+
+- Base: notas introductorias de relatividad especial orientadas a fisica teorica.
+- Complementaria: Tong, repasos de relatividad y convenciones utiles para QFT.
+- Profundizacion: cualquier texto estandar de relatividad especial con cuatro-vectores y transformaciones de Lorentz.
+
+
+---
+
+## Navegacion del tutorial
+
+[(anterior) Indice del tutorial](../README.md) | [(siguiente) Notacion Tensorial y Convenciones](02_notacion_tensorial_y_convenciones.md)

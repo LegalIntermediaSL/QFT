@@ -18,16 +18,16 @@ El formato sigue una adaptacion simple de Keep a Changelog y usa versionado sema
 - Carpeta `Tutorial/` como nucleo inicial del contenido tecnico.
 - `Tutorial/README.md` con secuencia recomendada de lectura.
 - `Tutorial/conceptos_fundamentales.md` como mapa conceptual de entrada a la QFT.
-- `Tutorial/articulo_01_relatividad_y_campos.md`.
-- `Tutorial/articulo_02_accion_lagrangiana_y_noether.md`.
-- `Tutorial/articulo_03_cuantizacion_canonica_del_campo_escalar.md`.
-- `Tutorial/articulo_04_interacciones_y_diagramas_de_feynman.md`.
+- `Tutorial/portada_01_relatividad_y_campos.md`.
+- `Tutorial/portada_02_accion_lagrangiana_y_noether.md`.
+- `Tutorial/portada_03_cuantizacion_canonica_del_campo_escalar.md`.
+- `Tutorial/portada_04_interacciones_y_diagramas_de_feynman.md`.
 - Modulos `01_relatividad_y_campos/`, `02_accion_lagrangiana_y_simetrias/`, `03_cuantizacion_del_campo_escalar/` y `04_interacciones_y_perturbaciones/`.
 - Ocho documentos extensos nuevos que desarrollan en mayor profundidad los bloques introductorios del tutorial.
 
 ### Changed
 
-- Los articulos introductorios dejaron de ser el tratamiento principal y pasaron a funcionar como portadas de navegacion hacia modulos mas amplios.
+- Las portadas introductorias dejaron de ser el tratamiento principal y pasaron a funcionar como indices de navegacion hacia modulos mas amplios.
 - `Tutorial/README.md` se reorganizo para reflejar la nueva arquitectura modular.
 - Se ampliaron varios articulos de los modulos de relatividad y perturbaciones con mas desarrollo conceptual, secciones nuevas y ejercicios sugeridos.
 - `Tutorial/` se reorganizo con una estructura curricular numerada, nuevos indices de modulo y diagramas Mermaid en la portada principal.
@@ -42,6 +42,7 @@ El formato sigue una adaptacion simple de Keep a Changelog y usa versionado sema
 - `Tutorial/09_renormalizacion/README.md`
 - `Tutorial/10_modelo_estandar/README.md`
 - `Tutorial/99_apendices/README.md`
+- `Tutorial/99_apendices/plantilla_de_capitulo.md`
 - Directorio `Cuadernos/` con subcarpetas para `ejemplos/` y `problemas_resueltos/`.
 - `Cuadernos/README.md` con convenciones y objetivo de los notebooks.
 - Dos notebooks base para iniciar ejemplos y problemas resueltos.
@@ -60,6 +61,20 @@ El formato sigue una adaptacion simple de Keep a Changelog y usa versionado sema
 - Desarrollo sustancial de los notebooks de `Cuadernos/problemas_resueltos/06` a `12`.
 - `Tutorial/README.md` ahora incluye el modulo avanzado sobre informacion y agujeros negros.
 - `Cuadernos/README.md` se amplio para reflejar la nueva cobertura practica del proyecto.
+- La serie `articulo_*` se renombro conceptualmente como `portada_*` para evitar la apariencia de numeracion truncada.
+- Se completo la navegacion de `mkdocs.yml` para mostrar todos los modulos del recorrido principal.
+- Los `README` de modulo ahora incluyen prerequisitos, lecturas recomendadas y enlaces de navegacion secuencial.
+- La bibliografia comentada se amplio por nivel y por bloque tematico.
+- Los documentos tecnicos de `06_fermiones_y_dirac/`, `07_gauge_y_qed/`, `08_integral_de_camino/` y `09_renormalizacion/` se ampliaron con secciones nuevas, ejemplos orientativos y referencias por documento.
+- El modulo `10_modelo_estandar/` se dividio en un panorama general y cuatro documentos tematicos sobre gauge, quiralidad, Higgs y Yukawas.
+- Los documentos tecnicos de `00_prerrequisitos/` a `05_interacciones_y_perturbaciones/` quedaron mas homogéneos al añadir advertencias y referencias por documento.
+- Se añadió un apéndice de convenciones globales y se reforzó el enlace pedagógico entre capítulos y cuadernos, especialmente en el módulo `10_modelo_estandar/`.
+- El modulo `11_qft_informacion_y_agujeros_negros/` se amplió con un documento nuevo sobre efecto Unruh y vacío de Rindler, y sus textos quedaron mejor conectados con cuadernos y referencias.
+- El modulo `07_gauge_y_qed/` se amplió con documentos nuevos sobre gauge-fixing, propagador del foton, identidad de Ward y un ejemplo básico de scattering en QED.
+- El modulo `09_renormalizacion/` se amplió con documentos nuevos sobre regularizacion dimensional en $\phi^4$ y funcion beta con running couplings.
+- El modulo `08_integral_de_camino/` se amplió con documentos nuevos sobre accion efectiva, potencial efectivo y transformaciones de Bogoliubov como puente hacia temas avanzados.
+- El modulo `06_fermiones_y_dirac/` recibió una segunda capa de profundizacion con documentos nuevos sobre algebra gamma, bilineales de Dirac, corriente conservada y limite no relativista.
+- Se añadió una tercera capa selectiva con nuevos documentos sobre quiralidad/Weyl/Majorana en `06`, polarizaciones y sumas de espín en `07`, esquema $\overline{\text{MS}}$ y comparación QED/QCD en `09`, y curva de Page con unitaridad en `11`.
 
 ## [0.1.0] - 2026-04-18
 
@@ -77,3 +92,8 @@ El formato sigue una adaptacion simple de Keep a Changelog y usa versionado sema
 
 - Esta version marca el arranque formal de la documentacion del proyecto.
 - El contenido tecnico del tutorial todavia esta pendiente de desarrollo.
+- Se añadió navegacion lineal `(anterior) (siguiente)` al final de los 48 articulos del recorrido principal, incluyendo portadas-resumen y modulos `00` a `11`.
+- Se amplió el modulo `05_interacciones_y_perturbaciones/` con nuevos articulos sobre reduccion LSZ, correladores amputados y una sintesis operativa de reglas de Feynman, ajustando tambien la navegacion lineal del tutorial.
+- Se reforzó `04_cuantizacion_del_campo_escalar/` con un nuevo articulo sobre propagador, causalidad y funcion de Green, y se añadió un apendice transversal de reglas de Feynman y propagadores para unificar consulta y notacion entre modulos.
+- Se profundizó `10_modelo_estandar/` con mezcla electrodébil, angulo de Weinberg, masas de $W/Z$ y una nota nueva sobre corrientes cargadas y neutras; ademas se añadieron ejercicios de modulo en `04` y `05`, y el glosario paso a cubrir tambien conceptos tecnicos ademas de notacion.
+- Se añadió una nueva capa de ejercicios de modulo en `06_fermiones_y_dirac/`, `07_gauge_y_qed/` y `10_modelo_estandar/` para equilibrar mejor exposicion teorica y practica guiada.

@@ -45,6 +45,15 @@ Los cuadernos no reemplazan el desarrollo teorico del tutorial. Deben usarse par
 - visualizar relaciones entre magnitudes fisicas;
 - practicar con problemas seleccionados.
 
+## Enlace con el tutorial
+
+Cuando un documento teorico cite un cuaderno, conviene indicar explicitamente cual es su funcion. Por ejemplo:
+
+- un notebook de `ejemplos/` puede servir para verificar una identidad, visualizar una relacion o seguir una cuenta corta;
+- un notebook de `problemas_resueltos/` puede servir para practicar una derivacion mas larga o revisar una solucion guiada.
+
+Las referencias mas utiles no son solo del tipo "ver notebook X", sino "usar notebook X para comprobar Y".
+
 ## Convenciones
 
 - Mantener nombres de archivo numerados y descriptivos.

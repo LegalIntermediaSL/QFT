@@ -153,3 +153,16 @@ Esta es una de las sutilezas mas importantes del tema: la teoria cuantica puede 
 ## 17. Cierre
 
 La fuerza del formalismo de campos viene de que alinea tres exigencias en un mismo lenguaje: dinamica local, covariancia relativista y cuantizacion de excitaciones. Esa triple alineacion es lo que vuelve a la QFT mucho mas que una generalizacion tecnica de la mecanica cuantica.
+
+## 18. Referencias y lecturas recomendadas
+
+- Base: Tong, localidad, causalidad y campos.
+- Complementaria: Weinberg I, localidad y estructura relativista.
+- Profundizacion: textos avanzados de QFT con enfasis en microcausalidad y cluster decomposition.
+
+
+---
+
+## Navegacion del tutorial
+
+[(anterior) Choque Entre Mecanica Cuantica y Relatividad Especial](01_choque_entre_mq_y_relatividad.md) | [(siguiente) Portada 02: Accion, Densidad Lagrangiana y Teorema de Noether](../portada_02_accion_lagrangiana_y_noether.md)

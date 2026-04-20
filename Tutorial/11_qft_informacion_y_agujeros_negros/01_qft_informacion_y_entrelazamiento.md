@@ -89,8 +89,30 @@ La paradoja de la informacion de agujeros negros nace precisamente de este cruce
 - La entropia de entrelazamiento aparece al restringir el estado global a una subregion.
 - Los horizontes convierten este tema en una cuestion fisica central, no solo formal.
 
-## 9. Ejercicios sugeridos
+## 9. Ejemplo corto de lectura
+
+Si el estado global del campo es puro pero solo puede observarse una subregion, la teoria efectiva del subsistema ya no tiene por que seguir siendo pura. Esa simple observacion resume por que entrelazamiento, informacion y acceso parcial aparecen juntos en QFT.
+
+## 10. Cuaderno asociado
+
+- `../../Cuadernos/ejemplos/08_entrelazamiento_y_horizontes.ipynb`: usarlo para reforzar la relacion entre subregiones, matrices reducidas y termicidad efectiva.
+- `../../Cuadernos/problemas_resueltos/12_qft_informacion_y_agujeros_negros.ipynb`: usarlo para practicar preguntas conceptuales del modulo.
+
+## 11. Ejercicios sugeridos
 
 1. Explicar con tus propias palabras por que un estado global puro puede producir un estado reducido mixto.
 2. Relacionar el concepto de entropia de entrelazamiento con la idea de grados de libertad inaccesibles.
 3. Discutir por que este tema prepara naturalmente la aparicion de la radiacion de Hawking.
+
+## 12. Referencias y lecturas recomendadas
+
+- Base: reseñas introductorias sobre entrelazamiento en QFT.
+- Complementaria: Birrell y Davies para el trasfondo de campos y observadores parciales.
+- Profundizacion: textos y notas sobre matrices reducidas, entropia de von Neumann y subregiones en QFT.
+
+
+---
+
+## Navegacion del tutorial
+
+[(anterior) Corrientes Cargadas y Neutras](../10_modelo_estandar/06_corrientes_cargadas_y_neutras.md) | [(siguiente) Agujeros negros, radiacion de Hawking y paradoja de la informacion](02_agujeros_negros_radiacion_de_hawking_y_paradoja_de_la_informacion.md)

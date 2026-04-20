@@ -108,6 +108,25 @@ Por eso vale la pena entender bien la teoria clasica: la cuantizacion reutiliza 
 - En que sentido cada modo se comporta como un oscilador armonico.
 - Que informacion aporta la densidad hamiltoniana.
 
-## 10. Cierre
+## 10. Advertencias utiles
+
+- La expansion en modos de un campo libre no es una aproximacion, sino una descomposicion estructural.
+- Un modo clasico no es todavia una particula: la interpretacion particula aparece tras cuantizar.
+- La condicion on-shell no significa que toda configuracion clasica sea una onda plana unica.
+
+## 11. Cierre
 
 La teoria clasica del campo escalar libre ya contiene en germen casi todo lo necesario para la cuantizacion. El paso cuantico no inventa una estructura completamente nueva; reorganiza y promueve a operadores la estructura modal que ya estaba presente.
+
+## 12. Referencias y lecturas recomendadas
+
+- Base: Srednicki, campo escalar libre y expansion en modos.
+- Complementaria: Tong, lectura pedagogica de Klein-Gordon y osciladores.
+- Profundizacion: Peskin y Schroeder, formulacion clasica previa a la cuantizacion.
+
+
+---
+
+## Navegacion del tutorial
+
+[(anterior) Portada 03: Cuantizacion Canonica del Campo Escalar Libre](../portada_03_cuantizacion_canonica_del_campo_escalar.md) | [(siguiente) Cuantizacion Canonica y Espacio de Fock](02_cuantizacion_canonica_y_espacio_de_fock.md)

@@ -165,6 +165,25 @@ Si hubiera que condensar el corazon de la QFT en una secuencia corta, seria algo
 - Por que los diagramas de Feynman no son dibujos literales sino terminos de una expansion
 - Que significa que una teoria sea renormalizable o efectiva
 
-## 14. Cierre
+## 14. Advertencias utiles
+
+- No conviene identificar campo cuantico con una onda clasica difusa sin mas.
+- Particula no significa objeto primario absoluto dentro de la teoria.
+- Renormalizacion no debe entenderse solo como un truco tecnico, sino tambien como lectura fisica de escalas.
+
+## 15. Cierre
 
 La QFT puede parecer abrumadora al principio porque mezcla fisica, algebra, geometria, analisis y principios de simetria en un solo lenguaje. Sin embargo, casi todo el edificio descansa sobre unas pocas ideas rectoras: campos, simetria, accion, cuantizacion, causalidad e interaccion. Tener ese mapa desde el inicio vuelve mucho mas legible el resto del tutorial.
+
+## 16. Referencias y lecturas recomendadas
+
+- Base: Zee, capitulos iniciales sobre intuicion global de QFT.
+- Complementaria: Tong, introduccion general al problema fisico que resuelve la teoria.
+- Profundizacion: Peskin y Schroeder, secciones introductorias del formalismo.
+
+
+---
+
+## Navegacion del tutorial
+
+[(anterior) Delta de Dirac y Transformadas de Fourier](../00_prerrequisitos/05_delta_de_dirac_y_transformadas_de_fourier.md) | [(siguiente) Principios Estructurales de la Teoria Cuantica de Campos](02_principios_estructurales_de_la_qft.md)
