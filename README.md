@@ -72,13 +72,29 @@ Este material puede ser util para:
 
 Aunque el contenido tecnico todavia esta en una fase temprana, el repositorio ya incorpora una estructura documental minima:
 
-- `README.md`: presentacion general, objetivos y direccion del proyecto.
-- `bitacora.md`: registro narrativo del progreso, decisiones y siguientes pasos.
-- `changelog.md`: historial de cambios relevantes del repositorio.
-- `Tutorial/`: primer bloque de contenido tecnico del tutorial.
-- `Cuadernos/`: notebooks Jupyter para ejemplos y problemas resueltos.
-- `Notas/`: deposito de PDFs, apuntes, resumenes y referencias para ampliar el tutorial.
-- `Imagenes/`: recursos visuales para diagramas, figuras y material grafico del proyecto.
+- [README.md](README.md): presentacion general, objetivos y direccion del proyecto.
+- [bitacora.md](bitacora.md): registro narrativo del progreso, decisiones y siguientes pasos.
+- [changelog.md](changelog.md): historial de cambios relevantes del repositorio.
+- [Tutorial/](Tutorial/README.md): primer bloque de contenido tecnico del tutorial.
+- [Herramientas Computacionales](Tutorial/99_apendices/computacion_qft.md): guía sobre FeynCalc y Python-HEP.
+- [Cuadernos/](Cuadernos/): notebooks Jupyter para ejemplos y problemas resueltos.
+- [Notas/](Notas/): deposito de PDFs, apuntes, resumenes y referencias para ampliar el tutorial.
+- [Imagenes/](Imagenes/): recursos visuales para diagramas, figuras y material grafico del proyecto.
+
+## Instalación y Uso
+
+Para ejecutar los cuadernos interactivos (`Cuadernos/`) y las simulaciones, se recomienda crear un entorno virtual e instalar las dependencias necesarias:
+
+```bash
+# Crear entorno virtual
+python -m venv venv
+source venv/bin/activate  # En Windows: venv\Scripts\activate
+
+# Instalar dependencias
+pip install -r requirements.txt
+```
+
+Las bibliotecas principales utilizadas son `numpy`, `sympy` (para cálculo simbólico), `matplotlib` y `ipython`.
 
 ## Hoja de ruta sugerida
 

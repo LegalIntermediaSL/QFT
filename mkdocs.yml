@@ -1,0 +1,38 @@
+site_name: QFT Tutorial
+site_description: Tutorial completo sobre Teoría Cuántica de Campos
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: deep purple
+    accent: cyan
+  features:
+    - navigation.sections
+    - navigation.expand
+    - content.code.copy
+
+nav:
+  - Inicio: README.md
+  - Tutorial:
+    - Índice: Tutorial/README.md
+    - 00. Prerrequisitos: Tutorial/00_prerrequisitos/README.md
+    - 01. Fundamentos: Tutorial/01_fundamentos_conceptuales/README.md
+    - 06. Fermiones: Tutorial/06_fermiones_y_dirac/README.md
+  - Apéndices:
+    - Bibliografía: Tutorial/99_apendices/bibliografia.md
+    - Herramientas Computacionales: Tutorial/99_apendices/computacion_qft.md
+    - Glosario de Notación: Tutorial/99_apendices/glosario_notacion.md
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.mermaid_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition

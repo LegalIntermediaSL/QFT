@@ -9,16 +9,28 @@ Este modulo desarrolla la descripcion relativista de fermiones, espinores y ecua
 1. `01_motivacion_y_ecuacion_de_dirac.md`
 2. `02_cuantizacion_de_campos_fermionicos.md`
 
-## Mapa del modulo
-
 ```mermaid
 flowchart TD
-    A["Relacion relativista energia-momento"] --> B["Linealizacion de Dirac"]
-    B --> C["Espinores y matrices gamma"]
-    C --> D["Soluciones de particula y antiparticula"]
-    D --> E["Cuantizacion fermionica"]
-    E --> F["Anticonmutadores y estadistica de Fermi"]
+    A["Relación E-p Relativista"] -- "Linealización" --> B["Ecuación de Dirac"]
+    B --> C["Álgebra de Clifford {γμ, γν} = 2ηuv"]
+    C --> D["Matrices Gamma (Base de Weyl/Dirac)"]
+    D --> E["Espinores de Dirac (4 componentes)"]
+    E --> F["Adjunto de Dirac (ψ_bar = ψ†γ0)"]
+    F --> G["Lagrangiano de Dirac"]
+    G --> H["Soluciones (u, v) Plane Wave"]
+    H --> I["Cuantización (Anticonmutadores)"]
+    I --> J["Espacio de Fock Fermiónico"]
 ```
+
+## Conceptos Clave Añadidos
+
+### El Lagrangiano de Dirac
+A diferencia del campo escalar, el lagrangiano de Dirac debe ser lineal en derivadas para ser consistente con la ecuación de movimiento de primer orden:
+$$\mathcal{L} = \bar{\psi}(i\gamma^\mu \partial_\mu - m)\psi$$
+Aquí, $\bar{\psi} = \psi^\dagger \gamma^0$ es indispensable para garantizar la invariancia de Lorentz.
+
+### Espinores de Dirac
+Los espinores de 4 componentes no son vectores de Lorentz; transforman bajo la representación $(1/2, 0) \oplus (0, 1/2)$. Esto permite describir tanto partículas con helicidad izquierda como derecha, y es la base para entender la quiralidad en el Modelo Estándar.
 
 ## Resultado esperado
 

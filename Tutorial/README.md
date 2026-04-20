@@ -9,36 +9,57 @@ La idea de esta organizacion es simple:
 - llegar mas tarde a interacciones, gauge, renormalizacion y teorias fisicas concretas;
 - mantener materiales de apoyo separados del hilo principal.
 
-## Mapa del curso
-
 ```mermaid
 flowchart TD
-    A["00 Prerrequisitos"] --> B["01 Fundamentos conceptuales"]
-    B --> C["02 Relatividad y campos"]
-    C --> D["03 Accion y simetrias"]
-    D --> E["04 Cuantizacion del campo escalar"]
-    E --> F["05 Interacciones y perturbaciones"]
-    F --> G["06 Fermiones y Dirac"]
-    G --> H["07 Gauge y QED"]
-    H --> I["08 Integral de camino"]
-    I --> J["09 Renormalizacion"]
-    J --> K["10 Modelo Estandar"]
-    K --> L["11 QFT, informacion y agujeros negros"]
-    L --> M["99 Apendices"]
+    subgraph Fundamentos
+        A["00 Prerrequisitos"] --> B["01 Fundamentos conceptuales"]
+        B --> C["02 Relatividad y campos"]
+        C --> D["03 Acción y simetrías"]
+    end
+
+    subgraph Cuantizacion ["Cuantización"]
+        D --> E["04 Campo escalar (U!Canónica)"]
+        E --> F["05 Interacciones (Perturbaciones)"]
+        F --> G["06 Fermiones y Dirac"]
+        G --> H["07 Gauge y QED"]
+    end
+
+    subgraph Avanzado ["Temas Avanzados"]
+        H --> I["08 Integral de camino"]
+        I --> J["09 Renormalización"]
+        J --> K["10 Modelo Estándar"]
+        K -- "Efectos Cuánticos" --> L["11 QFT e Información"]
+    end
+
+    subgraph Apendices ["Material de Consulta"]
+        M["99 Apéndices"]
+        N["Computación QFT"]
+    end
+
+    D -.-> H
+    F -.-> I
+    K -.-> M
 ```
 
 ## Ruta recomendada de lectura
 
-Si estas empezando desde cero, el orden sugerido es:
+Para una experiencia de aprendizaje secuencial, sigue este orden:
 
-1. `00_prerrequisitos/README.md`
-2. `01_fundamentos_conceptuales/README.md`
-3. `02_relatividad_y_campos/README.md`
-4. `03_accion_y_simetrias/README.md`
-5. `04_cuantizacion_del_campo_escalar/README.md`
-6. `05_interacciones_y_perturbaciones/README.md`
-7. `10_modelo_estandar/README.md` como lectura avanzada
-8. `11_qft_informacion_y_agujeros_negros/README.md` como frontera conceptual avanzada
+| Orden | Módulo | Descripción |
+| :--- | :--- | :--- |
+| 1 | [00 Prerrequisitos](00_prerrequisitos/README.md) | Herramientas matemáticas y física básica |
+| 2 | [01 Fundamentos](01_fundamentos_conceptuales/README.md) | ¿Qué es un campo y por qué QFT? |
+| 3 | [02 Relatividad y Campos](02_relatividad_y_campos/README.md) | Localidad y causalidad |
+| 4 | [03 Acción y Simetrías](03_accion_y_simetrias/README.md) | Noether y lagrangianos de campo |
+| 5 | [04 Campo Escalar](04_cuantizacion_del_campo_escalar/README.md) | Cuantización canónica y Fock |
+| 6 | [05 Interacciones](05_interacciones_y_perturbaciones/README.md) | Matriz S y diagramas de Feynman |
+| 7 | [10 Modelo Estándar](10_modelo_estandar/README.md) | Aplicación física real (Avanzado) |
+| 8 | [11 Fronteras](11_qft_informacion_y_agujeros_negros/README.md) | Hawking e Información (Avanzado) |
+
+---
+
+| [<< Inicio (README Principal)](../README.md) | [Bibliografía >>](99_apendices/bibliografia.md) |
+| :--- | :--- |
 
 ## Flujo conceptual
 
@@ -102,7 +123,10 @@ Modulo de frontera donde la QFT se cruza con teoria de la informacion cuantica, 
 
 ### `99_apendices/`
 
-Espacio reservado para convenciones, bibliografia comentada, tablas de notacion y ejercicios resueltos.
+Espacio reservado para convenciones, ejercicios resueltos y material de consulta:
+- [Bibliografía comentada](99_apendices/bibliografia.md)
+- [Herramientas Computacionales (FeynCalc/Python)](99_apendices/computacion_qft.md)
+- Tablas de notación (Próximamente)
 
 ## Arquitectura del Modelo Estandar
 
