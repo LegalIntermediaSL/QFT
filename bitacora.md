@@ -320,8 +320,26 @@ Convertir la carpeta `Cuadernos/` en una capa practica real del proyecto y abrir
 
 La capa de notebooks deja de ser principalmente esqueletica y pasa a funcionar como apoyo pedagogico real. Ademas, el tutorial incorpora una frontera conceptual nueva donde la QFT se conecta con termicidad, entropia y unitaridad en presencia de horizontes.
 
+
+## Entrada de expansión de frontera y herramientas
+
+### Fecha
+
+2026-04-20
+
+### Objetivo
+
+Lanzar la fase de expansión del tutorial centrada en profundidad técnica de fermiones, introducción a EFT y mejora de la capa práctica y visual.
+
+### Trabajo realizado
+
+- Se definió el Plan de Implementación para la ampliación del proyecto.
+- Se estableció el Mapa de Tareas (`task.md`) para el seguimiento del desarrollo.
+- Se inició la mejora visual de la documentación.
+
 ### Pendientes inmediatos
 
-- Profundizar tambien los notebooks de problemas resueltos `01` a `05`.
-- Añadir diagramas o figuras para el modulo 11.
-- Extender con mas detalle computacional los cuadernos de renormalizacion y gauge.
+- Implementar el Mapa de Dependencias Maestro.
+- Redactar el contenido de Espinores de Weyl y Majorana.
+- Abrir el módulo de Teorías de Campo Efectivas (EFT).
+- Desarrollar el notebook de álgebra de Dirac con SymPy.

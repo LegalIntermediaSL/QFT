@@ -17,28 +17,34 @@ flowchart TD
         C --> D["03 Acción y simetrías"]
     end
 
-    subgraph Cuantizacion ["Cuantización"]
+    subgraph Cuantizacion ["Cuantización y Partículas"]
         D --> E["04 Campo escalar (U!Canónica)"]
         E --> F["05 Interacciones (Perturbaciones)"]
         F --> G["06 Fermiones y Dirac"]
         G --> H["07 Gauge y QED"]
     end
 
-    subgraph Avanzado ["Temas Avanzados"]
+    subgraph Moderno ["QFT Moderna y EFT"]
         H --> I["08 Integral de camino"]
         I --> J["09 Renormalización"]
+        J --> L["12 Teorías de Campo Efectivas (EFT)"]
+        L --> M["13 Anomalías y Topología"]
+    end
+
+    subgraph Frontera ["Física de Partículas y Fronteras"]
         J --> K["10 Modelo Estándar"]
-        K -- "Efectos Cuánticos" --> L["11 QFT e Información"]
+        K -- "Efectos Cuánticos" --> N["11 QFT e Información"]
+        N --> O["Radiación de Hawking"]
     end
 
     subgraph Apendices ["Material de Consulta"]
-        M["99 Apéndices"]
-        N["Computación QFT"]
+        P["99 Apéndices"]
+        Q["Computación QFT"]
     end
 
     D -.-> H
     F -.-> I
-    K -.-> M
+    K -.-> P
 ```
 
 ## Ruta recomendada de lectura
@@ -55,6 +61,7 @@ Para una experiencia de aprendizaje secuencial, sigue este orden:
 | 6 | [05 Interacciones](05_interacciones_y_perturbaciones/README.md) | Matriz S y diagramas de Feynman |
 | 7 | [10 Modelo Estándar](10_modelo_estandar/README.md) | Aplicación física real (Avanzado) |
 | 8 | [11 Fronteras](11_qft_informacion_y_agujeros_negros/README.md) | Hawking e Información (Avanzado) |
+| 9 | [12 Teoría Efectiva (EFT)](12_teorias_de_campo_efectivas/README.md) | La QFT como descripción a baja energía |
 
 ---
 
@@ -158,9 +165,6 @@ Los archivos `articulo_01_...` a `articulo_04_...` se mantienen como portadas de
 
 Las extensiones mas naturales del tutorial siguen siendo:
 
-- `06_fermiones_y_dirac/`
-- `07_gauge_y_qed/`
-- `08_integral_de_camino/`
-- `09_renormalizacion/`
-- ampliacion de `10_modelo_estandar/`
-- consolidacion de `11_qft_informacion_y_agujeros_negros/`
+- `12_teorias_de_campo_efectivas/` (En desarrollo)
+- `13_anomalias_y_topologia/` (Planificado)
+- consolidación de los cuadernos de problemas resueltos

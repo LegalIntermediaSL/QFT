@@ -8,6 +8,7 @@ Este modulo desarrolla la descripcion relativista de fermiones, espinores y ecua
 
 1. `01_motivacion_y_ecuacion_de_dirac.md`
 2. `02_cuantizacion_de_campos_fermionicos.md`
+3. `03_weyl_majorana_y_teoria_de_grupos.md`
 
 ```mermaid
 flowchart TD

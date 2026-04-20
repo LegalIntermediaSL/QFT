@@ -19,10 +19,23 @@ Esta sección recopila los textos y recursos fundamentales utilizados para la el
 5. **Itzykson, C., & Zuber, J. B. (1980). Quantum Field Theory.**
    - *Comentario*: Un tomo enciclopédico. Muy riguroso y detallado, aunque puede resultar abrumador como primer contacto.
 
-## Recursos Online
+## Temas Modernos y Avanzados (EFT, Información, Agujeros Negros)
 
-- [arXiv.org](https://arxiv.org/): Repositorio principal de artículos de investigación en física de altas energías (hep-th, hep-ph).
-- [Particle Data Group (PDG)](https://pdg.lbl.gov/): Referencia oficial para valores de masas, constantes de acoplamiento y datos experimentales del Modelo Estándar.
+1. **Manohar, A. V. (2018). Introduction to Effective Field Theories.**
+   - *Comentario*: Un curso excelente y moderno sobre cómo construir y utilizar EFTs en física de partículas.
+2. **Harlow, D. (2016). Jerusalem Lectures on Black Holes and Quantum Information.**
+   - *Comentario*: Una introducción moderna que conecta la relatividad general, la QFT y la información cuántica. Crucial para entender el estado actual del debate sobre la paradoja de la información.
+3. **Preskill, J. Lecture Notes on Quantum Computation.**
+   - *Comentario*: Aunque es de computación cuántica, los capítulos sobre información y entrelazamiento en sistemas cuánticos son la base para la QFT de información.
+
+## Herramientas Computacionales
+
+1. **FeynCalc (Mathematica)**: [https://feyncalc.github.io/](https://feyncalc.github.io/)
+   - La herramienta estándar para cálculos automáticos de trazas, diagramas y amplitudes.
+2. **SymPy (Python)**: [https://www.sympy.org/](https://www.sympy.org/)
+   - Suite de matemáticas simbólicas para Python utilizada en este tutorial para álgebra de Dirac y manipulaciones básicas.
+3. **Pyfeyn2**: [https://pyfeyn2.readthedocs.io/](https://pyfeyn2.readthedocs.io/)
+   - Librería para dibujar diagramas de Feynman con calidad de publicación usando Python.
 
 ---
 [Volver al Índice del Tutorial](../README.md)

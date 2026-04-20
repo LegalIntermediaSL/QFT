@@ -26,7 +26,14 @@ Regularizar significa introducir un procedimiento temporal que haga finitas las 
 - regularizacion dimensional;
 - esquemas con masa auxiliar o reguladores adicionales.
 
-La regularizacion no es todavia la renormalizacion. Es el paso que vuelve las expresiones manipulables.
+### Regularización Dimensional (DimReg)
+Es el método preferido en la física moderna porque, a diferencia del cutoff, preserva la **invariancia gauge** y las simetrías de Lorentz.
+
+- **Idea central**: Evaluar las integrales en $d = 4 - \epsilon$ dimensiones espaciales, donde $d$ es un número complejo.
+- **Ventaja**: Las divergencias ultravioletas se manifiestan como polos en $\epsilon$ (términos proporcionales a $1/\epsilon$).
+- **Constante de escala**: Para mantener las dimensiones correctas de las constantes de acoplamiento, se introduce una escala de masa arbitraria $\mu$.
+
+La regularización no es todavia la renormalizacion. Es el paso que vuelve las expresiones manipulables.
 
 ## 5. Preguntas de estudio
 
