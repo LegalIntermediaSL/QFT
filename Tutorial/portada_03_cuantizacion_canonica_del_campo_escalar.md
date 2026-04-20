@@ -1,6 +1,6 @@
-# Articulo 3: Cuantizacion Canonica del Campo Escalar Libre
+# Portada 03: Cuantizacion Canonica del Campo Escalar Libre
 
-Este articulo deja de ser el tratamiento completo del tema y pasa a servir como indice del modulo de cuantizacion del campo escalar. El contenido ampliado queda distribuido en:
+Esta portada deja de ser el tratamiento completo del tema y pasa a servir como indice del modulo de cuantizacion del campo escalar. El contenido ampliado queda distribuido en:
 
 - `04_cuantizacion_del_campo_escalar/01_campo_escalar_clasico_y_modos_normales.md`
 - `04_cuantizacion_del_campo_escalar/02_cuantizacion_canonica_y_espacio_de_fock.md`
@@ -22,3 +22,14 @@ Al terminar este modulo, la persona que estudia deberia poder responder con solt
 - de donde salen los operadores de creacion y aniquilacion;
 - por que el vacio no es la nada clasica;
 - en que sentido una particula es un cuanto del campo.
+
+## Navegacion
+
+Ir al modulo: [04 Cuantizacion del Campo Escalar](04_cuantizacion_del_campo_escalar/README.md)
+
+
+---
+
+## Navegacion del tutorial
+
+[(anterior) Teorema de Noether y Papel Organizador de las Simetrias](03_accion_y_simetrias/02_teorema_de_noether_y_simetria.md) | [(siguiente) Campo Escalar Clasico y Modos Normales](04_cuantizacion_del_campo_escalar/01_campo_escalar_clasico_y_modos_normales.md)

@@ -148,3 +148,16 @@ del estado fundamental muestra que incluso el vacio del oscilador tiene energia 
 ## 13. Cierre
 
 El oscilador armonico cuantico es el alfabeto algebraico de la QFT. Entenderlo bien reduce enormemente la dificultad conceptual del paso a los campos cuanticos.
+
+## 14. Referencias y lecturas recomendadas
+
+- Base: cualquier curso estandar de mecanica cuantica con operadores de creacion y aniquilacion.
+- Complementaria: Zee o Tong para el puente entre oscilador y cuantizacion de campos.
+- Profundizacion: textos de mecanica cuantica con enfasis en espacio de Fock y operadores numero.
+
+
+---
+
+## Navegacion del tutorial
+
+[(anterior) Notacion Tensorial y Convenciones](02_notacion_tensorial_y_convenciones.md) | [(siguiente) Simetrias y Grupos Basicos](04_simetrias_y_grupos_basicos.md)

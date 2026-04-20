@@ -1,6 +1,6 @@
-# Articulo 1: Relatividad Especial y Nacimiento de la Idea de Campo
+# Portada 01: Relatividad Especial y Nacimiento de la Idea de Campo
 
-Este articulo ahora funciona como portada del modulo de relatividad y campos. El tratamiento detallado ya no vive en una sola nota breve, sino en un bloque dividido en dos documentos largos:
+Esta portada ahora funciona como resumen de entrada al modulo de relatividad y campos. El tratamiento detallado ya no vive en una sola nota breve, sino en un bloque dividido en dos documentos largos:
 
 - `02_relatividad_y_campos/01_choque_entre_mq_y_relatividad.md`
 - `02_relatividad_y_campos/02_campos_localidad_y_causalidad.md`
@@ -34,3 +34,14 @@ La QFT no nace de añadir relatividad a la ecuacion de Schrodinger como si fuera
 - las particulas aparezcan como excitaciones de un objeto mas fundamental.
 
 Ese objeto es el campo.
+
+## Navegacion
+
+Ir al modulo: [02 Relatividad y Campos](02_relatividad_y_campos/README.md)
+
+
+---
+
+## Navegacion del tutorial
+
+[(anterior) Que Es un Campo Cuantico](01_fundamentos_conceptuales/03_que_es_un_campo_cuantico.md) | [(siguiente) Choque Entre Mecanica Cuantica y Relatividad Especial](02_relatividad_y_campos/01_choque_entre_mq_y_relatividad.md)

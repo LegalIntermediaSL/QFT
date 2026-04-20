@@ -123,3 +123,16 @@ La arquitectura que faltaba en la mecanica cuantica de una sola particula aparec
 ## 13. Cierre
 
 La cuantizacion canonica del campo escalar hace visible la logica profunda de la QFT: no cuantizamos particulas individuales para luego permitir que aparezcan mas, sino que cuantizamos campos cuyos modos admiten excitaciones discretas. Esas excitaciones son las particulas.
+
+## 14. Referencias y lecturas recomendadas
+
+- Base: Peskin y Schroeder, cuantizacion canonica del campo escalar.
+- Complementaria: Srednicki, espacio de Fock y operadores modales.
+- Profundizacion: Tong, presentacion pedagogica del vacio y de las excitaciones del campo.
+
+
+---
+
+## Navegacion del tutorial
+
+[(anterior) Campo Escalar Clasico y Modos Normales](01_campo_escalar_clasico_y_modos_normales.md) | [(siguiente) Propagador, Causalidad y Funcion de Green](03_propagador_causalidad_y_funcion_de_green.md)

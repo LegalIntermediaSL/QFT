@@ -70,13 +70,14 @@ Este material puede ser util para:
 
 ## Estructura documental del repositorio
 
-Aunque el contenido tecnico todavia esta en una fase temprana, el repositorio ya incorpora una estructura documental minima:
+El contenido tecnico ya supera una simple fase de arranque. El repositorio contiene una ruta curricular visible, modulos tematicos, cuadernos de apoyo, apendices y portadas-resumen para algunos bloques del recorrido:
 
 - [README.md](README.md): presentacion general, objetivos y direccion del proyecto.
 - [bitacora.md](bitacora.md): registro narrativo del progreso, decisiones y siguientes pasos.
 - [changelog.md](changelog.md): historial de cambios relevantes del repositorio.
 - [Tutorial/](Tutorial/README.md): primer bloque de contenido tecnico del tutorial.
 - [Herramientas Computacionales](Tutorial/99_apendices/computacion_qft.md): guía sobre FeynCalc y Python-HEP.
+- [Plantilla Editorial](Tutorial/99_apendices/plantilla_de_capitulo.md): estructura base sugerida para nuevos capitulos.
 - [Cuadernos/](Cuadernos/): notebooks Jupyter para ejemplos y problemas resueltos.
 - [Notas/](Notas/): deposito de PDFs, apuntes, resumenes y referencias para ampliar el tutorial.
 - [Imagenes/](Imagenes/): recursos visuales para diagramas, figuras y material grafico del proyecto.
@@ -136,7 +137,9 @@ Las bibliotecas principales utilizadas son `numpy`, `sympy` (para cálculo simb�
 
 ## Estado actual
 
-El proyecto se encuentra en etapa de arranque, pero ya no esta vacio desde el punto de vista pedagogico. En este momento existe una base documental general y un primer bloque de contenido dentro de `Tutorial/`, centrado en conceptos fundamentales, relatividad, formulacion lagrangiana, cuantizacion canonica e interacciones.
+El proyecto ya ofrece una primera version navegable del recorrido principal. En este momento existen modulos desde `00_prerrequisitos` hasta `11_qft_informacion_y_agujeros_negros`, junto con cuadernos asociados, apendices y una bibliografia comentada.
+
+La cobertura sigue siendo desigual: los bloques `00` a `05` estan mas consolidados como nucleo pedagogico, mientras que `06` a `11` ya tienen estructura util pero todavia admiten ampliaciones importantes en derivaciones, referencias por documento, ejercicios y ejemplos de calculo.
 
 ## Como contribuir
 

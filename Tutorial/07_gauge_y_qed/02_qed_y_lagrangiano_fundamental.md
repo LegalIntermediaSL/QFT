@@ -2,7 +2,7 @@
 
 ## 1. Proposito
 
-La electrodinamica cuantica es la teoria gauge cuántica mas simple y, al mismo tiempo, una de las mas exitosas de toda la fisica. Este documento organiza su lagrangiano y su significado fisico.
+La electrodinamica cuantica es la teoria gauge cuantica mas simple y, al mismo tiempo, una de las mas exitosas de toda la fisica. Este documento organiza su lagrangiano y su significado fisico.
 
 ## 2. Campos del problema
 
@@ -52,6 +52,20 @@ $$
 
 es el vertice elemental de QED.
 
+Tambien puede escribirse como
+
+$$
+-j_\mu A^\mu,
+$$
+
+con
+
+$$
+j^\mu = e\bar{\psi}\gamma^\mu\psi.
+$$
+
+Esta forma deja visible que el foton se acopla a la corriente conservada del fermion cargado.
+
 ## 5. Lectura fisica del vertice
 
 Ese termino codifica procesos donde:
@@ -85,23 +99,64 @@ Sin entrar aun en todos los detalles tecnicos, la teoria produce reglas de Feynm
 
 Estas reglas permiten calcular amplitudes de scattering, anchos de decaimiento y correcciones radiativas.
 
-## 9. Renormalizacion en QED
+En un primer nivel, basta retener la logica:
+
+- una linea fermionica interna representa el propagador del electron;
+- una linea ondulada interna representa el propagador del foton;
+- cada vertice aporta un factor proporcional a $-ie\gamma^\mu$.
+
+## 9. Propagador del foton y grados de libertad
+
+Cuando se fija gauge, el propagador del foton adquiere una forma bien definida. En gauge de Feynman, por ejemplo, aparece un propagador especialmente simple, proporcional a
+
+$$
+\frac{-i\eta_{\mu\nu}}{k^2 + i\epsilon}.
+$$
+
+Esta expresion no debe interpretarse como si el foton tuviera cuatro grados de libertad fisicos propagantes. Parte de esa estructura refleja la redundancia gauge, mientras que los observables fisicos conservan solo los grados de libertad apropiados.
+
+## 10. Identidad de Ward
+
+Una de las consecuencias mas importantes de la simetria gauge en QED es la identidad de Ward. Pedagogicamente, esta identidad expresa que:
+
+- la simetria gauge restringe las amplitudes cuanticas;
+- la conservacion de la corriente no se pierde al pasar al formalismo perturbativo;
+- la estructura de renormalizacion de QED esta profundamente ligada a esa simetria.
+
+No hace falta demostrarla aqui, pero conviene reconocerla como huella cuantica de la invariancia gauge clasica.
+
+## 11. Renormalizacion en QED
 
 QED es renormalizable, lo que significa que sus divergencias ultravioletas pueden absorberse de manera controlada en una redefinicion finita del numero apropiado de parametros fisicos. Esta es una de las razones de su exito predictivo extraordinario.
 
-## 10. Preguntas de estudio
+## 12. Preguntas de estudio
 
 - Que campos aparecen en QED.
 - Como se lee el termino de interaccion en el lagrangiano.
 - Por que el acoplamiento electron-foton surge de la simetria gauge.
 - Por que QED es tan importante como teoria modelo.
+- Que relacion conceptual hay entre simetria gauge e identidad de Ward.
 
-## 11. Ejercicios sugeridos
+## 13. Ejercicios sugeridos
 
 1. Separa el lagrangiano de QED en parte libre fermionica, parte libre gauge e interaccion.
 2. Explica por que el termino $-e\bar{\psi}\gamma^\mu A_\mu \psi$ representa un acoplamiento local.
 3. Describe por que QED prepara de manera natural la entrada al estudio de renormalizacion.
+4. Indica por que fijar gauge es util para definir el propagador del foton.
 
-## 12. Cierre
+## 14. Cierre
 
 QED es el ejemplo mas limpio de como la simetria gauge, la cuantizacion de campos y el formalismo perturbativo se unen en una teoria fisica de enorme precision experimental.
+
+## 15. Referencias y lecturas recomendadas
+
+- Base: Peskin y Schroeder, introduccion a QED.
+- Complementaria: Tong, notas sobre gauge, propagadores y vertice electromagnetico.
+- Profundizacion: Schwartz, capitulos iniciales sobre QED y amplitudes relativistas.
+
+
+---
+
+## Navegacion del tutorial
+
+[(anterior) Simetria Gauge Local y Derivada Covariante](01_simetria_gauge_local_y_derivada_covariante.md) | [(siguiente) Fijacion de Gauge y Propagador del Foton](03_fijacion_de_gauge_y_propagador_del_foton.md)

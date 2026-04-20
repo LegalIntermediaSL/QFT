@@ -4,6 +4,10 @@
 
 Este bloque reune el material minimo necesario para que el resto del tutorial no tenga que reexplicar cada herramienta matematica o fisica desde cero.
 
+## Prerequisitos
+
+Este es el punto de entrada del tutorial. Basta con un dominio razonable de mecanica cuantica basica, calculo multivariable y algebra lineal.
+
 ## Ruta recomendada
 
 1. `01_relatividad_especial_minima.md`
@@ -58,3 +62,13 @@ Al terminar este bloque, el lector deberia poder:
 - entender por que el oscilador armonico es el alfabeto de la cuantizacion de campos;
 - reconocer la relacion entre simetria y estructura teorica;
 - usar la delta de Dirac y las transformadas de Fourier en contextos simples.
+
+## Lecturas y referencias recomendadas
+
+- Introductorio: David Tong, notas de relatividad y QFT para afianzar lenguaje y convenciones.
+- Intermedio: Zee, *Quantum Field Theory in a Nutshell*, para intuicion sobre simetria, osciladores y campos.
+- Consulta matematica: cualquier texto breve de relatividad especial y transformadas de Fourier que el lector ya maneje con soltura.
+
+## Navegacion
+
+Siguiente: [01 Fundamentos Conceptuales](../01_fundamentos_conceptuales/README.md)

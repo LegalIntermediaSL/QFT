@@ -192,3 +192,16 @@ No hace falta dominarlas todas desde el inicio, pero si conviene familiarizarse 
 ## 14. Cierre
 
 La notacion tensorial no es un lujo de estilo. Es el lenguaje que vuelve compacta, covariante y legible la estructura de la teoria relativista.
+
+## 15. Referencias y lecturas recomendadas
+
+- Base: apuntes de relatividad con notacion tensorial elemental.
+- Complementaria: Tong, convenciones y algebra relativista de uso frecuente.
+- Profundizacion: textos introductorios de geometria y tensores para fisicos.
+
+
+---
+
+## Navegacion del tutorial
+
+[(anterior) Relatividad Especial Minima](01_relatividad_especial_minima.md) | [(siguiente) Oscilador Armonico Cuantico](03_oscilador_armonico_cuantico.md)

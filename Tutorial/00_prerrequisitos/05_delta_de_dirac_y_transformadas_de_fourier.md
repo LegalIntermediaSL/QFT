@@ -131,3 +131,16 @@ Esto conecta directamente la base de momentos con la estructura del espacio de e
 ## 13. Cierre
 
 Fourier y la delta de Dirac son parte del lenguaje operativo diario de la QFT. Sin ellas, las expansiones en modos, los propagadores y las reglas de Feynman quedan practicamente ilegibles.
+
+## 14. Referencias y lecturas recomendadas
+
+- Base: apuntes de analisis de Fourier y distribuciones para fisicos.
+- Complementaria: cualquier curso de mecanica cuantica con base de momentos y deltas de ortogonalidad.
+- Profundizacion: textos matematicos elementales sobre distribuciones y transformadas.
+
+
+---
+
+## Navegacion del tutorial
+
+[(anterior) Simetrias y Grupos Basicos](04_simetrias_y_grupos_basicos.md) | [(siguiente) Conceptos Fundamentales de Teoria Cuantica de Campos](../01_fundamentos_conceptuales/01_conceptos_fundamentales.md)

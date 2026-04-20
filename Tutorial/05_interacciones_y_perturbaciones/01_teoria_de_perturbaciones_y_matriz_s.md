@@ -165,3 +165,16 @@ Este ejemplo simple basta para mostrar todo el esqueleto del formalismo perturba
 ## 16. Cierre
 
 La teoria de perturbaciones ofrece un puente entre la estructura abstracta de la teoria y los numeros que se comparan con experimentos. Ese puente se vuelve especialmente poderoso cuando se reorganiza graficamente en diagramas de Feynman.
+
+## 17. Referencias y lecturas recomendadas
+
+- Base: Tong, matriz S y serie de Dyson.
+- Complementaria: Peskin y Schroeder, teoria perturbativa en QFT.
+- Profundizacion: textos de scattering relativista y amplitudes.
+
+
+---
+
+## Navegacion del tutorial
+
+[(anterior) Propagador, Causalidad y Funcion de Green](../04_cuantizacion_del_campo_escalar/03_propagador_causalidad_y_funcion_de_green.md) | [(siguiente) Diagramas de Feynman y Reglas de Calculo](02_diagramas_de_feynman_y_reglas.md)

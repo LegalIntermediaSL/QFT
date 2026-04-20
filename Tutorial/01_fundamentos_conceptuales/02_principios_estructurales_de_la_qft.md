@@ -196,3 +196,16 @@ Si hubiera que condensar el nucleo estructural de la QFT en una lista corta, ser
 ## 12. Cierre
 
 Estudiar QFT sin tener presentes estos principios es como aprender tecnicas locales sin ver el armazon que las sostiene. Los diagramas, los propagadores, las corrientes conservadas, las reglas de Feynman y los procedimientos de renormalizacion solo adquieren sentido pleno cuando se entienden como respuestas a estas exigencias estructurales.
+
+## 13. Referencias y lecturas recomendadas
+
+- Base: Weinberg I para la vision estructural de relatividad, localidad y simetria.
+- Complementaria: Tong, lectura pedagogica de los principios de consistencia.
+- Profundizacion: textos avanzados sobre axiomas y estructura general de QFT.
+
+
+---
+
+## Navegacion del tutorial
+
+[(anterior) Conceptos Fundamentales de Teoria Cuantica de Campos](01_conceptos_fundamentales.md) | [(siguiente) Que Es un Campo Cuantico](03_que_es_un_campo_cuantico.md)

@@ -8,6 +8,11 @@ Este modulo fija la ontologia y los principios del tutorial antes de entrar en t
 - por que los campos son fundamentales;
 - que principios estructurales restringen toda teoria cuantica de campos consistente.
 
+## Prerequisitos
+
+- Haber repasado el bloque [00 Prerrequisitos](../00_prerrequisitos/README.md).
+- Llegar con comodidad minima en relatividad especial, oscilador armonico y notacion tensorial.
+
 ## Documentos del modulo
 
 1. `01_conceptos_fundamentales.md`
@@ -31,3 +36,15 @@ flowchart TD
 ## Resultado esperado
 
 Al terminar este bloque, deberia ser posible leer los modulos tecnicos sabiendo ya por que aparecen accion, simetria, cuantizacion, vacio, localidad, antiparticulas y renormalizacion.
+
+## Lecturas y referencias recomendadas
+
+- Introductorio: Zee, *Quantum Field Theory in a Nutshell*, caps. iniciales.
+- Intermedio: Tong, *Lectures on Quantum Field Theory*, introduccion y motivacion fisica.
+- Consulta: Peskin y Schroeder, secciones introductorias para fijar el problema fisico que resuelve la QFT.
+
+## Navegacion
+
+Anterior: [00 Prerrequisitos](../00_prerrequisitos/README.md)
+
+Siguiente: [02 Relatividad y Campos](../02_relatividad_y_campos/README.md)

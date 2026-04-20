@@ -178,3 +178,16 @@ Una forma breve de resumir la idea es esta:
 ## 13. Cierre
 
 Desde la perspectiva de la QFT, el universo no esta compuesto en primer termino por pequeñas bolitas materiales aisladas, sino por un entramado de campos cuanticos que llenan el espacio-tiempo. La materia y la radiacion que observamos son manifestaciones discretas de ese entramado. Entender esto no es un detalle filosofico secundario: es una de las claves para leer correctamente toda la teoria.
+
+## 14. Referencias y lecturas recomendadas
+
+- Base: Zee, enfoque intuitivo sobre campos y particulas.
+- Complementaria: Tong, explicacion pedagogica del campo cuantico como objeto fundamental.
+- Profundizacion: Peskin y Schroeder, introduccion al lenguaje de campos.
+
+
+---
+
+## Navegacion del tutorial
+
+[(anterior) Principios Estructurales de la Teoria Cuantica de Campos](02_principios_estructurales_de_la_qft.md) | [(siguiente) Portada 01: Relatividad Especial y Nacimiento de la Idea de Campo](../portada_01_relatividad_y_campos.md)

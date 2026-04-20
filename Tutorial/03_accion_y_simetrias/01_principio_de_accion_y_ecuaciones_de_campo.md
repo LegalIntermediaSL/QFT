@@ -135,3 +135,16 @@ Por eso dominar el principio de accion no es un lujo formal, sino un prerequisit
 ## 12. Cierre
 
 La accion es el punto de condensacion de la teoria. No es simplemente una forma compacta de escribir la dinamica: es el objeto que unifica localidad, simetria y estructura cuantizable en un mismo marco.
+
+## 13. Referencias y lecturas recomendadas
+
+- Base: Srednicki, formulacion lagrangiana y accion.
+- Complementaria: Tong, accion y ecuaciones de Euler-Lagrange para campos.
+- Profundizacion: textos de mecanica analitica y teoria de campos clasicos.
+
+
+---
+
+## Navegacion del tutorial
+
+[(anterior) Portada 02: Accion, Densidad Lagrangiana y Teorema de Noether](../portada_02_accion_lagrangiana_y_noether.md) | [(siguiente) Teorema de Noether y Papel Organizador de las Simetrias](02_teorema_de_noether_y_simetria.md)

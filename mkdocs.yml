@@ -17,11 +17,23 @@ nav:
     - Índice: Tutorial/README.md
     - 00. Prerrequisitos: Tutorial/00_prerrequisitos/README.md
     - 01. Fundamentos: Tutorial/01_fundamentos_conceptuales/README.md
+    - 02. Relatividad y Campos: Tutorial/02_relatividad_y_campos/README.md
+    - 03. Acción y Simetrías: Tutorial/03_accion_y_simetrias/README.md
+    - 04. Campo Escalar: Tutorial/04_cuantizacion_del_campo_escalar/README.md
+    - 05. Interacciones: Tutorial/05_interacciones_y_perturbaciones/README.md
     - 06. Fermiones: Tutorial/06_fermiones_y_dirac/README.md
+    - 07. Gauge y QED: Tutorial/07_gauge_y_qed/README.md
+    - 08. Integral de Camino: Tutorial/08_integral_de_camino/README.md
+    - 09. Renormalización: Tutorial/09_renormalizacion/README.md
+    - 10. Modelo Estándar: Tutorial/10_modelo_estandar/README.md
+    - 11. QFT e Información: Tutorial/11_qft_informacion_y_agujeros_negros/README.md
   - Apéndices:
     - Bibliografía: Tutorial/99_apendices/bibliografia.md
     - Herramientas Computacionales: Tutorial/99_apendices/computacion_qft.md
+    - Reglas de Feynman y Propagadores: Tutorial/99_apendices/reglas_de_feynman_y_propagadores.md
     - Glosario de Notación: Tutorial/99_apendices/glosario_notacion.md
+    - Convenciones Globales: Tutorial/99_apendices/convenciones_globales.md
+    - Plantilla Editorial: Tutorial/99_apendices/plantilla_de_capitulo.md
 
 markdown_extensions:
   - pymdownx.arithmatex:
