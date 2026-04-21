@@ -35,12 +35,16 @@ flowchart LR
 ## Cuadernos asociados
 
 - `../../Cuadernos/ejemplos/06_diagramas_de_feynman_basicos.ipynb`
+- `../../Cuadernos/ejemplos/16_qed_derivada_covariante_y_ward.ipynb`
 - `../../Cuadernos/problemas_resueltos/10_interacciones_y_perturbaciones.ipynb`
+- `../../Cuadernos/problemas_resueltos/13_gauge_fixing_y_scattering_en_qed.ipynb`
 
 Uso sugerido:
 
 - el cuaderno de `ejemplos` sirve para repasar propagadores, vertices y lectura de diagramas;
-- el cuaderno de `problemas_resueltos` sirve como apoyo general para la logica perturbativa que luego se especializa en QED.
+- el de `16_qed_derivada_covariante_y_ward` sirve para fijar la estructura gauge minima y la intuicion de la identidad de Ward;
+- el cuaderno de `problemas_resueltos` sirve como apoyo general para la logica perturbativa que luego se especializa en QED;
+- el de `13_gauge_fixing_y_scattering_en_qed` sirve para seguir un caso mas directo de gauge-fixing, propagador del foton y amplitud elemental.
 
 ## Resultado esperado
 

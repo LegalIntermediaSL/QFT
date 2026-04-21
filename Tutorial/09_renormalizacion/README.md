@@ -37,12 +37,14 @@ flowchart TD
 
 - `../../Cuadernos/problemas_resueltos/10_interacciones_y_perturbaciones.ipynb`
 - `../../Cuadernos/problemas_resueltos/09_cuantizacion_del_campo_escalar.ipynb`
+- `../../Cuadernos/ejemplos/17_esquema_msbar_y_qed_vs_qcd.ipynb`
 - `../../Cuadernos/problemas_resueltos/15_regularizacion_dimensional_y_running.ipynb`
 
 Uso sugerido:
 
 - el cuaderno de `10_interacciones_y_perturbaciones` sirve como apoyo para recordar de donde salen los lazos y las correcciones perturbativas;
 - el cuaderno de `09_cuantizacion_del_campo_escalar` sirve para revisar la teoria libre sobre la que luego se construyen los contraterminos y correcciones;
+- el de `17_esquema_msbar_y_qed_vs_qcd` sirve para fijar la intuicion cualitativa del esquema $\\overline{\\mathrm{MS}}$ y la diferencia entre QED y QCD;
 - el de `15_regularizacion_dimensional_y_running` sirve para fijar la intuicion de polos en $1/\\varepsilon$, escala $\\mu$ y running.
 
 ## Resultado esperado

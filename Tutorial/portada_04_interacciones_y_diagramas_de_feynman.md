@@ -29,4 +29,4 @@ Ir al modulo: [05 Interacciones y Perturbaciones](05_interacciones_y_perturbacio
 
 ## Navegacion del tutorial
 
-[(anterior) Cuantizacion Canonica y Espacio de Fock](04_cuantizacion_del_campo_escalar/02_cuantizacion_canonica_y_espacio_de_fock.md) | [(siguiente) Teoria de Perturbaciones y Matriz S](05_interacciones_y_perturbaciones/01_teoria_de_perturbaciones_y_matriz_s.md)
+[(anterior) Propagador, Causalidad y Funcion de Green](04_cuantizacion_del_campo_escalar/03_propagador_causalidad_y_funcion_de_green.md) | [(siguiente) Teoria de Perturbaciones y Matriz S](05_interacciones_y_perturbaciones/01_teoria_de_perturbaciones_y_matriz_s.md)

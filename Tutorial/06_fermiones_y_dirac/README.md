@@ -39,12 +39,16 @@ flowchart TD
 - `../../Cuadernos/problemas_resueltos/06_fundamentos_conceptuales.ipynb`
 - `../../Cuadernos/problemas_resueltos/07_relatividad_y_campos.ipynb`
 - `../../Cuadernos/problemas_resueltos/09_cuantizacion_del_campo_escalar.ipynb`
+- `../../Cuadernos/ejemplos/09_bilineales_y_proyectores_quirales.ipynb`
+- `../../Cuadernos/problemas_resueltos/18_corriente_de_dirac_y_limite_no_relativista.ipynb`
 
 Uso sugerido:
 
 - el cuaderno de `06_fundamentos_conceptuales` sirve para reforzar la idea de campo y simetria antes del paso fermionico;
 - el de `07_relatividad_y_campos` sirve como apoyo del trasfondo relativista que hace necesaria la ecuacion de Dirac;
 - el de `09_cuantizacion_del_campo_escalar` sirve como contraste con el caso bosonico al estudiar cuantizacion y espacio de Fock.
+- el de `09_bilineales_y_proyectores_quirales` sirve para fijar bilineales, corrientes vectoriales y axiales, y proyectores quirales;
+- el de `18_corriente_de_dirac_y_limite_no_relativista` sirve para seguir de forma guiada la corriente conservada y el paso controlado al regimen no relativista.
 
 ## Conceptos Clave Añadidos
 

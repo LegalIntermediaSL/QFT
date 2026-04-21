@@ -29,6 +29,7 @@ flowchart TD
         I --> J["09 Renormalización"]
         J --> K["10 Modelo Estándar"]
         K -- "Efectos Cuánticos" --> L["11 QFT e Información"]
+        L --> O["12 Teorias Efectivas"]
     end
 
     subgraph Apendices ["Material de Consulta"]
@@ -59,6 +60,7 @@ Para una experiencia de aprendizaje secuencial, sigue este orden:
 | 10 | [09 Renormalización](09_renormalizacion/README.md) | Divergencias UV, contraterminos y grupo de renormalización |
 | 11 | [10 Modelo Estándar](10_modelo_estandar/README.md) | Aplicación física real (Avanzado) |
 | 12 | [11 Fronteras](11_qft_informacion_y_agujeros_negros/README.md) | Hawking e información (Avanzado) |
+| 13 | [12 Teorias de Campo Efectivas](12_teorias_de_campo_efectivas/README.md) | Desacoplamiento, matching y EFT moderna (Avanzado) |
 
 ## Ruta minima
 
@@ -85,6 +87,7 @@ Si ya dominas el núcleo anterior o buscas una segunda capa, esta es la continua
 | 2 | [09 Renormalización](09_renormalizacion/README.md) | Explica escalas, divergencias y running |
 | 3 | [10 Modelo Estándar](10_modelo_estandar/README.md) | Conecta el formalismo con física real |
 | 4 | [11 Fronteras](11_qft_informacion_y_agujeros_negros/README.md) | Abre la puerta a información cuántica y gravedad semiclasica |
+| 5 | [12 Teorias de Campo Efectivas](12_teorias_de_campo_efectivas/README.md) | Relee la QFT moderna como expansion por escalas |
 
 ---
 
@@ -198,8 +201,23 @@ Lecturas avanzadas donde el formalismo se conecta con la teoria fisica concreta 
 - `02_agujeros_negros_radiacion_de_hawking_y_paradoja_de_la_informacion.md`
 - `03_efecto_unruh_y_vacio_de_rindler.md`
 - `04_curva_de_page_y_unitaridad.md`
+- `05_islas_y_entropia_generalizada.md`
+- `06_holografia_y_reconstruccion_de_informacion.md`
 
 Modulo de frontera donde la QFT se cruza con teoria de la informacion cuantica, horizontes, termicidad efectiva y la paradoja de la informacion de agujeros negros.
+
+### `12_teorias_de_campo_efectivas/`
+
+- `01_integrando_grados_de_libertad.md`
+- `02_teoria_de_fermi_como_eft.md`
+- `03_euler_heisenberg_y_operadores_efectivos.md`
+- `04_gravedad_como_teoria_efectiva.md`
+- `05_smeft_y_operador_de_weinberg.md`
+- `06_majorana_y_mecanismo_seesaw.md`
+- `07_doble_beta_sin_neutrinos.md`
+- `08_matching_uv_y_coeficientes_de_wilson.md`
+
+Modulo de cierre moderno donde el tutorial se reorganiza en el lenguaje de desacoplamiento, operadores efectivos, matching y jerarquias de escala.
 
 ### `99_apendices/`
 

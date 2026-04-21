@@ -1,46 +1,125 @@
-# Integrando grados de libertad: El corazón de las EFT
+# Integrando grados de libertad
 
-## 1. La Filosofía de Escalas
+## 1. Proposito
 
-En física, rara vez necesitamos conocer la estructura atómica para entender cómo fluye el agua en una tubería. Del mismo modo, en QFT, si estamos interesados en procesos a baja energía ($E \ll \Lambda$), los detalles de lo que ocurre a energías mucho más altas ($\Lambda$) pueden ser simplificados.
+Este documento introduce el corazon conceptual de una teoria de campo efectiva: describir fisica a baja energia sin retener explicitamente todos los grados de libertad microscopicos.
 
-Imaginemos una teoría con dos campos:
-- $\phi$: un campo ligero de masa $m$.
-- $\Phi$: un campo muy pesado de masa $M \gg m$.
+## 2. La intuicion fisica
 
-Si realizamos un experimento a energías $E \sim m$, no tenemos suficiente energía para crear partículas $\Phi$ reales. Sin embargo, $\Phi$ aparece como **partícula virtual** en los diagramas, afectando a la dinámica de $\phi$.
+Si un experimento opera a energias $E \ll \Lambda$, no puede producir de forma real estados con masa del orden de $\Lambda$. Esos estados pesados no desaparecen por completo, pero su efecto puede resumirse en correcciones locales para los campos ligeros.
 
-## 2. El Enfoque de Integral de Camino
+La idea es muy parecida a muchas aproximaciones de la fisica:
 
-Desde el formalismo de integral de camino, podemos "eliminar" el campo pesado $\Phi$ integrando sobre él:
+- no hace falta seguir cada molecula para describir hidrodinamica;
+- no hace falta seguir cada detalle del nucleo para escribir una teoria atomica efectiva;
+- no hace falta retener todas las particulas pesadas para describir fisica IR.
 
-$$Z[J] = \int \mathcal{D}\phi \int \mathcal{D}\Phi \exp(i S[\phi, \Phi] + i \int J\phi)$$
+## 3. Ejemplo minimo con campo ligero y pesado
 
-Definimos una **Acción Efectiva** $S_{eff}[\phi]$ tal que:
-$$\exp(i S_{eff}[\phi]) = \int \mathcal{D}\Phi \exp(i S[\phi, \Phi])$$
+Consideremos una teoria con un campo ligero $\phi$ y un campo pesado $\Phi$:
 
-La nueva acción $S_{eff}[\phi]$ contendrá únicamente el campo ligero, pero sus acoplamientos habrán sido modificados por los efectos del campo pesado.
+$$
+\mathcal{L} = \frac{1}{2}(\partial \phi)^2 - \frac{1}{2}m^2 \phi^2
++ \frac{1}{2}(\partial \Phi)^2 - \frac{1}{2}M^2 \Phi^2
+- g\, \Phi \phi^2,
+$$
 
-## 3. Clasificación de Operadores
+con $M \gg m$.
 
-Al expandir $S_{eff}$, obtenemos una serie infinita de operadores locales:
-$$\mathcal{L}_{eff} = \mathcal{L}_{d \le 4} + \sum_{n > 4} \frac{c_n}{\Lambda^{n-4}} \mathcal{O}_n$$
+Si trabajamos a energias mucho menores que $M$, el campo $\Phi$ no se produce como particula real. Sin embargo, al intercambiarse virtualmente induce una interaccion efectiva entre campos ligeros.
 
-Donde $\Lambda \sim M$. Los operadores se clasifican según su dimensión de masa $d$:
+## 4. Integral de camino y accion efectiva
 
-1.  **Relevantes ($d < 4$)**: Crecen a bajas energías (ej: términos de masa).
-2.  **Marginales ($d = 4$)**: Se mantienen constantes (logarítmicamente) (ej: acoplamientos gauge).
-3.  **Irrelevantes ($d > 4$)**: Se desvanecen como $(E/\Lambda)^{n-4}$. 
+En el formalismo funcional:
 
-> [!TIP]
-> La razón por la que la QFT estándar funciona tan bien es que a bajas energías los operadores irrelevantes son indetectables. Sin embargo, son precisamente estos operadores los que nos dan pistas sobre la física que hay "más allá" (ej: el decaimiento del protón o las masas de los neutrinos).
+$$
+Z[J] = \int \mathcal{D}\phi \, \mathcal{D}\Phi \;
+\exp\!\left(iS[\phi,\Phi] + i \int d^4x\, J\phi \right).
+$$
 
-## 4. Teorema de Desacoplamiento
+Definimos una accion efectiva para el campo ligero integrando el campo pesado:
 
-El teorema de **Appelquist-Carazzone** establece que, en teorías renormalizables, los efectos de las partículas pesadas se manifiestan únicamente como una redefinición de los parámetros de la teoría ligera (renormalización), salvo por correcciones que desaparecen como $1/M^2$.
+$$
+\exp\!\left(iS_{\mathrm{eff}}[\phi]\right)
+= \int \mathcal{D}\Phi \; \exp\!\left(iS[\phi,\Phi]\right).
+$$
 
-## Ejercicios de Reflexión
+La teoria resultante ya no contiene $\Phi$ de forma explicita, pero si retiene sus efectos en una expansion en operadores locales.
 
-1.  **La Teoría de Fermi**: Investigue cómo la interacción débil (mediada por los bosones $W$ y $Z$) se reduce a la teoría de Fermi de 4 fermiones cuando $E \ll M_W$. ¿Qué dimensión tiene el operador de Fermi?
-2.  **Gravedad**: ¿Por qué decimos que la relatividad general de Einstein es una EFT? ¿Cuál sería la escala $\Lambda$ en este caso?
-3.  **Análisis Dimensional**: Verifique por qué un término de interacción $\lambda \phi^6$ en 4 dimensiones tiene una constante de acoplamiento con dimensiones de $[M]^{-2}$.
+## 5. Expansion en operadores efectivos
+
+La forma general de la densidad lagrangiana efectiva es
+
+$$
+\mathcal{L}_{\mathrm{eff}}
+= \mathcal{L}_{d\leq 4}
++ \sum_{n>4}\frac{c_n}{\Lambda^{\,n-4}}\mathcal{O}_n,
+$$
+
+donde $\Lambda$ representa la escala pesada relevante y $\mathcal{O}_n$ es un operador de dimension de masa $n$.
+
+Esto organiza la teoria de forma muy poderosa:
+
+- operadores relevantes: $d<4$;
+- operadores marginales: $d=4$;
+- operadores irrelevantes: $d>4$.
+
+A bajas energias, los operadores irrelevantes quedan suprimidos por potencias de $E/\Lambda$.
+
+## 6. Power counting y supresion por escala
+
+Si un operador tiene dimension seis, su contribucion tipica aparece como
+
+$$
+\frac{1}{\Lambda^2}\mathcal{O}_6.
+$$
+
+Eso significa que sus efectos relativos suelen escalar como
+
+$$
+\left(\frac{E}{\Lambda}\right)^2.
+$$
+
+Pedagogicamente, esta es una de las ideas mas importantes del modulo: la EFT no ignora nueva fisica UV, sino que organiza de forma controlada cuan visible es a la escala de interes.
+
+## 7. Desacoplamiento
+
+El teorema de Appelquist-Carazzone resume la intuicion de que, en muchas teorias renormalizables, los grados de libertad muy pesados desacoplan de la fisica IR salvo por:
+
+- redefiniciones de parametros ligeros;
+- correcciones locales suprimidas por potencias de la escala pesada.
+
+Ese desacoplamiento no es magia: nace de la combinacion entre simetrias, expansion en momentos y separacion clara de escalas.
+
+## 8. Ejemplo corto de lectura
+
+Si una particula pesada de masa $M$ media una interaccion entre campos ligeros, a energias muy por debajo de $M$ no necesitamos seguir su propagador completo. Su efecto dominante se puede reemplazar por un contacto local mas coeficientes suprimidos por $1/M^2$, $1/M^4$, etc.
+
+## 9. Cuaderno asociado
+
+- `../../Cuadernos/ejemplos/15_operadores_efectivos_y_power_counting.ipynb`: usarlo para fijar el conteo dimensional y la lectura de operadores efectivos segun la escala de corte.
+
+## 10. Advertencias utiles
+
+- Integrar un campo pesado no siempre significa simplemente "borrarlo"; significa resumir su efecto en nuevos operadores y coeficientes.
+- La expansion efectiva depende de la jerarquia de escalas. Si $E$ deja de ser pequeño frente a $\Lambda$, la EFT pierde control.
+- No toda EFT es perturbativamente simple, pero casi siempre sigue siendo una organizacion muy util.
+
+## 11. Preguntas de comprobacion
+
+- Que significa integrar grados de libertad pesados.
+- Por que aparecen operadores de dimension mayor que cuatro.
+- Como se estima la importancia de un operador usando $E/\Lambda$.
+
+## 12. Referencias y lecturas recomendadas
+
+- Base: notas introductorias sobre EFT y desacoplamiento.
+- Complementaria: Burgess, introducciones pedagogicas a EFT.
+- Profundizacion: textos sobre matching funcional y expansion de operadores.
+
+
+---
+
+## Navegacion del tutorial
+
+[(anterior) Curva de Page y Unitaridad](../11_qft_informacion_y_agujeros_negros/04_curva_de_page_y_unitaridad.md) | [(siguiente) Teoria de Fermi como EFT](02_teoria_de_fermi_como_eft.md)

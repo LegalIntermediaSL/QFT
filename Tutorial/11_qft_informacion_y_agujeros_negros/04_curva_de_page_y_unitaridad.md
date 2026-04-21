@@ -91,4 +91,4 @@ Si la entropia de la radiacion creciera para siempre, incluso cuando el agujero 
 
 ## Navegacion del tutorial
 
-[(anterior) Efecto Unruh y Vacio de Rindler](03_efecto_unruh_y_vacio_de_rindler.md) | [(siguiente) Apendices](../99_apendices/README.md)
+[(anterior) Efecto Unruh y Vacio de Rindler](03_efecto_unruh_y_vacio_de_rindler.md) | [(siguiente) Islas y entropia generalizada](05_islas_y_entropia_generalizada.md)
