@@ -25,6 +25,8 @@ La idea no es que la entropia sea "solo area" o "solo entrelazamiento", sino una
 - un termino geometrico;
 - y una contribucion cuantica del bulk.
 
+La combinacion es natural porque la gravedad semiclasica ya habia enseñado que el area del horizonte juega un papel entropico, mientras que la QFT en regiones espaciales subraya el papel del entrelazamiento. La entropia generalizada junta ambas lecciones en un mismo objeto.
+
 ## 4. Que es una isla
 
 En el lenguaje mas sencillo posible, una isla es una region del interior o de una descripcion gravitatoria efectiva que debe incluirse al calcular la entropia fina de la radiacion exterior.
@@ -35,6 +37,8 @@ Eso suena sorprendente, pero pedagogicamente el mensaje es este:
 - el conjunto relevante para la entropia fina puede incluir grados de libertad adicionales;
 - esa reorganizacion cambia radicalmente la forma esperada de la curva de Page.
 
+Dicho de otro modo, la pregunta "cual es el sistema cuya entropia estoy calculando" se vuelve mucho mas sutil en presencia de gravedad. Esa es una de las razones por las que el lenguaje de islas resulta tan novedoso.
+
 ## 5. Lectura cualitativa de la curva de Page
 
 Antes del tiempo de Page, la entropia de la radiacion sigue la intuicion termica usual.
@@ -43,27 +47,46 @@ Despues, una configuracion con isla puede volverse dominante en el calculo de la
 
 Esa es la razon pedagogica por la que las islas han sido tan influyentes: ofrecen una ruta semiclasica refinada hacia una curva de Page compatible con unitaridad.
 
-## 6. Ejemplo corto de lectura
+## 6. Regla de extremizacion
+
+La formulacion moderna no consiste simplemente en "sumar una isla si conviene". En esencia, se consideran candidatos para la region relevante y se evalua la entropia generalizada. La contribucion fisicamente dominante viene dada por una condicion de extremizacion y posterior seleccion del valor dominante.
+
+Sin entrar en todo el aparato tecnico, la intuicion es:
+
+- distintas configuraciones compiten entre si;
+- la geometria y el entrelazamiento del bulk contribuyen al mismo funcional;
+- la fase dominante puede cambiar al evolucionar el sistema, por ejemplo cerca del tiempo de Page.
+
+## 7. Replica trick y wormholes
+
+En desarrollos mas tecnicos, las islas aparecen ligadas al replica trick gravitatorio y a configuraciones tipo replica wormhole. Aunque aqui no buscamos derivar ese formalismo, conviene registrar la moraleja:
+
+- la semiclasica refinada no se limita a corregir ligeramente la intuicion anterior;
+- reorganiza de manera no trivial que geometrías contribuyen al calculo de entropia.
+
+Esto explica por que el tema ha tenido tanto impacto en la discusion moderna de la informacion.
+
+## 8. Ejemplo corto de lectura
 
 Si una descripcion gravitatoria efectiva permite que el calculo correcto de la entropia de la radiacion incluya una region adicional "oculta" a la intuicion naive, entonces la entropia ya no se interpreta como la de la radiacion sola. Ese cambio de sistema fisico relevante es justo el corazon conceptual de las islas.
 
-## 7. Cuaderno asociado
+## 9. Cuaderno asociado
 
 - `../../Cuadernos/ejemplos/20_islas_y_entropia_generalizada.ipynb`: usarlo para fijar la intuicion de entropia generalizada, tiempo de Page e inclusion de islas en la lectura moderna.
 
-## 8. Advertencias utiles
+## 10. Advertencias utiles
 
 - Las islas no son un reemplazo trivial de toda la paradoja; son parte de una lectura semiclasica refinada.
 - El formalismo tecnico completo requiere superficies extremales, replica trick y gravedad semiclasica.
 - Aqui solo buscamos una intuicion organizada, no una derivacion completa.
 
-## 9. Preguntas de comprobacion
+## 11. Preguntas de comprobacion
 
 - Por que la entropia generalizada combina geometria y contribuciones cuanticas.
 - Que cambio conceptual introduce una isla en el calculo de entropia.
 - Por que esta idea ayuda a reconciliar semiclasica refinada y curva de Page.
 
-## 10. Referencias y lecturas recomendadas
+## 12. Referencias y lecturas recomendadas
 
 - Base: reseñas pedagogicas sobre curva de Page e islas.
 - Complementaria: revisiones sobre entropia generalizada y replica wormholes.

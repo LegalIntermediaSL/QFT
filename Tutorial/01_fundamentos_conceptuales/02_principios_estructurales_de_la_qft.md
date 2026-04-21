@@ -26,6 +26,8 @@ Consecuencias inmediatas:
 
 Esta exigencia es justamente la que empuja a tomar campos, y no particulas individuales, como objetos fundamentales.
 
+Hay aqui una leccion historica y conceptual importante. Intentar mantener una mecanica cuantica relativista de una sola particula lleva rapidamente a tensiones con la interpretacion probabilistica y, sobre todo, con la imposibilidad de prohibir creacion de pares cuando la energia disponible lo permite. La QFT aparece porque el mundo relativista cuantico exige una estructura mas amplia.
+
 ## 2. Invarianza de Lorentz y simetria de Poincare
 
 Las leyes fisicas deben ser las mismas para cualquier observador inercial. Esto obliga a que la teoria sea invariante bajo el grupo de Poincare, que combina:
@@ -44,6 +46,11 @@ En la formulacion moderna:
 - las cantidades conservadas asociadas al espacio-tiempo surgen de esta estructura simetrica.
 
 La covariancia relativista no es, por tanto, un requisito cosmetico. Es una restriccion organizadora de toda la teoria.
+
+Tambien conviene distinguir dos niveles:
+
+- la covariancia de las ecuaciones, que asegura que la teoria no privilegia un observador inercial;
+- la accion del grupo de Poincare sobre los estados, que organiza la clasificacion fisica por masa y espin.
 
 ## 3. Localidad y microcausalidad
 
@@ -71,6 +78,8 @@ La lectura fisica es directa:
 - si dos eventos no pueden conectarse causalmente, una medicion local en uno no debe alterar instantaneamente el otro;
 - la teoria puede contener correlaciones cuanticas, pero no violaciones operativas de causalidad relativista.
 
+Es util no confundir localidad con una interaccion de contacto. Una teoria puede ser local y producir efectos a larga distancia a traves de la propagacion dinamica. Lo que la localidad restringe es la forma misma del lagrangiano y del algebra de observables locales.
+
 ## 4. Unitaridad
 
 La suma total de probabilidades de todos los resultados posibles debe ser exactamente uno. Este requisito se traduce en que la evolucion cuantica relevante y, en particular, la matriz de scattering $S$, debe ser unitaria:
@@ -87,6 +96,8 @@ La unitaridad garantiza:
 
 En teorias relativistas, exigir simultaneamente unitaridad e invariancia de Lorentz es extremadamente restrictivo. De hecho, gran parte de la sofisticacion de la QFT consiste en construir interacciones que respeten ambas a la vez.
 
+En scattering, la unitaridad se traduce en relaciones concretas entre amplitudes, cortes de diagramas y teoremas opticos. Aunque esas herramientas aparezcan despues, es util ver desde ahora que no son tecnicas separadas, sino expresiones directas de este principio.
+
 ## 5. Existencia de antiparticulas
 
 Una de las consecuencias mas profundas del marco relativista cuantico es la existencia necesaria de antiparticulas. Cada especie de particula tiene asociada una antiparticula con:
@@ -98,6 +109,8 @@ Una de las consecuencias mas profundas del marco relativista cuantico es la exis
 Esta estructura aparece al analizar soluciones de energia positiva y negativa y al exigir causalidad compatible con la cuantizacion relativista. En el lenguaje de diagramas y propagadores, la propagacion de una antiparticula puede reinterpretarse formalmente como la de una particula propagandose con orientacion temporal opuesta en ciertos contextos del calculo.
 
 Lo importante pedagogicamente es esto: las antiparticulas no son un detalle añadido despues. Son una consecuencia estructural del formalismo relativista cuantico.
+
+En algunos contextos particula y antiparticula son distintas, como electron y positron. En otros pueden coincidir, como sucede idealmente con ciertos campos neutros reales. Lo que nunca desaparece es la necesidad estructural de ampliar la nocion de excitacion fisica mas alla de la imagen no relativista elemental.
 
 ## 6. Conexion espin-estadistica
 
@@ -120,6 +133,8 @@ Esta relacion explica por que:
 - los fermiones obedecen estadistica de Fermi-Dirac;
 - el principio de exclusion de Pauli no es una regla externa, sino una consecuencia profunda de la estructura de la teoria.
 
+Eso explica por que no basta con elegir conmutadores o anticonmutadores por comodidad algebraica. Una eleccion equivocada destruye propiedades fundamentales como la positividad de la energia o la causalidad microfisica.
+
 ## 7. Principio de descomposicion de cluster
 
 El principio de descomposicion de cluster expresa una intuicion fisica muy razonable: experimentos suficientemente alejados en el espacio deben comportarse de forma independiente.
@@ -131,6 +146,8 @@ Traducido al lenguaje de amplitudes, esto significa que cuando dos procesos ocur
 - la independencia fisica de regiones separadas debe reflejarse en los observables.
 
 Este principio no suele enfatizarse tanto en los cursos iniciales como la causalidad o la simetria de Lorentz, pero es crucial para que la teoria describa un mundo compuesto por subsistemas aproximadamente independientes a gran escala.
+
+Si fallara de forma patologica, la teoria induciria correlaciones espurias entre experimentos muy alejados, no por interaccion fisica real, sino por una mala estructura global del formalismo.
 
 ## 8. Renormalizacion y renormalizabilidad
 
@@ -156,6 +173,8 @@ La leccion conceptual es mas profunda que la tecnica:
 
 Cuando se habla de renormalizabilidad en sentido tradicional, suele aludirse a que la teoria necesita solo un numero finito de contraterminos del mismo tipo que ya estaban presentes en el lagrangiano inicial. Aunque la vision moderna con teorias efectivas es mas amplia, la renormalizabilidad sigue siendo una guia muy poderosa.
 
+La lectura moderna merece subrayarse: una teoria no renormalizable en el sentido clasico no queda automaticamente descartada. Puede seguir siendo predictiva como teoria efectiva, siempre que se organice la expansion en escalas y se explicite su dominio de validez.
+
 ## 9. Interaccion entre los principios
 
 Estos principios no actuan por separado. En QFT, el contenido real aparece precisamente en su tension mutua:
@@ -169,6 +188,8 @@ Estos principios no actuan por separado. En QFT, el contenido real aparece preci
 
 Una teoria cuantica de campos aceptable debe navegar todas estas exigencias simultaneamente. Por eso el espacio de teorias consistentes es mucho mas estrecho de lo que podria parecer.
 
+Esta es una buena vacuna contra una lectura fragmentada del curso. Simetrias, propagadores, scattering y renormalizacion no son capitulos desconectados, sino distintas caras del mismo problema de consistencia.
+
 ## 10. Mapa sintetico
 
 Si hubiera que condensar el nucleo estructural de la QFT en una lista corta, seria esta:
@@ -181,6 +202,13 @@ Si hubiera que condensar el nucleo estructural de la QFT en una lista corta, ser
 6. Conexion espin-estadistica.
 7. Descomposicion de cluster.
 8. Renormalizacion y control de escalas.
+
+Una buena forma de usar este mapa es como checklist mental para cada nueva teoria:
+
+- que grados de libertad contiene;
+- como implementa relatividad y causalidad;
+- como mantiene unitaridad;
+- a que escalas puede tomarse en serio.
 
 ## 11. Preguntas de estudio
 
@@ -196,6 +224,8 @@ Si hubiera que condensar el nucleo estructural de la QFT en una lista corta, ser
 ## 12. Cierre
 
 Estudiar QFT sin tener presentes estos principios es como aprender tecnicas locales sin ver el armazon que las sostiene. Los diagramas, los propagadores, las corrientes conservadas, las reglas de Feynman y los procedimientos de renormalizacion solo adquieren sentido pleno cuando se entienden como respuestas a estas exigencias estructurales.
+
+Por eso este texto merece releerse varias veces a lo largo del tutorial. Al comienzo orienta; mas adelante sirve como criterio para interpretar por que cada herramienta aparece exactamente donde aparece.
 
 ## 13. Referencias y lecturas recomendadas
 

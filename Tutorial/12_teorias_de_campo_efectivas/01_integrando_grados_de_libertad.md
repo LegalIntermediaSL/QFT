@@ -46,7 +46,23 @@ $$
 
 La teoria resultante ya no contiene $\Phi$ de forma explicita, pero si retiene sus efectos en una expansion en operadores locales.
 
-## 5. Expansion en operadores efectivos
+Si el campo pesado aparece de manera cuadratica o casi cuadratica, esta integracion puede hacerse exactamente o en expansion controlada. En lenguaje menos tecnico: no estamos "adivinando" la EFT, sino derivandola a partir de la teoria completa bajo el supuesto clave de separacion de escalas.
+
+## 5. Integrar no es olvidar
+
+Una confusion comun es pensar que integrar un grado de libertad pesado equivale a negar su existencia. No es asi. Integrarlo significa:
+
+- dejar de describirlo como una excitacion explicita en el espectro accesible;
+- conservar su huella en coeficientes y operadores efectivos;
+- reorganizar la teoria para energias donde ese grado de libertad no puede ponerse on-shell.
+
+En particular, una particula pesada puede seguir afectando fuertemente:
+
+- masas y acoplamientos renormalizados;
+- procesos virtuales;
+- simetrias efectivas del sector ligero.
+
+## 6. Expansion en operadores efectivos
 
 La forma general de la densidad lagrangiana efectiva es
 
@@ -66,7 +82,9 @@ Esto organiza la teoria de forma muy poderosa:
 
 A bajas energias, los operadores irrelevantes quedan suprimidos por potencias de $E/\Lambda$.
 
-## 6. Power counting y supresion por escala
+Esta expansion no es solo una lista de correcciones. Es una jerarquia organizada por simetria y dimension. Si dos operadores tienen la misma dimension, las simetrias del problema y el detalle de la UV completion determinan cual aparece y con que coeficiente.
+
+## 7. Power counting y supresion por escala
 
 Si un operador tiene dimension seis, su contribucion tipica aparece como
 
@@ -82,7 +100,36 @@ $$
 
 Pedagogicamente, esta es una de las ideas mas importantes del modulo: la EFT no ignora nueva fisica UV, sino que organiza de forma controlada cuan visible es a la escala de interes.
 
-## 7. Desacoplamiento
+Conviene no interpretar esta estimacion como una ley exacta independiente del proceso. El factor $(E/\Lambda)^2$ da el orden de magnitud esperado, pero el tamaño real tambien depende de:
+
+- el coeficiente de Wilson del operador;
+- factores cinematicos adicionales;
+- simetrias que puedan anular o suprimir ciertos terminos;
+- si el observable aparece ya a nivel arbol o solo a lazo.
+
+## 8. Ejemplo de eliminacion clasica del campo pesado
+
+En el ejemplo con
+
+$$
+\mathcal{L}_{\text{int}} = -g\,\Phi \phi^2,
+$$
+
+si buscamos la ecuacion de movimiento clasica del campo pesado y despreciamos derivadas frente a $M^2$, obtenemos esquematicamente
+
+$$
+\Phi \approx -\frac{g}{M^2}\phi^2.
+$$
+
+Al sustituir esta solucion de vuelta en el lagrangiano, aparece un operador efectivo del tipo
+
+$$
+\Delta \mathcal{L}_{\mathrm{eff}} \sim \frac{g^2}{M^2}\phi^4.
+$$
+
+Esta cuenta no reemplaza la derivacion funcional completa, pero comunica muy bien la logica del desacoplamiento: el propagador pesado se colapsa en una interaccion local cuando el momento transferido es pequeño comparado con $M$.
+
+## 9. Desacoplamiento
 
 El teorema de Appelquist-Carazzone resume la intuicion de que, en muchas teorias renormalizables, los grados de libertad muy pesados desacoplan de la fisica IR salvo por:
 
@@ -91,27 +138,40 @@ El teorema de Appelquist-Carazzone resume la intuicion de que, en muchas teorias
 
 Ese desacoplamiento no es magia: nace de la combinacion entre simetrias, expansion en momentos y separacion clara de escalas.
 
-## 8. Ejemplo corto de lectura
+Tambien conviene registrar el matiz importante: no todo grado de libertad pesado desacopla de manera ingenua. Si su masa esta ligada a la ruptura de una simetria o a una estructura anomala, pueden sobrevivir efectos menos triviales en bajas energias. Por eso el desacoplamiento debe leerse como principio muy poderoso, pero no como reflejo automatico sin revisar la estructura teorica.
+
+## 10. Ejemplo corto de lectura
 
 Si una particula pesada de masa $M$ media una interaccion entre campos ligeros, a energias muy por debajo de $M$ no necesitamos seguir su propagador completo. Su efecto dominante se puede reemplazar por un contacto local mas coeficientes suprimidos por $1/M^2$, $1/M^4$, etc.
 
-## 9. Cuaderno asociado
+## 11. Donde aparece esta idea en fisica real
+
+La idea de integrar grados de libertad aparece en casi todos los grandes ejemplos modernos:
+
+- la teoria de Fermi al eliminar el boson $W$ a bajas energias;
+- el lagrangiano de Euler-Heisenberg al integrar electrones en procesos de fotones suaves;
+- SMEFT al parametrizar nueva fisica pesada por encima de la escala electrodébil;
+- gravedad efectiva al organizar correcciones de energia baja a la relatividad general.
+
+Por eso este lenguaje no es una tecnica marginal, sino una forma estandar de pensar en QFT contemporanea.
+
+## 12. Cuaderno asociado
 
 - `../../Cuadernos/ejemplos/15_operadores_efectivos_y_power_counting.ipynb`: usarlo para fijar el conteo dimensional y la lectura de operadores efectivos segun la escala de corte.
 
-## 10. Advertencias utiles
+## 13. Advertencias utiles
 
 - Integrar un campo pesado no siempre significa simplemente "borrarlo"; significa resumir su efecto en nuevos operadores y coeficientes.
 - La expansion efectiva depende de la jerarquia de escalas. Si $E$ deja de ser pequeño frente a $\Lambda$, la EFT pierde control.
 - No toda EFT es perturbativamente simple, pero casi siempre sigue siendo una organizacion muy util.
 
-## 11. Preguntas de comprobacion
+## 14. Preguntas de comprobacion
 
 - Que significa integrar grados de libertad pesados.
 - Por que aparecen operadores de dimension mayor que cuatro.
 - Como se estima la importancia de un operador usando $E/\Lambda$.
 
-## 12. Referencias y lecturas recomendadas
+## 15. Referencias y lecturas recomendadas
 
 - Base: notas introductorias sobre EFT y desacoplamiento.
 - Complementaria: Burgess, introducciones pedagogicas a EFT.

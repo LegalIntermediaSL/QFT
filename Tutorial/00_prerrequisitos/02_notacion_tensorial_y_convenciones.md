@@ -14,6 +14,8 @@ $$
 
 Esta convencion hace la escritura mucho mas compacta y es ubicua en QFT.
 
+Conviene adquirir desde muy pronto un reflejo importante: un indice repetido no es un adorno tipografico, sino una instruccion algebraica. Muchisimos errores al empezar vienen de leer una expresion covariante como si fuera solo una abreviatura estilistica.
+
 ## 3. Indices covariantes y contravariantes
 
 Un cuatro-vector puede escribirse con indice arriba o abajo:
@@ -42,6 +44,8 @@ $$
 x_\mu = (t,-\mathbf{x}).
 $$
 
+Este ejemplo ya muestra una fuente clasica de errores: bajar un indice espacial cambia signos cuando se trabaja con la metrica relativista usual de fisica de particulas.
+
 ## 4. Indices griegos y latinos
 
 En fisica de particulas suele usarse:
@@ -51,6 +55,8 @@ En fisica de particulas suele usarse:
 - otros indices latinos o letras adicionales para color, sabor, espin interno o representaciones de grupo.
 
 Leer bien esos indices es importante porque cada uno identifica una estructura distinta de la teoria.
+
+Una buena costumbre es preguntarse siempre: "este indice es de espacio-tiempo, de espacio ordinario o de algun espacio interno?". Hacer esa distincion a tiempo evita mezclar estructuras conceptualmente distintas en una misma formula.
 
 ## 5. Derivadas relativistas
 
@@ -78,6 +84,8 @@ $$
 \Box = \partial_t^2 - \nabla^2.
 $$
 
+Esta expresion es especialmente importante porque reaparece en la ecuacion de Klein-Gordon, en propagadores libres y en funciones de Green. Entender bien el signo del d'Alembertiano desde el principio ahorra muchos tropiezos posteriores.
+
 Este operador aparece constantemente en ecuaciones relativistas como la de Klein-Gordon.
 
 ## 6. Integrales relativistas
@@ -93,6 +101,8 @@ En una accion relativista se escribe tipicamente
 $$
 S = \int d^4x\, \mathcal{L}.
 $$
+
+Esta medida deja ver algo profundo: en teoria de campos ya no se integra solo sobre trayectorias o coordenadas generalizadas, sino sobre todo el espacio-tiempo. Por eso la densidad lagrangiana es un objeto local y la accion es su acumulacion global.
 
 En espacio de momentos aparece la medida
 
@@ -122,6 +132,8 @@ $$
 
 Este signo menos en la parte espacial es una de las fuentes mas frecuentes de errores de calculo al empezar.
 
+Cuando una formula parece "casi correcta" salvo por un signo inexplicable, muy a menudo la causa esta justamente en este producto escalar relativista.
+
 ## 8. Convenciones de metrica
 
 No todos los textos usan la misma metrica. Las dos convenciones mas comunes son:
@@ -140,6 +152,8 @@ La fisica no cambia, pero si cambian algunos signos intermedios en:
 
 Por eso es indispensable declarar la convencion usada en cada documento tecnico.
 
+No hacerlo no vuelve falsa una cuenta, pero si la vuelve peligrosa de leer y comparar con otros textos. Parte de la madurez tecnica en QFT consiste en detectar rapidamente que convencion esta usando cada autor.
+
 ## 9. Tensores antisimetricos y ejemplo electromagnetico
 
 Un tensor de rango dos puede tener propiedades de simetria o antisimetra. Un ejemplo central es el tensor de campo electromagnetico
@@ -156,6 +170,8 @@ $$
 
 reduce el numero de componentes independientes y refleja la estructura del campo electromagnetico.
 
+Este ejemplo es pedagogicamente valioso porque muestra que la notacion tensorial no solo compacta formulas: tambien hace visibles propiedades estructurales como simetrias, antisimetrias y restricciones de componentes.
+
 ## 10. Convenciones utiles en QFT
 
 Algunas notaciones que aparecen una y otra vez son:
@@ -167,6 +183,8 @@ Algunas notaciones que aparecen una y otra vez son:
 - $T\{\cdots\}$ para orden temporal.
 
 No hace falta dominarlas todas desde el inicio, pero si conviene familiarizarse con su presencia.
+
+Una forma realista de aprender esta notacion no es memorizarla toda de golpe, sino reconocerla al verla repetirse en contextos concretos: corrientes, lagrangianos, propagadores, correladores y derivadas covariantes.
 
 ## 11. Errores frecuentes
 

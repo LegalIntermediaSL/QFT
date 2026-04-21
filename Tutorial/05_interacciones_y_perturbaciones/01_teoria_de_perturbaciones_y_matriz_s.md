@@ -22,6 +22,8 @@ La utilidad de esta separacion es que la teoria libre se resuelve exactamente y 
 
 Esta separacion no es solo tecnica. Refleja una estrategia fisica: partimos de un problema cuyo espacio de estados controlamos bien y construimos sobre el una expansion que captura progresivamente la complejidad de las interacciones reales.
 
+Tambien deja clara una limitacion: si la interaccion es demasiado fuerte o modifica radicalmente el espectro, la separacion entre "parte libre conocida" y "correccion pequena" puede dejar de ser util.
+
 ## 3. Que significa resolver la teoria libre
 
 Resolver la teoria libre significa, en esencia:
@@ -32,6 +34,8 @@ Resolver la teoria libre significa, en esencia:
 - identificar su hamiltoniano y sus excitaciones asintoticas.
 
 Sin esa base, la teoria de perturbaciones carece de punto de apoyo. Por eso el estudio de campos libres no es una etapa preliminar aburrida, sino la infraestructura sobre la que se construye todo el formalismo perturbativo.
+
+De hecho, todo el lenguaje de particulas asintoticas, propagadores y diagramas depende de haber entendido primero con precision que significa un cuanto libre del campo.
 
 ## 4. Estados asintoticos
 
@@ -45,6 +49,8 @@ La idea no es que la interaccion desaparezca siempre literalmente, sino que hay 
 
 En ese sentido, los estados asintoticos son una interfaz entre la descripcion teorica y el laboratorio: representan las configuraciones de entrada y salida que un detector puede preparar o medir con relativa claridad.
 
+Esto explica por que el formalismo de matriz S funciona especialmente bien en problemas de scattering relativista y no necesariamente en cualquier situacion dinamica arbitraria.
+
 ## 5. Matriz S
 
 El objeto central es la matriz $S$, que conecta estados iniciales y finales:
@@ -57,6 +63,14 @@ Sus elementos de matriz contienen la informacion observable necesaria para calcu
 
 Conviene subrayar que la matriz $S$ no es un observable cualquiera. Es el organizador global de la teoria de scattering. En ella se condensan las amplitudes que luego se traducen en predicciones experimentales.
 
+En muchos textos se escribe
+
+$$
+S = 1 + iT,
+$$
+
+para separar la parte trivial "no pasa nada" de la parte verdaderamente interactiva, contenida en el operador $T$.
+
 ## 6. Imagen de interaccion
 
 Una forma muy util de organizar la teoria de perturbaciones es la imagen de interaccion. En ella:
@@ -68,6 +82,8 @@ Una forma muy util de organizar la teoria de perturbaciones es la imagen de inte
 Este esquema hace transparente la expansion en potencias del acoplamiento.
 
 La imagen de interaccion resulta especialmente natural porque separa con claridad el problema exactamente soluble de la parte libre y la complejidad introducida por la interaccion. Sin esa separacion, la serie perturbativa seria mucho menos transparente.
+
+Ademas, es el marco en el que la ordenacion temporal y la expansion de Dyson adquieren una interpretacion operacional muy clara.
 
 ## 7. Serie de Dyson
 
@@ -88,6 +104,8 @@ $$
 
 Asi se ve con claridad que cada orden añade nuevas inserciones de la interaccion y, por tanto, nuevas clases de procesos y correcciones.
 
+Esta serie no es todavia un conjunto de diagramas, pero ya contiene todo su contenido combinatorio. Los diagramas de Feynman apareceran enseguida como una forma mucho mas eficiente de organizar esta expansion.
+
 ## 8. Que se calcula realmente
 
 En QFT no se calculan trayectorias clasicas de particulas individuales. Se calculan amplitudes. De ellas se derivan probabilidades y observables experimentales despues de tomar modulos cuadrados, promedios, sumas sobre polarizaciones y fases de espacio apropiadas.
@@ -97,6 +115,8 @@ Esta diferencia conceptual es clave:
 - amplitud no es probabilidad;
 - probabilidad no es seccion eficaz;
 - diagrama no es trayectoria.
+
+Insistir en estas diferencias evita varias confusiones comunes al empezar: el formalismo perturbativo trabaja primero con amplitudes complejas, y solo al final se construyen cantidades positivas comparables con experimento.
 
 ## 9. Del elemento de matriz al observable
 
@@ -109,11 +129,15 @@ Entre una amplitud y un numero experimental hay varios pasos intermedios. En pro
 
 Esto es importante pedagogicamente porque ayuda a no confundir el formalismo perturbativo con el dato final del experimento. El formalismo produce amplitudes; el puente hacia el laboratorio pasa por una capa adicional de interpretacion cinemática.
 
+Por eso un mismo elemento de matriz puede contribuir de maneras distintas segun el observable que se quiera construir: no todo problema experimental se reduce al mismo tipo de promedio o integracion sobre espacio de fases.
+
 ## 10. Parametro pequeno y validez perturbativa
 
 La teoria de perturbaciones funciona cuando el acoplamiento relevante es suficientemente pequeno como para que la expansion ordenada tenga sentido practico. Si la interaccion es fuerte, la serie puede converger mal o ser poco util. Eso explica por que hay regimens donde los metodos perturbativos son extraordinarios y otros donde resultan insuficientes.
 
 Tambien conviene recordar que "pequeno" puede depender de la escala. Un acoplamiento puede ser manejable perturbativamente en cierto rango de energias y dejar de serlo en otro. Por eso la teoria de perturbaciones se conecta de manera natural con la idea de corrida de acoplamientos y grupo de renormalizacion.
+
+Este punto es especialmente importante en teorias gauge: una teoria puede ser debilmente acoplada en un regimen ultravioleta y fuertemente acoplada en el infrarrojo, o al reves.
 
 ## 11. Correcciones de orden superior
 
@@ -141,6 +165,12 @@ el primer proceso de scattering $2\to2$ aparece ya a orden $\lambda$. A ordenes 
 - la dependencia con la energia del proceso.
 
 Este ejemplo simple basta para mostrar todo el esqueleto del formalismo perturbativo sin necesidad de introducir aun las complicaciones del Modelo Estandar.
+
+En ese ejemplo ya se ve la logica completa:
+
+- el termino de interaccion define el vertice;
+- el propagador libre conecta inserciones;
+- los ordenes superiores introducen lazos y renormalizacion.
 
 ## 13. Advertencias utiles
 

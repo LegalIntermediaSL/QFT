@@ -39,6 +39,14 @@ $$
 
 Bajo condiciones razonables de contorno, esta carga no cambia con el tiempo.
 
+Una manera breve de leer la cadena conceptual es:
+
+- simetria continua;
+- corriente conservada;
+- carga constante en el tiempo.
+
+Eso convierte a Noether en un puente directo entre geometria de la teoria y dinamica observable.
+
 ## 5. Ejemplos fundamentales
 
 Los ejemplos mas importantes al inicio del curso son:
@@ -50,6 +58,8 @@ Los ejemplos mas importantes al inicio del curso son:
 
 La gran leccion es que las leyes de conservacion no son hechos separados. Son huellas de simetrias.
 
+Este cambio de perspectiva es enorme. En vez de memorizar una lista de cantidades conservadas, aprendemos a derivarlas desde principios estructurales.
+
 ## 6. Ejemplo de fase global
 
 Consideremos un campo escalar complejo $\phi$. Si la teoria es invariante bajo
@@ -60,7 +70,25 @@ $$
 
 con $\alpha$ constante, entonces existe una corriente conservada asociada. Este ejemplo parece modesto, pero es pedagogicamente crucial porque enseguida conduce a la idea de simetria gauge.
 
-## 7. De global a local
+La clave aqui es que la transformacion actua en el espacio interno del campo, no desplazando el punto del espacio-tiempo. Eso muestra con claridad que se entiende por simetria interna.
+
+## 7. Bosquejo minimo de derivacion
+
+No hace falta aqui una derivacion completa con todo el detalle tecnico, pero si conviene registrar la logica. Si bajo una transformacion infinitesimal del campo
+
+$$
+\phi \to \phi + \delta \phi
+$$
+
+la accion cambia a lo sumo en un termino de borde, entonces al usar las ecuaciones de Euler-Lagrange la variacion restante puede reorganizarse como una divergencia:
+
+$$
+\partial_\mu j^\mu = 0.
+$$
+
+La corriente de Noether aparece precisamente al identificar que combinacion de campos y derivadas queda dentro de esa divergencia.
+
+## 8. De global a local
 
 Si promovemos $\alpha$ a funcion del espacio-tiempo,
 
@@ -72,13 +100,15 @@ la teoria deja de ser invariante en general. Recuperar esa invariancia requiere 
 
 Por eso las simetrias no solo restringen la teoria: tambien pueden generar estructura dinamica nueva.
 
-## 8. Tensor energia-momento
+En ese paso ocurre algo conceptualmente decisivo: la simetria deja de ser solo una propiedad pasiva de la teoria y empieza a exigir la introduccion de campos gauge que medien nuevas interacciones.
+
+## 9. Tensor energia-momento
 
 Las traslaciones del espacio-tiempo conducen a una corriente particularmente importante: el tensor energia-momento. Aunque su tratamiento completo puede refinarse despues, desde ahora conviene retener la idea de que energia y momento se organizan en un objeto tensorial directamente ligado a la simetria traslacional.
 
 Ese hecho es otro ejemplo del poder de la formulacion lagrangiana: lo que en otras aproximaciones pareceria una lista separada de magnitudes dinamicas aqui aparece de manera estructural.
 
-## 9. Simetria como criterio de construccion
+## 10. Simetria como criterio de construccion
 
 En teoria de campos moderna, a menudo se procede en este orden:
 
@@ -89,30 +119,32 @@ En teoria de campos moderna, a menudo se procede en este orden:
 
 Este modo de construir teorias es una de las razones por las que Noether tiene un papel tan central.
 
-## 10. Simetria rota y simetria oculta
+Y esa forma de trabajar se vuelve cada vez mas poderosa al avanzar en el curso: primero en teorias gauge, luego en el Modelo Estandar y finalmente en teorias efectivas.
+
+## 11. Simetria rota y simetria oculta
 
 Conviene mencionar desde ya que una simetria puede estar presente en la accion y, sin embargo, no manifestarse de forma obvia en el estado de vacio. Ese fenomeno, la ruptura espontanea de simetria, sera esencial mas adelante.
 
 Por ahora basta con registrar la idea: la accion puede tener mas simetria que el estado fundamental alrededor del cual expandimos la teoria.
 
-## 11. Advertencias utiles
+## 12. Advertencias utiles
 
 - No toda cantidad conservada se reconoce facilmente si no se identifica la simetria subyacente.
 - Noether se formula de manera mas limpia para simetrias continuas, no para discretas.
 - Invariancia de la accion no significa inmovilidad trivial; significa estabilidad estructural bajo cierta transformacion.
 
-## 12. Preguntas de control
+## 13. Preguntas de control
 
 - Que diferencia hay entre simetria del espacio-tiempo e interna.
 - Como se pasa de una simetria continua a una corriente conservada.
 - Por que una simetria de fase global prepara el camino hacia teorias gauge.
 - En que sentido las simetrias sirven para construir teorias y no solo para describirlas.
 
-## 13. Cierre
+## 14. Cierre
 
 El teorema de Noether enseña una de las lecciones mas profundas de la fisica teorica: la conservacion es la sombra dinamica de la simetria. En QFT, esa conexion no es perifrica; es uno de los hilos que organizan casi toda la disciplina.
 
-## 14. Referencias y lecturas recomendadas
+## 15. Referencias y lecturas recomendadas
 
 - Base: Tong, Noether y corrientes conservadas.
 - Complementaria: Srednicki, formulacion lagrangiana de simetrias continuas.

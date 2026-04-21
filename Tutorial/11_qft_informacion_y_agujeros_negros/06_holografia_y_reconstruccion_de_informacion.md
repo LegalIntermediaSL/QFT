@@ -14,6 +14,8 @@ No necesitamos aqui toda la maquinaria de AdS/CFT. Lo importante es reconocer la
 - las nociones de interior y exterior no siempre coinciden con una particion ingenua de grados de libertad;
 - la unitaridad puede preservarse incluso cuando la descripcion semiclasica local parece sugerir lo contrario.
 
+La fuerza de la idea no reside solo en una dualidad tecnica concreta, sino en una leccion estructural: la cantidad de informacion fisica relevante puede escalar de formas muy distintas a lo que sugiere una intuicion volumetrica clasica.
+
 ## 3. Reconstruccion
 
 La palabra reconstruccion aparece porque queremos entender como extraer informacion del bulk gravitatorio a partir de datos mas controlables en la teoria dual o en observables mas globales.
@@ -26,6 +28,8 @@ Pedagogicamente, esto conecta con todo el modulo:
 - islas;
 - refinamiento del concepto mismo de "donde esta la informacion".
 
+En particular, reconstruccion significa que la localizacion aparente de un dato en el bulk no coincide necesariamente con una localizacion unica y simple en el lenguaje dual. Esa tension es parte del corazón conceptual del tema.
+
 ## 4. Por que entra aqui
 
 La holografia no se presenta como un adorno exótico, sino como una pista poderosa de que:
@@ -34,7 +38,15 @@ La holografia no se presenta como un adorno exótico, sino como una pista podero
 - la informacion puede estar codificada de forma altamente no local;
 - la gravedad cuantica probablemente reorganiza el espacio-tiempo y la informacion de un modo muy distinto al sugerido por la semiclasica ingenua.
 
-## 5. Entrelazamiento y geometria
+## 5. Bulk, borde y codificacion redundante
+
+Una buena manera de pensar holografia es como un sistema de codificacion redundante. La informacion del bulk no se almacena de forma trivial punto a punto en el borde, sino de manera distribuida. Eso ayuda a entender por que:
+
+- distintas regiones del borde pueden contener acceso parcial a la misma fisica del bulk;
+- la reconstruccion depende de que subregion o conjunto de observables se controle;
+- la informacion puede parecer perdida localmente y, sin embargo, seguir presente globalmente.
+
+## 6. Entrelazamiento y geometria
 
 Una de las intuiciones modernas mas impactantes es que la geometria y el entrelazamiento parecen estar mucho mas ligados de lo que sugiere una lectura clasica del espacio-tiempo.
 
@@ -44,27 +56,35 @@ Sin entrar en detalles tecnicos, este es el puente conceptual:
 - puede estar relacionado con la propia conectividad o codificacion de la geometria;
 - por eso informacion cuantica y gravedad ya no pueden separarse limpiamente en estas fronteras.
 
-## 6. Ejemplo corto de lectura
+## 7. Wedge reconstruction y subregiones
+
+Sin entrar en la maquinaria completa, una intuicion util es que ciertas regiones del bulk pueden reconstruirse a partir de subregiones apropiadas del borde. Esto vuelve mucho menos ingenua la pregunta "donde esta la informacion":
+
+- no siempre esta localizada de forma unica en una posicion del bulk;
+- puede ser accesible desde descripciones parciales bien elegidas;
+- la geometria y el entrelazamiento ayudan a determinar que reconstruccion es posible.
+
+## 8. Ejemplo corto de lectura
 
 Si una teoria gravitatoria parece perder informacion desde una descripcion local semiclasica, pero una descripcion holografica dual sigue siendo manifiestamente unitaria, entonces el problema no es necesariamente la unitaridad en si, sino la manera en que estamos leyendo la localizacion y recuperacion de informacion en el bulk.
 
-## 7. Cuaderno asociado
+## 9. Cuaderno asociado
 
 - `../../Cuadernos/problemas_resueltos/22_holografia_y_reconstruccion_de_informacion.ipynb`: usarlo para fijar el vocabulario minimo de borde, bulk, reconstruccion e informacion codificada de forma no local.
 
-## 8. Advertencias utiles
+## 10. Advertencias utiles
 
 - Holografia no equivale automaticamente a haber resuelto toda la paradoja de la informacion.
 - La formulacion tecnica completa excede por mucho el alcance de este tutorial.
 - Aqui la usamos como organizador conceptual, no como tratamiento exhaustivo de AdS/CFT.
 
-## 9. Preguntas de comprobacion
+## 11. Preguntas de comprobacion
 
 - Por que la holografia resulta relevante para la discusion sobre informacion.
 - Que significa reconstruccion en este contexto.
 - Como se relaciona esta intuicion con entrelazamiento, islas y unitaridad.
 
-## 10. Referencias y lecturas recomendadas
+## 12. Referencias y lecturas recomendadas
 
 - Base: reseñas pedagogicas sobre holografia e informacion de agujeros negros.
 - Complementaria: introducciones conceptuales a AdS/CFT y reconstruccion de bulk.

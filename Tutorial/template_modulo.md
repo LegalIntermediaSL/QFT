@@ -44,4 +44,4 @@ Al finalizar este módulo, el estudiante debería:
 2. [Ejercicio de aplicación o cálculo]
 
 ---
-| [<< Anterior](../[Modulo_Anterior]/README.md) | [Índice](../README.md) | [Siguiente >>](../[Modulo_Siguiente]/README.md) |
+| [<< Anterior](../MODULO_ANTERIOR/README.md) | [Índice](../README.md) | [Siguiente >>](../MODULO_SIGUIENTE/README.md) |

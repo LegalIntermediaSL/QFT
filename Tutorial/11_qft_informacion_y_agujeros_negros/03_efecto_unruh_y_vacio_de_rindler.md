@@ -20,6 +20,8 @@ Para describir observadores acelerados es natural introducir coordenadas de Rind
 
 Esta limitacion de acceso ya sugiere la idea central: parte de los grados de libertad globales queda fuera del horizonte efectivo del observador.
 
+Ese horizonte no surge de una singularidad gravitatoria real, sino de la cinemática del observador. Este punto es crucial porque muestra que ya en espacio-tiempo plano puede aparecer una separación operativa entre regiones accesibles e inaccesibles.
+
 ## 4. Idea del efecto Unruh
 
 El efecto Unruh afirma, de forma esquematica, que el vacio de Minkowski es interpretado por un observador acelerado como un estado termico con temperatura
@@ -32,6 +34,8 @@ donde $a$ es la aceleracion propia, en unidades naturales.
 
 No se trata de que el espacio-tiempo "produzca calor" en un sentido clasico ingenuo. La termicidad aparece porque el observador acelerado accede solo a una descripcion reducida del estado global del campo.
 
+La temperatura de Unruh sintetiza esta leccion en una formula sorprendentemente compacta: mayor aceleracion implica mayor temperatura efectiva del vacío reducido.
+
 ## 5. Vacio global y estado reducido
 
 La relacion con la informacion cuantica es directa:
@@ -39,6 +43,8 @@ La relacion con la informacion cuantica es directa:
 - el vacio global de Minkowski puede ser puro;
 - al restringirnos a una cuña de Rindler, se traza sobre grados de libertad inaccesibles;
 - el estado reducido resultante es termico o efectivamente termico para el observador acelerado.
+
+Esta es una de las maneras mas limpias de ver que entrelazamiento y termicidad efectiva pueden surgir sin necesidad de introducir un baño térmico fundamental.
 
 Este es el puente conceptual exacto hacia los horizontes de agujeros negros.
 
@@ -51,7 +57,11 @@ El efecto Unruh enseña varias lecciones a la vez:
 - el acceso parcial a la informacion produce termicidad efectiva;
 - los horizontes pueden analizarse ya en espacio-tiempo plano, sin necesidad inmediata de gravedad dinamica.
 
-## 7. Relacion con Hawking
+## 7. Detectores y operacionalidad
+
+Una de las virtudes del efecto Unruh es que no depende solo de juegos formales con coordenadas. Puede formularse operacionalmente en terminos de detectores acelerados que responden como si estuvieran inmersos en un fondo térmico. Eso refuerza que el fenómeno no es pura convención, sino una diferencia real en el contenido accesible para distintos observadores.
+
+## 8. Relacion con Hawking
 
 La radiacion de Hawking comparte la misma arquitectura conceptual:
 
@@ -61,29 +71,29 @@ La radiacion de Hawking comparte la misma arquitectura conceptual:
 
 Por eso Unruh funciona como ensayo conceptual antes de entrar a agujeros negros.
 
-## 8. Ejemplo corto de lectura
+## 9. Ejemplo corto de lectura
 
 Si una persona pregunta "¿el vacio contiene particulas o no?", la respuesta correcta en QFT relativista es: depende del observador y de la descomposicion modal usada para definir el concepto de particula. Ese es exactamente el tipo de flexibilidad conceptual que el efecto Unruh obliga a aceptar.
 
-## 9. Cuaderno asociado
+## 10. Cuaderno asociado
 
 - `../../Cuadernos/ejemplos/12_unruh_hawking_y_curva_de_page.ipynb`: usarlo para reforzar la intuicion de termicidad efectiva, acceso parcial a informacion y el papel conceptual de la curva de Page.
 - `../../Cuadernos/ejemplos/08_entrelazamiento_y_horizontes.ipynb`: usarlo para reforzar la relacion entre acceso parcial, termicidad efectiva y horizontes.
 - `../../Cuadernos/problemas_resueltos/12_qft_informacion_y_agujeros_negros.ipynb`: usarlo para revisar preguntas conceptuales del modulo.
 
-## 10. Advertencias utiles
+## 11. Advertencias utiles
 
 - El efecto Unruh no significa que todo observador vea la misma particula con distinta energia.
 - Termicidad efectiva no implica necesariamente perdida fundamental de informacion.
 - El vacio de Minkowski y el vacio de Rindler no son la misma nocion operacional de vacio.
 
-## 11. Preguntas de comprobacion
+## 12. Preguntas de comprobacion
 
 - Por que la nocion de particula depende del observador.
 - Que papel juegan las coordenadas de Rindler.
 - Como se conecta el efecto Unruh con la idea de estado reducido termico.
 
-## 12. Referencias y lecturas recomendadas
+## 13. Referencias y lecturas recomendadas
 
 - Base: Birrell y Davies, efecto Unruh y cuantizacion en espacio-tiempo curvo.
 - Complementaria: reseñas pedagogicas sobre observadores acelerados y termicidad efectiva.

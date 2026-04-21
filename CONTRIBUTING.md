@@ -28,12 +28,37 @@ Cada nuevo módulo debe seguir el archivo [template_modulo.md](Tutorial/template
 - Prefiere diagramas detallados (`flowchart TD`) para el flujo conceptual.
 - Para reglas de Feynman de QED, utiliza los estilos definidos en `Imagenes/diagramas/qed_rules.md`.
 
+### 4. Enlaces, navegación y consistencia editorial
+- Todo documento nuevo debe enlazar con su contexto: índice de módulo, documento anterior o siguiente cuando aplique, y referencias de apoyo.
+- Si un capítulo tiene notebook asociado, conviene citarlo explícitamente y explicar para qué sirve.
+- Antes de abrir un PR, ejecuta `python check_links.py`.
+- Si modificas la navegación general, actualiza también `mkdocs.yml`, `README.md` y el índice del módulo afectado.
+
+### 5. Notebooks
+- Mantén nombres numerados y descriptivos.
+- Añade una primera celda con objetivo, prerequisitos y resultado esperado.
+- Evita mezclar demasiados temas en un mismo cuaderno.
+- Si un cuaderno requiere librerías poco comunes, indícalo al inicio y refléjalo en `requirements.txt`.
+
 ## Proceso de Desarrollo
 
 1. Haz un **Fork** del repositorio.
 2. Crea una **Rama** para tu mejora (`git checkout -b feature/nuevo-modulo`).
-3. Realiza tus cambios y verifica que los enlaces no estén rotos (puedes usar el script `check_links.py`).
-4. Abre un **Pull Request** describiendo detalladamente tus cambios.
+3. Instala dependencias según el tipo de cambio:
+   - `pip install -r requirements.txt` para cuadernos.
+   - `pip install -r requirements-docs.txt` para documentación y sitio.
+4. Realiza tus cambios y valida el repositorio:
+   - `python check_links.py`
+   - `mkdocs build --clean`
+5. Abre un **Pull Request** describiendo detalladamente tus cambios.
+
+## Checklist sugerida para un PR
+
+- El contenido nuevo respeta la notación global.
+- Los enlaces locales y la navegación del módulo funcionan.
+- `mkdocs.yml` refleja los cambios si hay nuevas páginas públicas.
+- Los notebooks nuevos o modificados explican su objetivo desde la primera celda.
+- La documentación principal quedó sincronizada si cambió el alcance del proyecto.
 
 ---
 Mantenemos una comunicación respetuosa y enfocada en la claridad pedagógica. ¡Esperamos tus aportes!

@@ -48,6 +48,8 @@ Este numero permite clasificar separaciones entre eventos:
 
 Esta clasificacion es central para entender causalidad en QFT.
 
+Tambien conviene registrar una intuicion importante: si dos observadores inerciales describen el mismo par de eventos, pueden discrepar en las coordenadas temporales y espaciales asignadas, pero no en el signo del intervalo. Por eso la clasificacion causal no depende del observador.
+
 ## 4. Cono de luz y causalidad
 
 El cono de luz de un evento separa el espacio-tiempo en regiones causalmente accesibles y no accesibles. Ninguna señal fisica puede propagarse fuera del cono de luz si se respeta la relatividad especial.
@@ -59,6 +61,12 @@ En consecuencia:
 - los eventos de tipo luz se conectan por propagacion a velocidad $c$.
 
 La microcausalidad en QFT esta construida precisamente para respetar esta estructura.
+
+El cono de luz no es solo una figura geometrica util. Es el mapa de todas las influencias fisicamente permitidas. Esta idea reaparece una y otra vez en QFT:
+
+- al exigir conmutadores nulos a separacion espacial;
+- al interpretar propagadores y funciones de Green;
+- al distinguir correlacion cuantica de senalizacion causal.
 
 ## 5. Cuatro-vectores
 
@@ -88,6 +96,8 @@ $$
 E^2 = \mathbf{p}^2 + m^2.
 $$
 
+Esta relacion se llama condicion on-shell porque describe particulas libres fisicas, es decir, excitaciones cuyo cuatro-momento satisface la ecuacion de movimiento relativista. Mas adelante, en lineas internas de diagramas, apareceran momentos off-shell que no obedecen necesariamente esta igualdad.
+
 ## 6. Masa, energia y momento
 
 Esta ecuacion resume una enorme cantidad de fisica:
@@ -98,6 +108,8 @@ Esta ecuacion resume una enorme cantidad de fisica:
 - la energia disponible puede convertirse en nuevas excitaciones materiales.
 
 Esta ultima idea es una de las razones por las que una teoria cuantica relativista no puede suponer numero fijo de particulas.
+
+Ese es uno de los choques mas fuertes con la mecanica cuantica no relativista. Si la energia puede transformarse en masa de nuevas particulas, entonces el sector de "numero fijo de particulas" deja de ser estable como descripcion fundamental.
 
 ## 7. Transformaciones de Lorentz
 
@@ -113,6 +125,8 @@ Una teoria relativista consistente debe mantener la misma forma de sus leyes baj
 - espinores;
 - tensores.
 
+Por eso la simetria de Lorentz no se reduce a decir que "las ecuaciones se ven bonitas". Tambien decide que tipos de objetos pueden aparecer en la teoria y como deben combinarse en una accion covariante.
+
 ## 8. Tiempo propio e invariantes
 
 Para una particula masiva, el tiempo propio $\tau$ satisface
@@ -123,6 +137,8 @@ $$
 
 Las cantidades invariantes tienen un papel especial porque no dependen del observador. En QFT, la busqueda de cantidades covariantes o invariantes es una guia sistematica para escribir acciones, amplitudes y terminos lagrangianos.
 
+En cierto sentido, buena parte del estilo moderno de la fisica teorica consiste en esto: escribir la teoria en terminos de objetos cuya forma tenga sentido para cualquier observador inercial.
+
 ## 9. Masa invariante de un sistema
 
 Si varias particulas forman un sistema, la masa invariante total viene dada por la norma del cuatro-momento total:
@@ -132,6 +148,8 @@ M^2 = P_\mu P^\mu.
 $$
 
 Esta cantidad es muy util en scattering y decaimientos, porque permite reconocer umbrales energeticos de produccion y analizar procesos de forma geométrica en el espacio de momentos.
+
+Por ejemplo, si la masa invariante disponible en un sistema inicial no alcanza el umbral de una particula o conjunto de particulas finales, ese proceso simplemente no puede ocurrir. Esta es una forma muy limpia de pensar umbrales sin depender de un sistema de referencia particular.
 
 ## 10. Relatividad especial y necesidad de campos
 

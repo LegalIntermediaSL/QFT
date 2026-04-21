@@ -38,7 +38,76 @@ Al tomar formalmente el limite de muchos pasos temporales, esa integral multiple
 
 Este argumento no es una demostracion rigurosa en el sentido matematico fuerte, pero si es la derivacion fisica estandar y la que mejor comunica de donde sale la estructura de la integral de camino.
 
-## 4. De una coordenada a un campo
+Un modo util de verlo es escribir
+
+$$
+U(t_f,t_i)=e^{-iH(t_f-t_i)/\hbar}
+$$
+
+y factorizar el intervalo total en $N$ pasos de tamaño $\varepsilon=(t_f-t_i)/N$:
+
+$$
+U(t_f,t_i)=\left(e^{-iH\varepsilon/\hbar}\right)^N.
+$$
+
+Entre cada factor se inserta una resolucion de la identidad en la base de posiciones,
+
+$$
+\mathbf{1}=\int dx_n\, |x_n\rangle \langle x_n|.
+$$
+
+Para un Hamiltoniano de la forma
+
+$$
+H=\frac{p^2}{2m}+V(x),
+$$
+
+el elemento de matriz de cada paso puede aproximarse para $\varepsilon$ pequeño y reorganizarse como
+
+$$
+\langle x_{n+1}|e^{-iH\varepsilon/\hbar}|x_n\rangle
+\sim
+\exp\!\left[
+\frac{i\varepsilon}{\hbar}
+\left(
+\frac{m}{2}\left(\frac{x_{n+1}-x_n}{\varepsilon}\right)^2
+-V(x_n)
+\right)
+\right].
+$$
+
+Al multiplicar todos los factores, el exponente se suma y reproduce la version discretizada de la accion clasica
+
+$$
+S[x]=\int_{t_i}^{t_f}dt\, L(x,\dot x).
+$$
+
+Esto deja clara una intuicion esencial: la accion no se introduce artificialmente en la teoria cuantica, sino que emerge de la estructura temporal de la evolucion.
+
+## 4. Fase, interferencia y limite clasico
+
+La expresion
+
+$$
+e^{iS/\hbar}
+$$
+
+resume dos ideas a la vez:
+
+- toda historia admisible contribuye;
+- no todas contribuyen con el mismo peso neto, porque la fase oscila.
+
+Si una familia de trayectorias produce variaciones grandes de $S$, sus fases apuntan en direcciones muy distintas en el plano complejo y tienden a cancelarse. En cambio, cuando la accion es estacionaria frente a pequeñas variaciones,
+
+$$
+\delta S = 0,
+$$
+
+la fase cambia mas lentamente y las contribuciones vecinas se refuerzan. De ahi emerge la ecuacion clasica como condicion de fase estacionaria.
+
+Esta lectura evita un malentendido frecuente: la trayectoria clasica no se "impone" desde fuera, sino que aparece como aproximacion dominante cuando $S/\hbar$ es grande y la interferencia suprime historias alejadas del extremo de la accion.
+
+## 5. De una coordenada a un campo
 
 Para una particula, la suma se hace sobre trayectorias $x(t)$. Para una teoria de campos, la suma se hace sobre configuraciones de campo $\phi(x)$. De ahi la idea de integral funcional:
 
@@ -54,7 +123,26 @@ Pasar de una particula a un campo significa reemplazar:
 - una integral ordinaria por una integral funcional;
 - una suma sobre historias puntuales por una suma sobre historias del campo entero.
 
-## 5. Ventajas conceptuales
+La diferencia conceptual es grande. Una trayectoria de particula vive sobre una linea temporal. Una configuracion de campo asigna un valor a cada punto del espacio-tiempo. Por eso, en QFT no se suman "caminos de una particula", sino historias completas del contenido dinamico del sistema.
+
+En un campo escalar libre, por ejemplo,
+
+$$
+S[\phi] = \int d^4x \left[
+\frac{1}{2}\partial_\mu \phi\, \partial^\mu \phi
+- \frac{1}{2}m^2\phi^2
+\right].
+$$
+
+La integral funcional
+
+$$
+\int \mathcal{D}\phi\, e^{iS[\phi]}
+$$
+
+recorre formalmente todas las configuraciones posibles de $\phi(x)$, no solo las soluciones de Euler-Lagrange.
+
+## 6. Que gana la QFT con este lenguaje
 
 La integral de camino:
 
@@ -63,7 +151,24 @@ La integral de camino:
 - organiza correladores y teorias perturbativas con elegancia;
 - facilita el paso a formulaciones mas geometricas y estadisticas.
 
-## 6. Puente con la cuantizacion canonica
+Ademas, este lenguaje vuelve casi inevitables algunas construcciones que en el formalismo canonico aparecen mas tarde:
+
+- fuentes externas y funcionales generadores;
+- expansion perturbativa en terminos de correladores;
+- tratamiento uniforme de campos escalares, fermionicos y gauge;
+- rotacion euclidea y conexion con fisica estadistica.
+
+## 7. Ejemplo minimo: oscilador armonico y campo libre
+
+El oscilador armonico ya anticipa por que este formalismo es tan importante para QFT. Si un campo libre se descompone en modos normales, cada modo se comporta esencialmente como un oscilador. Entonces:
+
+- una particula puntual enseña la logica de suma sobre historias;
+- el oscilador armonico enseña como tratar sistemas cuadraticos;
+- un campo libre aparece como un continuo de osciladores acoplados por la estructura espacial.
+
+En sistemas cuadraticos, la integral de camino puede evaluarse exactamente porque la accion es gaussiana. Esa es una de las razones por las que los propagadores libres aparecen de forma tan natural en este enfoque.
+
+## 8. Puente con la cuantizacion canonica
 
 La integral de camino no compite con la cuantizacion canonica como si fueran dos teorias distintas. Son dos lenguajes para la misma fisica cuando ambos estan bien definidos.
 
@@ -78,18 +183,30 @@ En la practica:
 - los polos de los propagadores identifican las mismas excitaciones fisicas;
 - la expansion perturbativa lleva a los mismos diagramas de Feynman.
 
-## 7. Preguntas de estudio
+Una manera compacta de resumir la relacion es:
+
+- el enfoque canonico responde mejor a preguntas sobre operadores y estados;
+- el enfoque funcional organiza mejor correladores, simetrias y teoria perturbativa;
+- ambos deben coincidir en los observables fisicos.
+
+## 9. Advertencias utiles
+
+- La medida $\mathcal{D}\phi$ es formal y exige cuidado matematico; en fisica se justifica operacionalmente por discretizacion, regularizacion y continuacion adecuada.
+- La expresion de Minkowski con $e^{iS}$ es muy oscilatoria. En muchos contextos conviene rotar a tiempo imaginario para obtener integrales mejor comportadas.
+- "Sumar todas las historias" no significa que todas tengan igual importancia observable; la interferencia sigue siendo la clave.
+
+## 10. Preguntas de estudio
 
 - Que cambia al pasar de trayectoria clasica unica a suma sobre historias.
 - Por que el peso es $e^{iS}$.
 - En que sentido una integral funcional generaliza una integral ordinaria.
 - Por que la trayectoria clasica reaparece en el limite semiclasico.
 
-## 8. Cierre
+## 11. Cierre
 
 La integral de camino no reemplaza por completo a la cuantizacion canonica, pero ofrece una perspectiva complementaria extraordinariamente poderosa sobre la teoria cuantica de campos.
 
-## 9. Referencias y lecturas recomendadas
+## 12. Referencias y lecturas recomendadas
 
 - Base: Zee, introduccion a integrales de camino.
 - Complementaria: Srednicki, comienzo funcional del formalismo.

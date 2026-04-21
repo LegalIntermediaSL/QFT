@@ -38,6 +38,8 @@ $$
 
 Esta es la idea central de la lagrangiana de Euler-Heisenberg.
 
+Lo notable es que el sector ligero de la EFT contiene solo fotones, mientras que la informacion del electron queda encapsulada en los coeficientes de operadores de dimension superior. Es un ejemplo muy limpio de una teoria UV completamente conocida que produce una EFT no trivial.
+
 ## 4. Que nos dice esta estructura
 
 Los nuevos terminos muestran que:
@@ -47,6 +49,8 @@ Los nuevos terminos muestran que:
 - esas correcciones quedan fuertemente suprimidas por potencias de la masa electronica.
 
 En otras palabras, la QED completa induce una EFT puramente fotonica a baja energia.
+
+El hecho de que la supresion aparezca como $1/m_e^4$ no es accidental. Los primeros operadores no triviales construidos con $F_{\mu\nu}$ y compatibles con las simetrias relevantes tienen dimension ocho. Por eso su coeficiente debe cargar dimension $-4$.
 
 ## 5. Operadores y simetrias
 
@@ -58,7 +62,37 @@ Los operadores efectivos deben respetar:
 
 Por eso las correcciones no toman cualquier forma arbitraria: quedan organizadas por combinaciones invariantes construidas con $F_{\mu\nu}$ y $\tilde{F}_{\mu\nu}$.
 
-## 6. Lectura fisica
+En particular, en ausencia de violaciones explicitas de paridad o CP, los invariantes mas relevantes son
+
+$$
+F_{\mu\nu}F^{\mu\nu}
+\qquad\text{y}\qquad
+F_{\mu\nu}\tilde{F}^{\mu\nu}.
+$$
+
+Sus cuadrados generan exactamente la clase de operadores que aparece en Euler-Heisenberg.
+
+## 6. Lectura en terminos de campos electricos y magneticos
+
+La combinacion
+
+$$
+F_{\mu\nu}F^{\mu\nu}
+$$
+
+se relaciona con $B^2-E^2$, mientras que
+
+$$
+F_{\mu\nu}\tilde{F}^{\mu\nu}
+$$
+
+esta ligada a $\mathbf{E}\cdot\mathbf{B}$. Esto permite una lectura fisica bastante intuitiva:
+
+- el vacio cuantico responde de manera no lineal a campos intensos;
+- la respuesta depende de invariantes relativistas del fondo electromagnetico;
+- la EFT resume esa polarizacion del vacio sin tener que recalcular el lazo de electrones en cada caso.
+
+## 7. Lectura fisica
 
 El mensaje pedagogico no es que vayamos a medir facilmente dispersion foton-foton en un curso introductorio, sino que:
 
@@ -66,27 +100,29 @@ El mensaje pedagogico no es que vayamos a medir facilmente dispersion foton-foto
 - las EFT permiten resumirlas sin recalcular toda la teoria UV en cada proceso IR;
 - las simetrias mandan sobre la forma de los operadores.
 
-## 7. Ejemplo corto de lectura
+Este ejemplo es especialmente valioso porque destruye una intuicion clasica demasiado rigida: el vacio no es simplemente "nada", sino un medio cuantico capaz de polarizarse.
+
+## 8. Ejemplo corto de lectura
 
 Aunque la electrodinamica clasica no permite que dos rayos de luz interactuen directamente en el vacio, la QED predice una auto-interaccion efectiva muy pequeña inducida por lazos de electrones. Euler-Heisenberg es justamente la forma efectiva de escribir esa fisica a baja energia.
 
-## 8. Cuaderno asociado
+## 9. Cuaderno asociado
 
 - `../../Cuadernos/ejemplos/15_operadores_efectivos_y_power_counting.ipynb`: usarlo para reforzar la idea de operadores efectivos suprimidos por la escala pesada.
 
-## 9. Advertencias utiles
+## 10. Advertencias utiles
 
 - La lagrangiana de Euler-Heisenberg es una descripcion de baja energia, no la sustitucion universal de QED.
 - No todas las correcciones cuanticas se reducen a un solo operador; aparece una torre organizada por simetrias y dimensiones.
 - El ejemplo es muy valioso porque muestra EFT incluso dentro de una teoria renormalizable y muy bien establecida.
 
-## 10. Preguntas de comprobacion
+## 11. Preguntas de comprobacion
 
 - Por que Maxwell clasico es lineal y QED efectiva no lo es del todo.
 - Que papel juega la masa del electron en la supresion de los operadores.
 - Por que las correcciones deben escribirse en combinaciones gauge invariantes.
 
-## 11. Referencias y lecturas recomendadas
+## 12. Referencias y lecturas recomendadas
 
 - Base: notas sobre accion efectiva en QED y Euler-Heisenberg.
 - Complementaria: textos de campos externos y polarizacion del vacio.

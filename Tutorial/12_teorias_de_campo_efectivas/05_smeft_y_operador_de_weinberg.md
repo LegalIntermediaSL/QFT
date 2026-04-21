@@ -22,6 +22,12 @@ La logica es exactamente la misma que en cualquier EFT:
 - los operadores de mayor dimension codifican efectos UV;
 - las simetrias gauge del Modelo Estandar restringen fuertemente que operadores son posibles.
 
+Esto significa que SMEFT no se construye inventando correcciones arbitrarias, sino listando sistematicamente todos los operadores locales compatibles con:
+
+- el grupo gauge $SU(3)_c \times SU(2)_L \times U(1)_Y$;
+- el contenido de campos del Modelo Estandar;
+- la expansion en dimensiones de operador.
+
 ## 3. Por que SMEFT importa
 
 SMEFT permite hablar de nueva fisica sin comprometerse inmediatamente con una UV completion concreta.
@@ -31,6 +37,8 @@ Eso la vuelve muy util para:
 - organizar desviaciones pequenas en observables;
 - comparar experimentos distintos en un lenguaje comun;
 - conectar precision electrodébil, Higgs, sabor y neutrinos.
+
+En otras palabras, SMEFT sirve como interfaz entre datos y teoria. En vez de analizar cada desviacion con una UV completion distinta, primero se traduce todo a coeficientes de Wilson efectivos y luego se interpreta esa informacion.
 
 ## 4. El operador de Weinberg
 
@@ -54,6 +62,8 @@ Esto lo convierte en un caso excepcionalmente interesante:
 - viola numero leptónico en dos unidades;
 - sugiere de forma natural masas de Majorana para neutrinos.
 
+Su caracter excepcional se entiende mejor al recordar que, con el contenido de campos del Modelo Estandar, es esencialmente el unico operador de dimension cinco compatible con las simetrias gauge. Eso le da un papel privilegiado dentro de toda la expansion efectiva.
+
 ## 5. Dimension cinco vs dimension seis
 
 En SMEFT, los operadores de dimension seis suelen corregir:
@@ -65,31 +75,55 @@ En SMEFT, los operadores de dimension seis suelen corregir:
 
 El operador de Weinberg destaca porque aparece ya en dimension cinco, es decir, con una supresion menos severa que muchos otros efectos UV posibles.
 
-## 6. Lectura fisica
+Esto no implica que siempre domine cualquier observable. Lo que significa es que, si la fisica UV genera violacion de numero leptónico, la primera huella efectiva permitida por simetria ya aparece a dimension cinco. En cambio, muchas desviaciones en sectores de Higgs, gauge o cuatro fermiones entran por primera vez a dimension seis.
+
+## 6. Despues de la ruptura electrodébil
+
+Cuando el Higgs adquiere valor esperado
+
+$$
+\langle H\rangle \sim v,
+$$
+
+el operador de Weinberg deja de verse como un operador de cuatro campos y se traduce en un termino de masa para neutrinos. Ese paso muestra de manera muy concreta como una correccion efectiva simetricamente permitida a alta energia se convierte en una propiedad espectral observable a baja energia.
+
+## 7. SMEFT como programa de precision
+
+La importancia contemporanea de SMEFT no es solo conceptual. Tambien es metodologica:
+
+- permite combinar medidas de colisionadores, desintegraciones y observables de precision;
+- organiza ajustes globales de muchos datos distintos;
+- separa la parte model-independent de la parte UV-specific.
+
+Por eso se ha vuelto un lenguaje estandar en fenomenologia moderna.
+
+## 8. Lectura fisica
 
 La leccion profunda es que la pequeñez de las masas de neutrinos puede no ser un accidente extraño, sino la huella efectiva de una escala muy alta donde vive nueva fisica que rompe numero leptónico.
 
-## 7. Ejemplo corto de lectura
+Al mismo tiempo, SMEFT enseña una leccion mas amplia: incluso si no conocemos la teoria UV, las simetrias del Modelo Estandar ya restringen de forma muy fuerte como puede manifestarse a energias accesibles.
+
+## 9. Ejemplo corto de lectura
 
 Si $v \approx 246\,\mathrm{GeV}$ y la escala efectiva asociada al operador de Weinberg es muy grande, entonces el cociente $v^2/\Lambda$ puede producir masas neutrínicas muy pequeñas de forma natural. Esa simple cuenta dimensional ya da una intuicion poderosa de por que SMEFT es tan útil.
 
-## 8. Cuaderno asociado
+## 10. Cuaderno asociado
 
 - `../../Cuadernos/ejemplos/18_smeft_y_operador_de_weinberg.ipynb`: usarlo para fijar la expansion de SMEFT, la posicion especial del operador de dimension cinco y la escala efectiva de masas de neutrinos.
 
-## 9. Advertencias utiles
+## 11. Advertencias utiles
 
 - SMEFT no es una UV completion; es un lenguaje intermedio organizado por simetrias y escalas.
 - El operador de Weinberg no dice por si solo cual es la teoria UV responsable.
 - Elegir una base completa de operadores de dimension seis es una tarea tecnica mas rica que lo presentado aqui.
 
-## 10. Preguntas de comprobacion
+## 12. Preguntas de comprobacion
 
 - Por que el Modelo Estandar puede verse como el termino lider de SMEFT.
 - Que hace especial al operador de Weinberg dentro de la expansion.
 - Como aparece la estimacion $m_\nu \sim v^2/\Lambda$.
 
-## 11. Referencias y lecturas recomendadas
+## 13. Referencias y lecturas recomendadas
 
 - Base: reseñas pedagogicas de SMEFT y precision electrodébil.
 - Complementaria: revisiones sobre el operador de Weinberg y neutrinos efectivos.

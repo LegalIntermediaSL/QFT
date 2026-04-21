@@ -29,6 +29,8 @@ El orden temporal significa:
 
 Esta definicion ya anticipa por que el propagador de Feynman aparece tan naturalmente en teoria perturbativa.
 
+La ordenacion temporal es importante porque asegura que el correlador este adaptado a la evolucion causal usada en la expansion de Dyson y en la formulacion funcional. No es un detalle decorativo, sino parte de la definicion del objeto correcto para scattering perturbativo.
+
 ## 4. Espacio de momentos e interpretacion
 
 En espacio de momentos, el propagador libre adopta la forma familiar
@@ -44,6 +46,8 @@ Este factor es ubicuo en QFT. Aparece en:
 - funciones de Green del operador cinetico;
 - formulas de reduccion y amplitudes amputadas.
 
+De hecho, buena parte del lenguaje diagramatico posterior consiste en reconocer que cada linea interna no es "una particula viajando" en sentido clasico, sino una copia de este bloque analitico basico.
+
 ## 5. La prescripcion $i\epsilon$
 
 El termino $i\epsilon$ no es cosmetico. Cumple varias funciones a la vez:
@@ -53,6 +57,8 @@ El termino $i\epsilon$ no es cosmetico. Cumple varias funciones a la vez:
 - permite distinguir la eleccion adecuada de contorno al integrar en energia.
 
 Pedagogicamente conviene pensar que el $i\epsilon$ codifica la manera consistente de conectar el formalismo analitico con la condicion de vacio fisico.
+
+Tambien es lo que permite seleccionar correctamente el contorno al integrar sobre $p^0$ y garantizar que el correlador obtenido corresponde al vacio de Feynman apropiado.
 
 ## 6. Funcion de Green del operador de Klein-Gordon
 
@@ -67,6 +73,8 @@ Por eso se dice que $\Delta_F$ es una funcion de Green del operador de Klein-Gor
 - enlaza el lenguaje de ecuaciones diferenciales con el de correladores;
 - explica por que una linea interna se asocia a la inversion del operador cinetico;
 - prepara el terreno para la expansion perturbativa y la integral de camino.
+
+Una buena intuicion es esta: cuantizar el campo no borra la estructura diferencial clasica, sino que la reorganiza en forma de correladores del vacio y funciones de Green distribucionales.
 
 ## 7. Causalidad microfisica y conmutadores
 
@@ -84,6 +92,12 @@ $$
 
 Esta propiedad expresa que observables locales separados espacialmente no deben influirse de forma causal.
 
+Aqui aparece una distincion muy importante para evitar confusiones posteriores:
+
+- el conmutador causal codifica microcausalidad;
+- el propagador de Feynman codifica el correlador temporalmente ordenado util para perturbacion;
+- ambos estan relacionados, pero no son el mismo objeto.
+
 ## 8. Propagador y causalidad: una sutileza importante
 
 Es facil confundirse aqui:
@@ -91,6 +105,8 @@ Es facil confundirse aqui:
 - el propagador de Feynman no es cero para separaciones espaciales;
 - el objeto cuya anulacion protege la causalidad microfisica es el conmutador;
 - el orden temporal del propagador responde a necesidades analiticas y de calculo, no a una lectura ingenua de "senal viajando".
+
+Esto ayuda a desmontar una intuicion peligrosa: que cada linea de un diagrama representa una particula real moviendose entre dos eventos observables. En general, el propagador es un ingrediente de amplitud, no una trayectoria fisica directamente medible.
 
 Esta distincion es muy importante antes de entrar en diagramas de Feynman, donde la palabra "propagador" puede inducir interpretaciones demasiado clasicas.
 
@@ -109,6 +125,8 @@ $$
 $$
 
 Eso significa que el modulo `05` no introduce un objeto completamente nuevo: reutiliza el propagador libre como ladrillo basico para construir amplitudes perturbativas.
+
+En ese sentido, este capitulo es el verdadero puente entre cuantizacion del campo libre y teoria de interaccion: aqui se aprende el primer bloque universal que luego reaparece en casi todos los calculos.
 
 ## 11. Cuaderno asociado
 

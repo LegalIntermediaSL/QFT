@@ -78,24 +78,50 @@ El contenido tecnico ya supera una simple fase de arranque. El repositorio conti
 - [Tutorial/](Tutorial/README.md): primer bloque de contenido tecnico del tutorial.
 - [Herramientas Computacionales](Tutorial/99_apendices/computacion_qft.md): guía sobre FeynCalc y Python-HEP.
 - [Plantilla Editorial](Tutorial/99_apendices/plantilla_de_capitulo.md): estructura base sugerida para nuevos capitulos.
-- [Cuadernos/](Cuadernos/): notebooks Jupyter para ejemplos y problemas resueltos.
-- [Notas/](Notas/): deposito de PDFs, apuntes, resumenes y referencias para ampliar el tutorial.
-- [Imagenes/](Imagenes/): recursos visuales para diagramas, figuras y material grafico del proyecto.
+- [Cuadernos/](Cuadernos/README.md): notebooks Jupyter para ejemplos y problemas resueltos.
+- [Notas/](Notas/README.md): deposito de PDFs, apuntes, resumenes y referencias para ampliar el tutorial.
+- [Imagenes/](Imagenes/README.md): recursos visuales para diagramas, figuras y material grafico del proyecto.
 
 ## Instalación y Uso
 
-Para ejecutar los cuadernos interactivos (`Cuadernos/`) y las simulaciones, se recomienda crear un entorno virtual e instalar las dependencias necesarias:
+Para trabajar con el proyecto conviene separar dos capas:
+
+- dependencias de cuadernos y cálculo simbólico;
+- dependencias para construir y servir el sitio con MkDocs.
+
+Se recomienda crear un entorno virtual e instalar ambas:
 
 ```bash
 # Crear entorno virtual
 python -m venv venv
 source venv/bin/activate  # En Windows: venv\Scripts\activate
 
-# Instalar dependencias
+# Instalar dependencias de cuadernos
 pip install -r requirements.txt
+
+# Instalar dependencias de documentación
+pip install -r requirements-docs.txt
 ```
 
-Las bibliotecas principales utilizadas son `numpy`, `sympy` (para cálculo simbólico), `matplotlib` y `ipython`.
+Las bibliotecas principales utilizadas en los cuadernos son `numpy`, `sympy`, `matplotlib`, `ipython`, `pandas` y `scipy`.
+
+Para levantar el sitio localmente:
+
+```bash
+mkdocs serve
+```
+
+Para validar enlaces locales antes de publicar:
+
+```bash
+python check_links.py
+```
+
+Y para generar el sitio estático:
+
+```bash
+mkdocs build --clean
+```
 
 ## Hoja de ruta sugerida
 
@@ -137,9 +163,9 @@ Las bibliotecas principales utilizadas son `numpy`, `sympy` (para cálculo simb�
 
 ## Estado actual
 
-El proyecto ya ofrece una primera version navegable del recorrido principal. En este momento existen modulos desde `00_prerrequisitos` hasta `11_qft_informacion_y_agujeros_negros`, junto con cuadernos asociados, apendices y una bibliografia comentada.
+El proyecto ya ofrece una primera version navegable del recorrido principal. En este momento existen modulos desde `00_prerrequisitos` hasta `12_teorias_de_campo_efectivas`, junto con cuadernos asociados, apendices y una bibliografia comentada.
 
-La cobertura sigue siendo desigual: los bloques `00` a `05` estan mas consolidados como nucleo pedagogico, mientras que `06` a `11` ya tienen estructura util pero todavia admiten ampliaciones importantes en derivaciones, referencias por documento, ejercicios y ejemplos de calculo.
+La cobertura sigue siendo desigual: los bloques `00` a `05` estan mas consolidados como nucleo pedagogico, mientras que `06` a `12` ya tienen estructura util pero todavia admiten ampliaciones importantes en derivaciones, referencias por documento, ejercicios y ejemplos de calculo.
 
 ## Como contribuir
 
@@ -153,4 +179,4 @@ Si este repositorio crece de forma colaborativa, conviene proponer cambios que:
 
 ## Licencia y uso
 
-La licencia y condiciones de uso pueden definirse en una fase posterior. Hasta entonces, este repositorio debe entenderse como material de trabajo en evolucion.
+El contenido del proyecto se distribuye bajo la licencia [Creative Commons Attribution 4.0 International](LICENSE.md). Si en el futuro quieres distinguir entre contenido editorial y scripts auxiliares, se puede refinar a un esquema dual.

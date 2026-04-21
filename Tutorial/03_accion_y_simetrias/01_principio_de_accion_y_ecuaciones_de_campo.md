@@ -22,6 +22,8 @@ $$
 
 El indice $a$ permite indicar que puede haber varios campos en la teoria.
 
+Esta generalizacion no es un cambio cosmetico. Significa que la dinamica ya no describe unas pocas coordenadas, sino grados de libertad distribuidos en todo el espacio-tiempo.
+
 ## 3. Densidad lagrangiana y localidad
 
 La cantidad fundamental ya no es una lagrangiana global, sino una densidad lagrangiana $\mathcal{L}$. Esta depende localmente de los campos y de un numero finito de sus derivadas. La razon de esta estructura es doble:
@@ -30,6 +32,13 @@ La cantidad fundamental ya no es una lagrangiana global, sino una densidad lagra
 - implementa la idea de interaccion local.
 
 Una teoria local relativista casi siempre empieza proponiendo una $\mathcal{L}$ compatible con las simetrias relevantes.
+
+Por eso la densidad lagrangiana funciona como el lugar donde se encuentran casi todas las exigencias estructurales de la teoria:
+
+- localidad;
+- covariancia;
+- contenido de campos;
+- patron de interacciones.
 
 ## 4. Variacion de la accion
 
@@ -47,6 +56,8 @@ $$
 $$
 
 Esta expresion resume el paso desde un principio global hasta ecuaciones diferenciales locales.
+
+Ese paso es una de las ideas mas poderosas de toda la fisica teorica: una condicion variacional unica sobre un funcional global basta para generar ecuaciones locales de movimiento.
 
 ## 5. Ejemplo: campo escalar real
 
@@ -70,6 +81,8 @@ Este ejemplo es importante porque muestra el patron general:
 - termino de masa;
 - ecuacion de movimiento relativista.
 
+Tambien enseña algo muy practico: leer una ecuacion de movimiento directamente desde la parte cuadratica de la lagrangiana es una de las habilidades mas utiles en QFT.
+
 ## 6. Como leer una lagrangiana
 
 Una buena practica al empezar QFT consiste en entrenar la mirada para leer rapidamente una densidad lagrangiana. En una primera pasada conviene preguntar:
@@ -82,9 +95,13 @@ Una buena practica al empezar QFT consiste en entrenar la mirada para leer rapid
 
 Esa lectura preliminar suele decir mucho antes de hacer un solo calculo detallado.
 
+De hecho, una persona con soltura en el lenguaje lagrangiano puede mirar una teoria nueva y detectar muy rapidamente donde estan su cinematica, sus masas y sus vertices de interaccion.
+
 ## 7. Dimensiones y unidades naturales
 
 En muchos textos se usan unidades naturales $c=\hbar=1$. Eso hace que masas, energias e inversas de longitud compartan dimensiones compatibles. La accion suele tomarse adimensional en estas unidades, lo que ayuda a fijar las dimensiones de campos y acoplamientos.
+
+Este punto prepara de forma natural el terreno para la renormalizacion y las EFT: muchas veces la "plausibilidad" de un termino ya se adivina mirando sus dimensiones.
 
 Esta observacion no es decorativa. La contabilidad dimensional ayuda a anticipar:
 
@@ -108,6 +125,8 @@ $$
 
 Ya en este nivel clasico se ve una idea central: la forma de la lagrangiana controla de manera directa la complejidad dinamica de la teoria.
 
+En ese sentido, cambiar un solo termino en $\mathcal{L}$ no suele ser una correccion menor: puede alterar el tipo de ecuaciones, la estructura perturbativa y hasta el rango de validez de la teoria.
+
 ## 9. Por que la accion es el puente hacia la cuantizacion
 
 La accion no solo organiza la teoria clasica. Tambien es el lenguaje desde el cual se construyen:
@@ -117,6 +136,8 @@ La accion no solo organiza la teoria clasica. Tambien es el lenguaje desde el cu
 - las reglas perturbativas, a traves de la separacion entre parte libre e interaccion.
 
 Por eso dominar el principio de accion no es un lujo formal, sino un prerequisito real para entender la maquinaria de la QFT.
+
+Es el punto donde se conectan casi todos los lenguajes que vendran despues: campos clasicos, cuantizacion canonica, integral de camino, corrientes de Noether y reglas de Feynman.
 
 ## 10. Errores frecuentes
 

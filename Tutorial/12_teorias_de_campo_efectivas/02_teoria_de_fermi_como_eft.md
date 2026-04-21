@@ -27,6 +27,12 @@ siempre que $q^2 \ll M_W^2$.
 
 El primer termino produce una interaccion local efectiva.
 
+Esta expansion resume de manera muy clara la filosofia EFT:
+
+- el propagador completo recuerda que la teoria UV tiene un mediador dinamico;
+- la expansion en $q^2/M_W^2$ produce una serie de operadores locales;
+- a la precision mas baja basta el primer termino, que se ve como un contacto puntual.
+
 ## 3. Operador de Fermi
 
 La teoria efectiva resultante se escribe esquematicamente como
@@ -50,6 +56,8 @@ $$
 
 Esto resume de forma compacta el efecto del boson pesado intercambiado virtualmente.
 
+Si se piensa en un proceso como el decaimiento beta, la teoria completa describe el intercambio virtual de un $W$ entre una corriente leptónica y una hadronica. La EFT reemplaza ese intercambio por un unico vertice local, mucho mas simple de manejar a bajas energias.
+
 ## 4. Dimension del operador
 
 En cuatro dimensiones, un fermion tiene dimension de masa
@@ -72,6 +80,8 @@ $$
 
 Eso es exactamente lo que esperamos de una EFT generada por una escala pesada cuadratica en el denominador.
 
+Este analisis dimensional es extremadamente instructivo porque muestra por que la constante de Fermi no es "solo un numero pequeño": su dimension ya revela que la interaccion esta suprimida por una escala pesada.
+
 ## 5. Matching e interpretacion
 
 La idea de matching consiste en exigir que la teoria completa y la EFT reproduzcan la misma fisica IR a la precision deseada.
@@ -84,7 +94,25 @@ En este caso:
 
 Este ejemplo deja una leccion central: una interaccion aparentemente no renormalizable puede ser perfectamente buena y precisa dentro de su dominio de validez.
 
-## 6. Cuando falla la EFT
+Tambien es un ejemplo historicamente importante porque muestra un cambio de mentalidad. Antes de la formulacion electrodébil completa, la teoria de Fermi parecia una teoria fundamental con problemas UV. Vista hoy como EFT, aparece como una descripcion excelente y conceptualmente correcta de la fisica de baja energia.
+
+## 6. Estructura quiral
+
+La interaccion debil cargada del Modelo Estandar acopla a corrientes izquierdas. Por eso el operador efectivo de Fermi no es un contacto arbitrario entre fermiones, sino que hereda una estructura quiral muy especifica.
+
+Esquematicamente, el tipo de corriente relevante es
+
+$$
+J^\mu \sim \bar{\psi}\gamma^\mu (1-\gamma^5)\psi.
+$$
+
+Esta estructura importa porque:
+
+- reproduce la violacion de paridad de la interaccion debil;
+- restringe que observables y combinaciones de espines son posibles;
+- muestra que la EFT conserva informacion fina de la teoria UV, no solo la escala $M_W$.
+
+## 7. Cuando falla la EFT
 
 La teoria de Fermi deja de ser suficiente cuando la energia del proceso ya no es pequeña comparada con $M_W$.
 
@@ -94,27 +122,29 @@ En ese regimen:
 - aparecen correcciones de orden $q^2/M_W^2$;
 - la descripcion completa electrodébil se vuelve necesaria.
 
-## 7. Ejemplo corto de lectura
+Otra señal de que la EFT se esta estresando es que las amplitudes crecen con la energia de manera que la descripcion puntual deja de ser fiable. Esto no significa que la fisica falle, sino que el mediador real debe reintroducirse explícitamente.
+
+## 8. Ejemplo corto de lectura
 
 El decaimiento beta nuclear puede describirse con gran precision usando una interaccion puntual de cuatro fermiones, aunque en la teoria UV esa interaccion este mediada por un boson gauge masivo. Ese es exactamente el poder de una EFT bien construida.
 
-## 8. Cuaderno asociado
+## 9. Cuaderno asociado
 
 - `../../Cuadernos/problemas_resueltos/17_fermi_y_matching_efectivo.ipynb`: usarlo para seguir el paso entre el propagador del boson pesado y el operador efectivo de Fermi.
 
-## 9. Advertencias utiles
+## 10. Advertencias utiles
 
 - La teoria de Fermi no es "fundamentalmente incorrecta"; es una EFT valida en un rango de energia bien definido.
 - La no renormalizabilidad perturbativa de un operador local no lo hace inutil si la expansion por escalas es controlada.
 - El matching depende de convenciones y normalizaciones, pero la logica fisica es estable.
 
-## 10. Preguntas de comprobacion
+## 11. Preguntas de comprobacion
 
 - Por que el intercambio de un $W$ pesado se vuelve un contacto local a baja energia.
 - Que dimension tiene el operador de Fermi.
 - Como se relacionan $G_F$, $g$ y $M_W$ a nivel estructural.
 
-## 11. Referencias y lecturas recomendadas
+## 12. Referencias y lecturas recomendadas
 
 - Base: introducciones al sector debil y a la teoria de Fermi.
 - Complementaria: textos de EFT y matching a nivel arbol.

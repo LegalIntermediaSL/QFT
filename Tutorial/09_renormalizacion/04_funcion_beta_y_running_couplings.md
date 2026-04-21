@@ -30,6 +30,8 @@ $$
 \mu\frac{dg}{d\mu} = b\, g^3.
 $$
 
+Este formato deja ver que el grupo de renormalizacion no es una idea vaga sobre "cambio de escala", sino una ecuacion diferencial concreta para los parametros efectivos de la teoria.
+
 ## 4. Lectura fisica
 
 La funcion beta no es solo un artefacto de renormalizacion. Codifica contenido fisico:
@@ -37,6 +39,8 @@ La funcion beta no es solo un artefacto de renormalizacion. Codifica contenido f
 - si $\beta(g) > 0$, el acoplamiento crece con la escala;
 - si $\beta(g) < 0$, decrece con la escala;
 - sus ceros pueden señalar puntos fijos con estructura especial.
+
+La causa fisica intuitiva del running puede pensarse en terminos de polarizacion del vacio. Las fluctuaciones cuánticas modifican la forma en que una carga o una fuente se "ve" al explorarla con distinta resolucion. Por eso el acoplamiento medido no tiene por que ser igual a todas las distancias o energias.
 
 ## 5. Ejemplos famosos
 
@@ -46,6 +50,13 @@ Dos ejemplos pedagogicos dominan la intuicion moderna:
 - en QCD, el acoplamiento fuerte disminuye a altas energias, produciendo libertad asintotica.
 
 Esta diferencia ayuda a entender por que los quarks se comportan casi libres a energias muy altas y, al mismo tiempo, no se observan aislados a bajas energias.
+
+En lenguaje muy intuitivo:
+
+- en QED, la nube de pares virtuales apantalla parcialmente la carga;
+- en QCD, la estructura no abeliana del campo gauge cambia el signo del efecto a altas energias.
+
+Esa inversion de comportamiento es una de las diferencias conceptuales mas profundas entre teorias abelianas y no abelianas.
 
 ## 6. Running coupling como idea efectiva
 
@@ -65,28 +76,44 @@ $$
 
 lo que deja ver de forma directa por que el signo de $b$ controla si el acoplamiento crece o decrece al aumentar la escala.
 
-## 7. Ejemplo corto de lectura
+## 7. Puntos fijos y flujo
+
+Si existe un valor $g_\star$ tal que
+
+$$
+\beta(g_\star)=0,
+$$
+
+entonces ese punto define un comportamiento especial del flujo de renormalizacion. Sin entrar aun en toda la teoria de puntos criticos, conviene registrar la intuicion:
+
+- cerca de un punto fijo, la teoria cambia poco con la escala;
+- algunos operadores se vuelven mas importantes al alejarnos;
+- otros se suprimen.
+
+Esta es la puerta conceptual que conecta el grupo de renormalizacion con teorias efectivas, fisica critica y universalidad.
+
+## 8. Ejemplo corto de lectura
 
 Si dos experimentos extraen valores ligeramente distintos de un mismo acoplamiento a energias muy diferentes, eso no implica necesariamente inconsistencia experimental. Puede ser justamente la manifestacion del running coupling predicho por la QFT.
 
-## 8. Cuaderno asociado
+## 9. Cuaderno asociado
 
 - `../../Cuadernos/problemas_resueltos/10_interacciones_y_perturbaciones.ipynb`: usarlo para reforzar la idea de que los lazos modifican amplitudes y parametros efectivos.
 - `../../Cuadernos/problemas_resueltos/15_regularizacion_dimensional_y_running.ipynb`: usarlo para fijar la lectura del polo en $1/\varepsilon$, de la escala $\mu$ y de una ley de running elemental.
 
-## 9. Advertencias utiles
+## 10. Advertencias utiles
 
 - Un acoplamiento corriendo no significa que toda la fisica dependa arbitrariamente del esquema.
 - La escala de renormalizacion $\mu$ no coincide siempre sin mas con la energia fisica de cualquier proceso, aunque suele elegirse cerca de la escala relevante.
 - La funcion beta es un objeto dependiente del esquema en ciertos detalles, pero su lectura fisica cualitativa suele ser muy robusta.
 
-## 10. Preguntas de comprobacion
+## 11. Preguntas de comprobacion
 
 - Que resume la funcion beta.
 - Por que QED y QCD muestran comportamientos distintos al variar la escala.
 - En que sentido un running coupling es una prediccion fisica y no un mero accidente del calculo.
 
-## 11. Referencias y lecturas recomendadas
+## 12. Referencias y lecturas recomendadas
 
 - Base: Tong, running couplings y grupo de renormalizacion.
 - Complementaria: Peskin y Schroeder, funcion beta y escalas.
