@@ -16,6 +16,20 @@ Este es el punto de entrada del tutorial. Basta con un dominio razonable de meca
 4. `04_simetrias_y_grupos_basicos.md`
 5. `05_delta_de_dirac_y_transformadas_de_fourier.md`
 
+## Cuadernos asociados
+
+- `../../Cuadernos/problemas_resueltos/01_relatividad_especial_basica.ipynb`
+- `../../Cuadernos/problemas_resueltos/02_notacion_tensorial_y_convenciones.ipynb`
+- `../../Cuadernos/problemas_resueltos/03_oscilador_armonico_cuantico.ipynb`
+- `../../Cuadernos/problemas_resueltos/04_simetrias_y_grupos_basicos.ipynb`
+- `../../Cuadernos/problemas_resueltos/05_delta_de_dirac_y_fourier.ipynb`
+
+Uso sugerido:
+
+- usar cada cuaderno como apoyo inmediato del articulo correspondiente;
+- priorizar `03_oscilador_armonico_cuantico.ipynb` si se quiere preparar mejor el salto a cuantizacion de campos;
+- usar `05_delta_de_dirac_y_fourier.ipynb` como referencia de consulta cuando empiece el trabajo en espacio de momentos.
+
 ## Mapa del bloque
 
 ```mermaid
@@ -62,6 +76,14 @@ Al terminar este bloque, el lector deberia poder:
 - entender por que el oscilador armonico es el alfabeto de la cuantizacion de campos;
 - reconocer la relacion entre simetria y estructura teorica;
 - usar la delta de Dirac y las transformadas de Fourier en contextos simples.
+
+## Ejercicios sugeridos
+
+1. Comprueba la relacion relativista $E^2=\mathbf{p}^2+m^2$ en distintos limites y comenta su lectura fisica.
+2. Reescribe una expresion sencilla con indices covariantes y contravariantes usando la metrica.
+3. Explica por que el oscilador armonico es el modelo elemental para entender modos de un campo libre.
+4. Da un ejemplo de simetria continua y señala su generador asociado.
+5. Usa una transformada de Fourier simple para mostrar por que la delta de Dirac actua como identidad distribucional.
 
 ## Lecturas y referencias recomendadas
 

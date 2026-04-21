@@ -120,6 +120,7 @@ La mezcla entre $W_\mu^3$ y $B_\mu$ añade una segunda leccion importante: la ca
 
 ## 9. Cuaderno asociado
 
+- `../../Cuadernos/ejemplos/10_mezcla_electrodebil_y_masas_gauge.ipynb`: usarlo para seguir la mezcla entre $W^3$ y $B$, fijar el papel del angulo de Weinberg y visualizar la reorganizacion del sector neutro.
 - `../../Cuadernos/ejemplos/07_modelo_estandar_panorama.ipynb`: usarlo para identificar los sectores gauge y su notacion.
 
 ## 10. Advertencias utiles

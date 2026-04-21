@@ -118,6 +118,7 @@ En esa reorganizacion, los campos $W^\pm$, $Z$ y $A$ no se interpretan igual que
 
 ## 9. Cuaderno asociado
 
+- `../../Cuadernos/ejemplos/10_mezcla_electrodebil_y_masas_gauge.ipynb`: usarlo para revisar las relaciones estructurales entre $g$, $g'$, $\theta_W$, $m_W$ y $m_Z$ a partir del vacio del Higgs.
 - `../../Cuadernos/ejemplos/07_modelo_estandar_panorama.ipynb`: usarlo para ubicar el sector de Higgs dentro del lagrangiano completo.
 
 ## 10. Advertencias utiles

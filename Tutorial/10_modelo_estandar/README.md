@@ -18,6 +18,7 @@ Este modulo conecta el formalismo general de la QFT con su realizacion fenomenol
 4. `04_mecanismo_de_higgs_y_ruptura_espontanea.md`
 5. `05_yukawas_masas_y_parametros.md`
 6. `06_corrientes_cargadas_y_neutras.md`
+7. `07_neutrinos_masas_y_oscilaciones.md`
 
 ## Cuadernos asociados
 
@@ -29,6 +30,7 @@ Uso sugerido:
 - el cuaderno de `ejemplos` sirve para recorrer la arquitectura del lagrangiano por sectores y fijar notacion;
 - el cuaderno de `problemas_resueltos` sirve para revisar preguntas de estructura, quiralidad y organizacion de parametros.
 - ambos pueden leerse ahora tambien como apoyo para mezcla electrodébil, masas de $W/Z$ y lectura de corrientes cargadas y neutras.
+- siguen siendo el mejor punto de partida para una futura capa dedicada a mezcla leptónica, PMNS y oscilaciones de neutrinos.
 
 ## Papel dentro del curso
 
@@ -43,7 +45,8 @@ Al terminar este modulo, deberia quedar claro:
 - como el mecanismo de Higgs genera masas gauge sin romper la estructura gauge de forma explicita;
 - como la mezcla electrodébil organiza el foton, el boson $Z$ y el angulo de Weinberg;
 - como el sector de Yukawa produce masas fermionicas y mezcla entre generaciones;
-- como se leen las corrientes cargadas y neutras del sector electrodébil.
+- como se leen las corrientes cargadas y neutras del sector electrodébil;
+- por que el sector de neutrinos apunta mas alla del Modelo Estandar minimo y como se conecta con PMNS y oscilaciones.
 
 ## Ejercicios sugeridos
 
@@ -60,6 +63,7 @@ Al terminar este modulo, deberia quedar claro:
 - añadir un mapa minimo de observables y fenomenologia;
 - conectar con tablas y datos del PDG;
 - ampliar mezcla electrodébil, corrientes y acoplamientos efectivos.
+- profundizar neutrinos, oscilaciones y escenarios de masas de Majorana.
 
 ## Lecturas y referencias recomendadas
 

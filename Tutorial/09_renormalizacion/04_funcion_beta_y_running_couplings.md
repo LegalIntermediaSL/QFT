@@ -18,6 +18,18 @@ $$
 
 Esta expresion resume como evoluciona el acoplamiento al variar la escala de observacion o de definicion.
 
+En la practica, esta ecuacion es una ecuacion diferencial de flujo. Si a un orden dado se obtiene, por ejemplo,
+
+$$
+\beta(g) \simeq b\, g^3,
+$$
+
+entonces el running se determina integrando una ecuacion del tipo
+
+$$
+\mu\frac{dg}{d\mu} = b\, g^3.
+$$
+
 ## 4. Lectura fisica
 
 La funcion beta no es solo un artefacto de renormalizacion. Codifica contenido fisico:
@@ -45,6 +57,14 @@ La leccion central es:
 - esa variacion no destruye la teoria;
 - es una de sus predicciones mas distintivas.
 
+Si se integra esquematicamente la ecuacion anterior entre una escala de referencia $\mu_0$ y una escala $\mu$, se obtiene una expresion del tipo
+
+$$
+\frac{1}{g^2(\mu)} = \frac{1}{g^2(\mu_0)} - 2b \ln\!\left(\frac{\mu}{\mu_0}\right),
+$$
+
+lo que deja ver de forma directa por que el signo de $b$ controla si el acoplamiento crece o decrece al aumentar la escala.
+
 ## 7. Ejemplo corto de lectura
 
 Si dos experimentos extraen valores ligeramente distintos de un mismo acoplamiento a energias muy diferentes, eso no implica necesariamente inconsistencia experimental. Puede ser justamente la manifestacion del running coupling predicho por la QFT.
@@ -52,6 +72,7 @@ Si dos experimentos extraen valores ligeramente distintos de un mismo acoplamien
 ## 8. Cuaderno asociado
 
 - `../../Cuadernos/problemas_resueltos/10_interacciones_y_perturbaciones.ipynb`: usarlo para reforzar la idea de que los lazos modifican amplitudes y parametros efectivos.
+- `../../Cuadernos/problemas_resueltos/15_regularizacion_dimensional_y_running.ipynb`: usarlo para fijar la lectura del polo en $1/\varepsilon$, de la escala $\mu$ y de una ley de running elemental.
 
 ## 9. Advertencias utiles
 

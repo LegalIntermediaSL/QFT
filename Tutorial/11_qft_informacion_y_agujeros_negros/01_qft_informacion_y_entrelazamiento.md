@@ -115,4 +115,4 @@ Si el estado global del campo es puro pero solo puede observarse una subregion, 
 
 ## Navegacion del tutorial
 
-[(anterior) Corrientes Cargadas y Neutras](../10_modelo_estandar/06_corrientes_cargadas_y_neutras.md) | [(siguiente) Agujeros negros, radiacion de Hawking y paradoja de la informacion](02_agujeros_negros_radiacion_de_hawking_y_paradoja_de_la_informacion.md)
+[(anterior) Neutrinos, Masas y Oscilaciones](../10_modelo_estandar/07_neutrinos_masas_y_oscilaciones.md) | [(siguiente) Agujeros negros, radiacion de Hawking y paradoja de la informacion](02_agujeros_negros_radiacion_de_hawking_y_paradoja_de_la_informacion.md)

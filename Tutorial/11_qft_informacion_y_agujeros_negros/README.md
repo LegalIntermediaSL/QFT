@@ -34,16 +34,34 @@ La progresion conceptual del modulo es:
 ## Cuadernos asociados
 
 - `../../Cuadernos/ejemplos/08_entrelazamiento_y_horizontes.ipynb`
+- `../../Cuadernos/ejemplos/12_unruh_hawking_y_curva_de_page.ipynb`
 - `../../Cuadernos/problemas_resueltos/12_qft_informacion_y_agujeros_negros.ipynb`
 
 Uso sugerido:
 
 - el cuaderno de `ejemplos` sirve para conectar entrelazamiento, acceso parcial y horizontes;
+- el de `12_unruh_hawking_y_curva_de_page` sirve para reforzar el puente entre termicidad efectiva, horizonte y curva de Page;
 - el cuaderno de `problemas_resueltos` sirve para revisar preguntas conceptuales sobre Unruh, Hawking y paradoja de la informacion.
 
 ## Observacion didactica
 
 Este modulo no pretende reemplazar un curso especializado de gravedad cuantica o de holografia. Su funcion es introducir el lenguaje correcto, conectar ideas y preparar al lector para una bibliografia mas avanzada.
+
+## Resultado esperado
+
+Al terminar este modulo, deberia quedar claro:
+
+- por que el vacio cuantico y el entrelazamiento se vuelven inseparables al particionar el espacio;
+- como el efecto Unruh anticipa parte de la arquitectura conceptual de Hawking;
+- por que la termicidad efectiva no resuelve por si sola la pregunta por la unitaridad;
+- como la curva de Page organiza la tension entre radiacion aparentemente termica y evolucion cuantica unitaria.
+
+## Ejercicios sugeridos
+
+1. Explica por que el vacio cuantico no debe pensarse como “ausencia trivial de todo”.
+2. Describe la relacion entre acceso parcial a grados de libertad y estado reducido termico.
+3. Resume por que el efecto Unruh es un ensayo conceptual antes de Hawking.
+4. Explica que pregunta profunda intenta organizar la curva de Page.
 
 ## Ampliaciones prioritarias
 

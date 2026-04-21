@@ -18,6 +18,18 @@ La curva de Page describe de forma esquematica la entropia de entrelazamiento de
 
 Este comportamiento contrasta con la prediccion semiclasica ingenua de crecimiento monotono.
 
+Si se denota por $S_{\mathrm{rad}}(t)$ la entropia de entrelazamiento de la radiacion exterior, la idea cualitativa puede resumirse como
+
+$$
+S_{\mathrm{rad}}(t) \uparrow \quad \text{para } t < t_{\mathrm{Page}},
+$$
+
+$$
+S_{\mathrm{rad}}(t) \downarrow \quad \text{para } t > t_{\mathrm{Page}},
+$$
+
+en una evolucion globalmente unitaria idealizada.
+
 ## 4. Por que importa
 
 La curva de Page traduce la paradoja a una pregunta muy precisa:
@@ -35,6 +47,8 @@ Por eso la clave no es solo estudiar la radiacion como sistema aislado, sino ent
 - que parte del sistema global estamos trazando;
 - como evoluciona el entrelazamiento;
 - que parte de la termicidad es solo efectiva.
+
+En este lenguaje, el tiempo de Page marca aproximadamente el momento en que la entropia de la radiacion deja de crecer como en una descripcion termica ingenua y empieza a reflejar que la informacion no puede perderse para siempre si el estado global completo sigue siendo puro.
 
 ## 6. Puente hacia holografia
 

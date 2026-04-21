@@ -59,6 +59,7 @@ Si una amplitud cambia al reemplazar una polarizacion externa del foton por su m
 
 ## 8. Cuaderno asociado
 
+- `../../Cuadernos/problemas_resueltos/13_gauge_fixing_y_scattering_en_qed.ipynb`: usarlo para revisar por que la fijacion de gauge es necesaria y como entra el propagador del foton en una amplitud elemental.
 - `../../Cuadernos/ejemplos/06_diagramas_de_feynman_basicos.ipynb`: usarlo como apoyo para repasar propagadores, vertices y estructura de amplitudes elementales.
 
 ## 9. Advertencias utiles

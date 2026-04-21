@@ -104,6 +104,7 @@ Las corrientes neutras aparecen en:
 
 ## 9. Cuaderno asociado
 
+- `../../Cuadernos/ejemplos/10_mezcla_electrodebil_y_masas_gauge.ipynb`: usarlo para conectar la mezcla electrodébil con la emergencia de corrientes electromagneticas y neutras en la base fisica.
 - `../../Cuadernos/problemas_resueltos/11_modelo_estandar_estructura.ipynb`: usarlo para seguir la lectura de corrientes, cargas y sectores del lagrangiano.
 - `../../Cuadernos/ejemplos/07_modelo_estandar_panorama.ipynb`: usarlo para situar la corriente electromagnetica como combinacion no rota del sector electrodébil.
 
@@ -131,4 +132,4 @@ Las corrientes neutras aparecen en:
 
 ## Navegacion del tutorial
 
-[(anterior) Yukawas, Masas y Parametros del Modelo Estandar](05_yukawas_masas_y_parametros.md) | [(siguiente) QFT, informacion y entrelazamiento](../11_qft_informacion_y_agujeros_negros/01_qft_informacion_y_entrelazamiento.md)
+[(anterior) Yukawas, Masas y Parametros del Modelo Estandar](05_yukawas_masas_y_parametros.md) | [(siguiente) Neutrinos, Masas y Oscilaciones](07_neutrinos_masas_y_oscilaciones.md)

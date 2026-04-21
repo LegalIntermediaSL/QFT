@@ -60,6 +60,32 @@ Para una experiencia de aprendizaje secuencial, sigue este orden:
 | 11 | [10 Modelo Estándar](10_modelo_estandar/README.md) | Aplicación física real (Avanzado) |
 | 12 | [11 Fronteras](11_qft_informacion_y_agujeros_negros/README.md) | Hawking e información (Avanzado) |
 
+## Ruta minima
+
+Si quieres una primera pasada compacta, esta es la ruta con mejor retorno conceptual:
+
+| Etapa | Módulo | Motivo |
+| :--- | :--- | :--- |
+| 1 | [00 Prerrequisitos](00_prerrequisitos/README.md) | Fija lenguaje matemático y relativista |
+| 2 | [01 Fundamentos](01_fundamentos_conceptuales/README.md) | Da la motivación conceptual de QFT |
+| 3 | [02 Relatividad y Campos](02_relatividad_y_campos/README.md) | Introduce localidad y causalidad |
+| 4 | [03 Acción y Simetrías](03_accion_y_simetrias/README.md) | Organiza el lenguaje lagrangiano |
+| 5 | [04 Campo Escalar](04_cuantizacion_del_campo_escalar/README.md) | Muestra cómo nacen partículas y Fock |
+| 6 | [05 Interacciones](05_interacciones_y_perturbaciones/README.md) | Introduce amplitudes, Dyson y diagramas |
+| 7 | [06 Fermiones y Dirac](06_fermiones_y_dirac/README.md) | Completa el cuadro relativista con fermiones |
+| 8 | [07 Gauge y QED](07_gauge_y_qed/README.md) | Cierra el núcleo mínimo con una teoría gauge real |
+
+## Ruta avanzada
+
+Si ya dominas el núcleo anterior o buscas una segunda capa, esta es la continuación recomendada:
+
+| Etapa | Módulo | Motivo |
+| :--- | :--- | :--- |
+| 1 | [08 Integral de Camino](08_integral_de_camino/README.md) | Cambia de formalismo y organiza correladores |
+| 2 | [09 Renormalización](09_renormalizacion/README.md) | Explica escalas, divergencias y running |
+| 3 | [10 Modelo Estándar](10_modelo_estandar/README.md) | Conecta el formalismo con física real |
+| 4 | [11 Fronteras](11_qft_informacion_y_agujeros_negros/README.md) | Abre la puerta a información cuántica y gravedad semiclasica |
+
 ---
 
 | [<< Inicio (README Principal)](../README.md) | [Bibliografía >>](99_apendices/bibliografia.md) |
@@ -162,6 +188,7 @@ Introduce regularizacion, absorcion de divergencias en parametros fisicos y la i
 - `04_mecanismo_de_higgs_y_ruptura_espontanea.md`
 - `05_yukawas_masas_y_parametros.md`
 - `06_corrientes_cargadas_y_neutras.md`
+- `07_neutrinos_masas_y_oscilaciones.md`
 
 Lecturas avanzadas donde el formalismo se conecta con la teoria fisica concreta mas importante de la fisica de particulas no gravitatoria.
 
@@ -180,6 +207,9 @@ Espacio reservado para convenciones, ejercicios resueltos y material de consulta
 - [Bibliografía comentada](99_apendices/bibliografia.md)
 - [Herramientas Computacionales (FeynCalc/Python)](99_apendices/computacion_qft.md)
 - [Reglas de Feynman y propagadores](99_apendices/reglas_de_feynman_y_propagadores.md)
+- [Simetrias discretas, CPT y anomalias](99_apendices/simetrias_discretas_cpt_y_anomalias.md)
+- [Mezcla de sabor, CKM y PMNS](99_apendices/mezcla_de_sabor_ckm_y_pmns.md)
+- [Anomalia axial y cancelacion de anomalias](99_apendices/anomalia_axial_y_cancelacion_de_anomalias.md)
 - [Glosario de notación](99_apendices/glosario_notacion.md)
 - [Convenciones globales del tutorial](99_apendices/convenciones_globales.md)
 - [Plantilla editorial de capítulo](99_apendices/plantilla_de_capitulo.md)

@@ -73,6 +73,7 @@ Si el potencial clasico tiene un minimo en cierto valor del campo, el potencial 
 
 ## 8. Cuaderno asociado
 
+- `../../Cuadernos/ejemplos/11_integral_de_camino_y_accion_efectiva.ipynb`: usarlo para fijar la cadena conceptual entre integral funcional, accion efectiva y potencial efectivo, y para visualizar de forma pedagogica como las correcciones cuanticas pueden deformar el vacio.
 - `../../Cuadernos/problemas_resueltos/08_accion_y_noether.ipynb`: usarlo para reforzar el papel de la accion como punto de partida estructural.
 - `../../Cuadernos/problemas_resueltos/09_cuantizacion_del_campo_escalar.ipynb`: usarlo para revisar el campo libre que luego sirve de base para las correcciones funcionales.
 

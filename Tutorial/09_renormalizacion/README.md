@@ -37,11 +37,13 @@ flowchart TD
 
 - `../../Cuadernos/problemas_resueltos/10_interacciones_y_perturbaciones.ipynb`
 - `../../Cuadernos/problemas_resueltos/09_cuantizacion_del_campo_escalar.ipynb`
+- `../../Cuadernos/problemas_resueltos/15_regularizacion_dimensional_y_running.ipynb`
 
 Uso sugerido:
 
 - el cuaderno de `10_interacciones_y_perturbaciones` sirve como apoyo para recordar de donde salen los lazos y las correcciones perturbativas;
-- el cuaderno de `09_cuantizacion_del_campo_escalar` sirve para revisar la teoria libre sobre la que luego se construyen los contraterminos y correcciones.
+- el cuaderno de `09_cuantizacion_del_campo_escalar` sirve para revisar la teoria libre sobre la que luego se construyen los contraterminos y correcciones;
+- el de `15_regularizacion_dimensional_y_running` sirve para fijar la intuicion de polos en $1/\\varepsilon$, escala $\\mu$ y running.
 
 ## Resultado esperado
 
@@ -53,6 +55,14 @@ Al terminar este modulo, deberia ser posible entender:
 - por que los acoplamientos corren con la escala;
 - como leer un polo en $1/\varepsilon$ dentro de regularizacion dimensional;
 - que informacion fisica resume una funcion beta.
+
+## Ejercicios sugeridos
+
+1. Explica por que la aparicion de lazos suele ir acompañada de divergencias ultravioletas.
+2. Distingue con claridad entre regularizar y renormalizar.
+3. Interpreta el papel de la escala $\mu$ en regularizacion dimensional.
+4. Explica que resume una funcion beta y por que se relaciona con running couplings.
+5. Compara de manera cualitativa que clase de diferencias fisicas puede mostrar el running en QED y en QCD.
 
 ## Ampliaciones prioritarias
 

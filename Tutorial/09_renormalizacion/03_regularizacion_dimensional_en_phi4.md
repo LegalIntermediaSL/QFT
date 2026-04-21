@@ -64,6 +64,7 @@ Si en una cuenta aparece un termino $1/\varepsilon$, no debe leerse como un frac
 
 ## 8. Cuaderno asociado
 
+- `../../Cuadernos/problemas_resueltos/15_regularizacion_dimensional_y_running.ipynb`: usarlo para fijar de forma guiada el papel del polo en $1/\\varepsilon$, de la escala $\\mu$ y de la transicion conceptual desde regularizacion a running.
 - `../../Cuadernos/problemas_resueltos/10_interacciones_y_perturbaciones.ipynb`: usarlo como apoyo para repasar la logica diagramatica que da origen a los lazos.
 - `../../Cuadernos/problemas_resueltos/09_cuantizacion_del_campo_escalar.ipynb`: usarlo para recordar la teoria libre sobre la que se construye la perturbacion.
 

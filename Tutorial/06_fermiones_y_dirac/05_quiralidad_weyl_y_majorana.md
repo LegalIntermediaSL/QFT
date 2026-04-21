@@ -62,6 +62,7 @@ Si el sector debil del Modelo Estandar distingue entre componentes izquierdas y 
 
 ## 8. Cuaderno asociado
 
+- `../../Cuadernos/ejemplos/09_bilineales_y_proyectores_quirales.ipynb`: usarlo para fijar la separacion entre componentes zurda y diestra y reforzar la intuicion de proyectores quirales antes de volver al formalismo completo.
 - `../../Cuadernos/problemas_resueltos/06_fundamentos_conceptuales.ipynb`: usarlo para reforzar el papel de simetria y estructura de campos.
 - `../../Cuadernos/problemas_resueltos/07_relatividad_y_campos.ipynb`: usarlo como apoyo del trasfondo relativista.
 

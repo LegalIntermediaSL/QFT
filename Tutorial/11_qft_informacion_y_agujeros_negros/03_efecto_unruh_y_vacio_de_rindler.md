@@ -67,6 +67,7 @@ Si una persona pregunta "¿el vacio contiene particulas o no?", la respuesta cor
 
 ## 9. Cuaderno asociado
 
+- `../../Cuadernos/ejemplos/12_unruh_hawking_y_curva_de_page.ipynb`: usarlo para reforzar la intuicion de termicidad efectiva, acceso parcial a informacion y el papel conceptual de la curva de Page.
 - `../../Cuadernos/ejemplos/08_entrelazamiento_y_horizontes.ipynb`: usarlo para reforzar la relacion entre acceso parcial, termicidad efectiva y horizontes.
 - `../../Cuadernos/problemas_resueltos/12_qft_informacion_y_agujeros_negros.ipynb`: usarlo para revisar preguntas conceptuales del modulo.
 

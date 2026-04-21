@@ -24,6 +24,20 @@ $$
 \langle 0|T\{\phi(x_1)\phi(x_2)\cdots\phi(x_n)\}|0\rangle.
 $$
 
+De forma mas explicita, el correlador de $n$ puntos puede escribirse esquematicamente como
+
+$$
+\langle 0|T\{\phi(x_1)\cdots\phi(x_n)\}|0\rangle
+=
+\left.
+\frac{1}{Z[0]}
+\left(\frac{1}{i}\frac{\delta}{\delta J(x_1)}\right)
+\cdots
+\left(\frac{1}{i}\frac{\delta}{\delta J(x_n)}\right)
+Z[J]
+\right|_{J=0}.
+$$
+
 Esta es una de las grandes virtudes del formalismo: convierte el calculo de correladores en una operacion sistematica sobre un unico objeto generador.
 
 Mas explicitamente, una derivada funcional como
@@ -73,6 +87,20 @@ En un primer curso basta trabajar con $Z[J]$, pero conviene ubicar dos objetos d
 
 - $W[J] = -i \ln Z[J]$, que genera correladores conectados;
 - la accion efectiva $\Gamma[\phi_c]$, obtenida por transformacion de Legendre.
+
+La definicion del campo clasico efectivo asociada a la fuente es
+
+$$
+\phi_c(x) = \frac{\delta W[J]}{\delta J(x)}.
+$$
+
+Y la transformacion de Legendre que conduce a la accion efectiva toma la forma
+
+$$
+\Gamma[\phi_c] = W[J] - \int d^4x\, J(x)\phi_c(x),
+$$
+
+donde implicitamente $J$ debe entenderse como funcional de $\phi_c$.
 
 Estos objetos son muy importantes para estudiar vacios, ruptura de simetria, campos clasicos efectivos y correcciones cuanticas resumidas.
 

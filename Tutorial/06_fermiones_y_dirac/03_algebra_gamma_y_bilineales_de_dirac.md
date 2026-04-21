@@ -78,6 +78,7 @@ $$
 
 ## 9. Cuaderno asociado
 
+- `../../Cuadernos/ejemplos/09_bilineales_y_proyectores_quirales.ipynb`: usarlo para comparar bilineales de Dirac, recordar la lectura fisica de corrientes vectoriales y axiales y fijar la intuicion de proyectores quirales.
 - `../../Cuadernos/problemas_resueltos/09_cuantizacion_del_campo_escalar.ipynb`: usarlo como referencia de contraste con el caso bosonico.
 - `../../Cuadernos/problemas_resueltos/06_fundamentos_conceptuales.ipynb`: usarlo para reforzar el hilo entre simetria, campos y objetos admisibles.
 

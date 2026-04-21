@@ -39,6 +39,11 @@ flowchart TD
 - `../../Cuadernos/ejemplos/04_accion_y_euler_lagrange.ipynb`
 - `../../Cuadernos/problemas_resueltos/08_accion_y_noether.ipynb`
 
+Uso sugerido:
+
+- el cuaderno de `ejemplos` sirve para fijar la mecanica del principio variacional y las ecuaciones de Euler-Lagrange;
+- el de `problemas_resueltos` sirve para practicar el paso desde una simetria continua hasta una corriente conservada.
+
 ## Resultado esperado
 
 Al terminar este bloque, deberia ser posible mirar una lagrangiana simple y explicar:
@@ -46,6 +51,13 @@ Al terminar este bloque, deberia ser posible mirar una lagrangiana simple y expl
 - que ecuaciones de movimiento genera;
 - que simetrias exhibe;
 - que cantidades conservadas deben aparecer.
+
+## Ejercicios sugeridos
+
+1. Deriva las ecuaciones de Euler-Lagrange de una lagrangiana escalar simple.
+2. Explica por que una densidad lagrangiana concentra cinematica, masas e interacciones.
+3. Da un ejemplo de simetria continua y describe la corriente conservada asociada.
+4. Explica por que este modulo es el puente natural entre motivacion conceptual y cuantizacion.
 
 ## Lecturas y referencias recomendadas
 

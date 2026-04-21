@@ -33,9 +33,21 @@ flowchart TD
 - `../../Cuadernos/ejemplos/02_principios_estructurales_y_restricciones.ipynb`
 - `../../Cuadernos/problemas_resueltos/06_fundamentos_conceptuales.ipynb`
 
+Uso sugerido:
+
+- el cuaderno de `ejemplos` sirve para fijar el vocabulario estructural minimo antes de entrar en tecnicas;
+- el de `problemas_resueltos` sirve para revisar las preguntas mas conceptuales del bloque y consolidar la idea de campo cuantico.
+
 ## Resultado esperado
 
 Al terminar este bloque, deberia ser posible leer los modulos tecnicos sabiendo ya por que aparecen accion, simetria, cuantizacion, vacio, localidad, antiparticulas y renormalizacion.
+
+## Ejercicios sugeridos
+
+1. Explica por que la QFT no debe verse solo como una mecanica cuantica relativista de una particula.
+2. Enumera tres principios estructurales que restringen una QFT consistente y comenta por que importan.
+3. Compara la nocion de particula fundamental con la de campo cuantico como objeto organizador.
+4. Explica por que vacio, antiparticulas y numero variable de excitaciones pertenecen al mismo cambio conceptual.
 
 ## Lecturas y referencias recomendadas
 

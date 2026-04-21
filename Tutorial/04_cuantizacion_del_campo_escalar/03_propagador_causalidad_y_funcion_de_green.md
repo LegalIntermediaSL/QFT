@@ -112,6 +112,7 @@ Eso significa que el modulo `05` no introduce un objeto completamente nuevo: reu
 
 ## 11. Cuaderno asociado
 
+- `../../Cuadernos/ejemplos/08_propagador_libre_y_causalidad.ipynb`: usarlo para inspeccionar la estructura del propagador libre, el papel de la prescripcion `i\epsilon` y la diferencia conceptual entre propagador y conmutador causal.
 - `../../Cuadernos/ejemplos/05_cuantizacion_del_campo_escalar.ipynb`: usarlo para contrastar la expansion modal con la forma del propagador libre.
 - `../../Cuadernos/problemas_resueltos/09_cuantizacion_del_campo_escalar.ipynb`: usarlo para revisar el paso entre conmutadores, vacio y correladores en el caso escalar.
 

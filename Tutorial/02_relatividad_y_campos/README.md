@@ -41,6 +41,11 @@ Antes o durante este modulo conviene leer tambien:
 - `../../Cuadernos/ejemplos/03_campos_y_localidad.ipynb`
 - `../../Cuadernos/problemas_resueltos/07_relatividad_y_campos.ipynb`
 
+Uso sugerido:
+
+- el cuaderno de `ejemplos` sirve para reforzar la intuicion de campo local frente a una descripcion de particulas puntuales;
+- el de `problemas_resueltos` sirve para consolidar la relacion entre relatividad, numero variable de particulas y causalidad.
+
 ## Resultado esperado
 
 Al terminar este bloque, deberia quedar claro que:
@@ -48,6 +53,13 @@ Al terminar este bloque, deberia quedar claro que:
 - el numero de particulas no puede tratarse como cantidad fija en un marco relativista general;
 - las excitaciones fisicas deben organizarse sobre objetos definidos en el espacio-tiempo;
 - la QFT no se entiende bien si se aprende solo como una tecnica de diagramas.
+
+## Ejercicios sugeridos
+
+1. Explica por que una teoria relativista con numero fijo de particulas resulta insuficiente como marco general.
+2. Describe la relacion entre localidad y formulacion en terminos de campos.
+3. Explica que significa microcausalidad y por que es una exigencia relativista.
+4. Resume por que este modulo prepara el paso natural hacia accion y simetrias.
 
 ## Lecturas y referencias recomendadas
 
