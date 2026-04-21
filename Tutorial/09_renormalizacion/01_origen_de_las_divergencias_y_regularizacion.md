@@ -1,8 +1,16 @@
 # Origen de las Divergencias y Regularizacion
 
+**Nivel:** Intermedio  
+**Dificultad:** Media-Alta  
+**Tiempo estimado:** 18-25 min  
+**Prerequisitos recomendados:** [Modulo anterior](../08_integral_de_camino/README.md) · [Resumen del modulo](README.md)
+
+
 ## 1. Proposito
 
 Uno de los rasgos mas sorprendentes de la QFT perturbativa es la aparicion de integrales divergentes. Este documento explica de donde salen y por que la regularizacion es el primer paso necesario para tratarlas con cuidado.
+
+La meta no es convertir las divergencias en una rareza algebraica, sino entender que nos dicen sobre la teoria, sus escalas y sus limites de validez.
 
 ## 2. Donde aparecen las divergencias
 
@@ -36,6 +44,8 @@ Este ejemplo es pedagogicamente importante porque deja ver que:
 
 Estas divergencias no significan simplemente que la teoria sea absurda. Mas bien indican que la teoria explora contribuciones de todas las escalas y que la relacion entre parametros desnudos y observables fisicos es mas sutil de lo que parece a nivel clasico.
 
+Visto de forma moderna, las divergencias son una señal de que estamos intentando describir con un lagrangiano efectivo fluctuaciones de escala arbitrariamente corta. El problema no es solo "infinito matematico", sino como separar de forma consistente fisica a distintas escalas.
+
 ## 5. Regularizacion
 
 Regularizar significa introducir un procedimiento temporal que haga finitas las expresiones divergentes. Entre los esquemas mas comunes estan:
@@ -44,20 +54,15 @@ Regularizar significa introducir un procedimiento temporal que haga finitas las 
 - regularizacion dimensional;
 - esquemas con masa auxiliar o reguladores adicionales.
 
-### Regularización Dimensional (DimReg)
-Es el método preferido en la física moderna porque, a diferencia del cutoff, preserva la **invariancia gauge** y las simetrías de Lorentz.
+La regularizacion no es todavia la renormalizacion. Es el paso que vuelve las expresiones manipulables y permite identificar con claridad que parte diverge y que parte permanece finita.
 
-- **Idea central**: Evaluar las integrales en $d = 4 - \epsilon$ dimensiones espaciales, donde $d$ es un número complejo.
-- **Ventaja**: Las divergencias ultravioletas se manifiestan como polos en $\epsilon$ (términos proporcionales a $1/\epsilon$).
-- **Constante de escala**: Para mantener las dimensiones correctas de las constantes de acoplamiento, se introduce una escala de masa arbitraria $\mu$.
+## 6. Cutoff ultravioleta
 
-La regularización no es todavia la renormalizacion. Es el paso que vuelve las expresiones manipulables.
+La idea mas intuitiva consiste en cortar la integral a momentos $|k| \lesssim \Lambda$. Entonces $\Lambda$ actua como escala reguladora temporal.
 
-### Cutoff ultravioleta
+Este metodo es facil de visualizar y muy util para intuicion EFT, porque hace explicita la idea de que no estamos confiando en la teoria por encima de cierta escala. Su inconveniente es que, en algunos contextos, puede ocultar o romper simetrias importantes.
 
-La idea mas intuitiva consiste en cortar la integral a momentos $|k| \lesssim \Lambda$. Entonces $\Lambda$ actua como escala reguladora temporal. Este metodo es facil de visualizar, aunque a veces puede ocultar o romper simetrias.
-
-### Regularizacion dimensional
+## 7. Regularizacion dimensional
 
 Aqui se continua formalmente el numero de dimensiones a
 
@@ -73,7 +78,9 @@ Este esquema es especialmente valioso porque:
 - organiza las divergencias de forma limpia;
 - se ha vuelto lenguaje estandar de gran parte de la QFT moderna.
 
-## 6. Que debe conservar un buen regulador
+Para mantener las dimensiones correctas de los acoplamientos suele introducirse una escala auxiliar $\mu$, que anticipa de manera muy natural la dependencia en la escala del grupo de renormalizacion.
+
+## 8. Que debe conservar un buen regulador
 
 Un regulador no es solo un truco para obtener numeros finitos. Idealmente deberia:
 
@@ -81,18 +88,26 @@ Un regulador no es solo un truco para obtener numeros finitos. Idealmente deberi
 - respetar las simetrias relevantes de la teoria;
 - poder retirarse al final del calculo sin dejar residuos espurios en observables.
 
-## 7. Preguntas de estudio
+Esta exigencia explica por que la eleccion del regulador no es inocente. Un regulador mal adaptado puede complicar enormemente el calculo o incluso ocultar la estructura fisica que queremos preservar.
+
+## 9. UV frente a IR
+
+Aunque aqui el foco esta en divergencias ultravioletas, tambien existen divergencias infrarrojas en ciertos contextos, asociadas a momentos pequeños o particulas sin masa. Distinguir ambos tipos desde el principio ayuda a no mezclar problemas conceptualmente distintos.
+
+Las UV hablan de distancias cortas y sensibilidad a altas energias. Las IR hablan de larga distancia, modos blandos o colineales. Ambas requieren cuidado, pero su interpretacion fisica es diferente.
+
+## 10. Preguntas de estudio
 
 - Por que los lazos introducen integrales ultravioletas.
 - Que significa regularizar una integral divergente.
 - Por que regularizacion y renormalizacion no son exactamente lo mismo.
 - Por que la regularizacion dimensional es tan util en teorias gauge.
 
-## 8. Cierre
+## 11. Cierre
 
-La regularizacion es el primer gesto de disciplina matematica frente a las divergencias. No resuelve por si sola el problema, pero permite formularlo de manera controlada.
+La regularizacion es el primer gesto de disciplina matematica frente a las divergencias. No resuelve por si sola el problema, pero permite formularlo de manera controlada y preparar el paso decisivo: reinterpretar los parametros de la teoria a traves de la renormalizacion.
 
-## 9. Referencias y lecturas recomendadas
+## 12. Referencias y lecturas recomendadas
 
 - Base: Tong, secciones introductorias sobre divergencias UV.
 - Complementaria: Peskin y Schroeder, primeros ejemplos de regularizacion perturbativa.

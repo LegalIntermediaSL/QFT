@@ -1,5 +1,11 @@
 # Introduccion a la Integral de Camino
 
+**Nivel:** Intermedio  
+**Dificultad:** Media-Alta  
+**Tiempo estimado:** 25-35 min  
+**Prerequisitos recomendados:** [Modulo anterior](../07_gauge_y_qed/README.md) · [Resumen del modulo](README.md)
+
+
 ## 1. Proposito
 
 La integral de camino ofrece una formulacion de la teoria cuantica profundamente distinta de la cuantizacion canonica. En lugar de centrarse en operadores y espacios de Fock como punto de partida, organiza las amplitudes como suma sobre historias posibles.

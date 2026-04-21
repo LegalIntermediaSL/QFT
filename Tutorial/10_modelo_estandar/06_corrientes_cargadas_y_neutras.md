@@ -1,5 +1,11 @@
 # Corrientes Cargadas y Neutras
 
+**Nivel:** Avanzado  
+**Dificultad:** Alta  
+**Tiempo estimado:** 25-35 min  
+**Prerequisitos recomendados:** [Yukawas, Masas y Parametros del Modelo Estandar](05_yukawas_masas_y_parametros.md) · [Resumen del modulo](README.md)
+
+
 ## Proposito
 
 Este documento organiza de manera mas explicita como aparecen las corrientes cargadas y neutras en el sector electrodébil del Modelo Estandar. El objetivo es ayudar a leer la estructura fisica de las interacciones debiles una vez que ya se entendieron el grupo gauge, la quiralidad y la ruptura espontanea.

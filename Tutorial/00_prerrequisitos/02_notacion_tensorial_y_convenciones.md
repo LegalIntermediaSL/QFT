@@ -1,5 +1,11 @@
 # Notacion Tensorial y Convenciones
 
+**Nivel:** Fundacional  
+**Dificultad:** Media  
+**Tiempo estimado:** 25-35 min  
+**Prerequisitos recomendados:** [Relatividad Especial Minima](01_relatividad_especial_minima.md) · [Resumen del modulo](README.md)
+
+
 ## 1. Proposito
 
 La QFT usa una notacion compacta y altamente estructurada. Este documento fija las convenciones minimas necesarias para leer expresiones relativistas sin que la notacion se convierta en una barrera.

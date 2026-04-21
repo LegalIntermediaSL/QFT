@@ -1,5 +1,11 @@
 # Neutrinos, Masas y Oscilaciones
 
+**Nivel:** Avanzado  
+**Dificultad:** Alta  
+**Tiempo estimado:** 25-35 min  
+**Prerequisitos recomendados:** [Corrientes Cargadas y Neutras](06_corrientes_cargadas_y_neutras.md) · [Resumen del modulo](README.md)
+
+
 ## Proposito
 
 Este documento extiende el panorama del Modelo Estandar hacia una de sus fronteras fenomenologicas mas importantes: las masas de neutrinos y las oscilaciones de sabor. El objetivo es mostrar por que este tema es tan central conceptualmente y como se conecta con quiralidad, Yukawas y mezcla leptónica.

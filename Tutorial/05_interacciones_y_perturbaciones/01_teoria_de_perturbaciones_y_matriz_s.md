@@ -1,5 +1,11 @@
 # Teoria de Perturbaciones y Matriz S
 
+**Nivel:** Nucleo  
+**Dificultad:** Media  
+**Tiempo estimado:** 25-35 min  
+**Prerequisitos recomendados:** [Modulo anterior](../04_cuantizacion_del_campo_escalar/README.md) · [Resumen del modulo](README.md)
+
+
 ## 1. Introduccion
 
 Las teorias libres son esenciales para entender la estructura del espacio de estados, pero la fisica experimental rara vez se reduce a sistemas sin interaccion. Para describir dispersion, decaimientos y produccion de particulas necesitamos introducir terminos interactuantes.

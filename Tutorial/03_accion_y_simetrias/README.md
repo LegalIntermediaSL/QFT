@@ -52,6 +52,19 @@ Al terminar este bloque, deberia ser posible mirar una lagrangiana simple y expl
 - que simetrias exhibe;
 - que cantidades conservadas deben aparecer.
 
+## Sintesis del modulo
+
+Este modulo ensena a leer una teoria desde su accion. A partir de aqui, lagrangianas, simetrias y corrientes conservadas pasan a ser el lenguaje estructural del resto del curso.
+
+!!! note "Idea clave"
+    En QFT una gran parte de la informacion fisica vive ya en la densidad lagrangiana.
+
+!!! warning "Error frecuente"
+    Ver Noether solo como una tecnica formal. En realidad es la primera gran prueba de que la simetria organiza la fisica.
+
+!!! tip "Conexion con el siguiente modulo"
+    Una vez escrita la teoria clasica de campos, el siguiente paso natural es cuantizarla y entender como nacen las particulas.
+
 ## Ejercicios sugeridos
 
 1. Deriva las ecuaciones de Euler-Lagrange de una lagrangiana escalar simple.

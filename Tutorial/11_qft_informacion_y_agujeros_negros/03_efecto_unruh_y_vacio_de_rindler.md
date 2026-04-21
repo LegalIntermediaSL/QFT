@@ -1,5 +1,11 @@
 # Efecto Unruh y Vacio de Rindler
 
+**Nivel:** Avanzado  
+**Dificultad:** Alta  
+**Tiempo estimado:** 18-25 min  
+**Prerequisitos recomendados:** [Agujeros negros, radiacion de Hawking y paradoja de la informacion](02_agujeros_negros_radiacion_de_hawking_y_paradoja_de_la_informacion.md) · [Resumen del modulo](README.md)
+
+
 ## 1. Proposito
 
 Este documento introduce una de las lecciones mas profundas de la QFT relativista: la nocion de particula no es absoluta, sino que depende del observador. El efecto Unruh es el ejemplo pedagogico mas limpio de esta idea.

@@ -1,5 +1,11 @@
 # Islas y entropia generalizada
 
+**Nivel:** Avanzado  
+**Dificultad:** Alta  
+**Tiempo estimado:** 18-25 min  
+**Prerequisitos recomendados:** [Curva de Page y Unitaridad](04_curva_de_page_y_unitaridad.md) · [Resumen del modulo](README.md)
+
+
 ## 1. Proposito
 
 Este documento introduce una de las ideas que mas ha cambiado la discusion moderna sobre la paradoja de la informacion: la entropia generalizada y la aparicion de islas en el calculo de la entropia de radiacion.

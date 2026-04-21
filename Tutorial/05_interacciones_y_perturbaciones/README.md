@@ -49,6 +49,19 @@ Las ideas clave del modulo son:
 
 Al terminar, el lector deberia saber que objeto se calcula en un problema de dispersion, por que un diagrama no es una fotografia del proceso, y como se relacionan correladores, amputacion y amplitudes fisicas.
 
+## Sintesis del modulo
+
+Este modulo convierte la teoria libre en una teoria capaz de describir procesos reales. La matriz S, Dyson, diagramas y LSZ forman aqui el nucleo operativo del scattering perturbativo.
+
+!!! note "Idea clave"
+    Los diagramas de Feynman son una sintaxis de la expansion perturbativa, no una fotografia literal del proceso.
+
+!!! warning "Error frecuente"
+    Aprender reglas de Feynman sin entender la diferencia entre correlador, amplitud y observable.
+
+!!! tip "Conexion con el siguiente modulo"
+    El siguiente bloque repite esta logica en el caso fermionico y completa el repertorio de campos relativistas del curso.
+
 ## Ejercicios sugeridos
 
 1. Escribe los tres primeros terminos de la expansion de Dyson y comenta que clase de correcciones representa cada orden.

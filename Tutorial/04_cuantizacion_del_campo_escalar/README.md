@@ -51,6 +51,19 @@ La idea principal es mostrar que la cuantizacion del campo no es un acto misteri
 
 Al final del modulo, el lector deberia entender la arquitectura basica del espacio de Fock, la relacion entre operadores de campo y estados multiparticle, y por que el propagador libre reaparece despues como bloque elemental de diagramas y amplitudes.
 
+## Sintesis del modulo
+
+Este modulo contiene el primer gran cambio conceptual del tutorial: un campo libre cuantizado se convierte en una familia de osciladores cuyas excitaciones son las particulas.
+
+!!! note "Idea clave"
+    El espacio de Fock no es un añadido artificial: aparece de forma natural al cuantizar los modos del campo libre.
+
+!!! warning "Error frecuente"
+    Confundir el campo cuantico con una simple onda clasica extendida o con una funcion de onda de una particula.
+
+!!! tip "Conexion con el siguiente modulo"
+    Cuando ya existen propagadores y excitaciones del campo, el siguiente paso es introducir interacciones y amplitudes de scattering.
+
 ## Ejercicios sugeridos
 
 1. Deriva la ecuacion de Klein-Gordon a partir de la lagrangiana del campo escalar libre y verifica su relacion de dispersion.

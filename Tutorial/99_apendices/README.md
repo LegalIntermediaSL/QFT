@@ -14,6 +14,7 @@ Este bloque queda reservado para material de apoyo transversal:
 
 - [Bibliografia comentada](bibliografia.md)
 - [Herramientas computacionales](computacion_qft.md)
+- [Errores comunes y recetas practicas](errores_comunes_y_recetas_practicas.md)
 - [Reglas de Feynman y propagadores](reglas_de_feynman_y_propagadores.md)
 - [Simetrias discretas, CPT y anomalias](simetrias_discretas_cpt_y_anomalias.md)
 - [Mezcla de sabor, CKM y PMNS](mezcla_de_sabor_ckm_y_pmns.md)

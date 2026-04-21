@@ -1,5 +1,11 @@
 # Doble beta sin neutrinos
 
+**Nivel:** Avanzado  
+**Dificultad:** Alta  
+**Tiempo estimado:** 18-25 min  
+**Prerequisitos recomendados:** [Majorana y mecanismo seesaw](06_majorana_y_mecanismo_seesaw.md) · [Resumen del modulo](README.md)
+
+
 ## 1. Proposito
 
 Este documento conecta la capa EFT de neutrinos con uno de los observables mas importantes en la busqueda de fisica mas alla del Modelo Estandar: la desintegracion doble beta sin neutrinos, usualmente denotada $0\nu\beta\beta$.

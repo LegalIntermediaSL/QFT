@@ -1,5 +1,11 @@
 # Panorama del Lagrangiano del Modelo Estandar
 
+**Nivel:** Avanzado  
+**Dificultad:** Alta  
+**Tiempo estimado:** 18-25 min  
+**Prerequisitos recomendados:** [Modulo anterior](../09_renormalizacion/README.md) · [Resumen del modulo](README.md)
+
+
 ## Proposito
 
 El Lagrangiano del Modelo Estandar es una de las expresiones mas densas y exitosas de toda la fisica teorica moderna. Reune en una sola estructura matematica la interaccion fuerte, la interaccion electrodébil, la dinamica de quarks y leptones, el mecanismo de Higgs y la generacion de masas de fermiones, todo ello dentro de una teoria cuantica de campos renormalizable.

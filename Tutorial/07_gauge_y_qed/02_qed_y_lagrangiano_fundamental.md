@@ -1,5 +1,11 @@
 # QED y Lagrangiano Fundamental
 
+**Nivel:** Nucleo  
+**Dificultad:** Media  
+**Tiempo estimado:** 25-35 min  
+**Prerequisitos recomendados:** [Simetria Gauge Local y Derivada Covariante](01_simetria_gauge_local_y_derivada_covariante.md) · [Resumen del modulo](README.md)
+
+
 ## 1. Proposito
 
 La electrodinamica cuantica es la teoria gauge cuantica mas simple y, al mismo tiempo, una de las mas exitosas de toda la fisica. Este documento organiza su lagrangiano y su significado fisico.

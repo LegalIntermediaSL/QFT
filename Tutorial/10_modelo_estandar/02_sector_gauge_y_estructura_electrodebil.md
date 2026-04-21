@@ -1,5 +1,11 @@
 # Sector Gauge y Estructura Electrodébil
 
+**Nivel:** Avanzado  
+**Dificultad:** Alta  
+**Tiempo estimado:** 25-35 min  
+**Prerequisitos recomendados:** [Panorama del Lagrangiano del Modelo Estandar](01_lagrangiano_del_modelo_estandar.md) · [Resumen del modulo](README.md)
+
+
 ## Proposito
 
 Este documento presenta el armazon gauge del Modelo Estandar y organiza el papel de los campos gauge en los sectores fuerte y electrodébil.

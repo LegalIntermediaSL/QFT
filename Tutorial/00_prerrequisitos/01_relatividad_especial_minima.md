@@ -1,5 +1,11 @@
 # Relatividad Especial Minima
 
+**Nivel:** Fundacional  
+**Dificultad:** Baja  
+**Tiempo estimado:** 25-35 min  
+**Prerequisitos recomendados:** [Resumen del modulo](README.md)
+
+
 ## 1. Proposito
 
 La QFT es inseparable de la relatividad especial. Antes de cuantizar campos, hace falta tener una intuicion firme del espacio-tiempo de Minkowski, de la estructura causal y de la relacion entre energia, momento y masa.

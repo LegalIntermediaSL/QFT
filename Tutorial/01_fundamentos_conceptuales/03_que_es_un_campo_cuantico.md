@@ -1,5 +1,11 @@
 # Que Es un Campo Cuantico
 
+**Nivel:** Fundacional  
+**Dificultad:** Media  
+**Tiempo estimado:** 25-35 min  
+**Prerequisitos recomendados:** [Principios Estructurales de la Teoria Cuantica de Campos](02_principios_estructurales_de_la_qft.md) · [Resumen del modulo](README.md)
+
+
 ## Proposito
 
 Este documento responde a una de las preguntas mas importantes y, a la vez, mas confundidas de toda la teoria: si la fisica de altas energias habla constantemente de particulas, por que la QFT afirma que lo fundamental no son las particulas sino los campos cuanticos.

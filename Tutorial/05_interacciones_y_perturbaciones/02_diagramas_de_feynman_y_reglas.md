@@ -1,5 +1,11 @@
 # Diagramas de Feynman y Reglas de Calculo
 
+**Nivel:** Nucleo  
+**Dificultad:** Media  
+**Tiempo estimado:** 25-35 min  
+**Prerequisitos recomendados:** [Teoria de Perturbaciones y Matriz S](01_teoria_de_perturbaciones_y_matriz_s.md) · [Resumen del modulo](README.md)
+
+
 ## 1. Introduccion
 
 Los diagramas de Feynman son una de las representaciones visuales mas famosas de la fisica, pero su sentido real suele malinterpretarse. No son dibujitos de trayectorias microscopicas. Son una notacion compacta para terminos de la expansion perturbativa de amplitudes.

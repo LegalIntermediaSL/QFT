@@ -4,6 +4,8 @@
 
 Este apendice profundiza un paso mas en dos ideas que ya aparecieron de forma panoramica: la anomalia axial como ejemplo pedagogico central y la cancelacion de anomalias gauge como condicion de consistencia del Modelo Estandar. La meta no es hacer una derivacion completa a nivel de lazo, sino dejar claro que se rompe, por que importa y que salva a la teoria.
 
+La idea central es que la cuantizacion no solo añade correcciones numericas: puede cambiar el estatus de ciertas simetrias de manera profunda.
+
 ## 1. Corriente axial clasica
 
 En teorias con fermiones relativistas, una corriente axial puede escribirse de forma esquematica como
@@ -13,6 +15,8 @@ J^\mu_5 = \bar{\psi}\gamma^\mu\gamma^5\psi.
 $$
 
 En el nivel clasico y bajo ciertas hipotesis, esta corriente parece obedecer una ley de conservacion. Esa apariencia cambia al cuantizar.
+
+Esto ya deberia levantar una alerta conceptual: una simetria visible en el lagrangiano clasico no esta garantizada automaticamente en la teoria cuantica completa.
 
 ## 2. Donde nace la anomalia axial
 
@@ -28,13 +32,17 @@ El diagrama pedagogico mas famoso en esta historia es el diagrama triangular, do
 
 - el problema ya aparece al primer orden de lazo relevante;
 - la anomalia no se elimina con una simple redefinicion inocente;
-- la conservación axial clasica se modifica cuánticamente.
+- la conservacion axial clasica se modifica cuánticamente.
+
+Ese caracter “inevitable” del resultado es precisamente lo que vuelve tan instructiva a la anomalia axial.
 
 ## 4. Leccion fisica de la anomalia axial
 
 La anomalia axial no es solo un “fallo” formal. Tiene consecuencias fisicas reales y muestra que el contenido cuántico de una teoria puede ser mas rico que su simetria clasica aparente.
 
 En otras palabras, la cuantizacion no siempre preserva la ingenua lectura simetrica del nivel clasico.
+
+Una de las moralejas mas importantes es que ciertas corrientes requieren una lectura mas fina: no basta con mirar la accion clasica y concluir que la corriente sera exactamente conservada en la teoria cuantizada.
 
 ## 5. Anomalias gauge versus anomalias globales
 
@@ -50,6 +58,8 @@ Por eso no todas las anomalias tienen el mismo estatus.
 En una teoria gauge quiral como el Modelo Estandar, los fermiones se distribuyen en representaciones distintas para componentes izquierdas y derechas. Eso abre la puerta a posibles anomalias gauge.
 
 La teoria solo resulta consistente porque las contribuciones pertinentes de todas las especies fermionicas se cancelan al sumar una generacion completa con sus cargas correctas.
+
+Esto es lo realmente importante: la consistencia cuantica no depende solo de haber escrito un lagrangiano gauge invariante a nivel clasico, sino de que esa invariancia sobreviva al cuantizar.
 
 ## 7. Cancelacion en el Modelo Estandar
 
@@ -104,7 +114,11 @@ Este apendice se aprovecha mejor despues de leer:
 - Por que una anomalia gauge amenaza la consistencia del Modelo Estandar.
 - Que enseña la cancelacion de anomalias sobre el contenido fermionico de la teoria.
 
-## 13. Referencias y lecturas recomendadas
+## 13. Cierre
+
+La anomalia axial y la cancelacion de anomalias gauge muestran dos caras complementarias de una misma leccion: la cuantizacion no es neutral frente a las simetrias. A veces revela efectos fisicos nuevos; otras veces impone restricciones de consistencia tan fuertes que terminan moldeando la arquitectura completa de la teoria.
+
+## 14. Referencias y lecturas recomendadas
 
 - Base: Schwartz y Peskin, discusiones de anomalia axial y consistencia gauge.
 - Complementaria: Tong, notas de quiralidad y gauge con comentarios sobre anomalias.

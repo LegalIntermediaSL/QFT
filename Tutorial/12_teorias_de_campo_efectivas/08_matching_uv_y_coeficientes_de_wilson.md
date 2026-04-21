@@ -1,5 +1,11 @@
 # Matching UV y coeficientes de Wilson
 
+**Nivel:** Avanzado  
+**Dificultad:** Alta  
+**Tiempo estimado:** 25-35 min  
+**Prerequisitos recomendados:** [Doble beta sin neutrinos](07_doble_beta_sin_neutrinos.md) · [Resumen del modulo](README.md)
+
+
 ## 1. Proposito
 
 Este documento cierra la segunda ola avanzada del modulo 12 introduciendo una de las ideas tecnicas mas importantes en EFT: el matching entre una teoria UV y su descripcion efectiva, resumido en coeficientes de Wilson.

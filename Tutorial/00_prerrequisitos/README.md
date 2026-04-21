@@ -77,6 +77,19 @@ Al terminar este bloque, el lector deberia poder:
 - reconocer la relacion entre simetria y estructura teorica;
 - usar la delta de Dirac y las transformadas de Fourier en contextos simples.
 
+## Sintesis del modulo
+
+Este modulo fija el alfabeto minimo del tutorial: relatividad, notacion, osciladores, simetrias y Fourier. Si aqui queda todo claro, el salto a campos y cuantizacion resulta mucho mas natural.
+
+!!! note "Idea clave"
+    Este bloque no es relleno previo al curso: contiene herramientas que reaparecen en casi todos los modulos tecnicos.
+
+!!! warning "Error frecuente"
+    Intentar empezar por diagramas o gauge sin dominar Fourier, osciladores y relatividad suele volver el tutorial innecesariamente opaco.
+
+!!! tip "Conexion con el siguiente modulo"
+    El paso natural despues de este bloque es preguntarse por que la QFT necesita campos y no solo particulas: esa es exactamente la funcion del modulo 01.
+
 ## Ejercicios sugeridos
 
 1. Comprueba la relacion relativista $E^2=\mathbf{p}^2+m^2$ en distintos limites y comenta su lectura fisica.

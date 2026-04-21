@@ -1,5 +1,11 @@
 # Propagador, Causalidad y Funcion de Green
 
+**Nivel:** Nucleo  
+**Dificultad:** Media-Alta  
+**Tiempo estimado:** 25-35 min  
+**Prerequisitos recomendados:** [Cuantizacion Canonica y Espacio de Fock](02_cuantizacion_canonica_y_espacio_de_fock.md) · [Resumen del modulo](README.md)
+
+
 ## 1. Proposito
 
 Este articulo cierra el modulo del campo escalar libre conectando la cuantizacion canonica con dos ideas que luego aparecen por todas partes en QFT: el propagador de Feynman y la lectura del campo como fuente de correladores. El objetivo es preparar el salto hacia interacciones, diagramas y amplitudes sin dejar un hueco conceptual entre espacio de Fock y teoria perturbativa.

@@ -1,5 +1,11 @@
 # Transformaciones de Bogoliubov y Cambio de Vacio
 
+**Nivel:** Intermedio  
+**Dificultad:** Media-Alta  
+**Tiempo estimado:** 18-25 min  
+**Prerequisitos recomendados:** [Accion Efectiva y Potencial Efectivo](03_accion_efectiva_y_potencial_efectivo.md) · [Resumen del modulo](README.md)
+
+
 ## 1. Proposito
 
 Este documento introduce una idea que conecta integral de camino, cuantizacion, espacio-tiempo curvo y el modulo avanzado de informacion y agujeros negros: distintas descomposiciones modales del mismo campo pueden conducir a nociones distintas de vacio y de particula.

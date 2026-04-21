@@ -1,5 +1,11 @@
 # Majorana y mecanismo seesaw
 
+**Nivel:** Avanzado  
+**Dificultad:** Alta  
+**Tiempo estimado:** 18-25 min  
+**Prerequisitos recomendados:** [SMEFT y operador de Weinberg](05_smeft_y_operador_de_weinberg.md) · [Resumen del modulo](README.md)
+
+
 ## 1. Proposito
 
 Este documento cierra la primera capa avanzada del modulo 12 conectando tres ideas: neutrinos de Majorana, operador de Weinberg y mecanismo seesaw.

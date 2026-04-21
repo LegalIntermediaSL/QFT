@@ -1,5 +1,11 @@
 # Campos, Localidad y Causalidad Microfisica
 
+**Nivel:** Fundacional  
+**Dificultad:** Media  
+**Tiempo estimado:** 25-35 min  
+**Prerequisitos recomendados:** [Choque Entre Mecanica Cuantica y Relatividad Especial](01_choque_entre_mq_y_relatividad.md) · [Resumen del modulo](README.md)
+
+
 ## 1. Introduccion
 
 Una vez aceptado que los campos son los objetos fundamentales, queda por entender por que esta eleccion es tan poderosa. La respuesta no se limita a que "permite crear y destruir particulas". Tambien tiene que ver con localidad, simetria de Lorentz y causalidad.

@@ -1,5 +1,11 @@
 # Integrando grados de libertad
 
+**Nivel:** Avanzado  
+**Dificultad:** Alta  
+**Tiempo estimado:** 25-35 min  
+**Prerequisitos recomendados:** [Modulo anterior](../11_qft_informacion_y_agujeros_negros/README.md) · [Resumen del modulo](README.md)
+
+
 ## 1. Proposito
 
 Este documento introduce el corazon conceptual de una teoria de campo efectiva: describir fisica a baja energia sin retener explicitamente todos los grados de libertad microscopicos.

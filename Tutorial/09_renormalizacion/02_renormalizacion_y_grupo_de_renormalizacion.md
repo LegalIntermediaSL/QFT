@@ -1,5 +1,11 @@
 # Renormalizacion y Grupo de Renormalizacion
 
+**Nivel:** Intermedio  
+**Dificultad:** Media-Alta  
+**Tiempo estimado:** 25-35 min  
+**Prerequisitos recomendados:** [Origen de las Divergencias y Regularizacion](01_origen_de_las_divergencias_y_regularizacion.md) · [Resumen del modulo](README.md)
+
+
 ## 1. Proposito
 
 Una vez regularizada una teoria, el siguiente paso es expresar observables finitos en terminos de parametros fisicos. Esa es la tarea de la renormalizacion. El grupo de renormalizacion, a su vez, organiza como cambian los acoplamientos con la escala.

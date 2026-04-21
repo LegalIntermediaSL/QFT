@@ -1,5 +1,11 @@
 # Reduccion LSZ y Correladores Amputados
 
+**Nivel:** Nucleo  
+**Dificultad:** Media-Alta  
+**Tiempo estimado:** 25-35 min  
+**Prerequisitos recomendados:** [Diagramas de Feynman y Reglas de Calculo](02_diagramas_de_feynman_y_reglas.md) · [Resumen del modulo](README.md)
+
+
 ## 1. Proposito
 
 Este articulo aclara un puente que a menudo queda implicito en una primera lectura de QFT: como se pasa desde correladores de campos a amplitudes de scattering. El objetivo es presentar la idea de la reduccion LSZ sin entrar en todos los detalles tecnicos de una demostracion completa, pero dejando claro que relacion une propagadores, correladores y matriz $S$.

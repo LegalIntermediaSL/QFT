@@ -1,5 +1,11 @@
 # Funcion Beta y Running Couplings
 
+**Nivel:** Intermedio  
+**Dificultad:** Media-Alta  
+**Tiempo estimado:** 18-25 min  
+**Prerequisitos recomendados:** [Regularizacion Dimensional en $\phi^4$](03_regularizacion_dimensional_en_phi4.md) · [Resumen del modulo](README.md)
+
+
 ## 1. Proposito
 
 Este documento desarrolla la idea de que los acoplamientos no son numeros fijos absolutos, sino cantidades dependientes de la escala. La funcion beta organiza precisamente esa dependencia.

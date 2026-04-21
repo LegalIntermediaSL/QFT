@@ -54,6 +54,19 @@ Al terminar este bloque, deberia quedar claro que:
 - las excitaciones fisicas deben organizarse sobre objetos definidos en el espacio-tiempo;
 - la QFT no se entiende bien si se aprende solo como una tecnica de diagramas.
 
+## Sintesis del modulo
+
+Este modulo muestra por que la relatividad obliga a abandonar una intuicion ingenua de particulas aisladas y por que la localidad hace del campo el objeto natural de la teoria.
+
+!!! note "Idea clave"
+    Relatividad, causalidad y numero variable de particulas no encajan bien en una mecanica cuantica de una sola particula.
+
+!!! warning "Error frecuente"
+    Pensar que este bloque solo repite relatividad especial. En realidad introduce la necesidad estructural del lenguaje de campos.
+
+!!! tip "Conexion con el siguiente modulo"
+    Si los campos son los objetos correctos, el siguiente problema es describir su dinamica de forma compacta: eso ocurre con accion y lagrangiana.
+
 ## Ejercicios sugeridos
 
 1. Explica por que una teoria relativista con numero fijo de particulas resulta insuficiente como marco general.

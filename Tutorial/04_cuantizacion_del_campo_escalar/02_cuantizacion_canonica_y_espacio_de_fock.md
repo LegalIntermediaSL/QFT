@@ -1,5 +1,11 @@
 # Cuantizacion Canonica y Espacio de Fock
 
+**Nivel:** Nucleo  
+**Dificultad:** Media  
+**Tiempo estimado:** 25-35 min  
+**Prerequisitos recomendados:** [Campo Escalar Clasico y Modos Normales](01_campo_escalar_clasico_y_modos_normales.md) · [Resumen del modulo](README.md)
+
+
 ## 1. Introduccion
 
 La cuantizacion canonica del campo escalar muestra de forma explicita como aparece una teoria con numero variable de particulas. Es uno de los puntos donde la QFT cambia de lenguaje de manera mas visible.

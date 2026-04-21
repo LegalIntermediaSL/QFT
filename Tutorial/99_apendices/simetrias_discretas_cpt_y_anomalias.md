@@ -4,6 +4,12 @@
 
 Este apendice ofrece una vista compacta de tres temas que aparecen una y otra vez al avanzar en QFT: las simetrias discretas $C$, $P$ y $T$, el papel estructural del teorema CPT y la idea de anomalia cuantica. No pretende sustituir un tratamiento formal completo, pero si fijar el mapa conceptual para enlazar los modulos de fermiones, gauge y Modelo Estandar.
 
+La meta es que el lector pueda responder tres preguntas basicas:
+
+- que significa cada transformacion discreta;
+- por que la combinacion $CPT$ ocupa un lugar privilegiado;
+- que quiere decir que una simetria clasica se vuelva anomala al cuantizar.
+
 ## 1. Simetrias discretas
 
 A diferencia de una simetria continua, una simetria discreta no se parametriza por un numero pequeno continuamente variable. En QFT las tres mas importantes son:
@@ -44,7 +50,7 @@ La transformacion temporal invierte el sentido del tiempo. Su tratamiento tecnic
 - propiedades de reversibilidad;
 - formulaciones profundas del teorema CPT.
 
-En un primer contacto pedagogico conviene recordar que la accion de $T$ en teoria cuantica no se reduce a cambiar $t \to -t$ de manera ingenua.
+En un primer contacto pedagogico conviene recordar que la accion de $T$ en teoria cuantica no se reduce a cambiar $t \to -t$ de manera ingenua. Involucra tambien conjugacion compleja y una estructura antiunitaria.
 
 ## 5. Combinaciones $CP$, $PT$ y $CPT$
 
@@ -66,6 +72,8 @@ El teorema CPT no es un detalle decorativo. Resume una conexion profunda entre:
 
 Por eso cualquier discusion sobre una posible violacion de CPT suele tomarse como una señal de que alguna hipotesis estructural muy profunda de la teoria esta siendo modificada.
 
+No es simplemente “otra simetria mas”, sino una prueba muy exigente de consistencia del marco entero.
+
 ## 7. Violacion de paridad y de $CP$
 
 El sector debil del Modelo Estandar ofrece dos lecciones centrales:
@@ -74,6 +82,8 @@ El sector debil del Modelo Estandar ofrece dos lecciones centrales:
 - permite violacion de $CP$ en el sector de sabor.
 
 Esto vuelve especialmente util estudiar $C$, $P$ y $CP$ despues de los modulos `06`, `07` y `10`, donde la quiralidad y las corrientes electrodébiles ya estan sobre la mesa.
+
+La leccion importante es que violar $P$ o incluso $CP$ no contradice automaticamente el teorema $CPT$. Son niveles distintos de restriccion.
 
 ## 8. Que es una anomalia
 
@@ -108,6 +118,8 @@ En el Modelo Estandar, la asignacion de cargas y representaciones fermionicas es
 - estructura electrodébil;
 - contenido por generaciones.
 
+Esa es una de las razones por las que el contenido fermionico del Modelo Estandar parece tan rigidamente organizado.
+
 ## 12. Uso recomendado dentro del tutorial
 
 Este apendice se aprovecha mejor despues de estudiar:
@@ -129,7 +141,11 @@ Este apendice se aprovecha mejor despues de estudiar:
 - Por que la anomalia quiral es un ejemplo tan importante en QFT.
 - Como se conecta la cancelacion de anomalias con la consistencia del Modelo Estandar.
 
-## 15. Referencias y lecturas recomendadas
+## 15. Cierre
+
+Las simetrias discretas y las anomalias muestran muy bien que la consistencia de una QFT no depende solo de sus ecuaciones de movimiento o de su lagrangiano clasico. Tambien depende de como se cuantiza, de que simetrias sobreviven y de que restricciones profundas siguen protegiendo la teoria.
+
+## 16. Referencias y lecturas recomendadas
 
 - Base: Schwartz o Peskin, discusiones introductorias sobre simetrias discretas y anomalias.
 - Complementaria: Tong, notas utiles para quiralidad y estructura gauge.

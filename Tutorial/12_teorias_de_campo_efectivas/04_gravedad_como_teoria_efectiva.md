@@ -1,5 +1,11 @@
 # Gravedad como teoria efectiva
 
+**Nivel:** Avanzado  
+**Dificultad:** Alta  
+**Tiempo estimado:** 18-25 min  
+**Prerequisitos recomendados:** [Euler-Heisenberg y operadores efectivos](03_euler_heisenberg_y_operadores_efectivos.md) · [Resumen del modulo](README.md)
+
+
 ## 1. Proposito
 
 Este documento cierra el modulo mostrando una idea hoy muy extendida: la relatividad general de Einstein puede tratarse como una teoria de campo efectiva perfectamente util a energias muy por debajo de la escala de Planck.

@@ -1,5 +1,11 @@
 # Mecanismo de Higgs y Ruptura Espontanea
 
+**Nivel:** Avanzado  
+**Dificultad:** Alta  
+**Tiempo estimado:** 25-35 min  
+**Prerequisitos recomendados:** [Sector Fermionico y Quiralidad](03_sector_fermionico_y_quiralidad.md) · [Resumen del modulo](README.md)
+
+
 ## Proposito
 
 Este documento resume el papel del campo de Higgs, el vacio no trivial y la generacion de masas gauge en el Modelo Estandar.

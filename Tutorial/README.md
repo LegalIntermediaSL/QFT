@@ -44,6 +44,15 @@ flowchart TD
 
 ## Ruta recomendada de lectura
 
+Tambien puedes apoyarte en estas paginas:
+
+- [Como estudiar este tutorial](como_estudiar_este_tutorial.md)
+- [Rutas de lectura](rutas_de_lectura.md)
+- [Tabla maestra del tutorial](tabla_maestra_del_tutorial.md)
+- [Sintesis por modulo](sintesis_por_modulo.md)
+- [Catalogo de capitulos, etiquetas y prerequisitos](catalogo_de_capitulos_y_etiquetas.md)
+- [Mapa de dependencias conceptuales](mapa_de_dependencias_conceptuales.md)
+
 Para una experiencia de aprendizaje secuencial, sigue este orden:
 
 | Orden | Módulo | Descripción |

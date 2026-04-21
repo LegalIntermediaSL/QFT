@@ -1,5 +1,11 @@
 # QFT, informacion y entrelazamiento
 
+**Nivel:** Avanzado  
+**Dificultad:** Alta  
+**Tiempo estimado:** 18-25 min  
+**Prerequisitos recomendados:** [Modulo anterior](../10_modelo_estandar/README.md) · [Resumen del modulo](README.md)
+
+
 ## 1. Por que este tema pertenece a un tutorial de QFT
 
 Puede parecer que la teoria de la informacion cuantica y la fisica de agujeros negros pertenecen a otra clase de curso. Sin embargo, una mirada mas cuidadosa muestra que muchas de las ideas centrales de estos temas nacen precisamente dentro del lenguaje de la teoria cuantica de campos.

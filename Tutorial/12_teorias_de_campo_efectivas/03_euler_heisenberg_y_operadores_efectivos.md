@@ -1,5 +1,11 @@
 # Euler-Heisenberg y operadores efectivos
 
+**Nivel:** Avanzado  
+**Dificultad:** Alta  
+**Tiempo estimado:** 25-35 min  
+**Prerequisitos recomendados:** [Teoria de Fermi como EFT](02_teoria_de_fermi_como_eft.md) · [Resumen del modulo](README.md)
+
+
 ## 1. Proposito
 
 Este documento presenta otro ejemplo clasico de EFT: la aparicion de auto-interacciones efectivas del campo electromagnetico inducidas por efectos cuanticos de electrones pesados en procesos de baja energia.

@@ -64,6 +64,19 @@ Al terminar este modulo, deberia quedar claro:
 - como la doble beta sin neutrinos encaja como observable clave de violacion leptónica;
 - que significa hacer matching y por que los coeficientes de Wilson resumen la huella IR de una teoria UV.
 
+## Sintesis del modulo
+
+Este modulo cierra el recorrido con una lectura moderna de la QFT: toda teoria debe entenderse como efectiva, organizada por escalas, simetrias y grados de libertad relevantes.
+
+!!! note "Idea clave"
+    Las EFT no son un parche menor: son una de las formas mas poderosas de entender que significa realmente una teoria fisica util.
+
+!!! warning "Error frecuente"
+    Creer que una teoria no renormalizable deja automaticamente de ser predictiva o interesante.
+
+!!! tip "Conexion con el siguiente modulo"
+    Este es el cierre natural del recorrido principal. Desde aqui tiene sentido volver a cualquier modulo anterior con una intuicion mucho mas moderna de escalas, matching y validez efectiva.
+
 ## Ejercicios sugeridos
 
 1. Explica por que un operador de dimension seis aparece suprimido por dos potencias de una escala pesada.

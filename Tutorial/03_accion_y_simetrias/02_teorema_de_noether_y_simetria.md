@@ -1,5 +1,11 @@
 # Teorema de Noether y Papel Organizador de las Simetrias
 
+**Nivel:** Fundacional  
+**Dificultad:** Media  
+**Tiempo estimado:** 25-35 min  
+**Prerequisitos recomendados:** [Principio de Accion y Ecuaciones de Campo](01_principio_de_accion_y_ecuaciones_de_campo.md) · [Resumen del modulo](README.md)
+
+
 ## 1. Introduccion
 
 Las simetrias no son un adorno estetico de la teoria. En fisica moderna funcionan como principios constructivos. En QFT esto se vuelve especialmente claro gracias al teorema de Noether: cuando la accion es invariante bajo una familia continua de transformaciones, aparece una corriente conservada.

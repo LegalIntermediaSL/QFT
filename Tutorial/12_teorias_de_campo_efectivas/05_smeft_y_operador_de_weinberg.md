@@ -1,5 +1,11 @@
 # SMEFT y operador de Weinberg
 
+**Nivel:** Avanzado  
+**Dificultad:** Alta  
+**Tiempo estimado:** 25-35 min  
+**Prerequisitos recomendados:** [Gravedad como teoria efectiva](04_gravedad_como_teoria_efectiva.md) · [Resumen del modulo](README.md)
+
+
 ## 1. Proposito
 
 Este documento abre la capa avanzada del modulo 12 mostrando como el propio Modelo Estandar puede verse como el termino lider de una expansion efectiva mas amplia: la SMEFT, o Standard Model Effective Field Theory.

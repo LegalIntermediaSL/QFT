@@ -48,6 +48,19 @@ Al terminar este modulo, deberia quedar claro:
 - como se leen las corrientes cargadas y neutras del sector electrodébil;
 - por que el sector de neutrinos apunta mas alla del Modelo Estandar minimo y como se conecta con PMNS y oscilaciones.
 
+## Sintesis del modulo
+
+Este modulo muestra la gran aplicacion del formalismo anterior: el Modelo Estandar como teoria gauge quiral con Higgs, Yukawas, mezcla electrodébil y fenomenologia real.
+
+!!! note "Idea clave"
+    El Modelo Estandar no es un bloque aislado de fenomenologia: es la primera gran sintesis del formalismo desarrollado en los modulos anteriores.
+
+!!! warning "Error frecuente"
+    Leer este modulo como una lista de sectores sin tener claras antes quiralidad, gauge y renormalizacion.
+
+!!! tip "Conexion con el siguiente modulo"
+    El siguiente bloque usa la QFT en un contexto de frontera, donde entrelazamiento, horizontes y unitaridad tensan nuestra intuicion del espacio-tiempo.
+
 ## Ejercicios sugeridos
 
 1. Explica por que el grupo gauge del Modelo Estandar se organiza como $SU(3)_c \times SU(2)_L \times U(1)_Y$ y que sector fisico corresponde a cada factor.

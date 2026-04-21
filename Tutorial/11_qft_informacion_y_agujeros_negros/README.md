@@ -66,6 +66,19 @@ Al terminar este modulo, deberia quedar claro:
 - por que la entropia generalizada e islas han cambiado la discusion moderna;
 - como la holografia entra como intuicion estructural para reconstruccion de informacion.
 
+## Sintesis del modulo
+
+Este modulo lleva la QFT a una frontera conceptual donde vacio, entrelazamiento, horizontes y unitaridad ya no pueden pensarse por separado. Su funcion es abrir el lenguaje correcto de la paradoja de la informacion.
+
+!!! note "Idea clave"
+    Aqui la QFT deja de verse solo como teoria de particulas y pasa a dialogar con informacion cuantica, gravedad semiclasica y holografia.
+
+!!! warning "Error frecuente"
+    Pensar que termicidad efectiva equivale automaticamente a perdida de informacion.
+
+!!! tip "Conexion con el siguiente modulo"
+    El cierre del recorrido moderno llega con las EFT, donde la teoria se reorganiza sistematicamente por escalas y grados de libertad relevantes.
+
 ## Ejercicios sugeridos
 
 1. Explica por que el vacio cuantico no debe pensarse como “ausencia trivial de todo”.

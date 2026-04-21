@@ -1,5 +1,11 @@
 # Oscilador Armonico Cuantico
 
+**Nivel:** Fundacional  
+**Dificultad:** Media  
+**Tiempo estimado:** 25-35 min  
+**Prerequisitos recomendados:** [Notacion Tensorial y Convenciones](02_notacion_tensorial_y_convenciones.md) · [Resumen del modulo](README.md)
+
+
 ## 1. Proposito
 
 El oscilador armonico cuantico es probablemente el ejemplo mas importante de toda la mecanica cuantica para quien quiera estudiar QFT. La razon es profunda: un campo libre puede descomponerse en modos, y cada modo se comporta como un oscilador armonico cuantico.

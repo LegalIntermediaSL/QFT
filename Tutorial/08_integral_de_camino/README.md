@@ -57,6 +57,19 @@ Al terminar este modulo, deberia poder entenderse:
 - que papel cumplen la accion efectiva y el potencial efectivo;
 - por que la nocion de vacio puede depender de la descomposicion modal y del observador.
 
+## Sintesis del modulo
+
+Este modulo reescribe la QFT en lenguaje funcional. Lo importante no es solo la tecnica, sino la nueva forma de pensar correladores, vacio, accion efectiva y cambio de observador.
+
+!!! note "Idea clave"
+    La integral de camino no sustituye al formalismo canonico: lo reorganiza y vuelve visibles otras estructuras.
+
+!!! warning "Error frecuente"
+    Tratar el formalismo funcional como una receta formal sin conectarlo con correladores, vacio y accion efectiva.
+
+!!! tip "Conexion con el siguiente modulo"
+    Este lenguaje hace mucho mas natural entrar en divergencias, escalas, regularizacion y grupo de renormalizacion.
+
 ## Ejercicios sugeridos
 
 1. Explica por que el peso $e^{iS}$ organiza la suma sobre historias.

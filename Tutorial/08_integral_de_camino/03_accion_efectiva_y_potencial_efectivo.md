@@ -1,5 +1,11 @@
 # Accion Efectiva y Potencial Efectivo
 
+**Nivel:** Intermedio  
+**Dificultad:** Media-Alta  
+**Tiempo estimado:** 25-35 min  
+**Prerequisitos recomendados:** [Funcional Generador y Correladores](02_funcional_generador_y_correladores.md) · [Resumen del modulo](README.md)
+
+
 ## 1. Proposito
 
 Este documento extiende el formalismo funcional hacia dos objetos de gran importancia: la accion efectiva y el potencial efectivo. Ambos permiten resumir correcciones cuanticas y estudiar vacios, simetrias y estabilidad de forma mas estructural.

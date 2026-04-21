@@ -1,5 +1,11 @@
 # Polarizaciones y Sumas de Espin en QED
 
+**Nivel:** Nucleo  
+**Dificultad:** Media-Alta  
+**Tiempo estimado:** 18-25 min  
+**Prerequisitos recomendados:** [Scattering Basico en QED](04_scattering_basico_en_qed.md) · [Resumen del modulo](README.md)
+
+
 ## 1. Proposito
 
 Este documento añade una capa tecnica necesaria para pasar de amplitudes escritas formalmente a cantidades comparables con observables: el tratamiento de polarizaciones del foton y sumas de espin de fermiones.

@@ -71,6 +71,19 @@ Al terminar este modulo, deberia quedar claro:
 - como se organizan los bilineales de Dirac;
 - por que la corriente conservada y el limite no relativista son pruebas importantes de consistencia fisica.
 
+## Sintesis del modulo
+
+Este modulo completa la base relativista del curso con fermiones, espinores y anticonmutacion. Aqui aparecen varias de las piezas que luego hacen posible QED y el sector quiral del Modelo Estandar.
+
+!!! note "Idea clave"
+    El formalismo de Dirac no solo describe fermiones relativistas: tambien explica por que el espin y las antiparticulas aparecen de forma estructural.
+
+!!! warning "Error frecuente"
+    Pensar que quiralidad, Dirac, Weyl y Majorana son solo cambios de notacion sin contenido fisico propio.
+
+!!! tip "Conexion con el siguiente modulo"
+    La corriente de Dirac y la estructura fermionica relativista preparan directamente la entrada a simetria gauge local y QED.
+
 ## Ejercicios sugeridos
 
 1. Explica por que la ecuacion de Klein-Gordon no era suficiente como teoria relativista satisfactoria para fermiones de espin $1/2$.

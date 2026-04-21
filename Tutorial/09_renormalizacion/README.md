@@ -58,6 +58,19 @@ Al terminar este modulo, deberia ser posible entender:
 - como leer un polo en $1/\varepsilon$ dentro de regularizacion dimensional;
 - que informacion fisica resume una funcion beta.
 
+## Sintesis del modulo
+
+Este modulo transforma las divergencias en una lectura fisica de escalas. Renormalizar deja de ser aqui un truco tecnico y pasa a ser una teoria de como cambian los parametros con la energia.
+
+!!! note "Idea clave"
+    La renormalizacion es una teoria de escalas fisicas, no solo una forma de esconder infinitos.
+
+!!! warning "Error frecuente"
+    Identificar regularizacion, contratermino y observable renormalizado como si fueran el mismo objeto.
+
+!!! tip "Conexion con el siguiente modulo"
+    Con gauge, fermiones y running ya en mano, el siguiente paso natural es ver como todo eso se combina en el Modelo Estandar.
+
 ## Ejercicios sugeridos
 
 1. Explica por que la aparicion de lazos suele ir acompañada de divergencias ultravioletas.

@@ -1,5 +1,11 @@
 # Principio de Accion y Ecuaciones de Campo
 
+**Nivel:** Fundacional  
+**Dificultad:** Baja  
+**Tiempo estimado:** 25-35 min  
+**Prerequisitos recomendados:** [Modulo anterior](../02_relatividad_y_campos/README.md) · [Resumen del modulo](README.md)
+
+
 ## 1. Introduccion
 
 La formulacion por accion es uno de los lenguajes mas potentes de la fisica teorica. En lugar de comenzar con fuerzas o ecuaciones aisladas, se introduce un funcional global cuya estacionariedad sintetiza la dinamica completa.

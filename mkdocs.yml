@@ -19,7 +19,7 @@ theme:
   name: material
   palette:
     scheme: slate
-    primary: deep purple
+    primary: indigo
     accent: cyan
   features:
     - navigation.sections
@@ -30,6 +30,12 @@ nav:
   - Inicio: README.md
   - Tutorial:
     - Índice: Tutorial/README.md
+    - Cómo Estudiarlo: Tutorial/como_estudiar_este_tutorial.md
+    - Rutas de Lectura: Tutorial/rutas_de_lectura.md
+    - Tabla Maestra: Tutorial/tabla_maestra_del_tutorial.md
+    - Síntesis por Módulo: Tutorial/sintesis_por_modulo.md
+    - Catálogo de Capítulos: Tutorial/catalogo_de_capitulos_y_etiquetas.md
+    - Mapa de Dependencias: Tutorial/mapa_de_dependencias_conceptuales.md
     - 00. Prerrequisitos: Tutorial/00_prerrequisitos/README.md
     - 01. Fundamentos: Tutorial/01_fundamentos_conceptuales/README.md
     - 02. Relatividad y Campos: Tutorial/02_relatividad_y_campos/README.md
@@ -46,6 +52,7 @@ nav:
   - Apéndices:
     - Bibliografía: Tutorial/99_apendices/bibliografia.md
     - Herramientas Computacionales: Tutorial/99_apendices/computacion_qft.md
+    - Errores Comunes y Recetas: Tutorial/99_apendices/errores_comunes_y_recetas_practicas.md
     - Reglas de Feynman y Propagadores: Tutorial/99_apendices/reglas_de_feynman_y_propagadores.md
     - Simetrías Discretas, CPT y Anomalías: Tutorial/99_apendices/simetrias_discretas_cpt_y_anomalias.md
     - Mezcla de Sabor, CKM y PMNS: Tutorial/99_apendices/mezcla_de_sabor_ckm_y_pmns.md

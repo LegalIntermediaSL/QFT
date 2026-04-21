@@ -1,8 +1,16 @@
 # Quiralidad, Espinores de Weyl y Fermiones de Majorana
 
+**Nivel:** Nucleo  
+**Dificultad:** Media-Alta  
+**Tiempo estimado:** 18-25 min  
+**Prerequisitos recomendados:** [Corriente de Dirac y Limite No Relativista](04_corriente_de_dirac_y_limite_no_relativista.md) · [Resumen del modulo](README.md)
+
+
 ## 1. Proposito
 
 Este documento profundiza en la estructura quiral de la teoria fermionica y prepara el lenguaje necesario para entender mejor el Modelo Estandar y varias extensiones de la QFT relativista.
+
+Tambien sirve para evitar una confusion habitual: Dirac, Weyl y Majorana no son solo tres nombres para escribir espinores, sino tres maneras de organizar grados de libertad fermionicos con implicaciones fisicas distintas.
 
 ## 2. Quiralidad y proyectores
 
@@ -18,6 +26,14 @@ $$
 \psi_L = P_L \psi, \qquad \psi_R = P_R \psi.
 $$
 
+Estos proyectores satisfacen propiedades sencillas pero muy utiles:
+
+$$
+P_L^2=P_L,\qquad P_R^2=P_R,\qquad P_LP_R=0.
+$$
+
+Eso refleja que separan de forma limpia dos subespacios quirales complementarios.
+
 ## 3. Por que importa la quiralidad
 
 La quiralidad es central porque:
@@ -26,7 +42,7 @@ La quiralidad es central porque:
 - permite reorganizar el contenido fermionico de forma mas fina;
 - distingue entre masa, simetria y representaciones gauge.
 
-En el limite sin masa, las componentes quirales se desacoplan de forma especialmente clara.
+En el limite sin masa, las componentes quirales se desacoplan de forma especialmente clara. Por eso la quiralidad deja de ser una mera herramienta algebraica y se vuelve una forma natural de organizar la teoria.
 
 ## 4. Weyl
 
@@ -38,6 +54,8 @@ La intuicion estructural es:
 - Weyl aísla una de ellas;
 - la interaccion debil actua de forma inherentemente quiral.
 
+En el Modelo Estandar, de hecho, el lenguaje de Weyl suele ser el mas limpio para escribir el contenido fermionico antes de la ruptura electrodébil, porque cada multiplete gauge se organiza naturalmente por componentes quirales.
+
 ## 5. Majorana
 
 Un fermion de Majorana satisface, en sentido esquematico, una condicion de realidad relativista: el campo coincide con su conjugado de carga.
@@ -48,6 +66,8 @@ Esto significa que:
 - el lenguaje de Majorana es natural en ciertos contextos mas alla del Modelo Estandar;
 - la cuestion es especialmente relevante al discutir neutrinos.
 
+La posibilidad de masas de Majorana esta estrechamente conectada con violacion del numero leptonico y con mecanismos como el seesaw. Por eso este lenguaje termina siendo central en varias discusiones modernas.
+
 ## 6. Dirac frente a Weyl frente a Majorana
 
 La comparacion pedagogica minima es:
@@ -56,9 +76,13 @@ La comparacion pedagogica minima es:
 - Weyl: una sola componente quiral;
 - Majorana: campo autocongugado, con restriccion fuerte entre partícula y antipartícula.
 
+No conviene ver estas categorias como compartimentos siempre excluyentes en cualquier contexto. Segun la dimension, las simetrias y la estructura gauge, algunas descripciones son mas naturales que otras y ciertas restricciones pueden o no imponerse consistentemente.
+
 ## 7. Ejemplo corto de lectura
 
 Si el sector debil del Modelo Estandar distingue entre componentes izquierdas y derechas, entonces el lenguaje de Weyl deja de ser una sofisticacion opcional y se convierte en una forma natural de leer la teoria.
+
+Ese es el puente conceptual hacia el modulo del Modelo Estandar: la quiralidad no esta ahi por gusto algebraico, sino porque la interaccion debil trata de manera distinta a las componentes zurdas y diestras.
 
 ## 8. Cuaderno asociado
 
@@ -69,8 +93,9 @@ Si el sector debil del Modelo Estandar distingue entre componentes izquierdas y 
 ## 9. Advertencias utiles
 
 - Quiralidad y helicidad no son equivalentes en general, aunque se alinean en el limite sin masa.
-- Weyl no significa simplemente "la mitad de un Dirac" en cualquier contexto sin mas cuidado.
+- Weyl no significa simplemente "la mitad de un Dirac" sin mas cuidado conceptual.
 - Majorana no es solo una notacion distinta, sino una restriccion fisica fuerte sobre el campo.
+- La posibilidad de escribir una masa de Majorana depende de la estructura de cargas y simetrias de la teoria.
 
 ## 10. Preguntas de comprobacion
 
@@ -78,7 +103,11 @@ Si el sector debil del Modelo Estandar distingue entre componentes izquierdas y 
 - Por que el lenguaje de Weyl es tan natural para el Modelo Estandar.
 - En que sentido un fermion de Majorana difiere de uno de Dirac.
 
-## 11. Referencias y lecturas recomendadas
+## 11. Cierre
+
+Quiralidad, Weyl y Majorana forman un bloque conceptual muy fecundo porque conectan algebra de espinores, estructura gauge y fenomenologia real. Dominar este lenguaje hace mucho mas natural entender por que el sector debil es quiral y por que la naturaleza de la masa de los neutrinos sigue siendo una pregunta abierta de primer nivel.
+
+## 12. Referencias y lecturas recomendadas
 
 - Base: Tong, quiralidad y espinores relativistas.
 - Complementaria: Peskin y Schroeder, estructura quiral del sector fermionico.

@@ -1,5 +1,11 @@
 # Cuantizacion de Campos Fermionicos
 
+**Nivel:** Nucleo  
+**Dificultad:** Media  
+**Tiempo estimado:** 25-35 min  
+**Prerequisitos recomendados:** [Motivacion y Ecuacion de Dirac](01_motivacion_y_ecuacion_de_dirac.md) · [Resumen del modulo](README.md)
+
+
 ## 1. Proposito
 
 Una vez escrita la ecuacion de Dirac, el siguiente paso es cuantizar el campo fermionico. Esta cuantizacion se parece a la del campo escalar en su estructura general, pero introduce una diferencia decisiva: en lugar de conmutadores aparecen anticonmutadores.

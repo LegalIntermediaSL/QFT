@@ -1,5 +1,11 @@
 # Regularizacion Dimensional en $\phi^4$
 
+**Nivel:** Intermedio  
+**Dificultad:** Media-Alta  
+**Tiempo estimado:** 25-35 min  
+**Prerequisitos recomendados:** [Renormalizacion y Grupo de Renormalizacion](02_renormalizacion_y_grupo_de_renormalizacion.md) · [Resumen del modulo](README.md)
+
+
 ## 1. Proposito
 
 Este documento muestra de forma guiada por que la regularizacion dimensional se vuelve tan util en teoria de campos. El ejemplo elegido es una correccion a un lazo en la teoria escalar $\phi^4$.

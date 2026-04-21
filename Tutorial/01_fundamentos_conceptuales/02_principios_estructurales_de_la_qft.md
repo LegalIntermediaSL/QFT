@@ -1,5 +1,11 @@
 # Principios Estructurales de la Teoria Cuantica de Campos
 
+**Nivel:** Fundacional  
+**Dificultad:** Media  
+**Tiempo estimado:** 25-35 min  
+**Prerequisitos recomendados:** [Conceptos Fundamentales de Teoria Cuantica de Campos](01_conceptos_fundamentales.md) · [Resumen del modulo](README.md)
+
+
 ## Proposito
 
 Este documento recoge los principios fisicos y matematicos que delimitan que significa construir una teoria cuantica de campos consistente. No se trata solo de enumerar ideas generales: cada principio impone restricciones reales sobre la forma de la teoria, sus observables y sus interacciones.

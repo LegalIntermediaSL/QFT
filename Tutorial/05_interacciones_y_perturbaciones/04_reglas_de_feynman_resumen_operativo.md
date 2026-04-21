@@ -1,5 +1,11 @@
 # Reglas de Feynman: Resumen Operativo
 
+**Nivel:** Nucleo  
+**Dificultad:** Media-Alta  
+**Tiempo estimado:** 18-25 min  
+**Prerequisitos recomendados:** [Reduccion LSZ y Correladores Amputados](03_reduccion_lsz_y_correladores_amputados.md) · [Resumen del modulo](README.md)
+
+
 ## 1. Proposito
 
 Este articulo organiza el modulo en una forma mas practica. La idea es convertir el recorrido conceptual de matriz $S$, expansion de Dyson, diagramas y LSZ en una lista de trabajo clara para empezar a calcular amplitudes sencillas sin perder de vista el significado fisico de cada paso.

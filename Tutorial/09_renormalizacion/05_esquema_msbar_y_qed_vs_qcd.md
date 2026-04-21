@@ -1,5 +1,11 @@
 # Esquema $\overline{\text{MS}}$ y Comparacion QED vs QCD
 
+**Nivel:** Intermedio  
+**Dificultad:** Media-Alta  
+**Tiempo estimado:** 18-25 min  
+**Prerequisitos recomendados:** [Funcion Beta y Running Couplings](04_funcion_beta_y_running_couplings.md) · [Resumen del modulo](README.md)
+
+
 ## 1. Proposito
 
 Este documento profundiza en dos ideas muy usadas en la practica moderna: el esquema de renormalizacion $\overline{\text{MS}}$ y la diferencia cualitativa entre el running coupling en QED y en QCD.

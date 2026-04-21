@@ -1,5 +1,11 @@
 # Simetria Gauge Local y Derivada Covariante
 
+**Nivel:** Nucleo  
+**Dificultad:** Media  
+**Tiempo estimado:** 25-35 min  
+**Prerequisitos recomendados:** [Modulo anterior](../06_fermiones_y_dirac/README.md) · [Resumen del modulo](README.md)
+
+
 ## 1. Proposito
 
 Una de las ideas mas profundas de la fisica moderna es que ciertas interacciones fundamentales emergen al exigir invariancia bajo simetrias locales. Este documento desarrolla esa idea en el caso mas simple: una simetria de fase $U(1)$.

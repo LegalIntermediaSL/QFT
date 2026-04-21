@@ -1,5 +1,11 @@
 # Teoria de Fermi como EFT
 
+**Nivel:** Avanzado  
+**Dificultad:** Alta  
+**Tiempo estimado:** 25-35 min  
+**Prerequisitos recomendados:** [Integrando grados de libertad](01_integrando_grados_de_libertad.md) · [Resumen del modulo](README.md)
+
+
 ## 1. Proposito
 
 Este documento muestra uno de los ejemplos mas clasicos y pedagogicos de teoria efectiva: la interaccion debil a baja energia descrita como un operador local de cuatro fermiones.

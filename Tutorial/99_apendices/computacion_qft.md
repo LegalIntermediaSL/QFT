@@ -1,55 +1,106 @@
 # Herramientas Computacionales en QFT
 
-El estudio moderno de la Teoría Cuántica de Campos (QFT) se apoya fuertemente en sistemas de computación algebraica para manejar trazas de Dirac, índices tensoriales cálculos de diagramas de Feynman a nivel de lazo.
+Este apendice resume herramientas utiles para calculo simbolico, automatizacion y exploracion computacional en teoria cuantica de campos. No pretende sustituir a un curso de software cientifico, sino orientar sobre que tipo de herramienta conviene usar segun el problema.
+
+La idea de fondo es simple: en QFT moderna no todo se hace a mano. Gran parte del trabajo real combina intuicion teorica con sistemas de algebra simbolica, evaluacion numerica y automatizacion de tareas repetitivas.
 
 ## 1. FeynCalc (Mathematica)
 
-[FeynCalc](https://feyncalc.github.io/) es el estándar de la industria para cálculos simbólicos en física de altas energías.
+[FeynCalc](https://feyncalc.github.io/) es una de las herramientas mas usadas para calculos simbolicos en fisica de altas energias.
 
-- **Puntos fuertes**: Manipulación extremadamente eficiente de álgebra de Dirac, reducción de integrales de lazo (vía FeynHelpers) y generación de amplitudes.
-- **Uso típico**:
-  ```mathematica
-  (* Ejemplo básico: Traza de matrices gamma *)
-  DiracTrace[GA[mu, nu, rho, sigma]]
-  ```
-- **Integración**: Los resultados pueden exportarse en formato UFO (Universal FeynRules Output) para ser procesados por herramientas numéricas o scripts de Python.
+- **Puntos fuertes**: Manipulacion de algebra de Dirac, trazas gamma, tensores de Lorentz, amplitudes y apoyo para integrales de lazo mediante complementos.
+- **Uso tipico**:
 
-## 2. Herramientas en Python (Ecosistema HEP)
+```mathematica
+(* Ejemplo basico: traza de matrices gamma *)
+DiracTrace[GA[mu, nu, rho, sigma]]
+```
 
-Aunque Mathematica es el estándar para el álgebra más pesada, Python ha ganado terreno para la automatización, el análisis estadístico y la generación de diagramas.
+- **Cuando conviene**: cuando el cuello de botella principal es algebra simbolica relativista pesada.
+
+FeynCalc resulta especialmente comodo si ya se trabaja en Mathematica y se necesita una herramienta madura para pasar de expresiones lagrangianas a amplitudes y simplificaciones algebraicas serias.
+
+## 2. Herramientas en Python
+
+Aunque Mathematica domina buena parte del algebra simbolica tradicional, Python ha ganado mucho terreno para automatizacion, analisis numerico, visualizacion e integracion con pipelines reproducibles.
 
 ### SymPy
-Es la librería de álgebra simbólica por excelencia en Python. Permite definir álgebras de Clifford y realizar manipulaciones matriciales.
-- **Proyecto sugerido**: Utilizar `sympy.physics.hep` (High Energy Physics) para manejar índices y objetos lorentzianos.
+
+Es la libreria de algebra simbolica por excelencia en Python. Permite definir algebras, manipular matrices y trabajar con objetos simbolicos de forma bastante flexible.
+
+- **Proyecto sugerido**: utilizar `sympy.physics.hep` para objetos de altas energias y trazas sencillas.
+- **Cuando conviene**: para prototipos rapidos, cuadernos reproducibles y flujos totalmente open source.
 
 ### PyFeyn2
-Para la creación de diagramas de Feynman con calidad de publicación.
-- **Instalación**: `pip install pyfeyn2`
-- **Uso**: Permite definir vértices y propagadores de forma programática.
+
+Herramienta orientada a la creacion de diagramas de Feynman con calidad de publicacion.
+
+- **Instalacion**: `pip install pyfeyn2`
+- **Cuando conviene**: cuando se necesita generar diagramas de forma programatica y consistente con un documento o cuaderno.
 
 ### pySecDec
-Herramienta poderosa en Python para la evaluación numérica de integrales de lazo. Suele recibir sus entradas de FeynCalc o herramientas similares.
 
-## 3. Ejemplo: Traza de Dirac en Python (SymPy)
+Herramienta para evaluacion numerica de integrales de lazo complicadas.
+
+- **Cuando conviene**: cuando la parte simbolica ya esta preparada y el problema real pasa a ser la evaluacion numerica de integrales no triviales.
+
+## 3. Ejemplo: Traza de Dirac en Python
 
 ```python
-from sympy.physics.quantum.dagger import Dagger
 from sympy.physics.hep.gamma_matrices import GammaMatrix as G, gamma_trace
 from sympy import symbols
 
-# Ejemplo de traza de dos matrices gamma
 mu, nu = symbols('mu nu')
 expr = G(mu) * G(nu)
-print(f"Trace(gamma^mu * gamma^nu) = {gamma_trace(expr)}")
+print(gamma_trace(expr))
 ```
 
-## 4. Comparativa: ¿Cuándo usar qué?
+Este tipo de ejemplo no sustituye a paquetes mas especializados, pero sirve muy bien para cuadernos pedagogicos y comprobaciones pequenas dentro del tutorial.
 
-| Herramienta | Caso de uso ideal | Complejidad |
+## 4. Herramientas para fenomenologia y estadistica
+
+En un flujo mas cercano a fenomenologia o analisis de datos, suelen entrar otras herramientas complementarias:
+
+- `pyhf` para ajustes estadisticos y construccion de limites;
+- bibliotecas de Python cientifico como `numpy`, `scipy` y `matplotlib`;
+- herramientas de Monte Carlo y generadores de eventos en contextos mas avanzados.
+
+La leccion practica es que no existe una unica herramienta universal. El mejor entorno depende de si el problema es algebraico, numerico, estadistico o de visualizacion.
+
+## 5. Comparativa rapida
+
+| Herramienta | Caso de uso ideal | Comentario |
 | :--- | :--- | :--- |
-| **FeynCalc** | Cálculos de amplitudes de varios lazos, álgebra de Dirac masiva. | Alta (Requiere Mathematica) |
-| **SymPy** | Cálculos algebraicos rápidos, integración con scripts de análisis. | Media (Open Source) |
-| **pyhf** | Ajustes estadísticos y modelos de límites (LHC). | Baja (Específico para estadística) |
+| **FeynCalc** | Algebra de Dirac, amplitudes y trazas complejas | Muy potente, pero requiere Mathematica |
+| **SymPy** | Prototipos simbolicos y cuadernos reproducibles | Flexible y open source |
+| **PyFeyn2** | Diagramas de Feynman programaticos | Bueno para documentacion y figuras |
+| **pySecDec** | Integrales de lazo numericas | Especializado |
+| **pyhf** | Ajustes y limites estadisticos | Mas orientado a fenomenologia experimental |
+
+## 6. Estrategia de uso razonable
+
+Una estrategia muy realista para estudiantes e investigadores junior es:
+
+1. entender primero el calculo a mano en un ejemplo pequeno;
+2. usar software para comprobar trazas, signos y factores;
+3. automatizar solo cuando el problema ya esta conceptualmente claro;
+4. documentar bien que parte del resultado es analitica y cual es puramente computacional.
+
+Este orden ayuda a evitar dos errores comunes:
+
+- depender del software sin entender la estructura fisica;
+- intentar hacerlo todo a mano cuando el problema ya exige automatizacion seria.
+
+## 7. Advertencias utiles
+
+- Un resultado computacional no sustituye la interpretacion fisica.
+- Distintos paquetes usan convenciones diferentes de signos, metricas o normalizaciones.
+- Siempre conviene validar con un caso simple conocido antes de confiar en un pipeline largo.
+- La reproducibilidad importa: cuadernos, scripts y versiones de dependencias deben quedar claros.
+
+## 8. Cierre
+
+Las herramientas computacionales no reemplazan la intuicion teorica, pero amplian enormemente el tipo de problemas que pueden abordarse con rigor. Usadas bien, permiten dedicar menos tiempo a algebra mecanica y mas tiempo a interpretar la fisica.
 
 ---
 [Volver al Índice del Tutorial](../README.md)

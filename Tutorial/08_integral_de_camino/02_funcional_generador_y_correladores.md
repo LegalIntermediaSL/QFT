@@ -1,5 +1,11 @@
 # Funcional Generador y Correladores
 
+**Nivel:** Intermedio  
+**Dificultad:** Media-Alta  
+**Tiempo estimado:** 25-35 min  
+**Prerequisitos recomendados:** [Introduccion a la Integral de Camino](01_introduccion_a_la_integral_de_camino.md) · [Resumen del modulo](README.md)
+
+
 ## 1. Proposito
 
 Una vez aceptada la integral de camino, el siguiente paso natural es introducir el funcional generador, que sirve para producir sistematicamente correladores y amplitudes.

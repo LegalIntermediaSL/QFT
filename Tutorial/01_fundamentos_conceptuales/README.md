@@ -42,6 +42,19 @@ Uso sugerido:
 
 Al terminar este bloque, deberia ser posible leer los modulos tecnicos sabiendo ya por que aparecen accion, simetria, cuantizacion, vacio, localidad, antiparticulas y renormalizacion.
 
+## Sintesis del modulo
+
+Este modulo responde la pregunta "que es realmente la QFT" antes de entrar en tecnicas. Su funcion es dejar claro el problema fisico, el cambio de ontologia y los principios de consistencia.
+
+!!! note "Idea clave"
+    Aqui se fija el cambio de paradigma del curso: las particulas pasan a entenderse como excitaciones de campos cuanticos.
+
+!!! warning "Error frecuente"
+    Leer este modulo como filosofia separada del resto es un error; en realidad prepara el sentido de casi todas las tecnicas posteriores.
+
+!!! tip "Conexion con el siguiente modulo"
+    Una vez entendido por que los campos son necesarios, el siguiente paso es ver por que relatividad y localidad obligan a formularlos de manera concreta.
+
 ## Ejercicios sugeridos
 
 1. Explica por que la QFT no debe verse solo como una mecanica cuantica relativista de una particula.

@@ -1,5 +1,11 @@
 # Choque Entre Mecanica Cuantica y Relatividad Especial
 
+**Nivel:** Fundacional  
+**Dificultad:** Baja  
+**Tiempo estimado:** 25-35 min  
+**Prerequisitos recomendados:** [Modulo anterior](../01_fundamentos_conceptuales/README.md) · [Resumen del modulo](README.md)
+
+
 ## 1. Punto de partida historico y conceptual
 
 La mecanica cuantica y la relatividad especial fueron dos de las grandes revoluciones del siglo XX, pero no encajan de forma trivial. La primera describe amplitudes, superposicion, espectros discretos y mediciones probabilisticas. La segunda reorganiza el espacio y el tiempo en una sola estructura causal y exige covariancia relativista.

@@ -57,6 +57,19 @@ Al terminar este modulo, deberia quedar claro:
 - por que la fijacion de gauge y el propagador del foton son pasos tecnicos inevitables;
 - como se organiza una amplitud elemental de scattering en QED.
 
+## Sintesis del modulo
+
+Este modulo ensena como una simetria local genera una teoria gauge y usa QED como primer ejemplo completo donde se unen corriente, campo gauge, Ward y scattering real.
+
+!!! note "Idea clave"
+    Una simetria local no solo restringe la teoria: obliga a introducir nueva estructura dinamica.
+
+!!! warning "Error frecuente"
+    Confundir fijacion de gauge con ruptura fisica de la simetria gauge.
+
+!!! tip "Conexion con el siguiente modulo"
+    El siguiente bloque muestra un lenguaje alternativo y muy potente para volver a pensar correladores, amplitudes y vacio: la integral de camino.
+
 ## Ejercicios sugeridos
 
 1. Muestra por que promover una simetria global $U(1)$ a una simetria local obliga a introducir una derivada covariante.

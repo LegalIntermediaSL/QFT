@@ -1,5 +1,11 @@
 # Agujeros negros, radiacion de Hawking y paradoja de la informacion
 
+**Nivel:** Avanzado  
+**Dificultad:** Alta  
+**Tiempo estimado:** 18-25 min  
+**Prerequisitos recomendados:** [QFT, informacion y entrelazamiento](01_qft_informacion_y_entrelazamiento.md) · [Resumen del modulo](README.md)
+
+
 ## 1. El escenario
 
 La radiacion de Hawking es uno de los resultados mas sorprendentes del siglo XX porque surge al combinar tres ingredientes que, por separado, parecen perfectamente razonables:

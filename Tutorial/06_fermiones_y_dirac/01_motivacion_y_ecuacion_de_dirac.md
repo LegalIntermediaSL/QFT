@@ -1,5 +1,11 @@
 # Motivacion y Ecuacion de Dirac
 
+**Nivel:** Nucleo  
+**Dificultad:** Media  
+**Tiempo estimado:** 25-35 min  
+**Prerequisitos recomendados:** [Modulo anterior](../05_interacciones_y_perturbaciones/README.md) · [Resumen del modulo](README.md)
+
+
 ## 1. Proposito
 
 La ecuacion de Dirac representa uno de los hitos mas profundos de la fisica teorica del siglo XX. Nace del intento de construir una ecuacion cuantica relativista mejor comportada que la de Klein-Gordon para particulas de espin $1/2$, y termina introduciendo de forma natural espinores, antiparticulas y una nueva vision de la materia fermionica.
