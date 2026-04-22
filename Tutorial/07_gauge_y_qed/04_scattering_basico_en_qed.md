@@ -84,8 +84,7 @@ Si una amplitud contiene dos corrientes fermionicas unidas por un propagador de 
 
 En espacio de momentos, esta lectura se vuelve especialmente nítida: las lineas externas fijan estados asintoticos, el propagador codifica el intercambio y el denominador en $q^2$ anticipa la estructura dinamica asociada al momento transferido.
 
-## 8. Cuaderno asociado
-
+## Cuaderno asociado
 - `../../Cuadernos/problemas_resueltos/13_gauge_fixing_y_scattering_en_qed.ipynb`: usarlo para seguir el esqueleto de una amplitud elemental en QED, distinguiendo vertices, propagador interno y lectura fisica del resultado.
 - `../../Cuadernos/ejemplos/06_diagramas_de_feynman_basicos.ipynb`: usarlo para revisar la sintaxis diagramatica y la lectura de propagadores y vertices.
 - `../../Cuadernos/problemas_resueltos/10_interacciones_y_perturbaciones.ipynb`: usarlo como apoyo para la logica general del calculo perturbativo.

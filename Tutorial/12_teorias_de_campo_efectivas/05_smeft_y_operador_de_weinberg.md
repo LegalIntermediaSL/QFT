@@ -113,8 +113,7 @@ Al mismo tiempo, SMEFT enseña una leccion mas amplia: incluso si no conocemos l
 
 Si $v \approx 246\,\mathrm{GeV}$ y la escala efectiva asociada al operador de Weinberg es muy grande, entonces el cociente $v^2/\Lambda$ puede producir masas neutrínicas muy pequeñas de forma natural. Esa simple cuenta dimensional ya da una intuicion poderosa de por que SMEFT es tan útil.
 
-## 10. Cuaderno asociado
-
+## Cuaderno asociado
 - `../../Cuadernos/ejemplos/18_smeft_y_operador_de_weinberg.ipynb`: usarlo para fijar la expansion de SMEFT, la posicion especial del operador de dimension cinco y la escala efectiva de masas de neutrinos.
 
 ## 11. Advertencias utiles

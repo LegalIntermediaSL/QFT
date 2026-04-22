@@ -53,6 +53,8 @@ Esto convierte a los neutrinos en un laboratorio muy fino para estudiar interfer
 
 En una version de dos sabores, la intuicion minima es que un estado producido como, por ejemplo, $\nu_e$ se escribe como superposicion de autoestados de masa. Cada uno acumula una fase distinta al propagarse, y esa diferencia de fase altera la probabilidad de volver a detectar el mismo sabor.
 
+Esta es una de las lecciones mas elegantes de toda la fisica de particulas: la interaccion debil prepara estados de sabor, mientras que la propagacion libre selecciona estados de masa. La oscilacion nace justamente de esa desalineacion.
+
 ## 5. Formula minima de oscilacion
 
 Sin entrar en toda la fenomenologia de tres sabores, conviene registrar la estructura cualitativa basica:
@@ -72,6 +74,10 @@ Esta expresion ya resume casi toda la intuicion:
 - $\Delta m^2$ controla la diferencia de fases;
 - $L/E$ fija la sensibilidad experimental al patron oscilatorio.
 
+La presencia de $\Delta m^2$ y no de las masas absolutas es muy importante. Las oscilaciones son sensibles a diferencias de masas al cuadrado y a angulos de mezcla, pero no fijan por si solas la escala absoluta completa del espectro neutrínico.
+
+Tambien conviene recordar que la oscilacion requiere mantener coherencia cuantica entre componentes de masa. Si esa coherencia se pierde por completo, desaparece el patron interferencial.
+
 ## 6. Masas de Dirac y de Majorana
 
 Hay dos posibilidades conceptuales importantes para masas de neutrinos:
@@ -88,6 +94,8 @@ Lo importante aqui es no confundir dos preguntas distintas:
 
 Las oscilaciones demuestran masa y mezcla, pero no deciden por si solas si la masa es de Dirac o de Majorana.
 
+Esto enlaza con una idea mas amplia del tutorial: conocer el espectro no equivale a conocer el origen dinamico de ese espectro. Dos mecanismos ultravioletas distintos pueden producir masas pequenas y mezcla leptónica semejante.
+
 ## 7. Oscilaciones de neutrinos
 
 En una descripcion minima, la oscilacion aparece porque diferentes estados de masa acumulan fases distintas al propagarse. Cuando se recombinan al medir sabor, la probabilidad de deteccion ya no coincide necesariamente con el sabor de produccion.
@@ -97,6 +105,8 @@ La leccion conceptual es poderosa:
 - la masa no solo cambia el espectro;
 - tambien cambia la fenomenologia de propagacion y mezcla;
 - la teoria de sabores se vuelve inseparable de la evolucion cuántica.
+
+En la aproximacion ultrarrelativista, $E_i \simeq p + m_i^2/(2E)$, y de ahi nace la diferencia de fases proporcional a $\Delta m^2 L/(2E)$. Esta estimacion elemental ya permite entender por que distintos experimentos exploran distintos sectores del patron oscilatorio.
 
 ## 8. Conexion con el resto del modulo
 
@@ -109,6 +119,8 @@ Este tema enlaza directamente con:
 
 Por eso los neutrinos no deben verse como un “anexo” exotico, sino como una extension natural del mismo lenguaje estructural del Modelo Estandar.
 
+Ademas, este tema apunta directamente al modulo de teorias efectivas: si el Modelo Estandar minimo no acomoda de forma natural masas de neutrinos, operadores efectivos como el de Weinberg aparecen como una pista muy natural de nueva fisica.
+
 ## 9. Materia y oscilaciones
 
 En situaciones reales, como neutrinos solares o atmosfericos, la propagacion no ocurre siempre en vacio ideal. La presencia de materia puede modificar efectivamente la mezcla y las probabilidades de oscilacion. Este refinamiento, conocido de forma general por el efecto MSW, recuerda otra leccion importante:
@@ -117,7 +129,19 @@ En situaciones reales, como neutrinos solares o atmosfericos, la propagacion no 
 - la mezcla leptónica no se interpreta siempre igual en vacio y en medio material;
 - incluso una fenomenologia aparentemente simple puede codificar mucha estructura dinamica.
 
-## 10. Lectura pedagogica
+El efecto MSW recuerda, ademas, que nociones como mezcla efectiva y autovalores efectivos pueden depender del medio. El vacio no es el unico escenario donde una superposicion cuantica evoluciona con fases relevantes.
+
+## 10. Que sabemos y que no sabemos aun
+
+El sector neutrínico mezcla hechos bien establecidos con preguntas abiertas:
+
+- sabemos que hay masas no nulas y mezcla leptónica;
+- conocemos varios angulos y diferencias de masas al cuadrado con bastante precision;
+- pero siguen abiertas la jerarquia de masas, la escala absoluta, la naturaleza Dirac o Majorana y el posible papel de fases de violacion de CP.
+
+Por eso los neutrinos son mucho mas que una correccion menor del Modelo Estandar: constituyen una ventana privilegiada hacia su extension.
+
+## 11. Lectura pedagogica
 
 La moraleja principal es que las oscilaciones de neutrinos nos muestran, de manera extraordinariamente limpia, que:
 
@@ -125,26 +149,27 @@ La moraleja principal es que las oscilaciones de neutrinos nos muestran, de mane
 - la quiralidad y la mezcla tienen consecuencias observables de largo alcance;
 - el Modelo Estandar minimo necesita al menos una ampliacion efectiva para acomodar toda la fenomenologia leptónica observada.
 
-## 11. Cuaderno asociado
-
+## Cuaderno asociado
 - `../../Cuadernos/problemas_resueltos/14_neutrinos_y_oscilaciones.ipynb`: usarlo para seguir de forma guiada la diferencia entre estados de sabor y de masa y fijar la idea minima de oscilacion leptónica.
 - `../../Cuadernos/problemas_resueltos/11_modelo_estandar_estructura.ipynb`: usarlo para conectar mezcla leptónica con la discusion general de sabor y corrientes cargadas.
 - `../../Cuadernos/ejemplos/07_modelo_estandar_panorama.ipynb`: usarlo como mapa de ubicacion del sector leptónico dentro del modulo.
 
-## 12. Advertencias utiles
+## 13. Advertencias utiles
 
 - No conviene identificar quiralidad, helicidad y sabor como si fueran la misma nocion.
 - La matriz PMNS no debe presentarse como copia exacta de CKM: la fenomenologia leptónica tiene rasgos propios.
 - “Dar masa al neutrino” no es una sola operacion unica: depende de la extension teorica elegida.
+- Las oscilaciones miden diferencias de masas al cuadrado, no fijan por si solas la escala absoluta completa de masas.
 
-## 13. Preguntas de comprobacion
+## 14. Preguntas de comprobacion
 
 - Por que las oscilaciones de neutrinos implican masas no nulas.
 - En que sentido los estados de sabor y de masa no coinciden.
 - Que diferencia conceptual hay entre masa de Dirac y masa de Majorana para neutrinos.
 - Por que la matriz PMNS se conecta de forma natural con corrientes cargadas leptónicas.
+- Por que el patron oscilatorio depende de $L/E$ y no simplemente de la distancia recorrida.
 
-## 14. Referencias y lecturas recomendadas
+## 15. Referencias y lecturas recomendadas
 
 - Base: notas introductorias de fisica de neutrinos y mezcla leptónica.
 - Complementaria: PDG, resúmenes de masas de neutrinos, oscilaciones y parametros PMNS.

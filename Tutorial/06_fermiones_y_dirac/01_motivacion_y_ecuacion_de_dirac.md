@@ -185,6 +185,10 @@ La ecuacion de Dirac cumple varios papeles simultaneos:
 - hace visible la relacion entre espin, relatividad y antiparticulas;
 - sirve como puente natural hacia gauge y QED.
 
+## Cuaderno asociado
+
+- Consulta los cuadernos asociados de este bloque en [Resumen del modulo](README.md) para reforzar el capitulo con practica guiada.
+
 ## 12. Preguntas de estudio
 
 - Por que Dirac quiso una ecuacion lineal en derivadas.

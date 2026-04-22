@@ -18,6 +18,12 @@ Este modulo desarrolla la descripcion relativista de fermiones, espinores y ecua
 4. `04_corriente_de_dirac_y_limite_no_relativista.md`
 5. `05_quiralidad_weyl_y_majorana.md`
 
+## Capitulos imprescindibles en primera pasada
+
+- [01 Motivacion y ecuacion de Dirac](01_motivacion_y_ecuacion_de_dirac.md): explica por que hace falta un campo fermionico relativista.
+- [02 Cuantizacion de campos fermionicos](02_cuantizacion_de_campos_fermionicos.md): completa el cuadro de Fock para fermiones.
+- [05 Quiralidad, Weyl y Majorana](05_quiralidad_weyl_y_majorana.md): prepara mucho del lenguaje del Modelo Estandar y neutrinos.
+
 ```mermaid
 flowchart TD
     A["Relación E-p Relativista"] -- "Linealización" --> B["Ecuación de Dirac"]
@@ -92,11 +98,11 @@ Este modulo completa la base relativista del curso con fermiones, espinores y an
 4. Clasifica los bilineales $\bar{\psi}\psi$, $\bar{\psi}\gamma^\mu\psi$ y $\bar{\psi}\gamma^\mu\gamma^5\psi$ y comenta que tipo de objetos fisicos representan.
 5. Explica el papel de los proyectores quirales y resume la diferencia entre espinores de Dirac, Weyl y Majorana.
 
-## Ampliaciones prioritarias
+## Profundizaciones sugeridas
 
-- conectar con simetrias discretas $C$, $P$ y $T$;
-- ampliar un tratamiento futuro de neutrinos y masas de Majorana;
-- profundizar proyectores quirales y corrientes axiales.
+- conectar este modulo con [Simetrias discretas, CPT y anomalias](../99_apendices/simetrias_discretas_cpt_y_anomalias.md);
+- releerlo en paralelo con neutrinos y escenarios de masas de Majorana del modulo `10` y `12`;
+- profundizar proyectores quirales, corrientes axiales y su papel en teorias gauge quirales.
 
 ## Lecturas y referencias recomendadas
 

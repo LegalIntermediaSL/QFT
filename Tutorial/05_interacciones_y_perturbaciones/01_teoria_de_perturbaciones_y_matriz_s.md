@@ -178,6 +178,10 @@ En ese ejemplo ya se ve la logica completa:
 - el propagador libre conecta inserciones;
 - los ordenes superiores introducen lazos y renormalizacion.
 
+## Cuaderno asociado
+
+- Consulta los cuadernos asociados de este bloque en [Resumen del modulo](README.md) para reforzar el capitulo con practica guiada.
+
 ## 13. Advertencias utiles
 
 - No toda teoria interactuante es bien tratable perturbativamente.

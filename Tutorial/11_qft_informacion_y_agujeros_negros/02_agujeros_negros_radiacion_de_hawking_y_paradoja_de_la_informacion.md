@@ -103,8 +103,7 @@ Desde este punto de vista, los agujeros negros actuan como un laboratorio extrem
 
 Si la radiacion observada parece termica, la pregunta correcta no es solo "¿sale calor del agujero negro?", sino "¿de que sistema global se ha trazado informacion para que el observador exterior vea un estado aparentemente termico?". Esa reformulacion vuelve la paradoja mucho mas precisa.
 
-## 10. Cuaderno asociado
-
+## Cuaderno asociado
 - `../../Cuadernos/ejemplos/08_entrelazamiento_y_horizontes.ipynb`: usarlo para conectar termicidad efectiva y acceso parcial a grados de libertad.
 - `../../Cuadernos/problemas_resueltos/12_qft_informacion_y_agujeros_negros.ipynb`: usarlo para revisar Hawking, Bekenstein-Hawking y la formulacion basica de la paradoja.
 

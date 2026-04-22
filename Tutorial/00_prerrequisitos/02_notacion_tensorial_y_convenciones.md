@@ -200,6 +200,10 @@ Una forma realista de aprender esta notacion no es memorizarla toda de golpe, si
 - mezclar dos convenciones de metrica en el mismo calculo;
 - no distinguir indices espaciales de indices de grupo o sabor.
 
+## Cuaderno asociado
+
+- Consulta los cuadernos asociados de este bloque en [Resumen del modulo](README.md) para reforzar el capitulo con practica guiada.
+
 ## 12. Preguntas de estudio
 
 - Como se suben y bajan indices.

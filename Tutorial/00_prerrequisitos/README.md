@@ -16,6 +16,14 @@ Este es el punto de entrada del tutorial. Basta con un dominio razonable de meca
 4. `04_simetrias_y_grupos_basicos.md`
 5. `05_delta_de_dirac_y_transformadas_de_fourier.md`
 
+## Capitulos imprescindibles en primera pasada
+
+Si quieres una primera vuelta compacta del modulo, prioriza:
+
+- [01 Relatividad especial minima](01_relatividad_especial_minima.md): fija el lenguaje relativista minimo.
+- [03 Oscilador armonico cuantico](03_oscilador_armonico_cuantico.md): prepara el salto a modos y cuantizacion de campos.
+- [05 Delta de Dirac y transformadas de Fourier](05_delta_de_dirac_y_transformadas_de_fourier.md): reduce mucha friccion tecnica en los modulos centrales.
+
 ## Cuadernos asociados
 
 - `../../Cuadernos/problemas_resueltos/01_relatividad_especial_basica.ipynb`

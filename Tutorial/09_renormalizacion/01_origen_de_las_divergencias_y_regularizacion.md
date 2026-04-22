@@ -96,6 +96,10 @@ Aunque aqui el foco esta en divergencias ultravioletas, tambien existen divergen
 
 Las UV hablan de distancias cortas y sensibilidad a altas energias. Las IR hablan de larga distancia, modos blandos o colineales. Ambas requieren cuidado, pero su interpretacion fisica es diferente.
 
+## Cuaderno asociado
+
+- Consulta los cuadernos asociados de este bloque en [Resumen del modulo](README.md) para reforzar el capitulo con practica guiada.
+
 ## 10. Preguntas de estudio
 
 - Por que los lazos introducen integrales ultravioletas.

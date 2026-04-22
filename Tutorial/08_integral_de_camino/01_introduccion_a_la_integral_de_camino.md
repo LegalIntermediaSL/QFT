@@ -195,6 +195,10 @@ Una manera compacta de resumir la relacion es:
 - el enfoque funcional organiza mejor correladores, simetrias y teoria perturbativa;
 - ambos deben coincidir en los observables fisicos.
 
+## Cuaderno asociado
+
+- Consulta los cuadernos asociados de este bloque en [Resumen del modulo](README.md) para reforzar el capitulo con practica guiada.
+
 ## 9. Advertencias utiles
 
 - La medida $\mathcal{D}\phi$ es formal y exige cuidado matematico; en fisica se justifica operacionalmente por discretizacion, regularizacion y continuacion adecuada.

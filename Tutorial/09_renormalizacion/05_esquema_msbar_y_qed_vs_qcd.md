@@ -16,6 +16,8 @@ Una vez identificadas divergencias en regularizacion dimensional, todavia queda 
 
 Este punto es importante porque muestra que la renormalizacion no termina cuando encontramos el polo divergente. Aun hace falta especificar como se reorganizan las partes finitas y que convencion se adopta para definir los parametros efectivos.
 
+Dicho de otra forma: encontrar el contratermino no fija todavia por completo el lenguaje renormalizado. Aun hay que decidir que cantidad operacional llamaremos "carga", "masa" o "acoplamiento" a una escala concreta, y esa decision sistematica es el esquema.
+
 ## 3. Esquema MS y $\overline{\text{MS}}$
 
 En el esquema MS se sustraen los polos en $1/\varepsilon$. En $\overline{\text{MS}}$ se absorben ademas ciertas constantes asociadas a la regularizacion dimensional, lo que simplifica mucho expresiones perturbativas.
@@ -28,6 +30,8 @@ Pedagogicamente, el mensaje importante es:
 - si cambia la forma intermedia de los parametros renormalizados;
 - algunos esquemas resultan mucho mas comodos para calculos sistematicos.
 
+En la practica, esto significa que $\overline{\mathrm{MS}}$ esta construido para eliminar de una vez ciertas constantes recurrentes como $\gamma_E$ y factores de $4\pi$ que emergen en las integrales dimensionales. La idea no es memorizar la formula, sino entender por que el esquema vuelve mas uniforme la literatura perturbativa.
+
 ## 4. Por que $\overline{\mathrm{MS}}$ domina la practica
 
 El esquema $\overline{\mathrm{MS}}$ aparece por todas partes en QFT moderna porque:
@@ -39,6 +43,8 @@ El esquema $\overline{\mathrm{MS}}$ aparece por todas partes en QFT moderna porq
 
 No es el unico esquema posible, pero si uno de los mas eficientes cuando el objetivo es correr acoplamientos y organizar expansiones sistematicas.
 
+Eso no impide que otros esquemas sean mas intuitivos cuando se quiere conectar directamente con masas fisicas o definiciones on-shell. $\overline{\mathrm{MS}}$ domina por eficiencia algebraica y comparabilidad, no porque capture por si solo una nocion privilegiada de observable.
+
 ## 5. QED
 
 En QED, la funcion beta efectiva es positiva a nivel introductorio. Eso significa que el acoplamiento electromagnetico crece lentamente con la escala.
@@ -49,6 +55,8 @@ La lectura intuitiva suele asociarse a polarizacion del vacio:
 - a distancias mas cortas o energias mas altas se "ve" una carga efectiva mayor.
 
 En una lectura intuitiva, la nube de pares cargados virtuales apantalla la carga desnuda. Cuanto mas de cerca se observa la fuente, menos apantallada aparece y mayor resulta la carga efectiva medida.
+
+Aunque ese crecimiento es suave en la mayor parte de la fenomenologia accesible, la leccion conceptual es potente: incluso la interaccion electromagnetica cambia con la resolucion con la que se la interroga.
 
 ## 6. QCD
 
@@ -65,6 +73,8 @@ Ese comportamiento explica dos rasgos fundamentales:
 - por que la perturbacion funciona bien a energias altas en QCD;
 - por que el confinamiento y la dinamica no perturbativa dominan a energias bajas.
 
+La imagen intuitiva suele resumirse diciendo que los gluones, al transportar color, tambien contribuyen activamente a la estructura del vacio. Esa auto-interaccion cambia el signo efectivo del flujo y conduce al antiapantallamiento caracteristico.
+
 ## 7. Por que difieren
 
 La diferencia profunda nace de la estructura gauge:
@@ -79,27 +89,42 @@ En resumen muy cualitativo:
 - en QED domina el apantallamiento por materia cargada;
 - en QCD compiten quarks y gluones, y el sector gauge no abeliano inclina el balance hacia libertad asintotica.
 
+Esta comparacion es pedagogicamente muy valiosa porque enseña que "teoria gauge" no basta como descripcion cualitativa de la fisica de escalas. El grupo gauge, el contenido de materia y los autoacoplamientos del sector gauge determinan juntos el signo y magnitud de la funcion beta.
+
 ## 8. Ejemplo corto de lectura
 
 Si dos teorias gauge tienen reglas de Feynman parecidas pero funciones beta con signo opuesto, su fisica de escalas puede ser casi opuesta. Ese es precisamente el caso de QED y QCD.
 
-## 9. Cuaderno asociado
+Por eso la renormalizacion no debe verse como una mera limpieza matematica. Del signo de una funcion beta depende si la teoria se vuelve mas debil o mas fuerte al ir al ultravioleta, y eso cambia por completo la intuicion fisica y la estrategia calculacional.
 
+## 9. Cambio de esquema y cantidades fisicas
+
+Si se cambia de esquema de renormalizacion:
+
+- cambian los valores intermedios de parametros renormalizados;
+- cambian ciertos coeficientes perturbativos;
+- pero los observables completos deben permanecer invariantes.
+
+A orden finito, sin embargo, suele quedar una dependencia residual del esquema. Esa sensibilidad se usa muchas veces como pista de incertidumbre perturbativa o de la necesidad de calcular ordenes superiores.
+
+## Cuaderno asociado
 - `../../Cuadernos/problemas_resueltos/10_interacciones_y_perturbaciones.ipynb`: usarlo para recordar como los lazos aparecen desde la expansion perturbativa.
 
-## 10. Advertencias utiles
+## 11. Advertencias utiles
 
 - El esquema $\overline{\text{MS}}$ es una convención extremadamente útil, no una ley fundamental de la naturaleza.
 - Cambiar de esquema no debe alterar observables completos bien calculados.
 - Comparar QED y QCD solo por "fuerza del acoplamiento" sin mirar la funcion beta puede inducir intuiciones equivocadas.
+- Libertad asintotica no significa ausencia de interaccion a toda escala, sino debilitamiento del acoplamiento en el regimen UV relevante.
 
-## 11. Preguntas de comprobacion
+## 12. Preguntas de comprobacion
 
 - Que papel juega un esquema de renormalizacion.
 - Por que $\overline{\text{MS}}$ es tan frecuente en la practica.
 - Por que QED y QCD muestran comportamientos opuestos al correr con la escala.
+- Que diferencia conceptual hay entre un esquema comodo para calculo y una definicion ligada a masas o cargas on-shell.
 
-## 12. Referencias y lecturas recomendadas
+## 13. Referencias y lecturas recomendadas
 
 - Base: Peskin y Schroeder, running couplings y teoria gauge.
 - Complementaria: Tong, interpretacion cualitativa de QED y QCD.

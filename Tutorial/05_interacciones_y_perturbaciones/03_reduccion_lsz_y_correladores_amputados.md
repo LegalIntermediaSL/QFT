@@ -123,8 +123,7 @@ Tambien deja claro por que los calculos perturbativos suelen tener dos capas:
 - primero se construyen funciones de Green mediante reglas de Feynman;
 - luego se interpreta el resultado en clave de scattering usando la logica LSZ.
 
-## 10. Cuaderno asociado
-
+## Cuaderno asociado
 - `../../Cuadernos/problemas_resueltos/12_lsz_y_amplitudes_escalares.ipynb`: usarlo para seguir el paso entre correlador completo, amputacion y amplitud escalar elemental de forma guiada.
 - `../../Cuadernos/problemas_resueltos/10_interacciones_y_perturbaciones.ipynb`: usarlo para seguir el paso desde correladores a amplitudes en ejemplos escalares sencillos.
 - `../../Cuadernos/ejemplos/06_diagramas_de_feynman_basicos.ipynb`: usarlo para comparar la lectura visual del diagrama con el objeto analitico que LSZ ayuda a justificar.

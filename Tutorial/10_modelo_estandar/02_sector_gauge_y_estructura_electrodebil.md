@@ -10,6 +10,8 @@
 
 Este documento presenta el armazon gauge del Modelo Estandar y organiza el papel de los campos gauge en los sectores fuerte y electrodébil.
 
+La meta no es solo enumerar grupos y bosones, sino entender por que el electromagnetismo observable aparece como el residuo no roto de una estructura gauge mas amplia.
+
 ## 1. Grupo gauge del Modelo Estandar
 
 La teoria se construye sobre
@@ -23,6 +25,8 @@ Cada factor define una simetria local y, por tanto, un conjunto de bosones de ga
 - $G_\mu^a$ para color;
 - $W_\mu^a$ para isospin debil;
 - $B_\mu$ para hipercarga.
+
+Esta tabla de campos ya contiene una buena parte del contenido fisico del modelo: ocho gluones, tres bosones débiles y un campo abeliano que solo despues de la mezcla se reorganizara en foton y boson $Z$.
 
 ## 2. Tensores de campo
 
@@ -41,6 +45,8 @@ $$
   -\frac{1}{4}B_{\mu\nu} B^{\mu\nu}.
 $$
 
+Su apariencia compacta oculta una diferencia profunda: no todos estos tensores de campo tienen la misma estructura algebraica.
+
 ## 3. Abeliano frente a no abeliano
 
 La gran diferencia conceptual entre $U(1)$ y los factores no abelianos es que en estos ultimos el propio tensor de campo contiene terminos no lineales. Eso implica:
@@ -48,6 +54,8 @@ La gran diferencia conceptual entre $U(1)$ y los factores no abelianos es que en
 - autoacoplamiento de los bosones gauge;
 - dinamica mas rica;
 - diferencia profunda entre QED y QCD.
+
+Este punto no debe pasarse demasiado rapido. El autoacoplamiento gauge es uno de los rasgos que hacen posible libertad asintotica, confinamiento y la complejidad del sector fuerte.
 
 ## 4. Estructura electrodébil
 
@@ -62,6 +70,8 @@ Los campos $W_\mu^a$ y $B_\mu$ no coinciden aun con las particulas fisicas obser
 - una combinacion queda como foton;
 - las otras producen los bosones $W^\pm$ y $Z$.
 
+Es decir, el sector electrodébil no se presenta directamente en la base fisica que el experimento observa. Antes hace falta reorganizar los grados de libertad mediante la ruptura espontanea.
+
 ## 5. Derivada covariante
 
 Toda la estructura de acoplamiento entre materia y gauge se condensa en la derivada covariante. En el Modelo Estandar esta incorpora:
@@ -71,6 +81,8 @@ Toda la estructura de acoplamiento entre materia y gauge se condensa en la deriv
 - hipercarga.
 
 Por eso leer la derivada covariante equivale, en gran medida, a leer como cada campo "siente" cada interaccion.
+
+En el Modelo Estandar, buena parte de la fenomenologia se deja leer precisamente asi: mirando que generadores y que hipercargas actuan sobre cada multiplete.
 
 En el sector electrodébil, una forma esquematica muy util es
 
@@ -83,6 +95,8 @@ Esta expresion permite ver de un vistazo que:
 - $g$ controla el acoplamiento de $SU(2)_L$;
 - $g'$ controla el acoplamiento de hipercarga;
 - la carga electrica observable aun no aparece de forma aislada antes de la mezcla electrodébil.
+
+Esta ultima observacion es una de las mas importantes del capitulo: la carga electrica no entra como etiqueta elemental independiente, sino que emerge de la reorganizacion del sector neutro.
 
 ## 6. Mezcla electrodébil
 
@@ -97,6 +111,8 @@ Z_\mu = - B_\mu \sin\theta_W + W_\mu^3 \cos\theta_W.
 $$
 
 Aqui $\theta_W$ es el angulo de Weinberg. Esta mezcla es uno de los rasgos distintivos del Modelo Estandar: el foton no es un campo gauge primitivo aislado, sino una combinacion particular seleccionada por el vacio.
+
+Esa idea es conceptualmente muy potente. El foton, que parece el campo gauge mas familiar de toda la fisica, resulta ser una combinacion emergente dentro de una teoria gauge mas amplia.
 
 ## 7. Relacion entre acoplamientos
 
@@ -114,6 +130,8 @@ $$
 
 Esto ayuda a entender como emerge el electromagnetismo como simetria no rota del sector electrodébil.
 
+Tambien explica por que el electromagnetismo dentro del Modelo Estandar no se añade externamente: se recupera desde dentro de la estructura gauge ya existente.
+
 ## 8. Ejemplo corto de lectura
 
 Si un campo no transforma bajo cierto factor del grupo gauge, entonces la parte correspondiente de la derivada covariante actua trivialmente sobre el. Esta observacion ayuda a leer la teoria sin memorizarla toda de golpe:
@@ -124,8 +142,9 @@ Si un campo no transforma bajo cierto factor del grupo gauge, entonces la parte 
 
 La mezcla entre $W_\mu^3$ y $B_\mu$ añade una segunda leccion importante: la carga electrica fisica es una combinacion reorganizada de isospin debil e hipercarga, no una etiqueta puesta externamente.
 
-## 9. Cuaderno asociado
+Este es justamente el punto donde el lenguaje de grupos, derivada covariante y ruptura espontanea convergen en una sola lectura coherente.
 
+## Cuaderno asociado
 - `../../Cuadernos/ejemplos/10_mezcla_electrodebil_y_masas_gauge.ipynb`: usarlo para seguir la mezcla entre $W^3$ y $B$, fijar el papel del angulo de Weinberg y visualizar la reorganizacion del sector neutro.
 - `../../Cuadernos/ejemplos/07_modelo_estandar_panorama.ipynb`: usarlo para identificar los sectores gauge y su notacion.
 

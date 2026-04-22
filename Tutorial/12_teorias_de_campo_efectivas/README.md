@@ -28,6 +28,12 @@ La meta no es solo introducir vocabulario tecnico, sino mostrar por que las EFT 
 7. `07_doble_beta_sin_neutrinos.md`
 8. `08_matching_uv_y_coeficientes_de_wilson.md`
 
+## Capitulos imprescindibles en primera pasada
+
+- [01 Integrando grados de libertad](01_integrando_grados_de_libertad.md): introduce la idea madre de toda EFT.
+- [02 Teoria de Fermi como EFT](02_teoria_de_fermi_como_eft.md): ofrece el ejemplo pedagogico mas claro.
+- [05 SMEFT y operador de Weinberg](05_smeft_y_operador_de_weinberg.md): conecta la filosofia EFT con el lenguaje moderno del Modelo Estandar.
+
 ## Cuadernos asociados
 
 - `../../Cuadernos/ejemplos/15_operadores_efectivos_y_power_counting.ipynb`
@@ -89,14 +95,11 @@ Este modulo cierra el recorrido con una lectura moderna de la QFT: toda teoria d
 8. Explica por que la doble beta sin neutrinos seria una señal fuerte de fisica tipo Majorana.
 9. Describe que problema resuelve el matching cuando pasamos de una teoria UV a una EFT.
 
-## Ampliaciones prioritarias
+## Profundizaciones sugeridas
 
-- desarrollar matching a un lazo en un ejemplo sencillo;
-- ampliar el puente con gravedad semiclasica y horizonte de Planck.
-- ampliar un tratamiento futuro de SMEFT con bases operatoriales mas detalladas;
-- conectar EFT con neutrinos de Majorana y seesaw a nivel cuantitativo;
-- añadir un ejemplo de matching funcional mas completo entre UV y SMEFT;
-- ampliar una capa fenomenologica de observables leptónicos y limites experimentales.
+- estudiar matching a un lazo en un ejemplo sencillo despues de dominar el caso a arbol;
+- volver sobre SMEFT con una capa mas detallada de bases operatoriales y coeficientes de Wilson;
+- conectar EFT con neutrinos de Majorana, seesaw y observables leptónicos cuando se quiera una lectura mas fenomenologica.
 
 ## Lecturas y referencias recomendadas
 

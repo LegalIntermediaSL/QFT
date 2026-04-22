@@ -17,6 +17,12 @@ Este modulo introduce el formalismo de integral de camino como alternativa y com
 3. `03_accion_efectiva_y_potencial_efectivo.md`
 4. `04_bogoliubov_y_cambio_de_vacio.md`
 
+## Capitulos imprescindibles en primera pasada
+
+- [01 Introduccion a la integral de camino](01_introduccion_a_la_integral_de_camino.md): presenta el cambio de formalismo.
+- [02 Funcional generador y correladores](02_funcional_generador_y_correladores.md): organiza el lenguaje funcional de la teoria.
+- [03 Accion efectiva y potencial efectivo](03_accion_efectiva_y_potencial_efectivo.md): conecta el formalismo con vacio y estructura cuántica.
+
 ## Mapa del modulo
 
 ```mermaid
@@ -78,11 +84,11 @@ Este modulo reescribe la QFT en lenguaje funcional. Lo importante no es solo la 
 4. Resume por que la accion efectiva y el potencial efectivo son utiles para estudiar vacios.
 5. Explica por que las transformaciones de Bogoliubov preparan el puente hacia el modulo `11`.
 
-## Ampliaciones prioritarias
+## Profundizaciones sugeridas
 
-- añadir un ejemplo mas detallado de potencial efectivo en una teoria escalar;
-- profundizar transformaciones de Bogoliubov con un caso simple;
-- conectar mas explicitamente con ruptura espontanea de simetria y con el modulo `11`.
+- volver sobre un ejemplo detallado de potencial efectivo en teoria escalar;
+- profundizar transformaciones de Bogoliubov con un caso simple dependiente del tiempo;
+- releer este modulo junto con Higgs, cambio de vacio y el bloque `11` de informacion y agujeros negros.
 
 ## Lecturas y referencias recomendadas
 

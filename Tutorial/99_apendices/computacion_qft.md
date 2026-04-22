@@ -77,7 +77,7 @@ La leccion practica es que no existe una unica herramienta universal. El mejor e
 | **pySecDec** | Integrales de lazo numericas | Especializado |
 | **pyhf** | Ajustes y limites estadisticos | Mas orientado a fenomenologia experimental |
 
-## 6. Estrategia de uso razonable
+## 6. Flujo de trabajo razonable
 
 Una estrategia muy realista para estudiantes e investigadores junior es:
 
@@ -91,14 +91,40 @@ Este orden ayuda a evitar dos errores comunes:
 - depender del software sin entender la estructura fisica;
 - intentar hacerlo todo a mano cuando el problema ya exige automatizacion seria.
 
-## 7. Advertencias utiles
+## 7. Casos de uso tipicos
+
+### Si quieres comprobar una traza o una identidad corta
+
+Usa `SymPy` o `FeynCalc`, segun el entorno que ya manejes.
+
+### Si quieres producir una figura limpia de un diagrama
+
+Usa `PyFeyn2` o una herramienta similar de diagramacion.
+
+### Si quieres evaluar una integral de lazo compleja
+
+Piensa en un flujo mixto: algebra simbolica en FeynCalc y evaluacion numerica con `pySecDec` u otra herramienta especializada.
+
+### Si quieres documentar un ejemplo del tutorial
+
+Conviene priorizar Python y notebooks cuando el objetivo principal es pedagogico y reproducible.
+
+## 8. Buenas practicas
+
+- valida siempre con un caso simple conocido;
+- deja claras las convenciones de metrica y normalizacion;
+- documenta versiones y dependencias si el resultado debe reproducirse;
+- no mezcles sin control notacion del tutorial con notacion por defecto del paquete;
+- conserva ejemplos minimos que permitan detectar si un cambio de libreria rompió signos o factores.
+
+## 9. Advertencias utiles
 
 - Un resultado computacional no sustituye la interpretacion fisica.
 - Distintos paquetes usan convenciones diferentes de signos, metricas o normalizaciones.
 - Siempre conviene validar con un caso simple conocido antes de confiar en un pipeline largo.
 - La reproducibilidad importa: cuadernos, scripts y versiones de dependencias deben quedar claros.
 
-## 8. Cierre
+## 10. Cierre
 
 Las herramientas computacionales no reemplazan la intuicion teorica, pero amplian enormemente el tipo de problemas que pueden abordarse con rigor. Usadas bien, permiten dedicar menos tiempo a algebra mecanica y mas tiempo a interpretar la fisica.
 

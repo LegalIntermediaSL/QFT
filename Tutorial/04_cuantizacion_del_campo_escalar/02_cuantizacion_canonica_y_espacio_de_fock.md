@@ -156,6 +156,10 @@ Esa es una de las victorias conceptuales mas limpias de la QFT. No forzamos proc
 - La expansion modal no es una aproximacion; para la teoria libre es una descomposicion estructural exacta.
 - La interpretacion en terminos de particulas es especialmente clara en teorias libres o en estados asintoticos.
 
+## Cuaderno asociado
+
+- Consulta los cuadernos asociados de este bloque en [Resumen del modulo](README.md) para reforzar el capitulo con practica guiada.
+
 ## 12. Preguntas de control
 
 - Como se pasa de las relaciones canonicas del campo al algebra de los operadores modales.

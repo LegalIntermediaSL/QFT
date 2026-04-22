@@ -20,6 +20,8 @@ $$
 
 Este objeto contiene informacion sobre como una excitacion libre se propaga entre dos puntos del espacio-tiempo. No debe interpretarse como la trayectoria clasica de una particula, sino como una funcion de correlacion del vacio.
 
+Aqui conviene subrayar una idea importante: el propagador no describe "lo que hace una particula concreta", sino la respuesta del formalismo de campo cuando se insertan operadores locales en dos puntos distintos. Esa distincion sera esencial cuando aparezcan lineas internas en diagramas.
+
 ## 3. Definicion del propagador de Feynman
 
 Para el campo escalar libre se define
@@ -36,6 +38,8 @@ El orden temporal significa:
 Esta definicion ya anticipa por que el propagador de Feynman aparece tan naturalmente en teoria perturbativa.
 
 La ordenacion temporal es importante porque asegura que el correlador este adaptado a la evolucion causal usada en la expansion de Dyson y en la formulacion funcional. No es un detalle decorativo, sino parte de la definicion del objeto correcto para scattering perturbativo.
+
+En particular, el operador de orden temporal permite combinar en un mismo objeto los dos posibles ordenes relativos de los eventos, que despues se reorganizan de forma compacta en espacio de momentos.
 
 ## 4. Espacio de momentos e interpretacion
 
@@ -54,6 +58,12 @@ Este factor es ubicuo en QFT. Aparece en:
 
 De hecho, buena parte del lenguaje diagramatico posterior consiste en reconocer que cada linea interna no es "una particula viajando" en sentido clasico, sino una copia de este bloque analitico basico.
 
+Una forma util de leerlo es la siguiente:
+
+- el denominador contiene la estructura de polos del espectro libre;
+- el numerador escalar trivial refleja que no hay indices internos adicionales en el caso bosonico escalar;
+- la prescripcion $i\epsilon$ fija la manera correcta de rodear los polos.
+
 ## 5. La prescripcion $i\epsilon$
 
 El termino $i\epsilon$ no es cosmetico. Cumple varias funciones a la vez:
@@ -65,6 +75,8 @@ El termino $i\epsilon$ no es cosmetico. Cumple varias funciones a la vez:
 Pedagogicamente conviene pensar que el $i\epsilon$ codifica la manera consistente de conectar el formalismo analitico con la condicion de vacio fisico.
 
 Tambien es lo que permite seleccionar correctamente el contorno al integrar sobre $p^0$ y garantizar que el correlador obtenido corresponde al vacio de Feynman apropiado.
+
+Sin esta prescripcion, la expresion formal del propagador quedaria ambigua justamente en los puntos donde su estructura analitica es mas importante.
 
 ## 6. Funcion de Green del operador de Klein-Gordon
 
@@ -79,6 +91,8 @@ Por eso se dice que $\Delta_F$ es una funcion de Green del operador de Klein-Gor
 - enlaza el lenguaje de ecuaciones diferenciales con el de correladores;
 - explica por que una linea interna se asocia a la inversion del operador cinetico;
 - prepara el terreno para la expansion perturbativa y la integral de camino.
+
+En realidad, gran parte del formalismo perturbativo puede leerse como una teoria sistematica de invertir operadores cineticos y reorganizar esa inversion en presencia de interacciones.
 
 Una buena intuicion es esta: cuantizar el campo no borra la estructura diferencial clasica, sino que la reorganiza en forma de correladores del vacio y funciones de Green distribucionales.
 
@@ -104,6 +118,8 @@ Aqui aparece una distincion muy importante para evitar confusiones posteriores:
 - el propagador de Feynman codifica el correlador temporalmente ordenado util para perturbacion;
 - ambos estan relacionados, pero no son el mismo objeto.
 
+Esta diferencia explica por que el propagador de Feynman puede ser distinto de cero fuera del cono de luz sin que eso signifique una violacion operacional de causalidad.
+
 ## 8. Propagador y causalidad: una sutileza importante
 
 Es facil confundirse aqui:
@@ -116,11 +132,15 @@ Esto ayuda a desmontar una intuicion peligrosa: que cada linea de un diagrama re
 
 Esta distincion es muy importante antes de entrar en diagramas de Feynman, donde la palabra "propagador" puede inducir interpretaciones demasiado clasicas.
 
+Tambien ayuda a entender por que en QFT aparecen naturalmente varios objetos relacionados pero distintos: propagadores de Feynman, retardados, avanzados y conmutadores causales. No todos sirven para la misma pregunta fisica.
+
 ## 9. Ejemplo corto de lectura
 
 Si en una teoria libre se quiere resolver la respuesta del campo a una fuente puntual, el problema se organiza mediante una funcion de Green. En QFT, el mismo objeto que resuelve esa inversion del operador cinetico aparece despues como bloque elemental del calculo perturbativo.
 
 Esa continuidad conceptual es una de las razones por las que el propagador ocupa un lugar tan central.
+
+En el lenguaje clasico resuelve una ecuacion diferencial con fuente. En el lenguaje cuantico organiza correladores, lineas internas y amplitudes. Esa continuidad es una de las piezas mas elegantes de la transicion de teoria clasica de campos a QFT.
 
 ## 10. Puente hacia el modulo siguiente
 
@@ -134,8 +154,7 @@ Eso significa que el modulo `05` no introduce un objeto completamente nuevo: reu
 
 En ese sentido, este capitulo es el verdadero puente entre cuantizacion del campo libre y teoria de interaccion: aqui se aprende el primer bloque universal que luego reaparece en casi todos los calculos.
 
-## 11. Cuaderno asociado
-
+## Cuaderno asociado
 - `../../Cuadernos/ejemplos/08_propagador_libre_y_causalidad.ipynb`: usarlo para inspeccionar la estructura del propagador libre, el papel de la prescripcion `i\epsilon` y la diferencia conceptual entre propagador y conmutador causal.
 - `../../Cuadernos/ejemplos/05_cuantizacion_del_campo_escalar.ipynb`: usarlo para contrastar la expansion modal con la forma del propagador libre.
 - `../../Cuadernos/problemas_resueltos/09_cuantizacion_del_campo_escalar.ipynb`: usarlo para revisar el paso entre conmutadores, vacio y correladores en el caso escalar.

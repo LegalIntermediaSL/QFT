@@ -10,6 +10,8 @@
 
 La electrodinamica cuantica es la teoria gauge cuantica mas simple y, al mismo tiempo, una de las mas exitosas de toda la fisica. Este documento organiza su lagrangiano y su significado fisico.
 
+Su valor pedagogico es extraordinario: QED es el lugar donde simetria gauge, fermiones relativistas, propagadores, vertices, Ward y renormalizacion conviven por primera vez en una sola teoria completa y controlable.
+
 ## 2. Campos del problema
 
 En QED aparecen dos tipos de campos:
@@ -18,6 +20,8 @@ En QED aparecen dos tipos de campos:
 - el campo gauge electromagnetico $A_\mu$, asociado al foton.
 
 La teoria describe tanto la propagacion de estos campos como su interaccion.
+
+Tambien muestra una de las grandes ideas de la QFT moderna: una interaccion fisica puede verse como consecuencia obligada de una simetria local y no solo como un acoplamiento puesto a mano.
 
 ## 3. Lagrangiano de QED
 
@@ -41,6 +45,12 @@ $$
 \bar{\psi}(i\gamma^\mu \partial_\mu - m)\psi
 - e\bar{\psi}\gamma^\mu A_\mu \psi.
 $$
+
+Esta expansion merece leerse con cuidado porque deja ver, de forma desnuda, la arquitectura completa de la teoria:
+
+- un termino cinetico fermionico;
+- un termino de masa;
+- un termino de interaccion local con el foton.
 
 ## 4. Interpretacion por bloques
 
@@ -72,6 +82,8 @@ $$
 
 Esta forma deja visible que el foton se acopla a la corriente conservada del fermion cargado.
 
+Esa observacion es central. El campo gauge no se acopla arbitrariamente al fermion, sino a una corriente muy concreta cuya forma ya estaba sugerida por la estructura de Dirac.
+
 ## 5. Lectura fisica del vertice
 
 Ese termino codifica procesos donde:
@@ -82,9 +94,13 @@ Ese termino codifica procesos donde:
 
 En lenguaje perturbativo, todo el formalismo de diagramas y amplitudes de QED se organiza alrededor de este acoplamiento elemental.
 
+Por eso, entender bien este termino equivale en gran medida a entender de donde salen las reglas de Feynman basicas de QED.
+
 ## 6. Gauge y conservacion de carga
 
 La estructura gauge de QED no solo introduce el campo electromagnetico; tambien protege la conservacion de la carga electrica y organiza la teoria de manera altamente restringida. La interaccion no se pone a mano por gusto: aparece al imponer la simetria local correcta.
+
+Esta es una de las ideas mas elegantes del curso: lo que en una lectura ingenua podria parecer un termino de interaccion elegido por conveniencia, en realidad queda fijado por consistencia simetrica.
 
 ## 7. Por que QED es tan importante
 
@@ -105,6 +121,8 @@ Sin entrar aun en todos los detalles tecnicos, la teoria produce reglas de Feynm
 
 Estas reglas permiten calcular amplitudes de scattering, anchos de decaimiento y correcciones radiativas.
 
+Tambien muestran que el formalismo de QED no introduce objetos cualitativamente nuevos en cada proceso: reusa siempre el mismo vertice elemental combinado con distintos estados externos y distintos intercambios internos.
+
 En un primer nivel, basta retener la logica:
 
 - una linea fermionica interna representa el propagador del electron;
@@ -121,6 +139,8 @@ $$
 
 Esta expresion no debe interpretarse como si el foton tuviera cuatro grados de libertad fisicos propagantes. Parte de esa estructura refleja la redundancia gauge, mientras que los observables fisicos conservan solo los grados de libertad apropiados.
 
+QED es, en ese sentido, una gran escuela de disciplina conceptual: el formalismo intermedio puede llevar redundancias que desaparecen solo al pasar a cantidades gauge invariantes.
+
 ## 10. Identidad de Ward
 
 Una de las consecuencias mas importantes de la simetria gauge en QED es la identidad de Ward. Pedagogicamente, esta identidad expresa que:
@@ -131,9 +151,17 @@ Una de las consecuencias mas importantes de la simetria gauge en QED es la ident
 
 No hace falta demostrarla aqui, pero conviene reconocerla como huella cuantica de la invariancia gauge clasica.
 
+Esa huella es lo que permite que el exito de la teoria no dependa de un milagro algebraico, sino de una estructura protegida por simetria a todos los pasos del calculo.
+
 ## 11. Renormalizacion en QED
 
 QED es renormalizable, lo que significa que sus divergencias ultravioletas pueden absorberse de manera controlada en una redefinicion finita del numero apropiado de parametros fisicos. Esta es una de las razones de su exito predictivo extraordinario.
+
+Por eso QED es mucho mas que una teoria del electromagnetismo relativista: es tambien el modelo historico de como una teoria gauge cuantica puede ser matematicamente consistente y experimentalmente precisa.
+
+## Cuaderno asociado
+
+- Consulta los cuadernos asociados de este bloque en [Resumen del modulo](README.md) para reforzar el capitulo con practica guiada.
 
 ## 12. Preguntas de estudio
 

@@ -167,6 +167,10 @@ La relatividad especial no es solo un decorado cinemático. Tiene consecuencias 
 
 Todo esto empuja de forma natural hacia el lenguaje de campos cuanticos.
 
+## Cuaderno asociado
+
+- Consulta los cuadernos asociados de este bloque en [Resumen del modulo](README.md) para reforzar el capitulo con practica guiada.
+
 ## 11. Preguntas de estudio
 
 - Que significa que el intervalo relativista sea invariante.

@@ -86,8 +86,7 @@ Si una teoria gravitatoria parece perder informacion desde una descripcion local
 
 Esa es precisamente la fuerza de la holografia como principio organizador: obliga a revisar que significa realmente "perder" informacion cuando las descripciones duales reorganizan radicalmente los grados de libertad.
 
-## 9. Cuaderno asociado
-
+## Cuaderno asociado
 - `../../Cuadernos/problemas_resueltos/22_holografia_y_reconstruccion_de_informacion.ipynb`: usarlo para fijar el vocabulario minimo de borde, bulk, reconstruccion e informacion codificada de forma no local.
 
 ## 10. Advertencias utiles

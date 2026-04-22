@@ -183,6 +183,10 @@ Tambien tienen un valor heuristico muy fuerte. Ayudan a anticipar:
 - donde cabe esperar divergencias;
 - que canales de intercambio pueden contribuir.
 
+## Cuaderno asociado
+
+- Consulta los cuadernos asociados de este bloque en [Resumen del modulo](README.md) para reforzar el capitulo con practica guiada.
+
 ## 14. Preguntas de control
 
 - Que representa exactamente una linea interna.

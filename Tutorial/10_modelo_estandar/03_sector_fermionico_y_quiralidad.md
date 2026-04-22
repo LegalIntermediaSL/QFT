@@ -75,8 +75,7 @@ Si se dice que "los $W$ se acoplan solo a fermiones zurdos", no significa que lo
 
 Esta observacion es el puente directo hacia el sector de Yukawa. Las masas fermionicas no se añaden como simples terminos de Dirac desnudos, sino que emergen tras acoplar los fermiones al Higgs de una forma compatible con la simetria gauge inicial.
 
-## 7. Cuaderno asociado
-
+## Cuaderno asociado
 - `../../Cuadernos/problemas_resueltos/11_modelo_estandar_estructura.ipynb`: usarlo para repasar la organizacion quiral del sector fermionico.
 
 ## 8. Advertencias utiles

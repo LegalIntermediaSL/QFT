@@ -78,8 +78,7 @@ Un acoplamiento de Yukawa pequeno no es un detalle puramente algebraico: signifi
 
 Por eso el sector de Yukawa concentra una parte grande del misterio del sabor. Las masas de los fermiones abarcan muchos ordenes de magnitud y el modelo describe esa realidad, pero no la explica de fondo.
 
-## 7. Cuaderno asociado
-
+## Cuaderno asociado
 - `../../Cuadernos/problemas_resueltos/11_modelo_estandar_estructura.ipynb`: usarlo para revisar mezcla entre generaciones y parametros libres.
 
 ## 8. Advertencias utiles

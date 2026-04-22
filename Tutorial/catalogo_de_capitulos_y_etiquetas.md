@@ -10,6 +10,15 @@ Esta pagina sirve como mapa fino del tutorial. Resume cada capitulo con una etiq
 - `avanzado`: presupone bastante del recorrido anterior.
 - `opcional`: util como ampliacion o consulta, no siempre imprescindible para seguir.
 
+## Como leer este catalogo sin perder tiempo
+
+Una regla practica bastante buena es esta:
+
+- prioriza `fundacional` si estas en primera pasada;
+- usa `puente` para no perder continuidad entre modulos;
+- deja `avanzado` y `opcional` para segunda vuelta o consulta dirigida;
+- si dudas, contrasta siempre con los `Capitulos imprescindibles en primera pasada` del `README` del modulo correspondiente.
+
 ## Modulo 00. Prerrequisitos
 
 | Capitulo | Etiquetas | Prerequisitos recomendados |
@@ -139,6 +148,7 @@ Esta pagina sirve como mapa fino del tutorial. Resume cada capitulo con una etiq
 - Si dudas si un capitulo es para primera lectura, mira primero su etiqueta.
 - Si quieres entrar por un tema concreto, usa la columna de prerequisitos para evitar saltos demasiado bruscos.
 - Si quieres una secuencia ya preparada, consulta tambien [Rutas de lectura](rutas_de_lectura.md).
+- Si quieres transformar la eleccion de capitulos en un plan semanal, consulta [Problemas recomendados por semana](problemas_recomendados_por_semana.md).
 
 ---
 

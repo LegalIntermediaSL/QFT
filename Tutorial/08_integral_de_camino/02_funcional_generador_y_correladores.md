@@ -158,6 +158,10 @@ Estos objetos son muy importantes para estudiar vacios, ruptura de simetria, cam
 
 La razon de introducir $W[J]$ es que el logaritmo elimina automaticamente diagramas desconectados de vacio. A su vez, $\Gamma[\phi_c]$ reorganiza la informacion en terminos de vertices propios o irreducibles 1PI, que son la base natural para estudiar dinamica efectiva y potenciales corregidos cuánticamente.
 
+## Cuaderno asociado
+
+- Consulta los cuadernos asociados de este bloque en [Resumen del modulo](README.md) para reforzar el capitulo con practica guiada.
+
 ## 9. Advertencias utiles
 
 - La fuente $J(x)$ es auxiliar; no debe confundirse con una corriente fisica del sistema salvo que se declare expresamente esa interpretacion.

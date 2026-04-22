@@ -18,6 +18,12 @@ Este modulo desarrolla la simetria gauge local, la electrodinamica cuantica y la
 4. `04_scattering_basico_en_qed.md`
 5. `05_polarizaciones_y_sumas_de_espin.md`
 
+## Capitulos imprescindibles en primera pasada
+
+- [01 Simetria gauge local y derivada covariante](01_simetria_gauge_local_y_derivada_covariante.md): contiene la idea estructural del modulo.
+- [02 QED y lagrangiano fundamental](02_qed_y_lagrangiano_fundamental.md): ensambla el primer ejemplo gauge completo.
+- [03 Fijacion de gauge y propagador del foton](03_fijacion_de_gauge_y_propagador_del_foton.md): aclara el paso tecnico indispensable para calcular.
+
 ## Mapa del modulo
 
 ```mermaid
@@ -78,11 +84,11 @@ Este modulo ensena como una simetria local genera una teoria gauge y usa QED com
 4. Describe la estructura de una amplitud elemental en QED, distinguiendo lineas externas, propagadores internos y factor de vertice.
 5. Compara la corriente de Dirac con la corriente electromagnetica que aparece en QED y explica por que la identidad de Ward es conceptualmente importante.
 
-## Ampliaciones prioritarias
+## Profundizaciones sugeridas
 
-- ampliar un calculo completo de scattering $e^- \mu^- \to e^- \mu^-$ o $e^+e^- \to \mu^+\mu^-$;
-- conectar mas directamente con renormalizacion en QED a un lazo;
-- añadir una nota futura sobre correcciones radiativas elementales.
+- recorrer un calculo completo de scattering $e^- \mu^- \to e^- \mu^-$ o $e^+e^- \to \mu^+\mu^-$;
+- enlazar este modulo con renormalizacion en QED a un lazo dentro del modulo `09`;
+- usarlo como base antes de entrar en correcciones radiativas y running electromagnetico.
 
 ## Lecturas y referencias recomendadas
 

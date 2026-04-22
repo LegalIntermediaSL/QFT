@@ -22,6 +22,8 @@ Lo primero nunca es dibujar. Lo primero es identificar:
 
 Sin eso, un diagrama no significa nada.
 
+Esta advertencia merece insistirse. Muchas confusiones iniciales vienen de empezar por la sintaxis grafica sin haber fijado antes la teoria, el proceso y el orden perturbativo.
+
 ## 3. Extraer ingredientes del lagrangiano
 
 Del lagrangiano se leen las piezas que luego alimentan el calculo:
@@ -32,6 +34,8 @@ Del lagrangiano se leen las piezas que luego alimentan el calculo:
 - factores de signo y normalizacion.
 
 Esta es una leccion importante del modulo: las reglas de Feynman no se memorizan como dibujos aislados, se derivan del lagrangiano.
+
+Por eso, incluso cuando despues se trabajen procesos muy distintos, la disciplina intelectual sigue siendo la misma: volver primero a la estructura del lagrangiano.
 
 ## 4. Lista operativa minima
 
@@ -45,6 +49,8 @@ Para un proceso perturbativo sencillo, una rutina util es:
 6. integrar sobre los momentos internos no fijados;
 7. sumar todas las contribuciones;
 8. amputar y normalizar segun el contexto fisico del calculo.
+
+Segun el problema, algunos de estos pasos pueden quedar implícitos o ya incorporados en reglas resumidas. Aun asi, pedagogicamente conviene tener siempre esta lista en mente, porque evita tratar el calculo como una caja negra.
 
 ## 5. Reglas tipicas en teoria escalar
 
@@ -61,6 +67,8 @@ $$
 
 Esto basta para construir los diagramas de arbol mas simples y empezar a ver de donde nacen los diagramas con lazos.
 
+Tambien permite ver con claridad que el formalismo no distingue entre "dibujar" y "escribir": cada linea y cada vertice ya es un objeto analitico concreto.
+
 ## 6. Que cambia al pasar a teorias mas ricas
 
 Cuando la teoria incluye espin o gauge, la lista operativa sigue siendo la misma, pero se añaden nuevas capas:
@@ -72,6 +80,8 @@ Cuando la teoria incluye espin o gauge, la lista operativa sigue siendo la misma
 
 Por eso este modulo conviene leerlo como un esqueleto general que luego se especializa en QED, teorias gauge y Modelo Estandar.
 
+La ventaja de verlo asi es que el salto posterior a fermiones y gauge deja de parecer una ruptura total. Lo que cambia no es la logica del calculo, sino la riqueza de los ingredientes.
+
 ## 7. Errores comunes
 
 Al empezar a usar reglas de Feynman, los errores mas frecuentes suelen ser:
@@ -81,6 +91,8 @@ Al empezar a usar reglas de Feynman, los errores mas frecuentes suelen ser:
 - perder factores de signo o simetria;
 - interpretar el diagrama como historia literal;
 - no distinguir amplitud, elemento de matriz y observable final.
+
+En problemas reales, otro error comun es olvidar si hay que promediar sobre grados de libertad iniciales o sumar sobre finales, cosa que se vuelve especialmente importante al pasar de amplitudes a secciones eficaces.
 
 ## 8. Ejemplo corto de trabajo
 
@@ -94,6 +106,8 @@ En scattering $2\to2$ escalar a nivel de arbol, una estrategia razonable es:
 
 Esta separacion ayuda a no mezclar niveles conceptuales.
 
+Tambien es una buena practica para organizar tiempo de trabajo: primero construir la amplitud correctamente, luego simplificar, y solo despues traducir a observable.
+
 ## 9. Puente con los modulos siguientes
 
 Este resumen operativo prepara directamente para:
@@ -104,8 +118,9 @@ Este resumen operativo prepara directamente para:
 
 En otras palabras, este documento cierra el modulo `05` y lo convierte en una plataforma de lanzamiento para los modulos tecnicos mas potentes del tutorial.
 
-## 10. Cuaderno asociado
+Su mejor uso es casi el de una checklist mental. Si al enfrentar un calculo nuevo puedes recorrer mentalmente estos pasos con claridad, el formalismo ya esta bastante bien asentado.
 
+## Cuaderno asociado
 - `../../Cuadernos/ejemplos/06_diagramas_de_feynman_basicos.ipynb`: usarlo para practicar la traduccion entre diagrama y expresion analitica.
 - `../../Cuadernos/problemas_resueltos/10_interacciones_y_perturbaciones.ipynb`: usarlo para ordenar el calculo completo de un proceso elemental y comprobar donde aparecen los distintos factores.
 

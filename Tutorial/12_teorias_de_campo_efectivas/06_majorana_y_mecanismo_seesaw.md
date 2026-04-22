@@ -95,8 +95,7 @@ Si el acoplamiento de Yukawa genera una escala tipo Dirac del orden electrodébi
 
 Aunque este tutorial no entra en el detalle fenomenologico completo, conviene registrar que los neutrinos pesados del seesaw tambien aparecen en muchos escenarios de leptogénesis y de fisica mas alla del Modelo Estandar. Eso refuerza el interes del mecanismo: no solo explica masas pequeñas, sino que puede conectarse con el origen de asimetrias cosmologicas.
 
-## 10. Cuaderno asociado
-
+## Cuaderno asociado
 - `../../Cuadernos/problemas_resueltos/20_majorana_y_seesaw.ipynb`: usarlo para seguir la estructura matricial minima del seesaw y su reduccion a una masa ligera efectiva.
 
 ## 11. Advertencias utiles

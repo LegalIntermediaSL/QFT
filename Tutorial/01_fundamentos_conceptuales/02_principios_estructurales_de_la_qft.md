@@ -216,6 +216,10 @@ Una buena forma de usar este mapa es como checklist mental para cada nueva teori
 - como mantiene unitaridad;
 - a que escalas puede tomarse en serio.
 
+## Cuaderno asociado
+
+- Consulta los cuadernos asociados de este bloque en [Resumen del modulo](README.md) para reforzar el capitulo con practica guiada.
+
 ## 11. Preguntas de estudio
 
 - Por que una teoria relativista cuantica no puede fijar el numero de particulas desde el inicio.

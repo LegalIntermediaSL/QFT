@@ -47,11 +47,14 @@ flowchart TD
 Tambien puedes apoyarte en estas paginas:
 
 - [Como estudiar este tutorial](como_estudiar_este_tutorial.md)
+- [Problemas recomendados por semana](problemas_recomendados_por_semana.md)
 - [Rutas de lectura](rutas_de_lectura.md)
 - [Tabla maestra del tutorial](tabla_maestra_del_tutorial.md)
 - [Sintesis por modulo](sintesis_por_modulo.md)
 - [Catalogo de capitulos, etiquetas y prerequisitos](catalogo_de_capitulos_y_etiquetas.md)
 - [Mapa de dependencias conceptuales](mapa_de_dependencias_conceptuales.md)
+
+Ademas, cada `README` de modulo incluye ahora una seccion de `Capitulos imprescindibles en primera pasada`, para que no haga falta salir del propio bloque si quieres una lectura minima bien guiada.
 
 Para una experiencia de aprendizaje secuencial, sigue este orden:
 
@@ -85,6 +88,14 @@ Si quieres una primera pasada compacta, esta es la ruta con mejor retorno concep
 | 6 | [05 Interacciones](05_interacciones_y_perturbaciones/README.md) | Introduce amplitudes, Dyson y diagramas |
 | 7 | [06 Fermiones y Dirac](06_fermiones_y_dirac/README.md) | Completa el cuadro relativista con fermiones |
 | 8 | [07 Gauge y QED](07_gauge_y_qed/README.md) | Cierra el núcleo mínimo con una teoría gauge real |
+
+## Si quieres estudiar haciendo problemas
+
+Si prefieres convertir el tutorial en una rutina activa y no solo de lectura:
+
+- usa [Problemas recomendados por semana](problemas_recomendados_por_semana.md) como plan corto de 8 semanas;
+- cruza esa pagina con [Como estudiar este tutorial](como_estudiar_este_tutorial.md) para elegir ritmo;
+- usa [Tabla maestra del tutorial](tabla_maestra_del_tutorial.md) para seleccionar los capitulos imprescindibles de cada modulo.
 
 ## Ruta avanzada
 

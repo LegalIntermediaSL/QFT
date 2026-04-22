@@ -20,6 +20,12 @@ Este modulo conecta el formalismo general de la QFT con su realizacion fenomenol
 6. `06_corrientes_cargadas_y_neutras.md`
 7. `07_neutrinos_masas_y_oscilaciones.md`
 
+## Capitulos imprescindibles en primera pasada
+
+- [01 Lagrangiano del Modelo Estandar](01_lagrangiano_del_modelo_estandar.md): da el mapa completo del modulo.
+- [02 Sector gauge y estructura electrodébil](02_sector_gauge_y_estructura_electrodebil.md): explica la mezcla electrodébil y el origen del foton y el boson $Z$.
+- [04 Mecanismo de Higgs y ruptura espontanea](04_mecanismo_de_higgs_y_ruptura_espontanea.md): contiene una de las ideas estructurales mas importantes del bloque.
+
 ## Cuadernos asociados
 
 - `../../Cuadernos/ejemplos/07_modelo_estandar_panorama.ipynb`
@@ -69,14 +75,11 @@ Este modulo muestra la gran aplicacion del formalismo anterior: el Modelo Estand
 4. Explica por que la interaccion debil es quiral y como esa quiralidad se refleja en corrientes cargadas y neutras.
 5. Describe la diferencia conceptual entre masas generadas por Yukawas y masas gauge generadas por el mecanismo de Higgs.
 
-## Ampliaciones prioritarias
+## Profundizaciones sugeridas
 
-- separar estructura gauge, sector fermionico y sector de Higgs;
-- desarrollar quiralidad, Yukawas y masas;
-- añadir un mapa minimo de observables y fenomenologia;
-- conectar con tablas y datos del PDG;
-- ampliar mezcla electrodébil, corrientes y acoplamientos efectivos.
-- profundizar neutrinos, oscilaciones y escenarios de masas de Majorana.
+- usar este modulo como mapa y despues volver por separado a estructura gauge, sector fermionico y sector de Higgs;
+- complementar la lectura con tablas y datos del PDG cuando se quiera una capa mas fenomenologica;
+- enlazarlo con neutrinos, oscilaciones y escenarios de masas de Majorana en el modulo `12`.
 
 ## Lecturas y referencias recomendadas
 

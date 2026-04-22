@@ -18,6 +18,12 @@ Este modulo desarrolla regularizacion, contraterminos, escala de renormalizacion
 4. `04_funcion_beta_y_running_couplings.md`
 5. `05_esquema_msbar_y_qed_vs_qcd.md`
 
+## Capitulos imprescindibles en primera pasada
+
+- [01 Origen de las divergencias y regularizacion](01_origen_de_las_divergencias_y_regularizacion.md): aclara el problema conceptual.
+- [02 Renormalizacion y grupo de renormalizacion](02_renormalizacion_y_grupo_de_renormalizacion.md): introduce la lectura fisica de escalas.
+- [04 Funcion beta y running couplings](04_funcion_beta_y_running_couplings.md): resume la dinamica de los acoplamientos.
+
 ## Mapa del modulo
 
 ```mermaid
@@ -79,11 +85,11 @@ Este modulo transforma las divergencias en una lectura fisica de escalas. Renorm
 4. Explica que resume una funcion beta y por que se relaciona con running couplings.
 5. Compara de manera cualitativa que clase de diferencias fisicas puede mostrar el running en QED y en QCD.
 
-## Ampliaciones prioritarias
+## Profundizaciones sugeridas
 
-- añadir un calculo mas detallado de un diagrama a un lazo completo;
-- profundizar la relacion entre esquema y observables;
-- ampliar con un ejemplo cuantitativo comparativo QED/QCD.
+- seguir un calculo mas detallado de un diagrama a un lazo completo;
+- profundizar la relacion entre esquema, parametros renormalizados y observables;
+- comparar con mas detalle el running de QED y QCD despues de leer el modulo `10`.
 
 ## Lecturas y referencias recomendadas
 

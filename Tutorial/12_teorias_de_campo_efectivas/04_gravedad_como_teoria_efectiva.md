@@ -102,8 +102,7 @@ La EFT gravitatoria deja de ser suficiente cuando:
 
 En ese punto no decimos que las predicciones previas fueran falsas, sino que el dominio de validez se ha agotado.
 
-## 10. Cuaderno asociado
-
+## Cuaderno asociado
 - `../../Cuadernos/ejemplos/15_operadores_efectivos_y_power_counting.ipynb`: usarlo para reforzar la idea general de expansion por operadores y jerarquias de escala, que aqui se aplica al caso gravitatorio.
 
 ## 11. Advertencias utiles

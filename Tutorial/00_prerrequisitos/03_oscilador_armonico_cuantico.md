@@ -183,6 +183,10 @@ del estado fundamental muestra que incluso el vacio del oscilador tiene energia 
 
 En muchos contextos no gravitatorios importan solo diferencias de energia, y por eso puede parecer que esta constante no tiene consecuencias. Aun asi, desde el punto de vista conceptual es esencial, porque anticipa que el vacio cuantico no es un estado trivial ni carente de estructura.
 
+## Cuaderno asociado
+
+- Consulta los cuadernos asociados de este bloque en [Resumen del modulo](README.md) para reforzar el capitulo con practica guiada.
+
 ## 11. Preguntas de estudio
 
 - Por que los operadores $a$ y $a^\dagger$ simplifican tanto el problema.

@@ -140,6 +140,7 @@ Puedes considerar que un capitulo quedo realmente estudiado si puedes:
 - Vuelve al [Mapa de dependencias conceptuales](mapa_de_dependencias_conceptuales.md).
 - Usa el [Catalogo de capitulos y etiquetas](catalogo_de_capitulos_y_etiquetas.md) para rebajar dificultad.
 - Recurre a [Errores comunes y recetas practicas](99_apendices/errores_comunes_y_recetas_practicas.md) si el problema es de metodo y no de contenido.
+- Usa [Problemas recomendados por semana](problemas_recomendados_por_semana.md) si necesitas pasar de lectura pasiva a trabajo activo.
 
 ---
 

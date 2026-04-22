@@ -133,6 +133,10 @@ Conviene mencionar desde ya que una simetria puede estar presente en la accion y
 
 Por ahora basta con registrar la idea: la accion puede tener mas simetria que el estado fundamental alrededor del cual expandimos la teoria.
 
+## Cuaderno asociado
+
+- Consulta los cuadernos asociados de este bloque en [Resumen del modulo](README.md) para reforzar el capitulo con practica guiada.
+
 ## 12. Advertencias utiles
 
 - No toda cantidad conservada se reconoce facilmente si no se identifica la simetria subyacente.

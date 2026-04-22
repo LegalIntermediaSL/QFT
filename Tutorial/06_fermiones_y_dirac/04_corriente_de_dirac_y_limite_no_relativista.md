@@ -88,8 +88,7 @@ Si una teoria relativista del electron no reprodujera la fisica de Pauli a bajas
 
 Tambien permite entender por que muchas intuiciones de espin y magnetismo, que en cursos previos parecen postularse, aparecen aqui como consecuencias del formalismo relativista.
 
-## 8. Cuaderno asociado
-
+## Cuaderno asociado
 - `../../Cuadernos/problemas_resueltos/09_cuantizacion_del_campo_escalar.ipynb`: usarlo para comparar el paso de teoria libre a estructura modal, ahora en el contexto fermionico.
 - `../../Cuadernos/problemas_resueltos/07_relatividad_y_campos.ipynb`: usarlo como apoyo de trasfondo relativista para el problema conceptual original.
 

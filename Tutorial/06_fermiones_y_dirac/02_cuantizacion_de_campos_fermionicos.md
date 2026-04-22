@@ -117,6 +117,10 @@ Sin esta cuantizacion no podria construirse correctamente:
 - la teoria de quarks y leptones;
 - la estructura fermionica completa del Modelo Estandar.
 
+## Cuaderno asociado
+
+- Consulta los cuadernos asociados de este bloque en [Resumen del modulo](README.md) para reforzar el capitulo con practica guiada.
+
 ## 10. Preguntas de estudio
 
 - Por que un campo fermionico necesita anticonmutadores.

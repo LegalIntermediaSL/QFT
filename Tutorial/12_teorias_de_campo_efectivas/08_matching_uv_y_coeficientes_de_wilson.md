@@ -129,8 +129,7 @@ En muchos problemas de precision, el matching a nivel arbol no basta. Los lazos 
 
 No hace falta dominar aun toda la maquinaria tecnica, pero si conviene registrar la idea: cuando la precision experimental mejora, la EFT exige matching y running cada vez mas refinados.
 
-## 11. Cuaderno asociado
-
+## Cuaderno asociado
 - `../../Cuadernos/ejemplos/19_matching_uv_a_smeft.ipynb`: usarlo para fijar la idea de matching, comparacion de amplitudes y papel de los coeficientes de Wilson.
 
 ## 12. Advertencias utiles

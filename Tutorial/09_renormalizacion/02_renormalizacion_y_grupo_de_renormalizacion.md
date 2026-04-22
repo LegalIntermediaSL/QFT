@@ -138,6 +138,10 @@ $$
 
 el grupo de renormalizacion permite absorber sistematicamente esa dependencia en acoplamientos corridos. Esa es una de sus grandes virtudes practicas: no solo interpreta la fisica de escala, tambien reorganiza la perturbacion para volverla mas estable.
 
+## Cuaderno asociado
+
+- Consulta los cuadernos asociados de este bloque en [Resumen del modulo](README.md) para reforzar el capitulo con practica guiada.
+
 ## 11. Preguntas de estudio
 
 - Que diferencia hay entre parametro desnudo y parametro fisico.

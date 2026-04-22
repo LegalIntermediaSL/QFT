@@ -112,8 +112,7 @@ Este ejemplo es especialmente valioso porque destruye una intuicion clasica dema
 
 Aunque la electrodinamica clasica no permite que dos rayos de luz interactuen directamente en el vacio, la QED predice una auto-interaccion efectiva muy pequeña inducida por lazos de electrones. Euler-Heisenberg es justamente la forma efectiva de escribir esa fisica a baja energia.
 
-## 9. Cuaderno asociado
-
+## Cuaderno asociado
 - `../../Cuadernos/ejemplos/15_operadores_efectivos_y_power_counting.ipynb`: usarlo para reforzar la idea de operadores efectivos suprimidos por la escala pesada.
 
 ## 10. Advertencias utiles

@@ -10,9 +10,13 @@
 
 Este documento desarrolla la idea de que los acoplamientos no son numeros fijos absolutos, sino cantidades dependientes de la escala. La funcion beta organiza precisamente esa dependencia.
 
+Este es uno de los cambios de intuicion mas profundos de la QFT moderna. Una “constante” de acoplamiento deja de ser verdaderamente constante cuando la teoria se observa a distintas resoluciones.
+
 ## 2. Escala de renormalizacion
 
 Una vez renormalizada la teoria, los parametros quedan definidos a una cierta escala $\mu$. Cambiar esa escala cambia el valor numerico del acoplamiento renormalizado, aunque los observables fisicos completos no deberian depender de esa eleccion de forma espuria.
+
+La escala $\mu$ no es una energia fisica misteriosa escondida en la naturaleza. Es el punto de referencia con respecto al cual se parametriza la teoria renormalizada. Justamente por eso el running resume como compensar esa eleccion al movernos entre escalas.
 
 ## 3. Definicion de la funcion beta
 
@@ -38,6 +42,8 @@ $$
 
 Este formato deja ver que el grupo de renormalizacion no es una idea vaga sobre "cambio de escala", sino una ecuacion diferencial concreta para los parametros efectivos de la teoria.
 
+Visto asi, el grupo de renormalizacion se parece menos a una consigna conceptual y mas a una dinamica real sobre el espacio de acoplamientos.
+
 ## 4. Lectura fisica
 
 La funcion beta no es solo un artefacto de renormalizacion. Codifica contenido fisico:
@@ -47,6 +53,8 @@ La funcion beta no es solo un artefacto de renormalizacion. Codifica contenido f
 - sus ceros pueden señalar puntos fijos con estructura especial.
 
 La causa fisica intuitiva del running puede pensarse en terminos de polarizacion del vacio. Las fluctuaciones cuánticas modifican la forma en que una carga o una fuente se "ve" al explorarla con distinta resolucion. Por eso el acoplamiento medido no tiene por que ser igual a todas las distancias o energias.
+
+Esta es una buena forma de unir fisica e intuicion: no es que la teoria “cambie arbitrariamente”, sino que el vacio cuantico responde de forma distinta cuando se lo sondea a distinta escala.
 
 ## 5. Ejemplos famosos
 
@@ -64,6 +72,8 @@ En lenguaje muy intuitivo:
 
 Esa inversion de comportamiento es una de las diferencias conceptuales mas profundas entre teorias abelianas y no abelianas.
 
+Tambien es una de las razones por las que el running no debe verse solo como un detalle de renormalizacion. En realidad distingue de forma muy profunda distintos tipos de teoria gauge.
+
 ## 6. Running coupling como idea efectiva
 
 Hablar de "constante de acoplamiento" puede inducir a error. En QFT, lo que realmente se mide en distintos procesos suele ser una constante efectiva dependiente de la escala caracteristica del problema.
@@ -73,6 +83,8 @@ La leccion central es:
 - la teoria cambia su apariencia al cambiar la resolucion con que la observamos;
 - esa variacion no destruye la teoria;
 - es una de sus predicciones mas distintivas.
+
+Por eso los acoplamientos efectivos medidos en distintos procesos no deben compararse ingenuamente como si todos correspondieran a una unica escala sin mas.
 
 Si se integra esquematicamente la ecuacion anterior entre una escala de referencia $\mu_0$ y una escala $\mu$, se obtiene una expresion del tipo
 
@@ -98,12 +110,15 @@ entonces ese punto define un comportamiento especial del flujo de renormalizacio
 
 Esta es la puerta conceptual que conecta el grupo de renormalizacion con teorias efectivas, fisica critica y universalidad.
 
+En ese punto se empieza a ver por que renormalizacion y EFT estan mucho mas unidas de lo que parece en una primera lectura del curso.
+
 ## 8. Ejemplo corto de lectura
 
 Si dos experimentos extraen valores ligeramente distintos de un mismo acoplamiento a energias muy diferentes, eso no implica necesariamente inconsistencia experimental. Puede ser justamente la manifestacion del running coupling predicho por la QFT.
 
-## 9. Cuaderno asociado
+Esta observacion ayuda a entender por que las tablas experimentales de acoplamientos siempre deben leerse junto con la escala relevante del proceso.
 
+## Cuaderno asociado
 - `../../Cuadernos/problemas_resueltos/10_interacciones_y_perturbaciones.ipynb`: usarlo para reforzar la idea de que los lazos modifican amplitudes y parametros efectivos.
 - `../../Cuadernos/problemas_resueltos/15_regularizacion_dimensional_y_running.ipynb`: usarlo para fijar la lectura del polo en $1/\varepsilon$, de la escala $\mu$ y de una ley de running elemental.
 

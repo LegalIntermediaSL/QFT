@@ -2,6 +2,12 @@
 
 Esta pagina organiza el tutorial por perfiles y objetivos. La idea no es sustituir el indice general, sino ayudar a elegir un camino razonable segun el tiempo disponible y el tipo de lectura buscada.
 
+Para usar mejor estas rutas, conviene combinarlas con:
+
+- [Tabla maestra del tutorial](tabla_maestra_del_tutorial.md), si quieres ver de un vistazo que modulos son nucleares y cuales son avanzados.
+- [Catalogo de capitulos y etiquetas](catalogo_de_capitulos_y_etiquetas.md), si necesitas afinar la entrada a nivel de capitulo.
+- [Problemas recomendados por semana](problemas_recomendados_por_semana.md), si quieres transformar una ruta en rutina activa.
+
 ## Ruta recomendada completa
 
 Esta es la secuencia natural del curso si quieres recorrer el tutorial como un programa progresivo:
@@ -34,6 +40,18 @@ Si quieres una primera pasada compacta con el mayor retorno conceptual:
 8. [07 Gauge y QED](07_gauge_y_qed/README.md)
 
 Esta ruta deja armado el nucleo duro de la QFT relativista perturbativa.
+
+## Si tienes muy poco tiempo
+
+Si solo quieres una panoramica razonable del curso, usa esta secuencia:
+
+1. [01 Fundamentos conceptuales](01_fundamentos_conceptuales/README.md)
+2. [03 Accion y simetrias](03_accion_y_simetrias/README.md)
+3. [04 Cuantizacion del campo escalar](04_cuantizacion_del_campo_escalar/README.md)
+4. [05 Interacciones y perturbaciones](05_interacciones_y_perturbaciones/README.md)
+5. [07 Gauge y QED](07_gauge_y_qed/README.md)
+
+Si despues quieres seguir, el siguiente modulo natural es [09 Renormalizacion](09_renormalizacion/README.md).
 
 ## Ruta para grado
 
@@ -91,6 +109,7 @@ Si ya conoces la base y quieres entrar por temas:
 - Si vienes de mecanica cuantica y relatividad, probablemente puedas entrar desde el modulo 01 o 03.
 - Si tu objetivo es fenomenologia, prioriza los modulos 05 a 10.
 - Si tu objetivo es frontera conceptual, usa 08, 09 y 11 como eje.
+- Si quieres decidir a nivel de capitulo, entra despues al `README` del modulo y usa la seccion `Capitulos imprescindibles en primera pasada`.
 
 ---
 

@@ -90,8 +90,7 @@ El efecto Unruh y la radiacion de Hawking no se entienden bien si se cree que el
 
 Si una descomposicion modal mezcla operadores de creacion y aniquilacion de otra descomposicion, ya no estamos hablando del mismo vacio fisico. Esa es la razon profunda por la que "no ver particulas" puede ser una afirmacion dependiente del observador.
 
-## 10. Cuaderno asociado
-
+## Cuaderno asociado
 - `../../Cuadernos/ejemplos/08_entrelazamiento_y_horizontes.ipynb`: usarlo para conectar la dependencia del observador con horizontes y termicidad efectiva.
 
 ## 11. Advertencias utiles

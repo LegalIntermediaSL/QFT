@@ -84,8 +84,7 @@ Si la entropia de la radiacion creciera para siempre, incluso cuando el agujero 
 
 Por eso se ha convertido en una especie de test minimo de cualquier propuesta seria para resolver la paradoja de la informacion.
 
-## 9. Cuaderno asociado
-
+## Cuaderno asociado
 - `../../Cuadernos/problemas_resueltos/12_qft_informacion_y_agujeros_negros.ipynb`: usarlo para reforzar la relacion entre termicidad efectiva, entrelazamiento y paradoja de la informacion.
 
 ## 10. Advertencias utiles

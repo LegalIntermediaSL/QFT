@@ -196,6 +196,10 @@ Una forma breve de resumir la idea es esta:
 4. Las particulas observables son cuantos de excitacion de esos campos.
 5. Las interacciones son acoplamientos locales entre campos.
 
+## Cuaderno asociado
+
+- Consulta los cuadernos asociados de este bloque en [Resumen del modulo](README.md) para reforzar el capitulo con practica guiada.
+
 ## 12. Preguntas de estudio
 
 - Por que la relatividad especial obliga a abandonar una teoria de particulas con numero fijo.

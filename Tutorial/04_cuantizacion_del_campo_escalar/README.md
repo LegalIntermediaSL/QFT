@@ -15,6 +15,12 @@ Este modulo da el salto desde el campo clasico hasta el campo cuantizado usando 
 2. `02_cuantizacion_canonica_y_espacio_de_fock.md`
 3. `03_propagador_causalidad_y_funcion_de_green.md`
 
+## Capitulos imprescindibles en primera pasada
+
+- [01 Campo escalar clasico y modos normales](01_campo_escalar_clasico_y_modos_normales.md): muestra la estructura modal que luego se cuantiza.
+- [02 Cuantizacion canonica y espacio de Fock](02_cuantizacion_canonica_y_espacio_de_fock.md): contiene el salto conceptual central del modulo.
+- [03 Propagador, causalidad y funcion de Green](03_propagador_causalidad_y_funcion_de_green.md): prepara directamente el lenguaje perturbativo.
+
 ## Mapa del modulo
 
 ```mermaid

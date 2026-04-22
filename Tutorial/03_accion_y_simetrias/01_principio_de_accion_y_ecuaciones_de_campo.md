@@ -152,6 +152,10 @@ Es el punto donde se conectan casi todos los lenguajes que vendran despues: camp
 - Leer una lagrangiana sin distinguir entre parte libre y parte interactuante.
 - Ignorar la informacion dimensional de los terminos.
 
+## Cuaderno asociado
+
+- Consulta los cuadernos asociados de este bloque en [Resumen del modulo](README.md) para reforzar el capitulo con practica guiada.
+
 ## 11. Preguntas de control
 
 - Que se gana al pasar de ecuaciones de movimiento directas a una formulacion por accion.

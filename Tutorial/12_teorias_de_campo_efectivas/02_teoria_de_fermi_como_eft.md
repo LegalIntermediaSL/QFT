@@ -134,8 +134,7 @@ Otra señal de que la EFT se esta estresando es que las amplitudes crecen con la
 
 El decaimiento beta nuclear puede describirse con gran precision usando una interaccion puntual de cuatro fermiones, aunque en la teoria UV esa interaccion este mediada por un boson gauge masivo. Ese es exactamente el poder de una EFT bien construida.
 
-## 9. Cuaderno asociado
-
+## Cuaderno asociado
 - `../../Cuadernos/problemas_resueltos/17_fermi_y_matching_efectivo.ipynb`: usarlo para seguir el paso entre el propagador del boson pesado y el operador efectivo de Fermi.
 
 ## 10. Advertencias utiles

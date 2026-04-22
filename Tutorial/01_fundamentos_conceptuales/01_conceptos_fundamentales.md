@@ -193,6 +193,10 @@ Si hubiera que condensar el corazon de la QFT en una secuencia corta, seria algo
 - Por que los diagramas de Feynman no son dibujos literales sino terminos de una expansion
 - Que significa que una teoria sea renormalizable o efectiva
 
+## Cuaderno asociado
+
+- Consulta los cuadernos asociados de este bloque en [Resumen del modulo](README.md) para reforzar el capitulo con practica guiada.
+
 ## 14. Advertencias utiles
 
 - No conviene identificar campo cuantico con una onda clasica difusa sin mas.

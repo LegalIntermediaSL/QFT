@@ -128,6 +128,10 @@ Una simetria gauge no es simplemente una simetria global hecha mas complicada. A
 
 La intuicion minima que conviene retener es esta: una simetria gauge local fuerza la aparicion de conexiones, campos mediadores e interacciones compatibles con una redundancia local del formalismo.
 
+## Cuaderno asociado
+
+- Consulta los cuadernos asociados de este bloque en [Resumen del modulo](README.md) para reforzar el capitulo con practica guiada.
+
 ## 11. Preguntas de estudio
 
 - Que diferencia hay entre simetria discreta y continua.

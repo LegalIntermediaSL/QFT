@@ -16,6 +16,12 @@ Este modulo introduce el paso desde teorias libres a teorias interactuantes y pr
 3. `03_reduccion_lsz_y_correladores_amputados.md`
 4. `04_reglas_de_feynman_resumen_operativo.md`
 
+## Capitulos imprescindibles en primera pasada
+
+- [01 Teoria de perturbaciones y matriz S](01_teoria_de_perturbaciones_y_matriz_s.md): introduce el objeto fisico que se quiere calcular.
+- [02 Diagramas de Feynman y reglas](02_diagramas_de_feynman_y_reglas.md): organiza la expansion perturbativa.
+- [03 Reduccion LSZ y correladores amputados](03_reduccion_lsz_y_correladores_amputados.md): evita que los diagramas se aprendan como pura receta.
+
 ## Mapa del modulo
 
 ```mermaid

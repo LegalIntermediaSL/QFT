@@ -76,8 +76,7 @@ Esto explica por que el tema ha tenido tanto impacto en la discusion moderna de 
 
 Si una descripcion gravitatoria efectiva permite que el calculo correcto de la entropia de la radiacion incluya una region adicional "oculta" a la intuicion naive, entonces la entropia ya no se interpreta como la de la radiacion sola. Ese cambio de sistema fisico relevante es justo el corazon conceptual de las islas.
 
-## 9. Cuaderno asociado
-
+## Cuaderno asociado
 - `../../Cuadernos/ejemplos/20_islas_y_entropia_generalizada.ipynb`: usarlo para fijar la intuicion de entropia generalizada, tiempo de Page e inclusion de islas en la lectura moderna.
 
 ## 10. Advertencias utiles

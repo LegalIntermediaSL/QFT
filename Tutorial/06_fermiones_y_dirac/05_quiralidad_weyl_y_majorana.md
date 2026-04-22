@@ -84,8 +84,7 @@ Si el sector debil del Modelo Estandar distingue entre componentes izquierdas y 
 
 Ese es el puente conceptual hacia el modulo del Modelo Estandar: la quiralidad no esta ahi por gusto algebraico, sino porque la interaccion debil trata de manera distinta a las componentes zurdas y diestras.
 
-## 8. Cuaderno asociado
-
+## Cuaderno asociado
 - `../../Cuadernos/ejemplos/09_bilineales_y_proyectores_quirales.ipynb`: usarlo para fijar la separacion entre componentes zurda y diestra y reforzar la intuicion de proyectores quirales antes de volver al formalismo completo.
 - `../../Cuadernos/problemas_resueltos/06_fundamentos_conceptuales.ipynb`: usarlo para reforzar el papel de simetria y estructura de campos.
 - `../../Cuadernos/problemas_resueltos/07_relatividad_y_campos.ipynb`: usarlo como apoyo del trasfondo relativista.

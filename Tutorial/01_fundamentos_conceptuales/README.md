@@ -19,6 +19,14 @@ Este modulo fija la ontologia y los principios del tutorial antes de entrar en t
 2. `02_principios_estructurales_de_la_qft.md`
 3. `03_que_es_un_campo_cuantico.md`
 
+## Capitulos imprescindibles en primera pasada
+
+Para una primera lectura, conviene no saltarse ninguno de los tres:
+
+- [01 Conceptos fundamentales](01_conceptos_fundamentales.md): plantea el problema fisico que resuelve la QFT.
+- [02 Principios estructurales de la QFT](02_principios_estructurales_de_la_qft.md): fija localidad, causalidad, simetria y consistencia.
+- [03 Que es un campo cuantico](03_que_es_un_campo_cuantico.md): consolida el cambio de ontologia del curso.
+
 ## Mapa del modulo
 
 ```mermaid

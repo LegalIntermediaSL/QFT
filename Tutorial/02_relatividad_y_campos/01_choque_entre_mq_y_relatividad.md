@@ -179,6 +179,10 @@ En QFT, el mismo proceso se reinterpreta como:
 
 Esta reformulacion no es solo mas general. Es la estructura correcta si queremos una teoria compatible con relatividad especial.
 
+## Cuaderno asociado
+
+- Consulta los cuadernos asociados de este bloque en [Resumen del modulo](README.md) para reforzar el capitulo con practica guiada.
+
 ## 15. Preguntas de control
 
 - Que supuesto de la mecanica cuantica ordinaria deja de ser sostenible en fisica relativista de altas energias.

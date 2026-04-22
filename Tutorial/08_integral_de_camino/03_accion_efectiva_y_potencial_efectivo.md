@@ -128,8 +128,7 @@ Ese tipo de fenomeno muestra que la cuantizacion no solo corrige numeros pequeñ
 
 Si el potencial clasico tiene un minimo en cierto valor del campo, el potencial efectivo puede desplazar, deformar o incluso reorganizar ese minimo una vez que se incorporan fluctuaciones cuanticas. Esa es una de las formas mas claras de ver que la teoria cuantica no solo corrige amplitudes, sino tambien la propia estructura del vacio.
 
-## 10. Cuaderno asociado
-
+## Cuaderno asociado
 - `../../Cuadernos/ejemplos/11_integral_de_camino_y_accion_efectiva.ipynb`: usarlo para fijar la cadena conceptual entre integral funcional, accion efectiva y potencial efectivo, y para visualizar de forma pedagogica como las correcciones cuanticas pueden deformar el vacio.
 - `../../Cuadernos/problemas_resueltos/08_accion_y_noether.ipynb`: usarlo para reforzar el papel de la accion como punto de partida estructural.
 - `../../Cuadernos/problemas_resueltos/09_cuantizacion_del_campo_escalar.ipynb`: usarlo para revisar el campo libre que luego sirve de base para las correcciones funcionales.

@@ -21,6 +21,12 @@ Aqui el interes no es solo tecnico. Este bloque sirve para mostrar que la QFT no
 - `05_islas_y_entropia_generalizada.md`
 - `06_holografia_y_reconstruccion_de_informacion.md`
 
+## Capitulos imprescindibles en primera pasada
+
+- [01 QFT, informacion y entrelazamiento](01_qft_informacion_y_entrelazamiento.md): fija el lenguaje de acceso parcial, estado reducido y entropia.
+- [02 Agujeros negros, radiacion de Hawking y paradoja de la informacion](02_agujeros_negros_radiacion_de_hawking_y_paradoja_de_la_informacion.md): presenta la tension central del modulo.
+- [05 Islas y entropia generalizada](05_islas_y_entropia_generalizada.md): recoge la lectura moderna que reorganiza el bloque.
+
 ## Hilo conductor
 
 La progresion conceptual del modulo es:
@@ -88,12 +94,11 @@ Este modulo lleva la QFT a una frontera conceptual donde vacio, entrelazamiento,
 5. Explica por que el concepto de isla aparece al refinar la entropia semiclasica.
 6. Resume por que la holografia se ha vuelto relevante en la discusion de informacion.
 
-## Ampliaciones prioritarias
+## Profundizaciones sugeridas
 
-- ampliar entropia de entrelazamiento en subregiones;
-- refinar el puente entre Hawking, termicidad y paradoja de la informacion;
-- profundizar islas y entropia generalizada en un tratamiento mas tecnico;
-- ampliar la intuicion holografica y sus limites pedagogicos.
+- releer el modulo siguiendo la secuencia entrelazamiento -> Hawking -> Page -> islas;
+- profundizar entropia de entrelazamiento en subregiones y termicidad efectiva;
+- dejar holografia como segunda vuelta si el objetivo principal es primero aclarar la paradoja semiclasica.
 
 ## Lecturas y referencias recomendadas
 

@@ -127,6 +127,10 @@ Por eso vale la pena entender bien la teoria clasica: la cuantizacion reutiliza 
 
 No hay una ruptura total entre teoria clasica y cuantica. Lo que cambia no es la forma general del problema, sino el estatuto matematico de sus variables y la interpretacion fisica de sus modos.
 
+## Cuaderno asociado
+
+- Consulta los cuadernos asociados de este bloque en [Resumen del modulo](README.md) para reforzar el capitulo con practica guiada.
+
 ## 9. Preguntas de control
 
 - Como se obtiene la relacion de dispersion relativista a partir de la ecuacion de Klein-Gordon.

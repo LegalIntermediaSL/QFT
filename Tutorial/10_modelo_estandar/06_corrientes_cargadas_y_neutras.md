@@ -138,8 +138,7 @@ Las corrientes neutras aparecen en:
 - procesos de precision electrodébil;
 - observables sensibles al angulo de Weinberg.
 
-## 10. Cuaderno asociado
-
+## Cuaderno asociado
 - `../../Cuadernos/ejemplos/10_mezcla_electrodebil_y_masas_gauge.ipynb`: usarlo para conectar la mezcla electrodébil con la emergencia de corrientes electromagneticas y neutras en la base fisica.
 - `../../Cuadernos/problemas_resueltos/11_modelo_estandar_estructura.ipynb`: usarlo para seguir la lectura de corrientes, cargas y sectores del lagrangiano.
 - `../../Cuadernos/ejemplos/07_modelo_estandar_panorama.ipynb`: usarlo para situar la corriente electromagnetica como combinacion no rota del sector electrodébil.

@@ -10,6 +10,8 @@
 
 Este documento resume el papel del campo de Higgs, el vacio no trivial y la generacion de masas gauge en el Modelo Estandar.
 
+Su importancia no reside solo en la existencia del boson de Higgs, sino en que resuelve una tension estructural: como dar masa a los bosones débiles sin destruir la consistencia gauge de la teoria.
+
 ## 1. Campo de Higgs
 
 El Higgs se introduce como un doblete complejo de $SU(2)_L$, tipicamente denotado por
@@ -27,6 +29,8 @@ $$
   - \lambda (H^\dagger H)^2.
 $$
 
+La estructura del potencial es la que permite seleccionar un vacio no trivial. Esa es la pieza realmente decisiva del mecanismo.
+
 ## 2. Potencial y vacio
 
 La idea fisica es que el potencial se elige de modo que el vacio no este en $H=0$, sino en una configuracion con valor esperado no nulo:
@@ -41,6 +45,8 @@ $$
 SU(2)_L \times U(1)_Y \to U(1)_{\text{EM}}.
 $$
 
+La palabra "espontaneamente" es esencial: el lagrangiano sigue respetando la simetria, pero el estado de vacio escogido por la teoria no la manifiesta de la misma manera.
+
 ## 3. Masas de bosones gauge
 
 El mecanismo de Higgs permite que:
@@ -50,6 +56,8 @@ El mecanismo de Higgs permite que:
 - la estructura gauge fundamental de la teoria se conserve.
 
 Ese es uno de los grandes logros conceptuales del Modelo Estandar.
+
+La masa gauge no se introduce entonces como un parche externo, sino como una consecuencia de expandir la teoria alrededor del vacio correcto.
 
 Si se desarrolla el termino cinetico del Higgs alrededor del vacio,
 
@@ -85,6 +93,8 @@ $$
 
 Estas formulas condensan de forma elegante la estructura del sector gauge roto.
 
+Tambien dejan ver que las masas de $W$ y $Z$ no son parametros arbitrarios totalmente independientes, sino cantidades relacionadas por la estructura interna de la teoria.
+
 ## 5. Escala electrodébil
 
 El valor esperado del Higgs
@@ -95,6 +105,8 @@ $$
 
 fija la escala electrodébil y conecta directamente la teoria con magnitudes observables.
 
+Esa escala es una de las bisagras de toda la fenomenologia del Modelo Estandar: a partir de ella se organizan masas gauge, Yukawas y lectura efectiva de muchos procesos.
+
 ## 6. Bosones de Goldstone y gauge unitario
 
 En el lenguaje mas completo, el doblete de Higgs contiene grados de libertad que, tras la ruptura espontanea, se reorganizan en:
@@ -104,6 +116,8 @@ En el lenguaje mas completo, el doblete de Higgs contiene grados de libertad que
 
 Esta lectura ayuda a entender por que los bosones vectoriales masivos tienen el numero correcto de grados de libertad despues de la ruptura.
 
+Sin esta reorganizacion, el recuento de grados de libertad seria inconsistente. Esa es otra forma de ver que el mecanismo de Higgs no es un adorno, sino una solucion estructural.
+
 ## 7. Lectura pedagogica
 
 El Higgs no debe entenderse solo como "la particula descubierta en el LHC". Antes que eso, es el mecanismo que hace compatible:
@@ -111,6 +125,8 @@ El Higgs no debe entenderse solo como "la particula descubierta en el LHC". Ante
 - invariancia gauge;
 - masas para bosones debiles;
 - renormalizabilidad.
+
+Esta es probablemente la mejor forma de enseñarlo: primero como principio organizador de la teoria, y solo despues como estado excitado observable.
 
 ## 8. Ejemplo corto de lectura
 
@@ -122,8 +138,9 @@ El punto esencial no es "añadir una particula Higgs" al inventario, sino entend
 
 En esa reorganizacion, los campos $W^\pm$, $Z$ y $A$ no se interpretan igual que antes de la ruptura: cambian las combinaciones fisicas relevantes y aparecen terminos de masa sin haber roto explicitamente la simetria en el lagrangiano.
 
-## 9. Cuaderno asociado
+Ese cambio de base fisica es lo que hace tan natural la conexion con el capitulo anterior sobre mezcla electrodébil.
 
+## Cuaderno asociado
 - `../../Cuadernos/ejemplos/10_mezcla_electrodebil_y_masas_gauge.ipynb`: usarlo para revisar las relaciones estructurales entre $g$, $g'$, $\theta_W$, $m_W$ y $m_Z$ a partir del vacio del Higgs.
 - `../../Cuadernos/ejemplos/07_modelo_estandar_panorama.ipynb`: usarlo para ubicar el sector de Higgs dentro del lagrangiano completo.
 

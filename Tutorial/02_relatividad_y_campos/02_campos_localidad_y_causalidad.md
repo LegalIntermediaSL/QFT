@@ -143,6 +143,10 @@ Esta es una de las sutilezas mas importantes del tema: la teoria cuantica puede 
 - Confundir conmutacion nula a separacion espacial con ausencia total de correlaciones cuanticas.
 - Usar la palabra vacio como si significara literalmente nada.
 
+## Cuaderno asociado
+
+- Consulta los cuadernos asociados de este bloque en [Resumen del modulo](README.md) para reforzar el capitulo con practica guiada.
+
 ## 15. Preguntas de estudio
 
 - Por que la localidad en QFT no debe confundirse con una ausencia total de correlaciones a distancia.

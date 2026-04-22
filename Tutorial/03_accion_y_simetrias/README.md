@@ -24,6 +24,11 @@ En QFT, una enorme cantidad de informacion fisica se concentra en una sola expre
 1. `01_principio_de_accion_y_ecuaciones_de_campo.md`
 2. `02_teorema_de_noether_y_simetria.md`
 
+## Capitulos imprescindibles en primera pasada
+
+- [01 Principio de accion y ecuaciones de campo](01_principio_de_accion_y_ecuaciones_de_campo.md): introduce el lenguaje lagrangiano del resto del tutorial.
+- [02 Teorema de Noether y simetria](02_teorema_de_noether_y_simetria.md): conecta simetria con cantidades conservadas.
+
 ## Mapa del modulo
 
 ```mermaid

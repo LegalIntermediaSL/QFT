@@ -131,6 +131,10 @@ La gran moraleja del modulo es:
 
 Esto explica por que las teorias gauge ocupan un lugar central en la fisica de particulas.
 
+## Cuaderno asociado
+
+- Consulta los cuadernos asociados de este bloque en [Resumen del modulo](README.md) para reforzar el capitulo con practica guiada.
+
 ## 11. Preguntas de estudio
 
 - Por que una simetria global no basta para introducir un campo gauge.

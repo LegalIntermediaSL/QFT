@@ -161,8 +161,7 @@ La idea de integrar grados de libertad aparece en casi todos los grandes ejemplo
 
 Por eso este lenguaje no es una tecnica marginal, sino una forma estandar de pensar en QFT contemporanea.
 
-## 12. Cuaderno asociado
-
+## Cuaderno asociado
 - `../../Cuadernos/ejemplos/15_operadores_efectivos_y_power_counting.ipynb`: usarlo para fijar el conteo dimensional y la lectura de operadores efectivos segun la escala de corte.
 
 ## 13. Advertencias utiles

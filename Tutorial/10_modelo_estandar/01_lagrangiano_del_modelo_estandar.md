@@ -12,6 +12,8 @@ El Lagrangiano del Modelo Estandar es una de las expresiones mas densas y exitos
 
 Este documento no pretende derivar el Modelo Estandar desde cero, sino ofrecer una lectura estructural de su arquitectura y orientar el recorrido del modulo.
 
+La mejor forma de usarlo es como mapa. El objetivo no es retener todos los indices a la primera, sino aprender a reconocer que bloque del lagrangiano controla cada parte de la fisica.
+
 ## 1. Vision general
 
 El Modelo Estandar se construye sobre el grupo de gauge
@@ -32,6 +34,13 @@ Desde un punto de vista estructural, el lagrangiano del Modelo Estandar puede di
 2. sector fermionico;
 3. sector de Higgs;
 4. sector de Yukawa.
+
+Esa particion es mucho mas que una comodidad pedagógica. Permite leer por separado:
+
+- que campos median interacciones;
+- que campos constituyen la materia fermionica;
+- como se organiza el vacio electrodébil;
+- de donde nacen las masas y la mezcla de sabor.
 
 ## 2. Ruta del modulo
 
@@ -64,6 +73,8 @@ $$
 
 Este esquema no muestra todos los indices, generaciones y estructuras de grupo, pero si deja clara la arquitectura conceptual de la teoria.
 
+Una lectura madura del Modelo Estandar empieza precisamente aqui: no intentando memorizar la formula completa, sino sabiendo reconocer su descomposicion funcional.
+
 ## 4. Por que este modulo importa
 
 El Modelo Estandar es la gran prueba de que la estrategia de la QFT funciona en el mundo real:
@@ -75,6 +86,8 @@ El Modelo Estandar es la gran prueba de que la estrategia de la QFT funciona en 
 - predicciones de precision.
 
 Por eso este modulo no es un apendice exotico. Es el punto donde muchos de los hilos del tutorial convergen en una teoria fisica concreta.
+
+Si los modulos anteriores enseñan el lenguaje, este enseña la gran frase fisica escrita en ese lenguaje.
 
 ## 5. Ejemplo guiado de lectura
 
@@ -93,8 +106,9 @@ una primera lectura util no consiste en memorizar todos los indices, sino en pre
 
 Ese cambio de lectura vuelve mucho mas manejable un objeto que, visto por primera vez, puede parecer inmanejable.
 
-## 6. Cuaderno asociado
+Tambien prepara una intuicion muy util para EFT: una vez que el lagrangiano se entiende por bloques, resulta mucho mas natural imaginar como se deforma o amplía al integrar nueva fisica.
 
+## Cuaderno asociado
 - `../../Cuadernos/ejemplos/07_modelo_estandar_panorama.ipynb`: usarlo para recorrer la descomposicion del lagrangiano por bloques.
 - `../../Cuadernos/problemas_resueltos/11_modelo_estandar_estructura.ipynb`: usarlo para repasar preguntas estructurales del modulo.
 
@@ -109,6 +123,8 @@ Ese cambio de lectura vuelve mucho mas manejable un objeto que, visto por primer
 ## 8. Cierre
 
 El Lagrangiano del Modelo Estandar no es solo una formula larga. Es la compresion extrema de decadas de intuicion fisica, simetria gauge, estructura cuantica y contraste experimental. Leerlo por bloques permite ver que no es una acumulacion arbitraria de terminos, sino una construccion altamente restringida por los principios de la teoria cuantica de campos.
+
+Por eso este capitulo conviene releerlo despues de terminar el modulo entero. Al principio funciona como mapa; al final se vuelve una sintesis legible de todo el edificio.
 
 ## 9. Referencias y lecturas recomendadas
 

@@ -156,6 +156,10 @@ Esto conecta directamente la base de momentos con la estructura del espacio de e
 
 En una caja de volumen finito, el continuo se discretiza y la delta de Dirac pasa a reemplazarse por deltas de Kronecker. Esa comparacion ayuda mucho a entender la delta como la version continua de la ortogonalidad usual en bases discretas.
 
+## Cuaderno asociado
+
+- Consulta los cuadernos asociados de este bloque en [Resumen del modulo](README.md) para reforzar el capitulo con practica guiada.
+
 ## 11. Preguntas de estudio
 
 - Que significa que la delta de Dirac sea una distribucion.
