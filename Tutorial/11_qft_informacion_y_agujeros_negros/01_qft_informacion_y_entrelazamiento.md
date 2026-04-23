@@ -133,14 +133,20 @@ Este primer capitulo del modulo conviene leerlo como base de todos los siguiente
 
 Si esta progresion queda clara, el modulo entero se vuelve mucho mas coherente.
 
-## 13. Ejercicios sugeridos
+## 13. Preguntas de comprobacion
+
+- Por que el vacio de QFT no debe entenderse como una ausencia trivial de estructura.
+- Como aparece una matriz de densidad reducida cuando solo se observa una subregion.
+- Por que una descripcion termica efectiva no implica automaticamente perdida fundamental de informacion.
+
+## 14. Ejercicios sugeridos
 
 1. Explicar con tus propias palabras por que un estado global puro puede producir un estado reducido mixto.
 2. Relacionar el concepto de entropia de entrelazamiento con la idea de grados de libertad inaccesibles.
 3. Discutir por que este tema prepara naturalmente la aparicion de la radiacion de Hawking.
 4. Explicar por que una descripcion termica efectiva no implica necesariamente perdida fundamental de unitaridad.
 
-## 14. Referencias y lecturas recomendadas
+## 15. Referencias y lecturas recomendadas
 
 - Base: reseñas introductorias sobre entrelazamiento en QFT.
 - Complementaria: Birrell y Davies para el trasfondo de campos y observadores parciales.

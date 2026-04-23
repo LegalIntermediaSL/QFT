@@ -110,13 +110,19 @@ Si la radiacion observada parece termica, la pregunta correcta no es solo "¿sal
 - `../../Cuadernos/ejemplos/08_entrelazamiento_y_horizontes.ipynb`: usarlo para conectar termicidad efectiva y acceso parcial a grados de libertad.
 - `../../Cuadernos/problemas_resueltos/12_qft_informacion_y_agujeros_negros.ipynb`: usarlo para revisar Hawking, Bekenstein-Hawking y la formulacion basica de la paradoja.
 
-## 11. Ejercicios sugeridos
+## 11. Preguntas de comprobacion
+
+- Por que la radiacion de Hawking se formula naturalmente dentro de QFT en espacio-tiempo curvo.
+- Que tension conceptual aparece entre termicidad efectiva y unitaridad.
+- Por que la entropia de Bekenstein-Hawking empuja hacia una lectura informacional de la geometria.
+
+## 12. Ejercicios sugeridos
 
 1. Explicar por que un observador exterior describe un estado reducido y no el estado global completo.
 2. Discutir por que la termicidad efectiva no implica automaticamente perdida fundamental de informacion.
 3. Relacionar la ley de area de la entropia de Bekenstein-Hawking con la intuicion holografica.
 
-## 12. Referencias y lecturas recomendadas
+## 13. Referencias y lecturas recomendadas
 
 - Base: reseñas pedagogicas sobre radiacion de Hawking.
 - Complementaria: Birrell y Davies, campos cuanticos en espacio-tiempo curvo.

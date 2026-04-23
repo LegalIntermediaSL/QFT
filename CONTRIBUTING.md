@@ -28,6 +28,7 @@ Para los capítulos públicos del recorrido principal, la validación editorial 
 - título principal `#`;
 - bloque de metadatos (`Nivel`, `Dificultad`, `Tiempo estimado`, `Prerequisitos`);
 - sección de `Proposito` u `Objetivo`;
+- sección de preguntas de comprobación o estudio;
 - sección de referencias;
 - sección final de navegación.
 

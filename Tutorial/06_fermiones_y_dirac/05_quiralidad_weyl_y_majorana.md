@@ -74,7 +74,7 @@ La comparacion pedagogica minima es:
 
 - Dirac: partícula y antipartícula distintas, dos quiralidades organizadas en un espinor completo;
 - Weyl: una sola componente quiral;
-- Majorana: campo autocongugado, con restriccion fuerte entre partícula y antipartícula.
+- Majorana: campo autoconjugado, con restriccion fuerte entre partícula y antipartícula.
 
 No conviene ver estas categorias como compartimentos siempre excluyentes en cualquier contexto. Segun la dimension, las simetrias y la estructura gauge, algunas descripciones son mas naturales que otras y ciertas restricciones pueden o no imponerse consistentemente.
 

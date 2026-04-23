@@ -25,6 +25,11 @@ EDITORIAL_RULES = (
         "seccion de Referencias",
     ),
     (
+        "questions",
+        re.compile(r"^##\s+(?:\d+\.\s+)?Preguntas", re.MULTILINE),
+        "seccion de Preguntas de comprobacion o estudio",
+    ),
+    (
         "navigation",
         re.compile(r"^##\s+Navegacion del tutorial\b", re.MULTILINE),
         "seccion de Navegacion del tutorial",
