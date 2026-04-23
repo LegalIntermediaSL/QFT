@@ -101,11 +101,23 @@ Este modulo cierra el recorrido con una lectura moderna de la QFT: toda teoria d
 - volver sobre SMEFT con una capa mas detallada de bases operatoriales y coeficientes de Wilson;
 - conectar EFT con neutrinos de Majorana, seesaw y observables leptónicos cuando se quiera una lectura mas fenomenologica.
 
+## Que puedes saltarte en primera lectura
+
+- si el objetivo es fijar la idea de EFT, basta una primera pasada por `01`, `02` y `04`;
+- dejar `05` a `08` para una segunda vuelta si aun no esta asentado el nucleo de desacoplamiento, power counting y matching elemental;
+- usar `03_euler_heisenberg_y_operadores_efectivos.md` como ejemplo elegante, pero no como cuello de botella para seguir el resto del modulo.
+
 ## Lecturas y referencias recomendadas
 
 - Introductorio: notas pedagogicas sobre EFT, desacoplamiento y operadores efectivos.
 - Intermedio: Schwartz o Burgess para la filosofia y tecnicas de las EFT.
 - Consulta: revisiones modernas sobre SMEFT, matching y power counting.
+
+## Niveles sugeridos para los ejercicios
+
+- Basico: ejercicios `1`, `2` y `4`.
+- Intermedio: ejercicios `3`, `5` y `9`.
+- Avanzado: ejercicios `6`, `7` y `8`.
 
 ## Navegacion
 

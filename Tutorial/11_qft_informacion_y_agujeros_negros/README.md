@@ -100,11 +100,23 @@ Este modulo lleva la QFT a una frontera conceptual donde vacio, entrelazamiento,
 - profundizar entropia de entrelazamiento en subregiones y termicidad efectiva;
 - dejar holografia como segunda vuelta si el objetivo principal es primero aclarar la paradoja semiclasica.
 
+## Que puedes saltarte en primera lectura
+
+- si el objetivo es fijar solo el nucleo conceptual, leer `01`, `02` y `05` antes de entrar en `06`;
+- dejar `06_holografia_y_reconstruccion_de_informacion.md` para una segunda vuelta si aun no esta asentada la paradoja semiclasica;
+- usar `03_efecto_unruh_y_vacio_de_rindler.md` como puente conceptual, no como requisito para dominar cada detalle tecnico del modulo.
+
 ## Lecturas y referencias recomendadas
 
 - Introductorio: notas pedagogicas de QFT en espacio-tiempo curvo o reseñas sobre Hawking y Unruh.
 - Intermedio: Birrell y Davies para el formalismo de campos en espacio-tiempo curvo.
 - Complementario: revisiones modernas sobre informacion cuantica y agujeros negros.
+
+## Niveles sugeridos para los ejercicios
+
+- Basico: ejercicios `1` y `3`.
+- Intermedio: ejercicios `2` y `4`.
+- Avanzado: ejercicios `5` y `6`.
 
 ## Navegacion
 

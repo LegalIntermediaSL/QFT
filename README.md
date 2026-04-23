@@ -172,6 +172,16 @@ El proyecto ya ofrece una primera version navegable del recorrido principal. En 
 
 La cobertura sigue siendo desigual: los bloques `00` a `05` estan mas consolidados como nucleo pedagogico, mientras que `06` a `12` ya tienen estructura util pero todavia admiten ampliaciones importantes en derivaciones, referencias por documento, ejercicios y ejemplos de calculo.
 
+Como guia rapida del estado editorial del recorrido principal:
+
+| Bloques | Estado | Lectura recomendada |
+| --- | --- | --- |
+| `00` a `02` | consolidado | primera lectura completa |
+| `03` a `05` | consolidado | primera lectura completa con cuadernos de apoyo |
+| `06` a `07` | util y estable | primera lectura, con segunda vuelta para detalles tecnicos |
+| `08` a `10` | util y revisado | primera lectura selectiva segun interes |
+| `11` a `12` | avanzado y revisado | lectura por capas, mejor despues del nucleo |
+
 En la reorganizacion editorial mas reciente se limpiaron del arbol principal varias variantes de capitulos que convivian con la version publica mediante nombres como ` 2.md`. Esas versiones no se perdieron: quedaron archivadas en `Tutorial/_borradores/` para facilitar comparacion, rescate o futura promocion a contenido canonico.
 
 El repositorio tambien esta sincronizado con GitHub y mantiene una validacion local minima antes de publicar:
