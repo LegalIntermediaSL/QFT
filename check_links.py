@@ -8,6 +8,7 @@ LINK_RE = re.compile(r"!?(?<!!)\[[^\]]*?\]\(([^)]+)\)")
 HEADING_RE = re.compile(r"^(#{1,6})\s+(.*)$", re.MULTILINE)
 IGNORED_SCHEMES = ("http://", "https://", "mailto:", "tel:", "data:")
 IGNORED_PATH_PARTS = {"_borradores"}
+DUPLICATE_NAME_RE = re.compile(r" \d+\.md$")
 
 
 def strip_code_blocks(content: str) -> str:
@@ -50,6 +51,16 @@ def validate_anchor(target_file: Path, anchor: str) -> bool:
         return True
     content = target_file.read_text(encoding="utf-8")
     return anchor in collect_anchors(content)
+
+
+def find_editorial_duplicates() -> list[str]:
+    duplicate_paths: list[str] = []
+    for md_file in sorted(Path("Tutorial").rglob("*.md")):
+        if any(part in IGNORED_PATH_PARTS for part in md_file.parts):
+            continue
+        if DUPLICATE_NAME_RE.search(md_file.name):
+            duplicate_paths.append(str(md_file))
+    return duplicate_paths
 
 
 def check_links() -> int:
@@ -95,6 +106,18 @@ def check_links() -> int:
                         "reason": "ancla inexistente",
                     }
                 )
+
+    duplicate_paths = find_editorial_duplicates()
+    if duplicate_paths:
+        print(
+            f"❌ Se encontraron {len(duplicate_paths)} archivos con nombres editoriales ambiguos:"
+        )
+        for path in duplicate_paths:
+            print(f"  - {path}")
+        print(
+            "   Mueve estas variantes a `Tutorial/_borradores/` o renómbralas con una convención inequívoca."
+        )
+        return 1
 
     if broken_links:
         print(f"❌ Se encontraron {len(broken_links)} enlaces rotos o inconsistentes:")
