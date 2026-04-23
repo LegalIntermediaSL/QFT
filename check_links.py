@@ -7,6 +7,7 @@ FENCED_CODE_BLOCK_RE = re.compile(r"```.*?```", re.DOTALL)
 LINK_RE = re.compile(r"!?(?<!!)\[[^\]]*?\]\(([^)]+)\)")
 HEADING_RE = re.compile(r"^(#{1,6})\s+(.*)$", re.MULTILINE)
 IGNORED_SCHEMES = ("http://", "https://", "mailto:", "tel:", "data:")
+IGNORED_PATH_PARTS = {"_borradores"}
 
 
 def strip_code_blocks(content: str) -> str:
@@ -52,7 +53,11 @@ def validate_anchor(target_file: Path, anchor: str) -> bool:
 
 
 def check_links() -> int:
-    md_files = sorted(Path(".").rglob("*.md"))
+    md_files = sorted(
+        path
+        for path in Path(".").rglob("*.md")
+        if not any(part in IGNORED_PATH_PARTS for part in path.parts)
+    )
     broken_links: list[dict[str, str]] = []
 
     for md_file in md_files:

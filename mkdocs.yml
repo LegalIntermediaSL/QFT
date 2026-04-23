@@ -4,7 +4,7 @@ docs_dir: docs
 site_dir: site
 exclude_docs: |
   Tutorial/template_modulo.md
-  Tutorial/**/* 2.md
+  Tutorial/_borradores/**
   Imagenes/diagramas/*.md
 not_in_nav: |
   LICENSE.md

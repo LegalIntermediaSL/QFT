@@ -33,6 +33,8 @@ Cada nuevo módulo debe seguir el archivo [template_modulo.md](Tutorial/template
 - Si un capítulo tiene notebook asociado, conviene citarlo explícitamente y explicar para qué sirve.
 - Antes de abrir un PR, ejecuta `python check_links.py`.
 - Si modificas la navegación general, actualiza también `mkdocs.yml`, `README.md` y el índice del módulo afectado.
+- Si generas una variante, resumen alternativo o borrador de un capítulo ya publicado, guárdalo en `Tutorial/_borradores/` conservando la estructura temática del módulo.
+- Evita dejar archivos alternativos en paralelo al contenido público con sufijos como ` 2.md`, porque vuelven ambigua la versión canónica.
 
 ### 5. Notebooks
 - Mantén nombres numerados y descriptivos.
