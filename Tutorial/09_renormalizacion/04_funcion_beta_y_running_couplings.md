@@ -136,9 +136,9 @@ Esta observacion ayuda a entender por que las tablas experimentales de acoplamie
 
 ## Ejercicios sugeridos
 
-1. Explicar por que un acoplamiento extraido a distintas energias no tiene por que tomar el mismo valor numérico.
-2. Comparar cualitativamente el running de QED y QCD y relacionarlo con el signo de su funcion beta.
-3. Describir en que sentido el running coupling conecta calculo perturbativo y fenomenologia.
+1. Usar la forma integrada del running para explicar por que el signo del coeficiente beta determina si el acoplamiento crece o decrece al aumentar la escala.
+2. Comparar cualitativamente la lectura fisica del running en QED y en QCD e identificar que rasgo experimental o fenomenologico resume cada caso.
+3. Explicar por que al citar un valor de acoplamiento es importante especificar la escala a la que fue determinado.
 
 ## 12. Referencias y lecturas recomendadas
 

@@ -130,9 +130,9 @@ Si $v \approx 246\,\mathrm{GeV}$ y la escala efectiva asociada al operador de We
 
 ## Ejercicios sugeridos
 
-1. Explicar por que SMEFT organiza nueva fisica sin comprometerse con una UV completion concreta.
-2. Describir que vuelve excepcional al operador de Weinberg dentro de la expansion efectiva del Modelo Estandar.
-3. Relacionar la estimacion $m_\nu \sim v^2/\Lambda$ con la pequeñez observada de las masas neutrínicas.
+1. Explicar por que SMEFT permite comparar desviaciones experimentales distintas sin fijar de entrada una UV completion concreta.
+2. Justificar que vuelve excepcional al operador de Weinberg frente a la torre usual de operadores de dimension seis.
+3. Usar la estimacion $m_\nu \sim v^2/\Lambda$ para argumentar por que una escala UV alta puede producir masas neutrínicas muy pequeñas.
 
 ## 13. Referencias y lecturas recomendadas
 

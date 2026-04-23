@@ -408,3 +408,23 @@ La validacion local y en CI ya no protege solo contra errores tecnicos evidentes
 ### Siguiente mejora natural
 
 - Separar en el futuro validaciones de tipo `error` y `warning` para poder endurecer la plantilla sin bloquear paginas legitimas de referencia o experimentacion controlada.
+
+## Entrada de refinamiento de ejercicios y apoyos
+
+### Fecha
+
+2026-04-23
+
+### Objetivo
+
+Mejorar la calidad pedagogica de los ejercicios, especialmente en capitulos avanzados donde varias consignas seguian siendo demasiado generales, y revisar si los cuadernos asociados apuntaban al mejor apoyo disponible.
+
+### Trabajo realizado
+
+- Se revisaron ejercicios de fermiones, renormalizacion, Modelo Estandar, informacion/agujeros negros y EFT para volverlos mas concretos y accionables.
+- Se reemplazaron algunas consignas demasiado abiertas por tareas de verificacion, clasificacion, comparacion estructural o lectura de formulas.
+- Se ajustaron referencias de cuadernos en el bloque de fermiones para que el apoyo practico sea mas directo y pertinente al tema del capitulo.
+
+### Resultado
+
+El tutorial no solo tiene ya ejercicios en todos los capitulos del recorrido principal, sino que una parte mayor de esos ejercicios pide operaciones intelectuales mas precisas y menos abstractas. Eso mejora su utilidad como material real de estudio y autoevaluacion.

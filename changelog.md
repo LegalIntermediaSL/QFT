@@ -22,6 +22,8 @@ El formato sigue una adaptacion simple de Keep a Changelog y usa versionado sema
 - `CONTRIBUTING.md` documenta la nueva convencion para borradores y variantes editoriales.
 - `README.md`, `bitacora.md` y `changelog.md` se sincronizan con la reorganizacion reciente del repositorio.
 - Se añadieron secciones explicitas de `Proposito` a capitulos fundacionales y avanzados que todavia no seguian la plantilla editorial minima.
+- Se refinaron ejercicios de varios capitulos avanzados para volverlos mas concretos y orientados a lectura de formulas, comparaciones fisicas y derivaciones guiadas.
+- Se ajustaron algunas asociaciones entre capitulos y cuadernos para que el apoyo practico sea mas especifico.
 
 ### Fixed
 

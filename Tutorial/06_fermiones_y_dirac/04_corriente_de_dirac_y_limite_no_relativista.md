@@ -89,7 +89,7 @@ Si una teoria relativista del electron no reprodujera la fisica de Pauli a bajas
 Tambien permite entender por que muchas intuiciones de espin y magnetismo, que en cursos previos parecen postularse, aparecen aqui como consecuencias del formalismo relativista.
 
 ## Cuaderno asociado
-- `../../Cuadernos/problemas_resueltos/09_cuantizacion_del_campo_escalar.ipynb`: usarlo para comparar el paso de teoria libre a estructura modal, ahora en el contexto fermionico.
+- `../../Cuadernos/problemas_resueltos/18_corriente_de_dirac_y_limite_no_relativista.ipynb`: usarlo para seguir de forma guiada la conservacion de la corriente y la lectura del limite de baja energia.
 - `../../Cuadernos/problemas_resueltos/07_relatividad_y_campos.ipynb`: usarlo como apoyo de trasfondo relativista para el problema conceptual original.
 
 ## 9. Advertencias utiles
@@ -107,9 +107,9 @@ Tambien permite entender por que muchas intuiciones de espin y magnetismo, que e
 
 ## Ejercicios sugeridos
 
-1. Explicar como una simetria global de fase lleva a la conservacion de la corriente de Dirac.
-2. Describir que se gana fisicamente al estudiar el limite no relativista de la ecuacion de Dirac.
-3. Comparar el significado de densidad de probabilidad en mecanica cuantica y de corriente conservada en el formalismo relativista.
+1. Derivar de forma esquematica la corriente de Dirac a partir de una simetria global de fase del lagrangiano fermionico.
+2. Explicar por que recuperar la ecuacion de Pauli en el limite no relativista funciona como prueba de consistencia del formalismo de Dirac.
+3. Comparar la interpretacion de la componente temporal de la corriente de Dirac con la nocion de densidad de probabilidad en mecanica cuantica no relativista.
 
 ## 11. Cierre
 

@@ -74,7 +74,7 @@ Esto explica por que el tema ha tenido tanto impacto en la discusion moderna de 
 
 ## 8. Ejemplo corto de lectura
 
-Si una descripcion gravitatoria efectiva permite que el calculo correcto de la entropia de la radiacion incluya una region adicional "oculta" a la intuicion naive, entonces la entropia ya no se interpreta como la de la radiacion sola. Ese cambio de sistema fisico relevante es justo el corazon conceptual de las islas.
+Si una descripcion gravitatoria efectiva permite que el calculo correcto de la entropia de la radiacion incluya una region adicional "oculta" a la intuicion ingenua, entonces la entropia ya no se interpreta como la de la radiacion sola. Ese cambio de sistema fisico relevante es justo el corazon conceptual de las islas.
 
 ## Cuaderno asociado
 - `../../Cuadernos/ejemplos/20_islas_y_entropia_generalizada.ipynb`: usarlo para fijar la intuicion de entropia generalizada, tiempo de Page e inclusion de islas en la lectura moderna.
@@ -93,9 +93,9 @@ Si una descripcion gravitatoria efectiva permite que el calculo correcto de la e
 
 ## Ejercicios sugeridos
 
-1. Explicar por que la entropia generalizada no puede leerse solo como una cantidad puramente geométrica.
-2. Describir el cambio conceptual que introduce una isla en la definicion del sistema relevante.
-3. Relacionar islas, curva de Page y recuperacion de informacion en una misma narrativa.
+1. Explicar por que la entropia generalizada combina de forma natural una contribucion de area con una contribucion cuantica de entrelazamiento.
+2. Describir el cambio conceptual que introduce una isla en la definicion del sistema cuya entropia se calcula.
+3. Relacionar islas, curva de Page y recuperacion de informacion en una misma narrativa semiclasica refinada.
 
 ## 12. Referencias y lecturas recomendadas
 

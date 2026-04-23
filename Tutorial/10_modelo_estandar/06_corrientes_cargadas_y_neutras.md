@@ -158,9 +158,9 @@ Las corrientes neutras aparecen en:
 
 ## Ejercicios sugeridos
 
-1. Explicar por que las corrientes cargadas del Modelo Estandar minimo son intrinsecamente quirales.
-2. Comparar la corriente neutra mediada por $Z$ con la corriente electromagnetica final.
-3. Describir como la mezcla electrodébil reorganiza las corrientes gauge primitivas en corrientes fisicas.
+1. Explicar por que las corrientes cargadas del Modelo Estandar minimo solo actuan sobre componentes izquierdas y como eso refleja la estructura gauge del sector debil.
+2. Comparar la corriente neutra mediada por $Z$ con la corriente electromagnetica indicando una diferencia fisica clara entre ambas.
+3. Describir como la mezcla electrodébil reorganiza las corrientes gauge primitivas en corrientes fisicas observables.
 
 ## 13. Referencias y lecturas recomendadas
 

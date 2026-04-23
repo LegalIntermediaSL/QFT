@@ -146,9 +146,9 @@ No hace falta dominar aun toda la maquinaria tecnica, pero si conviene registrar
 
 ## Ejercicios sugeridos
 
-1. Explicar por que una EFT necesita matching para heredar correctamente la informacion relevante de una teoria UV.
-2. Describir que tipo de huella fisica codifican los coeficientes de Wilson.
-3. Comparar matching y running como dos pasos distintos pero acoplados en el uso moderno de EFT.
+1. Explicar por que no basta con "adivinar" operadores efectivos y hace falta un procedimiento de matching entre la teoria UV y la EFT.
+2. Describir que informacion fisica sobre la teoria microscópica queda resumida en los coeficientes de Wilson.
+3. Comparar matching y running indicando que pregunta responde cada uno dentro del uso moderno de una EFT.
 
 ## 14. Referencias y lecturas recomendadas
 

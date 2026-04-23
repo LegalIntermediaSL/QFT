@@ -109,7 +109,7 @@ Este tipo de razonamiento muestra que muchas formas del lagrangiano no se eligen
 
 ## Cuaderno asociado
 - `../../Cuadernos/ejemplos/09_bilineales_y_proyectores_quirales.ipynb`: usarlo para comparar bilineales de Dirac, recordar la lectura fisica de corrientes vectoriales y axiales y fijar la intuicion de proyectores quirales.
-- `../../Cuadernos/problemas_resueltos/09_cuantizacion_del_campo_escalar.ipynb`: usarlo como referencia de contraste con el caso bosonico.
+- `../../Cuadernos/ejemplos/09_algebra_de_dirac_simbolica.ipynb`: usarlo para practicar identidades gamma y bilineales con apoyo simbolico.
 - `../../Cuadernos/problemas_resueltos/06_fundamentos_conceptuales.ipynb`: usarlo para reforzar el hilo entre simetria, campos y objetos admisibles.
 
 ## 10. Advertencias utiles
@@ -127,9 +127,9 @@ Este tipo de razonamiento muestra que muchas formas del lagrangiano no se eligen
 
 ## Ejercicios sugeridos
 
-1. Justificar por que las matrices gamma deben satisfacer una algebra compatible con la relatividad especial.
-2. Comparar el significado fisico de un bilineal escalar, vectorial y axial.
-3. Explicar por que clasificar bilineales ayuda a escribir interacciones relativistas consistentes.
+1. Verificar que la anticomutacion de las matrices gamma reproduce la metrica de Minkowski y explicar por que esa propiedad es necesaria para linealizar la relacion relativista de energia y momento.
+2. Clasificar los bilineales $\bar\psi\psi$, $\bar\psi\gamma^\mu\psi$ y $\bar\psi\gamma^\mu\gamma^5\psi$ e indicar que tipo de objeto de Lorentz representa cada uno.
+3. Justificar por que el acoplamiento $\bar\psi\gamma^\mu\psi\,A_\mu$ es natural para un campo gauge vectorial mientras que $\bar\psi\psi\,A_\mu$ no lo es.
 
 ## 12. Cierre
 

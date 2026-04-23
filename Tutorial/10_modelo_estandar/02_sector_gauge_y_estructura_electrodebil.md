@@ -164,9 +164,9 @@ Este es justamente el punto donde el lenguaje de grupos, derivada covariante y r
 
 ## Ejercicios sugeridos
 
-1. Comparar el significado fisico de los sectores gauge abeliano y no abeliano dentro del Modelo Estandar.
-2. Explicar por que la mezcla entre $W^3$ y $B$ es esencial para entender la emergencia del foton.
-3. Describir el papel organizador de la derivada covariante en la lectura del sector gauge.
+1. Comparar el sector gauge abeliano y los no abelianos del Modelo Estandar indicando en cual aparecen autoacoplamientos y por que.
+2. Explicar por que el foton no coincide con un campo gauge primitivo del lagrangiano y como emerge de la mezcla entre $W^3$ y $B$.
+3. Usar la derivada covariante para describir que informacion minima hace falta conocer de un multiplete fermionico para leer sus acoplamientos gauge.
 
 ## 12. Referencias y lecturas recomendadas
 
