@@ -184,8 +184,7 @@ Si hubiera que condensar el corazon de la QFT en una secuencia corta, seria algo
 7. Las interacciones se estudian con amplitudes, correladores y expansion perturbativa.
 8. La renormalizacion conecta parametros, escalas y observables.
 
-## 13. Preguntas guia para seguir estudiando
-
+## 13. Preguntas de comprobacion
 - Por que una sola particula relativista no basta para describir procesos reales de altas energias
 - Como se obtiene la ecuacion de movimiento de un campo a partir de una accion
 - Que distingue a bosones y fermiones en el formalismo cuantico

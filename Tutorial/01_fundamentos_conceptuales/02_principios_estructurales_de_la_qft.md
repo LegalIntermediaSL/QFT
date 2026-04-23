@@ -220,8 +220,7 @@ Una buena forma de usar este mapa es como checklist mental para cada nueva teori
 
 - Consulta los cuadernos asociados de este bloque en [Resumen del modulo](README.md) para reforzar el capitulo con practica guiada.
 
-## 11. Preguntas de estudio
-
+## 11. Preguntas de comprobacion
 - Por que una teoria relativista cuantica no puede fijar el numero de particulas desde el inicio.
 - Como se relaciona la simetria de Poincare con la clasificacion de particulas por masa y espin.
 - Que garantiza exactamente la microcausalidad.

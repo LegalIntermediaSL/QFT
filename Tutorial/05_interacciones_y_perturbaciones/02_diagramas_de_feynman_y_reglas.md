@@ -190,8 +190,7 @@ Tambien tienen un valor heuristico muy fuerte. Ayudan a anticipar:
 
 - Consulta los cuadernos asociados de este bloque en [Resumen del modulo](README.md) para reforzar el capitulo con practica guiada.
 
-## 14. Preguntas de control
-
+## 14. Preguntas de comprobacion
 - Que representa exactamente una linea interna.
 - De donde sale el propagador escalar.
 - Que informacion fisica y algebraica codifica un vertice.

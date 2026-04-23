@@ -163,8 +163,7 @@ Por eso QED es mucho mas que una teoria del electromagnetismo relativista: es ta
 
 - Consulta los cuadernos asociados de este bloque en [Resumen del modulo](README.md) para reforzar el capitulo con practica guiada.
 
-## 12. Preguntas de estudio
-
+## 12. Preguntas de comprobacion
 - Que campos aparecen en QED.
 - Como se lee el termino de interaccion en el lagrangiano.
 - Por que el acoplamiento electron-foton surge de la simetria gauge.

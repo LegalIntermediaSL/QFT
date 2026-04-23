@@ -146,8 +146,7 @@ Por ahora basta con registrar la idea: la accion puede tener mas simetria que el
 - Noether se formula de manera mas limpia para simetrias continuas, no para discretas.
 - Invariancia de la accion no significa inmovilidad trivial; significa estabilidad estructural bajo cierta transformacion.
 
-## 13. Preguntas de control
-
+## 13. Preguntas de comprobacion
 - Que diferencia hay entre simetria del espacio-tiempo e interna.
 - Como se pasa de una simetria continua a una corriente conservada.
 - Por que una simetria de fase global prepara el camino hacia teorias gauge.

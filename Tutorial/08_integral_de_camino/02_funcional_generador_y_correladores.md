@@ -168,8 +168,7 @@ La razon de introducir $W[J]$ es que el logaritmo elimina automaticamente diagra
 - El funcional generador es formal y suele requerir regularizacion en teorias interactivas.
 - No todo correlador se interpreta directamente como amplitud de scattering; para eso hace falta aun el puente LSZ.
 
-## 10. Preguntas de estudio
-
+## 10. Preguntas de comprobacion
 - Que papel cumple la fuente $J(x)$.
 - Como se obtienen correladores a partir de $Z[J]$.
 - Por que este formalismo conecta tan bien con teoria de perturbaciones.

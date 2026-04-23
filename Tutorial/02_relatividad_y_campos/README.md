@@ -9,8 +9,7 @@ Este modulo explica por que la Teoria Cuantica de Campos no es una decoracion so
 - [00 Prerrequisitos](../00_prerrequisitos/README.md), en especial relatividad especial minima y notacion tensorial.
 - [01 Fundamentos Conceptuales](../01_fundamentos_conceptuales/README.md), sobre todo la idea de campo y principios estructurales.
 
-## Preguntas que responde
-
+## Preguntas de comprobacion
 - Por que falla la intuicion de una sola particula relativista como fundamento general.
 - Que papel juega la relacion relativista entre energia, momento y masa.
 - Por que la localidad empuja a formular la teoria en terminos de campos.

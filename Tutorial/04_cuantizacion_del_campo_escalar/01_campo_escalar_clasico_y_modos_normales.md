@@ -134,8 +134,7 @@ No hay una ruptura total entre teoria clasica y cuantica. Lo que cambia no es la
 
 - Consulta los cuadernos asociados de este bloque en [Resumen del modulo](README.md) para reforzar el capitulo con practica guiada.
 
-## 9. Preguntas de control
-
+## 9. Preguntas de comprobacion
 - Como se obtiene la relacion de dispersion relativista a partir de la ecuacion de Klein-Gordon.
 - Por que la expansion en modos es natural para un campo libre.
 - En que sentido cada modo se comporta como un oscilador armonico.

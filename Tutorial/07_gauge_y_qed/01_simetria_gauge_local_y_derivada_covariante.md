@@ -135,8 +135,7 @@ Esto explica por que las teorias gauge ocupan un lugar central en la fisica de p
 
 - Consulta los cuadernos asociados de este bloque en [Resumen del modulo](README.md) para reforzar el capitulo con practica guiada.
 
-## 11. Preguntas de estudio
-
+## 11. Preguntas de comprobacion
 - Por que una simetria global no basta para introducir un campo gauge.
 - Que problema aparece al hacer local una fase.
 - Por que la derivada covariante resuelve ese problema.

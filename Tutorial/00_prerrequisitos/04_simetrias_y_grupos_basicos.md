@@ -132,8 +132,7 @@ La intuicion minima que conviene retener es esta: una simetria gauge local fuerz
 
 - Consulta los cuadernos asociados de este bloque en [Resumen del modulo](README.md) para reforzar el capitulo con practica guiada.
 
-## 11. Preguntas de estudio
-
+## 11. Preguntas de comprobacion
 - Que diferencia hay entre simetria discreta y continua.
 - Que es un generador infinitesimal.
 - Por que las representaciones importan para los campos cuanticos.

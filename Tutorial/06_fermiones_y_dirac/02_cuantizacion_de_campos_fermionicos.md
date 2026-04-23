@@ -121,8 +121,7 @@ Sin esta cuantizacion no podria construirse correctamente:
 
 - Consulta los cuadernos asociados de este bloque en [Resumen del modulo](README.md) para reforzar el capitulo con practica guiada.
 
-## 10. Preguntas de estudio
-
+## 10. Preguntas de comprobacion
 - Por que un campo fermionico necesita anticonmutadores.
 - Como aparecen particulas y antiparticulas en la expansion del campo de Dirac.
 - De que manera el principio de exclusion emerge del formalismo.

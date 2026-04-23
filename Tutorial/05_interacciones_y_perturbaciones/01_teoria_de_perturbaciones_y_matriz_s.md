@@ -191,8 +191,7 @@ En ese ejemplo ya se ve la logica completa:
 - La matriz $S$ requiere cuidado conceptual cuando no hay estados asintoticos libres bien definidos.
 - La serie de Dyson es una expansion formal, no una licencia para ignorar los dominios de validez.
 
-## 14. Preguntas de control
-
+## 14. Preguntas de comprobacion
 - Que papel cumple la separacion entre $\mathcal{L}_0$ y $\mathcal{L}_{\text{int}}$.
 - Por que la teoria libre es la base indispensable del formalismo perturbativo.
 - Que significa que los estados sean asintoticamente libres.

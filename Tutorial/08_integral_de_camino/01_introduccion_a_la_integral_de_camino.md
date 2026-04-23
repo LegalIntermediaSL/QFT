@@ -205,8 +205,7 @@ Una manera compacta de resumir la relacion es:
 - La expresion de Minkowski con $e^{iS}$ es muy oscilatoria. En muchos contextos conviene rotar a tiempo imaginario para obtener integrales mejor comportadas.
 - "Sumar todas las historias" no significa que todas tengan igual importancia observable; la interferencia sigue siendo la clave.
 
-## 10. Preguntas de estudio
-
+## 10. Preguntas de comprobacion
 - Que cambia al pasar de trayectoria clasica unica a suma sobre historias.
 - Por que el peso es $e^{iS}$.
 - En que sentido una integral funcional generaliza una integral ordinaria.

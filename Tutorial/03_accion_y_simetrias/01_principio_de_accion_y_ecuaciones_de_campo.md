@@ -159,8 +159,7 @@ Es el punto donde se conectan casi todos los lenguajes que vendran despues: camp
 
 - Consulta los cuadernos asociados de este bloque en [Resumen del modulo](README.md) para reforzar el capitulo con practica guiada.
 
-## 11. Preguntas de control
-
+## 11. Preguntas de comprobacion
 - Que se gana al pasar de ecuaciones de movimiento directas a una formulacion por accion.
 - Como se obtiene Euler-Lagrange para campos.
 - Que informacion fisica se puede leer directamente de una lagrangiana simple.

@@ -33,8 +33,7 @@ Al finalizar este módulo, el estudiante debería:
 - [Punto clave 2]
 - [Punto clave 3]
 
-## Preguntas de estudio
-
+## Preguntas de comprobacion
 - [Pregunta conceptual 1]
 - [Pregunta conceptual 2]
 

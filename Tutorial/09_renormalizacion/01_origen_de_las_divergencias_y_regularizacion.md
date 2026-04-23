@@ -100,8 +100,7 @@ Las UV hablan de distancias cortas y sensibilidad a altas energias. Las IR habla
 
 - Consulta los cuadernos asociados de este bloque en [Resumen del modulo](README.md) para reforzar el capitulo con practica guiada.
 
-## 10. Preguntas de estudio
-
+## 10. Preguntas de comprobacion
 - Por que los lazos introducen integrales ultravioletas.
 - Que significa regularizar una integral divergente.
 - Por que regularizacion y renormalizacion no son exactamente lo mismo.

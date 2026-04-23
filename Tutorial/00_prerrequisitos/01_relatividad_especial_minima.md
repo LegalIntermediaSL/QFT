@@ -171,8 +171,7 @@ Todo esto empuja de forma natural hacia el lenguaje de campos cuanticos.
 
 - Consulta los cuadernos asociados de este bloque en [Resumen del modulo](README.md) para reforzar el capitulo con practica guiada.
 
-## 11. Preguntas de estudio
-
+## 11. Preguntas de comprobacion
 - Que significa que el intervalo relativista sea invariante.
 - Como se distingue una separacion de tipo espacio de una de tipo tiempo.
 - Por que la ecuacion $E^2=\mathbf{p}^2+m^2$ es tan importante para el nacimiento de la QFT.

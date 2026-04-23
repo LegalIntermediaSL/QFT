@@ -186,8 +186,7 @@ Esta reformulacion no es solo mas general. Es la estructura correcta si queremos
 
 - Consulta los cuadernos asociados de este bloque en [Resumen del modulo](README.md) para reforzar el capitulo con practica guiada.
 
-## 15. Preguntas de control
-
+## 15. Preguntas de comprobacion
 - Que supuesto de la mecanica cuantica ordinaria deja de ser sostenible en fisica relativista de altas energias.
 - Por que la ecuacion de Klein-Gordon no debe entenderse ingenuamente como ecuacion de una sola particula con interpretacion probabilistica usual.
 - Por que ni siquiera la ecuacion de Dirac restaura una teoria fundamental de una sola particula.

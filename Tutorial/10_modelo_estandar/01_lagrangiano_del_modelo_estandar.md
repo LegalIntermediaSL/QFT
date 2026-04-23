@@ -112,8 +112,7 @@ Tambien prepara una intuicion muy util para EFT: una vez que el lagrangiano se e
 - `../../Cuadernos/ejemplos/07_modelo_estandar_panorama.ipynb`: usarlo para recorrer la descomposicion del lagrangiano por bloques.
 - `../../Cuadernos/problemas_resueltos/11_modelo_estandar_estructura.ipynb`: usarlo para repasar preguntas estructurales del modulo.
 
-## 7. Preguntas de estudio
-
+## 7. Preguntas de comprobacion
 - Que papel cumple cada factor del grupo $SU(3)_c \times SU(2)_L \times U(1)_Y$.
 - Por que la interaccion debil es quiral.
 - Como evita el mecanismo de Higgs introducir masas gauge a mano.

@@ -204,8 +204,7 @@ Una forma realista de aprender esta notacion no es memorizarla toda de golpe, si
 
 - Consulta los cuadernos asociados de este bloque en [Resumen del modulo](README.md) para reforzar el capitulo con practica guiada.
 
-## 12. Preguntas de estudio
-
+## 12. Preguntas de comprobacion
 - Como se suben y bajan indices.
 - Que representa el operador $\Box$.
 - Por que las convenciones de metrica importan aunque no cambien la fisica.

@@ -187,8 +187,7 @@ En muchos contextos no gravitatorios importan solo diferencias de energia, y por
 
 - Consulta los cuadernos asociados de este bloque en [Resumen del modulo](README.md) para reforzar el capitulo con practica guiada.
 
-## 11. Preguntas de estudio
-
+## 11. Preguntas de comprobacion
 - Por que los operadores $a$ y $a^\dagger$ simplifican tanto el problema.
 - Que representa el operador numero.
 - Por que el vacio del oscilador no tiene energia cero.

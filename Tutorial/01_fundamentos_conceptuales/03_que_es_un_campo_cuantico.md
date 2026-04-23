@@ -200,8 +200,7 @@ Una forma breve de resumir la idea es esta:
 
 - Consulta los cuadernos asociados de este bloque en [Resumen del modulo](README.md) para reforzar el capitulo con practica guiada.
 
-## 12. Preguntas de estudio
-
+## 12. Preguntas de comprobacion
 - Por que la relatividad especial obliga a abandonar una teoria de particulas con numero fijo.
 - En que sentido un campo cuantico es mas fundamental que una particula.
 - Por que un campo libre puede verse como un conjunto infinito de osciladores armonicos.

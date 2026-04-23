@@ -151,8 +151,7 @@ La arquitectura que faltaba en la mecanica cuantica de una sola particula aparec
 
 Esa es una de las victorias conceptuales mas limpias de la QFT. No forzamos procesos de creacion y aniquilacion dentro de un formalismo inadecuado: trabajamos directamente en un espacio de estados donde tales procesos tienen cabida desde el principio.
 
-## 11. Advertencias frecuentes
-
+## 11. Advertencias utiles
 - El vacio cuantico no es un objeto clasico vacio de contenido.
 - Los operadores de creacion y aniquilacion no describen mecanismos mecanicos literales.
 - Un campo cuantico no es una "onda de probabilidad" de una particula unica.
@@ -163,8 +162,7 @@ Esa es una de las victorias conceptuales mas limpias de la QFT. No forzamos proc
 
 - Consulta los cuadernos asociados de este bloque en [Resumen del modulo](README.md) para reforzar el capitulo con practica guiada.
 
-## 12. Preguntas de control
-
+## 12. Preguntas de comprobacion
 - Como se pasa de las relaciones canonicas del campo al algebra de los operadores modales.
 - Que es exactamente el espacio de Fock.
 - Por que el vacio es el estado base y no la ausencia trivial de todo.

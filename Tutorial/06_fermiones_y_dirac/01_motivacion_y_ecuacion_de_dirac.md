@@ -189,8 +189,7 @@ La ecuacion de Dirac cumple varios papeles simultaneos:
 
 - Consulta los cuadernos asociados de este bloque en [Resumen del modulo](README.md) para reforzar el capitulo con practica guiada.
 
-## 12. Preguntas de estudio
-
+## 12. Preguntas de comprobacion
 - Por que Dirac quiso una ecuacion lineal en derivadas.
 - Que significa que las matrices gamma satisfacen una algebra de Clifford.
 - Por que $\psi$ debe ser un espinor y no un escalar.

@@ -142,8 +142,7 @@ el grupo de renormalizacion permite absorber sistematicamente esa dependencia en
 
 - Consulta los cuadernos asociados de este bloque en [Resumen del modulo](README.md) para reforzar el capitulo con practica guiada.
 
-## 11. Preguntas de estudio
-
+## 11. Preguntas de comprobacion
 - Que diferencia hay entre parametro desnudo y parametro fisico.
 - Que papel cumplen los contraterminos.
 - Por que los acoplamientos dependen de la escala.

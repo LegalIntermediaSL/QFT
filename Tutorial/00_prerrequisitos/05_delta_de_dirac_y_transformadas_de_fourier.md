@@ -160,8 +160,7 @@ En una caja de volumen finito, el continuo se discretiza y la delta de Dirac pas
 
 - Consulta los cuadernos asociados de este bloque en [Resumen del modulo](README.md) para reforzar el capitulo con practica guiada.
 
-## 11. Preguntas de estudio
-
+## 11. Preguntas de comprobacion
 - Que significa que la delta de Dirac sea una distribucion.
 - Como se relacionan la delta y la transformada de Fourier.
 - Por que la conservacion del momento aparece naturalmente como una delta.

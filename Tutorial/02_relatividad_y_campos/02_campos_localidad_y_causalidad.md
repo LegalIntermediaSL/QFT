@@ -150,8 +150,7 @@ Esta es una de las sutilezas mas importantes del tema: la teoria cuantica puede 
 
 - Consulta los cuadernos asociados de este bloque en [Resumen del modulo](README.md) para reforzar el capitulo con practica guiada.
 
-## 15. Preguntas de estudio
-
+## 15. Preguntas de comprobacion
 - Por que la localidad en QFT no debe confundirse con una ausencia total de correlaciones a distancia.
 - Que diferencia conceptual hay entre conmutacion nula a separacion espacial y ausencia de entrelazamiento.
 - Por que la causalidad microfisica toma forma de conmutadores para bosones y anticonmutadores para fermiones.
