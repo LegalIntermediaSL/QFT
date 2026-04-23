@@ -5,6 +5,9 @@
 **Tiempo estimado:** 18-25 min  
 **Prerequisitos recomendados:** [Modulo anterior](../10_modelo_estandar/README.md) · [Resumen del modulo](README.md)
 
+## Proposito
+
+Este capitulo abre el modulo mostrando que el entrelazamiento, las matrices de densidad reducidas y la informacion accesible por subregiones ya forman parte del lenguaje natural de la QFT.
 
 ## 1. Por que este tema pertenece a un tutorial de QFT
 

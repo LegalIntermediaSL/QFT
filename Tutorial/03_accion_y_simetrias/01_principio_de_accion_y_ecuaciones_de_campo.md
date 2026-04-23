@@ -5,6 +5,9 @@
 **Tiempo estimado:** 25-35 min  
 **Prerequisitos recomendados:** [Modulo anterior](../02_relatividad_y_campos/README.md) · [Resumen del modulo](README.md)
 
+## Proposito
+
+Este capitulo presenta la formulacion por accion como lenguaje base de la teoria de campos y prepara el paso desde la dinamica clasica hacia ecuaciones de campo compatibles con localidad y covariancia.
 
 ## 1. Introduccion
 

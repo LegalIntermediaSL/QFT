@@ -5,6 +5,9 @@
 **Tiempo estimado:** 25-35 min  
 **Prerequisitos recomendados:** [Campo Escalar Clasico y Modos Normales](01_campo_escalar_clasico_y_modos_normales.md) · [Resumen del modulo](README.md)
 
+## Proposito
+
+Este capitulo desarrolla la cuantizacion canonica del campo escalar y explica como emerge el espacio de Fock como lenguaje natural para una teoria con numero variable de particulas.
 
 ## 1. Introduccion
 

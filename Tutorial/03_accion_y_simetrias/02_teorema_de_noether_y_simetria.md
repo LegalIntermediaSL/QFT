@@ -5,6 +5,9 @@
 **Tiempo estimado:** 25-35 min  
 **Prerequisitos recomendados:** [Principio de Accion y Ecuaciones de Campo](01_principio_de_accion_y_ecuaciones_de_campo.md) · [Resumen del modulo](README.md)
 
+## Proposito
+
+Este capitulo muestra como las simetrias dejan de ser una intuicion estetica y se convierten en una herramienta estructural para derivar corrientes conservadas y organizar la construccion de teorias.
 
 ## 1. Introduccion
 

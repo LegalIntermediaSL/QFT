@@ -5,6 +5,9 @@
 **Tiempo estimado:** 25-35 min  
 **Prerequisitos recomendados:** [Teoria de Perturbaciones y Matriz S](01_teoria_de_perturbaciones_y_matriz_s.md) · [Resumen del modulo](README.md)
 
+## Proposito
+
+Este capitulo traduce la expansion perturbativa en una sintaxis diagramatica operativa y aclara que los diagramas de Feynman organizan amplitudes, no trayectorias microscopicas literales.
 
 ## 1. Introduccion
 

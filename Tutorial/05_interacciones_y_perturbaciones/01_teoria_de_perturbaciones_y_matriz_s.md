@@ -5,6 +5,9 @@
 **Tiempo estimado:** 25-35 min  
 **Prerequisitos recomendados:** [Modulo anterior](../04_cuantizacion_del_campo_escalar/README.md) · [Resumen del modulo](README.md)
 
+## Proposito
+
+Este capitulo introduce la estrategia perturbativa y la matriz S como puente entre la teoria libre que ya controlamos y el calculo de procesos fisicos con interacciones.
 
 ## 1. Introduccion
 

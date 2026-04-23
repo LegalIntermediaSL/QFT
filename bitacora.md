@@ -384,3 +384,27 @@ El repositorio quedo mas limpio y legible. Ahora existe una separacion clara ent
 - Revisar `_borradores/` modulo por modulo para detectar si alguna variante mejora al texto publico.
 - Continuar la homogeneizacion editorial de los modulos `06` a `12`, sobre todo en ejercicios, referencias y derivaciones.
 - Mejorar el historial de commits para que describa con mas precision cambios conceptuales y no solo cambios operativos.
+
+## Entrada de validacion editorial minima
+
+### Fecha
+
+2026-04-23
+
+### Objetivo
+
+Extender la validacion automatica del repositorio para comprobar no solo enlaces y duplicados editoriales, sino tambien una estructura minima comun en los capitulos publicos del recorrido principal.
+
+### Trabajo realizado
+
+- Se amplio `check_links.py` para revisar que los capitulos numerados del tutorial tengan titulo principal, bloque de metadatos, `Proposito` u `Objetivo`, referencias y navegacion final.
+- Se completaron con una seccion `Proposito` diez capitulos que todavia no seguian esa estructura minima.
+- Se documento la regla en `CONTRIBUTING.md`.
+
+### Resultado
+
+La validacion local y en CI ya no protege solo contra errores tecnicos evidentes. Tambien ayuda a sostener una capa basica de coherencia editorial entre capitulos del recorrido principal.
+
+### Siguiente mejora natural
+
+- Separar en el futuro validaciones de tipo `error` y `warning` para poder endurecer la plantilla sin bloquear paginas legitimas de referencia o experimentacion controlada.

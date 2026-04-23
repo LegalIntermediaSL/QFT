@@ -9,6 +9,27 @@ HEADING_RE = re.compile(r"^(#{1,6})\s+(.*)$", re.MULTILINE)
 IGNORED_SCHEMES = ("http://", "https://", "mailto:", "tel:", "data:")
 IGNORED_PATH_PARTS = {"_borradores"}
 DUPLICATE_NAME_RE = re.compile(r" \d+\.md$")
+MODULE_DIR_RE = re.compile(r"^\d+_")
+CHAPTER_FILE_RE = re.compile(r"^\d+_.*\.md$")
+EDITORIAL_RULES = (
+    ("titulo_h1", re.compile(r"^#\s+\S+", re.MULTILINE), "titulo principal H1"),
+    ("metadata", re.compile(r"^\*\*Nivel:\*\*", re.MULTILINE), "bloque de metadatos"),
+    (
+        "purpose",
+        re.compile(r"^##\s+(?:\d+\.\s+)?(?:Proposito|Objetivo)\b", re.MULTILINE),
+        "seccion de Proposito u Objetivo",
+    ),
+    (
+        "references",
+        re.compile(r"^##\s+(?:\d+\.\s+)?Referencias", re.MULTILINE),
+        "seccion de Referencias",
+    ),
+    (
+        "navigation",
+        re.compile(r"^##\s+Navegacion del tutorial\b", re.MULTILINE),
+        "seccion de Navegacion del tutorial",
+    ),
+)
 
 
 def strip_code_blocks(content: str) -> str:
@@ -61,6 +82,35 @@ def find_editorial_duplicates() -> list[str]:
         if DUPLICATE_NAME_RE.search(md_file.name):
             duplicate_paths.append(str(md_file))
     return duplicate_paths
+
+
+def iter_public_chapter_files() -> list[Path]:
+    chapter_files: list[Path] = []
+    for md_file in sorted(Path("Tutorial").rglob("*.md")):
+        if any(part in IGNORED_PATH_PARTS for part in md_file.parts):
+            continue
+        if md_file.name == "README.md":
+            continue
+        parts = md_file.parts
+        if len(parts) < 3:
+            continue
+        _, module_dir, filename = parts[:3]
+        if not MODULE_DIR_RE.match(module_dir):
+            continue
+        if not CHAPTER_FILE_RE.match(filename):
+            continue
+        chapter_files.append(md_file)
+    return chapter_files
+
+
+def validate_editorial_consistency() -> list[dict[str, str]]:
+    issues: list[dict[str, str]] = []
+    for md_file in iter_public_chapter_files():
+        content = md_file.read_text(encoding="utf-8")
+        for _, pattern, description in EDITORIAL_RULES:
+            if not pattern.search(content):
+                issues.append({"file": str(md_file), "missing": description})
+    return issues
 
 
 def check_links() -> int:
@@ -117,6 +167,15 @@ def check_links() -> int:
         print(
             "   Mueve estas variantes a `Tutorial/_borradores/` o renómbralas con una convención inequívoca."
         )
+        return 1
+
+    editorial_issues = validate_editorial_consistency()
+    if editorial_issues:
+        print(
+            f"❌ Se encontraron {len(editorial_issues)} incumplimientos de consistencia editorial:"
+        )
+        for issue in editorial_issues:
+            print(f"  - En {issue['file']}: falta {issue['missing']}")
         return 1
 
     if broken_links:

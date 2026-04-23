@@ -24,6 +24,13 @@ Cada nuevo módulo debe seguir el archivo [template_modulo.md](Tutorial/template
 - Desarrollo teórico.
 - Preguntas de estudio y Ejercicios.
 
+Para los capítulos públicos del recorrido principal, la validación editorial comprueba además una estructura mínima:
+- título principal `#`;
+- bloque de metadatos (`Nivel`, `Dificultad`, `Tiempo estimado`, `Prerequisitos`);
+- sección de `Proposito` u `Objetivo`;
+- sección de referencias;
+- sección final de navegación.
+
 ### 3. Diagramas Mermaid
 - Prefiere diagramas detallados (`flowchart TD`) para el flujo conceptual.
 - Para reglas de Feynman de QED, utiliza los estilos definidos en `Imagenes/diagramas/qed_rules.md`.

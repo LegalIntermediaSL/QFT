@@ -5,6 +5,9 @@
 **Tiempo estimado:** 25-35 min  
 **Prerequisitos recomendados:** [Modulo anterior](../03_accion_y_simetrias/README.md) · [Resumen del modulo](README.md)
 
+## Proposito
+
+Este capitulo fija el laboratorio clasico del campo escalar libre para que la cuantizacion posterior surja sobre una base clara de ecuaciones de movimiento, modos normales y estructura relativista.
 
 ## 1. Introduccion
 

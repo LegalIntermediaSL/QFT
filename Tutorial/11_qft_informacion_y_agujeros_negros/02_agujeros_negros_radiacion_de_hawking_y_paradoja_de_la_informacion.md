@@ -5,6 +5,9 @@
 **Tiempo estimado:** 18-25 min  
 **Prerequisitos recomendados:** [QFT, informacion y entrelazamiento](01_qft_informacion_y_entrelazamiento.md) · [Resumen del modulo](README.md)
 
+## Proposito
+
+Este capitulo presenta la radiacion de Hawking y la paradoja de la informacion como consecuencia de llevar el lenguaje de QFT a fondos con horizonte dentro de una aproximacion semiclasica.
 
 ## 1. El escenario
 

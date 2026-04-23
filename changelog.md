@@ -18,8 +18,10 @@ El formato sigue una adaptacion simple de Keep a Changelog y usa versionado sema
 - Se limpio el arbol canonico de `Tutorial/` moviendo 26 variantes de capitulos con sufijo ` 2.md` a `Tutorial/_borradores/`.
 - `mkdocs.yml` ahora excluye `Tutorial/_borradores/` como espacio editorial no publico.
 - `check_links.py` ahora ignora `_borradores/` para que la validacion refleje solo el contenido publicado.
+- `check_links.py` ahora valida tambien una estructura editorial minima en los capitulos numerados del recorrido principal.
 - `CONTRIBUTING.md` documenta la nueva convencion para borradores y variantes editoriales.
 - `README.md`, `bitacora.md` y `changelog.md` se sincronizan con la reorganizacion reciente del repositorio.
+- Se añadieron secciones explicitas de `Proposito` a capitulos fundacionales y avanzados que todavia no seguian la plantilla editorial minima.
 
 ### Fixed
 

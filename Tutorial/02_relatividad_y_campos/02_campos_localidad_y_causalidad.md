@@ -5,6 +5,9 @@
 **Tiempo estimado:** 25-35 min  
 **Prerequisitos recomendados:** [Choque Entre Mecanica Cuantica y Relatividad Especial](01_choque_entre_mq_y_relatividad.md) · [Resumen del modulo](README.md)
 
+## Proposito
+
+Este capitulo explica por que el lenguaje de campos locales organiza de forma natural la causalidad relativista, la estructura de observables locales y la microcausalidad en QFT.
 
 ## 1. Introduccion
 

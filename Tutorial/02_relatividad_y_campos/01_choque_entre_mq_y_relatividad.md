@@ -5,6 +5,9 @@
 **Tiempo estimado:** 25-35 min  
 **Prerequisitos recomendados:** [Modulo anterior](../01_fundamentos_conceptuales/README.md) · [Resumen del modulo](README.md)
 
+## Proposito
+
+Este capitulo introduce el problema conceptual que hace necesaria la QFT: la tension entre una mecanica cuantica pensada para numero fijo de particulas y una relatividad especial que permite conversion entre energia y masa.
 
 ## 1. Punto de partida historico y conceptual
 
