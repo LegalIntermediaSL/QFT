@@ -142,13 +142,19 @@ Tambien deja claro por que los calculos perturbativos suelen tener dos capas:
 - Que significa amputar una linea externa.
 - Por que LSZ ayuda a entender el origen de las reglas de Feynman.
 
-## 13. Referencias y lecturas recomendadas
+## 13. Ejercicios sugeridos
+
+1. Explicar con tus palabras por que una amplitud observable no coincide sin mas con el correlador completo.
+2. Describir que informacion fisica se extrae al aislar polos de una funcion de Green.
+3. Justificar por que la amputacion de lineas externas no es una operacion arbitraria sino parte del paso hacia el scattering fisico.
+
+## 14. Referencias y lecturas recomendadas
 
 - Base: Peskin y Schroeder, relacion entre correladores y scattering.
 - Complementaria: Tong, discusion introductoria del puente entre funciones de Green y amplitudes.
 - Profundizacion: textos formales de QFT sobre representacion de Lehmann y reduccion LSZ.
 
-## 14. Cierre
+## 15. Cierre
 
 LSZ vuelve inteligible la relacion entre los dos idiomas centrales del curso: correladores y amplitudes. Sin esta pieza, las reglas de Feynman pueden parecer una receta grafica. Con ella, se entiende que el calculo perturbativo es una manera organizada de extraer del correlador el nucleo amputado que conecta con el scattering fisico.
 

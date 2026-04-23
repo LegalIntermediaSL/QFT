@@ -141,20 +141,26 @@ No hay una ruptura total entre teoria clasica y cuantica. Lo que cambia no es la
 - En que sentido cada modo se comporta como un oscilador armonico.
 - Que informacion aporta la densidad hamiltoniana.
 
-## 10. Advertencias utiles
+## 10. Ejercicios sugeridos
+
+1. Verificar que una solucion de onda plana de Klein-Gordon satisface la relacion $E^2=\mathbf{p}^2+m^2$.
+2. Explicar por que la expansion en modos separa el problema dinamico en una familia de osciladores.
+3. Comparar el papel del hamiltoniano clasico del campo con el de un conjunto discreto de osciladores armonicos.
+
+## 11. Advertencias utiles
 
 - La expansion en modos de un campo libre no es una aproximacion, sino una descomposicion estructural.
 - Un modo clasico no es todavia una particula: la interpretacion particula aparece tras cuantizar.
 - La condicion on-shell no significa que toda configuracion clasica sea una onda plana unica.
 - La ecuacion de Klein-Gordon clasica no debe confundirse con una teoria completa de una sola particula relativista.
 
-## 11. Cierre
+## 12. Cierre
 
 La teoria clasica del campo escalar libre ya contiene en germen casi todo lo necesario para la cuantizacion. El paso cuantico no inventa una estructura completamente nueva; reorganiza y promueve a operadores la estructura modal que ya estaba presente.
 
 Esa continuidad conceptual es muy valiosa. Una vez que el estudiante ve al campo libre como una familia de modos armonicos, la cuantizacion deja de parecer un salto misterioso y se convierte en una extension natural del analisis clasico.
 
-## 12. Referencias y lecturas recomendadas
+## 13. Referencias y lecturas recomendadas
 
 - Base: Srednicki, campo escalar libre y expansion en modos.
 - Complementaria: Tong, lectura pedagogica de Klein-Gordon y osciladores.

@@ -166,11 +166,17 @@ Es el punto donde se conectan casi todos los lenguajes que vendran despues: camp
 - Que informacion fisica se puede leer directamente de una lagrangiana simple.
 - Por que la accion sirve tanto en el nivel clasico como en el cuantico.
 
-## 12. Cierre
+## 12. Ejercicios sugeridos
+
+1. Derivar la ecuacion de Euler-Lagrange para un campo escalar real a partir de una variacion explicita de la accion.
+2. Identificar, en una lagrangiana escalar simple, que terminos pertenecen a la parte libre y cuales a la interaccion.
+3. Explicar por que la densidad lagrangiana debe transformarse como escalar relativista.
+
+## 13. Cierre
 
 La accion es el punto de condensacion de la teoria. No es simplemente una forma compacta de escribir la dinamica: es el objeto que unifica localidad, simetria y estructura cuantizable en un mismo marco.
 
-## 13. Referencias y lecturas recomendadas
+## 14. Referencias y lecturas recomendadas
 
 - Base: Srednicki, formulacion lagrangiana y accion.
 - Complementaria: Tong, accion y ecuaciones de Euler-Lagrange para campos.

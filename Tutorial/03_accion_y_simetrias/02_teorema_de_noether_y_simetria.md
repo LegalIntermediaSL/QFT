@@ -153,11 +153,17 @@ Por ahora basta con registrar la idea: la accion puede tener mas simetria que el
 - Por que una simetria de fase global prepara el camino hacia teorias gauge.
 - En que sentido las simetrias sirven para construir teorias y no solo para describirlas.
 
-## 14. Cierre
+## 14. Ejercicios sugeridos
+
+1. Mostrar de forma esquematica como una simetria global de fase conduce a una corriente conservada.
+2. Comparar una simetria interna continua con una simetria de traslacion y describir que carga asociada produce cada una.
+3. Explicar por que el teorema de Noether es una guia de construccion de teorias y no solo una herramienta de diagnostico posterior.
+
+## 15. Cierre
 
 El teorema de Noether enseña una de las lecciones mas profundas de la fisica teorica: la conservacion es la sombra dinamica de la simetria. En QFT, esa conexion no es perifrica; es uno de los hilos que organizan casi toda la disciplina.
 
-## 15. Referencias y lecturas recomendadas
+## 16. Referencias y lecturas recomendadas
 
 - Base: Tong, Noether y corrientes conservadas.
 - Complementaria: Srednicki, formulacion lagrangiana de simetrias continuas.

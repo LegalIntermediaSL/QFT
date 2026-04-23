@@ -170,13 +170,19 @@ Esa es una de las victorias conceptuales mas limpias de la QFT. No forzamos proc
 - Por que el vacio es el estado base y no la ausencia trivial de todo.
 - En que sentido una particula es una excitacion del campo.
 
-## 13. Cierre
+## 13. Ejercicios sugeridos
+
+1. Explicar como la promocion de coeficientes modales a operadores permite describir numero variable de particulas.
+2. Justificar por que el vacio de Fock no debe confundirse con un vacio clasico sin estructura.
+3. Describir la diferencia entre un operador de creacion de momento definido y el campo local $\phi(x)$.
+
+## 14. Cierre
 
 La cuantizacion canonica del campo escalar hace visible la logica profunda de la QFT: no cuantizamos particulas individuales para luego permitir que aparezcan mas, sino que cuantizamos campos cuyos modos admiten excitaciones discretas. Esas excitaciones son las particulas.
 
 Este capitulo es el puente natural entre el oscilador armonico cuantico y la teoria de scattering. Una vez entendido, reglas de Feynman, correladores y amplitudes dejan de parecer piezas separadas.
 
-## 14. Referencias y lecturas recomendadas
+## 15. Referencias y lecturas recomendadas
 
 - Base: Peskin y Schroeder, cuantizacion canonica del campo escalar.
 - Complementaria: Srednicki, espacio de Fock y operadores modales.

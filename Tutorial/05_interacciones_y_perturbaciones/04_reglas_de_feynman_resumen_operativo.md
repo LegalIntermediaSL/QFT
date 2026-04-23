@@ -131,11 +131,21 @@ Su mejor uso es casi el de una checklist mental. Si al enfrentar un calculo nuev
 - Que diferencia hay entre linea externa, linea interna y propagador amputado.
 - Por que este modulo no basta todavia para tratar fermiones o gauge con comodidad.
 
-## 12. Referencias y lecturas recomendadas
+## 12. Ejercicios sugeridos
+
+1. Esquematizar el procedimiento minimo para pasar de un lagrangiano escalar a un diagrama de Feynman de arbol sencillo.
+2. Explicar por que dos diagramas del mismo orden en el acoplamiento deben sumarse antes de interpretar la amplitud total.
+3. Distinguir en un ejemplo elemental que factores proceden del propagador, cuales del vertice y cuales de las lineas externas.
+
+## 13. Referencias y lecturas recomendadas
 
 - Base: Tong, matriz $S$, diagramas y amplitudes.
 - Complementaria: Peskin y Schroeder, reglas de Feynman a partir del lagrangiano.
 - Profundizacion: Schwartz, enfoque moderno y organizado de calculo perturbativo.
+
+## 14. Cierre
+
+Este resumen operativo funciona mejor cuando se lee como una tabla de control despues de haber entendido el origen conceptual de propagadores, vertices, LSZ y amplitudes. Su valor no esta en reemplazar la teoria, sino en volverla practicable al enfrentar calculos concretos.
 
 
 ---
