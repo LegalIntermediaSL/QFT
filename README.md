@@ -82,6 +82,11 @@ El contenido tecnico ya supera una simple fase de arranque. El repositorio conti
 - [Notas/](Notas/README.md): deposito de PDFs, apuntes, resumenes y referencias para ampliar el tutorial.
 - [Imagenes/](Imagenes/README.md): recursos visuales para diagramas, figuras y material grafico del proyecto.
 
+Ademas, el repositorio distingue ahora entre contenido publicado y variantes editoriales en revision:
+
+- `Tutorial/`: version canonica y publica del tutorial.
+- `Tutorial/_borradores/`: variantes, resúmenes alternativos y versiones en revision que no forman parte del sitio publico.
+
 ## Instalación y Uso
 
 Para trabajar con el proyecto conviene separar dos capas:
@@ -166,6 +171,13 @@ mkdocs build --clean
 El proyecto ya ofrece una primera version navegable del recorrido principal. En este momento existen modulos desde `00_prerrequisitos` hasta `12_teorias_de_campo_efectivas`, junto con cuadernos asociados, apendices y una bibliografia comentada.
 
 La cobertura sigue siendo desigual: los bloques `00` a `05` estan mas consolidados como nucleo pedagogico, mientras que `06` a `12` ya tienen estructura util pero todavia admiten ampliaciones importantes en derivaciones, referencias por documento, ejercicios y ejemplos de calculo.
+
+En la reorganizacion editorial mas reciente se limpiaron del arbol principal varias variantes de capitulos que convivian con la version publica mediante nombres como ` 2.md`. Esas versiones no se perdieron: quedaron archivadas en `Tutorial/_borradores/` para facilitar comparacion, rescate o futura promocion a contenido canonico.
+
+El repositorio tambien esta sincronizado con GitHub y mantiene una validacion local minima antes de publicar:
+
+- `python check_links.py`
+- `mkdocs build --clean`
 
 ## Como contribuir
 

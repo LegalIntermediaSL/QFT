@@ -343,3 +343,44 @@ Lanzar la fase de expansión del tutorial centrada en profundidad técnica de fe
 - Redactar el contenido de Espinores de Weyl y Majorana.
 - Abrir el módulo de Teorías de Campo Efectivas (EFT).
 - Desarrollar el notebook de álgebra de Dirac con SymPy.
+
+## Entrada de limpieza editorial y sincronizacion con GitHub
+
+### Fecha
+
+2026-04-23
+
+### Objetivo
+
+Reducir ambiguedad en el repositorio, separar con claridad el contenido publicado del material alternativo y dejar la documentacion de seguimiento alineada con el estado real del proyecto.
+
+### Situacion detectada
+
+- El arbol principal de `Tutorial/` contenia varias variantes de capitulos con sufijos como ` 2.md`.
+- Esas variantes no rompian MkDocs porque estaban excluidas del build, pero complicaban la lectura del repositorio y la identificacion de la version canonica.
+- La validacion local y la documentacion principal todavia no reflejaban de manera explicita esa diferencia entre contenido publico y borradores.
+
+### Trabajo realizado
+
+- Se movieron 26 variantes editoriales a `Tutorial/_borradores/`, conservando la estructura por modulo.
+- Se creo `Tutorial/_borradores/README.md` para documentar el criterio de uso de esa carpeta.
+- Se actualizo `mkdocs.yml` para excluir `_borradores/` del sitio publico.
+- Se ajusto `check_links.py` para ignorar `_borradores/` durante la validacion de enlaces.
+- Se actualizo `CONTRIBUTING.md` con una convencion explicita para borradores y variantes de capitulos.
+- Se publico la reorganizacion en GitHub sobre la rama `main`.
+
+### Resultado
+
+El repositorio quedo mas limpio y legible. Ahora existe una separacion clara entre el tutorial canonico y el material alternativo en revision, sin perder versiones utiles para comparacion o rescate posterior.
+
+### Validacion
+
+- `python check_links.py` pasa.
+- `mkdocs build --clean` pasa.
+- GitHub quedo sincronizado con la reorganizacion reciente.
+
+### Siguientes pasos recomendados
+
+- Revisar `_borradores/` modulo por modulo para detectar si alguna variante mejora al texto publico.
+- Continuar la homogeneizacion editorial de los modulos `06` a `12`, sobre todo en ejercicios, referencias y derivaciones.
+- Mejorar el historial de commits para que describa con mas precision cambios conceptuales y no solo cambios operativos.

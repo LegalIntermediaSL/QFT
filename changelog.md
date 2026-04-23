@@ -9,9 +9,26 @@ El formato sigue una adaptacion simple de Keep a Changelog y usa versionado sema
 ### Planned
 
 - Crear un capitulo de prerrequisitos matematicos.
-- Desarrollar contenido sobre campos fermionicos e integral de camino.
-- Incorporar ejercicios y problemas guiados.
-- Extender el bloque de renormalizacion y teorias gauge.
+- Incorporar una segunda pasada de ejercicios y problemas guiados en los modulos `06` a `12`.
+- Reforzar referencias por documento y enlaces cruzados entre capitulos y cuadernos.
+- Revisar y promover selectivamente borradores de `Tutorial/_borradores/` cuando mejoren la version publica.
+
+### Changed
+
+- Se limpio el arbol canonico de `Tutorial/` moviendo 26 variantes de capitulos con sufijo ` 2.md` a `Tutorial/_borradores/`.
+- `mkdocs.yml` ahora excluye `Tutorial/_borradores/` como espacio editorial no publico.
+- `check_links.py` ahora ignora `_borradores/` para que la validacion refleje solo el contenido publicado.
+- `CONTRIBUTING.md` documenta la nueva convencion para borradores y variantes editoriales.
+- `README.md`, `bitacora.md` y `changelog.md` se sincronizan con la reorganizacion reciente del repositorio.
+
+### Fixed
+
+- Se elimino la ambiguedad sobre cual era la version canonica de varios capitulos duplicados.
+- La validacion de enlaces vuelve a ser consistente con el contenido realmente publicado en MkDocs.
+
+### Notes
+
+- La rama `main` quedo publicada y sincronizada en GitHub tras la limpieza editorial del 23 de abril de 2026.
 
 ### Added
 
