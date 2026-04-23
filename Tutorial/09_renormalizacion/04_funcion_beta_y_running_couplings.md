@@ -134,6 +134,12 @@ Esta observacion ayuda a entender por que las tablas experimentales de acoplamie
 - Por que QED y QCD muestran comportamientos distintos al variar la escala.
 - En que sentido un running coupling es una prediccion fisica y no un mero accidente del calculo.
 
+## Ejercicios sugeridos
+
+1. Explicar por que un acoplamiento extraido a distintas energias no tiene por que tomar el mismo valor numérico.
+2. Comparar cualitativamente el running de QED y QCD y relacionarlo con el signo de su funcion beta.
+3. Describir en que sentido el running coupling conecta calculo perturbativo y fenomenologia.
+
 ## 12. Referencias y lecturas recomendadas
 
 - Base: Tong, running couplings y grupo de renormalizacion.

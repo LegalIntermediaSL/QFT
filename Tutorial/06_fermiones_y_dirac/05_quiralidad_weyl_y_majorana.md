@@ -102,6 +102,12 @@ Ese es el puente conceptual hacia el modulo del Modelo Estandar: la quiralidad n
 - Por que el lenguaje de Weyl es tan natural para el Modelo Estandar.
 - En que sentido un fermion de Majorana difiere de uno de Dirac.
 
+## Ejercicios sugeridos
+
+1. Explicar por que la quiralidad se vuelve especialmente transparente en el limite sin masa.
+2. Comparar las descripciones de Dirac, Weyl y Majorana en terminos de grados de libertad.
+3. Justificar por que la discusion sobre neutrinos hace especialmente relevante el lenguaje de Majorana.
+
 ## 11. Cierre
 
 Quiralidad, Weyl y Majorana forman un bloque conceptual muy fecundo porque conectan algebra de espinores, estructura gauge y fenomenologia real. Dominar este lenguaje hace mucho mas natural entender por que el sector debil es quiral y por que la naturaleza de la masa de los neutrinos sigue siendo una pregunta abierta de primer nivel.

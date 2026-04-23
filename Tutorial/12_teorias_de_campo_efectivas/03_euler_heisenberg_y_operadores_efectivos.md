@@ -127,6 +127,12 @@ Aunque la electrodinamica clasica no permite que dos rayos de luz interactuen di
 - Que papel juega la masa del electron en la supresion de los operadores.
 - Por que las correcciones deben escribirse en combinaciones gauge invariantes.
 
+## Ejercicios sugeridos
+
+1. Explicar por que QED puede inducir auto-interacciones efectivas del foton aunque Maxwell clasico no las tenga.
+2. Describir el papel de la masa del electron como escala pesada en la EFT correspondiente.
+3. Justificar por que las correcciones efectivas deben respetar la simetria gauge de baja energia.
+
 ## 12. Referencias y lecturas recomendadas
 
 - Base: notas sobre accion efectiva en QED y Euler-Heisenberg.

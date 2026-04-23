@@ -124,6 +124,12 @@ A orden finito, sin embargo, suele quedar una dependencia residual del esquema. 
 - Por que QED y QCD muestran comportamientos opuestos al correr con la escala.
 - Que diferencia conceptual hay entre un esquema comodo para calculo y una definicion ligada a masas o cargas on-shell.
 
+## Ejercicios sugeridos
+
+1. Explicar por que un esquema de renormalizacion puede cambiar cantidades intermedias sin alterar observables completos.
+2. Describir que hace especialmente util a $\overline{\text{MS}}$ en calculos perturbativos modernos.
+3. Comparar de forma cualitativa por que QED y QCD no corren del mismo modo al variar la escala.
+
 ## 13. Referencias y lecturas recomendadas
 
 - Base: Peskin y Schroeder, running couplings y teoria gauge.

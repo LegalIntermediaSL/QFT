@@ -110,6 +110,12 @@ Aunque este tutorial no entra en el detalle fenomenologico completo, conviene re
 - Por que el seesaw produce naturalmente una masa ligera $m_\nu \sim m_D^2/M$.
 - Como se conecta el seesaw con el operador de Weinberg en la descripcion efectiva.
 
+## Ejercicios sugeridos
+
+1. Comparar conceptualmente masas de Dirac y Majorana en el sector neutrínico.
+2. Explicar por que el seesaw suprime de manera natural la masa del neutrino ligero.
+3. Describir como una descripcion UV tipo seesaw se traduce en el operador de Weinberg a baja energia.
+
 ## 13. Referencias y lecturas recomendadas
 
 - Base: revisiones introductorias sobre neutrinos y masas de Majorana.

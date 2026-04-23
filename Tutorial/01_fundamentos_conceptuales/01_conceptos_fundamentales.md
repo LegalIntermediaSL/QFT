@@ -204,6 +204,12 @@ Si hubiera que condensar el corazon de la QFT en una secuencia corta, seria algo
 - Renormalizacion no debe entenderse solo como un truco tecnico, sino tambien como lectura fisica de escalas.
 - Correlador, amplitud y observable no son sinonimos, aunque esten profundamente relacionados.
 
+## Ejercicios sugeridos
+
+1. Explicar por que una teoria relativista cuantica necesita permitir numero variable de particulas.
+2. Describir la relacion entre accion, simetria, cuantizacion y amplitudes dentro de una sola narrativa conceptual.
+3. Identificar dos diferencias entre una lectura de particula puntual y una lectura en terminos de campos cuanticos.
+
 ## 15. Cierre
 
 La QFT puede parecer abrumadora al principio porque mezcla fisica, algebra, geometria, analisis y principios de simetria en un solo lenguaje. Sin embargo, casi todo el edificio descansa sobre unas pocas ideas rectoras: campos, simetria, accion, cuantizacion, causalidad e interaccion. Tener ese mapa desde el inicio vuelve mucho mas legible el resto del tutorial.

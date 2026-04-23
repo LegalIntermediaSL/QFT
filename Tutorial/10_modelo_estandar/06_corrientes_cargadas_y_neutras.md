@@ -156,6 +156,12 @@ Las corrientes neutras aparecen en:
 - En que se diferencia una corriente neutra mediada por $Z$ de la corriente electromagnetica.
 - Por que las corrientes cargadas cambian el componente dentro del doblete electrodébil.
 
+## Ejercicios sugeridos
+
+1. Explicar por que las corrientes cargadas del Modelo Estandar minimo son intrinsecamente quirales.
+2. Comparar la corriente neutra mediada por $Z$ con la corriente electromagnetica final.
+3. Describir como la mezcla electrodébil reorganiza las corrientes gauge primitivas en corrientes fisicas.
+
 ## 13. Referencias y lecturas recomendadas
 
 - Base: Schwartz, estructura de corrientes electrodébiles.

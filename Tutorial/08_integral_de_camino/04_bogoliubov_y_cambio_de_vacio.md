@@ -105,6 +105,12 @@ Si una descomposicion modal mezcla operadores de creacion y aniquilacion de otra
 - Que relacion tiene esta mezcla con la no unicidad del vacio.
 - Como prepara esto el efecto Unruh y la radiacion de Hawking.
 
+## Ejercicios sugeridos
+
+1. Explicar por que dos observadores pueden no compartir la misma nocion de vacio fisico.
+2. Describir como una mezcla entre creacion y aniquilacion cambia la lectura de partículas presentes en un estado.
+3. Relacionar cambio de vacio, observador acelerado y termicidad efectiva.
+
 ## 13. Referencias y lecturas recomendadas
 
 - Base: Birrell y Davies, transformaciones de Bogoliubov en campos cuanticos.

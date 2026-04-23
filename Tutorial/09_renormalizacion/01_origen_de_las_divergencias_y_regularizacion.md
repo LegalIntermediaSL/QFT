@@ -107,6 +107,12 @@ Las UV hablan de distancias cortas y sensibilidad a altas energias. Las IR habla
 - Por que regularizacion y renormalizacion no son exactamente lo mismo.
 - Por que la regularizacion dimensional es tan util en teorias gauge.
 
+## Ejercicios sugeridos
+
+1. Explicar por que una integral de lazo puede revelar sensibilidad a escalas ultravioleta no visibles a nivel arbol.
+2. Comparar conceptualmente divergencias UV e IR sin confundir su origen fisico.
+3. Describir por que regularizar no equivale todavia a renormalizar.
+
 ## 11. Cierre
 
 La regularizacion es el primer gesto de disciplina matematica frente a las divergencias. No resuelve por si sola el problema, pero permite formularlo de manera controlada y preparar el paso decisivo: reinterpretar los parametros de la teoria a traves de la renormalizacion.

@@ -144,6 +144,12 @@ No hace falta dominar aun toda la maquinaria tecnica, pero si conviene registrar
 - Que informacion fisica contienen los coeficientes de Wilson.
 - Por que matching y running son ideas complementarias pero no identicas.
 
+## Ejercicios sugeridos
+
+1. Explicar por que una EFT necesita matching para heredar correctamente la informacion relevante de una teoria UV.
+2. Describir que tipo de huella fisica codifican los coeficientes de Wilson.
+3. Comparar matching y running como dos pasos distintos pero acoplados en el uso moderno de EFT.
+
 ## 14. Referencias y lecturas recomendadas
 
 - Base: introducciones pedagogicas a SMEFT y coeficientes de Wilson.

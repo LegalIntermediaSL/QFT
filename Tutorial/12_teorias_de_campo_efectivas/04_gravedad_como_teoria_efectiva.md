@@ -117,6 +117,12 @@ En ese punto no decimos que las predicciones previas fueran falsas, sino que el 
 - Que papel juega el termino de Einstein dentro de la expansion efectiva.
 - Como conecta esta lectura con gravedad semiclasica y horizonte de Planck.
 
+## Ejercicios sugeridos
+
+1. Explicar por que una EFT gravitatoria puede ser util aunque no proporcione la UV completion definitiva.
+2. Describir el papel del termino de Einstein como contribucion lider de la expansion efectiva.
+3. Relacionar escala de Planck, validez de la expansion y limites del tratamiento semiclasico.
+
 ## 13. Referencias y lecturas recomendadas
 
 - Base: introducciones pedagogicas a gravedad como EFT.

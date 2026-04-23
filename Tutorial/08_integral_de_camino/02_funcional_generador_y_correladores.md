@@ -175,6 +175,12 @@ La razon de introducir $W[J]$ es que el logaritmo elimina automaticamente diagra
 - Por que este formalismo conecta tan bien con teoria de perturbaciones.
 - Que relacion hay entre la parte cuadratica de la accion y el propagador.
 
+## Ejercicios sugeridos
+
+1. Explicar por que introducir una fuente externa organiza el calculo de correladores.
+2. Describir la diferencia conceptual entre $Z[J]$ y un correlador ya evaluado.
+3. Relacionar la parte cuadratica de la accion con la aparicion del propagador libre.
+
 ## 11. Cierre
 
 El funcional generador es una de las herramientas mas compactas y poderosas de la QFT. Resume correladores, organiza expansiones perturbativas y da acceso directo a la estructura observable de la teoria.

@@ -102,6 +102,12 @@ Esa es precisamente la fuerza de la holografia como principio organizador: oblig
 - Que significa reconstruccion en este contexto.
 - Como se relaciona esta intuicion con entrelazamiento, islas y unitaridad.
 
+## Ejercicios sugeridos
+
+1. Explicar por que la holografia reorganiza la pregunta sobre donde esta codificada la informacion.
+2. Describir que significa reconstruccion del bulk desde el borde a nivel puramente conceptual.
+3. Relacionar holografia con entrelazamiento, islas y preservacion de unitaridad.
+
 ## 12. Cierre
 
 La holografia ha cambiado la forma de leer la relacion entre gravedad e informacion porque sugiere que la localizacion espacial y la codificacion cuantica no son conceptos separables de manera ingenua. Por eso se ha vuelto una herramienta conceptual tan importante: no solo ofrece tecnicas nuevas, sino que redefine la pregunta misma sobre donde esta la informacion y como puede recuperarse.

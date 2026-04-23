@@ -158,6 +158,12 @@ Ese cambio de base fisica es lo que hace tan natural la conexion con el capitulo
 - Por que el foton queda sin masa mientras $W$ y $Z$ no.
 - Como se relacionan $m_W$, $m_Z$ y el angulo de Weinberg.
 
+## Ejercicios sugeridos
+
+1. Explicar por que introducir masas gauge a mano rompería la estructura de simetria de la teoria.
+2. Describir como el vacio del Higgs reorganiza los grados de libertad fisicos del sector electrodébil.
+3. Relacionar ruptura espontanea, mezcla neutra y masas de $W$ y $Z$ en una sola cadena conceptual.
+
 ## 12. Referencias y lecturas recomendadas
 
 - Base: Schwartz, mecanismo de Higgs y ruptura electrodébil.

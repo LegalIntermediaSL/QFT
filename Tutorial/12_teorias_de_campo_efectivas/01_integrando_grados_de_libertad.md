@@ -176,6 +176,12 @@ Por eso este lenguaje no es una tecnica marginal, sino una forma estandar de pen
 - Por que aparecen operadores de dimension mayor que cuatro.
 - Como se estima la importancia de un operador usando $E/\Lambda$.
 
+## Ejercicios sugeridos
+
+1. Explicar por que eliminar grados de libertad pesados no significa ignorar sus efectos a baja energia.
+2. Describir como el cociente $E/\Lambda$ organiza la relevancia de operadores efectivos.
+3. Comparar la idea general de EFT con alguno de los ejemplos citados en el capitulo.
+
 ## 15. Referencias y lecturas recomendadas
 
 - Base: notas introductorias sobre EFT y desacoplamiento.

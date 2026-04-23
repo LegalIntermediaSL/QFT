@@ -145,6 +145,12 @@ Si el potencial clasico tiene un minimo en cierto valor del campo, el potencial 
 - Por que el potencial efectivo es util para estudiar vacios.
 - En que sentido la accion efectiva incorpora ya correcciones cuanticas.
 
+## Ejercicios sugeridos
+
+1. Comparar el significado de $W[J]$ y $\Gamma[\phi_c]$ dentro del lenguaje funcional.
+2. Explicar por que el potencial efectivo puede cambiar la estructura del vacio respecto del potencial clasico.
+3. Describir en que sentido la accion efectiva reorganiza informacion cuantica en vertices 1PI.
+
 ## 13. Referencias y lecturas recomendadas
 
 - Base: Peskin y Schroeder, accion efectiva y funciones 1PI.

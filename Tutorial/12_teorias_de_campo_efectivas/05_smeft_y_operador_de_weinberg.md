@@ -128,6 +128,12 @@ Si $v \approx 246\,\mathrm{GeV}$ y la escala efectiva asociada al operador de We
 - Que hace especial al operador de Weinberg dentro de la expansion.
 - Como aparece la estimacion $m_\nu \sim v^2/\Lambda$.
 
+## Ejercicios sugeridos
+
+1. Explicar por que SMEFT organiza nueva fisica sin comprometerse con una UV completion concreta.
+2. Describir que vuelve excepcional al operador de Weinberg dentro de la expansion efectiva del Modelo Estandar.
+3. Relacionar la estimacion $m_\nu \sim v^2/\Lambda$ con la pequeñez observada de las masas neutrínicas.
+
 ## 13. Referencias y lecturas recomendadas
 
 - Base: reseñas pedagogicas de SMEFT y precision electrodébil.

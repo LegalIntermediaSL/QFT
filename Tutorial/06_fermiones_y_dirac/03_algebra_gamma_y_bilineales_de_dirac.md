@@ -125,6 +125,12 @@ Este tipo de razonamiento muestra que muchas formas del lagrangiano no se eligen
 - Que diferencia hay entre un bilineal escalar y uno vectorial.
 - Por que el termino de masa de Dirac y la corriente electromagnetica no usan el mismo bilineal.
 
+## Ejercicios sugeridos
+
+1. Justificar por que las matrices gamma deben satisfacer una algebra compatible con la relatividad especial.
+2. Comparar el significado fisico de un bilineal escalar, vectorial y axial.
+3. Explicar por que clasificar bilineales ayuda a escribir interacciones relativistas consistentes.
+
 ## 12. Cierre
 
 Las matrices gamma y los bilineales de Dirac forman el vocabulario basico del sector fermionico relativista. Una vez que este vocabulario se domina, muchas expresiones de QED, del Modelo Estandar y de la fenomenologia fermionica dejan de parecer arbitrarias y se leen como consecuencias directas de simetria y estructura relativista.

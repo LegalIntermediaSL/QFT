@@ -116,6 +116,12 @@ Lo mismo ocurre con polarizaciones: la organizacion correcta de sumas y promedio
 - Que relacion hay entre polarizaciones del foton y redundancia gauge.
 - Por que esta capa tecnica es necesaria para pasar de amplitudes a secciones eficaces.
 
+## Ejercicios sugeridos
+
+1. Explicar por que las sumas de espin permiten reorganizar amplitudes en expresiones calculables mediante trazas.
+2. Comparar el papel de las polarizaciones fisicas del foton con la redundancia gauge del formalismo.
+3. Justificar por que esta capa tecnica es imprescindible para convertir amplitudes en observables promedio.
+
 ## 12. Referencias y lecturas recomendadas
 
 - Base: Peskin y Schroeder, trazas, sumas de espin y polarizaciones.

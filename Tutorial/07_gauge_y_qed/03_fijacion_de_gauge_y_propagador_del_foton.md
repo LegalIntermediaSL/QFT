@@ -96,6 +96,12 @@ Este test operativo no sustituye una demostracion formal, pero sirve como verifi
 - Que papel juega el parametro $\xi$.
 - Por que la identidad de Ward importa para la consistencia cuantica de QED.
 
+## Ejercicios sugeridos
+
+1. Explicar por que la simetria gauge introduce una redundancia que debe tratarse antes de calcular propagadores.
+2. Describir el significado operativo del parametro de gauge $\xi$ y por que no debe afectar observables fisicos.
+3. Relacionar fijacion de gauge, propagador del foton e identidad de Ward en una sola cadena conceptual.
+
 ## 11. Cierre
 
 La fijacion de gauge es uno de los mejores ejemplos de una idea general de QFT: a veces el formalismo necesita introducir elecciones auxiliares para poder calcular, pero la fisica final debe ser independiente de ellas. En QED, esta leccion se vuelve visible en la definicion del propagador del foton y en el papel protector de la identidad de Ward.

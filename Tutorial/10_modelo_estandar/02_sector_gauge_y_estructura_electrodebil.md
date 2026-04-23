@@ -162,6 +162,12 @@ Este es justamente el punto donde el lenguaje de grupos, derivada covariante y r
 - Que papel juega la derivada covariante en el Modelo Estandar.
 - Por que el foton y el boson $Z$ aparecen como combinaciones de $W^3$ y $B$.
 
+## Ejercicios sugeridos
+
+1. Comparar el significado fisico de los sectores gauge abeliano y no abeliano dentro del Modelo Estandar.
+2. Explicar por que la mezcla entre $W^3$ y $B$ es esencial para entender la emergencia del foton.
+3. Describir el papel organizador de la derivada covariante en la lectura del sector gauge.
+
 ## 12. Referencias y lecturas recomendadas
 
 - Base: Schwartz, capitulos de gauge y estructura electrodébil.

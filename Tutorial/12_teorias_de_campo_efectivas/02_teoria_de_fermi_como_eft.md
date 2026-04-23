@@ -149,6 +149,12 @@ El decaimiento beta nuclear puede describirse con gran precision usando una inte
 - Que dimension tiene el operador de Fermi.
 - Como se relacionan $G_F$, $g$ y $M_W$ a nivel estructural.
 
+## Ejercicios sugeridos
+
+1. Explicar por que un mediador pesado puede verse como una interaccion puntual a baja energia.
+2. Describir la relacion conceptual entre la teoria electrodébil completa y la teoria de Fermi.
+3. Justificar por que la no renormalizabilidad de la EFT no impide su poder predictivo en su dominio de validez.
+
 ## 12. Referencias y lecturas recomendadas
 
 - Base: introducciones al sector debil y a la teoria de Fermi.

@@ -231,6 +231,12 @@ Una buena forma de usar este mapa es como checklist mental para cada nueva teori
 - Que significa fisicamente la descomposicion de cluster.
 - Por que la renormalizacion no debe entenderse solo como un truco para eliminar infinitos.
 
+## Ejercicios sugeridos
+
+1. Relacionar microcausalidad, covariancia relativista y estructura de conmutadores en una teoria local.
+2. Explicar por que espin-estadistica y existencia de antiparticulas no son añadidos opcionales del formalismo.
+3. Describir en que sentido la renormalizacion reorganiza la teoria en funcion de escalas y observables.
+
 ## 12. Cierre
 
 Estudiar QFT sin tener presentes estos principios es como aprender tecnicas locales sin ver el armazon que las sostiene. Los diagramas, los propagadores, las corrientes conservadas, las reglas de Feynman y los procedimientos de renormalizacion solo adquieren sentido pleno cuando se entienden como respuestas a estas exigencias estructurales.

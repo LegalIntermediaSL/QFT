@@ -208,6 +208,12 @@ Una forma breve de resumir la idea es esta:
 - Como explican los campos cuanticos la identidad perfecta de los electrones.
 - De que manera las interacciones se reinterpretan como acoplamientos locales entre campos.
 
+## Ejercicios sugeridos
+
+1. Comparar la nocion de campo cuantico con la de funcion de onda de una sola particula.
+2. Explicar por que la identidad de las particulas se vuelve natural en el lenguaje de campos.
+3. Describir como la expansion en modos prepara la cuantizacion de un campo libre.
+
 ## 13. Cierre
 
 Desde la perspectiva de la QFT, el universo no esta compuesto en primer termino por pequeñas bolitas materiales aisladas, sino por un entramado de campos cuanticos que llenan el espacio-tiempo. La materia y la radiacion que observamos son manifestaciones discretas de ese entramado. Entender esto no es un detalle filosofico secundario: es una de las claves para leer correctamente toda la teoria.

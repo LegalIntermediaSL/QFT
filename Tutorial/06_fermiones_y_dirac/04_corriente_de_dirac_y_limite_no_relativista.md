@@ -105,6 +105,12 @@ Tambien permite entender por que muchas intuiciones de espin y magnetismo, que e
 - Por que la corriente es importante antes incluso de introducir gauge.
 - Que papel cumple el limite no relativista en la interpretacion fisica de la teoria.
 
+## Ejercicios sugeridos
+
+1. Explicar como una simetria global de fase lleva a la conservacion de la corriente de Dirac.
+2. Describir que se gana fisicamente al estudiar el limite no relativista de la ecuacion de Dirac.
+3. Comparar el significado de densidad de probabilidad en mecanica cuantica y de corriente conservada en el formalismo relativista.
+
 ## 11. Cierre
 
 La corriente de Dirac y el limite no relativista resumen muy bien el valor del formalismo fermionico relativista: por un lado organiza simetrias, cargas e interacciones; por otro, reproduce de forma no trivial la fisica de baja energia ya conocida. Esa doble exigencia es parte de lo que hace tan poderosa a la ecuacion de Dirac.

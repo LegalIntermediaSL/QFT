@@ -98,6 +98,12 @@ Si una persona pregunta "¿el vacio contiene particulas o no?", la respuesta cor
 - Que papel juegan las coordenadas de Rindler.
 - Como se conecta el efecto Unruh con la idea de estado reducido termico.
 
+## Ejercicios sugeridos
+
+1. Explicar por que el vacio de Minkowski no se interpreta igual para un observador inercial y uno acelerado.
+2. Describir como el efecto Unruh conecta cambio de observador con termicidad efectiva.
+3. Relacionar el caso de Rindler con la preparacion conceptual para Hawking y horizontes.
+
 ## 13. Referencias y lecturas recomendadas
 
 - Base: Birrell y Davies, efecto Unruh y cuantizacion en espacio-tiempo curvo.

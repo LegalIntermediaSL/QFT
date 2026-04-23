@@ -169,6 +169,12 @@ La moraleja principal es que las oscilaciones de neutrinos nos muestran, de mane
 - Por que la matriz PMNS se conecta de forma natural con corrientes cargadas leptónicas.
 - Por que el patron oscilatorio depende de $L/E$ y no simplemente de la distancia recorrida.
 
+## Ejercicios sugeridos
+
+1. Explicar por que la oscilacion de neutrinos requiere que estados de sabor y de masa no coincidan.
+2. Comparar conceptualmente masa de Dirac y masa de Majorana en el caso leptónico.
+3. Describir por que la fenomenologia de oscilaciones no fija por si sola toda la estructura microscópica de masas neutrínicas.
+
 ## 15. Referencias y lecturas recomendadas
 
 - Base: notas introductorias de fisica de neutrinos y mezcla leptónica.

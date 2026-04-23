@@ -102,6 +102,12 @@ En espacio de momentos, esta lectura se vuelve especialmente nítida: las lineas
 - Que papel juegan las corrientes fermionicas en los extremos del propagador.
 - Por que este ejemplo resume bien la arquitectura del modulo.
 
+## Ejercicios sugeridos
+
+1. Identificar, en un proceso elemental de QED, que parte de la amplitud procede del vertice y cual del propagador.
+2. Explicar por que las corrientes fermionicas externas contienen la informacion de los estados incidentes y salientes.
+3. Describir como este ejemplo organiza el paso desde el lagrangiano hasta un observable perturbativo.
+
 ## 11. Cierre
 
 Este ejemplo condensa muy bien la logica perturbativa completa: el lagrangiano fija el vertice, el gauge-fixing permite escribir el propagador, los espinores externos representan estados reales y el diagrama organiza la amplitud. Entender bien este esqueleto hace mucho mas natural el salto a procesos mas ricos y a correcciones radiativas.

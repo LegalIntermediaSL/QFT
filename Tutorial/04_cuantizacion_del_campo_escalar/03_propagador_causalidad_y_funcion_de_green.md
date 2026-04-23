@@ -172,6 +172,12 @@ En ese sentido, este capitulo es el verdadero puente entre cuantizacion del camp
 - Que papel cumple la prescripcion $i\epsilon$.
 - Por que no debe confundirse propagador con conmutador causal.
 
+## Ejercicios sugeridos
+
+1. Explicar por que el propagador de Feynman y el conmutador causal no responden a la misma pregunta fisica.
+2. Describir el papel de la prescripcion $i\epsilon$ al pasar de la expresion formal a un objeto bien definido.
+3. Relacionar la idea de funcion de Green con la aparicion de lineas internas en teoria perturbativa.
+
 ## 14. Referencias y lecturas recomendadas
 
 - Base: Peskin y Schroeder, propagador libre y cuantizacion canonica.

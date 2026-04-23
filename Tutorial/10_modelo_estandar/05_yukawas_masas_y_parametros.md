@@ -94,6 +94,12 @@ Por eso el sector de Yukawa concentra una parte grande del misterio del sabor. L
 - Que informacion codifican CKM y PMNS.
 - En que sentido el Modelo Estandar es a la vez exitoso e incompleto.
 
+## Ejercicios sugeridos
+
+1. Explicar por que las masas fermionicas requieren acoplamientos de Yukawa y no simples terminos desnudos previos a la ruptura.
+2. Describir que tipo de informacion fisica codifican las matrices CKM y PMNS.
+3. Relacionar jerarquia de masas, mezcla entre generaciones y problema del sabor.
+
 ## 10. Cierre
 
 El sector de Yukawa es una de las zonas mas fecundas del Modelo Estandar. Une simetria gauge, ruptura electrodébil, masas fermionicas y mezcla entre generaciones, pero al mismo tiempo deja abiertas algunas de las preguntas mas profundas de la fisica de particulas: por que existe la jerarquia de masas, por que hay tres generaciones y de donde nace exactamente la estructura de sabor.

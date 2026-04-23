@@ -104,6 +104,12 @@ Si algun experimento midiera de forma convincente un proceso $0\nu\beta\beta$, l
 - Como se relaciona cualitativamente con neutrinos de Majorana.
 - Por que EFT y fenomenologia nuclear aparecen juntas en este problema.
 
+## Ejercicios sugeridos
+
+1. Explicar por que un proceso $0\\nu\\beta\\beta$ implicaria violacion de numero leptónico.
+2. Describir por que este observable se conecta de manera natural con masas tipo Majorana.
+3. Relacionar el lenguaje EFT con la necesidad de incorporar tambien fisica nuclear en la interpretacion del proceso.
+
 ## 11. Referencias y lecturas recomendadas
 
 - Base: revisiones introductorias sobre $0\nu\beta\beta$ y numero leptónico.

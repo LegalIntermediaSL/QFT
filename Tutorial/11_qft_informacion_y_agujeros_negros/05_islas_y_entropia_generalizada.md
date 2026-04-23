@@ -91,6 +91,12 @@ Si una descripcion gravitatoria efectiva permite que el calculo correcto de la e
 - Que cambio conceptual introduce una isla en el calculo de entropia.
 - Por que esta idea ayuda a reconciliar semiclasica refinada y curva de Page.
 
+## Ejercicios sugeridos
+
+1. Explicar por que la entropia generalizada no puede leerse solo como una cantidad puramente geométrica.
+2. Describir el cambio conceptual que introduce una isla en la definicion del sistema relevante.
+3. Relacionar islas, curva de Page y recuperacion de informacion en una misma narrativa.
+
 ## 12. Referencias y lecturas recomendadas
 
 - Base: reseñas pedagogicas sobre curva de Page e islas.

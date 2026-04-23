@@ -150,6 +150,12 @@ el grupo de renormalizacion permite absorber sistematicamente esa dependencia en
 - En que sentido una teoria efectiva puede seguir siendo muy poderosa.
 - Que informacion fisica resume una funcion beta.
 
+## Ejercicios sugeridos
+
+1. Explicar por que los parametros desnudos no son directamente los parametros medidos en experimento.
+2. Describir el papel de los contraterminos en una renormalizacion perturbativa elemental.
+3. Justificar por que depender de una escala de renormalizacion no vuelve arbitraria la teoria.
+
 ## 12. Cierre
 
 La renormalizacion no es un truco para esconder infinitos. Es una de las ideas mas profundas de la fisica moderna sobre como la teoria cambia al cambiar la escala de descripcion.

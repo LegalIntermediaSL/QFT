@@ -100,6 +100,12 @@ Por eso se ha convertido en una especie de test minimo de cualquier propuesta se
 - Por que ese comportamiento es relevante para la paradoja de la informacion.
 - Como se relaciona la curva de Page con la exigencia de unitaridad global.
 
+## Ejercicios sugeridos
+
+1. Describir cualitativamente la forma de la curva de Page esperada bajo una evaporacion unitaria.
+2. Explicar por que una entropia de radiacion que solo crece entra en tension con la unitaridad global.
+3. Relacionar curva de Page, radiacion termica efectiva y estructura de entrelazamiento.
+
 ## 12. Cierre
 
 La curva de Page vuelve cuantitativa una de las intuiciones mas profundas de la gravedad cuantica contemporanea: si la evaporacion de un agujero negro es compatible con la unitaridad, la entropia de la radiacion no puede crecer para siempre. Entender esta idea prepara de forma natural la entrada a islas, entropia generalizada y reconstruccion holografica.

@@ -91,6 +91,12 @@ Esta observacion es el puente directo hacia el sector de Yukawa. Las masas fermi
 - Que diferencia hay entre dobletes y singletes de $SU(2)_L$.
 - Por que el problema de las masas fermionicas se conecta directamente con el Higgs.
 
+## Ejercicios sugeridos
+
+1. Explicar por que la asignacion de dobletes y singletes gauge hace quiral al sector debil.
+2. Comparar el papel de componentes izquierdas y derechas antes de la ruptura electrodébil.
+3. Describir por que la masa fermionica no puede escribirse ingenuamente antes de introducir Yukawas e Higgs.
+
 ## 10. Cierre
 
 El sector fermionico del Modelo Estandar muestra de forma muy nitida como la simetria gauge organiza la fisica. La quiralidad no es una rareza tecnica, sino el principio que determina la forma de las corrientes debiles, la necesidad del mecanismo de Higgs y buena parte de la fenomenologia observada.

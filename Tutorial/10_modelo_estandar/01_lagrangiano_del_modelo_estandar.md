@@ -120,6 +120,12 @@ Tambien prepara una intuicion muy util para EFT: una vez que el lagrangiano se e
 - Por que el sector de Yukawa es indispensable para las masas fermionicas.
 - En que sentido el Modelo Estandar es predictivo y, al mismo tiempo, incompleto.
 
+## Ejercicios sugeridos
+
+1. Describir por bloques la estructura del lagrangiano del Modelo Estandar y la funcion de cada sector.
+2. Explicar por que el sector gauge, el Higgs y los Yukawas no pueden entenderse como piezas independientes.
+3. Justificar en que sentido el Modelo Estandar es una teoria muy exitosa pero no conceptualmente final.
+
 ## 8. Cierre
 
 El Lagrangiano del Modelo Estandar no es solo una formula larga. Es la compresion extrema de decadas de intuicion fisica, simetria gauge, estructura cuantica y contraste experimental. Leerlo por bloques permite ver que no es una acumulacion arbitraria de terminos, sino una construccion altamente restringida por los principios de la teoria cuantica de campos.

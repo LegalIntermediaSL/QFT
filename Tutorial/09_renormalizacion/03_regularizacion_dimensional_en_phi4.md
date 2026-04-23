@@ -163,6 +163,12 @@ Si esas cuatro piezas quedan enlazadas, la regularizacion dimensional deja de pa
 - Por que este esquema resulta especialmente conveniente en teorias gauge.
 - En que sentido la funcion gamma "almacena" la divergencia UV al continuar analiticamente la dimension.
 
+## Ejercicios sugeridos
+
+1. Explicar por que al cambiar la dimension del espacio-tiempo aparece una escala auxiliar $\mu$.
+2. Describir el papel conceptual del polo en $1/\varepsilon$ antes de absorberlo en contraterminos.
+3. Justificar por que este lenguaje resulta especialmente natural para renormalizacion moderna y teorias gauge.
+
 ## 14. Referencias y lecturas recomendadas
 
 - Base: Peskin y Schroeder, regularizacion dimensional en teorias escalares.

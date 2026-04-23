@@ -212,6 +212,12 @@ Una manera compacta de resumir la relacion es:
 - En que sentido una integral funcional generaliza una integral ordinaria.
 - Por que la trayectoria clasica reaparece en el limite semiclasico.
 
+## Ejercicios sugeridos
+
+1. Explicar por que la integral de camino no reemplaza la accion, sino que la reutiliza como peso de la cuantizacion.
+2. Comparar la idea de trayectoria clasica dominante con la nocion de suma sobre historias.
+3. Describir por que el limite semiclasico recupera una lectura cercana a la dinamica clasica.
+
 ## 11. Cierre
 
 La integral de camino no reemplaza por completo a la cuantizacion canonica, pero ofrece una perspectiva complementaria extraordinariamente poderosa sobre la teoria cuantica de campos.
