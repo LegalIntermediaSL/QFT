@@ -87,7 +87,7 @@ Desde el punto de vista EFT, ambos pueden organizarse en una jerarquia de operad
 
 ## 7. Ejemplo corto de lectura
 
-Si algun experimento midiera de forma convincente un proceso $0\nu\beta\beta$, la interpretacion mas inmediata seria que el numero leptónico no es exacto y que existe una componente de masa tipo Majorana en el sector neutrínico. La EFT no decide automaticamente toda la UV completion, pero si organiza con claridad el tipo de ruptura implicada.
+Si algun experimento midiera de forma convincente un proceso $0\nu\beta\beta$, la conclusion mas robusta seria que el numero leptónico no es exacto. En muchos escenarios eso apuntaria de forma muy fuerte a una estructura de tipo Majorana en el sector neutrínico, aunque la EFT por si sola no fijaria automaticamente un unico mecanismo microscopico ni toda la UV completion.
 
 ## Cuaderno asociado
 - `../../Cuadernos/problemas_resueltos/21_doble_beta_sin_neutrinos.ipynb`: usarlo para fijar la intuicion de $\Delta L = 2$, masa efectiva $m_{\beta\beta}$ y su papel como observable de fisica Majorana.

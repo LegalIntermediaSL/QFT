@@ -68,7 +68,7 @@ Esto lo convierte en un caso excepcionalmente interesante:
 - viola numero leptónico en dos unidades;
 - sugiere de forma natural masas de Majorana para neutrinos.
 
-Su caracter excepcional se entiende mejor al recordar que, con el contenido de campos del Modelo Estandar, es esencialmente el unico operador de dimension cinco compatible con las simetrias gauge. Eso le da un papel privilegiado dentro de toda la expansion efectiva.
+Su caracter excepcional se entiende mejor al recordar que, con el contenido de campos del Modelo Estandar y bajo las hipotesis habituales de localidad y simetrias gauge, es el unico operador de dimension cinco. Eso le da un papel privilegiado dentro de toda la expansion efectiva.
 
 ## 5. Dimension cinco vs dimension seis
 

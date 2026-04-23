@@ -87,12 +87,12 @@ Este modulo lleva la QFT a una frontera conceptual donde vacio, entrelazamiento,
 
 ## Ejercicios sugeridos
 
-1. Explica por que el vacio cuantico no debe pensarse como “ausencia trivial de todo”.
-2. Describe la relacion entre acceso parcial a grados de libertad y estado reducido termico.
-3. Resume por que el efecto Unruh es un ensayo conceptual antes de Hawking.
-4. Explica que pregunta profunda intenta organizar la curva de Page.
-5. Explica por que el concepto de isla aparece al refinar la entropia semiclasica.
-6. Resume por que la holografia se ha vuelto relevante en la discusion de informacion.
+1. Explica por que el vacio de un campo cuantico puede producir correlaciones no triviales entre dos subregiones espaciales aun cuando el estado global sea puro.
+2. Describe como el trazado parcial sobre grados de libertad inaccesibles puede hacer que un observador asigne un estado reducido mixto aunque la evolucion global siga siendo unitaria.
+3. Resume que rasgo del efecto Unruh lo convierte en un ensayo conceptual util antes de estudiar la radiacion de Hawking.
+4. Explica que tension conceptual resume la curva de Page cuando se compara evaporacion aparentemente termica con evolucion cuantica unitaria.
+5. Justifica por que la entropia generalizada y la nocion de isla modifican la lectura semiclasica ingenua de la entropia de radiacion.
+6. Resume por que la holografia se ha vuelto una guia estructural para discutir reconstruccion de informacion sin reducir el problema a un unico modelo microscopico.
 
 ## Profundizaciones sugeridas
 

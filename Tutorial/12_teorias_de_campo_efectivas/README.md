@@ -85,15 +85,15 @@ Este modulo cierra el recorrido con una lectura moderna de la QFT: toda teoria d
 
 ## Ejercicios sugeridos
 
-1. Explica por que un operador de dimension seis aparece suprimido por dos potencias de una escala pesada.
-2. Justifica de forma esquematica por que el operador de Fermi tiene dimension seis en cuatro dimensiones.
-3. Compara el significado fisico de una EFT renormalizable y de una EFT no renormalizable.
-4. Explica por que el foton puede adquirir auto-interacciones efectivas en Euler-Heisenberg aunque no existan a nivel clasico en Maxwell.
-5. Describe por que la gravedad sigue siendo util como EFT pese a no ser renormalizable en el sentido perturbativo usual.
-6. Explica por que el operador de Weinberg tiene dimension cinco y por que es especial dentro de SMEFT.
-7. Resume como una escala seesaw pesada puede generar masas de neutrinos pequenas.
-8. Explica por que la doble beta sin neutrinos seria una señal fuerte de fisica tipo Majorana.
-9. Describe que problema resuelve el matching cuando pasamos de una teoria UV a una EFT.
+1. Explica por que un operador local de dimension seis en cuatro dimensiones debe aparecer suprimido por dos potencias de una escala pesada para mantener la densidad lagrangiana con dimension correcta.
+2. Justifica de forma esquematica por que la interaccion de cuatro fermiones de Fermi tiene dimension seis y por que eso la convierte en una buena descripcion de baja energia.
+3. Compara que significa predictividad en una EFT renormalizable y en una EFT no renormalizable cuando se trabaja por expansion en energia sobre una escala de corte.
+4. Explica por que Euler-Heisenberg permite auto-interacciones efectivas del foton aunque la electrodinamica clasica de Maxwell no las contenga a nivel arbol.
+5. Describe por que la gravedad puede seguir tratandose de forma util como EFT a bajas energias aunque falle como teoria perturbativa UV completa.
+6. Explica por que el operador de Weinberg tiene dimension cinco y por que ocupa un lugar especial dentro de SMEFT con el contenido de campos del Modelo Estandar.
+7. Resume como una escala seesaw pesada puede inducir masas neutrínicas pequenas sin exigir Yukawas extremadamente diminutos en la teoria efectiva de baja energia.
+8. Explica por que una observacion convincente de doble beta sin neutrinos apoyaria fuertemente una fuente de violacion leptónica de dos unidades, aunque no fijaria por si sola todo el mecanismo microscopico.
+9. Describe que problema resuelve el matching cuando pasamos de una teoria UV a una EFT y por que los coeficientes de Wilson resumen la huella IR de la fisica integrada.
 
 ## Profundizaciones sugeridas
 
