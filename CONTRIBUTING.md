@@ -22,7 +22,7 @@ Cada nuevo módulo debe seguir el archivo [template_modulo.md](Tutorial/template
 - Objetivo claro.
 - Mapa del módulo (Mermaid).
 - Desarrollo teórico.
-- Preguntas de estudio y Ejercicios.
+- Preguntas de comprobacion y ejercicios.
 
 Para los capítulos públicos del recorrido principal, la validación editorial comprueba además una estructura mínima:
 - título principal `#`;

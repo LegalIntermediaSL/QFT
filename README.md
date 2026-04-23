@@ -85,7 +85,7 @@ El contenido tecnico ya supera una simple fase de arranque. El repositorio conti
 Ademas, el repositorio distingue ahora entre contenido publicado y variantes editoriales en revision:
 
 - `Tutorial/`: version canonica y publica del tutorial.
-- `Tutorial/_borradores/`: variantes, resúmenes alternativos y versiones en revision que no forman parte del sitio publico.
+- `Tutorial/_borradores/`: variantes, resúmenes alternativos y versiones en revisión que no forman parte del sitio publico.
 
 ## Instalación y Uso
 
