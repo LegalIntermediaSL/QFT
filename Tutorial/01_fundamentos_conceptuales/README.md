@@ -39,11 +39,13 @@ flowchart TD
 ## Cuadernos asociados
 
 - `../../Cuadernos/ejemplos/02_principios_estructurales_y_restricciones.ipynb`
+- `../../Cuadernos/ejemplos/21_fundamentos_conceptuales.ipynb`
 - `../../Cuadernos/problemas_resueltos/06_fundamentos_conceptuales.ipynb`
 
 Uso sugerido:
 
-- el cuaderno de `ejemplos` sirve para fijar el vocabulario estructural minimo antes de entrar en tecnicas;
+- el cuaderno de `ejemplos/02` sirve para fijar el vocabulario estructural minimo antes de entrar en tecnicas;
+- el cuaderno de `ejemplos/21` ilustra la violacion de causalidad en MQ de una particula y por que los campos son la solucion;
 - el de `problemas_resueltos` sirve para revisar las preguntas mas conceptuales del bloque y consolidar la idea de campo cuantico.
 
 ## Resultado esperado

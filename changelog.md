@@ -4,12 +4,43 @@ Todos los cambios relevantes de este proyecto se documentan en este archivo.
 
 El formato sigue una adaptacion simple de Keep a Changelog y usa versionado semantico solo como referencia organizativa mientras el repositorio madura.
 
+## [Unreleased - 2026-05-03]
+
+### Added
+
+- `Tutorial/00_prerrequisitos/06_calculo_funcional_y_derivadas.md`: nuevo capitulo sobre funcionales, derivada funcional, ecuaciones de movimiento y funcional generador. Cubre el prerrequisito matematico para la integral de camino.
+- `Tutorial/00_prerrequisitos/07_algebra_de_lie_y_representaciones.md`: nuevo capitulo sobre algebras de Lie, $\mathfrak{su}(2)$, $\mathfrak{su}(3)$, representaciones irreducibles, Casimir y representacion adjunta.
+- `Cuadernos/problemas_resueltos/23_calculo_funcional.ipynb`: notebook de apoyo para calculo funcional con SymPy y NumPy.
+- `Tutorial/02_relatividad_y_campos/03_representaciones_de_lorentz_y_espinores.md`: nuevo capitulo sobre grupo de Lorentz, $SL(2,\mathbb{C})$, espinores de Weyl y conexion con fermiones.
+- `Tutorial/02_relatividad_y_campos/04_clasificacion_de_campos_por_spin.md`: nuevo capitulo sobre estados de Wigner, clasificacion por masa y helicidad, campos escalar/vectorial/espinorial.
+- `Tutorial/03_accion_y_simetrias/03_teorema_de_noether_ejemplos_explicitos.md`: nuevo capitulo con tres ejemplos completos del teorema de Noether (traslacion, fase, Lorentz).
+- `Tutorial/03_accion_y_simetrias/04_simetrias_internas_y_cargas_conservadas.md`: nuevo capitulo sobre simetrias internas $U(1)$/$SU(2)$/$SU(3)$ y corrientes de Noether.
+- `ejercicios_modulo_06.md` a `ejercicios_modulo_12.md`: bloques de ejercicios estructurados (nivel 1/2/3) para los modulos 06 al 12. Cada fichero incluye 5 ejercicios de verificacion, 3 de derivacion guiada, 2 de sintesis y soluciones sugeridas para el bloque 1.
+- `Cuadernos/ejemplos/21_fundamentos_conceptuales.ipynb`: notebook sobre causalidad, creacion de pares y por que se necesitan campos.
+- `Cuadernos/ejemplos/22_representaciones_de_lorentz.ipynb`: notebook sobre boosts, algebra de Lorentz y representaciones espinorial vs vectorial con NumPy.
+- `Cuadernos/ejemplos/23_noether_y_simetrias.ipynb`: notebook sobre corrientes de Noether para traslacion, $U(1)$ y Lorentz calculadas con SymPy.
+- `Tutorial/_borradores/REVISION.md`: informe de revision de los 26 borradores existentes; todos se recomiendan archivar ya que el canonico es mas completo en todos los casos.
+
+### Changed
+
+- `Tutorial/00_prerrequisitos/README.md`: ruta recomendada ampliada a 7 capitulos; cuadernos asociados actualizados; mapa Mermaid actualizado; resultado esperado extendido.
+- `Tutorial/00_prerrequisitos/05_delta_de_dirac_y_transformadas_de_fourier.md`: navegacion actualizada para apuntar al nuevo capitulo 06.
+- `Tutorial/01_fundamentos_conceptuales/README.md`: cuaderno `21_fundamentos_conceptuales.ipynb` añadido a la seccion de cuadernos asociados.
+- `Tutorial/02_relatividad_y_campos/README.md`: cuaderno `22_representaciones_de_lorentz.ipynb` añadido a la seccion de cuadernos asociados.
+- `Tutorial/03_accion_y_simetrias/README.md`: cuaderno `23_noether_y_simetrias.ipynb` añadido a la seccion de cuadernos asociados.
+- `Tutorial/tabla_maestra_del_tutorial.md`: conteo de capitulos actualizado: modulo 00: 5→7, modulo 02: 2→4, modulo 03: 2→4.
+
+### Removed (from Planned)
+
+- Prerrequisitos matematicos (calculo funcional y algebra de Lie): completados.
+- Segunda pasada de ejercicios en modulos 06-12: completada con bloques estructurados de tres niveles.
+
 ## [Unreleased]
 
 ### Planned
 
-- Crear un capitulo de prerrequisitos matematicos.
-- Incorporar una segunda pasada de ejercicios y problemas guiados en los modulos `06` a `12`.
+- Revisar y promover selectivamente borradores de `Tutorial/_borradores/` cuando mejoren la version publica.
+- Reforzar referencias por documento y enlaces cruzados entre capitulos y cuadernos.
 - Reforzar referencias por documento y enlaces cruzados entre capitulos y cuadernos.
 - Revisar y promover selectivamente borradores de `Tutorial/_borradores/` cuando mejoren la version publica.
 

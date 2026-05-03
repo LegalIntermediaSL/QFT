@@ -30,10 +30,10 @@ Esta tabla resume el estado y la funcion de cada modulo del recorrido principal.
 
 | Modulo | Capitulos |
 | :--- | :--- |
-| 00 | 5 |
+| 00 | 7 |
 | 01 | 3 |
-| 02 | 2 |
-| 03 | 2 |
+| 02 | 4 |
+| 03 | 4 |
 | 04 | 3 |
 | 05 | 4 |
 | 06 | 5 |

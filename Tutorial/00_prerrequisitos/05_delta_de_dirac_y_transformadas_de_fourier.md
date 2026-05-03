@@ -190,4 +190,4 @@ Una vez que este lenguaje se vuelve natural, muchas formulas de QFT dejan de par
 
 ## Navegacion del tutorial
 
-[(anterior) Simetrias y Grupos Basicos](04_simetrias_y_grupos_basicos.md) | [(siguiente) Conceptos Fundamentales de Teoria Cuantica de Campos](../01_fundamentos_conceptuales/01_conceptos_fundamentales.md)
+[(anterior) Simetrias y Grupos Basicos](04_simetrias_y_grupos_basicos.md) | [(siguiente) Calculo Funcional y Derivadas Funcionales](06_calculo_funcional_y_derivadas.md)

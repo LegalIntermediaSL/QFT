@@ -42,11 +42,13 @@ flowchart TD
 ## Cuadernos asociados
 
 - `../../Cuadernos/ejemplos/04_accion_y_euler_lagrange.ipynb`
+- `../../Cuadernos/ejemplos/23_noether_y_simetrias.ipynb`
 - `../../Cuadernos/problemas_resueltos/08_accion_y_noether.ipynb`
 
 Uso sugerido:
 
-- el cuaderno de `ejemplos` sirve para fijar la mecanica del principio variacional y las ecuaciones de Euler-Lagrange;
+- el cuaderno de `ejemplos/04` sirve para fijar la mecanica del principio variacional y las ecuaciones de Euler-Lagrange;
+- el cuaderno de `ejemplos/23` calcula explicitamente corrientes de Noether para traslacion, fase U(1) y Lorentz con SymPy;
 - el de `problemas_resueltos` sirve para practicar el paso desde una simetria continua hasta una corriente conservada.
 
 ## Resultado esperado

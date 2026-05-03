@@ -15,6 +15,8 @@ Este es el punto de entrada del tutorial. Basta con un dominio razonable de meca
 3. `03_oscilador_armonico_cuantico.md`
 4. `04_simetrias_y_grupos_basicos.md`
 5. `05_delta_de_dirac_y_transformadas_de_fourier.md`
+6. `06_calculo_funcional_y_derivadas.md`
+7. `07_algebra_de_lie_y_representaciones.md`
 
 ## Capitulos imprescindibles en primera pasada
 
@@ -31,12 +33,14 @@ Si quieres una primera vuelta compacta del modulo, prioriza:
 - `../../Cuadernos/problemas_resueltos/03_oscilador_armonico_cuantico.ipynb`
 - `../../Cuadernos/problemas_resueltos/04_simetrias_y_grupos_basicos.ipynb`
 - `../../Cuadernos/problemas_resueltos/05_delta_de_dirac_y_fourier.ipynb`
+- `../../Cuadernos/problemas_resueltos/23_calculo_funcional.ipynb`
 
 Uso sugerido:
 
 - usar cada cuaderno como apoyo inmediato del articulo correspondiente;
 - priorizar `03_oscilador_armonico_cuantico.ipynb` si se quiere preparar mejor el salto a cuantizacion de campos;
-- usar `05_delta_de_dirac_y_fourier.ipynb` como referencia de consulta cuando empiece el trabajo en espacio de momentos.
+- usar `05_delta_de_dirac_y_fourier.ipynb` como referencia de consulta cuando empiece el trabajo en espacio de momentos;
+- usar `23_calculo_funcional.ipynb` antes de entrar al modulo de integral de camino.
 
 ## Mapa del bloque
 
@@ -44,9 +48,12 @@ Uso sugerido:
 flowchart TD
     A["Relatividad especial minima"] --> B["Notacion tensorial"]
     B --> C["Oscilador armonico cuantico"]
-    C --> D["Simetrias y grupos"]
+    C --> D["Simetrias y grupos basicos"]
     D --> E["Fourier y delta de Dirac"]
-    E --> F["Entrada natural a la QFT"]
+    E --> G["Calculo funcional"]
+    D --> H["Algebra de Lie y representaciones"]
+    G --> F["Entrada natural a la QFT"]
+    H --> F
 ```
 
 ## Contenido disponible
@@ -71,6 +78,14 @@ Simetrias continuas, grupos, generadores y el papel estructural de las represent
 
 Herramientas tecnicas esenciales para pasar entre espacio de posiciones y espacio de momentos.
 
+### 6. Calculo funcional y derivadas funcionales
+
+Funcionales, derivada funcional, ecuaciones de movimiento via variacion y el funcional generador. Prerrequisito directo para el modulo de integral de camino.
+
+### 7. Algebra de Lie y representaciones
+
+Algebras de Lie, relaciones de conmutacion, $\mathfrak{su}(2)$ y $\mathfrak{su}(3)$, representaciones irreducibles, Casimir y representacion adjunta. Prerrequisito para el Modelo Estandar y gauge.
+
 ## Funcion dentro del curso
 
 No es un modulo avanzado, pero si estrategico. Su papel es reducir friccion y permitir que los modulos centrales se concentren en QFT sin convertirse en un curso paralelo de prerequisitos.
@@ -83,7 +98,9 @@ Al terminar este bloque, el lector deberia poder:
 - leer expresiones tensoriales basicas sin perderse en la notacion;
 - entender por que el oscilador armonico es el alfabeto de la cuantizacion de campos;
 - reconocer la relacion entre simetria y estructura teorica;
-- usar la delta de Dirac y las transformadas de Fourier en contextos simples.
+- usar la delta de Dirac y las transformadas de Fourier en contextos simples;
+- calcular derivadas funcionales y obtener ecuaciones de movimiento de una accion;
+- clasificar campos segun representaciones de $\mathfrak{su}(2)$ y $\mathfrak{su}(3)$.
 
 ## Sintesis del modulo
 

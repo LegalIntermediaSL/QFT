@@ -177,4 +177,4 @@ La fuerza del formalismo de campos viene de que alinea tres exigencias en un mis
 
 ## Navegacion del tutorial
 
-[(anterior) Choque Entre Mecanica Cuantica y Relatividad Especial](01_choque_entre_mq_y_relatividad.md) | [(siguiente) Portada 02: Accion, Densidad Lagrangiana y Teorema de Noether](../portada_02_accion_lagrangiana_y_noether.md)
+[(anterior) Choque Entre Mecanica Cuantica y Relatividad Especial](01_choque_entre_mq_y_relatividad.md) | [(siguiente) Representaciones de Lorentz y Espinores](03_representaciones_de_lorentz_y_espinores.md)

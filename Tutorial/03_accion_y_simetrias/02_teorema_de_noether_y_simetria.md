@@ -173,4 +173,4 @@ El teorema de Noether enseña una de las lecciones mas profundas de la fisica te
 
 ## Navegacion del tutorial
 
-[(anterior) Principio de Accion y Ecuaciones de Campo](01_principio_de_accion_y_ecuaciones_de_campo.md) | [(siguiente) Portada 03: Cuantizacion Canonica del Campo Escalar Libre](../portada_03_cuantizacion_canonica_del_campo_escalar.md)
+[(anterior) Principio de Accion y Ecuaciones de Campo](01_principio_de_accion_y_ecuaciones_de_campo.md) | [(siguiente) Teorema de Noether: Ejemplos Explicitos](03_teorema_de_noether_ejemplos_explicitos.md)

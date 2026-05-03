@@ -19,11 +19,15 @@ Este modulo explica por que la Teoria Cuantica de Campos no es una decoracion so
 
 1. `01_choque_entre_mq_y_relatividad.md`
 2. `02_campos_localidad_y_causalidad.md`
+3. `03_representaciones_de_lorentz_y_espinores.md`
+4. `04_clasificacion_de_campos_por_spin.md`
 
 ## Capitulos imprescindibles en primera pasada
 
 - [01 Choque entre MQ y relatividad](01_choque_entre_mq_y_relatividad.md): explica por que una teoria de una sola particula no basta.
 - [02 Campos, localidad y causalidad](02_campos_localidad_y_causalidad.md): muestra por que el campo es el objeto correcto.
+- [03 Representaciones de Lorentz y espinores](03_representaciones_de_lorentz_y_espinores.md): desarrolla la estructura de grupo que clasifica todos los campos.
+- [04 Clasificacion de campos por spin](04_clasificacion_de_campos_por_spin.md): conecta representaciones con particulas fisicas via Wigner.
 
 ## Mapa del modulo
 
@@ -43,11 +47,13 @@ Antes o durante este modulo conviene leer tambien:
 ## Cuadernos asociados
 
 - `../../Cuadernos/ejemplos/03_campos_y_localidad.ipynb`
+- `../../Cuadernos/ejemplos/22_representaciones_de_lorentz.ipynb`
 - `../../Cuadernos/problemas_resueltos/07_relatividad_y_campos.ipynb`
 
 Uso sugerido:
 
-- el cuaderno de `ejemplos` sirve para reforzar la intuicion de campo local frente a una descripcion de particulas puntuales;
+- el cuaderno de `ejemplos/03` sirve para reforzar la intuicion de campo local frente a una descripcion de particulas puntuales;
+- el cuaderno de `ejemplos/22` construye boosts de Lorentz y compara representaciones espinorial y vectorial con calculos explicitos;
 - el de `problemas_resueltos` sirve para consolidar la relacion entre relatividad, numero variable de particulas y causalidad.
 
 ## Resultado esperado
