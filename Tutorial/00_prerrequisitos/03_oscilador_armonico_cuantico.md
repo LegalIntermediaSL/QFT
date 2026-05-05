@@ -74,11 +74,13 @@ La eleccion de coeficientes no es arbitraria. Se fija de manera que:
 
 ## 5. Hamiltoniano en forma algebraica
 
-Con estos operadores, el hamiltoniano se reescribe como
+Con estos operadores, el hamiltoniano se reescribe como (en unidades naturales, $\hbar = 1$)
 
 $$
 H = \omega\left(a^\dagger a + \frac{1}{2}\right).
 $$
+
+En unidades físicas completas: $H = \hbar\omega\!\left(a^\dagger a + \tfrac{1}{2}\right)$.
 
 Esta expresion deja visible la estructura espectral del sistema.
 
