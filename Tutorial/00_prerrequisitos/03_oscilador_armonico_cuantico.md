@@ -50,29 +50,178 @@ Si uno resolviera el problema directamente en representacion de posicion, encont
 
 ## 4. Operadores de subida y bajada
 
-Se introducen los operadores
+### 4.1 Motivacion: factorizar el hamiltoniano
+
+El hamiltoniano del oscilador tiene la forma de una suma de dos terminos cuadraticos:
 
 $$
-a = \sqrt{\frac{m\omega}{2}}\,x + \frac{i}{\sqrt{2m\omega}}\,p,
+H = \frac{p^2}{2m} + \frac{1}{2}m\omega^2 x^2.
+$$
+
+En algebra elemental, una suma de cuadrados $A^2 + B^2$ puede factorizarse como $(A + iB)(A - iB)$ si $A$ y $B$ conmutan. La idea es intentar algo analogo aqui, introduciendo una combinacion lineal de $x$ y $p$ de la forma
+
+$$
+a = \alpha\, x + i\beta\, p,
+$$
+
+con coeficientes reales $\alpha$ y $\beta$ a determinar. Su adjunto es
+
+$$
+a^\dagger = \alpha\, x - i\beta\, p.
+$$
+
+Si $x$ y $p$ conmutaran, tendriamos exactamente $a^\dagger a = \alpha^2 x^2 + \beta^2 p^2$. Pero en mecanica cuantica $[x,p] = i$, de modo que al multiplicar $a^\dagger a$ aparece un termino adicional:
+
+$$
+a^\dagger a = \alpha^2 x^2 + \beta^2 p^2 + \alpha\beta\,[x,p]\cdot(-i) + \text{(terminos cruzados)}.
+$$
+
+Este termino de conmutador no desaparece y es precisamente lo que fija los coeficientes.
+
+### 4.2 Determinacion de los coeficientes
+
+Se calculan $a^\dagger a$ y $a a^\dagger$ directamente. Con $[x,p] = i$:
+
+$$
+a^\dagger a
+= \alpha^2 x^2 + \beta^2 p^2 - i\alpha\beta\,[x,p]
+= \alpha^2 x^2 + \beta^2 p^2 + \alpha\beta,
 $$
 
 $$
-a^\dagger = \sqrt{\frac{m\omega}{2}}\,x - \frac{i}{\sqrt{2m\omega}}\,p,
+a a^\dagger
+= \alpha^2 x^2 + \beta^2 p^2 + i\alpha\beta\,[x,p]
+= \alpha^2 x^2 + \beta^2 p^2 - \alpha\beta.
 $$
 
-que satisfacen
+El commutador de $a$ y $a^\dagger$ resulta
 
 $$
-[a,a^\dagger]=1.
+[a, a^\dagger] = a a^\dagger - a^\dagger a = -2\alpha\beta.
 $$
 
-Estos operadores reorganizan el problema de forma mucho mas elegante que resolver directamente la ecuacion diferencial de Schrodinger.
+Para que $[a, a^\dagger] = 1$ se necesita
 
-La eleccion de coeficientes no es arbitraria. Se fija de manera que:
+$$
+\alpha\beta = -\frac{1}{2}.
+$$
 
-- $a$ y $a^\dagger$ sean adimensionales;
-- el algebra tome una forma elemental;
-- el hamiltoniano quede expresado en terminos del operador numero.
+Por otro lado, comparando $a^\dagger a$ con el hamiltoniano:
+
+$$
+H = \frac{p^2}{2m} + \frac{1}{2}m\omega^2 x^2
+\overset{!}{=} \frac{1}{\text{factor}}\left(\alpha^2 x^2 + \beta^2 p^2\right) \cdot \omega + \text{constante}.
+$$
+
+Para que los coeficientes coincidan se requiere
+
+$$
+\frac{\alpha^2}{\beta^2} = \frac{\tfrac{1}{2}m\omega^2}{\tfrac{1}{2m}} = m^2\omega^2,
+\quad\Rightarrow\quad
+\frac{\alpha}{\beta} = m\omega\quad(\alpha,\beta > 0).
+$$
+
+Combinando $\alpha\beta = \tfrac{1}{2}$ y $\alpha = m\omega\,\beta$:
+
+$$
+\beta = \frac{1}{\sqrt{2m\omega}}, \qquad \alpha = \sqrt{\frac{m\omega}{2}}.
+$$
+
+Los operadores quedan fijados univocamente:
+
+$$
+\boxed{a = \sqrt{\frac{m\omega}{2}}\,x + \frac{i}{\sqrt{2m\omega}}\,p,}
+\qquad
+\boxed{a^\dagger = \sqrt{\frac{m\omega}{2}}\,x - \frac{i}{\sqrt{2m\omega}}\,p.}
+$$
+
+Con estos coeficientes $a$ y $a^\dagger$ son adimensionales (en unidades naturales), el conmutador vale exactamente uno, y el hamiltoniano se expresa limpiamente en funcion de $a^\dagger a$.
+
+### 4.3 Verificacion del conmutador
+
+Se puede comprobar directamente:
+
+$$
+[a, a^\dagger]
+= \left[\sqrt{\frac{m\omega}{2}}\,x + \frac{i}{\sqrt{2m\omega}}\,p,\;
+         \sqrt{\frac{m\omega}{2}}\,x - \frac{i}{\sqrt{2m\omega}}\,p\right].
+$$
+
+Solo los terminos cruzados contribuyen (los terminos $[x,x]$ y $[p,p]$ son cero):
+
+$$
+[a, a^\dagger]
+= \sqrt{\frac{m\omega}{2}}\cdot\left(-\frac{i}{\sqrt{2m\omega}}\right)[x,p]
++ \frac{i}{\sqrt{2m\omega}}\cdot\sqrt{\frac{m\omega}{2}}\,[p,x].
+$$
+
+Usando $[x,p] = i$ y $[p,x] = -i$:
+
+$$
+[a, a^\dagger]
+= \sqrt{\frac{m\omega}{2}}\cdot\frac{-i}{\sqrt{2m\omega}}\cdot i
++ \frac{i}{\sqrt{2m\omega}}\cdot\sqrt{\frac{m\omega}{2}}\cdot(-i)
+= \frac{1}{2} + \frac{1}{2} = 1. \checkmark
+$$
+
+### 4.4 Como actuan sobre los estados: el argumento espectral
+
+La propiedad mas importante de $a$ y $a^\dagger$ no es su forma explicita, sino como actuan sobre los autoestados de $H$.
+
+Sea $|E\rangle$ un autoestado de $H$ con autovalor $E$:
+
+$$
+H|E\rangle = E|E\rangle.
+$$
+
+Calculamos $H$ aplicado al estado $a^\dagger|E\rangle$, usando el conmutador $[H, a^\dagger]$. De la expresion $H = \omega(a^\dagger a + \tfrac{1}{2})$ se obtiene:
+
+$$
+[H, a^\dagger] = \omega[a^\dagger a,\, a^\dagger] = \omega\,a^\dagger[a, a^\dagger] = \omega\, a^\dagger.
+$$
+
+Por tanto:
+
+$$
+H\,a^\dagger|E\rangle = \bigl([H, a^\dagger] + a^\dagger H\bigr)|E\rangle
+= \omega\,a^\dagger|E\rangle + a^\dagger E|E\rangle
+= (E + \omega)\,a^\dagger|E\rangle.
+$$
+
+El estado $a^\dagger|E\rangle$ tiene energia $E + \omega$: $a^\dagger$ **sube** la energia en un cuanto $\omega$.
+
+De forma analoga, con $[H, a] = -\omega\, a$:
+
+$$
+H\,a|E\rangle = (E - \omega)\,a|E\rangle.
+$$
+
+El estado $a|E\rangle$ tiene energia $E - \omega$: $a$ **baja** la energia en un cuanto $\omega$.
+
+### 4.5 Por que el espectro es discreto y acotado
+
+Aplicando $a$ repetidamente se obtendria una sucesion de estados con energias $E, E-\omega, E-2\omega, \ldots$ que decrece sin limite. Pero la energia del oscilador es siempre no negativa (es una suma de cuadrados de operadores hermiticos), de modo que la sucesion no puede continuar indefinidamente.
+
+Debe existir un estado $|0\rangle$ tal que
+
+$$
+a|0\rangle = 0,
+$$
+
+es decir, un estado al que no se puede bajar mas. Ese es el estado fundamental. Su energia se obtiene directamente:
+
+$$
+H|0\rangle = \omega\!\left(a^\dagger a + \frac{1}{2}\right)|0\rangle = \frac{\omega}{2}|0\rangle,
+\quad\Rightarrow\quad E_0 = \frac{\omega}{2}.
+$$
+
+Los estados excitados se construyen aplicando $a^\dagger$ sucesivamente, y sus energias son
+
+$$
+E_n = \omega\!\left(n + \frac{1}{2}\right), \qquad n = 0, 1, 2, \ldots
+$$
+
+Toda la estructura del espectro emerge del algebra de $[a, a^\dagger] = 1$, sin resolver ninguna ecuacion diferencial.
 
 ## 5. Hamiltoniano en forma algebraica
 
