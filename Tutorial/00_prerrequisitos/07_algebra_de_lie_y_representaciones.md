@@ -184,4 +184,4 @@ Este capitulo cierra el modulo de prerrequisitos. A partir del modulo 01, toda e
 
 ## Navegacion del tutorial
 
-[(anterior) Calculo Funcional y Derivadas Funcionales](06_calculo_funcional_y_derivadas.md) | [(siguiente) Fundamentos Conceptuales](../01_fundamentos_conceptuales/README.md)
+[(anterior) Calculo Funcional y Derivadas Funcionales](06_calculo_funcional_y_derivadas.md) | [(siguiente) Unidades Naturales y Fisicas](08_unidades_naturales_y_fisicas.md)

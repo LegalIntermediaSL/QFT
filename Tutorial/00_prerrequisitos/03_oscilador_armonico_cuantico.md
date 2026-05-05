@@ -42,6 +42,8 @@ $$
 [x,p]=i.
 $$
 
+Esta convencion se usa en el resto de este articulo y en todo el tutorial. Para una discusion detallada vease [Unidades Naturales y Fisicas](08_unidades_naturales_y_fisicas.md).
+
 El hamiltoniano conserva la misma forma formal, pero ahora actua sobre estados del espacio de Hilbert.
 
 Si uno resolviera el problema directamente en representacion de posicion, encontraria una ecuacion diferencial perfectamente tratable. Pero la forma algebraica del problema es mucho mas valiosa para QFT, porque hace visible como se organiza el espectro en niveles discretos y como aparecen naturalmente operadores que cambian el numero de excitaciones.

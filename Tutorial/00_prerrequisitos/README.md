@@ -17,6 +17,7 @@ Este es el punto de entrada del tutorial. Basta con un dominio razonable de meca
 5. `05_delta_de_dirac_y_transformadas_de_fourier.md`
 6. `06_calculo_funcional_y_derivadas.md`
 7. `07_algebra_de_lie_y_representaciones.md`
+8. `08_unidades_naturales_y_fisicas.md`
 
 ## Capitulos imprescindibles en primera pasada
 
@@ -86,6 +87,10 @@ Funcionales, derivada funcional, ecuaciones de movimiento via variacion y el fun
 
 Algebras de Lie, relaciones de conmutacion, $\mathfrak{su}(2)$ y $\mathfrak{su}(3)$, representaciones irreducibles, Casimir y representacion adjunta. Prerrequisito para el Modelo Estandar y gauge.
 
+### 8. Unidades naturales y unidades fisicas
+
+Convencion $\hbar = c = 1$, tabla de equivalencias dimensionales, como recuperar unidades fisicas del SI y referencia rapida para el resto del tutorial.
+
 ## Funcion dentro del curso
 
 No es un modulo avanzado, pero si estrategico. Su papel es reducir friccion y permitir que los modulos centrales se concentren en QFT sin convertirse en un curso paralelo de prerequisitos.
@@ -100,7 +105,8 @@ Al terminar este bloque, el lector deberia poder:
 - reconocer la relacion entre simetria y estructura teorica;
 - usar la delta de Dirac y las transformadas de Fourier en contextos simples;
 - calcular derivadas funcionales y obtener ecuaciones de movimiento de una accion;
-- clasificar campos segun representaciones de $\mathfrak{su}(2)$ y $\mathfrak{su}(3)$.
+- clasificar campos segun representaciones de $\mathfrak{su}(2)$ y $\mathfrak{su}(3)$;
+- aplicar la convencion $\hbar = c = 1$ y recuperar unidades fisicas cuando sea necesario.
 
 ## Sintesis del modulo
 
