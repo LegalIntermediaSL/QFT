@@ -145,11 +145,15 @@ Este bloque fija el lenguaje: que problema resuelve la QFT, que principios la re
 
 - `01_choque_entre_mq_y_relatividad.md`
 - `02_campos_localidad_y_causalidad.md`
+- `03_representaciones_de_lorentz_y_espinores.md`
+- `04_clasificacion_de_campos_por_spin.md`
 
 ### `03_accion_y_simetrias/`
 
 - `01_principio_de_accion_y_ecuaciones_de_campo.md`
 - `02_teorema_de_noether_y_simetria.md`
+- `03_teorema_de_noether_ejemplos_explicitos.md`
+- `04_simetrias_internas_y_cargas_conservadas.md`
 
 ### `04_cuantizacion_del_campo_escalar/`
 
@@ -294,11 +298,9 @@ La plantilla editable se encuentra en [99_apendices/plantilla_de_capitulo.md](99
 
 ## Siguiente horizonte
 
-Las extensiones mas naturales del tutorial siguen siendo:
+Todos los modulos del recorrido principal estan desarrollados y completos. Las extensiones mas naturales del tutorial son:
 
-- ampliacion de `06_fermiones_y_dirac/` con algebra gamma, bilineales y limite no relativista;
-- ampliacion de `07_gauge_y_qed/` con fijacion de gauge, tensor de campo e identidades de Ward;
-- ampliacion de `08_integral_de_camino/` con derivacion discreta y puente explicito con cuantizacion canonica;
-- ampliacion de `09_renormalizacion/` con ejemplos a un lazo y regularizacion dimensional;
-- ampliacion de `10_modelo_estandar/`
-- consolidacion de `11_qft_informacion_y_agujeros_negros/`
+- una tanda de notebooks con calculos simbolicos mas ricos en amplitudes y reglas de Feynman (modulos 05–07);
+- una capa mas tecnica sobre replica trick, superficies extremales y gravedad semiclasica refinada (modulo 11);
+- un matching mas formal entre una UV completion sencilla y SMEFT, con RGE a un lazo (modulo 12);
+- una prolongacion fenomenologica mas cuantitativa de neutrinos, sabor y observables leptonicos (modulo 10).

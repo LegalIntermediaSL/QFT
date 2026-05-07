@@ -4,6 +4,4 @@ matplotlib
 ipython
 pandas
 scipy
-pyfeyn2
-feyntools
 jupyter

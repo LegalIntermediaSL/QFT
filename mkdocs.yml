@@ -4,7 +4,6 @@ docs_dir: docs
 site_dir: site
 exclude_docs: |
   Tutorial/template_modulo.md
-  Tutorial/_borradores/**
   Imagenes/diagramas/*.md
 not_in_nav: |
   LICENSE.md
@@ -15,6 +14,7 @@ not_in_nav: |
   Notas/*
   Tutorial/portada_*.md
   Tutorial/*/[0-9]*.md
+  Tutorial/*/ejercicios_modulo_*.md
   Tutorial/99_apendices/README.md
 theme:
   name: material

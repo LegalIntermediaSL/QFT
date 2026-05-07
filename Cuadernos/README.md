@@ -111,6 +111,13 @@ Objetivo: seguir la cadena entre $Z[J]$, correladores, $W[J]$ y $\\Gamma[\\phi_c
 4. `ejemplos/17_esquema_msbar_y_qed_vs_qcd.ipynb`
 Objetivo: reforzar el contraste cualitativo entre QED y QCD y el papel del esquema $\\overline{\\mathrm{MS}}$ en el modulo `09`.
 
+## Herramientas transversales
+
+Notebooks de uso general que no pertenecen a un modulo especifico sino que son recursos de consulta para todo el tutorial:
+
+- `ejemplos/03_calculo_simbolico_con_sympy.ipynb`  
+  Objetivo: introduccion al algebra de Clifford y calculo de trazas de matrices gamma con SymPy. Util como referencia en los modulos 06, 07 y 09.
+
 ## Uso sugerido
 
 Los cuadernos no reemplazan el desarrollo teorico del tutorial. Deben usarse para:

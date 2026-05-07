@@ -1,3 +1,4 @@
+import json
 import re
 import unicodedata
 from pathlib import Path
@@ -118,6 +119,42 @@ def validate_editorial_consistency() -> list[dict[str, str]]:
     return issues
 
 
+def extract_notebook_markdown(nb_path: Path) -> str:
+    try:
+        data = json.loads(nb_path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return ""
+    lines = []
+    for cell in data.get("cells", []):
+        if cell.get("cell_type") == "markdown":
+            lines.append("".join(cell.get("source", [])))
+    return "\n".join(lines)
+
+
+def check_notebook_links(broken_links: list[dict[str, str]]) -> None:
+    for nb_file in sorted(Path("Cuadernos").rglob("*.ipynb")):
+        content = extract_notebook_markdown(nb_file)
+        sanitized_content = strip_code_blocks(content)
+        for match in LINK_RE.finditer(sanitized_content):
+            raw_target = normalize_target(match.group(1))
+            if not raw_target or raw_target.startswith(IGNORED_SCHEMES):
+                continue
+            if is_placeholder_target(raw_target):
+                continue
+            path_part, _, _ = raw_target.partition("#")
+            if not path_part:
+                continue
+            target_path = (nb_file.parent / path_part).resolve()
+            if not target_path.exists():
+                broken_links.append(
+                    {
+                        "file": str(nb_file),
+                        "link": raw_target,
+                        "reason": "ruta inexistente",
+                    }
+                )
+
+
 def check_links() -> int:
     md_files = sorted(
         path
@@ -162,6 +199,8 @@ def check_links() -> int:
                     }
                 )
 
+    check_notebook_links(broken_links)
+
     duplicate_paths = find_editorial_duplicates()
     if duplicate_paths:
         print(
@@ -170,7 +209,7 @@ def check_links() -> int:
         for path in duplicate_paths:
             print(f"  - {path}")
         print(
-            "   Mueve estas variantes a `Tutorial/_borradores/` o renómbralas con una convención inequívoca."
+            "   Renómbralos con una convención inequívoca o elimínalos si son duplicados."
         )
         return 1
 
