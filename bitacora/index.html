@@ -1,0 +1,2715 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Tutorial completo sobre Teoría Cuántica de Campos">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Bitacora del Proyecto QFT - QFT Tutorial</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#bitacora-del-proyecto-qft" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="QFT Tutorial" class="md-header__button md-logo" aria-label="QFT Tutorial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            QFT Tutorial
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Bitacora del Proyecto QFT
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="QFT Tutorial" class="md-nav__button md-logo" aria-label="QFT Tutorial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    QFT Tutorial
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutorial
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tutorial
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Índice
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorial/como_estudiar_este_tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cómo Estudiarlo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorial/problemas_recomendados_por_semana/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemas por Semana
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorial/rutas_de_lectura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rutas de Lectura
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorial/tabla_maestra_del_tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tabla Maestra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorial/sintesis_por_modulo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Síntesis por Módulo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorial/catalogo_de_capitulos_y_etiquetas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catálogo de Capítulos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorial/mapa_de_dependencias_conceptuales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mapa de Dependencias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorial/00_prerrequisitos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    00. Prerrequisitos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorial/01_fundamentos_conceptuales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01. Fundamentos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorial/02_relatividad_y_campos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02. Relatividad y Campos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorial/03_accion_y_simetrias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03. Acción y Simetrías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorial/04_cuantizacion_del_campo_escalar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04. Campo Escalar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorial/05_interacciones_y_perturbaciones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05. Interacciones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorial/06_fermiones_y_dirac/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06. Fermiones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorial/07_gauge_y_qed/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07. Gauge y QED
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorial/08_integral_de_camino/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08. Integral de Camino
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorial/09_renormalizacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09. Renormalización
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorial/10_modelo_estandar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Modelo Estándar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorial/11_qft_informacion_y_agujeros_negros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. QFT e Información
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorial/12_teorias_de_campo_efectivas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Teorías de Campo Efectivas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Apéndices
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Apéndices
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorial/99_apendices/bibliografia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bibliografía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorial/99_apendices/computacion_qft/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Herramientas Computacionales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorial/99_apendices/errores_comunes_y_recetas_practicas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Errores Comunes y Recetas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorial/99_apendices/reglas_de_feynman_y_propagadores/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reglas de Feynman y Propagadores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorial/99_apendices/simetrias_discretas_cpt_y_anomalias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Simetrías Discretas, CPT y Anomalías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorial/99_apendices/mezcla_de_sabor_ckm_y_pmns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mezcla de Sabor, CKM y PMNS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorial/99_apendices/anomalia_axial_y_cancelacion_de_anomalias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anomalía Axial y Cancelación de Anomalías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorial/99_apendices/glosario_notacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glosario de Notación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorial/99_apendices/convenciones_globales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Convenciones Globales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorial/99_apendices/plantilla_de_capitulo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plantilla Editorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#proposito" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Proposito
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estado-general" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estado general
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entrada-inicial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entrada inicial
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Entrada inicial">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fecha" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fecha
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#situacion-encontrada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Situacion encontrada
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trabajo-realizado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trabajo realizado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decision-editorial-principal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Decision editorial principal
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#criterios-de-calidad-acordados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Criterios de calidad acordados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#riesgos-identificados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Riesgos identificados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proximos-pasos-recomendados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Proximos pasos recomendados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Proximos pasos recomendados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prioridad-alta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prioridad alta
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prioridad-media" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prioridad media
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prioridad-baja" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prioridad baja
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#propuesta-de-estructura-futura" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Propuesta de estructura futura
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nota-de-seguimiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nota de seguimiento
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cierre-de-esta-entrada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cierre de esta entrada
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entrada-de-desarrollo-de-contenido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entrada de desarrollo de contenido
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Entrada de desarrollo de contenido">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fecha_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fecha
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#objetivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trabajo-realizado_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trabajo realizado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decisiones-tomadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Decisiones tomadas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pendientes-inmediatos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pendientes inmediatos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entrada-de-ampliacion-estructural" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entrada de ampliacion estructural
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Entrada de ampliacion estructural">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fecha_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fecha
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#situacion-detectada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Situacion detectada
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trabajo-realizado_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trabajo realizado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pendientes-inmediatos_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pendientes inmediatos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entrada-de-profundizacion-de-articulos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entrada de profundizacion de articulos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Entrada de profundizacion de articulos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fecha_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fecha
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trabajo-realizado_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trabajo realizado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pendientes-inmediatos_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pendientes inmediatos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entrada-de-reorganizacion-curricular" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entrada de reorganizacion curricular
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Entrada de reorganizacion curricular">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fecha_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fecha
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trabajo-realizado_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trabajo realizado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entrada-de-cuadernos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entrada de cuadernos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Entrada de cuadernos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fecha_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fecha
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trabajo-realizado_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trabajo realizado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entrada-de-notas-de-apoyo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entrada de notas de apoyo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Entrada de notas de apoyo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fecha_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fecha
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trabajo-realizado_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trabajo realizado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entrada-de-recursos-visuales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entrada de recursos visuales
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Entrada de recursos visuales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fecha_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fecha
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trabajo-realizado_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trabajo realizado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entrada-de-ampliacion-de-modulos-avanzados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entrada de ampliacion de modulos avanzados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Entrada de ampliacion de modulos avanzados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fecha_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fecha
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trabajo-realizado_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trabajo realizado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entrada-de-consolidacion-de-cuadernos-y-frontera-avanzada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entrada de consolidacion de cuadernos y frontera avanzada
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Entrada de consolidacion de cuadernos y frontera avanzada">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fecha_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fecha
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trabajo-realizado_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trabajo realizado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entrada-de-expansion-de-frontera-y-herramientas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entrada de expansión de frontera y herramientas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Entrada de expansión de frontera y herramientas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fecha_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fecha
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trabajo-realizado_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trabajo realizado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pendientes-inmediatos_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pendientes inmediatos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entrada-de-limpieza-editorial-y-sincronizacion-con-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entrada de limpieza editorial y sincronizacion con GitHub
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Entrada de limpieza editorial y sincronizacion con GitHub">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fecha_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fecha
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#situacion-detectada_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Situacion detectada
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trabajo-realizado_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trabajo realizado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validacion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#siguientes-pasos-recomendados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Siguientes pasos recomendados
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entrada-de-validacion-editorial-minima" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entrada de validacion editorial minima
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Entrada de validacion editorial minima">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fecha_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fecha
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trabajo-realizado_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trabajo realizado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#siguiente-mejora-natural" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Siguiente mejora natural
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entrada-de-refinamiento-de-ejercicios-y-apoyos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entrada de refinamiento de ejercicios y apoyos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Entrada de refinamiento de ejercicios y apoyos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fecha_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fecha
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trabajo-realizado_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trabajo realizado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="bitacora-del-proyecto-qft">Bitacora del Proyecto QFT</h1>
+<h2 id="proposito">Proposito</h2>
+<p>Esta bitacora registra el avance del proyecto, las decisiones editoriales, el estado del contenido y los siguientes pasos recomendados. Su funcion es mantener continuidad entre sesiones de trabajo y evitar que el tutorial crezca de forma desordenada.</p>
+<h2 id="estado-general">Estado general</h2>
+<p>El proyecto se encuentra en una etapa fundacional. La prioridad actual no es refinar detalles avanzados, sino establecer una base documental robusta desde la que se pueda desarrollar un tutorial completo de Teoria Cuantica de Campos.</p>
+<h2 id="entrada-inicial">Entrada inicial</h2>
+<h3 id="fecha">Fecha</h3>
+<p>2026-04-18</p>
+<h3 id="situacion-encontrada">Situacion encontrada</h3>
+<ul>
+<li>El repositorio solo contenia un <code>README.md</code> minimo con el nombre del proyecto.</li>
+<li>No existia documentacion de seguimiento.</li>
+<li>No habia historial editorial mas alla del commit inicial.</li>
+</ul>
+<h3 id="trabajo-realizado">Trabajo realizado</h3>
+<ul>
+<li>Se redefinio el <code>README.md</code> como documento de presentacion del proyecto.</li>
+<li>Se creo <code>bitacora.md</code> para registrar avance, decisiones y prioridades.</li>
+<li>Se creo <code>changelog.md</code> para ordenar el historial de cambios.</li>
+</ul>
+<h3 id="decision-editorial-principal">Decision editorial principal</h3>
+<p>Se adopta una estrategia de crecimiento por capas:</p>
+<ol>
+<li>Documentacion base</li>
+<li>Estructura del temario</li>
+<li>Desarrollo progresivo de capitulos</li>
+<li>Ejercicios, referencias y pulido final</li>
+</ol>
+<p>Esta decision busca reducir friccion al inicio y facilitar que el proyecto mantenga coherencia a medida que aumente de tamano.</p>
+<h2 id="criterios-de-calidad-acordados">Criterios de calidad acordados</h2>
+<ul>
+<li>Cada seccion debe responder a una necesidad pedagogica clara.</li>
+<li>Las derivaciones deben evitar saltos grandes salvo que se indiquen referencias.</li>
+<li>La notacion debe ser consistente entre modulos.</li>
+<li>El contenido debe poder leerse de forma secuencial, aunque admita consulta puntual.</li>
+<li>La documentacion del proyecto debe actualizarse junto con el contenido tecnico.</li>
+</ul>
+<h2 id="riesgos-identificados">Riesgos identificados</h2>
+<ul>
+<li>Crecer en volumen antes de definir una estructura puede volver el tutorial inconsistente.</li>
+<li>Introducir demasiados temas avanzados al principio puede romper la progresion pedagogica.</li>
+<li>Mezclar distintos estilos de notacion sin una convencion central puede volver confuso el material.</li>
+<li>No registrar decisiones editoriales puede generar retrabajo en futuras iteraciones.</li>
+</ul>
+<h2 id="proximos-pasos-recomendados">Proximos pasos recomendados</h2>
+<h3 id="prioridad-alta">Prioridad alta</h3>
+<ul>
+<li>Crear un indice maestro del tutorial.</li>
+<li>Definir la estructura de carpetas y archivos por modulo o capitulo.</li>
+<li>Fijar convenciones basicas de notacion matematica y estilo.</li>
+</ul>
+<h3 id="prioridad-media">Prioridad media</h3>
+<ul>
+<li>Redactar un capitulo cero de prerrequisitos.</li>
+<li>Disenar una plantilla reutilizable para cada tema.</li>
+<li>Preparar una bibliografia base comentada.</li>
+</ul>
+<h3 id="prioridad-baja">Prioridad baja</h3>
+<ul>
+<li>Anadir figuras, esquemas o diagramas.</li>
+<li>Incorporar ejercicios graduados por dificultad.</li>
+<li>Preparar una version en ingles o bilingue si el proyecto lo requiere.</li>
+</ul>
+<h2 id="propuesta-de-estructura-futura">Propuesta de estructura futura</h2>
+<p>Una organizacion posible del repositorio podria ser:</p>
+<ul>
+<li><code>docs/indice.md</code></li>
+<li><code>docs/00-prerrequisitos/</code></li>
+<li><code>docs/01-campos-clasicos/</code></li>
+<li><code>docs/02-cuantizacion-canonica/</code></li>
+<li><code>docs/03-campos-fermionicos/</code></li>
+<li><code>docs/04-gauge-y-qed/</code></li>
+<li><code>docs/05-renormalizacion/</code></li>
+<li><code>docs/06-temas-avanzados/</code></li>
+</ul>
+<h2 id="nota-de-seguimiento">Nota de seguimiento</h2>
+<p>Cuando se agreguen capitulos, esta bitacora deberia reflejar:</p>
+<ul>
+<li>que seccion se abrio;</li>
+<li>que objetivos cubre;</li>
+<li>que decisiones de estilo o contenido se tomaron;</li>
+<li>que temas quedaron pendientes.</li>
+</ul>
+<h2 id="cierre-de-esta-entrada">Cierre de esta entrada</h2>
+<p>El proyecto ya cuenta con una base documental minima y coherente. A partir de aqui, el siguiente hito importante es transformar la idea general del tutorial en una arquitectura concreta de contenidos.</p>
+<h2 id="entrada-de-desarrollo-de-contenido">Entrada de desarrollo de contenido</h2>
+<h3 id="fecha_1">Fecha</h3>
+<p>2026-04-18</p>
+<h3 id="objetivo">Objetivo</h3>
+<p>Comenzar la redaccion efectiva del tutorial con un bloque inicial autocontenido y legible en secuencia.</p>
+<h3 id="trabajo-realizado_1">Trabajo realizado</h3>
+<ul>
+<li>Se creo la carpeta <code>Tutorial/</code>.</li>
+<li>Se creo un indice local en <code>Tutorial/README.md</code>.</li>
+<li>Se redacto <code>Tutorial/conceptos_fundamentales.md</code>.</li>
+<li>Se añadieron cuatro articulos introductorios sobre relatividad y campos, formulacion lagrangiana, cuantizacion canonica e interacciones.</li>
+</ul>
+<h3 id="decisiones-tomadas">Decisiones tomadas</h3>
+<ul>
+<li>Empezar por un bloque conceptual antes de entrar en tecnicas mas avanzadas.</li>
+<li>Mantener articulos relativamente breves pero conectados entre si.</li>
+<li>Priorizar claridad de exposicion sobre densidad matematica en esta primera iteracion.</li>
+</ul>
+<h3 id="pendientes-inmediatos">Pendientes inmediatos</h3>
+<ul>
+<li>Crear un capitulo de prerrequisitos matematicos.</li>
+<li>Desarrollar una nota sobre la ecuacion de Dirac y los campos fermionicos.</li>
+<li>Abrir un modulo dedicado a integral de camino.</li>
+<li>Empezar una seccion de ejercicios de comprobacion.</li>
+</ul>
+<h2 id="entrada-de-ampliacion-estructural">Entrada de ampliacion estructural</h2>
+<h3 id="fecha_2">Fecha</h3>
+<p>2026-04-18</p>
+<h3 id="objetivo_1">Objetivo</h3>
+<p>Convertir el bloque inicial del tutorial en una estructura mas cercana a un curso real, con modulos y subdocumentos mas extensos.</p>
+<h3 id="situacion-detectada">Situacion detectada</h3>
+<ul>
+<li>Los articulos iniciales funcionaban bien como introduccion, pero resultaban demasiado breves para sostener una lectura profunda.</li>
+<li>Varias ideas importantes aparecian apenas enunciadas y no suficientemente desarrolladas.</li>
+<li>La estructura plana de archivos limitaba la posibilidad de crecer por temas.</li>
+</ul>
+<h3 id="trabajo-realizado_2">Trabajo realizado</h3>
+<ul>
+<li>Se reorganizo <code>Tutorial/</code> por modulos tematicos.</li>
+<li>Se crearon cuatro carpetas nuevas para relatividad, accion y simetrias, cuantizacion, e interacciones.</li>
+<li>Se añadieron ocho documentos extensos nuevos.</li>
+<li>Las portadas originales pasaron a funcionar como indices de navegacion.</li>
+<li>Se actualizo el <code>Tutorial/README.md</code> para reflejar la nueva arquitectura.</li>
+</ul>
+<h3 id="resultado">Resultado</h3>
+<p>El tutorial paso de una coleccion corta de notas introductorias a una base modular con mas de mil lineas de contenido, suficiente para comenzar a desarrollar un recorrido sostenido.</p>
+<h3 id="pendientes-inmediatos_1">Pendientes inmediatos</h3>
+<ul>
+<li>Incorporar ejercicios y problemas al final de cada modulo.</li>
+<li>Añadir un modulo de prerrequisitos matematicos.</li>
+<li>Abrir el bloque de campos fermionicos.</li>
+<li>Mantener consistencia de estilo y notacion entre los nuevos modulos.</li>
+</ul>
+<h2 id="entrada-de-profundizacion-de-articulos">Entrada de profundizacion de articulos</h2>
+<h3 id="fecha_3">Fecha</h3>
+<p>2026-04-19</p>
+<h3 id="objetivo_2">Objetivo</h3>
+<p>Aumentar la densidad pedagogica de varios articulos clave para que funcionen mejor como material de estudio y no solo como introducciones conceptuales.</p>
+<h3 id="trabajo-realizado_3">Trabajo realizado</h3>
+<ul>
+<li>Se amplió <code>Tutorial/01_relatividad_y_campos/01_choque_entre_mq_y_relatividad.md</code>.</li>
+<li>Se amplió <code>Tutorial/01_relatividad_y_campos/02_campos_localidad_y_causalidad.md</code>.</li>
+<li>Se amplió <code>Tutorial/04_interacciones_y_perturbaciones/01_teoria_de_perturbaciones_y_matriz_s.md</code>.</li>
+<li>Se amplió <code>Tutorial/04_interacciones_y_perturbaciones/02_diagramas_de_feynman_y_reglas.md</code>.</li>
+<li>Se añadieron nuevas secciones de contexto, ejemplos conceptuales y ejercicios sugeridos.</li>
+</ul>
+<h3 id="resultado_1">Resultado</h3>
+<p>Los cuatro documentos pasaron a sumar 686 lineas de contenido, con mejor continuidad entre conceptos, mas advertencias metodologicas y un nivel mas cercano al de un curso escrito.</p>
+<h3 id="pendientes-inmediatos_2">Pendientes inmediatos</h3>
+<ul>
+<li>Repetir esta profundizacion en los modulos de accion y cuantizacion.</li>
+<li>Añadir ejercicios tambien a los documentos marco.</li>
+<li>Empezar el bloque de fermiones y ecuacion de Dirac.</li>
+</ul>
+<h2 id="entrada-de-reorganizacion-curricular">Entrada de reorganizacion curricular</h2>
+<h3 id="fecha_4">Fecha</h3>
+<p>2026-04-19</p>
+<h3 id="objetivo_3">Objetivo</h3>
+<p>Pasar de una estructura mixta de notas y modulos a una arquitectura mas curricular, con recorrido numerado, indices mas claros y soporte visual.</p>
+<h3 id="trabajo-realizado_4">Trabajo realizado</h3>
+<ul>
+<li>Se reorganizo <code>Tutorial/</code> en bloques <code>00</code>, <code>01</code>, <code>02</code>, etc.</li>
+<li>Se movieron los documentos marco al modulo <code>01_fundamentos_conceptuales/</code>.</li>
+<li>Se renumeraron los modulos tecnicos ya existentes.</li>
+<li>Se añadieron <code>README.md</code> nuevos para prerrequisitos, fundamentos, Modelo Estandar y apendices.</li>
+<li>Se crearon modulos placeholder para fermiones, gauge, integral de camino y renormalizacion.</li>
+<li>Se incorporaron diagramas Mermaid a la portada principal del tutorial.</li>
+</ul>
+<h3 id="resultado_2">Resultado</h3>
+<p>El tutorial ahora se parece mas a un curso navegable que a una coleccion de archivos. La progresion conceptual y tecnica queda mas clara desde la carpeta raiz.</p>
+<h2 id="entrada-de-cuadernos">Entrada de cuadernos</h2>
+<h3 id="fecha_5">Fecha</h3>
+<p>2026-04-19</p>
+<h3 id="objetivo_4">Objetivo</h3>
+<p>Abrir un espacio especifico para notebooks Jupyter que complemente el tutorial escrito con ejemplos y problemas resueltos.</p>
+<h3 id="trabajo-realizado_5">Trabajo realizado</h3>
+<ul>
+<li>Se creo el directorio <code>Cuadernos/</code>.</li>
+<li>Se separaron las subcarpetas <code>ejemplos/</code> y <code>problemas_resueltos/</code>.</li>
+<li>Se añadio un <code>README.md</code> para documentar el uso de los cuadernos.</li>
+<li>Se crearon dos notebooks iniciales como punto de partida.</li>
+</ul>
+<h3 id="resultado_3">Resultado</h3>
+<p>El repositorio ya dispone de una zona practica preparada para material computacional y ejercicios guiados, en paralelo al tutorial teorico.</p>
+<h2 id="entrada-de-notas-de-apoyo">Entrada de notas de apoyo</h2>
+<h3 id="fecha_6">Fecha</h3>
+<p>2026-04-19</p>
+<h3 id="objetivo_5">Objetivo</h3>
+<p>Crear un espacio donde almacenar material bruto y notas de trabajo que luego puedan convertirse en contenido del tutorial.</p>
+<h3 id="trabajo-realizado_6">Trabajo realizado</h3>
+<ul>
+<li>Se creo el directorio <code>Notas/</code>.</li>
+<li>Se añadieron las subcarpetas <code>pdf/</code>, <code>notas_utiles/</code>, <code>resumenes/</code> y <code>referencias/</code>.</li>
+<li>Se documento el uso del directorio en <code>Notas/README.md</code>.</li>
+</ul>
+<h3 id="resultado_4">Resultado</h3>
+<p>El proyecto ya cuenta con una zona intermedia entre fuente y publicacion, util para organizar material externo antes de integrarlo en <code>Tutorial/</code>.</p>
+<h2 id="entrada-de-recursos-visuales">Entrada de recursos visuales</h2>
+<h3 id="fecha_7">Fecha</h3>
+<p>2026-04-19</p>
+<h3 id="objetivo_6">Objetivo</h3>
+<p>Crear un espacio especifico para almacenar imagenes, diagramas y material grafico que acompañe el desarrollo del tutorial.</p>
+<h3 id="trabajo-realizado_7">Trabajo realizado</h3>
+<ul>
+<li>Se creo el directorio <code>Imagenes/</code>.</li>
+<li>Se añadieron las subcarpetas <code>diagramas/</code>, <code>figuras/</code>, <code>referencias/</code> y <code>exportadas/</code>.</li>
+<li>Se documento la carpeta en <code>Imagenes/README.md</code>.</li>
+</ul>
+<h3 id="resultado_5">Resultado</h3>
+<p>El proyecto ya dispone de una zona dedicada a recursos visuales, preparada para alojar figuras pedagogicas y diagramas de apoyo.</p>
+<h2 id="entrada-de-ampliacion-de-modulos-avanzados">Entrada de ampliacion de modulos avanzados</h2>
+<h3 id="fecha_8">Fecha</h3>
+<p>2026-04-19</p>
+<h3 id="objetivo_7">Objetivo</h3>
+<p>Seguir transformando modulos placeholder en contenido real y no dejar huecos grandes en la progresion del curso.</p>
+<h3 id="trabajo-realizado_8">Trabajo realizado</h3>
+<ul>
+<li>Se desarrollaron contenidos iniciales en <code>06_fermiones_y_dirac/</code>.</li>
+<li>Se desarrollaron contenidos iniciales en <code>07_gauge_y_qed/</code>.</li>
+<li>Se añadieron bases teoricas para <code>08_integral_de_camino/</code>.</li>
+<li>Se añadieron bases teoricas para <code>09_renormalizacion/</code>.</li>
+<li>Se ampliaron los <code>README.md</code> de estos modulos con mapas y resultados esperados.</li>
+</ul>
+<h3 id="resultado_6">Resultado</h3>
+<p>La segunda mitad del recorrido del tutorial ya no esta compuesta solo por promesas de contenido, sino por una primera estructura textual consistente sobre fermiones, gauge, integral de camino y renormalizacion.</p>
+<h2 id="entrada-de-consolidacion-de-cuadernos-y-frontera-avanzada">Entrada de consolidacion de cuadernos y frontera avanzada</h2>
+<h3 id="fecha_9">Fecha</h3>
+<p>2026-04-19</p>
+<h3 id="objetivo_8">Objetivo</h3>
+<p>Convertir la carpeta <code>Cuadernos/</code> en una capa practica real del proyecto y abrir un modulo avanzado que conecte QFT con informacion cuantica y agujeros negros.</p>
+<h3 id="trabajo-realizado_9">Trabajo realizado</h3>
+<ul>
+<li>Se desarrollaron los notebooks de <code>Cuadernos/ejemplos/01</code> a <code>08</code>.</li>
+<li>Se ampliaron los notebooks de <code>Cuadernos/problemas_resueltos/06</code> a <code>12</code>.</li>
+<li>Se incorporaron celdas con contexto teorico, formulas en LaTeX y pequenos calculos simbolicos o numericos.</li>
+<li>Se abrio el modulo <code>Tutorial/11_qft_informacion_y_agujeros_negros/</code>.</li>
+<li>Se añadieron documentos sobre entrelazamiento, radiacion de Hawking y paradoja de la informacion.</li>
+<li>Se actualizo la navegacion principal del tutorial y la portada de <code>Cuadernos/</code>.</li>
+</ul>
+<h3 id="resultado_7">Resultado</h3>
+<p>La capa de notebooks deja de ser principalmente esqueletica y pasa a funcionar como apoyo pedagogico real. Ademas, el tutorial incorpora una frontera conceptual nueva donde la QFT se conecta con termicidad, entropia y unitaridad en presencia de horizontes.</p>
+<h2 id="entrada-de-expansion-de-frontera-y-herramientas">Entrada de expansión de frontera y herramientas</h2>
+<h3 id="fecha_10">Fecha</h3>
+<p>2026-04-20</p>
+<h3 id="objetivo_9">Objetivo</h3>
+<p>Lanzar la fase de expansión del tutorial centrada en profundidad técnica de fermiones, introducción a EFT y mejora de la capa práctica y visual.</p>
+<h3 id="trabajo-realizado_10">Trabajo realizado</h3>
+<ul>
+<li>Se definió el Plan de Implementación para la ampliación del proyecto.</li>
+<li>Se estableció el Mapa de Tareas (<code>task.md</code>) para el seguimiento del desarrollo.</li>
+<li>Se inició la mejora visual de la documentación.</li>
+</ul>
+<h3 id="pendientes-inmediatos_3">Pendientes inmediatos</h3>
+<ul>
+<li>Implementar el Mapa de Dependencias Maestro.</li>
+<li>Redactar el contenido de Espinores de Weyl y Majorana.</li>
+<li>Abrir el módulo de Teorías de Campo Efectivas (EFT).</li>
+<li>Desarrollar el notebook de álgebra de Dirac con SymPy.</li>
+</ul>
+<h2 id="entrada-de-limpieza-editorial-y-sincronizacion-con-github">Entrada de limpieza editorial y sincronizacion con GitHub</h2>
+<h3 id="fecha_11">Fecha</h3>
+<p>2026-04-23</p>
+<h3 id="objetivo_10">Objetivo</h3>
+<p>Reducir ambiguedad en el repositorio, separar con claridad el contenido publicado del material alternativo y dejar la documentacion de seguimiento alineada con el estado real del proyecto.</p>
+<h3 id="situacion-detectada_1">Situacion detectada</h3>
+<ul>
+<li>El arbol principal de <code>Tutorial/</code> contenia varias variantes de capitulos con sufijos como <code>2.md</code>.</li>
+<li>Esas variantes no rompian MkDocs porque estaban excluidas del build, pero complicaban la lectura del repositorio y la identificacion de la version canonica.</li>
+<li>La validacion local y la documentacion principal todavia no reflejaban de manera explicita esa diferencia entre contenido publico y borradores.</li>
+</ul>
+<h3 id="trabajo-realizado_11">Trabajo realizado</h3>
+<ul>
+<li>Se movieron 26 variantes editoriales a <code>Tutorial/_borradores/</code>, conservando la estructura por modulo.</li>
+<li>Se creo <code>Tutorial/_borradores/README.md</code> para documentar el criterio de uso de esa carpeta.</li>
+<li>Se actualizo <code>mkdocs.yml</code> para excluir <code>_borradores/</code> del sitio publico.</li>
+<li>Se ajusto <code>check_links.py</code> para ignorar <code>_borradores/</code> durante la validacion de enlaces.</li>
+<li>Se actualizo <code>CONTRIBUTING.md</code> con una convencion explicita para borradores y variantes de capitulos.</li>
+<li>Se publico la reorganizacion en GitHub sobre la rama <code>main</code>.</li>
+</ul>
+<h3 id="resultado_8">Resultado</h3>
+<p>El repositorio quedo mas limpio y legible. Ahora existe una separacion clara entre el tutorial canonico y el material alternativo en revision, sin perder versiones utiles para comparacion o rescate posterior.</p>
+<h3 id="validacion">Validacion</h3>
+<ul>
+<li><code>python check_links.py</code> pasa.</li>
+<li><code>mkdocs build --clean</code> pasa.</li>
+<li>GitHub quedo sincronizado con la reorganizacion reciente.</li>
+</ul>
+<h3 id="siguientes-pasos-recomendados">Siguientes pasos recomendados</h3>
+<ul>
+<li>Revisar <code>_borradores/</code> modulo por modulo para detectar si alguna variante mejora al texto publico.</li>
+<li>Continuar la homogeneizacion editorial de los modulos <code>06</code> a <code>12</code>, sobre todo en ejercicios, referencias y derivaciones.</li>
+<li>Mejorar el historial de commits para que describa con mas precision cambios conceptuales y no solo cambios operativos.</li>
+</ul>
+<h2 id="entrada-de-validacion-editorial-minima">Entrada de validacion editorial minima</h2>
+<h3 id="fecha_12">Fecha</h3>
+<p>2026-04-23</p>
+<h3 id="objetivo_11">Objetivo</h3>
+<p>Extender la validacion automatica del repositorio para comprobar no solo enlaces y duplicados editoriales, sino tambien una estructura minima comun en los capitulos publicos del recorrido principal.</p>
+<h3 id="trabajo-realizado_12">Trabajo realizado</h3>
+<ul>
+<li>Se amplio <code>check_links.py</code> para revisar que los capitulos numerados del tutorial tengan titulo principal, bloque de metadatos, <code>Proposito</code> u <code>Objetivo</code>, referencias y navegacion final.</li>
+<li>Se completaron con una seccion <code>Proposito</code> diez capitulos que todavia no seguian esa estructura minima.</li>
+<li>Se documento la regla en <code>CONTRIBUTING.md</code>.</li>
+</ul>
+<h3 id="resultado_9">Resultado</h3>
+<p>La validacion local y en CI ya no protege solo contra errores tecnicos evidentes. Tambien ayuda a sostener una capa basica de coherencia editorial entre capitulos del recorrido principal.</p>
+<h3 id="siguiente-mejora-natural">Siguiente mejora natural</h3>
+<ul>
+<li>Separar en el futuro validaciones de tipo <code>error</code> y <code>warning</code> para poder endurecer la plantilla sin bloquear paginas legitimas de referencia o experimentacion controlada.</li>
+</ul>
+<h2 id="entrada-de-refinamiento-de-ejercicios-y-apoyos">Entrada de refinamiento de ejercicios y apoyos</h2>
+<h3 id="fecha_13">Fecha</h3>
+<p>2026-04-23</p>
+<h3 id="objetivo_12">Objetivo</h3>
+<p>Mejorar la calidad pedagogica de los ejercicios, especialmente en capitulos avanzados donde varias consignas seguian siendo demasiado generales, y revisar si los cuadernos asociados apuntaban al mejor apoyo disponible.</p>
+<h3 id="trabajo-realizado_13">Trabajo realizado</h3>
+<ul>
+<li>Se revisaron ejercicios de fermiones, renormalizacion, Modelo Estandar, informacion/agujeros negros y EFT para volverlos mas concretos y accionables.</li>
+<li>Se reemplazaron algunas consignas demasiado abiertas por tareas de verificacion, clasificacion, comparacion estructural o lectura de formulas.</li>
+<li>Se ajustaron referencias de cuadernos en el bloque de fermiones para que el apoyo practico sea mas directo y pertinente al tema del capitulo.</li>
+</ul>
+<h3 id="resultado_10">Resultado</h3>
+<p>El tutorial no solo tiene ya ejercicios en todos los capitulos del recorrido principal, sino que una parte mayor de esos ejercicios pide operaciones intelectuales mas precisas y menos abstractas. Eso mejora su utilidad como material real de estudio y autoevaluacion.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections", "navigation.expand", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+        <script src="../javascripts/mermaid-init.js"></script>
+      
+    
+  </body>
+</html>

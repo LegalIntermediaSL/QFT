@@ -1,0 +1,1584 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Tutorial completo sobre Teoría Cuántica de Campos">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Funcion Beta y Running Couplings - QFT Tutorial</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#funcion-beta-y-running-couplings" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="QFT Tutorial" class="md-header__button md-logo" aria-label="QFT Tutorial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            QFT Tutorial
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Funcion Beta y Running Couplings
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="QFT Tutorial" class="md-nav__button md-logo" aria-label="QFT Tutorial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    QFT Tutorial
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutorial
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tutorial
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Índice
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../como_estudiar_este_tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cómo Estudiarlo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../problemas_recomendados_por_semana/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemas por Semana
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rutas_de_lectura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rutas de Lectura
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tabla_maestra_del_tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tabla Maestra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sintesis_por_modulo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Síntesis por Módulo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../catalogo_de_capitulos_y_etiquetas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catálogo de Capítulos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mapa_de_dependencias_conceptuales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mapa de Dependencias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../00_prerrequisitos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    00. Prerrequisitos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_fundamentos_conceptuales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01. Fundamentos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_relatividad_y_campos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02. Relatividad y Campos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_accion_y_simetrias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03. Acción y Simetrías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_cuantizacion_del_campo_escalar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04. Campo Escalar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05_interacciones_y_perturbaciones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05. Interacciones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06_fermiones_y_dirac/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06. Fermiones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07_gauge_y_qed/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07. Gauge y QED
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../08_integral_de_camino/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08. Integral de Camino
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09. Renormalización
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../10_modelo_estandar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Modelo Estándar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../11_qft_informacion_y_agujeros_negros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. QFT e Información
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../12_teorias_de_campo_efectivas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Teorías de Campo Efectivas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Apéndices
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Apéndices
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/bibliografia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bibliografía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/computacion_qft/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Herramientas Computacionales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/errores_comunes_y_recetas_practicas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Errores Comunes y Recetas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/reglas_de_feynman_y_propagadores/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reglas de Feynman y Propagadores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/simetrias_discretas_cpt_y_anomalias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Simetrías Discretas, CPT y Anomalías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/mezcla_de_sabor_ckm_y_pmns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mezcla de Sabor, CKM y PMNS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/anomalia_axial_y_cancelacion_de_anomalias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anomalía Axial y Cancelación de Anomalías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/glosario_notacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glosario de Notación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/convenciones_globales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Convenciones Globales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/plantilla_de_capitulo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plantilla Editorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-proposito" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Proposito
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-escala-de-renormalizacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Escala de renormalizacion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-definicion-de-la-funcion-beta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Definicion de la funcion beta
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-lectura-fisica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Lectura fisica
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-ejemplos-famosos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Ejemplos famosos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-running-coupling-como-idea-efectiva" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Running coupling como idea efectiva
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-puntos-fijos-y-flujo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Puntos fijos y flujo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-ejemplo-corto-de-lectura" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Ejemplo corto de lectura
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cuaderno-asociado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cuaderno asociado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-advertencias-utiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Advertencias utiles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-preguntas-de-comprobacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Preguntas de comprobacion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicios-sugeridos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejercicios sugeridos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-referencias-y-lecturas-recomendadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Referencias y lecturas recomendadas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navegacion-del-tutorial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Navegacion del tutorial
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="funcion-beta-y-running-couplings">Funcion Beta y Running Couplings</h1>
+<p><strong>Nivel:</strong> Intermedio<br />
+<strong>Dificultad:</strong> Media-Alta<br />
+<strong>Tiempo estimado:</strong> 18-25 min<br />
+<strong>Prerequisitos recomendados:</strong> <a href="../03_regularizacion_dimensional_en_phi4/">Regularizacion Dimensional en <span class="arithmatex">\(\phi^4\)</span></a> · <a href="../">Resumen del modulo</a></p>
+<h2 id="1-proposito">1. Proposito</h2>
+<p>Este documento desarrolla la idea de que los acoplamientos no son numeros fijos absolutos, sino cantidades dependientes de la escala. La funcion beta organiza precisamente esa dependencia.</p>
+<p>Este es uno de los cambios de intuicion mas profundos de la QFT moderna. Una “constante” de acoplamiento deja de ser verdaderamente constante cuando la teoria se observa a distintas resoluciones.</p>
+<h2 id="2-escala-de-renormalizacion">2. Escala de renormalizacion</h2>
+<p>Una vez renormalizada la teoria, los parametros quedan definidos a una cierta escala <span class="arithmatex">\(\mu\)</span>. Cambiar esa escala cambia el valor numerico del acoplamiento renormalizado, aunque los observables fisicos completos no deberian depender de esa eleccion de forma espuria.</p>
+<p>La escala <span class="arithmatex">\(\mu\)</span> no es una energia fisica misteriosa escondida en la naturaleza. Es el punto de referencia con respecto al cual se parametriza la teoria renormalizada. Justamente por eso el running resume como compensar esa eleccion al movernos entre escalas.</p>
+<h2 id="3-definicion-de-la-funcion-beta">3. Definicion de la funcion beta</h2>
+<p>La funcion beta de un acoplamiento <span class="arithmatex">\(g\)</span> se define por</p>
+<div class="arithmatex">\[
+\beta(g) = \mu \frac{dg}{d\mu}.
+\]</div>
+<p>Esta expresion resume como evoluciona el acoplamiento al variar la escala de observacion o de definicion.</p>
+<p>En la practica, esta ecuacion es una ecuacion diferencial de flujo. Si a un orden dado se obtiene, por ejemplo,</p>
+<div class="arithmatex">\[
+\beta(g) \simeq b\, g^3,
+\]</div>
+<p>entonces el running se determina integrando una ecuacion del tipo</p>
+<div class="arithmatex">\[
+\mu\frac{dg}{d\mu} = b\, g^3.
+\]</div>
+<p>Este formato deja ver que el grupo de renormalizacion no es una idea vaga sobre "cambio de escala", sino una ecuacion diferencial concreta para los parametros efectivos de la teoria.</p>
+<p>Visto asi, el grupo de renormalizacion se parece menos a una consigna conceptual y mas a una dinamica real sobre el espacio de acoplamientos.</p>
+<h2 id="4-lectura-fisica">4. Lectura fisica</h2>
+<p>La funcion beta no es solo un artefacto de renormalizacion. Codifica contenido fisico:</p>
+<ul>
+<li>si <span class="arithmatex">\(\beta(g) &gt; 0\)</span>, el acoplamiento crece con la escala;</li>
+<li>si <span class="arithmatex">\(\beta(g) &lt; 0\)</span>, decrece con la escala;</li>
+<li>sus ceros pueden señalar puntos fijos con estructura especial.</li>
+</ul>
+<p>La causa fisica intuitiva del running puede pensarse en terminos de polarizacion del vacio. Las fluctuaciones cuánticas modifican la forma en que una carga o una fuente se "ve" al explorarla con distinta resolucion. Por eso el acoplamiento medido no tiene por que ser igual a todas las distancias o energias.</p>
+<p>Esta es una buena forma de unir fisica e intuicion: no es que la teoria “cambie arbitrariamente”, sino que el vacio cuantico responde de forma distinta cuando se lo sondea a distinta escala.</p>
+<h2 id="5-ejemplos-famosos">5. Ejemplos famosos</h2>
+<p>Dos ejemplos pedagogicos dominan la intuicion moderna:</p>
+<ul>
+<li>en QED, el acoplamiento electromagnetico crece lentamente con la energia;</li>
+<li>en QCD, el acoplamiento fuerte disminuye a altas energias, produciendo libertad asintotica.</li>
+</ul>
+<p>Esta diferencia ayuda a entender por que los quarks se comportan casi libres a energias muy altas y, al mismo tiempo, no se observan aislados a bajas energias.</p>
+<p>En lenguaje muy intuitivo:</p>
+<ul>
+<li>en QED, la nube de pares virtuales apantalla parcialmente la carga;</li>
+<li>en QCD, la estructura no abeliana del campo gauge cambia el signo del efecto a altas energias.</li>
+</ul>
+<p>Esa inversion de comportamiento es una de las diferencias conceptuales mas profundas entre teorias abelianas y no abelianas.</p>
+<p>Tambien es una de las razones por las que el running no debe verse solo como un detalle de renormalizacion. En realidad distingue de forma muy profunda distintos tipos de teoria gauge.</p>
+<h2 id="6-running-coupling-como-idea-efectiva">6. Running coupling como idea efectiva</h2>
+<p>Hablar de "constante de acoplamiento" puede inducir a error. En QFT, lo que realmente se mide en distintos procesos suele ser una constante efectiva dependiente de la escala caracteristica del problema.</p>
+<p>La leccion central es:</p>
+<ul>
+<li>la teoria cambia su apariencia al cambiar la resolucion con que la observamos;</li>
+<li>esa variacion no destruye la teoria;</li>
+<li>es una de sus predicciones mas distintivas.</li>
+</ul>
+<p>Por eso los acoplamientos efectivos medidos en distintos procesos no deben compararse ingenuamente como si todos correspondieran a una unica escala sin mas.</p>
+<p>Si se integra esquematicamente la ecuacion anterior entre una escala de referencia <span class="arithmatex">\(\mu_0\)</span> y una escala <span class="arithmatex">\(\mu\)</span>, se obtiene una expresion del tipo</p>
+<div class="arithmatex">\[
+\frac{1}{g^2(\mu)} = \frac{1}{g^2(\mu_0)} - 2b \ln\!\left(\frac{\mu}{\mu_0}\right),
+\]</div>
+<p>lo que deja ver de forma directa por que el signo de <span class="arithmatex">\(b\)</span> controla si el acoplamiento crece o decrece al aumentar la escala.</p>
+<h2 id="7-puntos-fijos-y-flujo">7. Puntos fijos y flujo</h2>
+<p>Si existe un valor <span class="arithmatex">\(g_\star\)</span> tal que</p>
+<div class="arithmatex">\[
+\beta(g_\star)=0,
+\]</div>
+<p>entonces ese punto define un comportamiento especial del flujo de renormalizacion. Sin entrar aun en toda la teoria de puntos criticos, conviene registrar la intuicion:</p>
+<ul>
+<li>cerca de un punto fijo, la teoria cambia poco con la escala;</li>
+<li>algunos operadores se vuelven mas importantes al alejarnos;</li>
+<li>otros se suprimen.</li>
+</ul>
+<p>Esta es la puerta conceptual que conecta el grupo de renormalizacion con teorias efectivas, fisica critica y universalidad.</p>
+<p>En ese punto se empieza a ver por que renormalizacion y EFT estan mucho mas unidas de lo que parece en una primera lectura del curso.</p>
+<h2 id="8-ejemplo-corto-de-lectura">8. Ejemplo corto de lectura</h2>
+<p>Si dos experimentos extraen valores ligeramente distintos de un mismo acoplamiento a energias muy diferentes, eso no implica necesariamente inconsistencia experimental. Puede ser justamente la manifestacion del running coupling predicho por la QFT.</p>
+<p>Esta observacion ayuda a entender por que las tablas experimentales de acoplamientos siempre deben leerse junto con la escala relevante del proceso.</p>
+<h2 id="cuaderno-asociado">Cuaderno asociado</h2>
+<ul>
+<li><code>../../Cuadernos/problemas_resueltos/10_interacciones_y_perturbaciones.ipynb</code>: usarlo para reforzar la idea de que los lazos modifican amplitudes y parametros efectivos.</li>
+<li><code>../../Cuadernos/problemas_resueltos/15_regularizacion_dimensional_y_running.ipynb</code>: usarlo para fijar la lectura del polo en <span class="arithmatex">\(1/\varepsilon\)</span>, de la escala <span class="arithmatex">\(\mu\)</span> y de una ley de running elemental.</li>
+</ul>
+<h2 id="10-advertencias-utiles">10. Advertencias utiles</h2>
+<ul>
+<li>Un acoplamiento corriendo no significa que toda la fisica dependa arbitrariamente del esquema.</li>
+<li>La escala de renormalizacion <span class="arithmatex">\(\mu\)</span> no coincide siempre sin mas con la energia fisica de cualquier proceso, aunque suele elegirse cerca de la escala relevante.</li>
+<li>La funcion beta es un objeto dependiente del esquema en ciertos detalles, pero su lectura fisica cualitativa suele ser muy robusta.</li>
+</ul>
+<h2 id="11-preguntas-de-comprobacion">11. Preguntas de comprobacion</h2>
+<ul>
+<li>Que resume la funcion beta.</li>
+<li>Por que QED y QCD muestran comportamientos distintos al variar la escala.</li>
+<li>En que sentido un running coupling es una prediccion fisica y no un mero accidente del calculo.</li>
+</ul>
+<h2 id="ejercicios-sugeridos">Ejercicios sugeridos</h2>
+<ol>
+<li>Usar la forma integrada del running para explicar por que el signo del coeficiente beta determina si el acoplamiento crece o decrece al aumentar la escala.</li>
+<li>Comparar cualitativamente la lectura fisica del running en QED y en QCD e identificar que rasgo experimental o fenomenologico resume cada caso.</li>
+<li>Explicar por que al citar un valor de acoplamiento es importante especificar la escala a la que fue determinado.</li>
+</ol>
+<h2 id="12-referencias-y-lecturas-recomendadas">12. Referencias y lecturas recomendadas</h2>
+<ul>
+<li>Base: Tong, running couplings y grupo de renormalizacion.</li>
+<li>Complementaria: Peskin y Schroeder, funcion beta y escalas.</li>
+<li>Profundizacion: Weinberg o Zinn-Justin sobre puntos fijos, teorias efectivas y flujo de renormalizacion.</li>
+</ul>
+<hr />
+<h2 id="navegacion-del-tutorial">Navegacion del tutorial</h2>
+<p><a href="../03_regularizacion_dimensional_en_phi4/">(anterior) Regularizacion Dimensional en <span class="arithmatex">\(\phi^4\)</span></a> | <a href="../05_esquema_msbar_y_qed_vs_qcd/">(siguiente) Esquema <span class="arithmatex">\(\overline{\text{MS}}\)</span> y Comparacion QED vs QCD</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "navigation.expand", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+        <script src="../../../javascripts/mermaid-init.js"></script>
+      
+    
+  </body>
+</html>

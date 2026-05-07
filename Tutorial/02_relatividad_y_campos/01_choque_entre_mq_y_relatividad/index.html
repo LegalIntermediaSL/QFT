@@ -1,0 +1,1708 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Tutorial completo sobre Teoría Cuántica de Campos">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Choque Entre Mecanica Cuantica y Relatividad Especial - QFT Tutorial</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#choque-entre-mecanica-cuantica-y-relatividad-especial" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="QFT Tutorial" class="md-header__button md-logo" aria-label="QFT Tutorial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            QFT Tutorial
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Choque Entre Mecanica Cuantica y Relatividad Especial
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="QFT Tutorial" class="md-nav__button md-logo" aria-label="QFT Tutorial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    QFT Tutorial
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutorial
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tutorial
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Índice
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../como_estudiar_este_tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cómo Estudiarlo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../problemas_recomendados_por_semana/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemas por Semana
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rutas_de_lectura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rutas de Lectura
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tabla_maestra_del_tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tabla Maestra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sintesis_por_modulo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Síntesis por Módulo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../catalogo_de_capitulos_y_etiquetas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catálogo de Capítulos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mapa_de_dependencias_conceptuales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mapa de Dependencias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../00_prerrequisitos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    00. Prerrequisitos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_fundamentos_conceptuales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01. Fundamentos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02. Relatividad y Campos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_accion_y_simetrias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03. Acción y Simetrías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_cuantizacion_del_campo_escalar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04. Campo Escalar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05_interacciones_y_perturbaciones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05. Interacciones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06_fermiones_y_dirac/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06. Fermiones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07_gauge_y_qed/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07. Gauge y QED
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../08_integral_de_camino/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08. Integral de Camino
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../09_renormalizacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09. Renormalización
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../10_modelo_estandar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Modelo Estándar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../11_qft_informacion_y_agujeros_negros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. QFT e Información
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../12_teorias_de_campo_efectivas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Teorías de Campo Efectivas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Apéndices
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Apéndices
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/bibliografia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bibliografía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/computacion_qft/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Herramientas Computacionales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/errores_comunes_y_recetas_practicas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Errores Comunes y Recetas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/reglas_de_feynman_y_propagadores/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reglas de Feynman y Propagadores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/simetrias_discretas_cpt_y_anomalias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Simetrías Discretas, CPT y Anomalías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/mezcla_de_sabor_ckm_y_pmns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mezcla de Sabor, CKM y PMNS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/anomalia_axial_y_cancelacion_de_anomalias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anomalía Axial y Cancelación de Anomalías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/glosario_notacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glosario de Notación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/convenciones_globales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Convenciones Globales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/plantilla_de_capitulo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plantilla Editorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#proposito" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Proposito
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-punto-de-partida-historico-y-conceptual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Punto de partida historico y conceptual
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-la-mecanica-cuantica-no-relativista-como-teoria-de-numero-fijo-de-grados-de-libertad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. La mecanica cuantica no relativista como teoria de numero fijo de grados de libertad
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-la-exigencia-relativista" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. La exigencia relativista
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-el-problema-de-la-localizacion-relativista" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. El problema de la localizacion relativista
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-el-caso-de-klein-gordon-y-la-primera-alarma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. El caso de Klein-Gordon y la primera alarma
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-el-caso-de-dirac-y-la-pista-correcta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. El caso de Dirac y la pista correcta
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-soluciones-de-energia-negativa-y-reinterpretacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Soluciones de energia negativa y reinterpretacion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-la-creacion-de-particulas-no-es-opcional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. La creacion de particulas no es opcional
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-el-espacio-de-hilbert-debe-ampliarse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. El espacio de Hilbert debe ampliarse
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-el-papel-de-la-localidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. El papel de la localidad
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-campo-como-respuesta-estructural" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Campo como respuesta estructural
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-del-problema-conceptual-a-la-estrategia-de-construccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Del problema conceptual a la estrategia de construccion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-advertencia-metodologica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Advertencia metodologica
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-ejemplo-de-transicion-conceptual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Ejemplo de transicion conceptual
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cuaderno-asociado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cuaderno asociado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-preguntas-de-comprobacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. Preguntas de comprobacion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-ejercicios-sugeridos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16. Ejercicios sugeridos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-cierre" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17. Cierre
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18-referencias-y-lecturas-recomendadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        18. Referencias y lecturas recomendadas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navegacion-del-tutorial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Navegacion del tutorial
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="choque-entre-mecanica-cuantica-y-relatividad-especial">Choque Entre Mecanica Cuantica y Relatividad Especial</h1>
+<p><strong>Nivel:</strong> Fundacional<br />
+<strong>Dificultad:</strong> Baja<br />
+<strong>Tiempo estimado:</strong> 25-35 min<br />
+<strong>Prerequisitos recomendados:</strong> <a href="../../01_fundamentos_conceptuales/">Modulo anterior</a> · <a href="../">Resumen del modulo</a></p>
+<h2 id="proposito">Proposito</h2>
+<p>Este capitulo introduce el problema conceptual que hace necesaria la QFT: la tension entre una mecanica cuantica pensada para numero fijo de particulas y una relatividad especial que permite conversion entre energia y masa.</p>
+<h2 id="1-punto-de-partida-historico-y-conceptual">1. Punto de partida historico y conceptual</h2>
+<p>La mecanica cuantica y la relatividad especial fueron dos de las grandes revoluciones del siglo XX, pero no encajan de forma trivial. La primera describe amplitudes, superposicion, espectros discretos y mediciones probabilisticas. La segunda reorganiza el espacio y el tiempo en una sola estructura causal y exige covariancia relativista.</p>
+<p>Durante un tiempo fue tentador pensar que bastaba con tomar la mecanica cuantica conocida y reemplazar algunas relaciones cinematicas por sus versiones relativistas. Pero ese procedimiento pronto revela limites profundos. La QFT nace justamente cuando se entiende que no basta con corregir ecuaciones: hace falta cambiar la naturaleza misma de los objetos fundamentales de la teoria.</p>
+<h2 id="2-la-mecanica-cuantica-no-relativista-como-teoria-de-numero-fijo-de-grados-de-libertad">2. La mecanica cuantica no relativista como teoria de numero fijo de grados de libertad</h2>
+<p>En la formulacion usual de una particula, el objeto dinamico es una funcion de onda</p>
+<div class="arithmatex">\[
+\psi(\mathbf{x},t)
+\]</div>
+<p>que evoluciona mediante la ecuacion de Schrodinger. Esta imagen funciona bien cuando:</p>
+<ul>
+<li>la velocidad de las particulas es pequena comparada con la de la luz;</li>
+<li>no hay procesos de creacion o aniquilacion;</li>
+<li>el numero de particulas del sistema puede fijarse desde el inicio.</li>
+</ul>
+<p>Nada de esto es accidental. La teoria ya presupone, en su propia estructura, que sabemos cuantas particulas hay en el sistema. El espacio de Hilbert se construye sobre esa hipotesis y la dinamica la preserva.</p>
+<h2 id="3-la-exigencia-relativista">3. La exigencia relativista</h2>
+<p>La relatividad especial impone la relacion</p>
+<div class="arithmatex">\[
+E^2 = \mathbf{p}^2 + m^2
+\]</div>
+<p>en unidades naturales. Si uno intenta cuantizar manteniendo una sola particula como objeto fundamental, busca una ecuacion de onda compatible con esa identidad.</p>
+<p>Hay dos rutas clasicas:</p>
+<ul>
+<li>linealizar en el tiempo y mantener un operador hamiltoniano;</li>
+<li>escribir una ecuacion cuadratica en derivadas.</li>
+</ul>
+<p>De ahi surgen las ecuaciones de Klein-Gordon y Dirac.</p>
+<p>La tension no es solo algebraica. En mecanica cuantica no relativista, el tiempo aparece como parametro externo privilegiado. En relatividad, en cambio, el espacio y el tiempo deben entrar en la teoria de manera mucho mas simetrica. Ya por este motivo cabe sospechar que el formalismo de una sola particula no puede ser el lenguaje final.</p>
+<h2 id="4-el-problema-de-la-localizacion-relativista">4. El problema de la localizacion relativista</h2>
+<p>Antes incluso de discutir interacciones fuertes o procesos de laboratorio, aparece un problema conceptual con la idea de una particula individual perfectamente localizable. Para concentrar una particula en una region cada vez mas pequena se requieren componentes de momento cada vez mayores y, por tanto, energias cada vez mayores.</p>
+<p>Esta observacion tiene dos consecuencias:</p>
+<ul>
+<li>la localizacion extrema no puede separarse de la dinamica relativista;</li>
+<li>si la energia involucrada es suficientemente grande, el propio intento de localizar una particula puede abrir la posibilidad de crear nuevas excitaciones.</li>
+</ul>
+<p>La conclusion es muy importante: el concepto clasico de particula puntual y persistentemente identificable deja de ser primario.</p>
+<h2 id="5-el-caso-de-klein-gordon-y-la-primera-alarma">5. El caso de Klein-Gordon y la primera alarma</h2>
+<p>La ecuacion de Klein-Gordon para un campo escalar libre es</p>
+<div class="arithmatex">\[
+\left(\partial_\mu \partial^\mu + m^2\right)\phi = 0.
+\]</div>
+<p>Si uno intenta leer esta ecuacion como si describiera una sola particula relativista con interpretacion probabilistica identica a la de Schrodinger, aparecen dificultades:</p>
+<ul>
+<li>la densidad asociada no es positiva definida en general;</li>
+<li>hay soluciones de frecuencia positiva y negativa;</li>
+<li>la interpretacion de una unica particula empieza a perder estabilidad conceptual.</li>
+</ul>
+<p>Esto no significa que la ecuacion sea incorrecta. Significa que estaba siendo interpretada en el lenguaje equivocado. La ecuacion funciona muy bien como ecuacion de campo; falla cuando se la fuerza a ser una simple ecuacion de onda de una sola particula.</p>
+<h2 id="6-el-caso-de-dirac-y-la-pista-correcta">6. El caso de Dirac y la pista correcta</h2>
+<p>La ecuacion de Dirac mejora mucho el panorama. Es lineal en derivadas temporales y espaciales, ofrece una interpretacion probabilistica mejor comportada e introduce de forma natural el espin <span class="arithmatex">\(1/2\)</span>.</p>
+<p>Sin embargo, tampoco restaura una teoria fundamental de una sola particula. Persisten:</p>
+<ul>
+<li>las soluciones de energia negativa;</li>
+<li>la necesidad de reinterpretar el vacio;</li>
+<li>la posibilidad de procesos con numero variable de particulas.</li>
+</ul>
+<p>Dirac no desmiente la leccion de Klein-Gordon; la profundiza. Muestra que incluso cuando el formalismo relativista se afina enormemente, la teoria termina apuntando hacia una descripcion en terminos de campos.</p>
+<h2 id="7-soluciones-de-energia-negativa-y-reinterpretacion">7. Soluciones de energia negativa y reinterpretacion</h2>
+<p>La relacion relativista para la energia admite</p>
+<div class="arithmatex">\[
+E = \pm \sqrt{\mathbf{p}^2 + m^2}.
+\]</div>
+<p>En una teoria de una sola particula, esto parece introducir estados catastrficos: una particula podria caer indefinidamente hacia energias mas bajas. En QFT, en cambio, las ramas de energia negativa se reinterpretan dentro del formalismo de campos y operadores, y dejan de representar una patologia del mismo tipo.</p>
+<p>La leccion pedagogica es importante: muchas de las "paradojas" relativistas de una sola particula son en realidad sintomas de que el objeto fundamental ya no deberia ser la particula individual.</p>
+<h2 id="8-la-creacion-de-particulas-no-es-opcional">8. La creacion de particulas no es opcional</h2>
+<p>La relatividad especial permite convertir energia en masa y viceversa. Cuando la energia disponible en un proceso supera ciertos umbrales, pueden producirse nuevas excitaciones materiales. Eso quiere decir que el numero de particulas:</p>
+<ul>
+<li>no es universalmente fijo;</li>
+<li>depende del proceso fisico;</li>
+<li>deja de ser un dato estructural de la teoria.</li>
+</ul>
+<p>En este punto la mecanica cuantica de una sola particula se queda corta no por un detalle tecnico, sino porque su espacio de estados esta construido bajo una hipotesis demasiado estrecha.</p>
+<p>Esto no es una correccion exotica reservada a colisionadores. Es una exigencia de principio: si la teoria pretende ser relativista y cuantica de forma general, debe estar preparada para la creacion y destruccion de particulas aunque un experimento concreto no llegue al umbral energetico correspondiente.</p>
+<h2 id="9-el-espacio-de-hilbert-debe-ampliarse">9. El espacio de Hilbert debe ampliarse</h2>
+<p>Una teoria cuantica relativista realista necesita contener simultaneamente:</p>
+<ul>
+<li>estados sin particulas;</li>
+<li>estados de una particula;</li>
+<li>estados de varias particulas;</li>
+<li>procesos que conecten unos con otros.</li>
+</ul>
+<p>El espacio de estados debe ser capaz de alojar sectores con numero variable de excitaciones. Esa es exactamente la arquitectura que aparece al cuantizar campos y construir el espacio de Fock.</p>
+<p>Este cambio de espacio de estados no es una comodidad algebraica. Es la forma natural en la que la teoria incorpora procesos de produccion, aniquilacion, recombinacion y decaimiento.</p>
+<h2 id="10-el-papel-de-la-localidad">10. El papel de la localidad</h2>
+<p>La relatividad no solo cambia la energia. Tambien cambia la forma correcta de pensar la influencia fisica. Los procesos deben organizarse localmente en el espacio-tiempo y respetar la estructura del cono de luz.</p>
+<p>Si queremos una teoria donde las interacciones tengan una descripcion local y covariante, resulta natural trabajar con objetos definidos punto a punto:</p>
+<div class="arithmatex">\[
+\phi(x), \qquad \psi(x), \qquad A_\mu(x).
+\]</div>
+<p>Esos objetos son campos.</p>
+<h2 id="11-campo-como-respuesta-estructural">11. Campo como respuesta estructural</h2>
+<p>Un campo no es simplemente una funcion que decora el espacio. Es un portador de grados de libertad locales. Su dinamica permite:</p>
+<ul>
+<li>compatibilizar la descripcion cuantica con la simetria relativista;</li>
+<li>codificar interacciones locales;</li>
+<li>cuantizar cada modo del sistema;</li>
+<li>interpretar particulas como excitaciones detectables.</li>
+</ul>
+<p>La transicion de "particulas primero" a "campos primero" es el giro conceptual central del nacimiento de la QFT.</p>
+<p>Una de las ventajas mas profundas del formalismo de campos es que unifica en un mismo lenguaje la propagacion, la simetria relativista y la posibilidad de excitaciones con numero variable. No hace falta pegar tres teorias distintas: la estructura de campo las absorbe de manera organica.</p>
+<h2 id="12-del-problema-conceptual-a-la-estrategia-de-construccion">12. Del problema conceptual a la estrategia de construccion</h2>
+<p>Una vez aceptado que los campos son fundamentales, la estrategia de la teoria cambia por completo. Ya no se pregunta primero "que hace una particula individual", sino:</p>
+<ul>
+<li>que campos existen;</li>
+<li>como transforman bajo simetrias relativistas e internas;</li>
+<li>que accion local gobierna su dinamica;</li>
+<li>como se cuantizan sus modos;</li>
+<li>que interacciones son compatibles con los principios de la teoria.</li>
+</ul>
+<p>Ese es exactamente el programa conceptual de la QFT.</p>
+<h2 id="13-advertencia-metodologica">13. Advertencia metodologica</h2>
+<p>A veces se presenta la QFT como si fuera una tecnica para calcular procesos de scattering con diagramas de Feynman. Esa presentacion omite el motivo de fondo: la teoria se necesita antes de cualquier tecnica perturbativa, porque el problema de base ya exige una reformulacion del tipo de objetos fisicos que usamos.</p>
+<p>Tambien es importante no sacar la conclusion opuesta y pensar que la imagen de particulas es inutil. No lo es. Sigue siendo extraordinariamente eficaz en regimens apropiados. Lo que cambia es su estatuto: deja de ser ontologicamente primario y pasa a ser una descripcion emergente de excitaciones del campo.</p>
+<h2 id="14-ejemplo-de-transicion-conceptual">14. Ejemplo de transicion conceptual</h2>
+<p>En mecanica cuantica no relativista, una colision entre dos particulas se describe, en esencia, como la evolucion de una funcion de onda en un sector de numero fijo.</p>
+<p>En QFT, el mismo proceso se reinterpreta como:</p>
+<ol>
+<li>preparacion de estados asintoticos de entrada;</li>
+<li>evolucion de campos interactuantes;</li>
+<li>posibilidad de que surjan estados intermedios con distinto numero de excitaciones;</li>
+<li>lectura de amplitudes de transicion hacia los estados de salida.</li>
+</ol>
+<p>Esta reformulacion no es solo mas general. Es la estructura correcta si queremos una teoria compatible con relatividad especial.</p>
+<h2 id="cuaderno-asociado">Cuaderno asociado</h2>
+<ul>
+<li>Consulta los cuadernos asociados de este bloque en <a href="../">Resumen del modulo</a> para reforzar el capitulo con practica guiada.</li>
+</ul>
+<h2 id="15-preguntas-de-comprobacion">15. Preguntas de comprobacion</h2>
+<ul>
+<li>Que supuesto de la mecanica cuantica ordinaria deja de ser sostenible en fisica relativista de altas energias.</li>
+<li>Por que la ecuacion de Klein-Gordon no debe entenderse ingenuamente como ecuacion de una sola particula con interpretacion probabilistica usual.</li>
+<li>Por que ni siquiera la ecuacion de Dirac restaura una teoria fundamental de una sola particula.</li>
+<li>Que relacion hay entre creacion de particulas y necesidad de un espacio de estados mas amplio.</li>
+<li>Por que la localidad sugiere trabajar con campos definidos en el espacio-tiempo.</li>
+</ul>
+<h2 id="16-ejercicios-sugeridos">16. Ejercicios sugeridos</h2>
+<ol>
+<li>Explica con tus propias palabras por que la relacion <span class="arithmatex">\(E^2=\mathbf{p}^2+m^2\)</span> ya sugiere que el numero de particulas no puede tratarse como fijo en una teoria relativista general.</li>
+<li>Compara la interpretacion de <span class="arithmatex">\(\psi(\mathbf{x},t)\)</span> en mecanica cuantica no relativista con la de un campo <span class="arithmatex">\(\phi(x)\)</span> en QFT. Indica al menos tres diferencias estructurales.</li>
+<li>Describe por que el problema de las energias negativas no debe verse solo como una anomalia algebraica, sino como un signo de que el lenguaje de una sola particula es insuficiente.</li>
+</ol>
+<h2 id="17-cierre">17. Cierre</h2>
+<p>El choque entre mecanica cuantica y relatividad no destruye ninguna de las dos teorias. Obliga, mas bien, a subir de lenguaje. La QFT es ese nuevo lenguaje: uno donde los campos son primarios y las particulas aparecen como excitaciones cuanticas de esos campos.</p>
+<h2 id="18-referencias-y-lecturas-recomendadas">18. Referencias y lecturas recomendadas</h2>
+<ul>
+<li>Base: Tong, motivacion relativista de la QFT.</li>
+<li>Complementaria: Peskin y Schroeder, introduccion conceptual al fracaso de la teoria de una sola particula.</li>
+<li>Profundizacion: Weinberg I, lectura estructural del paso a campos.</li>
+</ul>
+<hr />
+<h2 id="navegacion-del-tutorial">Navegacion del tutorial</h2>
+<p><a href="../../portada_01_relatividad_y_campos/">(anterior) Portada 01: Relatividad Especial y Nacimiento de la Idea de Campo</a> | <a href="../02_campos_localidad_y_causalidad/">(siguiente) Campos, Localidad y Causalidad Microfisica</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "navigation.expand", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+        <script src="../../../javascripts/mermaid-init.js"></script>
+      
+    
+  </body>
+</html>

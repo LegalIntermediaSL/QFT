@@ -1,0 +1,1664 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Tutorial completo sobre Teoría Cuántica de Campos">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Neutrinos, Masas y Oscilaciones - QFT Tutorial</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#neutrinos-masas-y-oscilaciones" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="QFT Tutorial" class="md-header__button md-logo" aria-label="QFT Tutorial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            QFT Tutorial
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Neutrinos, Masas y Oscilaciones
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="QFT Tutorial" class="md-nav__button md-logo" aria-label="QFT Tutorial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    QFT Tutorial
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutorial
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tutorial
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Índice
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../como_estudiar_este_tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cómo Estudiarlo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../problemas_recomendados_por_semana/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemas por Semana
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rutas_de_lectura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rutas de Lectura
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tabla_maestra_del_tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tabla Maestra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sintesis_por_modulo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Síntesis por Módulo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../catalogo_de_capitulos_y_etiquetas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catálogo de Capítulos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mapa_de_dependencias_conceptuales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mapa de Dependencias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../00_prerrequisitos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    00. Prerrequisitos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_fundamentos_conceptuales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01. Fundamentos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_relatividad_y_campos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02. Relatividad y Campos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_accion_y_simetrias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03. Acción y Simetrías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_cuantizacion_del_campo_escalar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04. Campo Escalar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05_interacciones_y_perturbaciones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05. Interacciones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06_fermiones_y_dirac/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06. Fermiones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07_gauge_y_qed/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07. Gauge y QED
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../08_integral_de_camino/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08. Integral de Camino
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../09_renormalizacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09. Renormalización
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Modelo Estándar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../11_qft_informacion_y_agujeros_negros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. QFT e Información
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../12_teorias_de_campo_efectivas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Teorías de Campo Efectivas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Apéndices
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Apéndices
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/bibliografia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bibliografía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/computacion_qft/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Herramientas Computacionales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/errores_comunes_y_recetas_practicas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Errores Comunes y Recetas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/reglas_de_feynman_y_propagadores/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reglas de Feynman y Propagadores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/simetrias_discretas_cpt_y_anomalias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Simetrías Discretas, CPT y Anomalías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/mezcla_de_sabor_ckm_y_pmns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mezcla de Sabor, CKM y PMNS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/anomalia_axial_y_cancelacion_de_anomalias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anomalía Axial y Cancelación de Anomalías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/glosario_notacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glosario de Notación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/convenciones_globales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Convenciones Globales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/plantilla_de_capitulo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plantilla Editorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#proposito" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Proposito
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-neutrinos-en-el-modelo-estandar-minimo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Neutrinos en el Modelo Estandar minimo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-por-que-las-oscilaciones-importan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Por que las oscilaciones importan
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-idea-de-mezcla-leptonica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Idea de mezcla leptónica
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-estados-de-sabor-y-estados-de-masa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Estados de sabor y estados de masa
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-formula-minima-de-oscilacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Formula minima de oscilacion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-masas-de-dirac-y-de-majorana" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Masas de Dirac y de Majorana
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-oscilaciones-de-neutrinos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Oscilaciones de neutrinos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-conexion-con-el-resto-del-modulo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Conexion con el resto del modulo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-materia-y-oscilaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Materia y oscilaciones
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-que-sabemos-y-que-no-sabemos-aun" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Que sabemos y que no sabemos aun
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-lectura-pedagogica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Lectura pedagogica
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cuaderno-asociado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cuaderno asociado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-advertencias-utiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Advertencias utiles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-preguntas-de-comprobacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Preguntas de comprobacion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicios-sugeridos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejercicios sugeridos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-referencias-y-lecturas-recomendadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. Referencias y lecturas recomendadas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navegacion-del-tutorial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Navegacion del tutorial
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="neutrinos-masas-y-oscilaciones">Neutrinos, Masas y Oscilaciones</h1>
+<p><strong>Nivel:</strong> Avanzado<br />
+<strong>Dificultad:</strong> Alta<br />
+<strong>Tiempo estimado:</strong> 25-35 min<br />
+<strong>Prerequisitos recomendados:</strong> <a href="../06_corrientes_cargadas_y_neutras/">Corrientes Cargadas y Neutras</a> · <a href="../">Resumen del modulo</a></p>
+<h2 id="proposito">Proposito</h2>
+<p>Este documento extiende el panorama del Modelo Estandar hacia una de sus fronteras fenomenologicas mas importantes: las masas de neutrinos y las oscilaciones de sabor. El objetivo es mostrar por que este tema es tan central conceptualmente y como se conecta con quiralidad, Yukawas y mezcla leptónica.</p>
+<h2 id="1-neutrinos-en-el-modelo-estandar-minimo">1. Neutrinos en el Modelo Estandar minimo</h2>
+<p>En el Modelo Estandar minimo original, los neutrinos aparecen como componentes izquierdas de dobletes leptónicos y no incluyen, de forma directa, masas del mismo tipo que electrones o quarks. Eso hace que el tratamiento minimo resulte muy economico, pero deja fuera una parte esencial de la fenomenologia observada.</p>
+<p>Esta tension es muy instructiva porque muestra uno de los limites mas claros del Modelo Estandar minimo: el lenguaje gauge y quiral funciona extraordinariamente bien, pero no basta por si solo para acomodar las oscilaciones observadas sin alguna ampliacion.</p>
+<h2 id="2-por-que-las-oscilaciones-importan">2. Por que las oscilaciones importan</h2>
+<p>El fenomeno de oscilacion de neutrinos muestra que los neutrinos producidos con un sabor definido no evolucionan como estados de masa puros. Esta observacion experimental obliga a introducir, de una forma u otra:</p>
+<ul>
+<li>masas no nulas para neutrinos;</li>
+<li>mezcla leptónica;</li>
+<li>una desalineacion entre base de sabor y base de masa.</li>
+</ul>
+<p>La idea puede resumirse asi: si todos los neutrinos fueran exactamente sin masa o si sabor y masa coincidieran perfectamente, no habria lugar para el patron de interferencia oscilatoria que se observa.</p>
+<h2 id="3-idea-de-mezcla-leptonica">3. Idea de mezcla leptónica</h2>
+<p>Cuando el sector leptónico no es diagonal en la misma base para sabor y masa, aparece la matriz</p>
+<div class="arithmatex">\[
+U_{\text{PMNS}}.
+\]</div>
+<p>Su papel es análogo al de la matriz CKM en el sector quark, pero la manifestacion fisica es distinta: la mezcla leptónica se observa de forma especialmente clara en oscilaciones de neutrinos.</p>
+<p>Esto ya sugiere una diferencia pedagogicamente importante:</p>
+<ul>
+<li>CKM se ve sobre todo en transiciones débiles de quarks;</li>
+<li>PMNS se revela de forma espectacular en propagacion coherente a largas distancias.</li>
+</ul>
+<h2 id="4-estados-de-sabor-y-estados-de-masa">4. Estados de sabor y estados de masa</h2>
+<p>La idea central puede resumirse asi:</p>
+<ul>
+<li>los estados de sabor son los que participan naturalmente en interacciones debiles;</li>
+<li>los estados de masa son los que evolucionan con fases bien definidas;</li>
+<li>si ambas bases no coinciden, la evolucion temporal mezcla sabores.</li>
+</ul>
+<p>Esto convierte a los neutrinos en un laboratorio muy fino para estudiar interferencia cuántica a gran escala.</p>
+<p>En una version de dos sabores, la intuicion minima es que un estado producido como, por ejemplo, <span class="arithmatex">\(\nu_e\)</span> se escribe como superposicion de autoestados de masa. Cada uno acumula una fase distinta al propagarse, y esa diferencia de fase altera la probabilidad de volver a detectar el mismo sabor.</p>
+<p>Esta es una de las lecciones mas elegantes de toda la fisica de particulas: la interaccion debil prepara estados de sabor, mientras que la propagacion libre selecciona estados de masa. La oscilacion nace justamente de esa desalineacion.</p>
+<h2 id="5-formula-minima-de-oscilacion">5. Formula minima de oscilacion</h2>
+<p>Sin entrar en toda la fenomenologia de tres sabores, conviene registrar la estructura cualitativa basica:</p>
+<div class="arithmatex">\[
+P(\nu_\alpha \to \nu_\beta)
+\sim
+\sin^2(2\theta)\,
+\sin^2\!\left(\frac{\Delta m^2\,L}{4E}\right),
+\]</div>
+<p>en un modelo simplificado de dos sabores.</p>
+<p>Esta expresion ya resume casi toda la intuicion:</p>
+<ul>
+<li><span class="arithmatex">\(\theta\)</span> controla la mezcla;</li>
+<li><span class="arithmatex">\(\Delta m^2\)</span> controla la diferencia de fases;</li>
+<li><span class="arithmatex">\(L/E\)</span> fija la sensibilidad experimental al patron oscilatorio.</li>
+</ul>
+<p>La presencia de <span class="arithmatex">\(\Delta m^2\)</span> y no de las masas absolutas es muy importante. Las oscilaciones son sensibles a diferencias de masas al cuadrado y a angulos de mezcla, pero no fijan por si solas la escala absoluta completa del espectro neutrínico.</p>
+<p>Tambien conviene recordar que la oscilacion requiere mantener coherencia cuantica entre componentes de masa. Si esa coherencia se pierde por completo, desaparece el patron interferencial.</p>
+<h2 id="6-masas-de-dirac-y-de-majorana">6. Masas de Dirac y de Majorana</h2>
+<p>Hay dos posibilidades conceptuales importantes para masas de neutrinos:</p>
+<ul>
+<li><strong>masas de Dirac</strong>, si se introducen grados de libertad quirales adecuados y un mecanismo semejante al de otros fermiones;</li>
+<li><strong>masas de Majorana</strong>, si el neutrino coincide con su antiparticula en el sentido apropiado.</li>
+</ul>
+<p>Esta distincion es mas que terminologica: afecta el conteo de parametros, la estructura de fases y el tipo de procesos raros que podrian observarse.</p>
+<p>Lo importante aqui es no confundir dos preguntas distintas:</p>
+<ul>
+<li>que mecanismo da masa al neutrino;</li>
+<li>como se manifiesta la mezcla en la propagacion.</li>
+</ul>
+<p>Las oscilaciones demuestran masa y mezcla, pero no deciden por si solas si la masa es de Dirac o de Majorana.</p>
+<p>Esto enlaza con una idea mas amplia del tutorial: conocer el espectro no equivale a conocer el origen dinamico de ese espectro. Dos mecanismos ultravioletas distintos pueden producir masas pequenas y mezcla leptónica semejante.</p>
+<h2 id="7-oscilaciones-de-neutrinos">7. Oscilaciones de neutrinos</h2>
+<p>En una descripcion minima, la oscilacion aparece porque diferentes estados de masa acumulan fases distintas al propagarse. Cuando se recombinan al medir sabor, la probabilidad de deteccion ya no coincide necesariamente con el sabor de produccion.</p>
+<p>La leccion conceptual es poderosa:</p>
+<ul>
+<li>la masa no solo cambia el espectro;</li>
+<li>tambien cambia la fenomenologia de propagacion y mezcla;</li>
+<li>la teoria de sabores se vuelve inseparable de la evolucion cuántica.</li>
+</ul>
+<p>En la aproximacion ultrarrelativista, <span class="arithmatex">\(E_i \simeq p + m_i^2/(2E)\)</span>, y de ahi nace la diferencia de fases proporcional a <span class="arithmatex">\(\Delta m^2 L/(2E)\)</span>. Esta estimacion elemental ya permite entender por que distintos experimentos exploran distintos sectores del patron oscilatorio.</p>
+<h2 id="8-conexion-con-el-resto-del-modulo">8. Conexion con el resto del modulo</h2>
+<p>Este tema enlaza directamente con:</p>
+<ul>
+<li>el sector fermionico y la quiralidad;</li>
+<li>el sector de Yukawa y el problema de las masas;</li>
+<li>las corrientes cargadas del sector electrodébil;</li>
+<li>el apendice sobre mezcla de sabor, CKM y PMNS.</li>
+</ul>
+<p>Por eso los neutrinos no deben verse como un “anexo” exotico, sino como una extension natural del mismo lenguaje estructural del Modelo Estandar.</p>
+<p>Ademas, este tema apunta directamente al modulo de teorias efectivas: si el Modelo Estandar minimo no acomoda de forma natural masas de neutrinos, operadores efectivos como el de Weinberg aparecen como una pista muy natural de nueva fisica.</p>
+<h2 id="9-materia-y-oscilaciones">9. Materia y oscilaciones</h2>
+<p>En situaciones reales, como neutrinos solares o atmosfericos, la propagacion no ocurre siempre en vacio ideal. La presencia de materia puede modificar efectivamente la mezcla y las probabilidades de oscilacion. Este refinamiento, conocido de forma general por el efecto MSW, recuerda otra leccion importante:</p>
+<ul>
+<li>el entorno modifica la propagacion cuántica;</li>
+<li>la mezcla leptónica no se interpreta siempre igual en vacio y en medio material;</li>
+<li>incluso una fenomenologia aparentemente simple puede codificar mucha estructura dinamica.</li>
+</ul>
+<p>El efecto MSW recuerda, ademas, que nociones como mezcla efectiva y autovalores efectivos pueden depender del medio. El vacio no es el unico escenario donde una superposicion cuantica evoluciona con fases relevantes.</p>
+<h2 id="10-que-sabemos-y-que-no-sabemos-aun">10. Que sabemos y que no sabemos aun</h2>
+<p>El sector neutrínico mezcla hechos bien establecidos con preguntas abiertas:</p>
+<ul>
+<li>sabemos que hay masas no nulas y mezcla leptónica;</li>
+<li>conocemos varios angulos y diferencias de masas al cuadrado con bastante precision;</li>
+<li>pero siguen abiertas la jerarquia de masas, la escala absoluta, la naturaleza Dirac o Majorana y el posible papel de fases de violacion de CP.</li>
+</ul>
+<p>Por eso los neutrinos son mucho mas que una correccion menor del Modelo Estandar: constituyen una ventana privilegiada hacia su extension.</p>
+<h2 id="11-lectura-pedagogica">11. Lectura pedagogica</h2>
+<p>La moraleja principal es que las oscilaciones de neutrinos nos muestran, de manera extraordinariamente limpia, que:</p>
+<ul>
+<li>los estados creados por una interaccion no siempre son autoestados de masa;</li>
+<li>la quiralidad y la mezcla tienen consecuencias observables de largo alcance;</li>
+<li>el Modelo Estandar minimo necesita al menos una ampliacion efectiva para acomodar toda la fenomenologia leptónica observada.</li>
+</ul>
+<h2 id="cuaderno-asociado">Cuaderno asociado</h2>
+<ul>
+<li><code>../../Cuadernos/problemas_resueltos/14_neutrinos_y_oscilaciones.ipynb</code>: usarlo para seguir de forma guiada la diferencia entre estados de sabor y de masa y fijar la idea minima de oscilacion leptónica.</li>
+<li><code>../../Cuadernos/problemas_resueltos/11_modelo_estandar_estructura.ipynb</code>: usarlo para conectar mezcla leptónica con la discusion general de sabor y corrientes cargadas.</li>
+<li><code>../../Cuadernos/ejemplos/07_modelo_estandar_panorama.ipynb</code>: usarlo como mapa de ubicacion del sector leptónico dentro del modulo.</li>
+</ul>
+<h2 id="13-advertencias-utiles">13. Advertencias utiles</h2>
+<ul>
+<li>No conviene identificar quiralidad, helicidad y sabor como si fueran la misma nocion.</li>
+<li>La matriz PMNS no debe presentarse como copia exacta de CKM: la fenomenologia leptónica tiene rasgos propios.</li>
+<li>“Dar masa al neutrino” no es una sola operacion unica: depende de la extension teorica elegida.</li>
+<li>Las oscilaciones miden diferencias de masas al cuadrado, no fijan por si solas la escala absoluta completa de masas.</li>
+</ul>
+<h2 id="14-preguntas-de-comprobacion">14. Preguntas de comprobacion</h2>
+<ul>
+<li>Por que las oscilaciones de neutrinos implican masas no nulas.</li>
+<li>En que sentido los estados de sabor y de masa no coinciden.</li>
+<li>Que diferencia conceptual hay entre masa de Dirac y masa de Majorana para neutrinos.</li>
+<li>Por que la matriz PMNS se conecta de forma natural con corrientes cargadas leptónicas.</li>
+<li>Por que el patron oscilatorio depende de <span class="arithmatex">\(L/E\)</span> y no simplemente de la distancia recorrida.</li>
+</ul>
+<h2 id="ejercicios-sugeridos">Ejercicios sugeridos</h2>
+<ol>
+<li>Explicar por que la oscilacion de neutrinos requiere que estados de sabor y de masa no coincidan.</li>
+<li>Comparar conceptualmente masa de Dirac y masa de Majorana en el caso leptónico.</li>
+<li>Describir por que la fenomenologia de oscilaciones no fija por si sola toda la estructura microscópica de masas neutrínicas.</li>
+</ol>
+<h2 id="15-referencias-y-lecturas-recomendadas">15. Referencias y lecturas recomendadas</h2>
+<ul>
+<li>Base: notas introductorias de fisica de neutrinos y mezcla leptónica.</li>
+<li>Complementaria: PDG, resúmenes de masas de neutrinos, oscilaciones y parametros PMNS.</li>
+<li>Profundizacion: textos de fenomenologia leptónica y modelos efectivos de masas de neutrinos.</li>
+</ul>
+<hr />
+<h2 id="navegacion-del-tutorial">Navegacion del tutorial</h2>
+<p><a href="../06_corrientes_cargadas_y_neutras/">(anterior) Corrientes Cargadas y Neutras</a> | <a href="../../11_qft_informacion_y_agujeros_negros/01_qft_informacion_y_entrelazamiento/">(siguiente) QFT, informacion y entrelazamiento</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "navigation.expand", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+        <script src="../../../javascripts/mermaid-init.js"></script>
+      
+    
+  </body>
+</html>

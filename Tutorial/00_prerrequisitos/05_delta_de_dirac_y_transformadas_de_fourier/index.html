@@ -1,0 +1,1625 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Tutorial completo sobre Teoría Cuántica de Campos">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Delta de Dirac y Transformadas de Fourier - QFT Tutorial</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#delta-de-dirac-y-transformadas-de-fourier" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="QFT Tutorial" class="md-header__button md-logo" aria-label="QFT Tutorial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            QFT Tutorial
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Delta de Dirac y Transformadas de Fourier
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="QFT Tutorial" class="md-nav__button md-logo" aria-label="QFT Tutorial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    QFT Tutorial
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutorial
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tutorial
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Índice
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../como_estudiar_este_tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cómo Estudiarlo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../problemas_recomendados_por_semana/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemas por Semana
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rutas_de_lectura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rutas de Lectura
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tabla_maestra_del_tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tabla Maestra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sintesis_por_modulo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Síntesis por Módulo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../catalogo_de_capitulos_y_etiquetas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catálogo de Capítulos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mapa_de_dependencias_conceptuales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mapa de Dependencias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    00. Prerrequisitos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_fundamentos_conceptuales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01. Fundamentos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_relatividad_y_campos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02. Relatividad y Campos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_accion_y_simetrias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03. Acción y Simetrías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_cuantizacion_del_campo_escalar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04. Campo Escalar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05_interacciones_y_perturbaciones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05. Interacciones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06_fermiones_y_dirac/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06. Fermiones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07_gauge_y_qed/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07. Gauge y QED
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../08_integral_de_camino/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08. Integral de Camino
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../09_renormalizacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09. Renormalización
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../10_modelo_estandar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Modelo Estándar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../11_qft_informacion_y_agujeros_negros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. QFT e Información
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../12_teorias_de_campo_efectivas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Teorías de Campo Efectivas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Apéndices
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Apéndices
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/bibliografia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bibliografía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/computacion_qft/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Herramientas Computacionales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/errores_comunes_y_recetas_practicas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Errores Comunes y Recetas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/reglas_de_feynman_y_propagadores/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reglas de Feynman y Propagadores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/simetrias_discretas_cpt_y_anomalias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Simetrías Discretas, CPT y Anomalías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/mezcla_de_sabor_ckm_y_pmns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mezcla de Sabor, CKM y PMNS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/anomalia_axial_y_cancelacion_de_anomalias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anomalía Axial y Cancelación de Anomalías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/glosario_notacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glosario de Notación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/convenciones_globales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Convenciones Globales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/plantilla_de_capitulo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plantilla Editorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-proposito" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Proposito
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-idea-general-de-fourier" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Idea general de Fourier
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-fourier-en-tres-y-cuatro-dimensiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Fourier en tres y cuatro dimensiones
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-delta-de-dirac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Delta de Dirac
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-propiedades-basicas-de-la-delta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Propiedades basicas de la delta
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-conexion-entre-fourier-y-delta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Conexion entre Fourier y delta
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-campos-y-expansion-en-modos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Campos y expansion en modos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-conservacion-del-momento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Conservacion del momento
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-distribuciones-y-precauciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Distribuciones y precauciones
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-ejemplo-conceptual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Ejemplo conceptual
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cuaderno-asociado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cuaderno asociado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-preguntas-de-comprobacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Preguntas de comprobacion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-ejercicios-sugeridos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Ejercicios sugeridos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-cierre" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Cierre
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-referencias-y-lecturas-recomendadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Referencias y lecturas recomendadas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navegacion-del-tutorial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Navegacion del tutorial
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="delta-de-dirac-y-transformadas-de-fourier">Delta de Dirac y Transformadas de Fourier</h1>
+<p><strong>Nivel:</strong> Fundacional<br />
+<strong>Dificultad:</strong> Media<br />
+<strong>Tiempo estimado:</strong> 25-35 min<br />
+<strong>Prerequisitos recomendados:</strong> <a href="../04_simetrias_y_grupos_basicos/">Simetrias y Grupos Basicos</a> · <a href="../">Resumen del modulo</a></p>
+<h2 id="1-proposito">1. Proposito</h2>
+<p>La QFT cambia constantemente entre espacio de posiciones y espacio de momentos. Para hacer ese cambio con soltura hace falta dominar dos herramientas: la transformada de Fourier y la delta de Dirac.</p>
+<p>No son tecnicismos secundarios. Buena parte del formalismo diario de la QFT consiste justamente en pasar de una descripcion local en el espacio-tiempo a una descripcion en momentos donde propagadores, vertices y conservacion del momento toman una forma mucho mas transparente.</p>
+<h2 id="2-idea-general-de-fourier">2. Idea general de Fourier</h2>
+<p>La transformada de Fourier permite descomponer una funcion en modos de frecuencia o de momento. En una variable, de forma esquematica:</p>
+<div class="arithmatex">\[
+f(x) = \int \frac{dk}{2\pi}\,\tilde{f}(k)e^{ikx},
+\]</div>
+<div class="arithmatex">\[
+\tilde{f}(k) = \int dx\, f(x)e^{-ikx}.
+\]</div>
+<p>En QFT, esta descomposicion es natural porque los modos de momento son especialmente adecuados para describir propagacion libre y cuantizacion.</p>
+<p>En el fondo, Fourier es un cambio de base. En espacio de posiciones pensamos en localizacion y causalidad; en espacio de momentos pensamos en dispersion, propagacion libre y conservacion del impulso.</p>
+<h2 id="3-fourier-en-tres-y-cuatro-dimensiones">3. Fourier en tres y cuatro dimensiones</h2>
+<p>En fisica de particulas aparecen con frecuencia expresiones como</p>
+<div class="arithmatex">\[
+f(\mathbf{x}) = \int \frac{d^3p}{(2\pi)^3}\,\tilde{f}(\mathbf{p})e^{i\mathbf{p}\cdot\mathbf{x}},
+\]</div>
+<p>y tambien integrales sobre cuatro-momento:</p>
+<div class="arithmatex">\[
+\int \frac{d^4p}{(2\pi)^4}\, e^{-ip\cdot x}.
+\]</div>
+<p>Estas formulas son la base de:</p>
+<ul>
+<li>expansiones modales de campos;</li>
+<li>propagadores;</li>
+<li>reglas de Feynman en espacio de momentos.</li>
+</ul>
+<p>Tambien explican por que muchas expresiones covariantes en QFT se escriben de forma casi automatica como integrales sobre <span class="arithmatex">\(d^4p\)</span>: ese es el lenguaje natural para representar propagacion relativista y simetrias de traslacion.</p>
+<h2 id="4-delta-de-dirac">4. Delta de Dirac</h2>
+<p>La delta de Dirac no es una funcion ordinaria, sino una distribucion definida por su accion bajo integracion:</p>
+<div class="arithmatex">\[
+\int dx\, \delta(x-a)f(x)=f(a).
+\]</div>
+<p>Su funcion es seleccionar el valor de una funcion en un punto.</p>
+<p>Esta idea de "seleccionar" debe entenderse distribucionalmente. La delta no es un pico infinito literal al que se le pueda asignar un valor ordinario, sino un objeto cuyo significado completo aparece dentro de integrales.</p>
+<h2 id="5-propiedades-basicas-de-la-delta">5. Propiedades basicas de la delta</h2>
+<p>Propiedades fundamentales:</p>
+<div class="arithmatex">\[
+\delta(x-a)=\delta(a-x),
+\]</div>
+<div class="arithmatex">\[
+\int dx\, \delta(x-a)=1,
+\]</div>
+<div class="arithmatex">\[
+\delta(\alpha x)=\frac{1}{|\alpha|}\delta(x).
+\]</div>
+<p>En varias dimensiones:</p>
+<div class="arithmatex">\[
+\int d^3x\, \delta^{(3)}(\mathbf{x}-\mathbf{a})f(\mathbf{x}) = f(\mathbf{a}).
+\]</div>
+<p>Otra identidad muy util es</p>
+<div class="arithmatex">\[
+\delta(f(x)) = \sum_i \frac{\delta(x-x_i)}{|f'(x_i)|},
+\]</div>
+<p>donde <span class="arithmatex">\(x_i\)</span> son las raices simples de <span class="arithmatex">\(f(x)\)</span>. Esta formula aparece con frecuencia en espacios de fase e integrales on-shell.</p>
+<h2 id="6-conexion-entre-fourier-y-delta">6. Conexion entre Fourier y delta</h2>
+<p>Una de las identidades mas usadas en QFT es</p>
+<div class="arithmatex">\[
+\int \frac{dk}{2\pi}e^{ik(x-y)}=\delta(x-y),
+\]</div>
+<p>y en tres dimensiones</p>
+<div class="arithmatex">\[
+\int \frac{d^3p}{(2\pi)^3}e^{i\mathbf{p}\cdot(\mathbf{x}-\mathbf{y})}
+= \delta^{(3)}(\mathbf{x}-\mathbf{y}).
+\]</div>
+<p>Esta relacion explica por que la delta aparece naturalmente cuando se cambia de base entre posiciones y momentos.</p>
+<p>Tambien puede leerse como una relacion de completitud: las ondas planas forman una base generalizada y la delta expresa que al recomponer todos los modos se recupera la localizacion espacial.</p>
+<h2 id="7-campos-y-expansion-en-modos">7. Campos y expansion en modos</h2>
+<p>Cuando un campo libre se expande en modos, la normalizacion se elige de forma que las relaciones de conmutacion y las ortogonalidades entre modos produzcan deltas de Dirac. Por eso la delta no es una herramienta marginal: esta incrustada en el formalismo desde la cuantizacion misma.</p>
+<p>Esto explica por que estados de momento bien definido no se normalizan con numeros ordinarios, sino con expresiones del tipo</p>
+<div class="arithmatex">\[
+\langle \mathbf{p}|\mathbf{q}\rangle \propto \delta^{(3)}(\mathbf{p}-\mathbf{q}).
+\]</div>
+<p>En un espectro continuo, esa es la version correcta de la ortogonalidad.</p>
+<h2 id="8-conservacion-del-momento">8. Conservacion del momento</h2>
+<p>En espacio de momentos, la invariancia traslacional genera deltas de conservacion del momento. Por ejemplo, en un vertice de Feynman aparece tipicamente:</p>
+<div class="arithmatex">\[
+(2\pi)^4 \delta^{(4)}\left(\sum p_{\text{entrantes}} - \sum p_{\text{salientes}}\right).
+\]</div>
+<p>Esto expresa que el momento total se conserva en la interaccion.</p>
+<p>La aparicion de esta delta no es un milagro diagramatico. Surge al integrar sobre la posicion del vertice en espacio-tiempo. La simetria de traslacion se traduce exactamente en conservacion del cuatro-momento.</p>
+<h2 id="9-distribuciones-y-precauciones">9. Distribuciones y precauciones</h2>
+<p>La delta de Dirac no debe tratarse como una funcion comun evaluada punto por punto. Tiene sentido dentro de integrales y como objeto de distribucion. Esta distincion importa mucho cuando se manipulan identidades formales en QFT.</p>
+<p>Tambien conviene recordar dos precauciones frecuentes:</p>
+<ul>
+<li>expresiones como <span class="arithmatex">\(\delta(0)\)</span> no deben leerse ingenuamente, sino como señal de volumen infinito o normalizacion continua;</li>
+<li>productos de distribuciones en el mismo punto suelen requerir interpretacion o regularizacion.</li>
+</ul>
+<h2 id="10-ejemplo-conceptual">10. Ejemplo conceptual</h2>
+<p>Si dos modos de momento son ortogonales salvo cuando sus momentos coinciden, esa ortogonalidad se expresa mediante una delta:</p>
+<div class="arithmatex">\[
+\langle \mathbf{p}|\mathbf{q}\rangle \propto \delta^{(3)}(\mathbf{p}-\mathbf{q}).
+\]</div>
+<p>Esto conecta directamente la base de momentos con la estructura del espacio de estados.</p>
+<p>En una caja de volumen finito, el continuo se discretiza y la delta de Dirac pasa a reemplazarse por deltas de Kronecker. Esa comparacion ayuda mucho a entender la delta como la version continua de la ortogonalidad usual en bases discretas.</p>
+<h2 id="cuaderno-asociado">Cuaderno asociado</h2>
+<ul>
+<li>Consulta los cuadernos asociados de este bloque en <a href="../">Resumen del modulo</a> para reforzar el capitulo con practica guiada.</li>
+</ul>
+<h2 id="11-preguntas-de-comprobacion">11. Preguntas de comprobacion</h2>
+<ul>
+<li>Que significa que la delta de Dirac sea una distribucion.</li>
+<li>Como se relacionan la delta y la transformada de Fourier.</li>
+<li>Por que la conservacion del momento aparece naturalmente como una delta.</li>
+<li>Por que el espacio de momentos es tan util en QFT.</li>
+</ul>
+<h2 id="12-ejercicios-sugeridos">12. Ejercicios sugeridos</h2>
+<ol>
+<li>Usa la definicion de la delta para mostrar que <span class="arithmatex">\(\int dx\, \delta(x-a)f(x)=f(a)\)</span>.</li>
+<li>Demuestra la identidad de Fourier que produce <span class="arithmatex">\(\delta(x-y)\)</span>.</li>
+<li>Explica por que una delta de cuatro-momento en un vertice expresa invariancia traslacional.</li>
+<li>Interpreta fisicamente por que <span class="arithmatex">\(\delta^{(3)}(\mathbf p-\mathbf q)\)</span> es la ortogonalidad natural de estados de momento.</li>
+</ol>
+<h2 id="13-cierre">13. Cierre</h2>
+<p>Fourier y la delta de Dirac son parte del lenguaje operativo diario de la QFT. Sin ellas, las expansiones en modos, los propagadores y las reglas de Feynman quedan practicamente ilegibles.</p>
+<p>Una vez que este lenguaje se vuelve natural, muchas formulas de QFT dejan de parecer misteriosas: se reconocen simplemente como cambios de base, relaciones de completitud o expresiones compactas de conservacion del momento.</p>
+<h2 id="14-referencias-y-lecturas-recomendadas">14. Referencias y lecturas recomendadas</h2>
+<ul>
+<li>Base: apuntes de analisis de Fourier y distribuciones para fisicos.</li>
+<li>Complementaria: cualquier curso de mecanica cuantica con base de momentos y deltas de ortogonalidad.</li>
+<li>Profundizacion: textos matematicos elementales sobre distribuciones y transformadas.</li>
+</ul>
+<hr />
+<h2 id="navegacion-del-tutorial">Navegacion del tutorial</h2>
+<p><a href="../04_simetrias_y_grupos_basicos/">(anterior) Simetrias y Grupos Basicos</a> | <a href="../06_calculo_funcional_y_derivadas/">(siguiente) Calculo Funcional y Derivadas Funcionales</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "navigation.expand", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+        <script src="../../../javascripts/mermaid-init.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1681 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Tutorial completo sobre Teoría Cuántica de Campos">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Unidades Naturales y Unidades Fisicas - QFT Tutorial</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#unidades-naturales-y-unidades-fisicas" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="QFT Tutorial" class="md-header__button md-logo" aria-label="QFT Tutorial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            QFT Tutorial
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Unidades Naturales y Unidades Fisicas
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="QFT Tutorial" class="md-nav__button md-logo" aria-label="QFT Tutorial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    QFT Tutorial
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutorial
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tutorial
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Índice
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../como_estudiar_este_tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cómo Estudiarlo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../problemas_recomendados_por_semana/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemas por Semana
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rutas_de_lectura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rutas de Lectura
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tabla_maestra_del_tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tabla Maestra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sintesis_por_modulo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Síntesis por Módulo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../catalogo_de_capitulos_y_etiquetas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catálogo de Capítulos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mapa_de_dependencias_conceptuales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mapa de Dependencias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    00. Prerrequisitos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_fundamentos_conceptuales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01. Fundamentos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_relatividad_y_campos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02. Relatividad y Campos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_accion_y_simetrias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03. Acción y Simetrías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_cuantizacion_del_campo_escalar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04. Campo Escalar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05_interacciones_y_perturbaciones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05. Interacciones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06_fermiones_y_dirac/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06. Fermiones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07_gauge_y_qed/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07. Gauge y QED
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../08_integral_de_camino/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08. Integral de Camino
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../09_renormalizacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09. Renormalización
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../10_modelo_estandar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Modelo Estándar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../11_qft_informacion_y_agujeros_negros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. QFT e Información
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../12_teorias_de_campo_efectivas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Teorías de Campo Efectivas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Apéndices
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Apéndices
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/bibliografia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bibliografía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/computacion_qft/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Herramientas Computacionales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/errores_comunes_y_recetas_practicas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Errores Comunes y Recetas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/reglas_de_feynman_y_propagadores/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reglas de Feynman y Propagadores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/simetrias_discretas_cpt_y_anomalias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Simetrías Discretas, CPT y Anomalías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/mezcla_de_sabor_ckm_y_pmns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mezcla de Sabor, CKM y PMNS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/anomalia_axial_y_cancelacion_de_anomalias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anomalía Axial y Cancelación de Anomalías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/glosario_notacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glosario de Notación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/convenciones_globales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Convenciones Globales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/plantilla_de_capitulo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plantilla Editorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-proposito" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Proposito
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-el-problema-de-las-constantes-universales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. El problema de las constantes universales
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-unidades-naturales-en-qft" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Unidades naturales en QFT
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-tabla-de-equivalencias-dimensionales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Tabla de equivalencias dimensionales
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-ejemplo-el-hamiltoniano-del-oscilador-armonico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Ejemplo: el hamiltoniano del oscilador armonico
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-ejemplo-la-relacion-de-conmutacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Ejemplo: la relacion de conmutacion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-como-recuperar-las-unidades-fisicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Como recuperar las unidades fisicas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Como recuperar las unidades fisicas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejemplo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-convencion-en-este-tutorial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Convencion en este tutorial
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-cuadro-resumen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Cuadro resumen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-preguntas-de-comprobacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Preguntas de comprobacion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-ejercicios-sugeridos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Ejercicios sugeridos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-referencias-y-lecturas-recomendadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Referencias y lecturas recomendadas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navegacion-del-tutorial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Navegacion del tutorial
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="unidades-naturales-y-unidades-fisicas">Unidades Naturales y Unidades Fisicas</h1>
+<p><strong>Nivel:</strong> Fundacional<br />
+<strong>Dificultad:</strong> Baja<br />
+<strong>Tiempo estimado:</strong> 15-20 min<br />
+<strong>Prerequisitos recomendados:</strong> <a href="../02_notacion_tensorial_y_convenciones/">Notacion Tensorial y Convenciones</a> · <a href="../">Resumen del modulo</a></p>
+<h2 id="1-proposito">1. Proposito</h2>
+<p>En QFT casi todos los textos trabajan en unidades naturales sin advertirlo explicitamente. Este articulo fija el significado exacto de esa convencion, muestra como recuperar las expresiones con unidades fisicas y sirve como referencia rapida para el resto del tutorial.</p>
+<h2 id="2-el-problema-de-las-constantes-universales">2. El problema de las constantes universales</h2>
+<p>La fisica fundamental contiene tres constantes que aparecen en practicamente toda expresion:</p>
+<table>
+<thead>
+<tr>
+<th>Constante</th>
+<th>Simbolo</th>
+<th>Valor aproximado</th>
+<th>Papel fisico</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Velocidad de la luz</td>
+<td><span class="arithmatex">\(c\)</span></td>
+<td><span class="arithmatex">\(3 \times 10^8\)</span> m/s</td>
+<td>Relaciona espacio y tiempo</td>
+</tr>
+<tr>
+<td>Constante de Planck reducida</td>
+<td><span class="arithmatex">\(\hbar\)</span></td>
+<td><span class="arithmatex">\(1.055 \times 10^{-34}\)</span> J·s</td>
+<td>Escala de accion cuantica</td>
+</tr>
+<tr>
+<td>Constante de Boltzmann</td>
+<td><span class="arithmatex">\(k_B\)</span></td>
+<td><span class="arithmatex">\(1.38 \times 10^{-23}\)</span> J/K</td>
+<td>Relaciona temperatura y energia</td>
+</tr>
+</tbody>
+</table>
+<p>Estas constantes no tienen contenido fisico propio: son factores de conversion entre unidades que los humanos definieron historicamente de forma independiente (metros, segundos, kilogramos, kelvin). En fisica teorica resulta conveniente elegir unidades en las que algunas de estas constantes valgan exactamente uno.</p>
+<h2 id="3-unidades-naturales-en-qft">3. Unidades naturales en QFT</h2>
+<p>La convencion estandar en QFT fija</p>
+<div class="arithmatex">\[
+\hbar = c = 1.
+\]</div>
+<p>Con esta eleccion:</p>
+<ul>
+<li>la velocidad es adimensional (en unidades de <span class="arithmatex">\(c\)</span>);</li>
+<li>la accion es adimensional (en unidades de <span class="arithmatex">\(\hbar\)</span>);</li>
+<li>longitud y tiempo tienen las mismas dimensiones (ambas son inversas de energia o masa);</li>
+<li>energia, masa y momento son interconvertibles.</li>
+</ul>
+<p>La unica dimension independiente que queda es <strong>energia</strong> (o equivalentemente, masa). Por convenio se expresa en electronvoltios (eV) o sus multiplos (MeV, GeV, TeV).</p>
+<h2 id="4-tabla-de-equivalencias-dimensionales">4. Tabla de equivalencias dimensionales</h2>
+<p>Con <span class="arithmatex">\(\hbar = c = 1\)</span>:</p>
+<table>
+<thead>
+<tr>
+<th>Magnitud</th>
+<th>Dimension</th>
+<th>Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Masa</td>
+<td><span class="arithmatex">\([E]\)</span></td>
+<td><span class="arithmatex">\(m_e \approx 0.511\)</span> MeV</td>
+</tr>
+<tr>
+<td>Momento</td>
+<td><span class="arithmatex">\([E]\)</span></td>
+<td><span class="arithmatex">\(p\)</span> en MeV</td>
+</tr>
+<tr>
+<td>Energia</td>
+<td><span class="arithmatex">\([E]\)</span></td>
+<td><span class="arithmatex">\(E\)</span> en MeV o GeV</td>
+</tr>
+<tr>
+<td>Longitud</td>
+<td><span class="arithmatex">\([E]^{-1}\)</span></td>
+<td><span class="arithmatex">\(1\)</span> fm <span class="arithmatex">\(\approx\)</span> <span class="arithmatex">\((197\)</span> MeV<span class="arithmatex">\()^{-1}\)</span></td>
+</tr>
+<tr>
+<td>Tiempo</td>
+<td><span class="arithmatex">\([E]^{-1}\)</span></td>
+<td>tiempo en MeV<span class="arithmatex">\(^{-1}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>La relacion de conversion fundamental es</p>
+<div class="arithmatex">\[
+\hbar c \approx 197 \text{ MeV·fm}.
+\]</div>
+<p>Esta cifra es la que permite pasar de unidades naturales a unidades del SI cuando se necesita una prediccion experimental.</p>
+<h2 id="5-ejemplo-el-hamiltoniano-del-oscilador-armonico">5. Ejemplo: el hamiltoniano del oscilador armonico</h2>
+<p>En unidades fisicas completas el hamiltoniano cuantico del oscilador armonico es</p>
+<div class="arithmatex">\[
+H = \hbar\omega\left(a^\dagger a + \frac{1}{2}\right),
+\qquad E_n = \hbar\omega\left(n + \frac{1}{2}\right).
+\]</div>
+<p>Con <span class="arithmatex">\(\hbar = 1\)</span> estas expresiones se simplifican a</p>
+<div class="arithmatex">\[
+H = \omega\left(a^\dagger a + \frac{1}{2}\right),
+\qquad E_n = \omega\left(n + \frac{1}{2}\right),
+\]</div>
+<p>que es la forma que aparece en la mayoria de los textos de QFT. La frecuencia <span class="arithmatex">\(\omega\)</span> tiene dimension de energia en unidades naturales.</p>
+<p>De forma analoga, los operadores de subida y bajada en unidades fisicas son</p>
+<div class="arithmatex">\[
+a = \sqrt{\frac{m\omega}{2\hbar}}\,x + \frac{i}{\sqrt{2m\omega\hbar}}\,p,
+\]</div>
+<p>que con <span class="arithmatex">\(\hbar = 1\)</span> pasan a ser</p>
+<div class="arithmatex">\[
+a = \sqrt{\frac{m\omega}{2}}\,x + \frac{i}{\sqrt{2m\omega}}\,p.
+\]</div>
+<h2 id="6-ejemplo-la-relacion-de-conmutacion">6. Ejemplo: la relacion de conmutacion</h2>
+<p>En unidades fisicas:</p>
+<div class="arithmatex">\[
+[x, p] = i\hbar.
+\]</div>
+<p>Con <span class="arithmatex">\(\hbar = 1\)</span>:</p>
+<div class="arithmatex">\[
+[x, p] = i.
+\]</div>
+<p>Ambas expresiones describen la misma fisica. La segunda es simplemente mas compacta.</p>
+<h2 id="7-como-recuperar-las-unidades-fisicas">7. Como recuperar las unidades fisicas</h2>
+<p>Dado un resultado en unidades naturales, se pueden recuperar las unidades fisicas por analisis dimensional:</p>
+<ol>
+<li>Identificar la dimension de energia de la expresion: <span class="arithmatex">\([E]^n\)</span>.</li>
+<li>Multiplicar por las potencias adecuadas de <span class="arithmatex">\(\hbar\)</span> y <span class="arithmatex">\(c\)</span> hasta obtener las unidades SI deseadas.</li>
+</ol>
+<p><strong>Regla practica</strong>: insertar <span class="arithmatex">\(\hbar\)</span> y <span class="arithmatex">\(c\)</span> donde el analisis dimensional lo exija.</p>
+<h3 id="ejemplo">Ejemplo</h3>
+<p>La longitud de onda de Compton del electron en unidades naturales es</p>
+<div class="arithmatex">\[
+\lambda_C = \frac{1}{m_e} \approx \frac{1}{0.511 \text{ MeV}}.
+\]</div>
+<p>Para recuperar metros:</p>
+<div class="arithmatex">\[
+\lambda_C = \frac{\hbar}{m_e c} \approx \frac{197 \text{ MeV·fm}}{0.511 \text{ MeV}} \approx 386 \text{ fm}.
+\]</div>
+<h2 id="8-convencion-en-este-tutorial">8. Convencion en este tutorial</h2>
+<p>A lo largo de este tutorial se trabaja con</p>
+<div class="arithmatex">\[
+\hbar = c = 1
+\]</div>
+<p>salvo indicacion expresa. Cuando una expresion aparezca sin <span class="arithmatex">\(\hbar\)</span> o sin <span class="arithmatex">\(c\)</span>, debe leerse bajo esta convencion.</p>
+<p>En los articulos donde la convencion se aplica por primera vez se indica explicitamente. La referencia canonica es siempre este articulo.</p>
+<h2 id="9-cuadro-resumen">9. Cuadro resumen</h2>
+<div class="arithmatex">\[
+\boxed{\hbar = c = 1}
+\]</div>
+<table>
+<thead>
+<tr>
+<th>Lo que desaparece</th>
+<th>Lo que queda</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(\hbar\)</span> en relaciones cuanticas</td>
+<td><span class="arithmatex">\([x,p] = i\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(c\)</span> en relatividad</td>
+<td><span class="arithmatex">\(E^2 = \mathbf{p}^2 + m^2\)</span></td>
+</tr>
+<tr>
+<td>Factores <span class="arithmatex">\(\hbar c\)</span> en longitudes</td>
+<td><span class="arithmatex">\(\lambda \sim 1/E\)</span></td>
+</tr>
+<tr>
+<td>Energias en joules</td>
+<td>Energias en eV, MeV, GeV</td>
+</tr>
+</tbody>
+</table>
+<h2 id="10-preguntas-de-comprobacion">10. Preguntas de comprobacion</h2>
+<ul>
+<li>Por que fijar <span class="arithmatex">\(\hbar = c = 1\)</span> no pierde informacion fisica.</li>
+<li>Como se determina la dimension de una magnitud en unidades naturales.</li>
+<li>Que cifra permite convertir de MeV<span class="arithmatex">\(^{-1}\)</span> a femtometros.</li>
+<li>Como se recupera <span class="arithmatex">\(\hbar\)</span> en una expresion dada en unidades naturales.</li>
+</ul>
+<h2 id="11-ejercicios-sugeridos">11. Ejercicios sugeridos</h2>
+<ol>
+<li>Convierte la masa del proton (<span class="arithmatex">\(938\)</span> MeV) a kg usando <span class="arithmatex">\(\hbar\)</span> y <span class="arithmatex">\(c\)</span>.</li>
+<li>Expresa la longitud de onda de Compton del proton en fm y en MeV<span class="arithmatex">\(^{-1}\)</span>.</li>
+<li>Verifica dimensionalmente que <span class="arithmatex">\([x,p] = i\hbar\)</span> es consistente con <span class="arithmatex">\([x,p] = i\)</span> cuando <span class="arithmatex">\(\hbar = 1\)</span>.</li>
+<li>Un campo escalar tiene dimension <span class="arithmatex">\([E]^1\)</span> en <span class="arithmatex">\(d=4\)</span>. Comprueba que el termino cinetico del lagrangiano es adimensional.</li>
+<li>Reescribe <span class="arithmatex">\(E_n = \hbar\omega(n+\tfrac{1}{2})\)</span> en unidades donde <span class="arithmatex">\(\hbar \neq 1\)</span> a partir de la expresion en unidades naturales, usando solo analisis dimensional.</li>
+</ol>
+<h2 id="12-referencias-y-lecturas-recomendadas">12. Referencias y lecturas recomendadas</h2>
+<ul>
+<li>Zee, <em>Quantum Field Theory in a Nutshell</em>: apendice sobre convenciones y unidades.</li>
+<li>Peskin &amp; Schroeder, capitulo 1: discusion inicial de unidades naturales en QFT.</li>
+<li>Tong, <em>Lectures on Quantum Field Theory</em>: seccion de convenciones al inicio.</li>
+</ul>
+<hr />
+<h2 id="navegacion-del-tutorial">Navegacion del tutorial</h2>
+<p><a href="../07_algebra_de_lie_y_representaciones/">(anterior) Algebra de Lie y Representaciones</a> | <a href="../../01_fundamentos_conceptuales/">(siguiente) Fundamentos Conceptuales</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "navigation.expand", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+        <script src="../../../javascripts/mermaid-init.js"></script>
+      
+    
+  </body>
+</html>

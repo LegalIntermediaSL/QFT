@@ -1,0 +1,1632 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Tutorial completo sobre Teoría Cuántica de Campos">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Regularizacion Dimensional en \(\phi^4\) - QFT Tutorial</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#regularizacion-dimensional-en-phi4" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="QFT Tutorial" class="md-header__button md-logo" aria-label="QFT Tutorial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            QFT Tutorial
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Regularizacion Dimensional en \(\phi^4\)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="QFT Tutorial" class="md-nav__button md-logo" aria-label="QFT Tutorial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    QFT Tutorial
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutorial
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tutorial
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Índice
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../como_estudiar_este_tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cómo Estudiarlo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../problemas_recomendados_por_semana/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemas por Semana
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rutas_de_lectura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rutas de Lectura
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tabla_maestra_del_tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tabla Maestra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sintesis_por_modulo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Síntesis por Módulo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../catalogo_de_capitulos_y_etiquetas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catálogo de Capítulos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mapa_de_dependencias_conceptuales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mapa de Dependencias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../00_prerrequisitos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    00. Prerrequisitos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_fundamentos_conceptuales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01. Fundamentos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_relatividad_y_campos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02. Relatividad y Campos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_accion_y_simetrias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03. Acción y Simetrías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_cuantizacion_del_campo_escalar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04. Campo Escalar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05_interacciones_y_perturbaciones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05. Interacciones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06_fermiones_y_dirac/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06. Fermiones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07_gauge_y_qed/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07. Gauge y QED
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../08_integral_de_camino/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08. Integral de Camino
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09. Renormalización
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../10_modelo_estandar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Modelo Estándar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../11_qft_informacion_y_agujeros_negros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. QFT e Información
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../12_teorias_de_campo_efectivas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Teorías de Campo Efectivas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Apéndices
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Apéndices
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/bibliografia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bibliografía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/computacion_qft/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Herramientas Computacionales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/errores_comunes_y_recetas_practicas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Errores Comunes y Recetas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/reglas_de_feynman_y_propagadores/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reglas de Feynman y Propagadores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/simetrias_discretas_cpt_y_anomalias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Simetrías Discretas, CPT y Anomalías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/mezcla_de_sabor_ckm_y_pmns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mezcla de Sabor, CKM y PMNS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/anomalia_axial_y_cancelacion_de_anomalias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anomalía Axial y Cancelación de Anomalías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/glosario_notacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glosario de Notación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/convenciones_globales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Convenciones Globales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/plantilla_de_capitulo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plantilla Editorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-proposito" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Proposito
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-punto-de-partida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Punto de partida
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-por-que-introducir-mu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Por que introducir \(\mu\)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-estructura-del-resultado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Estructura del resultado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-bosquejo-del-calculo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Bosquejo del calculo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-que-se-gana-frente-al-cutoff" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Que se gana frente al cutoff
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-del-polo-al-contratermino" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Del polo al contratermino
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-por-que-la-dependencia-en-mu-no-es-un-problema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Por que la dependencia en \(\mu\) no es un problema
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-ejemplo-corto-de-lectura" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Ejemplo corto de lectura
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cuaderno-asociado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cuaderno asociado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-advertencias-utiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Advertencias utiles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-mini-mapa-conceptual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Mini mapa conceptual
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-preguntas-de-comprobacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Preguntas de comprobacion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicios-sugeridos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejercicios sugeridos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-referencias-y-lecturas-recomendadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Referencias y lecturas recomendadas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navegacion-del-tutorial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Navegacion del tutorial
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="regularizacion-dimensional-en-phi4">Regularizacion Dimensional en <span class="arithmatex">\(\phi^4\)</span></h1>
+<p><strong>Nivel:</strong> Intermedio<br />
+<strong>Dificultad:</strong> Media-Alta<br />
+<strong>Tiempo estimado:</strong> 25-35 min<br />
+<strong>Prerequisitos recomendados:</strong> <a href="../02_renormalizacion_y_grupo_de_renormalizacion/">Renormalizacion y Grupo de Renormalizacion</a> · <a href="../">Resumen del modulo</a></p>
+<h2 id="1-proposito">1. Proposito</h2>
+<p>Este documento muestra de forma guiada por que la regularizacion dimensional se vuelve tan util en teoria de campos. El ejemplo elegido es una correccion a un lazo en la teoria escalar <span class="arithmatex">\(\phi^4\)</span>.</p>
+<h2 id="2-punto-de-partida">2. Punto de partida</h2>
+<p>En <span class="arithmatex">\(\phi^4\)</span>, una correccion de un lazo a la masa conduce a una integral del tipo</p>
+<div class="arithmatex">\[
+I(m) \sim \mu^{4-d}\int \frac{d^dk}{(2\pi)^d}\frac{i}{k^2 - m^2 + i\epsilon},
+\]</div>
+<p>donde se ha introducido una escala <span class="arithmatex">\(\mu\)</span> para mantener dimensiones correctas al trabajar en</p>
+<div class="arithmatex">\[
+d = 4 - \varepsilon.
+\]</div>
+<p>La notacion puede parecer extraña al principio, pero la idea es muy simple: en vez de cortar la integral de manera abrupta, continuamos analiticamente el numero de dimensiones. La divergencia se manifiesta entonces como un polo cuando regresamos al limite fisico <span class="arithmatex">\(\varepsilon \to 0\)</span>.</p>
+<p>En lenguaje diagramatico, esta integral aparece ya en la correccion mas elemental al propagador de dos puntos. Aunque el factor combinatorio exacto depende de convenciones, el mensaje conceptual es estable: incluso un solo diagrama de lazo obliga a distinguir entre parametro desnudo, parametro renormalizado y dependencia respecto de una escala.</p>
+<h2 id="3-por-que-introducir-mu">3. Por que introducir <span class="arithmatex">\(\mu\)</span></h2>
+<p>La escala <span class="arithmatex">\(\mu\)</span> no es una decoracion arbitraria. Aparece porque al cambiar el numero de dimensiones tambien cambian las dimensiones de los acoplamientos y de la medida de integracion.</p>
+<p>Este detalle tecnico anticipa una leccion fisica profunda: la teoria renormalizada depende de una escala de referencia.</p>
+<p>Mas concretamente, en cuatro dimensiones el acoplamiento <span class="arithmatex">\(\lambda\)</span> de <span class="arithmatex">\(\phi^4\)</span> es adimensional, pero en <span class="arithmatex">\(d\neq 4\)</span> deja de serlo. La escala <span class="arithmatex">\(\mu\)</span> compensa esa diferencia y permite seguir comparando cantidades con dimensiones fisicas correctas.</p>
+<h2 id="4-estructura-del-resultado">4. Estructura del resultado</h2>
+<p>Sin desarrollar aqui todos los pasos de integracion, el resultado de este tipo de integral toma una forma esquematica como</p>
+<div class="arithmatex">\[
+I(m) \sim \frac{1}{\varepsilon} + \text{terminos finitos} + \log\frac{\mu^2}{m^2}.
+\]</div>
+<p>Lo importante pedagogicamente es reconocer tres piezas:</p>
+<ul>
+<li>el polo en <span class="arithmatex">\(1/\varepsilon\)</span>, que codifica la divergencia ultravioleta;</li>
+<li>una parte finita;</li>
+<li>una dependencia logaritmica en la escala <span class="arithmatex">\(\mu\)</span>.</li>
+</ul>
+<p>Conviene subrayar que el polo en <span class="arithmatex">\(1/\varepsilon\)</span> no es una "nueva" divergencia distinta de la ultravioleta habitual. Es la manera en que la regularizacion dimensional la reexpresa algebraicamente.</p>
+<h2 id="5-bosquejo-del-calculo">5. Bosquejo del calculo</h2>
+<p>Sin entrar en todos los detalles tecnicos, la ruta tipica del calculo es:</p>
+<ol>
+<li>escribir la integral de lazo en <span class="arithmatex">\(d\)</span> dimensiones;</li>
+<li>rotar a espacio euclideo cuando conviene para volver convergente la manipulacion;</li>
+<li>usar identidades gamma estandar para integrar en <span class="arithmatex">\(d\)</span> dimensiones;</li>
+<li>expandir el resultado alrededor de <span class="arithmatex">\(\varepsilon=0\)</span>.</li>
+</ol>
+<p>Una de las formas canonicas del resultado intermedio es</p>
+<div class="arithmatex">\[
+\int \frac{d^d k_E}{(2\pi)^d}\frac{1}{k_E^2 + m^2}
+\propto
+(m^2)^{\frac d2 - 1}\Gamma\!\left(1-\frac d2\right).
+\]</div>
+<p>Esta expresion merece una lectura lenta: la parte de potencia fija como escala la masa, mientras que la funcion gamma concentra la informacion singular asociada al limite <span class="arithmatex">\(d \to 4\)</span>.</p>
+<p>Al hacer esa expansion aparece precisamente la combinacion</p>
+<div class="arithmatex">\[
+\Gamma\!\left(1-\frac{d}{2}\right)
+\sim
+\Gamma\!\left(-1+\frac{\varepsilon}{2}\right),
+\]</div>
+<p>cuya expansion genera el polo en <span class="arithmatex">\(1/\varepsilon\)</span>. Este es uno de los lugares donde se ve con claridad que la divergencia UV queda traducida a una singularidad en la continuacion analitica.</p>
+<p>Una buena intuicion es la siguiente: la integral original "quiere divergir" en cuatro dimensiones, pero al desplazar la cuenta a <span class="arithmatex">\(4-\varepsilon\)</span> se vuelve algebraicamente controlable. La divergencia no desaparece; queda codificada en la forma singular de la expansion.</p>
+<h2 id="6-que-se-gana-frente-al-cutoff">6. Que se gana frente al cutoff</h2>
+<p>La regularizacion dimensional organiza las divergencias de forma especialmente limpia:</p>
+<ul>
+<li>no introduce una escala de corte dura en el espacio de momentos;</li>
+<li>preserva bien la simetria gauge en muchos contextos;</li>
+<li>convierte divergencias ultravioletas en polos algebraicos manejables.</li>
+</ul>
+<p>Por eso se ha convertido en el lenguaje estandar de gran parte de la QFT moderna.</p>
+<p>Ademas, separa de forma muy ordenada las piezas universales del calculo:</p>
+<ul>
+<li>el polo divergente;</li>
+<li>los terminos constantes dependientes del esquema;</li>
+<li>los logaritmos fisicamente relevantes en la escala.</li>
+</ul>
+<p>Frente a un cutoff duro, esto suele producir una lectura mas limpia de que parte del resultado es universal y que parte depende del regulador. Con cutoff aparecen a menudo potencias o logaritmos de <span class="arithmatex">\(\Lambda\)</span> cuya interpretacion puede mezclarse mas con detalles tecnicos del procedimiento.</p>
+<h2 id="7-del-polo-al-contratermino">7. Del polo al contratermino</h2>
+<p>Una vez aislado el termino proporcional a <span class="arithmatex">\(1/\varepsilon\)</span>, la renormalizacion procede absorbiendolo en un contratermino adecuado. No se "borra" la divergencia sin mas: se redefine la relacion entre parametros desnudos y parametros renormalizados.</p>
+<p>En el ejemplo de la masa:</p>
+<ul>
+<li>la correccion cuantica produce una parte divergente;</li>
+<li>el contratermino de masa la absorbe;</li>
+<li>la masa fisica queda finita tras imponer la condicion de renormalizacion elegida.</li>
+</ul>
+<p>En esquemas MS o <span class="arithmatex">\(\overline{\mathrm{MS}}\)</span>, esta absorcion se hace de manera particularmente simple porque el contratermino se elige para cancelar el polo y, en el caso de <span class="arithmatex">\(\overline{\mathrm{MS}}\)</span>, algunas constantes estandares adicionales. Esto vuelve muy eficiente el calculo de running y funciones beta.</p>
+<p>Tambien conviene recordar que en <span class="arithmatex">\(\phi^4\)</span> no solo puede renormalizarse la masa. A distintos ordenes aparecen renormalizaciones del acoplamiento y de la normalizacion del campo. Este ejemplo debe verse como una puerta de entrada, no como un caso aislado.</p>
+<h2 id="8-por-que-la-dependencia-en-mu-no-es-un-problema">8. Por que la dependencia en <span class="arithmatex">\(\mu\)</span> no es un problema</h2>
+<p>A primera vista puede parecer preocupante que el resultado contenga un logaritmo <span class="arithmatex">\(\log(\mu^2/m^2)\)</span>. Sin embargo, esa dependencia no es un defecto del observable final. Lo que ocurre es que:</p>
+<ul>
+<li>las amplitudes intermedias dependen del esquema y de la escala de renormalizacion;</li>
+<li>los parametros renormalizados tambien dependen de <span class="arithmatex">\(\mu\)</span>;</li>
+<li>la combinacion completa que define una cantidad fisica debe quedar independiente de elecciones arbitrarias.</li>
+</ul>
+<p>Esta es exactamente la puerta de entrada al grupo de renormalizacion.</p>
+<p>De hecho, una gran virtud pedagogica de la regularizacion dimensional es que hace visible de forma muy transparente la relacion entre divergencias UV y dependencia respecto de <span class="arithmatex">\(\mu\)</span>. Ese es el terreno natural donde aparecen funciones beta y ecuaciones de Callan-Symanzik.</p>
+<h2 id="9-ejemplo-corto-de-lectura">9. Ejemplo corto de lectura</h2>
+<p>Si en una cuenta aparece un termino <span class="arithmatex">\(1/\varepsilon\)</span>, no debe leerse como un fracaso de la teoria, sino como la señal de que la teoria aun no ha sido renormalizada en la escala y el esquema escogidos.</p>
+<p>Del mismo modo, si tras renormalizar sobreviven logaritmos grandes como <span class="arithmatex">\(\log(\mu^2/m^2)\)</span>, eso suele indicar que la escala elegida no es la mas conveniente para la cinemática del problema o que conviene reorganizar la expansion mediante running.</p>
+<h2 id="cuaderno-asociado">Cuaderno asociado</h2>
+<ul>
+<li><code>../../Cuadernos/problemas_resueltos/15_regularizacion_dimensional_y_running.ipynb</code>: usarlo para fijar de forma guiada el papel del polo en <span class="arithmatex">\(1/\\varepsilon\)</span>, de la escala <span class="arithmatex">\(\\mu\)</span> y de la transicion conceptual desde regularizacion a running.</li>
+<li><code>../../Cuadernos/problemas_resueltos/10_interacciones_y_perturbaciones.ipynb</code>: usarlo como apoyo para repasar la logica diagramatica que da origen a los lazos.</li>
+<li><code>../../Cuadernos/problemas_resueltos/09_cuantizacion_del_campo_escalar.ipynb</code>: usarlo para recordar la teoria libre sobre la que se construye la perturbacion.</li>
+</ul>
+<h2 id="11-advertencias-utiles">11. Advertencias utiles</h2>
+<ul>
+<li>La regularizacion dimensional no elimina por si sola la necesidad de renormalizar.</li>
+<li>El polo en <span class="arithmatex">\(1/\varepsilon\)</span> no es el observable final.</li>
+<li>La escala <span class="arithmatex">\(\mu\)</span> introducida en el calculo no debe confundirse automaticamente con una escala fisica unica del problema.</li>
+<li>En otros contextos tambien pueden aparecer divergencias infrarrojas; aqui el foco esta puesto solo en la estructura ultravioleta.</li>
+</ul>
+<h2 id="12-mini-mapa-conceptual">12. Mini mapa conceptual</h2>
+<p>Este capitulo conecta cuatro piezas del tutorial que conviene mantener juntas:</p>
+<ul>
+<li>los diagramas de lazo del modulo perturbativo;</li>
+<li>la aparicion de divergencias ultravioletas;</li>
+<li>la necesidad de introducir contraterminos;</li>
+<li>el nacimiento del running con respecto a la escala <span class="arithmatex">\(\mu\)</span>.</li>
+</ul>
+<p>Si esas cuatro piezas quedan enlazadas, la regularizacion dimensional deja de parecer un truco formal y pasa a verse como el lenguaje natural de la renormalizacion moderna.</p>
+<h2 id="13-preguntas-de-comprobacion">13. Preguntas de comprobacion</h2>
+<ul>
+<li>Por que se introduce la escala <span class="arithmatex">\(\mu\)</span>.</li>
+<li>Que representa el polo en <span class="arithmatex">\(1/\varepsilon\)</span>.</li>
+<li>Por que este esquema resulta especialmente conveniente en teorias gauge.</li>
+<li>En que sentido la funcion gamma "almacena" la divergencia UV al continuar analiticamente la dimension.</li>
+</ul>
+<h2 id="ejercicios-sugeridos">Ejercicios sugeridos</h2>
+<ol>
+<li>Explicar por que al cambiar la dimension del espacio-tiempo aparece una escala auxiliar <span class="arithmatex">\(\mu\)</span>.</li>
+<li>Describir el papel conceptual del polo en <span class="arithmatex">\(1/\varepsilon\)</span> antes de absorberlo en contraterminos.</li>
+<li>Justificar por que este lenguaje resulta especialmente natural para renormalizacion moderna y teorias gauge.</li>
+</ol>
+<h2 id="14-referencias-y-lecturas-recomendadas">14. Referencias y lecturas recomendadas</h2>
+<ul>
+<li>Base: Peskin y Schroeder, regularizacion dimensional en teorias escalares.</li>
+<li>Complementaria: Tong, explicacion conceptual del papel de <span class="arithmatex">\(\varepsilon\)</span> y de la escala <span class="arithmatex">\(\mu\)</span>.</li>
+<li>Profundizacion: textos avanzados de renormalizacion perturbativa y esquemas MS o <span class="arithmatex">\(\overline{\text{MS}}\)</span>.</li>
+</ul>
+<hr />
+<h2 id="navegacion-del-tutorial">Navegacion del tutorial</h2>
+<p><a href="../02_renormalizacion_y_grupo_de_renormalizacion/">(anterior) Renormalizacion y Grupo de Renormalizacion</a> | <a href="../04_funcion_beta_y_running_couplings/">(siguiente) Funcion Beta y Running Couplings</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "navigation.expand", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+        <script src="../../../javascripts/mermaid-init.js"></script>
+      
+    
+  </body>
+</html>

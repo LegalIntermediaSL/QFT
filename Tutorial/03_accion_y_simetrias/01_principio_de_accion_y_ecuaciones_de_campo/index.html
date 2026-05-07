@@ -1,0 +1,1644 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Tutorial completo sobre Teoría Cuántica de Campos">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Principio de Accion y Ecuaciones de Campo - QFT Tutorial</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#principio-de-accion-y-ecuaciones-de-campo" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="QFT Tutorial" class="md-header__button md-logo" aria-label="QFT Tutorial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            QFT Tutorial
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Principio de Accion y Ecuaciones de Campo
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="QFT Tutorial" class="md-nav__button md-logo" aria-label="QFT Tutorial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    QFT Tutorial
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutorial
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tutorial
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Índice
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../como_estudiar_este_tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cómo Estudiarlo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../problemas_recomendados_por_semana/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemas por Semana
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rutas_de_lectura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rutas de Lectura
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tabla_maestra_del_tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tabla Maestra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sintesis_por_modulo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Síntesis por Módulo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../catalogo_de_capitulos_y_etiquetas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catálogo de Capítulos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mapa_de_dependencias_conceptuales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mapa de Dependencias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../00_prerrequisitos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    00. Prerrequisitos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_fundamentos_conceptuales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01. Fundamentos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_relatividad_y_campos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02. Relatividad y Campos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03. Acción y Simetrías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_cuantizacion_del_campo_escalar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04. Campo Escalar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05_interacciones_y_perturbaciones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05. Interacciones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06_fermiones_y_dirac/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06. Fermiones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07_gauge_y_qed/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07. Gauge y QED
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../08_integral_de_camino/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08. Integral de Camino
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../09_renormalizacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09. Renormalización
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../10_modelo_estandar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Modelo Estándar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../11_qft_informacion_y_agujeros_negros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. QFT e Información
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../12_teorias_de_campo_efectivas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Teorías de Campo Efectivas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Apéndices
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Apéndices
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/bibliografia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bibliografía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/computacion_qft/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Herramientas Computacionales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/errores_comunes_y_recetas_practicas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Errores Comunes y Recetas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/reglas_de_feynman_y_propagadores/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reglas de Feynman y Propagadores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/simetrias_discretas_cpt_y_anomalias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Simetrías Discretas, CPT y Anomalías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/mezcla_de_sabor_ckm_y_pmns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mezcla de Sabor, CKM y PMNS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/anomalia_axial_y_cancelacion_de_anomalias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anomalía Axial y Cancelación de Anomalías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/glosario_notacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glosario de Notación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/convenciones_globales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Convenciones Globales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/plantilla_de_capitulo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plantilla Editorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#proposito" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Proposito
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Introduccion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-de-la-mecanica-clasica-a-la-teoria-de-campos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. De la mecanica clasica a la teoria de campos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-densidad-lagrangiana-y-localidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Densidad lagrangiana y localidad
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-variacion-de-la-accion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Variacion de la accion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-ejemplo-campo-escalar-real" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Ejemplo: campo escalar real
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-como-leer-una-lagrangiana" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Como leer una lagrangiana
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-dimensiones-y-unidades-naturales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Dimensiones y unidades naturales
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-terminos-de-interaccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Terminos de interaccion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-por-que-la-accion-es-el-puente-hacia-la-cuantizacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Por que la accion es el puente hacia la cuantizacion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-errores-frecuentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Errores frecuentes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cuaderno-asociado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cuaderno asociado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-preguntas-de-comprobacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Preguntas de comprobacion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-ejercicios-sugeridos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Ejercicios sugeridos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-cierre" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Cierre
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-referencias-y-lecturas-recomendadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Referencias y lecturas recomendadas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navegacion-del-tutorial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Navegacion del tutorial
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="principio-de-accion-y-ecuaciones-de-campo">Principio de Accion y Ecuaciones de Campo</h1>
+<p><strong>Nivel:</strong> Fundacional<br />
+<strong>Dificultad:</strong> Baja<br />
+<strong>Tiempo estimado:</strong> 25-35 min<br />
+<strong>Prerequisitos recomendados:</strong> <a href="../../02_relatividad_y_campos/">Modulo anterior</a> · <a href="../">Resumen del modulo</a></p>
+<h2 id="proposito">Proposito</h2>
+<p>Este capitulo presenta la formulacion por accion como lenguaje base de la teoria de campos y prepara el paso desde la dinamica clasica hacia ecuaciones de campo compatibles con localidad y covariancia.</p>
+<h2 id="1-introduccion">1. Introduccion</h2>
+<p>La formulacion por accion es uno de los lenguajes mas potentes de la fisica teorica. En lugar de comenzar con fuerzas o ecuaciones aisladas, se introduce un funcional global cuya estacionariedad sintetiza la dinamica completa.</p>
+<p>En teoria de campos, este lenguaje adquiere un valor especial porque hace visibles de una sola vez la localidad, la covariancia y la estructura de las interacciones.</p>
+<h2 id="2-de-la-mecanica-clasica-a-la-teoria-de-campos">2. De la mecanica clasica a la teoria de campos</h2>
+<p>En mecanica clasica ordinaria, la accion se escribe como</p>
+<div class="arithmatex">\[
+S[q] = \int dt\, L(q,\dot q,t).
+\]</div>
+<p>En teoria de campos, la generalizacion natural consiste en reemplazar el tiempo por el espacio-tiempo completo y las coordenadas generalizadas por campos:</p>
+<div class="arithmatex">\[
+S[\phi] = \int d^4x\, \mathcal{L}\bigl(\phi_a(x), \partial_\mu \phi_a(x)\bigr).
+\]</div>
+<p>El indice <span class="arithmatex">\(a\)</span> permite indicar que puede haber varios campos en la teoria.</p>
+<p>Esta generalizacion no es un cambio cosmetico. Significa que la dinamica ya no describe unas pocas coordenadas, sino grados de libertad distribuidos en todo el espacio-tiempo.</p>
+<h2 id="3-densidad-lagrangiana-y-localidad">3. Densidad lagrangiana y localidad</h2>
+<p>La cantidad fundamental ya no es una lagrangiana global, sino una densidad lagrangiana <span class="arithmatex">\(\mathcal{L}\)</span>. Esta depende localmente de los campos y de un numero finito de sus derivadas. La razon de esta estructura es doble:</p>
+<ul>
+<li>se adapta a la relatividad especial;</li>
+<li>implementa la idea de interaccion local.</li>
+</ul>
+<p>Una teoria local relativista casi siempre empieza proponiendo una <span class="arithmatex">\(\mathcal{L}\)</span> compatible con las simetrias relevantes.</p>
+<p>Por eso la densidad lagrangiana funciona como el lugar donde se encuentran casi todas las exigencias estructurales de la teoria:</p>
+<ul>
+<li>localidad;</li>
+<li>covariancia;</li>
+<li>contenido de campos;</li>
+<li>patron de interacciones.</li>
+</ul>
+<h2 id="4-variacion-de-la-accion">4. Variacion de la accion</h2>
+<p>La dinamica se obtiene imponiendo que la accion sea estacionaria bajo variaciones arbitrarias de los campos que se anulan en la frontera:</p>
+<div class="arithmatex">\[
+\delta S = 0.
+\]</div>
+<p>Al variar la accion y realizar integracion por partes, se obtiene la forma general de las ecuaciones de Euler-Lagrange:</p>
+<div class="arithmatex">\[
+\frac{\partial \mathcal{L}}{\partial \phi_a}
+- \partial_\mu\left(\frac{\partial \mathcal{L}}{\partial(\partial_\mu \phi_a)}\right)=0.
+\]</div>
+<p>Esta expresion resume el paso desde un principio global hasta ecuaciones diferenciales locales.</p>
+<p>Ese paso es una de las ideas mas poderosas de toda la fisica teorica: una condicion variacional unica sobre un funcional global basta para generar ecuaciones locales de movimiento.</p>
+<h2 id="5-ejemplo-campo-escalar-real">5. Ejemplo: campo escalar real</h2>
+<p>Para un campo escalar libre real, se toma</p>
+<div class="arithmatex">\[
+\mathcal{L} = \frac{1}{2}\partial_\mu \phi\, \partial^\mu \phi - \frac{1}{2}m^2\phi^2.
+\]</div>
+<p>Aplicando Euler-Lagrange se obtiene</p>
+<div class="arithmatex">\[
+\left(\partial_\mu \partial^\mu + m^2\right)\phi = 0,
+\]</div>
+<p>que es la ecuacion de Klein-Gordon.</p>
+<p>Este ejemplo es importante porque muestra el patron general:</p>
+<ul>
+<li>termino cinetico;</li>
+<li>termino de masa;</li>
+<li>ecuacion de movimiento relativista.</li>
+</ul>
+<p>Tambien enseña algo muy practico: leer una ecuacion de movimiento directamente desde la parte cuadratica de la lagrangiana es una de las habilidades mas utiles en QFT.</p>
+<h2 id="6-como-leer-una-lagrangiana">6. Como leer una lagrangiana</h2>
+<p>Una buena practica al empezar QFT consiste en entrenar la mirada para leer rapidamente una densidad lagrangiana. En una primera pasada conviene preguntar:</p>
+<ul>
+<li>cuales son los campos dinamicos;</li>
+<li>cual es la parte cuadratica;</li>
+<li>cuales son las masas;</li>
+<li>si aparecen derivadas acopladas;</li>
+<li>si hay terminos de interaccion no lineales.</li>
+</ul>
+<p>Esa lectura preliminar suele decir mucho antes de hacer un solo calculo detallado.</p>
+<p>De hecho, una persona con soltura en el lenguaje lagrangiano puede mirar una teoria nueva y detectar muy rapidamente donde estan su cinematica, sus masas y sus vertices de interaccion.</p>
+<h2 id="7-dimensiones-y-unidades-naturales">7. Dimensiones y unidades naturales</h2>
+<p>En muchos textos se usan unidades naturales <span class="arithmatex">\(c=\hbar=1\)</span>. Eso hace que masas, energias e inversas de longitud compartan dimensiones compatibles. La accion suele tomarse adimensional en estas unidades, lo que ayuda a fijar las dimensiones de campos y acoplamientos.</p>
+<p>Este punto prepara de forma natural el terreno para la renormalizacion y las EFT: muchas veces la "plausibilidad" de un termino ya se adivina mirando sus dimensiones.</p>
+<p>Esta observacion no es decorativa. La contabilidad dimensional ayuda a anticipar:</p>
+<ul>
+<li>que terminos son admisibles;</li>
+<li>como escalan los acoplamientos;</li>
+<li>que tipo de teoria efectiva estamos escribiendo.</li>
+</ul>
+<h2 id="8-terminos-de-interaccion">8. Terminos de interaccion</h2>
+<p>Si a la teoria libre del campo escalar se le añade un termino como</p>
+<div class="arithmatex">\[
+\mathcal{L}_{\text{int}} = -\frac{\lambda}{4!}\phi^4,
+\]</div>
+<p>la ecuacion de movimiento deja de ser lineal:</p>
+<div class="arithmatex">\[
+\left(\partial_\mu \partial^\mu + m^2\right)\phi + \frac{\lambda}{3!}\phi^3 = 0.
+\]</div>
+<p>Ya en este nivel clasico se ve una idea central: la forma de la lagrangiana controla de manera directa la complejidad dinamica de la teoria.</p>
+<p>En ese sentido, cambiar un solo termino en <span class="arithmatex">\(\mathcal{L}\)</span> no suele ser una correccion menor: puede alterar el tipo de ecuaciones, la estructura perturbativa y hasta el rango de validez de la teoria.</p>
+<h2 id="9-por-que-la-accion-es-el-puente-hacia-la-cuantizacion">9. Por que la accion es el puente hacia la cuantizacion</h2>
+<p>La accion no solo organiza la teoria clasica. Tambien es el lenguaje desde el cual se construyen:</p>
+<ul>
+<li>la cuantizacion canonica, a traves de momentos conjugados y hamiltonianos;</li>
+<li>la integral de camino, a traves del peso <span class="arithmatex">\(e^{iS}\)</span>;</li>
+<li>las reglas perturbativas, a traves de la separacion entre parte libre e interaccion.</li>
+</ul>
+<p>Por eso dominar el principio de accion no es un lujo formal, sino un prerequisito real para entender la maquinaria de la QFT.</p>
+<p>Es el punto donde se conectan casi todos los lenguajes que vendran despues: campos clasicos, cuantizacion canonica, integral de camino, corrientes de Noether y reglas de Feynman.</p>
+<h2 id="10-errores-frecuentes">10. Errores frecuentes</h2>
+<ul>
+<li>Pensar que la accion es solo una herramienta elegante para reescribir ecuaciones ya conocidas.</li>
+<li>Olvidar que la densidad lagrangiana debe ser un escalar relativista.</li>
+<li>Leer una lagrangiana sin distinguir entre parte libre y parte interactuante.</li>
+<li>Ignorar la informacion dimensional de los terminos.</li>
+</ul>
+<h2 id="cuaderno-asociado">Cuaderno asociado</h2>
+<ul>
+<li>Consulta los cuadernos asociados de este bloque en <a href="../">Resumen del modulo</a> para reforzar el capitulo con practica guiada.</li>
+</ul>
+<h2 id="11-preguntas-de-comprobacion">11. Preguntas de comprobacion</h2>
+<ul>
+<li>Que se gana al pasar de ecuaciones de movimiento directas a una formulacion por accion.</li>
+<li>Como se obtiene Euler-Lagrange para campos.</li>
+<li>Que informacion fisica se puede leer directamente de una lagrangiana simple.</li>
+<li>Por que la accion sirve tanto en el nivel clasico como en el cuantico.</li>
+</ul>
+<h2 id="12-ejercicios-sugeridos">12. Ejercicios sugeridos</h2>
+<ol>
+<li>Derivar la ecuacion de Euler-Lagrange para un campo escalar real a partir de una variacion explicita de la accion.</li>
+<li>Identificar, en una lagrangiana escalar simple, que terminos pertenecen a la parte libre y cuales a la interaccion.</li>
+<li>Explicar por que la densidad lagrangiana debe transformarse como escalar relativista.</li>
+</ol>
+<h2 id="13-cierre">13. Cierre</h2>
+<p>La accion es el punto de condensacion de la teoria. No es simplemente una forma compacta de escribir la dinamica: es el objeto que unifica localidad, simetria y estructura cuantizable en un mismo marco.</p>
+<h2 id="14-referencias-y-lecturas-recomendadas">14. Referencias y lecturas recomendadas</h2>
+<ul>
+<li>Base: Srednicki, formulacion lagrangiana y accion.</li>
+<li>Complementaria: Tong, accion y ecuaciones de Euler-Lagrange para campos.</li>
+<li>Profundizacion: textos de mecanica analitica y teoria de campos clasicos.</li>
+</ul>
+<hr />
+<h2 id="navegacion-del-tutorial">Navegacion del tutorial</h2>
+<p><a href="../../portada_02_accion_lagrangiana_y_noether/">(anterior) Portada 02: Accion, Densidad Lagrangiana y Teorema de Noether</a> | <a href="../02_teorema_de_noether_y_simetria/">(siguiente) Teorema de Noether y Papel Organizador de las Simetrias</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "navigation.expand", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+        <script src="../../../javascripts/mermaid-init.js"></script>
+      
+    
+  </body>
+</html>

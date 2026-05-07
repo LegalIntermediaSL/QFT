@@ -1,0 +1,1653 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Tutorial completo sobre Teoría Cuántica de Campos">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Cuantizacion Canonica y Espacio de Fock - QFT Tutorial</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#cuantizacion-canonica-y-espacio-de-fock" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="QFT Tutorial" class="md-header__button md-logo" aria-label="QFT Tutorial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            QFT Tutorial
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Cuantizacion Canonica y Espacio de Fock
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="QFT Tutorial" class="md-nav__button md-logo" aria-label="QFT Tutorial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    QFT Tutorial
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutorial
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tutorial
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Índice
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../como_estudiar_este_tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cómo Estudiarlo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../problemas_recomendados_por_semana/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemas por Semana
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rutas_de_lectura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rutas de Lectura
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tabla_maestra_del_tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tabla Maestra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sintesis_por_modulo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Síntesis por Módulo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../catalogo_de_capitulos_y_etiquetas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catálogo de Capítulos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mapa_de_dependencias_conceptuales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mapa de Dependencias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../00_prerrequisitos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    00. Prerrequisitos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_fundamentos_conceptuales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01. Fundamentos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_relatividad_y_campos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02. Relatividad y Campos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_accion_y_simetrias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03. Acción y Simetrías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04. Campo Escalar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05_interacciones_y_perturbaciones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05. Interacciones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06_fermiones_y_dirac/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06. Fermiones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07_gauge_y_qed/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07. Gauge y QED
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../08_integral_de_camino/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08. Integral de Camino
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../09_renormalizacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09. Renormalización
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../10_modelo_estandar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Modelo Estándar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../11_qft_informacion_y_agujeros_negros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. QFT e Información
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../12_teorias_de_campo_efectivas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Teorías de Campo Efectivas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Apéndices
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Apéndices
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/bibliografia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bibliografía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/computacion_qft/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Herramientas Computacionales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/errores_comunes_y_recetas_practicas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Errores Comunes y Recetas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/reglas_de_feynman_y_propagadores/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reglas de Feynman y Propagadores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/simetrias_discretas_cpt_y_anomalias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Simetrías Discretas, CPT y Anomalías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/mezcla_de_sabor_ckm_y_pmns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mezcla de Sabor, CKM y PMNS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/anomalia_axial_y_cancelacion_de_anomalias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anomalía Axial y Cancelación de Anomalías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/glosario_notacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glosario de Notación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/convenciones_globales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Convenciones Globales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/plantilla_de_capitulo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plantilla Editorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#proposito" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Proposito
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Introduccion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-reglas-canonicas-a-tiempo-igual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Reglas canonicas a tiempo igual
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-expansion-operatorial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Expansion operatorial
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-algebra-de-creacion-y-aniquilacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Algebra de creacion y aniquilacion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-estado-de-vacio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Estado de vacio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-estados-de-una-y-muchas-particulas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Estados de una y muchas particulas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-interpretacion-bosonica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Interpretacion bosonica
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-hamiltoniano-en-terminos-modales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Hamiltoniano en terminos modales
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-operadores-de-campo-y-observables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Operadores de campo y observables
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-por-que-esto-resuelve-el-problema-del-numero-variable-de-particulas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Por que esto resuelve el problema del numero variable de particulas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-advertencias-utiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Advertencias utiles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cuaderno-asociado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cuaderno asociado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-preguntas-de-comprobacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Preguntas de comprobacion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-ejercicios-sugeridos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Ejercicios sugeridos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-cierre" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Cierre
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-referencias-y-lecturas-recomendadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. Referencias y lecturas recomendadas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navegacion-del-tutorial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Navegacion del tutorial
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="cuantizacion-canonica-y-espacio-de-fock">Cuantizacion Canonica y Espacio de Fock</h1>
+<p><strong>Nivel:</strong> Nucleo<br />
+<strong>Dificultad:</strong> Media<br />
+<strong>Tiempo estimado:</strong> 25-35 min<br />
+<strong>Prerequisitos recomendados:</strong> <a href="../01_campo_escalar_clasico_y_modos_normales/">Campo Escalar Clasico y Modos Normales</a> · <a href="../">Resumen del modulo</a></p>
+<h2 id="proposito">Proposito</h2>
+<p>Este capitulo desarrolla la cuantizacion canonica del campo escalar y explica como emerge el espacio de Fock como lenguaje natural para una teoria con numero variable de particulas.</p>
+<h2 id="1-introduccion">1. Introduccion</h2>
+<p>La cuantizacion canonica del campo escalar muestra de forma explicita como aparece una teoria con numero variable de particulas. Es uno de los puntos donde la QFT cambia de lenguaje de manera mas visible.</p>
+<h2 id="2-reglas-canonicas-a-tiempo-igual">2. Reglas canonicas a tiempo igual</h2>
+<p>Partimos del par canonico <span class="arithmatex">\((\phi,\pi)\)</span> y lo promovemos a operadores con relaciones de conmutacion</p>
+<div class="arithmatex">\[
+[\phi(t,\mathbf x),\pi(t,\mathbf y)] = i\delta^{(3)}(\mathbf x-\mathbf y),
+\]</div>
+<div class="arithmatex">\[
+[\phi(t,\mathbf x),\phi(t,\mathbf y)] = 0,
+\qquad
+[\pi(t,\mathbf x),\pi(t,\mathbf y)] = 0.
+\]</div>
+<p>Estas relaciones son la version de campo de <span class="arithmatex">\([q,p]=i\)</span>.</p>
+<p>La expresion "a tiempo igual" importa. Significa que imponemos la estructura cuantica sobre una hipersuperficie espacial fija y dejamos que la dinamica describa la evolucion temporal posterior. Asi se hace visible el parentesco directo con la mecanica hamiltoniana ordinaria.</p>
+<h2 id="3-expansion-operatorial">3. Expansion operatorial</h2>
+<p>La expansion en modos del campo cuantizado toma la forma</p>
+<div class="arithmatex">\[
+\phi(x)=\int \frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\mathbf p}}}
+\left(a(\mathbf p)e^{-ip\cdot x}+a^\dagger(\mathbf p)e^{ip\cdot x}\right).
+\]</div>
+<p>Los objetos <span class="arithmatex">\(a(\mathbf p)\)</span> y <span class="arithmatex">\(a^\dagger(\mathbf p)\)</span> ya no son numeros, sino operadores.</p>
+<p>La relacion relativista</p>
+<div class="arithmatex">\[
+E_{\mathbf p} = \sqrt{\mathbf p^2 + m^2}
+\]</div>
+<p>ya esta incorporada en esta expansion. No estamos sumando modos arbitrarios, sino soluciones libres con la dispersion correcta. Ademas, la presencia simultanea de exponentes positivos y negativos muestra que un campo hermitico contiene partes que crean y destruyen excitaciones.</p>
+<h2 id="4-algebra-de-creacion-y-aniquilacion">4. Algebra de creacion y aniquilacion</h2>
+<p>Las relaciones canonicas implican</p>
+<div class="arithmatex">\[
+[a(\mathbf p),a^\dagger(\mathbf q)] = (2\pi)^3\delta^{(3)}(\mathbf p-\mathbf q),
+\]</div>
+<p>conmutando entre si los pares <span class="arithmatex">\(a\)</span> con <span class="arithmatex">\(a\)</span> y <span class="arithmatex">\(a^\dagger\)</span> con <span class="arithmatex">\(a^\dagger\)</span>.</p>
+<p>Esto generaliza el algebra del oscilador armonico al continuo de momentos.</p>
+<p>La delta de Dirac ocupa aqui el papel que antes jugaba la unidad en el oscilador discreto. La interpretacion es simple: no hay un solo oscilador, sino un continuo de osciladores independientes etiquetados por <span class="arithmatex">\(\mathbf p\)</span>.</p>
+<h2 id="5-estado-de-vacio">5. Estado de vacio</h2>
+<p>Se define el vacio <span class="arithmatex">\(|0\rangle\)</span> como el estado aniquilado por todos los operadores <span class="arithmatex">\(a(\mathbf p)\)</span>:</p>
+<div class="arithmatex">\[
+a(\mathbf p)|0\rangle = 0
+\qquad
+\text{para todo } \mathbf p.
+\]</div>
+<p>Este estado no debe pensarse como "la nada", sino como el estado base respecto del cual se construyen todas las excitaciones.</p>
+<p>Mas adelante esta idea se volvera aun mas interesante, porque la nocion de vacio puede depender de la descomposicion en modos considerada. Aqui basta con retener que el vacio es un estado fisico del espacio de Fock, no una ausencia metafisica de todo contenido.</p>
+<h2 id="6-estados-de-una-y-muchas-particulas">6. Estados de una y muchas particulas</h2>
+<p>Aplicando un operador de creacion al vacio obtenemos un estado de una particula:</p>
+<div class="arithmatex">\[
+|\mathbf p\rangle = a^\dagger(\mathbf p)|0\rangle.
+\]</div>
+<p>Aplicando varios operadores de creacion construimos estados multiparticle:</p>
+<div class="arithmatex">\[
+|\mathbf p_1,\mathbf p_2,\ldots,\mathbf p_n\rangle
+= a^\dagger(\mathbf p_1)a^\dagger(\mathbf p_2)\cdots a^\dagger(\mathbf p_n)|0\rangle.
+\]</div>
+<p>El conjunto de todos esos sectores forma el espacio de Fock.</p>
+<p>Una forma util de escribirlo es</p>
+<div class="arithmatex">\[
+\mathcal{F} = \mathbb{C} \oplus \mathcal{H}_1 \oplus \mathcal{H}_2 \oplus \cdots,
+\]</div>
+<p>donde <span class="arithmatex">\(\mathbb{C}\)</span> representa el sector de vacio y <span class="arithmatex">\(\mathcal{H}_n\)</span> el sector de <span class="arithmatex">\(n\)</span> particulas. Esta suma directa es justo la estructura que permite que el numero de particulas cambie.</p>
+<h2 id="7-interpretacion-bosonica">7. Interpretacion bosonica</h2>
+<p>Como estamos cuantizando un campo escalar, las excitaciones obedecen estadistica bosonica. Eso se refleja en el hecho de que los operadores de creacion conmutan entre si. La simetrizacion de los estados no es un detalle externo; esta codificada en el algebra misma.</p>
+<p>Por ejemplo, intercambiar dos momentos no cambia un estado bosonico de dos particulas:</p>
+<div class="arithmatex">\[
+a^\dagger(\mathbf p_1)a^\dagger(\mathbf p_2)|0\rangle
+=
+a^\dagger(\mathbf p_2)a^\dagger(\mathbf p_1)|0\rangle.
+\]</div>
+<h2 id="8-hamiltoniano-en-terminos-modales">8. Hamiltoniano en terminos modales</h2>
+<p>El hamiltoniano puede reescribirse como suma continua de osciladores:</p>
+<div class="arithmatex">\[
+H = \int \frac{d^3p}{(2\pi)^3} E_{\mathbf p}
+\left(a^\dagger(\mathbf p)a(\mathbf p) + \frac{1}{2}[a(\mathbf p),a^\dagger(\mathbf p)]\right).
+\]</div>
+<p>La primera parte cuenta excitaciones; la segunda sugiere la energia de punto cero del vacio. En muchos tratamientos introductorios se reordena normalmente el hamiltoniano para centrarse en diferencias de energia fisicamente relevantes.</p>
+<p>Ese reordenamiento normal es util, pero no debe ocultar la leccion conceptual: el vacio cuantico ya trae una estructura energetica propia incluso en la teoria libre.</p>
+<h2 id="9-operadores-de-campo-y-observables">9. Operadores de campo y observables</h2>
+<p>Un operador de campo local no "es" una particula individual. Mas bien actua como objeto capaz de crear o destruir componentes del estado en un punto del espacio-tiempo. Esta es una sutileza importante:</p>
+<ul>
+<li>los operadores <span class="arithmatex">\(a^\dagger\)</span> crean excitaciones de momento bien definido;</li>
+<li>los campos <span class="arithmatex">\(\phi(x)\)</span> son superposiciones locales de creacion y aniquilacion;</li>
+<li>los observables fisicos suelen organizarse en correladores y elementos de matriz.</li>
+</ul>
+<p>Esto evita una confusion frecuente: el campo cuantico no es simplemente una funcion de onda relativista. Es un operador que actua sobre todo el espacio de Fock y puede conectar sectores con distinto numero de particulas.</p>
+<h2 id="10-por-que-esto-resuelve-el-problema-del-numero-variable-de-particulas">10. Por que esto resuelve el problema del numero variable de particulas</h2>
+<p>La respuesta corta es que el espacio de Fock ya contiene sectores con todos los numeros posibles de excitaciones. Una teoria relativista cuantica puede entonces describir:</p>
+<ul>
+<li>procesos sin particulas iniciales o finales;</li>
+<li>estados de una particula;</li>
+<li>colisiones de muchas particulas;</li>
+<li>amplitudes entre sectores de ocupacion diferentes.</li>
+</ul>
+<p>La arquitectura que faltaba en la mecanica cuantica de una sola particula aparece aqui de forma natural.</p>
+<p>Esa es una de las victorias conceptuales mas limpias de la QFT. No forzamos procesos de creacion y aniquilacion dentro de un formalismo inadecuado: trabajamos directamente en un espacio de estados donde tales procesos tienen cabida desde el principio.</p>
+<h2 id="11-advertencias-utiles">11. Advertencias utiles</h2>
+<ul>
+<li>El vacio cuantico no es un objeto clasico vacio de contenido.</li>
+<li>Los operadores de creacion y aniquilacion no describen mecanismos mecanicos literales.</li>
+<li>Un campo cuantico no es una "onda de probabilidad" de una particula unica.</li>
+<li>La expansion modal no es una aproximacion; para la teoria libre es una descomposicion estructural exacta.</li>
+<li>La interpretacion en terminos de particulas es especialmente clara en teorias libres o en estados asintoticos.</li>
+</ul>
+<h2 id="cuaderno-asociado">Cuaderno asociado</h2>
+<ul>
+<li>Consulta los cuadernos asociados de este bloque en <a href="../">Resumen del modulo</a> para reforzar el capitulo con practica guiada.</li>
+</ul>
+<h2 id="12-preguntas-de-comprobacion">12. Preguntas de comprobacion</h2>
+<ul>
+<li>Como se pasa de las relaciones canonicas del campo al algebra de los operadores modales.</li>
+<li>Que es exactamente el espacio de Fock.</li>
+<li>Por que el vacio es el estado base y no la ausencia trivial de todo.</li>
+<li>En que sentido una particula es una excitacion del campo.</li>
+</ul>
+<h2 id="13-ejercicios-sugeridos">13. Ejercicios sugeridos</h2>
+<ol>
+<li>Explicar como la promocion de coeficientes modales a operadores permite describir numero variable de particulas.</li>
+<li>Justificar por que el vacio de Fock no debe confundirse con un vacio clasico sin estructura.</li>
+<li>Describir la diferencia entre un operador de creacion de momento definido y el campo local <span class="arithmatex">\(\phi(x)\)</span>.</li>
+</ol>
+<h2 id="14-cierre">14. Cierre</h2>
+<p>La cuantizacion canonica del campo escalar hace visible la logica profunda de la QFT: no cuantizamos particulas individuales para luego permitir que aparezcan mas, sino que cuantizamos campos cuyos modos admiten excitaciones discretas. Esas excitaciones son las particulas.</p>
+<p>Este capitulo es el puente natural entre el oscilador armonico cuantico y la teoria de scattering. Una vez entendido, reglas de Feynman, correladores y amplitudes dejan de parecer piezas separadas.</p>
+<h2 id="15-referencias-y-lecturas-recomendadas">15. Referencias y lecturas recomendadas</h2>
+<ul>
+<li>Base: Peskin y Schroeder, cuantizacion canonica del campo escalar.</li>
+<li>Complementaria: Srednicki, espacio de Fock y operadores modales.</li>
+<li>Profundizacion: Tong, presentacion pedagogica del vacio y de las excitaciones del campo.</li>
+</ul>
+<hr />
+<h2 id="navegacion-del-tutorial">Navegacion del tutorial</h2>
+<p><a href="../01_campo_escalar_clasico_y_modos_normales/">(anterior) Campo Escalar Clasico y Modos Normales</a> | <a href="../03_propagador_causalidad_y_funcion_de_green/">(siguiente) Propagador, Causalidad y Funcion de Green</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "navigation.expand", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+        <script src="../../../javascripts/mermaid-init.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1752 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Tutorial completo sobre Teoría Cuántica de Campos">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Teorema de Noether: Ejemplos Explicitos - QFT Tutorial</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#teorema-de-noether-ejemplos-explicitos" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="QFT Tutorial" class="md-header__button md-logo" aria-label="QFT Tutorial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            QFT Tutorial
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Teorema de Noether: Ejemplos Explicitos
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="QFT Tutorial" class="md-nav__button md-logo" aria-label="QFT Tutorial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    QFT Tutorial
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutorial
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tutorial
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Índice
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../como_estudiar_este_tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cómo Estudiarlo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../problemas_recomendados_por_semana/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemas por Semana
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rutas_de_lectura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rutas de Lectura
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tabla_maestra_del_tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tabla Maestra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sintesis_por_modulo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Síntesis por Módulo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../catalogo_de_capitulos_y_etiquetas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catálogo de Capítulos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mapa_de_dependencias_conceptuales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mapa de Dependencias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../00_prerrequisitos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    00. Prerrequisitos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_fundamentos_conceptuales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01. Fundamentos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_relatividad_y_campos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02. Relatividad y Campos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03. Acción y Simetrías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_cuantizacion_del_campo_escalar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04. Campo Escalar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05_interacciones_y_perturbaciones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05. Interacciones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06_fermiones_y_dirac/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06. Fermiones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07_gauge_y_qed/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07. Gauge y QED
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../08_integral_de_camino/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08. Integral de Camino
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../09_renormalizacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09. Renormalización
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../10_modelo_estandar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Modelo Estándar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../11_qft_informacion_y_agujeros_negros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. QFT e Información
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../12_teorias_de_campo_efectivas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Teorías de Campo Efectivas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Apéndices
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Apéndices
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/bibliografia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bibliografía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/computacion_qft/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Herramientas Computacionales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/errores_comunes_y_recetas_practicas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Errores Comunes y Recetas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/reglas_de_feynman_y_propagadores/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reglas de Feynman y Propagadores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/simetrias_discretas_cpt_y_anomalias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Simetrías Discretas, CPT y Anomalías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/mezcla_de_sabor_ckm_y_pmns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mezcla de Sabor, CKM y PMNS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/anomalia_axial_y_cancelacion_de_anomalias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anomalía Axial y Cancelación de Anomalías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/glosario_notacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glosario de Notación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/convenciones_globales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Convenciones Globales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/plantilla_de_capitulo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plantilla Editorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#proposito" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Proposito
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduccion-de-la-formula-a-los-calculos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Introduccion: de la formula a los calculos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-la-receta-paso-a-paso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. La receta paso a paso
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-ejemplo-1-traslaciones-espacio-temporales-y-el-4-momento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Ejemplo 1: traslaciones espacio-temporales y el 4-momento
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-verificacion-de-la-conservacion-del-tensor-energia-momento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Verificacion de la conservacion del tensor energia-momento
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-ejemplo-2-simetria-de-fase-global-u1-y-carga-conservada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Ejemplo 2: simetria de fase global U(1) y carga conservada
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-ejemplo-3-simetria-de-lorentz-y-tensor-de-momento-angular" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Ejemplo 3: simetria de Lorentz y tensor de momento angular
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-el-tensor-energia-momento-mejorado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. El tensor energia-momento mejorado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-corriente-axial-y-anomalias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Corriente axial y anomalias
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-resumen-tres-simetrias-tres-cargas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Resumen: tres simetrias, tres cargas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-corrientes-conservadas-en-la-teoria-cuantizada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Corrientes conservadas en la teoria cuantizada
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-importancia-practica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Importancia practica
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cuaderno-asociado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cuaderno asociado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-preguntas-de-comprobacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Preguntas de comprobacion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-ejercicios-sugeridos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Ejercicios sugeridos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-cierre" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Cierre
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-referencias-y-lecturas-recomendadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. Referencias y lecturas recomendadas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navegacion-del-tutorial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Navegacion del tutorial
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="teorema-de-noether-ejemplos-explicitos">Teorema de Noether: Ejemplos Explicitos</h1>
+<p><strong>Nivel:</strong> Fundacional<br />
+<strong>Dificultad:</strong> Media<br />
+<strong>Tiempo estimado:</strong> 35-50 min<br />
+<strong>Prerequisitos recomendados:</strong> <a href="../02_teorema_de_noether_y_simetria/">Teorema de Noether y Papel Organizador de las Simetrias</a> · <a href="../">Resumen del modulo</a></p>
+<h2 id="proposito">Proposito</h2>
+<p>Este capitulo desarrolla tres aplicaciones concretas del teorema de Noether: la simetria traslacional produce el 4-momento, la simetria de fase U(1) produce la carga conservada, y la simetria de Lorentz produce el tensor de momento angular.</p>
+<h2 id="1-introduccion-de-la-formula-a-los-calculos">1. Introduccion: de la formula a los calculos</h2>
+<p>El capitulo anterior presento el teorema de Noether en su formulacion general. Ahora se trata de ejecutarlo en casos concretos, desde el principio, sin saltarse pasos. El objetivo es que al terminar este capitulo sea posible aplicar Noether a cualquier simetria continua de una teoria con campos.</p>
+<p>La formula general de Noether dice: si la accion es invariante bajo <span class="arithmatex">\(\phi \to \phi + \epsilon \Delta\phi\)</span> entonces la corriente</p>
+<div class="arithmatex">\[
+j^\mu = \frac{\partial \mathcal{L}}{\partial(\partial_\mu \phi)} \Delta\phi - \mathcal{F}^\mu
+\]</div>
+<p>es conservada, donde <span class="arithmatex">\(\mathcal{F}^\mu\)</span> aparece cuando la variacion de la densidad lagrangiana es una derivada total <span class="arithmatex">\(\delta\mathcal{L} = \partial_\mu \mathcal{F}^\mu\)</span>.</p>
+<h2 id="2-la-receta-paso-a-paso">2. La receta paso a paso</h2>
+<p>Para aplicar Noether en un caso concreto conviene seguir estos pasos:</p>
+<ol>
+<li>Escribir la simetria explicita: <span class="arithmatex">\(x^\mu \to x^\mu + \delta x^\mu\)</span> y <span class="arithmatex">\(\phi \to \phi + \delta\phi\)</span>.</li>
+<li>Calcular la variacion de la lagrangiana bajo esa transformacion.</li>
+<li>Identificar si la variacion es exactamente cero o una derivada total.</li>
+<li>Si es una derivada total, extraer <span class="arithmatex">\(\mathcal{F}^\mu\)</span>.</li>
+<li>Construir la corriente de Noether.</li>
+<li>Verificar la conservacion usando las ecuaciones de movimiento.</li>
+</ol>
+<p>Este procedimiento se aplica a continuacion en tres ejemplos fundamentales.</p>
+<h2 id="3-ejemplo-1-traslaciones-espacio-temporales-y-el-4-momento">3. Ejemplo 1: traslaciones espacio-temporales y el 4-momento</h2>
+<p>Consideramos un campo escalar real <span class="arithmatex">\(\phi(x)\)</span> con lagrangiana</p>
+<div class="arithmatex">\[
+\mathcal{L} = \frac{1}{2}\partial_\mu\phi\,\partial^\mu\phi - \frac{1}{2}m^2\phi^2.
+\]</div>
+<p>Una traslacion infinitesimal es <span class="arithmatex">\(x^\mu \to x^\mu + \epsilon^\nu\)</span> (con <span class="arithmatex">\(\epsilon^\nu\)</span> constante). El campo cambia como</p>
+<div class="arithmatex">\[
+\phi(x) \to \phi(x - \epsilon) = \phi(x) - \epsilon^\nu \partial_\nu \phi(x).
+\]</div>
+<p>Calculamos la variacion de la lagrangiana:</p>
+<div class="arithmatex">\[
+\delta\mathcal{L} = -\epsilon^\nu \partial_\nu \mathcal{L} = -\partial_\nu(\epsilon^\nu \mathcal{L}).
+\]</div>
+<p>Esta es una derivada total, con <span class="arithmatex">\(\mathcal{F}^\nu = -\epsilon^\nu\mathcal{L}\)</span> (modulo convencion de signo). La corriente de Noether asociada a la traslacion en la direccion <span class="arithmatex">\(\nu\)</span> es</p>
+<div class="arithmatex">\[
+j^\mu_{(\nu)} = \frac{\partial\mathcal{L}}{\partial(\partial_\mu\phi)}\partial_\nu\phi - \delta^\mu_\nu\mathcal{L} = \partial^\mu\phi\,\partial_\nu\phi - \delta^\mu_\nu\mathcal{L}.
+\]</div>
+<p>Definiendo el tensor energia-momento como <span class="arithmatex">\(T^{\mu\nu} = j^\mu_{(\nu)}\)</span>:</p>
+<div class="arithmatex">\[
+T^{\mu\nu} = \partial^\mu\phi\,\partial^\nu\phi - \eta^{\mu\nu}\mathcal{L}.
+\]</div>
+<p>La condicion de conservacion <span class="arithmatex">\(\partial_\mu T^{\mu\nu} = 0\)</span> puede verificarse usando la ecuacion de Klein-Gordon. La carga conservada asociada a la traslacion temporal es la energia total:</p>
+<div class="arithmatex">\[
+P^0 = E = \int d^3x\, T^{00} = \int d^3x\left[\frac{1}{2}(\partial_t\phi)^2 + \frac{1}{2}(\nabla\phi)^2 + \frac{1}{2}m^2\phi^2\right].
+\]</div>
+<p>La carga conservada asociada a la traslacion espacial en la direccion <span class="arithmatex">\(i\)</span> es el momento lineal:</p>
+<div class="arithmatex">\[
+P^i = \int d^3x\, T^{0i} = \int d^3x\,\partial_t\phi\,\partial^i\phi.
+\]</div>
+<p>El 4-vector <span class="arithmatex">\((E, \mathbf{P})\)</span> se transforma como un 4-vector de Lorentz, como corresponde a los generadores de traslacion del grupo de Poincare.</p>
+<h2 id="4-verificacion-de-la-conservacion-del-tensor-energia-momento">4. Verificacion de la conservacion del tensor energia-momento</h2>
+<p>Para verificar que <span class="arithmatex">\(\partial_\mu T^{\mu\nu} = 0\)</span> se calcula:</p>
+<div class="arithmatex">\[
+\partial_\mu T^{\mu\nu} = \partial_\mu(\partial^\mu\phi\,\partial^\nu\phi) - \partial^\nu\mathcal{L}.
+\]</div>
+<p>Usando <span class="arithmatex">\(\partial_\mu(\partial^\mu\phi) = -m^2\phi\)</span> (ecuacion de Klein-Gordon) y la regla de la cadena para <span class="arithmatex">\(\partial^\nu\mathcal{L}\)</span>:</p>
+<div class="arithmatex">\[
+\partial^\nu\mathcal{L} = \partial^\nu\phi\,\partial_\mu\partial^\mu\phi + \partial^\mu\phi\,\partial^\nu\partial_\mu\phi - m^2\phi\,\partial^\nu\phi.
+\]</div>
+<p>Reuniendo los terminos con la ecuacion de movimiento se comprueba la cancelacion. Este calculo explicit el mecanismo: la conservacion es consecuencia directa de las ecuaciones de Euler-Lagrange.</p>
+<h2 id="5-ejemplo-2-simetria-de-fase-global-u1-y-carga-conservada">5. Ejemplo 2: simetria de fase global U(1) y carga conservada</h2>
+<p>Consideramos ahora un campo escalar complejo <span class="arithmatex">\(\phi\)</span> con lagrangiana</p>
+<div class="arithmatex">\[
+\mathcal{L} = \partial_\mu\phi^*\,\partial^\mu\phi - m^2\phi^*\phi.
+\]</div>
+<p>Esta lagrangiana es invariante bajo la transformacion de fase global</p>
+<div class="arithmatex">\[
+\phi \to e^{i\alpha}\phi, \qquad \phi^* \to e^{-i\alpha}\phi^*,
+\]</div>
+<p>con <span class="arithmatex">\(\alpha\)</span> constante real. Infinitesimalmente (<span class="arithmatex">\(\alpha \to \epsilon\)</span> infinitesimal):</p>
+<div class="arithmatex">\[
+\delta\phi = i\epsilon\phi, \qquad \delta\phi^* = -i\epsilon\phi^*.
+\]</div>
+<p>Calculamos la variacion de la lagrangiana:</p>
+<div class="arithmatex">\[
+\delta\mathcal{L} = \partial_\mu(\delta\phi^*)\,\partial^\mu\phi + \partial_\mu\phi^*\,\partial^\mu(\delta\phi) - m^2(\delta\phi^*)\phi - m^2\phi^*(\delta\phi).
+\]</div>
+<p>Sustituyendo:</p>
+<div class="arithmatex">\[
+\delta\mathcal{L} = -i\epsilon\partial_\mu\phi^*\,\partial^\mu\phi + i\epsilon\partial_\mu\phi^*\,\partial^\mu\phi - m^2(-i\epsilon\phi^*\phi + i\epsilon\phi^*\phi) = 0.
+\]</div>
+<p>La lagrangiana es estrictamente invariante, <span class="arithmatex">\(\delta\mathcal{L} = 0\)</span>. La corriente de Noether es entonces</p>
+<div class="arithmatex">\[
+j^\mu = \frac{\partial\mathcal{L}}{\partial(\partial_\mu\phi)}\Delta\phi + \frac{\partial\mathcal{L}}{\partial(\partial_\mu\phi^*)}\Delta\phi^*
+\]</div>
+<p>con <span class="arithmatex">\(\Delta\phi = i\phi\)</span> y <span class="arithmatex">\(\Delta\phi^* = -i\phi^*\)</span>:</p>
+<div class="arithmatex">\[
+j^\mu = i\phi\,\partial^\mu\phi^* - i\phi^*\,\partial^\mu\phi = i(\phi\,\partial^\mu\phi^* - \phi^*\,\partial^\mu\phi).
+\]</div>
+<p>Con la convencion de signos habitual en la literatura se define la corriente con signo opuesto:</p>
+<div class="arithmatex">\[
+j^\mu = -i(\phi^*\partial^\mu\phi - \phi\partial^\mu\phi^*).
+\]</div>
+<p>La carga conservada es</p>
+<div class="arithmatex">\[
+Q = \int d^3x\, j^0 = -i\int d^3x\left(\phi^*\partial_t\phi - \phi\partial_t\phi^*\right).
+\]</div>
+<p>Tras la cuantizacion canonica, esta carga se convierte en el operador numero de particulas menos numero de antiparticulas:</p>
+<div class="arithmatex">\[
+\hat Q = \hat N - \hat{\bar N}.
+\]</div>
+<p>Es la carga interna conservada bajo U(1). Si se identifica este U(1) con el electromagnetismo, <span class="arithmatex">\(Q\)</span> es la carga electrica.</p>
+<h2 id="6-ejemplo-3-simetria-de-lorentz-y-tensor-de-momento-angular">6. Ejemplo 3: simetria de Lorentz y tensor de momento angular</h2>
+<p>Las transformaciones de Lorentz infinitesimales son</p>
+<div class="arithmatex">\[
+x^\mu \to x^\mu + \omega^{\mu\nu}x_\nu,
+\]</div>
+<p>con <span class="arithmatex">\(\omega^{\mu\nu} = -\omega^{\nu\mu}\)</span> antisimetrico. El campo escalar transforma como</p>
+<div class="arithmatex">\[
+\delta\phi = -\omega^{\mu\nu}x_\nu\partial_\mu\phi.
+\]</div>
+<p>Bajo esta transformacion, la variacion de la lagrangiana es una derivada total:</p>
+<div class="arithmatex">\[
+\delta\mathcal{L} = -\omega^{\mu\nu}x_\nu\partial_\mu\mathcal{L} = -\partial_\mu(\omega^{\mu\nu}x_\nu\mathcal{L}) + \omega^{\mu\nu}\eta_{\mu\nu}\mathcal{L}.
+\]</div>
+<p>El ultimo termino se anula porque <span class="arithmatex">\(\omega^{\mu\nu}\eta_{\mu\nu} = 0\)</span> (contraccion de un tensor antisimetrico con uno simetrico).</p>
+<p>La corriente de Noether asociada al parametro <span class="arithmatex">\(\omega^{\rho\sigma}\)</span> es el tensor</p>
+<div class="arithmatex">\[
+\mathcal{M}^{\mu\rho\sigma} = x^\rho T^{\mu\sigma} - x^\sigma T^{\mu\rho},
+\]</div>
+<p>donde <span class="arithmatex">\(T^{\mu\nu}\)</span> es el tensor energia-momento del ejemplo anterior. Este tensor satisface</p>
+<div class="arithmatex">\[
+\partial_\mu\mathcal{M}^{\mu\rho\sigma} = 0
+\]</div>
+<p>cuando se usan las ecuaciones de movimiento y la conservacion de <span class="arithmatex">\(T^{\mu\nu}\)</span>.</p>
+<p>Las cargas conservadas son las componentes del tensor de momento angular:</p>
+<div class="arithmatex">\[
+J^{\rho\sigma} = \int d^3x\,\mathcal{M}^{0\rho\sigma} = \int d^3x\left(x^\rho T^{0\sigma} - x^\sigma T^{0\rho}\right).
+\]</div>
+<p>En particular, las componentes espaciales <span class="arithmatex">\(J^{ij}\)</span> forman el momento angular orbital, y las componentes <span class="arithmatex">\(J^{0i}\)</span> generan los boosts.</p>
+<p>Para campos con spin no nulo aparecen terminos adicionales que contribuyen al momento angular intrinseco (spin).</p>
+<h2 id="7-el-tensor-energia-momento-mejorado">7. El tensor energia-momento mejorado</h2>
+<p>El tensor energia-momento calculado por el procedimiento de Noether canonico no siempre es simetrico ni trazablemente cero. Para la maxima utilidad fisica, especialmente en el acoplamiento con la gravedad, se prefiere el tensor energia-momento de Belinfante-Rosenfeld, que es simetrico y gauge invariante:</p>
+<div class="arithmatex">\[
+\Theta^{\mu\nu} = T^{\mu\nu} + \partial_\rho S^{\rho\mu\nu},
+\]</div>
+<p>donde <span class="arithmatex">\(S^{\rho\mu\nu}\)</span> es un tensor que se construye de forma que <span class="arithmatex">\(\Theta^{\mu\nu}\)</span> sea simetrico. Este "mejoramiento" no cambia las cargas conservadas porque el termino adicional es una divergencia.</p>
+<h2 id="8-corriente-axial-y-anomalias">8. Corriente axial y anomalias</h2>
+<p>Si la lagrangiana es invariante bajo una simetria axial <span class="arithmatex">\(\phi \to e^{i\alpha\gamma^5}\phi\)</span>, el teorema de Noether predice una corriente axial conservada. Sin embargo, a nivel cuantico esta conservacion puede romperse por efectos de lazo. Esta rotura es la anomalia axial, y tiene consecuencias fisicas importantes como la desintegracion <span class="arithmatex">\(\pi^0 \to \gamma\gamma\)</span>.</p>
+<p>Las anomalias muestran que las simetrias clasicas no siempre se preservan tras la cuantizacion, un hecho que el teorema de Noether, formulado en el nivel clasico, no puede detectar por si solo.</p>
+<h2 id="9-resumen-tres-simetrias-tres-cargas">9. Resumen: tres simetrias, tres cargas</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Simetria</th>
+<th style="text-align: left;">Generador</th>
+<th style="text-align: left;">Corriente</th>
+<th style="text-align: left;">Carga conservada</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Traslacion temporal</td>
+<td style="text-align: left;"><span class="arithmatex">\(\partial_t\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(T^{0\nu}\)</span></td>
+<td style="text-align: left;">Energia <span class="arithmatex">\(E\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">Traslacion espacial</td>
+<td style="text-align: left;"><span class="arithmatex">\(\partial_i\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(T^{0i}\)</span></td>
+<td style="text-align: left;">Momento <span class="arithmatex">\(P^i\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">Fase global <span class="arithmatex">\(U(1)\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(\phi \to e^{i\alpha}\phi\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(j^\mu\)</span></td>
+<td style="text-align: left;">Carga <span class="arithmatex">\(Q\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">Rotacion</td>
+<td style="text-align: left;"><span class="arithmatex">\(M_{ij}\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(\mathcal{M}^{0ij}\)</span></td>
+<td style="text-align: left;">Momento angular <span class="arithmatex">\(J^{ij}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">Boost</td>
+<td style="text-align: left;"><span class="arithmatex">\(M_{0i}\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(\mathcal{M}^{00i}\)</span></td>
+<td style="text-align: left;">Generador de boost</td>
+</tr>
+</tbody>
+</table>
+<h2 id="10-corrientes-conservadas-en-la-teoria-cuantizada">10. Corrientes conservadas en la teoria cuantizada</h2>
+<p>Tras la cuantizacion, las corrientes de Noether se convierten en operadores. Las cargas conservadas generan las simetrias a nivel de operadores:</p>
+<div class="arithmatex">\[
+[Q, \phi(x)] = \Delta\phi(x),
+\]</div>
+<p>donde <span class="arithmatex">\(\Delta\phi\)</span> es la variacion infinitesimal del campo bajo la simetria. Esta relacion establece que las cargas de Noether son los generadores de las simetrias en el formalismo operatorial.</p>
+<p>En particular:</p>
+<ul>
+<li><span class="arithmatex">\([P^\mu, \phi(x)] = -i\partial^\mu\phi(x)\)</span> (el 4-momento genera traslaciones);</li>
+<li><span class="arithmatex">\([Q, \phi] = i\phi\)</span> (la carga U(1) genera la rotacion de fase).</li>
+</ul>
+<h2 id="11-importancia-practica">11. Importancia practica</h2>
+<p>El teorema de Noether no es solo un resultado estetico. En la practica de la QFT se usa constantemente para:</p>
+<ul>
+<li>construir corrientes conservadas a partir de lagrangianas dadas;</li>
+<li>identificar que cantidades se conservan en cada interaccion;</li>
+<li>detectar violaciones de simetria cuando la conservacion falla;</li>
+<li>construir identidades de Ward que restringen las amplitudes de dispersion.</li>
+</ul>
+<h2 id="cuaderno-asociado">Cuaderno asociado</h2>
+<ul>
+<li>Consulta los cuadernos asociados de este bloque en <a href="../">Resumen del modulo</a> para reforzar el capitulo con practica guiada.</li>
+</ul>
+<h2 id="12-preguntas-de-comprobacion">12. Preguntas de comprobacion</h2>
+<ul>
+<li>Por que la variacion de la lagrangiana bajo traslaciones es una derivada total y no estrictamente cero.</li>
+<li>Como se construye el tensor energia-momento canonico a partir de la corriente de Noether de la simetria traslacional.</li>
+<li>Que diferencia hay entre la corriente de Noether de una simetria interna U(1) y la de una simetria espaciotemporal.</li>
+<li>Por que la carga de Noether de una simetria U(1) se interpreta como carga electrica tras la cuantizacion.</li>
+<li>Como aparece el momento angular orbital en el tensor de momento angular derivado de la simetria de Lorentz.</li>
+</ul>
+<h2 id="13-ejercicios-sugeridos">13. Ejercicios sugeridos</h2>
+<ol>
+<li>Derivar el tensor energia-momento para la lagrangiana del campo escalar complejo <span class="arithmatex">\(\mathcal{L} = \partial_\mu\phi^*\partial^\mu\phi - m^2\phi^*\phi\)</span> y verificar que satisface <span class="arithmatex">\(\partial_\mu T^{\mu\nu} = 0\)</span> usando las ecuaciones de Euler-Lagrange.</li>
+<li>Para la lagrangiana del campo de Maxwell <span class="arithmatex">\(\mathcal{L} = -\frac{1}{4}F_{\mu\nu}F^{\mu\nu}\)</span>, aplicar el procedimiento de Noether a la simetria traslacional y construir el tensor energia-momento canonico.</li>
+<li>Verificar que la carga U(1) del campo escalar complejo satisface <span class="arithmatex">\([Q, \phi] = \phi\)</span> a nivel de corchetes de Poisson clasicos.</li>
+</ol>
+<h2 id="14-cierre">14. Cierre</h2>
+<p>Los tres ejemplos de este capitulo muestran que el teorema de Noether no es una afirmacion abstracta, sino una maquinaria calculable. Traslaciones, fases y transformaciones de Lorentz producen, via Noether, las cantidades conservadas mas fundamentales de la QFT. Dominar estos calculos es una de las habilidades tecnicas mas importantes del curso.</p>
+<h2 id="15-referencias-y-lecturas-recomendadas">15. Referencias y lecturas recomendadas</h2>
+<ul>
+<li>Base: Srednicki, capitulos 22-23, corrientes de Noether y tensor energia-momento.</li>
+<li>Complementaria: Tong, notas sobre corrientes conservadas con calculos explicitos.</li>
+<li>Profundizacion: Itzykson y Zuber, seccion sobre simetrias e identidades de Ward.</li>
+</ul>
+<hr />
+<h2 id="navegacion-del-tutorial">Navegacion del tutorial</h2>
+<p><a href="../02_teorema_de_noether_y_simetria/">(anterior) Teorema de Noether y Papel Organizador de las Simetrias</a> | <a href="../04_simetrias_internas_y_cargas_conservadas/">(siguiente) Simetrias Internas y Cargas Conservadas</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "navigation.expand", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+        <script src="../../../javascripts/mermaid-init.js"></script>
+      
+    
+  </body>
+</html>

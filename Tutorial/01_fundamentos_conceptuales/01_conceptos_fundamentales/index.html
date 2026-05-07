@@ -1,0 +1,1715 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Tutorial completo sobre Teoría Cuántica de Campos">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Conceptos Fundamentales de Teoria Cuantica de Campos - QFT Tutorial</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#conceptos-fundamentales-de-teoria-cuantica-de-campos" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="QFT Tutorial" class="md-header__button md-logo" aria-label="QFT Tutorial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            QFT Tutorial
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Conceptos Fundamentales de Teoria Cuantica de Campos
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="QFT Tutorial" class="md-nav__button md-logo" aria-label="QFT Tutorial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    QFT Tutorial
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutorial
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tutorial
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Índice
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../como_estudiar_este_tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cómo Estudiarlo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../problemas_recomendados_por_semana/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemas por Semana
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rutas_de_lectura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rutas de Lectura
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tabla_maestra_del_tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tabla Maestra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sintesis_por_modulo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Síntesis por Módulo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../catalogo_de_capitulos_y_etiquetas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catálogo de Capítulos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mapa_de_dependencias_conceptuales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mapa de Dependencias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../00_prerrequisitos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    00. Prerrequisitos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01. Fundamentos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_relatividad_y_campos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02. Relatividad y Campos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_accion_y_simetrias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03. Acción y Simetrías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_cuantizacion_del_campo_escalar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04. Campo Escalar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05_interacciones_y_perturbaciones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05. Interacciones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06_fermiones_y_dirac/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06. Fermiones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07_gauge_y_qed/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07. Gauge y QED
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../08_integral_de_camino/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08. Integral de Camino
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../09_renormalizacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09. Renormalización
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../10_modelo_estandar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Modelo Estándar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../11_qft_informacion_y_agujeros_negros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. QFT e Información
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../12_teorias_de_campo_efectivas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Teorías de Campo Efectivas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Apéndices
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Apéndices
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/bibliografia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bibliografía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/computacion_qft/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Herramientas Computacionales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/errores_comunes_y_recetas_practicas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Errores Comunes y Recetas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/reglas_de_feynman_y_propagadores/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reglas de Feynman y Propagadores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/simetrias_discretas_cpt_y_anomalias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Simetrías Discretas, CPT y Anomalías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/mezcla_de_sabor_ckm_y_pmns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mezcla de Sabor, CKM y PMNS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/anomalia_axial_y_cancelacion_de_anomalias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anomalía Axial y Cancelación de Anomalías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/glosario_notacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glosario de Notación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/convenciones_globales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Convenciones Globales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/plantilla_de_capitulo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plantilla Editorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#proposito" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Proposito
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-que-problema-intenta-resolver-la-qft" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Que problema intenta resolver la QFT
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-campo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Campo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-espacio-tiempo-y-relatividad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Espacio-tiempo y relatividad
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-simetria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Simetria
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-accion-y-densidad-lagrangiana" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Accion y densidad lagrangiana
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-cuantizacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Cuantizacion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-particulas-como-excitaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Particulas como excitaciones
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-vacio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Vacio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-localidad-y-causalidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Localidad y causalidad
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-interaccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Interaccion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-renormalizacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Renormalizacion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-mapa-minimo-de-ideas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Mapa minimo de ideas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-preguntas-de-comprobacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Preguntas de comprobacion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cuaderno-asociado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cuaderno asociado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-advertencias-utiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Advertencias utiles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicios-sugeridos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejercicios sugeridos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-cierre" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. Cierre
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-referencias-y-lecturas-recomendadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16. Referencias y lecturas recomendadas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navegacion-del-tutorial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Navegacion del tutorial
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="conceptos-fundamentales-de-teoria-cuantica-de-campos">Conceptos Fundamentales de Teoria Cuantica de Campos</h1>
+<p><strong>Nivel:</strong> Fundacional<br />
+<strong>Dificultad:</strong> Baja<br />
+<strong>Tiempo estimado:</strong> 25-35 min<br />
+<strong>Prerequisitos recomendados:</strong> <a href="../../00_prerrequisitos/">Modulo anterior</a> · <a href="../">Resumen del modulo</a></p>
+<h2 id="proposito">Proposito</h2>
+<p>Este documento resume las ideas centrales que conviene tener presentes antes de estudiar con detalle la Teoria Cuantica de Campos. No sustituye los capitulos tecnicos, pero ofrece un mapa conceptual que permite entender por que aparecen ciertas estructuras y como se relacionan entre si.</p>
+<p>La idea no es memorizar definiciones sueltas, sino fijar un marco mental. Si ese marco queda claro, los capitulos posteriores sobre cuantizacion, correladores, scattering y renormalizacion resultan mucho mas legibles.</p>
+<h2 id="1-que-problema-intenta-resolver-la-qft">1. Que problema intenta resolver la QFT</h2>
+<p>La mecanica cuantica ordinaria describe sistemas con un numero fijo de grados de libertad y funciona muy bien mientras no sea necesario crear o destruir particulas. La relatividad especial, en cambio, obliga a tratar el espacio y el tiempo de manera unificada y permite procesos energeticos donde la materia puede transformarse en nuevas excitaciones.</p>
+<p>Cuando se intenta combinar ambas ideas, aparece una tension profunda:</p>
+<ul>
+<li>la mecanica cuantica no relativista trata a las particulas como objetos primarios;</li>
+<li>la relatividad y la causalidad exigen una formulacion compatible con propagacion local;</li>
+<li>los procesos de altas energias muestran que el numero de particulas no se conserva.</li>
+</ul>
+<p>La QFT resuelve esta tension tomando a los campos como objetos fundamentales. Las particulas pasan a interpretarse como cuantos o excitaciones discretas de esos campos.</p>
+<p>Esta frase contiene un cambio de paradigma entero. En la intuicion pre-QFT parece natural pensar que primero existen particulas y luego se inventa un campo para describirlas. En QFT ocurre lo contrario: el campo es el objeto basico y la particula aparece como una excitacion cuantizada de ese campo.</p>
+<h2 id="2-campo">2. Campo</h2>
+<p>Un campo es una entidad definida en cada punto del espacio-tiempo. Puede ser escalar, vectorial, espinorial o tensorial, segun como transforme bajo cambios de coordenadas o simetrias de Lorentz.</p>
+<p>Ideas clave:</p>
+<ul>
+<li>un campo no asigna un unico numero global, sino un valor a cada punto;</li>
+<li>su evolucion recoge informacion local;</li>
+<li>distintas especies de particulas corresponden a distintos campos;</li>
+<li>en el nivel cuantico, el campo se promueve a operador.</li>
+</ul>
+<p>Ejemplos:</p>
+<ul>
+<li>campo escalar <span class="arithmatex">\(\phi(x)\)</span>;</li>
+<li>campo electromagnetico <span class="arithmatex">\(A_\mu(x)\)</span>;</li>
+<li>campo fermionico <span class="arithmatex">\(\psi(x)\)</span>.</li>
+</ul>
+<p>Cada uno de ellos transforma de forma distinta bajo las simetrias del espacio-tiempo e internas, y por eso describe excitaciones con propiedades fisicas diferentes.</p>
+<h2 id="3-espacio-tiempo-y-relatividad">3. Espacio-tiempo y relatividad</h2>
+<p>La QFT vive sobre un espacio-tiempo relativista. Eso significa que las ecuaciones deben respetar la estructura causal de la relatividad especial y ser covariantes bajo transformaciones de Lorentz.</p>
+<p>Esto impone condiciones muy fuertes:</p>
+<ul>
+<li>no puede haber senales fisicas propagandose mas rapido que la luz;</li>
+<li>la descripcion no debe depender del observador inercial elegido;</li>
+<li>los observables locales deben respetar la causalidad microfisica.</li>
+</ul>
+<p>Por eso, el lenguaje de campos locales resulta mucho mas natural que el de funciones de onda de una sola particula.</p>
+<p>La palabra "local" es central. Significa que la dinamica se formula en terminos de objetos definidos punto a punto en el espacio-tiempo, de modo compatible con la estructura causal relativista.</p>
+<h2 id="4-simetria">4. Simetria</h2>
+<p>Las simetrias organizan casi toda la teoria. Una simetria es una transformacion que deja invariantes las ecuaciones o la accion del sistema.</p>
+<p>Las mas importantes en el arranque de QFT son:</p>
+<ul>
+<li>traslaciones en espacio y tiempo;</li>
+<li>rotaciones;</li>
+<li>transformaciones de Lorentz;</li>
+<li>simetrias internas, como cambios de fase;</li>
+<li>simetrias gauge.</li>
+</ul>
+<p>Las simetrias no solo simplifican el formalismo. Tambien determinan cantidades conservadas, restringen terminos posibles en la lagrangiana y guian la construccion de teorias fisicamente consistentes.</p>
+<p>Buena parte de la fisica moderna puede resumirse asi: elegimos un contenido de campos y dejamos que las simetrias nos digan que teoria es admisible.</p>
+<h2 id="5-accion-y-densidad-lagrangiana">5. Accion y densidad lagrangiana</h2>
+<p>La formulacion moderna de una teoria de campos se apoya en la accion:</p>
+<div class="arithmatex">\[
+S = \int d^4x\, \mathcal{L}
+\]</div>
+<p>donde <span class="arithmatex">\(\mathcal{L}\)</span> es la densidad lagrangiana. La dinamica se obtiene exigiendo que la accion sea estacionaria frente a variaciones del campo. De ahi emergen las ecuaciones de Euler-Lagrange.</p>
+<p>Esta formulacion es central por varias razones:</p>
+<ul>
+<li>hace visibles las simetrias;</li>
+<li>permite una transicion natural al formalismo cuantico;</li>
+<li>generaliza elegantemente desde sistemas mecanicos hasta campos.</li>
+</ul>
+<p>Ademas, la accion no solo sirve para derivar ecuaciones de movimiento. Es tambien el objeto central de la integral de camino, donde cada configuracion del campo contribuye con una fase gobernada por <span class="arithmatex">\(S\)</span>.</p>
+<h2 id="6-cuantizacion">6. Cuantizacion</h2>
+<p>Cuantizar significa pasar de una descripcion clasica a una teoria donde las variables dinamicas ya no son numeros ordinarios, sino operadores o amplitudes integradas sobre historias posibles.</p>
+<p>En QFT aparecen dos grandes lenguajes:</p>
+<ul>
+<li>cuantizacion canonica;</li>
+<li>integral de camino.</li>
+</ul>
+<p>En la cuantizacion canonica, el campo y su momento conjugado satisfacen relaciones de conmutacion o anticonmutacion. En la integral de camino, las amplitudes se obtienen sumando contribuciones de todas las configuraciones del campo ponderadas por <span class="arithmatex">\(e^{iS}\)</span>.</p>
+<p>Ambos lenguajes describen la misma fisica, pero iluminan aspectos distintos. La cuantizacion canonica hace especialmente transparentes el espacio de Fock, el vacio y los operadores modales. La integral de camino organiza muy bien simetrias, correladores y teoria perturbativa.</p>
+<h2 id="7-particulas-como-excitaciones">7. Particulas como excitaciones</h2>
+<p>Uno de los cambios conceptuales mas importantes es este: una particula ya no se interpreta como el ladrillo ultimo de la teoria, sino como una excitacion cuantizada de un campo.</p>
+<p>Esto permite entender de forma unificada:</p>
+<ul>
+<li>la existencia de cuantos de energia;</li>
+<li>la creacion y aniquilacion de particulas;</li>
+<li>la relacion entre operadores de campo y estados multiparticle;</li>
+<li>el papel del vacio cuantico.</li>
+</ul>
+<p>En un campo escalar libre, por ejemplo, los modos normales del campo se comportan como osciladores armonicos cuanticos independientes. Sus cuantos son precisamente las particulas observables asociadas al campo.</p>
+<p>Esta es una de las ideas pedagogicamente mas potentes de toda la QFT. No hace falta introducir particulas "ademas" del campo: aparecen solas cuando el campo se cuantiza y se estudia su espectro de excitaciones.</p>
+<h2 id="8-vacio">8. Vacio</h2>
+<p>El vacio en QFT no es "nada". Es el estado de menor energia del sistema y posee estructura fisica.</p>
+<p>Aspectos importantes:</p>
+<ul>
+<li>fluctua cuanticamente;</li>
+<li>puede polarizarse en presencia de interacciones;</li>
+<li>puede no ser trivial si hay ruptura espontanea de simetria;</li>
+<li>define la base sobre la cual se construyen los estados excitados.</li>
+</ul>
+<p>Gran parte de la riqueza conceptual de la QFT proviene de que el vacio tiene propiedades dinamicas y no debe confundirse con la ausencia ingenua de contenido fisico.</p>
+<p>Esa riqueza se manifiesta de muchas formas: energia de punto cero, condensados, vacios inequivalentes o ruptura espontanea de simetria.</p>
+<h2 id="9-localidad-y-causalidad">9. Localidad y causalidad</h2>
+<p>La teoria exige que influencias fisicas no se propaguen fuera del cono de luz. En versiones locales de QFT esto se refleja en condiciones de conmutacion entre observables separados espacialmente.</p>
+<p>La idea intuitiva es:</p>
+<ul>
+<li>si dos regiones estan separadas de forma espacial, una medicion local en una no debe alterar instantaneamente un observable local en la otra;</li>
+<li>la teoria puede contener correlaciones cuanticas, pero no violaciones operativas de causalidad relativista.</li>
+</ul>
+<h2 id="10-interaccion">10. Interaccion</h2>
+<p>Los campos libres son solo el punto de partida. La fisica interesante aparece cuando los campos interactuan. Las interacciones permiten:</p>
+<ul>
+<li>dispersion;</li>
+<li>decaimiento;</li>
+<li>produccion de nuevas particulas;</li>
+<li>correcciones radiativas;</li>
+<li>estructura efectiva a distintas escalas.</li>
+</ul>
+<p>En la practica, muchas interacciones se estudian mediante teoria de perturbaciones alrededor de una teoria libre, usando diagramas de Feynman como herramienta organizativa.</p>
+<p>Es importante no interpretar esos diagramas como dibujos literales de lo que "hacen" las particulas en el espacio. Son una contabilidad visual de terminos de una expansion perturbativa.</p>
+<h2 id="11-renormalizacion">11. Renormalizacion</h2>
+<p>Las teorias cuanticas de campos suelen producir integrales divergentes en calculos perturbativos. La renormalizacion es el marco que permite reinterpretar esos infinitos de forma controlada y extraer predicciones fisicas finitas.</p>
+<p>Mas que un truco tecnico, la renormalizacion enseña algo profundo:</p>
+<ul>
+<li>los parametros medidos dependen de la escala;</li>
+<li>una teoria efectiva puede ser valida sin ser fundamental;</li>
+<li>distintas escalas de energia pueden requerir distintos lenguajes efectivos.</li>
+</ul>
+<p>Esta lectura por escalas es una de las ideas mas modernas y fecundas de la disciplina.</p>
+<h2 id="12-mapa-minimo-de-ideas">12. Mapa minimo de ideas</h2>
+<p>Si hubiera que condensar el corazon de la QFT en una secuencia corta, seria algo asi:</p>
+<ol>
+<li>La relatividad especial exige una formulacion causal y covariante.</li>
+<li>La fisica cuantica relativista permite crear y destruir particulas.</li>
+<li>Los campos son los objetos fundamentales mas naturales para describir esto.</li>
+<li>La accion y la lagrangiana codifican la dinamica y las simetrias.</li>
+<li>La cuantizacion convierte los campos en entidades capaces de producir cuantos.</li>
+<li>Las particulas son excitaciones del campo.</li>
+<li>Las interacciones se estudian con amplitudes, correladores y expansion perturbativa.</li>
+<li>La renormalizacion conecta parametros, escalas y observables.</li>
+</ol>
+<h2 id="13-preguntas-de-comprobacion">13. Preguntas de comprobacion</h2>
+<ul>
+<li>Por que una sola particula relativista no basta para describir procesos reales de altas energias</li>
+<li>Como se obtiene la ecuacion de movimiento de un campo a partir de una accion</li>
+<li>Que distingue a bosones y fermiones en el formalismo cuantico</li>
+<li>Como aparecen los operadores de creacion y aniquilacion</li>
+<li>Por que los diagramas de Feynman no son dibujos literales sino terminos de una expansion</li>
+<li>Que significa que una teoria sea renormalizable o efectiva</li>
+</ul>
+<h2 id="cuaderno-asociado">Cuaderno asociado</h2>
+<ul>
+<li>Consulta los cuadernos asociados de este bloque en <a href="../">Resumen del modulo</a> para reforzar el capitulo con practica guiada.</li>
+</ul>
+<h2 id="14-advertencias-utiles">14. Advertencias utiles</h2>
+<ul>
+<li>No conviene identificar campo cuantico con una onda clasica difusa sin mas.</li>
+<li>Particula no significa objeto primario absoluto dentro de la teoria.</li>
+<li>Renormalizacion no debe entenderse solo como un truco tecnico, sino tambien como lectura fisica de escalas.</li>
+<li>Correlador, amplitud y observable no son sinonimos, aunque esten profundamente relacionados.</li>
+</ul>
+<h2 id="ejercicios-sugeridos">Ejercicios sugeridos</h2>
+<ol>
+<li>Explicar por que una teoria relativista cuantica necesita permitir numero variable de particulas.</li>
+<li>Describir la relacion entre accion, simetria, cuantizacion y amplitudes dentro de una sola narrativa conceptual.</li>
+<li>Identificar dos diferencias entre una lectura de particula puntual y una lectura en terminos de campos cuanticos.</li>
+</ol>
+<h2 id="15-cierre">15. Cierre</h2>
+<p>La QFT puede parecer abrumadora al principio porque mezcla fisica, algebra, geometria, analisis y principios de simetria en un solo lenguaje. Sin embargo, casi todo el edificio descansa sobre unas pocas ideas rectoras: campos, simetria, accion, cuantizacion, causalidad e interaccion. Tener ese mapa desde el inicio vuelve mucho mas legible el resto del tutorial.</p>
+<p>Este capitulo funciona mejor si se relee varias veces. Al comienzo orienta; despues de avanzar unas cuantas secciones, se vuelve mucho mas claro que casi cada tecnica concreta del curso no es mas que una elaboracion de estas ideas iniciales.</p>
+<h2 id="16-referencias-y-lecturas-recomendadas">16. Referencias y lecturas recomendadas</h2>
+<ul>
+<li>Base: Zee, capitulos iniciales sobre intuicion global de QFT.</li>
+<li>Complementaria: Tong, introduccion general al problema fisico que resuelve la teoria.</li>
+<li>Profundizacion: Peskin y Schroeder, secciones introductorias del formalismo.</li>
+</ul>
+<hr />
+<h2 id="navegacion-del-tutorial">Navegacion del tutorial</h2>
+<p><a href="../../00_prerrequisitos/05_delta_de_dirac_y_transformadas_de_fourier/">(anterior) Delta de Dirac y Transformadas de Fourier</a> | <a href="../02_principios_estructurales_de_la_qft/">(siguiente) Principios Estructurales de la Teoria Cuantica de Campos</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "navigation.expand", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+        <script src="../../../javascripts/mermaid-init.js"></script>
+      
+    
+  </body>
+</html>

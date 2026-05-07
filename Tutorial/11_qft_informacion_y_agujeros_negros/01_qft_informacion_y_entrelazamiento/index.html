@@ -1,0 +1,1623 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Tutorial completo sobre Teoría Cuántica de Campos">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>QFT, informacion y entrelazamiento - QFT Tutorial</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#qft-informacion-y-entrelazamiento" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="QFT Tutorial" class="md-header__button md-logo" aria-label="QFT Tutorial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            QFT Tutorial
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              QFT, informacion y entrelazamiento
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="QFT Tutorial" class="md-nav__button md-logo" aria-label="QFT Tutorial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    QFT Tutorial
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutorial
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tutorial
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Índice
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../como_estudiar_este_tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cómo Estudiarlo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../problemas_recomendados_por_semana/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemas por Semana
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rutas_de_lectura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rutas de Lectura
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tabla_maestra_del_tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tabla Maestra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sintesis_por_modulo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Síntesis por Módulo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../catalogo_de_capitulos_y_etiquetas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catálogo de Capítulos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mapa_de_dependencias_conceptuales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mapa de Dependencias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../00_prerrequisitos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    00. Prerrequisitos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_fundamentos_conceptuales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01. Fundamentos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_relatividad_y_campos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02. Relatividad y Campos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_accion_y_simetrias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03. Acción y Simetrías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_cuantizacion_del_campo_escalar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04. Campo Escalar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05_interacciones_y_perturbaciones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05. Interacciones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06_fermiones_y_dirac/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06. Fermiones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07_gauge_y_qed/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07. Gauge y QED
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../08_integral_de_camino/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08. Integral de Camino
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../09_renormalizacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09. Renormalización
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../10_modelo_estandar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Modelo Estándar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. QFT e Información
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../12_teorias_de_campo_efectivas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Teorías de Campo Efectivas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Apéndices
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Apéndices
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/bibliografia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bibliografía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/computacion_qft/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Herramientas Computacionales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/errores_comunes_y_recetas_practicas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Errores Comunes y Recetas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/reglas_de_feynman_y_propagadores/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reglas de Feynman y Propagadores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/simetrias_discretas_cpt_y_anomalias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Simetrías Discretas, CPT y Anomalías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/mezcla_de_sabor_ckm_y_pmns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mezcla de Sabor, CKM y PMNS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/anomalia_axial_y_cancelacion_de_anomalias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anomalía Axial y Cancelación de Anomalías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/glosario_notacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glosario de Notación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/convenciones_globales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Convenciones Globales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/plantilla_de_capitulo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plantilla Editorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#proposito" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Proposito
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-por-que-este-tema-pertenece-a-un-tutorial-de-qft" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Por que este tema pertenece a un tutorial de QFT
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-el-vacio-cuantico-como-estado-correlacionado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. El vacio cuantico como estado correlacionado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-matrices-de-densidad-reducidas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Matrices de densidad reducidas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-por-que-la-entropia-de-entrelazamiento-importa-en-qft" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Por que la entropia de entrelazamiento importa en QFT
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-observadores-regiones-y-termicidad-efectiva" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Observadores, regiones y termicidad efectiva
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-localidad-y-tensiones-emergentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Localidad y tensiones emergentes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-hacia-agujeros-negros" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Hacia agujeros negros
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-ideas-clave-para-retener" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Ideas clave para retener
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-entrelazamiento-y-geometria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Entrelazamiento y geometria
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-ejemplo-corto-de-lectura" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Ejemplo corto de lectura
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cuaderno-asociado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cuaderno asociado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-mini-mapa-de-lectura-del-modulo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Mini mapa de lectura del modulo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-preguntas-de-comprobacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Preguntas de comprobacion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-ejercicios-sugeridos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Ejercicios sugeridos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-referencias-y-lecturas-recomendadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. Referencias y lecturas recomendadas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navegacion-del-tutorial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Navegacion del tutorial
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="qft-informacion-y-entrelazamiento">QFT, informacion y entrelazamiento</h1>
+<p><strong>Nivel:</strong> Avanzado<br />
+<strong>Dificultad:</strong> Alta<br />
+<strong>Tiempo estimado:</strong> 18-25 min<br />
+<strong>Prerequisitos recomendados:</strong> <a href="../../10_modelo_estandar/">Modulo anterior</a> · <a href="../">Resumen del modulo</a></p>
+<h2 id="proposito">Proposito</h2>
+<p>Este capitulo abre el modulo mostrando que el entrelazamiento, las matrices de densidad reducidas y la informacion accesible por subregiones ya forman parte del lenguaje natural de la QFT.</p>
+<h2 id="1-por-que-este-tema-pertenece-a-un-tutorial-de-qft">1. Por que este tema pertenece a un tutorial de QFT</h2>
+<p>Puede parecer que la teoria de la informacion cuantica y la fisica de agujeros negros pertenecen a otra clase de curso. Sin embargo, una mirada mas cuidadosa muestra que muchas de las ideas centrales de estos temas nacen precisamente dentro del lenguaje de la teoria cuantica de campos.</p>
+<p>La razon es simple: en QFT el vacio no es una nada trivial. Es un estado altamente estructurado, con correlaciones entre regiones espaciales distintas. Cuando el espacio se divide en subregiones y solo una parte de los grados de libertad es accesible, el estado efectivo deja de ser puro y pasa a describirse por una matriz de densidad reducida.</p>
+<p>Ese hecho, que puede formularse sin introducir gravedad, ya contiene la semilla conceptual de temas como:</p>
+<ul>
+<li>entropia de entrelazamiento;</li>
+<li>termicidad efectiva para observadores parciales;</li>
+<li>dependencia del concepto de particula respecto del observador;</li>
+<li>tension entre localidad, horizonte y unitaridad.</li>
+</ul>
+<h2 id="2-el-vacio-cuantico-como-estado-correlacionado">2. El vacio cuantico como estado correlacionado</h2>
+<p>En mecanica cuantica elemental solemos pensar en el estado fundamental de un sistema como el estado de menor energia. En QFT esto sigue siendo cierto, pero el contenido fisico es mucho mas rico. El vacio de un campo libre no es simplemente un estado "sin particulas" en un sentido clasico. Es el estado aniquilado por todos los operadores de destruccion:</p>
+<div class="arithmatex">\[
+a_{\mathbf p} |0\rangle = 0
+\quad
+\text{para todo } \mathbf p.
+\]</div>
+<p>Sin embargo, ese estado posee correlaciones no triviales entre observables localizados en distintas regiones del espacio-tiempo. Por eso el vacio no se comporta como un producto simple de estados independientes en cada punto del espacio.</p>
+<p>De forma esquematica, si dividimos el espacio en una region <span class="arithmatex">\(A\)</span> y su complemento <span class="arithmatex">\(\bar A\)</span>, el estado global puede ser puro y, aun asi, la descripcion restringida a <span class="arithmatex">\(A\)</span> ser mixta.</p>
+<p>En QFT esta afirmacion adquiere un peso especial porque los grados de libertad viven distribuidos por el espacio continuo. La mera existencia de una frontera entre subregiones ya reorganiza que informacion se considera accesible y cual queda fuera del observador.</p>
+<h2 id="3-matrices-de-densidad-reducidas">3. Matrices de densidad reducidas</h2>
+<p>Si el sistema completo esta descrito por una matriz de densidad <span class="arithmatex">\(\rho\)</span>, el estado efectivo accesible a un observador que solo controla la region <span class="arithmatex">\(A\)</span> se obtiene trazando sobre los grados de libertad invisibles:</p>
+<div class="arithmatex">\[
+\rho_A = \mathrm{Tr}_{\bar A} \, \rho.
+\]</div>
+<p>La entropia asociada es la entropia de von Neumann:</p>
+<div class="arithmatex">\[
+S_A = - \mathrm{Tr}(\rho_A \log \rho_A).
+\]</div>
+<p>Cuando el estado global es puro, esta cantidad mide entrelazamiento entre <span class="arithmatex">\(A\)</span> y <span class="arithmatex">\(\bar A\)</span>. En sistemas de muchos cuerpos y en QFT, esta entropia suele crecer con el area de la frontera entre regiones, una pista conceptual importante en la conexion con la termodinamica de agujeros negros.</p>
+<p>Este comportamiento de tipo area law no debe tomarse como una ley universal sin matices, pero si como una intuicion muy poderosa: en teorias locales, las correlaciones mas intensas suelen concentrarse cerca de la frontera que separa regiones. Esa observacion prepara muy bien el lenguaje entropico de los horizontes.</p>
+<h2 id="4-por-que-la-entropia-de-entrelazamiento-importa-en-qft">4. Por que la entropia de entrelazamiento importa en QFT</h2>
+<p>La entropia de entrelazamiento no es un accesorio de moda importado desde la informacion cuantica. En QFT cumple varias funciones profundas:</p>
+<ul>
+<li>cuantifica correlaciones del vacio;</li>
+<li>ayuda a caracterizar fases cuanticas;</li>
+<li>revela la estructura de grados de libertad accesibles e inaccesibles;</li>
+<li>conecta con propiedades termicas efectivas de observadores acelerados o confinados a ciertas regiones.</li>
+</ul>
+<p>En otras palabras, la QFT no solo describe amplitudes de scattering. Tambien describe que informacion queda disponible cuando el observador no puede acceder a todo el sistema.</p>
+<p>Esta ampliacion de perspectiva es pedagogicamente importante. La misma teoria que antes organizaba campos, propagadores y amplitudes empieza aqui a organizar tambien acceso parcial a la informacion, coarse graining y estados reducidos.</p>
+<h2 id="5-observadores-regiones-y-termicidad-efectiva">5. Observadores, regiones y termicidad efectiva</h2>
+<p>Una idea que reaparece una y otra vez es que el concepto de particula depende de la forma en que se descompone el campo en modos positivos y negativos. En espacio-tiempo plano esto ya aparece en el efecto Unruh: un observador acelerado interpreta el vacio de Minkowski como un baño termico.</p>
+<p>La leccion general es:</p>
+<ul>
+<li>el estado global puede ser puro;</li>
+<li>la descripcion reducida para un observador parcial puede parecer termica;</li>
+<li>esa termicidad no implica necesariamente que el sistema completo haya perdido informacion.</li>
+</ul>
+<p>Este punto es esencial para preparar la discusion sobre radiacion de Hawking.</p>
+<p>Una moraleja util es que "parecer termico" no equivale automaticamente a "haber destruido informacion". Muchas descripciones termicas en QFT nacen simplemente de ignorar parte de los grados de libertad de un estado global mas rico.</p>
+<h2 id="6-localidad-y-tensiones-emergentes">6. Localidad y tensiones emergentes</h2>
+<p>La QFT local fue construida para respetar causalidad relativista. Sin embargo, cuando una particion espacial o un horizonte ocultan parte de los grados de libertad, la descripcion efectiva del subsistema puede parecer no local o termica.</p>
+<p>Eso no significa que la teoria fundamental haya abandonado la localidad. Significa que la informacion disponible para un observador parcial se obtiene tras una operacion de traza que descarta variables. El resultado es una teoria efectiva con menos acceso a la informacion microscopica.</p>
+<p>Por eso, cuando mas adelante aparezca la frase "la informacion parece perderse", conviene recordar que una parte de la tension puede venir de confundir perdida operativa de acceso con perdida fundamental de unitaridad.</p>
+<h2 id="7-hacia-agujeros-negros">7. Hacia agujeros negros</h2>
+<p>Esta estructura conceptual se vuelve dramaticamente importante en presencia de horizontes. Un agujero negro divide el espacio-tiempo en regiones con accesibilidad distinta para distintos observadores. Si la QFT en espacio-tiempo curvo predice radiacion termica y evaporacion, entonces la informacion codificada en el estado inicial parece quedar en peligro.</p>
+<p>La paradoja de la informacion de agujeros negros nace precisamente de este cruce:</p>
+<ul>
+<li>la semiclasica sugiere termicidad;</li>
+<li>la mecanica cuantica exige unitaridad;</li>
+<li>la QFT proporciona el lenguaje para formular la tension.</li>
+</ul>
+<p>Lo importante aqui no es resolver ya la paradoja, sino aprender a formularla con cuidado. Gran parte de la confusion historica aparece al mezclar estado global y estado reducido, pureza microscópica y termicidad efectiva, o punto de vista del observador ideal y del observador con acceso parcial.</p>
+<h2 id="8-ideas-clave-para-retener">8. Ideas clave para retener</h2>
+<ul>
+<li>El vacio en QFT es un estado altamente correlacionado.</li>
+<li>La informacion accesible depende de que region del sistema pueda observarse.</li>
+<li>La entropia de entrelazamiento aparece al restringir el estado global a una subregion.</li>
+<li>Los horizontes convierten este tema en una cuestion fisica central, no solo formal.</li>
+</ul>
+<h2 id="9-entrelazamiento-y-geometria">9. Entrelazamiento y geometria</h2>
+<p>En desarrollos mas modernos, el entrelazamiento no se estudia solo como una cantidad asociada a una biparticion. Tambien aparece como pista de que la conectividad geometrica y la reconstruccion de regiones en descripciones holograficas pueden estar ligadas a patrones de correlacion cuantica. Para este tutorial basta retener la intuicion: el entrelazamiento no solo cuantifica informacion compartida, sino que parece participar en como se organiza una descripcion espacial coherente.</p>
+<h2 id="10-ejemplo-corto-de-lectura">10. Ejemplo corto de lectura</h2>
+<p>Si el estado global del campo es puro pero solo puede observarse una subregion, la teoria efectiva del subsistema ya no tiene por que seguir siendo pura. Esa simple observacion resume por que entrelazamiento, informacion y acceso parcial aparecen juntos en QFT.</p>
+<h2 id="cuaderno-asociado">Cuaderno asociado</h2>
+<ul>
+<li><code>../../Cuadernos/ejemplos/08_entrelazamiento_y_horizontes.ipynb</code>: usarlo para reforzar la relacion entre subregiones, matrices reducidas y termicidad efectiva.</li>
+<li><code>../../Cuadernos/problemas_resueltos/12_qft_informacion_y_agujeros_negros.ipynb</code>: usarlo para practicar preguntas conceptuales del modulo.</li>
+</ul>
+<h2 id="12-mini-mapa-de-lectura-del-modulo">12. Mini mapa de lectura del modulo</h2>
+<p>Este primer capitulo del modulo conviene leerlo como base de todos los siguientes:</p>
+<ul>
+<li>aqui nace la idea de acceso parcial a la informacion;</li>
+<li>en el efecto Unruh esa idea se convierte en termicidad para observadores acelerados;</li>
+<li>en Hawking reaparece como tension entre termicidad y unitaridad;</li>
+<li>en islas y holografia se reformula como problema de reconstruccion de informacion.</li>
+</ul>
+<p>Si esta progresion queda clara, el modulo entero se vuelve mucho mas coherente.</p>
+<h2 id="13-preguntas-de-comprobacion">13. Preguntas de comprobacion</h2>
+<ul>
+<li>Por que el vacio de QFT no debe entenderse como una ausencia trivial de estructura.</li>
+<li>Como aparece una matriz de densidad reducida cuando solo se observa una subregion.</li>
+<li>Por que una descripcion termica efectiva no implica automaticamente perdida fundamental de informacion.</li>
+</ul>
+<h2 id="14-ejercicios-sugeridos">14. Ejercicios sugeridos</h2>
+<ol>
+<li>Explicar con tus propias palabras por que un estado global puro puede producir un estado reducido mixto.</li>
+<li>Relacionar el concepto de entropia de entrelazamiento con la idea de grados de libertad inaccesibles.</li>
+<li>Discutir por que este tema prepara naturalmente la aparicion de la radiacion de Hawking.</li>
+<li>Explicar por que una descripcion termica efectiva no implica necesariamente perdida fundamental de unitaridad.</li>
+</ol>
+<h2 id="15-referencias-y-lecturas-recomendadas">15. Referencias y lecturas recomendadas</h2>
+<ul>
+<li>Base: reseñas introductorias sobre entrelazamiento en QFT.</li>
+<li>Complementaria: Birrell y Davies para el trasfondo de campos y observadores parciales.</li>
+<li>Profundizacion: textos y notas sobre matrices reducidas, entropia de von Neumann y subregiones en QFT.</li>
+</ul>
+<hr />
+<h2 id="navegacion-del-tutorial">Navegacion del tutorial</h2>
+<p><a href="../../10_modelo_estandar/07_neutrinos_masas_y_oscilaciones/">(anterior) Neutrinos, Masas y Oscilaciones</a> | <a href="../02_agujeros_negros_radiacion_de_hawking_y_paradoja_de_la_informacion/">(siguiente) Agujeros negros, radiacion de Hawking y paradoja de la informacion</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "navigation.expand", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+        <script src="../../../javascripts/mermaid-init.js"></script>
+      
+    
+  </body>
+</html>

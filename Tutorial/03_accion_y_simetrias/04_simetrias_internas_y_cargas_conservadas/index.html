@@ -1,0 +1,1732 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Tutorial completo sobre Teoría Cuántica de Campos">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Simetrias Internas y Cargas Conservadas - QFT Tutorial</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#simetrias-internas-y-cargas-conservadas" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="QFT Tutorial" class="md-header__button md-logo" aria-label="QFT Tutorial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            QFT Tutorial
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Simetrias Internas y Cargas Conservadas
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="QFT Tutorial" class="md-nav__button md-logo" aria-label="QFT Tutorial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    QFT Tutorial
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutorial
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tutorial
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Índice
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../como_estudiar_este_tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cómo Estudiarlo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../problemas_recomendados_por_semana/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemas por Semana
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rutas_de_lectura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rutas de Lectura
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tabla_maestra_del_tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tabla Maestra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sintesis_por_modulo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Síntesis por Módulo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../catalogo_de_capitulos_y_etiquetas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catálogo de Capítulos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mapa_de_dependencias_conceptuales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mapa de Dependencias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../00_prerrequisitos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    00. Prerrequisitos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_fundamentos_conceptuales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01. Fundamentos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_relatividad_y_campos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02. Relatividad y Campos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03. Acción y Simetrías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_cuantizacion_del_campo_escalar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04. Campo Escalar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05_interacciones_y_perturbaciones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05. Interacciones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06_fermiones_y_dirac/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06. Fermiones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07_gauge_y_qed/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07. Gauge y QED
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../08_integral_de_camino/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08. Integral de Camino
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../09_renormalizacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09. Renormalización
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../10_modelo_estandar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Modelo Estándar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../11_qft_informacion_y_agujeros_negros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. QFT e Información
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../12_teorias_de_campo_efectivas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Teorías de Campo Efectivas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Apéndices
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Apéndices
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/bibliografia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bibliografía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/computacion_qft/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Herramientas Computacionales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/errores_comunes_y_recetas_practicas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Errores Comunes y Recetas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/reglas_de_feynman_y_propagadores/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reglas de Feynman y Propagadores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/simetrias_discretas_cpt_y_anomalias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Simetrías Discretas, CPT y Anomalías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/mezcla_de_sabor_ckm_y_pmns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mezcla de Sabor, CKM y PMNS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/anomalia_axial_y_cancelacion_de_anomalias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anomalía Axial y Cancelación de Anomalías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/glosario_notacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glosario de Notación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/convenciones_globales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Convenciones Globales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/plantilla_de_capitulo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plantilla Editorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#proposito" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Proposito
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduccion-simetrias-que-actuan-en-el-espacio-interno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Introduccion: simetrias que actuan en el espacio interno
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-simetria-global-versus-simetria-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Simetria global versus simetria local
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-simetria-u1-carga-electrica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Simetria U(1): carga electrica
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-el-generador-de-u1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. El generador de U(1)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-simetria-su2-isospin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Simetria SU(2): isospin
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-representaciones-de-su2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Representaciones de SU(2)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-simetria-su3-color" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Simetria SU(3): color
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-simetrias-como-restricciones-sobre-el-lagrangiano" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Simetrias como restricciones sobre el lagrangiano
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-multiplicidad-de-cargas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Multiplicidad de cargas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-de-simetria-global-a-simetria-gauge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. De simetria global a simetria gauge
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-identidades-de-ward-y-consistencia-de-la-teoria-gauge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Identidades de Ward y consistencia de la teoria gauge
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-simetrias-aproximadas-y-ruptura" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Simetrias aproximadas y ruptura
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-la-jerarquia-de-simetrias-del-modelo-estandar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. La jerarquia de simetrias del Modelo Estandar
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cuaderno-asociado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cuaderno asociado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-preguntas-de-comprobacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Preguntas de comprobacion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-ejercicios-sugeridos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. Ejercicios sugeridos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-cierre" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16. Cierre
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-referencias-y-lecturas-recomendadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17. Referencias y lecturas recomendadas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navegacion-del-tutorial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Navegacion del tutorial
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="simetrias-internas-y-cargas-conservadas">Simetrias Internas y Cargas Conservadas</h1>
+<p><strong>Nivel:</strong> Fundacional<br />
+<strong>Dificultad:</strong> Media-Alta<br />
+<strong>Tiempo estimado:</strong> 35-50 min<br />
+<strong>Prerequisitos recomendados:</strong> <a href="../03_teorema_de_noether_ejemplos_explicitos/">Teorema de Noether: Ejemplos Explicitos</a> · <a href="../">Resumen del modulo</a></p>
+<h2 id="proposito">Proposito</h2>
+<p>Este capitulo desarrolla las simetrias internas de grupos U(1), SU(2) y SU(3), sus corrientes conservadas de Noether, las cargas asociadas y la transicion conceptual hacia teorias gauge.</p>
+<h2 id="1-introduccion-simetrias-que-actuan-en-el-espacio-interno">1. Introduccion: simetrias que actuan en el espacio interno</h2>
+<p>En los capitulos anteriores las simetrias estudiadas movian los puntos del espacio-tiempo: traslaciones, rotaciones, boosts. Las simetrias internas son de otro tipo: transforman las componentes del campo sin mover el punto de evaluacion.</p>
+<p>Esta distincion no es solo clasificatoria. Las simetrias internas generan cargas conservadas que se identifican con numeros cuanticos internos como la carga electrica, el isospin o el color. Y cuando se promueven de globales a locales, generan interacciones gauge y dan origen a los bosones mediadores de las fuerzas fundamentales.</p>
+<h2 id="2-simetria-global-versus-simetria-local">2. Simetria global versus simetria local</h2>
+<p>Una simetria global es una transformacion cuyo parametro es constante en todo el espacio-tiempo:</p>
+<div class="arithmatex">\[
+\phi(x) \to g\,\phi(x), \qquad g \in G, \quad g \text{ constante}.
+\]</div>
+<p>Una simetria local (o gauge) permite que el parametro dependa del punto:</p>
+<div class="arithmatex">\[
+\phi(x) \to g(x)\,\phi(x), \qquad g(x) \in G.
+\]</div>
+<p>El teorema de Noether se aplica directamente a simetrias globales. Las simetrias locales implican una estructura mucho mas rica: exigen la introduccion de campos de conexion (campos gauge) para mantener la invariancia.</p>
+<p>En este capitulo se trabajan las simetrias globales y se sientan las bases para el paso a gauge que se desarrollara en el modulo 07.</p>
+<h2 id="3-simetria-u1-carga-electrica">3. Simetria U(1): carga electrica</h2>
+<p>El grupo U(1) es el grupo de fases complejas, <span class="arithmatex">\(U(1) = \{e^{i\alpha} : \alpha \in \mathbb{R}\}\)</span>. Es el grupo de simetria interna mas simple.</p>
+<p>Para un campo escalar complejo <span class="arithmatex">\(\phi\)</span> con lagrangiana</p>
+<div class="arithmatex">\[
+\mathcal{L} = |\partial_\mu\phi|^2 - m^2|\phi|^2 - \frac{\lambda}{4}|\phi|^4,
+\]</div>
+<p>la transformacion global U(1) es</p>
+<div class="arithmatex">\[
+\phi \to e^{iq\alpha}\phi, \qquad \phi^* \to e^{-iq\alpha}\phi^*,
+\]</div>
+<p>donde <span class="arithmatex">\(q\)</span> es la carga del campo. La corriente de Noether (del capitulo anterior) es:</p>
+<div class="arithmatex">\[
+j^\mu = iq(\phi^*\partial^\mu\phi - \phi\partial^\mu\phi^*).
+\]</div>
+<p>Esta corriente satisface <span class="arithmatex">\(\partial_\mu j^\mu = 0\)</span> on-shell. La carga total</p>
+<div class="arithmatex">\[
+Q = q\int d^3x\,j^0
+\]</div>
+<p>es conservada. Si se identifican varios campos con distintas cargas <span class="arithmatex">\(q_i\)</span>, la carga total es aditiva. Esta estructura es la base de la conservacion de la carga electrica.</p>
+<h2 id="4-el-generador-de-u1">4. El generador de U(1)</h2>
+<p>El algebra de Lie de U(1) tiene un unico generador, que en la representacion de carga <span class="arithmatex">\(q\)</span> actua como</p>
+<div class="arithmatex">\[
+T_q = q\,\cdot\,\mathbf{1}.
+\]</div>
+<p>La transformacion del campo es <span class="arithmatex">\(\phi \to e^{i\alpha T_q}\phi\)</span>. La carga de Noether es la realizacion operatorial de este generador sobre el espacio de estados:</p>
+<div class="arithmatex">\[
+[\hat Q, \hat\phi] = -q\hat\phi.
+\]</div>
+<p>La carga distingue particula de antiparticula: si <span class="arithmatex">\(\hat Q\ket{p} = +q\ket{p}\)</span>, entonces <span class="arithmatex">\(\hat Q\ket{\bar p} = -q\ket{\bar p}\)</span>.</p>
+<h2 id="5-simetria-su2-isospin">5. Simetria SU(2): isospin</h2>
+<p>El grupo SU(2) es el grupo de matrices unitarias <span class="arithmatex">\(2\times 2\)</span> con determinante 1. Sus elementos se parametrizan como</p>
+<div class="arithmatex">\[
+U = e^{i\alpha^a T^a}, \qquad a = 1, 2, 3,
+\]</div>
+<p>donde los generadores <span class="arithmatex">\(T^a = \sigma^a/2\)</span> (con <span class="arithmatex">\(\sigma^a\)</span> matrices de Pauli) satisfacen el algebra</p>
+<div class="arithmatex">\[
+[T^a, T^b] = i\epsilon^{abc}T^c.
+\]</div>
+<p>Esta es el algebra de Lie de <span class="arithmatex">\(\mathfrak{su}(2)\)</span>, que es la misma que la del momento angular en mecanica cuantica.</p>
+<p>Consideremos un doblete de campos escalares</p>
+<div class="arithmatex">\[
+\Phi = \begin{pmatrix}\phi_1 \\ \phi_2\end{pmatrix},
+\]</div>
+<p>con lagrangiana</p>
+<div class="arithmatex">\[
+\mathcal{L} = (\partial_\mu\Phi)^\dagger(\partial^\mu\Phi) - m^2\Phi^\dagger\Phi - \frac{\lambda}{4}(\Phi^\dagger\Phi)^2.
+\]</div>
+<p>Esta lagrangiana es invariante bajo <span class="arithmatex">\(\Phi \to U\Phi\)</span> con <span class="arithmatex">\(U \in SU(2)\)</span> constante. Las tres corrientes de Noether son</p>
+<div class="arithmatex">\[
+j^{\mu,a} = -i\Phi^\dagger T^a \overleftrightarrow{\partial^\mu} \Phi \equiv -i(\Phi^\dagger T^a \partial^\mu\Phi - (\partial^\mu\Phi^\dagger)T^a\Phi).
+\]</div>
+<p>Las tres cargas conservadas son</p>
+<div class="arithmatex">\[
+I^a = \int d^3x\, j^{0,a},
+\]</div>
+<p>y satisfacen el algebra <span class="arithmatex">\([I^a, I^b] = i\epsilon^{abc}I^c\)</span>. Estas cargas se identifican con el isospin en fisica nuclear y de particulas.</p>
+<h2 id="6-representaciones-de-su2">6. Representaciones de SU(2)</h2>
+<p>Las representaciones irreducibles de SU(2) se etiquetan por el isospin <span class="arithmatex">\(I = 0, 1/2, 1, 3/2, \ldots\)</span>, con <span class="arithmatex">\(2I+1\)</span> componentes. Las representaciones mas usadas en QFT son:</p>
+<ul>
+<li>Singlete: <span class="arithmatex">\(I = 0\)</span>, una componente, invariante bajo SU(2).</li>
+<li>Doblete: <span class="arithmatex">\(I = 1/2\)</span>, dos componentes, la representacion fundamental.</li>
+<li>Triplete: <span class="arithmatex">\(I = 1\)</span>, tres componentes, la representacion adjunta de SU(2).</li>
+</ul>
+<p>En el Modelo Estandar, los quarks y leptones de una generacion forman dobletes de izquierda y singletes de derecha bajo <span class="arithmatex">\(SU(2)_L\)</span>.</p>
+<h2 id="7-simetria-su3-color">7. Simetria SU(3): color</h2>
+<p>El grupo SU(3) es el grupo de matrices unitarias <span class="arithmatex">\(3\times 3\)</span> con determinante 1. Tiene <span class="arithmatex">\(3^2 - 1 = 8\)</span> generadores <span class="arithmatex">\(T^a = \lambda^a/2\)</span>, donde <span class="arithmatex">\(\lambda^a\)</span> son las matrices de Gell-Mann, que satisfacen</p>
+<div class="arithmatex">\[
+[T^a, T^b] = if^{abc}T^c.
+\]</div>
+<p>Las constantes de estructura <span class="arithmatex">\(f^{abc}\)</span> son completamente antisimetricas.</p>
+<p>Para un triplete de quarks</p>
+<div class="arithmatex">\[
+q = \begin{pmatrix}q_r \\ q_g \\ q_b\end{pmatrix},
+\]</div>
+<p>la simetria <span class="arithmatex">\(q \to Uq\)</span> con <span class="arithmatex">\(U \in SU(3)\)</span> produce ocho corrientes conservadas (una por generador), las corrientes de color. Las cargas de color forman el algebra de color de la QCD.</p>
+<p>Las representaciones mas importantes de SU(3) son:</p>
+<ul>
+<li>Singlete de color: <span class="arithmatex">\(\mathbf{1}\)</span>, invariante, como los hadrones observables.</li>
+<li>Triplete: <span class="arithmatex">\(\mathbf{3}\)</span>, la representacion de los quarks.</li>
+<li>Antitriplete: <span class="arithmatex">\(\bar{\mathbf{3}}\)</span>, la de los antiquarks.</li>
+<li>Octete: <span class="arithmatex">\(\mathbf{8}\)</span>, la representacion adjunta, la de los gluones.</li>
+</ul>
+<h2 id="8-simetrias-como-restricciones-sobre-el-lagrangiano">8. Simetrias como restricciones sobre el lagrangiano</h2>
+<p>Una de las aplicaciones mas importantes de las simetrias internas es que restringen drásticamente el tipo de terminos que pueden aparecer en el lagrangiano.</p>
+<p>Un termino de masa de la forma <span class="arithmatex">\(m^2\phi_1^*\phi_2\)</span> seria permitido por Lorentz pero estaria prohibido si <span class="arithmatex">\(\phi_1\)</span> y <span class="arithmatex">\(\phi_2\)</span> tienen distintas cargas U(1). Igualmente, un termino de interaccion <span class="arithmatex">\(\phi_1^\dagger\phi_2\phi_3\)</span> solo es gauge invariante bajo SU(2) si los campos estan en la representacion correcta y el producto contiene un singlete.</p>
+<p>En la practica esto significa:</p>
+<ol>
+<li>Se especifica el contenido de campos y sus representaciones bajo las simetrias del modelo.</li>
+<li>Se escribe el lagrangiano mas general compatible con todas las simetrias.</li>
+<li>Se estudian las consecuencias fisicas.</li>
+</ol>
+<p>Este es el procedimiento con el que se construyo el Modelo Estandar.</p>
+<h2 id="9-multiplicidad-de-cargas">9. Multiplicidad de cargas</h2>
+<p>Cuando una teoria tiene varias simetrias internas, los campos llevan cargas bajo cada grupo:</p>
+<div class="arithmatex">\[
+\phi \to e^{iq\alpha} U_{SU(2)} U_{SU(3)} \phi.
+\]</div>
+<p>Las cargas de Noether asociadas a cada factor del grupo producto son independientes. Un quark up, por ejemplo, tiene:</p>
+<ul>
+<li>Carga electrica <span class="arithmatex">\(Q = +2/3\)</span> bajo U(1) electromagnetico.</li>
+<li>Isospin <span class="arithmatex">\(I_3 = +1/2\)</span> bajo SU(2) debil (solo componente izquierda).</li>
+<li>Carga de color bajo SU(3).</li>
+</ul>
+<p>Estas cargas no son independientes: la carga electrica en el Modelo Estandar es una combinacion de la hiperacarga Y y el isospin: <span class="arithmatex">\(Q = I_3 + Y/2\)</span>.</p>
+<h2 id="10-de-simetria-global-a-simetria-gauge">10. De simetria global a simetria gauge</h2>
+<p>El paso de una simetria global a una gauge es conceptualmente simple pero consecuentemente rico. Si se exige que la lagrangiana sea invariante bajo</p>
+<div class="arithmatex">\[
+\phi(x) \to e^{i\alpha(x)}\phi(x)
+\]</div>
+<p>con <span class="arithmatex">\(\alpha(x)\)</span> dependiente del punto, el termino cinetico <span class="arithmatex">\(|\partial_\mu\phi|^2\)</span> no es invariante porque</p>
+<div class="arithmatex">\[
+\partial_\mu(e^{i\alpha}\phi) = e^{i\alpha}(\partial_\mu + i\partial_\mu\alpha)\phi.
+\]</div>
+<p>Para restaurar la invariancia hay que introducir un campo gauge <span class="arithmatex">\(A_\mu\)</span> y reemplazar la derivada ordinaria por la derivada covariante</p>
+<div class="arithmatex">\[
+D_\mu = \partial_\mu - iqA_\mu,
+\]</div>
+<p>con la regla de transformacion <span class="arithmatex">\(A_\mu \to A_\mu + \frac{1}{q}\partial_\mu\alpha\)</span>. Con esta sustitucion, <span class="arithmatex">\(D_\mu\phi \to e^{i\alpha}D_\mu\phi\)</span>.</p>
+<p>El campo gauge <span class="arithmatex">\(A_\mu\)</span> tiene su propia cinematica descrita por el tensor de campo <span class="arithmatex">\(F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu\)</span>. La teoria resultante es la electrodinamica cuantica.</p>
+<p>Para SU(2) y SU(3) el mecanismo es analogo pero no abeliano: aparecen terminos de autointeraccion del campo gauge que no existen en QED.</p>
+<h2 id="11-identidades-de-ward-y-consistencia-de-la-teoria-gauge">11. Identidades de Ward y consistencia de la teoria gauge</h2>
+<p>En una teoria gauge, la corriente de Noether no es solo una cantidad conservada. Genera identidades entre amplitudes de dispersion, las identidades de Ward:</p>
+<div class="arithmatex">\[
+q_\mu \mathcal{M}^\mu = 0,
+\]</div>
+<p>donde <span class="arithmatex">\(q\)</span> es el 4-momento del foton virtual y <span class="arithmatex">\(\mathcal{M}^\mu\)</span> la amplitud con un vertice de foton externo. Estas identidades son consecuencia directa de la invariancia gauge y garantizan la consistencia del calculo perturbativo.</p>
+<p>Las identidades de Ward aseguran tambien que las polarizaciones no fisicas del foton no contribuyen a las amplitudes observables.</p>
+<h2 id="12-simetrias-aproximadas-y-ruptura">12. Simetrias aproximadas y ruptura</h2>
+<p>A veces una lagrangiana tiene una simetria aproximada que se rompe por terminos pequenos. El isospin de sabor <span class="arithmatex">\(SU(2)_f\)</span> que relaciona quarks up y down es una simetria aproximada, rota por la diferencia de masas <span class="arithmatex">\(m_u \neq m_d\)</span>.</p>
+<p>En esos casos las cargas no se conservan exactamente. El teorema de Noether se aplica en el limite de la simetria perfecta y las violaciones se tratan como perturbaciones.</p>
+<h2 id="13-la-jerarquia-de-simetrias-del-modelo-estandar">13. La jerarquia de simetrias del Modelo Estandar</h2>
+<p>El Modelo Estandar se construye sobre el grupo gauge</p>
+<div class="arithmatex">\[
+G_{SM} = SU(3)_c \times SU(2)_L \times U(1)_Y.
+\]</div>
+<p>Cada factor corresponde a una interaccion:</p>
+<ul>
+<li><span class="arithmatex">\(SU(3)_c\)</span>: fuerza fuerte, 8 gluones.</li>
+<li><span class="arithmatex">\(SU(2)_L\)</span>: fuerza debil izquierda, 3 bosones <span class="arithmatex">\(W\)</span>.</li>
+<li><span class="arithmatex">\(U(1)_Y\)</span>: hiperacarga, 1 boson <span class="arithmatex">\(B\)</span>.</li>
+</ul>
+<p>Tras la ruptura espontanea de simetria por el campo de Higgs, <span class="arithmatex">\(SU(2)_L \times U(1)_Y \to U(1)_{em}\)</span>, aparecen el foton y los bosones <span class="arithmatex">\(W^\pm\)</span> y <span class="arithmatex">\(Z\)</span>.</p>
+<p>Todo este edificio se construye sobre el principio de invariancia gauge, que es el principio de las simetrias internas locales.</p>
+<h2 id="cuaderno-asociado">Cuaderno asociado</h2>
+<ul>
+<li>Consulta los cuadernos asociados de este bloque en <a href="../">Resumen del modulo</a> para reforzar el capitulo con practica guiada.</li>
+</ul>
+<h2 id="14-preguntas-de-comprobacion">14. Preguntas de comprobacion</h2>
+<ul>
+<li>Que diferencia conceptual hay entre una simetria global y una local, y que implica cada una para la estructura de la teoria.</li>
+<li>Cuantos generadores tiene el grupo SU(2) y por que se identifican con el algebra del momento angular.</li>
+<li>Por que la simetria SU(3) de color requiere exactamente 8 bosones gauge.</li>
+<li>Como se construye el lagrangiano mas general compatible con una simetria interna dada.</li>
+<li>Por que las identidades de Ward son consecuencia de la invariancia gauge.</li>
+</ul>
+<h2 id="15-ejercicios-sugeridos">15. Ejercicios sugeridos</h2>
+<ol>
+<li>Para la lagrangiana <span class="arithmatex">\(\mathcal{L} = (\partial_\mu\Phi)^\dagger\partial^\mu\Phi - m^2\Phi^\dagger\Phi\)</span> con <span class="arithmatex">\(\Phi\)</span> un doblete SU(2), verificar explicitamente que las tres corrientes de Noether <span class="arithmatex">\(j^{\mu,a} = -i\Phi^\dagger T^a\overleftrightarrow{\partial^\mu}\Phi\)</span> satisfacen <span class="arithmatex">\(\partial_\mu j^{\mu,a} = 0\)</span>.</li>
+<li>Mostrar que el termino <span class="arithmatex">\(\Phi_1^\dagger\Phi_2\)</span> donde <span class="arithmatex">\(\Phi_1\)</span> tiene hiperacarga <span class="arithmatex">\(Y_1\)</span> y <span class="arithmatex">\(\Phi_2\)</span> tiene hiperacarga <span class="arithmatex">\(Y_2\)</span> es invariante bajo U(1) solo si <span class="arithmatex">\(Y_1 = Y_2\)</span>.</li>
+<li>Construir el lagrangiano mas general de un campo escalar complejo invariante bajo <span class="arithmatex">\(U(1) \times U(1)\)</span> con dos campos de cargas <span class="arithmatex">\((q_1, 0)\)</span> y <span class="arithmatex">\((0, q_2)\)</span> respectivamente.</li>
+<li>Verificar que la derivada covariante <span class="arithmatex">\(D_\mu = \partial_\mu - iqA_\mu\)</span> transforma covariantemente bajo una transformacion gauge U(1) local.</li>
+</ol>
+<h2 id="16-cierre">16. Cierre</h2>
+<p>Las simetrias internas son el mecanismo por el cual la estructura de grupo organiza los numeros cuanticos internos de la materia. Desde la simple carga U(1) hasta el color SU(3), el patrón es siempre el mismo: una simetria global produce cargas conservadas via Noether, y cuando se promueve a local exige la aparicion de bosones gauge. Este es el principio constructivo sobre el que se asienta todo el Modelo Estandar de la fisica de particulas.</p>
+<h2 id="17-referencias-y-lecturas-recomendadas">17. Referencias y lecturas recomendadas</h2>
+<ul>
+<li>Base: Srednicki, capitulos sobre simetrias de sabor, color e interacciones gauge.</li>
+<li>Complementaria: Peskin y Schroeder, capitulo 15, teoria de Yang-Mills y simetria gauge no abeliana.</li>
+<li>Profundizacion: Weinberg, vol. II, estructura gauge del Modelo Estandar.</li>
+</ul>
+<hr />
+<h2 id="navegacion-del-tutorial">Navegacion del tutorial</h2>
+<p><a href="../03_teorema_de_noether_ejemplos_explicitos/">(anterior) Teorema de Noether: Ejemplos Explicitos</a> | <a href="../../04_cuantizacion_del_campo_escalar/">(siguiente) Modulo 04: Cuantizacion del Campo Escalar</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "navigation.expand", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+        <script src="../../../javascripts/mermaid-init.js"></script>
+      
+    
+  </body>
+</html>

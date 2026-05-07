@@ -1,0 +1,1741 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Tutorial completo sobre Teoría Cuántica de Campos">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Clasificacion de Campos por Spin y Estados de Wigner - QFT Tutorial</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#clasificacion-de-campos-por-spin-y-estados-de-wigner" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="QFT Tutorial" class="md-header__button md-logo" aria-label="QFT Tutorial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            QFT Tutorial
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Clasificacion de Campos por Spin y Estados de Wigner
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="QFT Tutorial" class="md-nav__button md-logo" aria-label="QFT Tutorial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    QFT Tutorial
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutorial
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tutorial
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Índice
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../como_estudiar_este_tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cómo Estudiarlo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../problemas_recomendados_por_semana/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemas por Semana
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rutas_de_lectura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rutas de Lectura
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tabla_maestra_del_tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tabla Maestra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sintesis_por_modulo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Síntesis por Módulo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../catalogo_de_capitulos_y_etiquetas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catálogo de Capítulos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mapa_de_dependencias_conceptuales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mapa de Dependencias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../00_prerrequisitos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    00. Prerrequisitos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_fundamentos_conceptuales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01. Fundamentos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02. Relatividad y Campos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_accion_y_simetrias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03. Acción y Simetrías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_cuantizacion_del_campo_escalar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04. Campo Escalar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05_interacciones_y_perturbaciones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05. Interacciones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06_fermiones_y_dirac/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06. Fermiones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07_gauge_y_qed/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07. Gauge y QED
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../08_integral_de_camino/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08. Integral de Camino
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../09_renormalizacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09. Renormalización
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../10_modelo_estandar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Modelo Estándar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../11_qft_informacion_y_agujeros_negros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. QFT e Información
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../12_teorias_de_campo_efectivas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Teorías de Campo Efectivas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Apéndices
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Apéndices
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/bibliografia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bibliografía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/computacion_qft/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Herramientas Computacionales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/errores_comunes_y_recetas_practicas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Errores Comunes y Recetas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/reglas_de_feynman_y_propagadores/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reglas de Feynman y Propagadores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/simetrias_discretas_cpt_y_anomalias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Simetrías Discretas, CPT y Anomalías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/mezcla_de_sabor_ckm_y_pmns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mezcla de Sabor, CKM y PMNS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/anomalia_axial_y_cancelacion_de_anomalias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anomalía Axial y Cancelación de Anomalías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/glosario_notacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glosario de Notación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/convenciones_globales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Convenciones Globales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/plantilla_de_capitulo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plantilla Editorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#proposito" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Proposito
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduccion-de-grupos-a-particulas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Introduccion: de grupos a particulas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-el-grupo-de-poincare" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. El grupo de Poincare
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-los-operadores-de-casimir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Los operadores de Casimir
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-las-clases-de-wigner" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Las clases de Wigner
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-particulas-masivas-y-estados-de-espin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Particulas masivas y estados de espin
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-particulas-no-masivas-y-helicidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Particulas no masivas y helicidad
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-campo-escalar-representacion-00" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Campo escalar: representacion \((0,0)\)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-campo-vectorial-representacion-12-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Campo vectorial: representacion \((1/2, 1/2)\)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-campo-espinorial-representacion-12-0-oplus-0-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Campo espinorial: representacion \((1/2, 0) \oplus (0, 1/2)\)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-campo-tensorial-antisimetrico-representacion-10-oplus-01" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Campo tensorial antisimetrico: representacion \((1,0) \oplus (0,1)\)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-correspondencia-entre-campos-y-particulas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Correspondencia entre campos y particulas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-condiciones-de-gauge-y-grados-de-libertad-fisicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Condiciones de gauge y grados de libertad fisicos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-el-teorema-espin-estadistica-revisitado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. El teorema espin-estadistica revisitado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-preparacion-para-los-modulos-siguientes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Preparacion para los modulos siguientes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cuaderno-asociado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cuaderno asociado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-preguntas-de-comprobacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. Preguntas de comprobacion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-ejercicios-sugeridos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16. Ejercicios sugeridos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-cierre" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17. Cierre
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18-referencias-y-lecturas-recomendadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        18. Referencias y lecturas recomendadas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navegacion-del-tutorial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Navegacion del tutorial
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="clasificacion-de-campos-por-spin-y-estados-de-wigner">Clasificacion de Campos por Spin y Estados de Wigner</h1>
+<p><strong>Nivel:</strong> Fundacional<br />
+<strong>Dificultad:</strong> Media-Alta<br />
+<strong>Tiempo estimado:</strong> 35-50 min<br />
+<strong>Prerequisitos recomendados:</strong> <a href="../03_representaciones_de_lorentz_y_espinores/">Representaciones de Lorentz y Espinores</a> · <a href="../">Resumen del modulo</a></p>
+<h2 id="proposito">Proposito</h2>
+<p>Este capitulo desarrolla la clasificacion de Wigner de las particulas relativistas segun su masa y espin o helicidad, y conecta esa clasificacion con los tipos de campo que se usan en QFT.</p>
+<h2 id="1-introduccion-de-grupos-a-particulas">1. Introduccion: de grupos a particulas</h2>
+<p>En el capitulo anterior se clasificaron las representaciones del grupo de Lorentz. Pero para clasificar particulas fisicas hace falta un paso mas: las particulas no son solo objetos que transforman bajo Lorentz, sino estados del espacio de Hilbert del sistema. La clasificacion relevante es la del grupo de Poincare completo, que incluye tambien traslaciones espacio-temporales.</p>
+<p>El analisis sistematico de las representaciones irreducibles unitarias del grupo de Poincare fue realizado por Eugene Wigner en 1939. Sus resultados tienen un significado fisico profundo: cada tipo de particula elemental corresponde a una representacion irreducible del grupo de Poincare.</p>
+<h2 id="2-el-grupo-de-poincare">2. El grupo de Poincare</h2>
+<p>El grupo de Poincare es el grupo de simetrias del espacio-tiempo de Minkowski. Combina:</p>
+<ul>
+<li>traslaciones espacio-temporales: <span class="arithmatex">\(x^\mu \mapsto x^\mu + a^\mu\)</span>;</li>
+<li>transformaciones de Lorentz: <span class="arithmatex">\(x^\mu \mapsto \Lambda^\mu{}_\nu x^\nu\)</span>.</li>
+</ul>
+<p>Sus generadores son el 4-momento <span class="arithmatex">\(P^\mu\)</span> (generador de traslaciones) y el tensor de momento angular <span class="arithmatex">\(M^{\mu\nu}\)</span> (generador de Lorentz). Las relaciones de conmutacion son</p>
+<div class="arithmatex">\[
+[P^\mu, P^\nu] = 0,
+$$
+$$
+[M^{\mu\nu}, P^\rho] = i(\eta^{\nu\rho}P^\mu - \eta^{\mu\rho}P^\nu),
+$$
+$$
+[M^{\mu\nu}, M^{\rho\sigma}] = i(\eta^{\nu\rho}M^{\mu\sigma} - \eta^{\mu\rho}M^{\nu\sigma} - \eta^{\nu\sigma}M^{\mu\rho} + \eta^{\mu\sigma}M^{\nu\rho}).
+\]</div>
+<h2 id="3-los-operadores-de-casimir">3. Los operadores de Casimir</h2>
+<p>Para clasificar representaciones se buscan operadores que conmuten con todos los generadores del grupo, los operadores de Casimir. El grupo de Poincare tiene dos:</p>
+<p>El primero es la masa al cuadrado:
+$$
+P^2 = P^\mu P_\mu = m^2.
+$$</p>
+<p>El segundo se construye a traves del vector de Pauli-Lubanski</p>
+<div class="arithmatex">\[
+W^\mu = -\frac{1}{2}\epsilon^{\mu\nu\rho\sigma} P_\nu M_{\rho\sigma},
+\]</div>
+<p>cuyo cuadrado es</p>
+<div class="arithmatex">\[
+W^2 = W^\mu W_\mu = -m^2 s(s+1).
+\]</div>
+<p>Los valores de estos dos Casimir, <span class="arithmatex">\(m^2\)</span> y <span class="arithmatex">\(s\)</span>, clasifican completamente las representaciones irreducibles del grupo de Poincare.</p>
+<h2 id="4-las-clases-de-wigner">4. Las clases de Wigner</h2>
+<p>Dependiendo del signo y valor de <span class="arithmatex">\(P^2\)</span>, las representaciones se dividen en clases:</p>
+<p><strong>Clase 1: particulas masivas</strong> (<span class="arithmatex">\(P^2 = m^2 &gt; 0\)</span>, <span class="arithmatex">\(P^0 &gt; 0\)</span>)</p>
+<p>Se puede ir al sistema de referencia en reposo donde <span class="arithmatex">\(P^\mu = (m, \mathbf{0})\)</span>. El subgrupo que deja fijo este momento es el grupo de rotaciones <span class="arithmatex">\(SO(3)\)</span>. Las representaciones se etiquetan por el spin <span class="arithmatex">\(s = 0, 1/2, 1, 3/2, \ldots\)</span>, con <span class="arithmatex">\(2s+1\)</span> estados de polarizacion.</p>
+<p><strong>Clase 2: particulas no masivas</strong> (<span class="arithmatex">\(P^2 = 0\)</span>, <span class="arithmatex">\(P^0 &gt; 0\)</span>)</p>
+<p>No existe sistema de referencia en reposo. El subgrupo de estabilidad del momento nulo es <span class="arithmatex">\(ISO(2)\)</span>, el grupo euclideo del plano. Las representaciones fisicas se etiquetan por la helicidad <span class="arithmatex">\(\lambda\)</span>, que toma valores <span class="arithmatex">\(\lambda = \pm s\)</span> para un campo de spin <span class="arithmatex">\(s\)</span>. Solo dos estados de polarizacion para <span class="arithmatex">\(s \geq 1/2\)</span>.</p>
+<p><strong>Otras clases:</strong> taquiones (<span class="arithmatex">\(P^2 &lt; 0\)</span>), vacio (<span class="arithmatex">\(P^\mu = 0\)</span>) y casos exoticos que no corresponden a particulas fisicas observadas.</p>
+<h2 id="5-particulas-masivas-y-estados-de-espin">5. Particulas masivas y estados de espin</h2>
+<p>Para una particula masiva de spin <span class="arithmatex">\(s\)</span>, los estados fisicos en el sistema de referencia del centro de masa se etiquetan <span class="arithmatex">\(|m, s, m_s\rangle\)</span> con <span class="arithmatex">\(m_s = -s, -s+1, \ldots, s\)</span>.</p>
+<p>Al ir a un momento arbitrario <span class="arithmatex">\(\mathbf{p}\)</span>, se aplica un boost estandar <span class="arithmatex">\(L(p)\)</span> que lleva el estado en reposo al estado con momento <span class="arithmatex">\(\mathbf{p}\)</span>:</p>
+<div class="arithmatex">\[
+|p, m_s\rangle = U(L(p))|m, s, m_s\rangle.
+\]</div>
+<p>Bajo una transformacion de Lorentz general, el estado transforma con una matriz de Wigner <span class="arithmatex">\(D^{(s)}_{m_s' m_s}(W)\)</span> donde <span class="arithmatex">\(W = L^{-1}(\Lambda p) \Lambda L(p)\)</span> es la rotacion de Wigner.</p>
+<h2 id="6-particulas-no-masivas-y-helicidad">6. Particulas no masivas y helicidad</h2>
+<p>Para particulas no masivas, la helicidad es la proyeccion del espin sobre la direccion del momento:</p>
+<div class="arithmatex">\[
+\lambda = \hat{\mathbf{p}} \cdot \mathbf{J}.
+\]</div>
+<p>Los fotones tienen helicidad <span class="arithmatex">\(\lambda = \pm 1\)</span> (los dos estados de polarizacion circular). Los gravitones tendrian helicidad <span class="arithmatex">\(\lambda = \pm 2\)</span>. Los neutrinos quirales tienen helicidad definida.</p>
+<p>A diferencia del spin, la helicidad es un escalar de Lorentz para particulas no masivas. Bajo rotaciones se preserva, y bajo boosts tambien, aunque la nocion de "direccion del espin" puede cambiar.</p>
+<h2 id="7-campo-escalar-representacion-00">7. Campo escalar: representacion <span class="arithmatex">\((0,0)\)</span></h2>
+<p>Un campo escalar <span class="arithmatex">\(\phi(x)\)</span> pertenece a la representacion trivial del grupo de Lorentz. Transforma como</p>
+<div class="arithmatex">\[
+\phi(x) \mapsto \phi(\Lambda^{-1}x).
+\]</div>
+<p>Solo tiene un grado de libertad interno por punto del espacio. Sus excitaciones son particulas de spin 0. Si el campo es real, la particula es su propia antiparticula (campo de Majorana escalar). Si el campo es complejo, particula y antiparticula son distintas y cargan carga de un U(1).</p>
+<p>Ejemplos fisicos: el campo de Higgs (antes de la ruptura espontanea de simetria), el pion neutro, el campo inflaton cosmologico.</p>
+<h2 id="8-campo-vectorial-representacion-12-12">8. Campo vectorial: representacion <span class="arithmatex">\((1/2, 1/2)\)</span></h2>
+<p>Un campo vectorial <span class="arithmatex">\(A_\mu(x)\)</span> transforma como un 4-vector:</p>
+<div class="arithmatex">\[
+A_\mu(x) \mapsto \Lambda_\mu{}^\nu A_\nu(\Lambda^{-1}x).
+\]</div>
+<p>Tiene cuatro componentes, pero no todas son fisicas. Para un boson gauge no masivo las condiciones de gauge eliminan dos, dejando dos grados de libertad fisicos (los dos estados de helicidad <span class="arithmatex">\(\pm 1\)</span>). Para un boson vectorial masivo las condiciones de gauge son distintas y dejan tres grados de libertad (helicidades <span class="arithmatex">\(-1, 0, +1\)</span>).</p>
+<p>Ejemplos fisicos: el foton <span class="arithmatex">\(A_\mu\)</span>, los bosones <span class="arithmatex">\(W^\pm_\mu\)</span> y <span class="arithmatex">\(Z_\mu\)</span> del Modelo Estandar, los gluones <span class="arithmatex">\(G_\mu^a\)</span>.</p>
+<h2 id="9-campo-espinorial-representacion-12-0-oplus-0-12">9. Campo espinorial: representacion <span class="arithmatex">\((1/2, 0) \oplus (0, 1/2)\)</span></h2>
+<p>El espinor de Dirac <span class="arithmatex">\(\Psi\)</span> vive en la representacion <span class="arithmatex">\((1/2, 0) \oplus (0, 1/2)\)</span>. Tiene cuatro componentes complejas, que corresponden a dos grados de libertad para la particula (dos proyecciones de spin) y dos para la antiparticula.</p>
+<p>La ecuacion de Dirac describe la dinamica de este campo y conecta las dos representaciones quirales mediante el termino de masa. En el limite no masivo los dos espinores de Weyl desacoplan.</p>
+<p>Ejemplos fisicos: el electron, el muon, el quark up, el neutrino en su descripcion de Dirac.</p>
+<h2 id="10-campo-tensorial-antisimetrico-representacion-10-oplus-01">10. Campo tensorial antisimetrico: representacion <span class="arithmatex">\((1,0) \oplus (0,1)\)</span></h2>
+<p>Un tensor antisimetrico de rango 2 se puede descomponer en sus partes autoduales y antiautoduales. Cada parte corresponde a una de las dos representaciones. El tensor de campo electromagnetico <span class="arithmatex">\(F_{\mu\nu}\)</span> es el ejemplo principal.</p>
+<p>Para el tensor de curvatura en relatividad general aparecen tensores de rango mas alto.</p>
+<h2 id="11-correspondencia-entre-campos-y-particulas">11. Correspondencia entre campos y particulas</h2>
+<p>La tabla siguiente resume la correspondencia:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Campo</th>
+<th style="text-align: left;">Representacion</th>
+<th style="text-align: left;">Spin</th>
+<th style="text-align: left;">Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Escalar real <span class="arithmatex">\(\phi\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\((0,0)\)</span></td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">Higgs, pion, axion</td>
+</tr>
+<tr>
+<td style="text-align: left;">Escalar complejo <span class="arithmatex">\(\phi\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\((0,0)\)</span></td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">Campo de Higgs (cargado)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Espinor de Weyl <span class="arithmatex">\(\xi_\alpha\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\((1/2,0)\)</span></td>
+<td style="text-align: left;">1/2</td>
+<td style="text-align: left;">Neutrino zurdo</td>
+</tr>
+<tr>
+<td style="text-align: left;">Espinor de Dirac <span class="arithmatex">\(\Psi\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\((1/2,0)\oplus(0,1/2)\)</span></td>
+<td style="text-align: left;">1/2</td>
+<td style="text-align: left;">Electron, quark</td>
+</tr>
+<tr>
+<td style="text-align: left;">Espinor de Majorana</td>
+<td style="text-align: left;"><span class="arithmatex">\((1/2,0)\oplus(0,1/2)\)</span></td>
+<td style="text-align: left;">1/2</td>
+<td style="text-align: left;">Neutrino de Majorana</td>
+</tr>
+<tr>
+<td style="text-align: left;">Vector <span class="arithmatex">\(A_\mu\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\((1/2,1/2)\)</span></td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Foton, gluon, <span class="arithmatex">\(W, Z\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">Graviton <span class="arithmatex">\(h_{\mu\nu}\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\((1,1)\)</span></td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">Graviton</td>
+</tr>
+</tbody>
+</table>
+<h2 id="12-condiciones-de-gauge-y-grados-de-libertad-fisicos">12. Condiciones de gauge y grados de libertad fisicos</h2>
+<p>Los campos de spin mayor que 0 tienen siempre mas componentes que grados de libertad fisicos. El exceso se elimina con:</p>
+<ul>
+<li>condiciones de gauge (para campos vectoriales gauge);</li>
+<li>ecuaciones de movimiento (la ecuacion de Dirac reduce 4 a 2 grados de libertad por punto);</li>
+<li>condiciones de transversalidad.</li>
+</ul>
+<p>En QFT cuantizada, esta reduccion se implementa a traves de condiciones sobre los estados fisicos del espacio de Hilbert.</p>
+<h2 id="13-el-teorema-espin-estadistica-revisitado">13. El teorema espin-estadistica revisitado</h2>
+<p>La clasificacion de Wigner conecta el spin con las propiedades de simetria de los estados bajo intercambio de particulas identicas:</p>
+<ul>
+<li>estados de spin entero: simétricos bajo intercambio (bosones, estadistica de Bose-Einstein);</li>
+<li>estados de spin semientero: antisimetricos bajo intercambio (fermiones, estadistica de Fermi-Dirac).</li>
+</ul>
+<p>Esta conexion no es un axioma adicional de la teoria cuantica. Es una consecuencia de la simetria de Lorentz, la causalidad y la positividad de la energia. Su demostracion en el formalismo de QFT es uno de los resultados mas elegantes del formalismo.</p>
+<h2 id="14-preparacion-para-los-modulos-siguientes">14. Preparacion para los modulos siguientes</h2>
+<p>Entender la clasificacion de campos por spin es esencial para:</p>
+<ul>
+<li>cuantizar el campo escalar (modulo 04): el tipo mas simple, spin 0;</li>
+<li>cuantizar el campo de Dirac (modulo 06): fermiones, spin 1/2, anticonmutadores;</li>
+<li>construir teorias gauge (modulo 07): campo vectorial, spin 1, fijacion de gauge;</li>
+<li>entender el Modelo Estandar (modulo 10): que campos existen y por que.</li>
+</ul>
+<h2 id="cuaderno-asociado">Cuaderno asociado</h2>
+<ul>
+<li>Consulta los cuadernos asociados de este bloque en <a href="../">Resumen del modulo</a> para reforzar el capitulo con practica guiada.</li>
+</ul>
+<h2 id="15-preguntas-de-comprobacion">15. Preguntas de comprobacion</h2>
+<ul>
+<li>Cuales son los dos operadores de Casimir del grupo de Poincare y que clasifican.</li>
+<li>Por que una particula no masiva de spin 1 tiene solo dos estados de polarizacion fisicos.</li>
+<li>Que diferencia hay entre el spin de una particula masiva y la helicidad de una no masiva.</li>
+<li>Por que un campo vectorial con cuatro componentes no describe cuatro grados de libertad fisicos.</li>
+<li>Como se relaciona el teorema espin-estadistica con la clasificacion de Wigner.</li>
+</ul>
+<h2 id="16-ejercicios-sugeridos">16. Ejercicios sugeridos</h2>
+<ol>
+<li>Para una particula masiva de spin 1, contar los estados de polarizacion en el sistema de reposo y verificar que hay exactamente tres.</li>
+<li>Mostrar que el vector de Pauli-Lubanski <span class="arithmatex">\(W^\mu\)</span> satisface <span class="arithmatex">\(P_\mu W^\mu = 0\)</span>.</li>
+<li>Para el campo escalar libre, verificar que la ecuacion de Klein-Gordon corresponde a la condicion <span class="arithmatex">\(P^2 = m^2\)</span> sobre los estados de una particula.</li>
+<li>Comparar el numero de grados de libertad reales del espinor de Dirac antes y despues de imponer la ecuacion de Dirac como vinculos de primera clase.</li>
+</ol>
+<h2 id="17-cierre">17. Cierre</h2>
+<p>La clasificacion de Wigner establece que las particulas elementales son inevitablemente estados de una representacion irreducible del grupo de Poincare. Esta es la razon por la que la fisica de particulas no es arbitraria: la simetria del espacio-tiempo, combinada con las exigencias de la mecanica cuantica, determina las posibilidades. Los campos son los objetos de campo que se cuantizan para obtener esas representaciones.</p>
+<h2 id="18-referencias-y-lecturas-recomendadas">18. Referencias y lecturas recomendadas</h2>
+<ul>
+<li>Base: Weinberg, vol. I, capitulo 2, clasificacion de Wigner y estados de una particula.</li>
+<li>Complementaria: Tong, notas sobre representaciones del grupo de Poincare y estados asintóticos.</li>
+<li>Profundizacion: Bargmann y Wigner, articulo original de 1948; Streater y Wightman para la formulacion axiomatica.</li>
+</ul>
+<hr />
+<h2 id="navegacion-del-tutorial">Navegacion del tutorial</h2>
+<p><a href="../03_representaciones_de_lorentz_y_espinores/">(anterior) Representaciones de Lorentz y Espinores</a> | <a href="../../03_accion_y_simetrias/">(siguiente) Modulo 03: Accion y Simetrias</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "navigation.expand", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+        <script src="../../../javascripts/mermaid-init.js"></script>
+      
+    
+  </body>
+</html>

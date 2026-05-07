@@ -1,0 +1,1768 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Tutorial completo sobre Teoría Cuántica de Campos">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Representaciones de Lorentz y Espinores - QFT Tutorial</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#representaciones-de-lorentz-y-espinores" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="QFT Tutorial" class="md-header__button md-logo" aria-label="QFT Tutorial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            QFT Tutorial
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Representaciones de Lorentz y Espinores
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="QFT Tutorial" class="md-nav__button md-logo" aria-label="QFT Tutorial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    QFT Tutorial
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutorial
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tutorial
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Índice
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../como_estudiar_este_tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cómo Estudiarlo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../problemas_recomendados_por_semana/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemas por Semana
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rutas_de_lectura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rutas de Lectura
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tabla_maestra_del_tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tabla Maestra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sintesis_por_modulo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Síntesis por Módulo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../catalogo_de_capitulos_y_etiquetas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catálogo de Capítulos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mapa_de_dependencias_conceptuales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mapa de Dependencias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../00_prerrequisitos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    00. Prerrequisitos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_fundamentos_conceptuales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01. Fundamentos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02. Relatividad y Campos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_accion_y_simetrias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03. Acción y Simetrías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_cuantizacion_del_campo_escalar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04. Campo Escalar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05_interacciones_y_perturbaciones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05. Interacciones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06_fermiones_y_dirac/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06. Fermiones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07_gauge_y_qed/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07. Gauge y QED
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../08_integral_de_camino/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08. Integral de Camino
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../09_renormalizacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09. Renormalización
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../10_modelo_estandar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Modelo Estándar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../11_qft_informacion_y_agujeros_negros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. QFT e Información
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../12_teorias_de_campo_efectivas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Teorías de Campo Efectivas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Apéndices
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Apéndices
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/bibliografia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bibliografía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/computacion_qft/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Herramientas Computacionales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/errores_comunes_y_recetas_practicas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Errores Comunes y Recetas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/reglas_de_feynman_y_propagadores/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reglas de Feynman y Propagadores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/simetrias_discretas_cpt_y_anomalias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Simetrías Discretas, CPT y Anomalías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/mezcla_de_sabor_ckm_y_pmns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mezcla de Sabor, CKM y PMNS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/anomalia_axial_y_cancelacion_de_anomalias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anomalía Axial y Cancelación de Anomalías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/glosario_notacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glosario de Notación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/convenciones_globales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Convenciones Globales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/plantilla_de_capitulo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plantilla Editorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#proposito" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Proposito
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduccion-por-que-importa-la-estructura-de-grupo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Introduccion: por que importa la estructura de grupo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-el-grupo-de-lorentz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. El grupo de Lorentz
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-la-descomposicion-en-su2-times-su2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. La descomposicion en \(SU(2) \times SU(2)\)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-el-cubriente-doble-sl2mathbbc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. El cubriente doble \(SL(2,\mathbb{C})\)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-espinores-de-weyl-la-representacion-12-0" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Espinores de Weyl: la representacion \((1/2, 0)\)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-notacion-dottedundotted-de-van-der-waerden" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Notacion dotted/undotted de van der Waerden
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-matrices-sigma-y-sigma-bar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Matrices sigma y sigma-bar
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-el-espinor-de-dirac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. El espinor de Dirac
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-conexion-con-la-estadistica-de-fermiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Conexion con la estadistica de fermiones
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-tabla-de-representaciones-fundamentales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Tabla de representaciones fundamentales
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-espinores-de-majorana" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Espinores de Majorana
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-invariantes-espinoriales-y-bilineales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Invariantes espinoriales y bilineales
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-de-la-representacion-a-la-fisica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. De la representacion a la fisica
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-advertencias-de-notacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Advertencias de notacion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cuaderno-asociado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cuaderno asociado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-preguntas-de-comprobacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. Preguntas de comprobacion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-ejercicios-sugeridos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16. Ejercicios sugeridos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-cierre" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17. Cierre
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18-referencias-y-lecturas-recomendadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        18. Referencias y lecturas recomendadas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navegacion-del-tutorial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Navegacion del tutorial
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="representaciones-de-lorentz-y-espinores">Representaciones de Lorentz y Espinores</h1>
+<p><strong>Nivel:</strong> Fundacional<br />
+<strong>Dificultad:</strong> Media-Alta<br />
+<strong>Tiempo estimado:</strong> 35-50 min<br />
+<strong>Prerequisitos recomendados:</strong> <a href="../02_campos_localidad_y_causalidad/">Campos, Localidad y Causalidad Microfisica</a> · <a href="../">Resumen del modulo</a></p>
+<h2 id="proposito">Proposito</h2>
+<p>Este capitulo desarrolla la estructura algebraica del grupo de Lorentz, su cubriente doble <span class="arithmatex">\(SL(2,\mathbb{C})\)</span> y las representaciones espinoriales que clasifican fermiones en QFT.</p>
+<h2 id="1-introduccion-por-que-importa-la-estructura-de-grupo">1. Introduccion: por que importa la estructura de grupo</h2>
+<p>En los capitulos anteriores se acepto que los campos se clasifican por como transforman bajo el grupo de Lorentz. Se mencionaron escalares, vectores y espinores como tipos distintos. Ahora es el momento de hacer eso preciso.</p>
+<p>El grupo de Lorentz no solo organiza la cinematica de los campos. Determina cuantas componentes tiene cada campo, que estadistica sigue y que clase de excitaciones puede describir. Por eso entender sus representaciones no es un lujo matematico: es una condicion necesaria para saber de que tipo son los objetos que la teoria maneja.</p>
+<h2 id="2-el-grupo-de-lorentz">2. El grupo de Lorentz</h2>
+<p>Las transformaciones de Lorentz son las transformaciones lineales del espacio-tiempo de Minkowski que preservan la forma cuadratica</p>
+<div class="arithmatex">\[
+x^\mu x_\mu = t^2 - \mathbf{x}^2.
+\]</div>
+<p>El grupo formado por estas transformaciones es el grupo de Lorentz <span class="arithmatex">\(O(1,3)\)</span>. Dentro de el, la componente conexa que contiene la identidad se llama grupo de Lorentz propio y ortocrono <span class="arithmatex">\(SO^+(1,3)\)</span>.</p>
+<p>Sus generadores satisfacen las relaciones de conmutacion</p>
+<div class="arithmatex">\[
+[J^{\mu\nu}, J^{\rho\sigma}] = i\left(\eta^{\nu\rho} J^{\mu\sigma} - \eta^{\mu\rho} J^{\nu\sigma} - \eta^{\nu\sigma} J^{\mu\rho} + \eta^{\mu\sigma} J^{\nu\rho}\right).
+\]</div>
+<p>Este algebra tiene seis generadores: tres generadores de rotaciones <span class="arithmatex">\(J_i\)</span> y tres generadores de boosts <span class="arithmatex">\(K_i\)</span>.</p>
+<h2 id="3-la-descomposicion-en-su2-times-su2">3. La descomposicion en <span class="arithmatex">\(SU(2) \times SU(2)\)</span></h2>
+<p>Una manera especialmente util de entender la estructura del algebra de Lorentz consiste en definir las combinaciones lineales</p>
+<div class="arithmatex">\[
+\mathbf{A} = \frac{1}{2}(\mathbf{J} + i\mathbf{K}), \qquad \mathbf{B} = \frac{1}{2}(\mathbf{J} - i\mathbf{K}).
+\]</div>
+<p>Estos operadores satisfacen relaciones de conmutacion que corresponden a dos copias independientes del algebra <span class="arithmatex">\(\mathfrak{su}(2)\)</span>:</p>
+<div class="arithmatex">\[
+[A_i, A_j] = i\epsilon_{ijk} A_k, \qquad [B_i, B_j] = i\epsilon_{ijk} B_k, \qquad [A_i, B_j] = 0.
+\]</div>
+<p>Esto significa que el algebra de Lie del grupo de Lorentz es isomorfa, en el sentido complejo, a</p>
+<div class="arithmatex">\[
+\mathfrak{so}(1,3)_\mathbb{C} \cong \mathfrak{su}(2) \oplus \mathfrak{su}(2).
+\]</div>
+<p>Las representaciones irreducibles del grupo se clasifican entonces por un par de semienteros <span class="arithmatex">\((j_A, j_B)\)</span> donde <span class="arithmatex">\(j_A, j_B \in \{0, \tfrac{1}{2}, 1, \tfrac{3}{2}, \ldots\}\)</span>.</p>
+<h2 id="4-el-cubriente-doble-sl2mathbbc">4. El cubriente doble <span class="arithmatex">\(SL(2,\mathbb{C})\)</span></h2>
+<p>El grupo de Lorentz <span class="arithmatex">\(SO^+(1,3)\)</span> no es simplemente conexo: su grupo fundamental es <span class="arithmatex">\(\mathbb{Z}_2\)</span>. Para describir fermiones necesitamos trabajar con su cubriente doble universal, que es el grupo <span class="arithmatex">\(SL(2,\mathbb{C})\)</span>, el grupo de matrices complejas <span class="arithmatex">\(2\times 2\)</span> con determinante 1.</p>
+<p>La relacion entre <span class="arithmatex">\(SL(2,\mathbb{C})\)</span> y <span class="arithmatex">\(SO^+(1,3)\)</span> se establece mediante el mapa</p>
+<div class="arithmatex">\[
+x^\mu \mapsto X = x^\mu \sigma_\mu = \begin{pmatrix} t+z &amp; x-iy \\ x+iy &amp; t-z \end{pmatrix},
+\]</div>
+<p>donde <span class="arithmatex">\(\sigma_\mu = (\mathbf{1}, \vec{\sigma})\)</span> con <span class="arithmatex">\(\vec{\sigma}\)</span> las matrices de Pauli. Una transformacion de Lorentz actua como</p>
+<div class="arithmatex">\[
+X \mapsto N X N^\dagger, \qquad N \in SL(2,\mathbb{C}).
+\]</div>
+<p>El determinante de <span class="arithmatex">\(X\)</span> es <span class="arithmatex">\(\det X = t^2 - \mathbf{x}^2\)</span>, que es justamente la forma cuadratica de Minkowski, y la transformacion la preserva porque <span class="arithmatex">\(\det(N X N^\dagger) = |\det N|^2 \det X = \det X\)</span>.</p>
+<h2 id="5-espinores-de-weyl-la-representacion-12-0">5. Espinores de Weyl: la representacion <span class="arithmatex">\((1/2, 0)\)</span></h2>
+<p>La representacion mas basica del grupo de Lorentz, mas alla del escalar <span class="arithmatex">\((0,0)\)</span>, es la representacion de dimension 2. Hay dos versiones no equivalentes.</p>
+<p>La representacion <span class="arithmatex">\((1/2, 0)\)</span> es la representacion fundamental de <span class="arithmatex">\(SL(2,\mathbb{C})\)</span>. Un objeto que transforma en esta representacion es un espinor de Weyl zurdo (o punteado en la notacion de van der Waerden):</p>
+<div class="arithmatex">\[
+\xi_\alpha \mapsto N_\alpha{}^\beta \, \xi_\beta, \qquad \alpha, \beta \in \{1,2\}.
+\]</div>
+<p>La representacion <span class="arithmatex">\((0, 1/2)\)</span> es la representacion conjugada. Un espinor de Weyl diestro transforma como</p>
+<div class="arithmatex">\[
+\bar\eta_{\dot\alpha} \mapsto (N^*)_{\dot\alpha}{}^{\dot\beta} \, \bar\eta_{\dot\beta}.
+\]</div>
+<p>La notacion de punto sobre el indice sirve exactamente para distinguir estas dos representaciones.</p>
+<h2 id="6-notacion-dottedundotted-de-van-der-waerden">6. Notacion dotted/undotted de van der Waerden</h2>
+<p>La notacion estandar en teoria de campos introduce indices con y sin punto para distinguir representaciones quirales:</p>
+<ul>
+<li>Indices sin punto <span class="arithmatex">\(\alpha, \beta, \ldots\)</span>: espinores de Weyl en la representacion <span class="arithmatex">\((1/2, 0)\)</span>, llamados espinores zurdos.</li>
+<li>Indices con punto <span class="arithmatex">\(\dot\alpha, \dot\beta, \ldots\)</span>: espinores de Weyl en la representacion <span class="arithmatex">\((0, 1/2)\)</span>, llamados espinores diestros.</li>
+</ul>
+<p>La metrica espinorial <span class="arithmatex">\(\epsilon_{\alpha\beta}\)</span> (con <span class="arithmatex">\(\epsilon_{12} = -\epsilon_{21} = 1\)</span>) eleva y baja indices espinoriales:</p>
+<div class="arithmatex">\[
+\xi^\alpha = \epsilon^{\alpha\beta} \xi_\beta, \qquad \xi_\alpha = \epsilon_{\alpha\beta} \xi^\beta.
+\]</div>
+<p>Los productos invariantes de Lorentz se construyen contrayendo indices del mismo tipo:</p>
+<div class="arithmatex">\[
+\xi\eta \equiv \xi^\alpha \eta_\alpha = \epsilon^{\alpha\beta}\xi_\beta \eta_\alpha, \qquad \bar\xi\bar\eta \equiv \bar\xi_{\dot\alpha}\bar\eta^{\dot\alpha}.
+\]</div>
+<h2 id="7-matrices-sigma-y-sigma-bar">7. Matrices sigma y sigma-bar</h2>
+<p>Las matrices sigma y sigma-bar proporcionan los bloques de construccion para pasar entre representaciones espinoriales y vectoriales:</p>
+<div class="arithmatex">\[
+\sigma^\mu_{\alpha\dot\alpha} = (\mathbf{1}, \vec\sigma)_{\alpha\dot\alpha}, \qquad \bar\sigma^{\mu\,\dot\alpha\alpha} = (\mathbf{1}, -\vec\sigma)^{\dot\alpha\alpha}.
+\]</div>
+<p>Con estas matrices se puede descomponer un vector de Lorentz <span class="arithmatex">\(v^\mu\)</span> en un espinor bivaluado:</p>
+<div class="arithmatex">\[
+v^{\alpha\dot\alpha} = \sigma^\mu{}^{\alpha\dot\alpha} v_\mu.
+\]</div>
+<p>Esto corresponde a la representacion <span class="arithmatex">\((1/2, 1/2)\)</span>, que es la del vector de Lorentz.</p>
+<h2 id="8-el-espinor-de-dirac">8. El espinor de Dirac</h2>
+<p>Un espinor de Dirac de 4 componentes combina un espinor de Weyl zurdo y uno diestro:</p>
+<div class="arithmatex">\[
+\Psi = \begin{pmatrix} \xi_\alpha \\ \bar\chi^{\dot\alpha} \end{pmatrix}.
+\]</div>
+<p>Esta combinacion corresponde a la representacion reducible <span class="arithmatex">\((1/2, 0) \oplus (0, 1/2)\)</span>. La ecuacion de Dirac mezcla las dos componentes quirales mediante el termino de masa:</p>
+<div class="arithmatex">\[
+(i\gamma^\mu \partial_\mu - m)\Psi = 0.
+\]</div>
+<p>En la representacion de Weyl, las matrices gamma toman la forma</p>
+<div class="arithmatex">\[
+\gamma^\mu = \begin{pmatrix} 0 &amp; \sigma^\mu \\ \bar\sigma^\mu &amp; 0 \end{pmatrix}.
+\]</div>
+<h2 id="9-conexion-con-la-estadistica-de-fermiones">9. Conexion con la estadistica de fermiones</h2>
+<p>La posibilidad de tener representaciones espinoriales, que requieren una rotacion de <span class="arithmatex">\(4\pi\)</span> para volver al estado inicial, tiene consecuencias fisicas directas. El teorema espin-estadistica establece que los campos en representaciones de spin semientero deben cuantizarse con anticonmutadores.</p>
+<p>Esto no es un postulado separado. Es una consecuencia de la estructura del grupo de Lorentz combinada con las exigencias de causalidad y positividad de la energia. El spin semientero implica estadistica de Fermi-Dirac.</p>
+<p>La conexion se puede resumir:</p>
+<ul>
+<li>representaciones con <span class="arithmatex">\(j_A + j_B \in \mathbb{Z}\)</span>: bosones, cuantizacion con conmutadores;</li>
+<li>representaciones con <span class="arithmatex">\(j_A + j_B \in \mathbb{Z} + 1/2\)</span>: fermiones, cuantizacion con anticonmutadores.</li>
+</ul>
+<h2 id="10-tabla-de-representaciones-fundamentales">10. Tabla de representaciones fundamentales</h2>
+<p>Las representaciones mas importantes en QFT se resumen en la siguiente tabla:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Representacion</th>
+<th style="text-align: left;">Dimension</th>
+<th style="text-align: left;">Objeto fisico</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\((0,0)\)</span></td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Campo escalar</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\((1/2, 0)\)</span></td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">Espinor de Weyl zurdo</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\((0, 1/2)\)</span></td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">Espinor de Weyl diestro</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\((1/2, 0) \oplus (0,1/2)\)</span></td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">Espinor de Dirac</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\((1/2, 1/2)\)</span></td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">Campo vectorial</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\((1, 0) \oplus (0, 1)\)</span></td>
+<td style="text-align: left;">6</td>
+<td style="text-align: left;">Tensor antisimetrico</td>
+</tr>
+</tbody>
+</table>
+<h2 id="11-espinores-de-majorana">11. Espinores de Majorana</h2>
+<p>Una posibilidad adicional surge cuando las dos representaciones quirales del espinor de Dirac estan relacionadas por conjugacion. Un espinor de Majorana satisface la condicion</p>
+<div class="arithmatex">\[
+\Psi = \Psi^C \equiv C\bar\Psi^T,
+\]</div>
+<p>donde <span class="arithmatex">\(C\)</span> es la matriz de conjugacion de carga. En terminos de componentes de Weyl, esto significa que el espinor diestro es el conjugado del zurdo:</p>
+<div class="arithmatex">\[
+\Psi_M = \begin{pmatrix} \xi_\alpha \\ i\sigma^2 \xi^* \end{pmatrix}.
+\]</div>
+<p>Los espinores de Majorana tienen la mitad de grados de libertad que los de Dirac. Son su propia antiparticula. Esta propiedad los hace relevantes en supersimetria y en la discusion de masas de neutrinos.</p>
+<h2 id="12-invariantes-espinoriales-y-bilineales">12. Invariantes espinoriales y bilineales</h2>
+<p>Para construir lagrangianos con campos fermionicos hace falta saber que combinaciones son invariantes de Lorentz. Los bilineales fundamentales se construyen con la metrica espinorial o con matrices gamma:</p>
+<div class="arithmatex">\[
+\bar\Psi \Psi = \Psi^\dagger \gamma^0 \Psi \quad \text{(escalar)},
+$$
+$$
+\bar\Psi \gamma^\mu \Psi \quad \text{(vector)},
+$$
+$$
+\bar\Psi \gamma^\mu \gamma^\nu \Psi \quad \text{(tensor)},
+$$
+$$
+\bar\Psi \gamma^5 \Psi \quad \text{(pseudoescalar)},
+$$
+$$
+\bar\Psi \gamma^\mu \gamma^5 \Psi \quad \text{(pseudovector)}.
+\]</div>
+<p>donde <span class="arithmatex">\(\gamma^5 = i\gamma^0\gamma^1\gamma^2\gamma^3\)</span>.</p>
+<p>Estos cinco bilineales forman una base completa del espacio de matrices <span class="arithmatex">\(4\times 4\)</span> y son los bloques con los que se construyen las interacciones en lagrangianos fermionicos.</p>
+<h2 id="13-de-la-representacion-a-la-fisica">13. De la representacion a la fisica</h2>
+<p>La clasificacion de representaciones no es solo taxonomia formal. Tiene consecuencias directas en la construccion de la teoria:</p>
+<ul>
+<li>El tipo de representacion determina el numero de grados de libertad del campo.</li>
+<li>Determina que invariantes pueden escribirse en el lagrangiano.</li>
+<li>Determina la estadistica cuantica.</li>
+<li>Determina como transforma el campo bajo paridad, que intercambia <span class="arithmatex">\((j_A, j_B)\)</span> con <span class="arithmatex">\((j_B, j_A)\)</span>.</li>
+</ul>
+<p>Por eso antes de escribir cualquier lagrangiano conviene tener claro en que representacion vive cada campo de la teoria.</p>
+<h2 id="14-advertencias-de-notacion">14. Advertencias de notacion</h2>
+<ul>
+<li>En diferentes textos los puntos sobre los indices aparecen o no dependiendo de la convencion. Algunos usan indices con barra, otros con punto.</li>
+<li>La convencion sobre cual componente es zurda y cual es diestra puede variar. Lo importante es la consistencia interna.</li>
+<li>Las matrices sigma de Pauli pueden definirse con signos distintos en diferentes referencias. Conviene fijarse en la metrica de Minkowski usada.</li>
+</ul>
+<h2 id="cuaderno-asociado">Cuaderno asociado</h2>
+<ul>
+<li>Consulta los cuadernos asociados de este bloque en <a href="../">Resumen del modulo</a> para reforzar el capitulo con practica guiada.</li>
+</ul>
+<h2 id="15-preguntas-de-comprobacion">15. Preguntas de comprobacion</h2>
+<ul>
+<li>Por que el grupo de Lorentz necesita un cubriente doble para describir fermiones.</li>
+<li>Que diferencia hay entre la representacion <span class="arithmatex">\((1/2, 0)\)</span> y la <span class="arithmatex">\((0, 1/2)\)</span> del grupo de Lorentz.</li>
+<li>Que significa en terminos fisicos que un espinor sea zurdo o diestro.</li>
+<li>Por que un espinor de Majorana tiene la mitad de grados de libertad que uno de Dirac.</li>
+<li>Como se relaciona el spin de una representacion con su estadistica cuantica.</li>
+</ul>
+<h2 id="16-ejercicios-sugeridos">16. Ejercicios sugeridos</h2>
+<ol>
+<li>Verificar que la combinacion <span class="arithmatex">\(\xi^\alpha \eta_\alpha\)</span> es invariante bajo transformaciones de Lorentz usando la propiedad <span class="arithmatex">\(N^T \epsilon N = \epsilon\)</span> para <span class="arithmatex">\(N \in SL(2,\mathbb{C})\)</span>.</li>
+<li>Construir explicitamente las matrices gamma en la representacion de Weyl y verificar que satisfacen la algebra de Clifford <span class="arithmatex">\(\{\gamma^\mu, \gamma^\nu\} = 2\eta^{\mu\nu}\)</span>.</li>
+<li>Mostrar que el bilineal <span class="arithmatex">\(\bar\Psi\Psi\)</span> es un escalar de Lorentz pero <span class="arithmatex">\(\Psi^T\Psi\)</span> no lo es.</li>
+<li>A partir de la tabla de representaciones, identificar que representacion corresponde al campo de Yang-Mills <span class="arithmatex">\(A_\mu^a\)</span> y al tensor de curvatura <span class="arithmatex">\(F_{\mu\nu}^a\)</span>.</li>
+</ol>
+<h2 id="17-cierre">17. Cierre</h2>
+<p>El grupo de Lorentz no es solo la simetria cinematica de la teoria. Es el organizador de todo su contenido de campos. La clasificacion de representaciones por pares <span class="arithmatex">\((j_A, j_B)\)</span> proporciona la respuesta sistematica a la pregunta "de que tipo puede ser un campo relativista", y la conexion con <span class="arithmatex">\(SL(2,\mathbb{C})\)</span> revela por que los fermiones exigen cuantizacion con anticonmutadores.</p>
+<h2 id="18-referencias-y-lecturas-recomendadas">18. Referencias y lecturas recomendadas</h2>
+<ul>
+<li>Base: Peskin y Schroeder, capitulo 3, representaciones espinoriales y algebra de Clifford.</li>
+<li>Complementaria: Tong, notas sobre espinores de Weyl y notacion dotted/undotted.</li>
+<li>Profundizacion: Wess y Bagger, formulacion espinorial en SUSY; Streater y Wightman, estructura axiomatica y teorema espin-estadistica.</li>
+</ul>
+<hr />
+<h2 id="navegacion-del-tutorial">Navegacion del tutorial</h2>
+<p><a href="../02_campos_localidad_y_causalidad/">(anterior) Campos, Localidad y Causalidad Microfisica</a> | <a href="../04_clasificacion_de_campos_por_spin/">(siguiente) Clasificacion de Campos por Spin y Estados de Wigner</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "navigation.expand", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+        <script src="../../../javascripts/mermaid-init.js"></script>
+      
+    
+  </body>
+</html>

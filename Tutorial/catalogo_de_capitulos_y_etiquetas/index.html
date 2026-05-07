@@ -1,0 +1,2199 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Tutorial completo sobre Teoría Cuántica de Campos">
+      
+      
+      
+      
+        <link rel="prev" href="../sintesis_por_modulo/">
+      
+      
+        <link rel="next" href="../mapa_de_dependencias_conceptuales/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Catálogo de Capítulos - QFT Tutorial</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#catalogo-de-capitulos-etiquetas-y-prerequisitos" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="QFT Tutorial" class="md-header__button md-logo" aria-label="QFT Tutorial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            QFT Tutorial
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Catálogo de Capítulos
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="QFT Tutorial" class="md-nav__button md-logo" aria-label="QFT Tutorial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    QFT Tutorial
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutorial
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tutorial
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Índice
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../como_estudiar_este_tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cómo Estudiarlo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../problemas_recomendados_por_semana/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemas por Semana
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rutas_de_lectura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rutas de Lectura
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tabla_maestra_del_tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tabla Maestra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sintesis_por_modulo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Síntesis por Módulo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catálogo de Capítulos
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catálogo de Capítulos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#leyenda-de-etiquetas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Leyenda de etiquetas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-leer-este-catalogo-sin-perder-tiempo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Como leer este catalogo sin perder tiempo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modulo-00-prerrequisitos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modulo 00. Prerrequisitos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modulo-01-fundamentos-conceptuales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modulo 01. Fundamentos conceptuales
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modulo-02-relatividad-y-campos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modulo 02. Relatividad y campos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modulo-03-accion-y-simetrias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modulo 03. Accion y simetrias
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modulo-04-cuantizacion-del-campo-escalar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modulo 04. Cuantizacion del campo escalar
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modulo-05-interacciones-y-perturbaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modulo 05. Interacciones y perturbaciones
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modulo-06-fermiones-y-dirac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modulo 06. Fermiones y Dirac
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modulo-07-gauge-y-qed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modulo 07. Gauge y QED
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modulo-08-integral-de-camino" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modulo 08. Integral de camino
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modulo-09-renormalizacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modulo 09. Renormalizacion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modulo-10-modelo-estandar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modulo 10. Modelo Estandar
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modulo-11-qft-informacion-y-agujeros-negros" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modulo 11. QFT, informacion y agujeros negros
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modulo-12-teorias-de-campo-efectivas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modulo 12. Teorias de campo efectivas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-usar-este-catalogo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Como usar este catalogo
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mapa_de_dependencias_conceptuales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mapa de Dependencias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00_prerrequisitos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    00. Prerrequisitos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_fundamentos_conceptuales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01. Fundamentos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_relatividad_y_campos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02. Relatividad y Campos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_accion_y_simetrias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03. Acción y Simetrías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_cuantizacion_del_campo_escalar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04. Campo Escalar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_interacciones_y_perturbaciones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05. Interacciones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_fermiones_y_dirac/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06. Fermiones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_gauge_y_qed/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07. Gauge y QED
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_integral_de_camino/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08. Integral de Camino
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09_renormalizacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09. Renormalización
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10_modelo_estandar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Modelo Estándar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11_qft_informacion_y_agujeros_negros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. QFT e Información
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12_teorias_de_campo_efectivas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Teorías de Campo Efectivas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Apéndices
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Apéndices
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../99_apendices/bibliografia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bibliografía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../99_apendices/computacion_qft/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Herramientas Computacionales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../99_apendices/errores_comunes_y_recetas_practicas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Errores Comunes y Recetas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../99_apendices/reglas_de_feynman_y_propagadores/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reglas de Feynman y Propagadores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../99_apendices/simetrias_discretas_cpt_y_anomalias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Simetrías Discretas, CPT y Anomalías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../99_apendices/mezcla_de_sabor_ckm_y_pmns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mezcla de Sabor, CKM y PMNS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../99_apendices/anomalia_axial_y_cancelacion_de_anomalias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anomalía Axial y Cancelación de Anomalías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../99_apendices/glosario_notacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glosario de Notación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../99_apendices/convenciones_globales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Convenciones Globales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../99_apendices/plantilla_de_capitulo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plantilla Editorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#leyenda-de-etiquetas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Leyenda de etiquetas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-leer-este-catalogo-sin-perder-tiempo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Como leer este catalogo sin perder tiempo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modulo-00-prerrequisitos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modulo 00. Prerrequisitos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modulo-01-fundamentos-conceptuales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modulo 01. Fundamentos conceptuales
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modulo-02-relatividad-y-campos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modulo 02. Relatividad y campos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modulo-03-accion-y-simetrias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modulo 03. Accion y simetrias
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modulo-04-cuantizacion-del-campo-escalar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modulo 04. Cuantizacion del campo escalar
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modulo-05-interacciones-y-perturbaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modulo 05. Interacciones y perturbaciones
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modulo-06-fermiones-y-dirac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modulo 06. Fermiones y Dirac
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modulo-07-gauge-y-qed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modulo 07. Gauge y QED
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modulo-08-integral-de-camino" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modulo 08. Integral de camino
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modulo-09-renormalizacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modulo 09. Renormalizacion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modulo-10-modelo-estandar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modulo 10. Modelo Estandar
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modulo-11-qft-informacion-y-agujeros-negros" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modulo 11. QFT, informacion y agujeros negros
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modulo-12-teorias-de-campo-efectivas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modulo 12. Teorias de campo efectivas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-usar-este-catalogo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Como usar este catalogo
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="catalogo-de-capitulos-etiquetas-y-prerequisitos">Catalogo de Capitulos, Etiquetas y Prerequisitos</h1>
+<p>Esta pagina sirve como mapa fino del tutorial. Resume cada capitulo con una etiqueta de uso y una recomendacion minima de lectura previa.</p>
+<h2 id="leyenda-de-etiquetas">Leyenda de etiquetas</h2>
+<ul>
+<li><code>fundacional</code>: fija lenguaje o intuicion base.</li>
+<li><code>tecnico</code>: introduce una herramienta formal importante.</li>
+<li><code>puente</code>: conecta dos capas del curso.</li>
+<li><code>avanzado</code>: presupone bastante del recorrido anterior.</li>
+<li><code>opcional</code>: util como ampliacion o consulta, no siempre imprescindible para seguir.</li>
+</ul>
+<h2 id="como-leer-este-catalogo-sin-perder-tiempo">Como leer este catalogo sin perder tiempo</h2>
+<p>Una regla practica bastante buena es esta:</p>
+<ul>
+<li>prioriza <code>fundacional</code> si estas en primera pasada;</li>
+<li>usa <code>puente</code> para no perder continuidad entre modulos;</li>
+<li>deja <code>avanzado</code> y <code>opcional</code> para segunda vuelta o consulta dirigida;</li>
+<li>si dudas, contrasta siempre con los <code>Capitulos imprescindibles en primera pasada</code> del <code>README</code> del modulo correspondiente.</li>
+</ul>
+<h2 id="modulo-00-prerrequisitos">Modulo 00. Prerrequisitos</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Capitulo</th>
+<th style="text-align: left;">Etiquetas</th>
+<th style="text-align: left;">Prerequisitos recomendados</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../00_prerrequisitos/01_relatividad_especial_minima/">Relatividad especial minima</a></td>
+<td style="text-align: left;">fundacional</td>
+<td style="text-align: left;">Ninguno</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../00_prerrequisitos/02_notacion_tensorial_y_convenciones/">Notacion tensorial y convenciones</a></td>
+<td style="text-align: left;">fundacional, tecnico</td>
+<td style="text-align: left;">00.01</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../00_prerrequisitos/03_oscilador_armonico_cuantico/">Oscilador armonico cuantico</a></td>
+<td style="text-align: left;">fundacional, puente</td>
+<td style="text-align: left;">00.01</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../00_prerrequisitos/04_simetrias_y_grupos_basicos/">Simetrias y grupos basicos</a></td>
+<td style="text-align: left;">fundacional</td>
+<td style="text-align: left;">00.01</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../00_prerrequisitos/05_delta_de_dirac_y_transformadas_de_fourier/">Delta de Dirac y transformadas de Fourier</a></td>
+<td style="text-align: left;">fundacional, tecnico</td>
+<td style="text-align: left;">00.02</td>
+</tr>
+</tbody>
+</table>
+<h2 id="modulo-01-fundamentos-conceptuales">Modulo 01. Fundamentos conceptuales</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Capitulo</th>
+<th style="text-align: left;">Etiquetas</th>
+<th style="text-align: left;">Prerequisitos recomendados</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../01_fundamentos_conceptuales/01_conceptos_fundamentales/">Conceptos fundamentales</a></td>
+<td style="text-align: left;">fundacional</td>
+<td style="text-align: left;">00 completo</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../01_fundamentos_conceptuales/02_principios_estructurales_de_la_qft/">Principios estructurales de la QFT</a></td>
+<td style="text-align: left;">fundacional</td>
+<td style="text-align: left;">01.01</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../01_fundamentos_conceptuales/03_que_es_un_campo_cuantico/">Que es un campo cuantico</a></td>
+<td style="text-align: left;">fundacional, puente</td>
+<td style="text-align: left;">01.01, 01.02</td>
+</tr>
+</tbody>
+</table>
+<h2 id="modulo-02-relatividad-y-campos">Modulo 02. Relatividad y campos</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Capitulo</th>
+<th style="text-align: left;">Etiquetas</th>
+<th style="text-align: left;">Prerequisitos recomendados</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../02_relatividad_y_campos/01_choque_entre_mq_y_relatividad/">Choque entre MQ y relatividad</a></td>
+<td style="text-align: left;">fundacional, puente</td>
+<td style="text-align: left;">00.01, 01.01</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../02_relatividad_y_campos/02_campos_localidad_y_causalidad/">Campos, localidad y causalidad</a></td>
+<td style="text-align: left;">fundacional</td>
+<td style="text-align: left;">02.01, 01.02</td>
+</tr>
+</tbody>
+</table>
+<h2 id="modulo-03-accion-y-simetrias">Modulo 03. Accion y simetrias</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Capitulo</th>
+<th style="text-align: left;">Etiquetas</th>
+<th style="text-align: left;">Prerequisitos recomendados</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../03_accion_y_simetrias/01_principio_de_accion_y_ecuaciones_de_campo/">Principio de accion y ecuaciones de campo</a></td>
+<td style="text-align: left;">tecnico, fundacional</td>
+<td style="text-align: left;">02 completo</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03_accion_y_simetrias/02_teorema_de_noether_y_simetria/">Teorema de Noether y simetria</a></td>
+<td style="text-align: left;">tecnico, puente</td>
+<td style="text-align: left;">03.01, 00.04</td>
+</tr>
+</tbody>
+</table>
+<h2 id="modulo-04-cuantizacion-del-campo-escalar">Modulo 04. Cuantizacion del campo escalar</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Capitulo</th>
+<th style="text-align: left;">Etiquetas</th>
+<th style="text-align: left;">Prerequisitos recomendados</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../04_cuantizacion_del_campo_escalar/01_campo_escalar_clasico_y_modos_normales/">Campo escalar clasico y modos normales</a></td>
+<td style="text-align: left;">tecnico, puente</td>
+<td style="text-align: left;">03.01, 00.03, 00.05</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04_cuantizacion_del_campo_escalar/02_cuantizacion_canonica_y_espacio_de_fock/">Cuantizacion canonica y espacio de Fock</a></td>
+<td style="text-align: left;">tecnico, fundacional</td>
+<td style="text-align: left;">04.01</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04_cuantizacion_del_campo_escalar/03_propagador_causalidad_y_funcion_de_green/">Propagador, causalidad y funcion de Green</a></td>
+<td style="text-align: left;">tecnico, puente</td>
+<td style="text-align: left;">04.02, 02.02</td>
+</tr>
+</tbody>
+</table>
+<h2 id="modulo-05-interacciones-y-perturbaciones">Modulo 05. Interacciones y perturbaciones</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Capitulo</th>
+<th style="text-align: left;">Etiquetas</th>
+<th style="text-align: left;">Prerequisitos recomendados</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../05_interacciones_y_perturbaciones/01_teoria_de_perturbaciones_y_matriz_s/">Teoria de perturbaciones y matriz S</a></td>
+<td style="text-align: left;">fundacional, tecnico</td>
+<td style="text-align: left;">04 completo</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../05_interacciones_y_perturbaciones/02_diagramas_de_feynman_y_reglas/">Diagramas de Feynman y reglas</a></td>
+<td style="text-align: left;">tecnico</td>
+<td style="text-align: left;">05.01</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../05_interacciones_y_perturbaciones/03_reduccion_lsz_y_correladores_amputados/">Reduccion LSZ y correladores amputados</a></td>
+<td style="text-align: left;">puente, tecnico</td>
+<td style="text-align: left;">05.01, 05.02, 04.03</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../05_interacciones_y_perturbaciones/04_reglas_de_feynman_resumen_operativo/">Reglas de Feynman: resumen operativo</a></td>
+<td style="text-align: left;">tecnico, opcional</td>
+<td style="text-align: left;">05.02, 05.03</td>
+</tr>
+</tbody>
+</table>
+<h2 id="modulo-06-fermiones-y-dirac">Modulo 06. Fermiones y Dirac</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Capitulo</th>
+<th style="text-align: left;">Etiquetas</th>
+<th style="text-align: left;">Prerequisitos recomendados</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../06_fermiones_y_dirac/01_motivacion_y_ecuacion_de_dirac/">Motivacion y ecuacion de Dirac</a></td>
+<td style="text-align: left;">fundacional, puente</td>
+<td style="text-align: left;">02 completo</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../06_fermiones_y_dirac/02_cuantizacion_de_campos_fermionicos/">Cuantizacion de campos fermionicos</a></td>
+<td style="text-align: left;">tecnico</td>
+<td style="text-align: left;">06.01, 04.02</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../06_fermiones_y_dirac/03_algebra_gamma_y_bilineales_de_dirac/">Algebra gamma y bilineales de Dirac</a></td>
+<td style="text-align: left;">tecnico</td>
+<td style="text-align: left;">06.01</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../06_fermiones_y_dirac/04_corriente_de_dirac_y_limite_no_relativista/">Corriente de Dirac y limite no relativista</a></td>
+<td style="text-align: left;">puente</td>
+<td style="text-align: left;">06.01, 06.03</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../06_fermiones_y_dirac/05_quiralidad_weyl_y_majorana/">Quiralidad, Weyl y Majorana</a></td>
+<td style="text-align: left;">puente, avanzado</td>
+<td style="text-align: left;">06.03, 06.04</td>
+</tr>
+</tbody>
+</table>
+<h2 id="modulo-07-gauge-y-qed">Modulo 07. Gauge y QED</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Capitulo</th>
+<th style="text-align: left;">Etiquetas</th>
+<th style="text-align: left;">Prerequisitos recomendados</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../07_gauge_y_qed/01_simetria_gauge_local_y_derivada_covariante/">Simetria gauge local y derivada covariante</a></td>
+<td style="text-align: left;">fundacional, puente</td>
+<td style="text-align: left;">03.02, 06.04</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../07_gauge_y_qed/02_qed_y_lagrangiano_fundamental/">QED y lagrangiano fundamental</a></td>
+<td style="text-align: left;">tecnico</td>
+<td style="text-align: left;">07.01, 06.03</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../07_gauge_y_qed/03_fijacion_de_gauge_y_propagador_del_foton/">Fijacion de gauge y propagador del foton</a></td>
+<td style="text-align: left;">tecnico</td>
+<td style="text-align: left;">07.02, 05.02</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../07_gauge_y_qed/04_scattering_basico_en_qed/">Scattering basico en QED</a></td>
+<td style="text-align: left;">puente, tecnico</td>
+<td style="text-align: left;">07.03, 05.01</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../07_gauge_y_qed/05_polarizaciones_y_sumas_de_espin/">Polarizaciones y sumas de espin en QED</a></td>
+<td style="text-align: left;">tecnico, avanzado</td>
+<td style="text-align: left;">07.04, 06.03</td>
+</tr>
+</tbody>
+</table>
+<h2 id="modulo-08-integral-de-camino">Modulo 08. Integral de camino</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Capitulo</th>
+<th style="text-align: left;">Etiquetas</th>
+<th style="text-align: left;">Prerequisitos recomendados</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../08_integral_de_camino/01_introduccion_a_la_integral_de_camino/">Introduccion a la integral de camino</a></td>
+<td style="text-align: left;">tecnico, puente</td>
+<td style="text-align: left;">03.01, 04.01</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../08_integral_de_camino/02_funcional_generador_y_correladores/">Funcional generador y correladores</a></td>
+<td style="text-align: left;">tecnico</td>
+<td style="text-align: left;">08.01, 05.03</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../08_integral_de_camino/03_accion_efectiva_y_potencial_efectivo/">Accion efectiva y potencial efectivo</a></td>
+<td style="text-align: left;">tecnico, avanzado</td>
+<td style="text-align: left;">08.02</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../08_integral_de_camino/04_bogoliubov_y_cambio_de_vacio/">Bogoliubov y cambio de vacio</a></td>
+<td style="text-align: left;">puente, avanzado</td>
+<td style="text-align: left;">08.03, 04.02</td>
+</tr>
+</tbody>
+</table>
+<h2 id="modulo-09-renormalizacion">Modulo 09. Renormalizacion</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Capitulo</th>
+<th style="text-align: left;">Etiquetas</th>
+<th style="text-align: left;">Prerequisitos recomendados</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../09_renormalizacion/01_origen_de_las_divergencias_y_regularizacion/">Origen de las divergencias y regularizacion</a></td>
+<td style="text-align: left;">fundacional, tecnico</td>
+<td style="text-align: left;">05.02, 08.02</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../09_renormalizacion/02_renormalizacion_y_grupo_de_renormalizacion/">Renormalizacion y grupo de renormalizacion</a></td>
+<td style="text-align: left;">fundacional, tecnico</td>
+<td style="text-align: left;">09.01</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../09_renormalizacion/03_regularizacion_dimensional_en_phi4/">Regularizacion dimensional en phi4</a></td>
+<td style="text-align: left;">tecnico</td>
+<td style="text-align: left;">09.01, 09.02</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../09_renormalizacion/04_funcion_beta_y_running_couplings/">Funcion beta y running couplings</a></td>
+<td style="text-align: left;">tecnico, puente</td>
+<td style="text-align: left;">09.02, 09.03</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../09_renormalizacion/05_esquema_msbar_y_qed_vs_qcd/">Esquema MSbar y QED vs QCD</a></td>
+<td style="text-align: left;">avanzado</td>
+<td style="text-align: left;">09.04, 07.02</td>
+</tr>
+</tbody>
+</table>
+<h2 id="modulo-10-modelo-estandar">Modulo 10. Modelo Estandar</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Capitulo</th>
+<th style="text-align: left;">Etiquetas</th>
+<th style="text-align: left;">Prerequisitos recomendados</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../10_modelo_estandar/01_lagrangiano_del_modelo_estandar/">Lagrangiano del Modelo Estandar</a></td>
+<td style="text-align: left;">avanzado, panoramico</td>
+<td style="text-align: left;">07 completo, 09 completo</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../10_modelo_estandar/02_sector_gauge_y_estructura_electrodebil/">Sector gauge y estructura electrodébil</a></td>
+<td style="text-align: left;">avanzado</td>
+<td style="text-align: left;">07.01, 07.02, 09.04</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../10_modelo_estandar/03_sector_fermionico_y_quiralidad/">Sector fermionico y quiralidad</a></td>
+<td style="text-align: left;">avanzado</td>
+<td style="text-align: left;">06.05, 10.02</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../10_modelo_estandar/04_mecanismo_de_higgs_y_ruptura_espontanea/">Mecanismo de Higgs y ruptura espontanea</a></td>
+<td style="text-align: left;">avanzado</td>
+<td style="text-align: left;">08.03, 10.02</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../10_modelo_estandar/05_yukawas_masas_y_parametros/">Yukawas, masas y parametros</a></td>
+<td style="text-align: left;">avanzado</td>
+<td style="text-align: left;">10.03, 10.04</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../10_modelo_estandar/06_corrientes_cargadas_y_neutras/">Corrientes cargadas y neutras</a></td>
+<td style="text-align: left;">avanzado</td>
+<td style="text-align: left;">10.02, 10.03, 10.04</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../10_modelo_estandar/07_neutrinos_masas_y_oscilaciones/">Neutrinos, masas y oscilaciones</a></td>
+<td style="text-align: left;">avanzado, puente</td>
+<td style="text-align: left;">10.05, 06.05</td>
+</tr>
+</tbody>
+</table>
+<h2 id="modulo-11-qft-informacion-y-agujeros-negros">Modulo 11. QFT, informacion y agujeros negros</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Capitulo</th>
+<th style="text-align: left;">Etiquetas</th>
+<th style="text-align: left;">Prerequisitos recomendados</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../11_qft_informacion_y_agujeros_negros/01_qft_informacion_y_entrelazamiento/">QFT, informacion y entrelazamiento</a></td>
+<td style="text-align: left;">avanzado, fundacional</td>
+<td style="text-align: left;">08.02</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../11_qft_informacion_y_agujeros_negros/02_agujeros_negros_radiacion_de_hawking_y_paradoja_de_la_informacion/">Agujeros negros, Hawking y paradoja de la informacion</a></td>
+<td style="text-align: left;">avanzado</td>
+<td style="text-align: left;">11.01</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../11_qft_informacion_y_agujeros_negros/03_efecto_unruh_y_vacio_de_rindler/">Efecto Unruh y vacio de Rindler</a></td>
+<td style="text-align: left;">avanzado, puente</td>
+<td style="text-align: left;">08.04, 11.01</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../11_qft_informacion_y_agujeros_negros/04_curva_de_page_y_unitaridad/">Curva de Page y unitaridad</a></td>
+<td style="text-align: left;">avanzado</td>
+<td style="text-align: left;">11.02, 11.03</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../11_qft_informacion_y_agujeros_negros/05_islas_y_entropia_generalizada/">Islas y entropia generalizada</a></td>
+<td style="text-align: left;">avanzado</td>
+<td style="text-align: left;">11.04</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../11_qft_informacion_y_agujeros_negros/06_holografia_y_reconstruccion_de_informacion/">Holografia y reconstruccion de informacion</a></td>
+<td style="text-align: left;">avanzado, opcional</td>
+<td style="text-align: left;">11.05</td>
+</tr>
+</tbody>
+</table>
+<h2 id="modulo-12-teorias-de-campo-efectivas">Modulo 12. Teorias de campo efectivas</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Capitulo</th>
+<th style="text-align: left;">Etiquetas</th>
+<th style="text-align: left;">Prerequisitos recomendados</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../12_teorias_de_campo_efectivas/01_integrando_grados_de_libertad/">Integrando grados de libertad</a></td>
+<td style="text-align: left;">fundacional, avanzado</td>
+<td style="text-align: left;">09.02</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../12_teorias_de_campo_efectivas/02_teoria_de_fermi_como_eft/">Teoria de Fermi como EFT</a></td>
+<td style="text-align: left;">puente</td>
+<td style="text-align: left;">12.01, 10.06</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../12_teorias_de_campo_efectivas/03_euler_heisenberg_y_operadores_efectivos/">Euler-Heisenberg y operadores efectivos</a></td>
+<td style="text-align: left;">avanzado</td>
+<td style="text-align: left;">12.01, 07.04</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../12_teorias_de_campo_efectivas/04_gravedad_como_teoria_efectiva/">Gravedad como teoria efectiva</a></td>
+<td style="text-align: left;">avanzado, opcional</td>
+<td style="text-align: left;">12.01, 11.02</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../12_teorias_de_campo_efectivas/05_smeft_y_operador_de_weinberg/">SMEFT y operador de Weinberg</a></td>
+<td style="text-align: left;">avanzado</td>
+<td style="text-align: left;">10 completo, 12.01</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../12_teorias_de_campo_efectivas/06_majorana_y_mecanismo_seesaw/">Majorana y mecanismo seesaw</a></td>
+<td style="text-align: left;">avanzado</td>
+<td style="text-align: left;">06.05, 10.07, 12.05</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../12_teorias_de_campo_efectivas/07_doble_beta_sin_neutrinos/">Doble beta sin neutrinos</a></td>
+<td style="text-align: left;">avanzado, opcional</td>
+<td style="text-align: left;">12.06</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../12_teorias_de_campo_efectivas/08_matching_uv_y_coeficientes_de_wilson/">Matching UV y coeficientes de Wilson</a></td>
+<td style="text-align: left;">avanzado, tecnico</td>
+<td style="text-align: left;">12.01, 12.05</td>
+</tr>
+</tbody>
+</table>
+<h2 id="como-usar-este-catalogo">Como usar este catalogo</h2>
+<ul>
+<li>Si dudas si un capitulo es para primera lectura, mira primero su etiqueta.</li>
+<li>Si quieres entrar por un tema concreto, usa la columna de prerequisitos para evitar saltos demasiado bruscos.</li>
+<li>Si quieres una secuencia ya preparada, consulta tambien <a href="../rutas_de_lectura/">Rutas de lectura</a>.</li>
+<li>Si quieres transformar la eleccion de capitulos en un plan semanal, consulta <a href="../problemas_recomendados_por_semana/">Problemas recomendados por semana</a>.</li>
+</ul>
+<hr />
+<p><a href="../">Volver al indice del tutorial</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.expand", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+        <script src="../../javascripts/mermaid-init.js"></script>
+      
+    
+  </body>
+</html>

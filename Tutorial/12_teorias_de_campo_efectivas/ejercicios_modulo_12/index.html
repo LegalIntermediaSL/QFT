@@ -1,0 +1,1430 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Tutorial completo sobre Teoría Cuántica de Campos">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Ejercicios del Modulo 12: Teorias de Campo Efectivas - QFT Tutorial</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ejercicios-del-modulo-12-teorias-de-campo-efectivas" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="QFT Tutorial" class="md-header__button md-logo" aria-label="QFT Tutorial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            QFT Tutorial
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Ejercicios del Modulo 12: Teorias de Campo Efectivas
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="QFT Tutorial" class="md-nav__button md-logo" aria-label="QFT Tutorial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    QFT Tutorial
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutorial
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tutorial
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Índice
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../como_estudiar_este_tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cómo Estudiarlo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../problemas_recomendados_por_semana/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemas por Semana
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rutas_de_lectura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rutas de Lectura
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tabla_maestra_del_tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tabla Maestra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sintesis_por_modulo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Síntesis por Módulo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../catalogo_de_capitulos_y_etiquetas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catálogo de Capítulos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mapa_de_dependencias_conceptuales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mapa de Dependencias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../00_prerrequisitos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    00. Prerrequisitos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_fundamentos_conceptuales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01. Fundamentos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_relatividad_y_campos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02. Relatividad y Campos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_accion_y_simetrias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03. Acción y Simetrías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_cuantizacion_del_campo_escalar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04. Campo Escalar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05_interacciones_y_perturbaciones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05. Interacciones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06_fermiones_y_dirac/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06. Fermiones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07_gauge_y_qed/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07. Gauge y QED
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../08_integral_de_camino/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08. Integral de Camino
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../09_renormalizacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09. Renormalización
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../10_modelo_estandar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Modelo Estándar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../11_qft_informacion_y_agujeros_negros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. QFT e Información
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Teorías de Campo Efectivas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Apéndices
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Apéndices
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/bibliografia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bibliografía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/computacion_qft/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Herramientas Computacionales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/errores_comunes_y_recetas_practicas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Errores Comunes y Recetas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/reglas_de_feynman_y_propagadores/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reglas de Feynman y Propagadores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/simetrias_discretas_cpt_y_anomalias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Simetrías Discretas, CPT y Anomalías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/mezcla_de_sabor_ckm_y_pmns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mezcla de Sabor, CKM y PMNS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/anomalia_axial_y_cancelacion_de_anomalias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anomalía Axial y Cancelación de Anomalías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/glosario_notacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glosario de Notación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/convenciones_globales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Convenciones Globales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/plantilla_de_capitulo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plantilla Editorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-1-verificacion-nivel-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloque 1: Verificacion (Nivel 1)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-2-derivacion-guiada-nivel-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloque 2: Derivacion guiada (Nivel 2)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-3-sintesis-nivel-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloque 3: Sintesis (Nivel 3)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#soluciones-sugeridas-bloque-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Soluciones sugeridas (Bloque 1)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navegacion-del-tutorial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Navegacion del tutorial
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="ejercicios-del-modulo-12-teorias-de-campo-efectivas">Ejercicios del Modulo 12: Teorias de Campo Efectivas</h1>
+<p><strong>Modulo:</strong> 12 — Teorias de Campo Efectivas (EFT)<br />
+<strong>Nivel:</strong> Avanzado<br />
+<strong>Cuadernos de apoyo:</strong><br />
+- <code>../../Cuadernos/ejemplos/15_operadores_efectivos_y_power_counting.ipynb</code><br />
+- <code>../../Cuadernos/problemas_resueltos/17_fermi_y_matching_efectivo.ipynb</code><br />
+- <code>../../Cuadernos/ejemplos/18_smeft_y_operador_de_weinberg.ipynb</code><br />
+- <code>../../Cuadernos/problemas_resueltos/19_matching_uv_a_smeft.ipynb</code><br />
+- <code>../../Cuadernos/ejemplos/20_majorana_y_seesaw.ipynb</code></p>
+<h2 id="bloque-1-verificacion-nivel-1">Bloque 1: Verificacion (Nivel 1)</h2>
+<p><strong>1.1</strong> El power counting de Weinberg clasifica los operadores de una EFT segun su dimension de masa. En <span class="arithmatex">\(d=4\)</span>, un operador de dimension <span class="arithmatex">\(n\)</span> produce efectos de orden <span class="arithmatex">\((E/\Lambda)^{n-4}\)</span> donde <span class="arithmatex">\(\Lambda\)</span> es la escala de corte. Clasifica los siguientes operadores en relevantes (<span class="arithmatex">\(n&lt;4\)</span>), marginales (<span class="arithmatex">\(n=4\)</span>) o irrelevantes (<span class="arithmatex">\(n&gt;4\)</span>): <span class="arithmatex">\(\phi^2\)</span> (dimension 2), <span class="arithmatex">\((\partial\phi)^2\)</span> (dimension 4), <span class="arithmatex">\(\phi^6\)</span> (dimension 6), <span class="arithmatex">\((\bar\psi\psi)^2\)</span> (dimension 6).</p>
+<p><strong>1.2</strong> La teoria de Fermi describe las desintegraciones debiles a energias <span class="arithmatex">\(E\ll M_W\)</span> mediante el operador efectivo de dimension 6:
+$<span class="arithmatex">\(\mathcal{O}_F = \frac{G_F}{\sqrt{2}}(\bar\nu_e\gamma^\mu P_L e)(\bar u\gamma_\mu P_L d) + \text{h.c.}\)</span>$
+con <span class="arithmatex">\(G_F/\sqrt{2} = g^2/(8M_W^2)\)</span>. Calcula <span class="arithmatex">\(G_F\)</span> numericamente usando <span class="arithmatex">\(g\approx 0.65\)</span> y <span class="arithmatex">\(M_W\approx 80\)</span> GeV. Compara con el valor experimental <span class="arithmatex">\(G_F\approx 1.17\times 10^{-5}\)</span> GeV<span class="arithmatex">\(^{-2}\)</span>.</p>
+<p><strong>1.3</strong> El operador de Weinberg <span class="arithmatex">\(\mathcal{O}_5 = \frac{c}{\Lambda}(\overline{L^c}\tilde H)(\tilde H^T L)\)</span> es el unico operador de dimension 5 del SMEFT (invariante bajo el grupo gauge del Modelo Estandar). Tras la ruptura de simetria electrodebil, genera una masa de Majorana para el neutrino:
+$<span class="arithmatex">\(m_\nu \sim \frac{cv^2}{\Lambda}.\)</span>$
+Para <span class="arithmatex">\(c\sim 1\)</span> y <span class="arithmatex">\(m_\nu\sim 0.1\)</span> eV, estima la escala <span class="arithmatex">\(\Lambda\)</span>. Comenta el resultado en relacion con la escala de GUT.</p>
+<p><strong>1.4</strong> El mecanismo seesaw de tipo I introduce neutrinos de Majorana pesados <span class="arithmatex">\(N_R\)</span> con masa <span class="arithmatex">\(M\gg v\)</span>. La matriz de masa de neutrinos ligeros es <span class="arithmatex">\(m_\nu\approx -m_D^T M^{-1} m_D\)</span> donde <span class="arithmatex">\(m_D\)</span> es la masa de Dirac. Verifica dimensionalmente que si <span class="arithmatex">\(m_D\sim m_t\sim 173\)</span> GeV y <span class="arithmatex">\(m_\nu\sim 0.1\)</span> eV, entonces <span class="arithmatex">\(M\sim 10^{15}\)</span> GeV.</p>
+<p><strong>1.5</strong> La lagrangiana de Euler-Heisenberg describe la interaccion entre fotones a bajas energias (<span class="arithmatex">\(\omega\ll m_e\)</span>) tras integrar el electron:
+$<span class="arithmatex">\(\mathcal{L}_{\text{EH}} = \frac{\alpha^2}{90m_e^4}\left[4(F_{\mu\nu}F^{\mu\nu})^2 + 7(F_{\mu\nu}\tilde F^{\mu\nu})^2\right].\)</span>$
+Identifica la escala de supresion <span class="arithmatex">\(\Lambda = m_e\)</span> y el operador de dimension 8 involucrado. Explica por que esta interaccion es muy debil a energias opticas (<span class="arithmatex">\(\omega\sim\text{eV}\ll m_e\)</span>).</p>
+<hr />
+<h2 id="bloque-2-derivacion-guiada-nivel-2">Bloque 2: Derivacion guiada (Nivel 2)</h2>
+<p><strong>2.1</strong> Matching en la teoria de Fermi. Calcula la amplitud de dispersion <span class="arithmatex">\(\bar\nu_e e^- \to \bar u d\)</span> en el Modelo Estandar a orden arbol intercambiando un <span class="arithmatex">\(W\)</span>:
+- (a) Escribe la amplitud en el limite <span class="arithmatex">\(q^2\ll M_W^2\)</span>.
+- (b) Aproxima el propagador del <span class="arithmatex">\(W\)</span>: <span class="arithmatex">\(1/(q^2-M_W^2)\approx -1/M_W^2\)</span>.
+- (c) Identifica el coeficiente Wilson efectivo resultante y verifica que <span class="arithmatex">\(C = g^2/(8M_W^2) = G_F/\sqrt{2}\)</span>.</p>
+<p><strong>2.2</strong> Power counting en gravedad como EFT. La lagrangiana de Einstein-Hilbert expandida alrededor del espacio plano produce un expansion en potencias de <span class="arithmatex">\(E/M_{\text{Pl}}\)</span>:
+$<span class="arithmatex">\(\mathcal{L}_{\text{grav}} = M_{\text{Pl}}^2 R = M_{\text{Pl}}^2\left[\partial h\partial h + h(\partial h)^2/M_{\text{Pl}} + \cdots\right].\)</span>$
+- (a) Identifica el propagador del graviton (<span class="arithmatex">\(E^{-2}\)</span>) y el vertice de tres gravitones (<span class="arithmatex">\(\propto E^2/M_{\text{Pl}}\)</span>).
+- (b) Muestra que un loop de gravitones produce correcciones de orden <span class="arithmatex">\((E/M_{\text{Pl}})^2\)</span>.
+- (c) Explica por que la gravedad es perturbativamente tratable para <span class="arithmatex">\(E\ll M_{\text{Pl}}\)</span> pero no unitaria a <span class="arithmatex">\(E\sim M_{\text{Pl}}\)</span>.</p>
+<p><strong>2.3</strong> Coeficientes de Wilson y operadores del SMEFT. El SMEFT organiza las desviaciones del Modelo Estandar en operadores de dimension <span class="arithmatex">\(d\geq 5\)</span>:
+$<span class="arithmatex">\(\mathcal{L}_{\text{SMEFT}} = \mathcal{L}_{\text{SM}} + \sum_i \frac{C_i^{(6)}}{\Lambda^2}\mathcal{O}_i^{(6)} + \cdots\)</span>$
+- (a) Escribe el operador de cuatro fermiones <span class="arithmatex">\((\bar q_L\gamma^\mu q_L)(\bar q_L\gamma_\mu q_L)\)</span> e identifica su dimension de masa.
+- (b) Explica como las mediciones de precision electrodebil en LEP ponen limites sobre <span class="arithmatex">\(C_i/\Lambda^2\)</span>.
+- (c) Discute como el LHC complementa esas mediciones con busquedas directas de resonancias a escala <span class="arithmatex">\(\Lambda\)</span>.</p>
+<hr />
+<h2 id="bloque-3-sintesis-nivel-3">Bloque 3: Sintesis (Nivel 3)</h2>
+<p><strong>3.1</strong> El mecanismo seesaw como EFT. El seesaw tipo I tiene una teoria UV completa (Modelo Estandar + <span class="arithmatex">\(N_R\)</span>) y una EFT a bajas energias (el operador de Weinberg). Al integrar <span class="arithmatex">\(N_R\)</span> con masa <span class="arithmatex">\(M\)</span>:
+- Realiza el matching explicito al nivel de arboles: muestra que el coeficiente del operador de Weinberg es <span class="arithmatex">\(c/\Lambda = y_\nu^T M^{-1} y_\nu\)</span>.
+- Explica como la fenomenologia de oscilaciones de neutrinos (que mide <span class="arithmatex">\(\Delta m^2\)</span>) solo puede determinar combinaciones de <span class="arithmatex">\(y_\nu\)</span> y <span class="arithmatex">\(M\)</span>, no los parametros individuales.
+- Discute que evidencia observacional apuntaria directamente a la escala <span class="arithmatex">\(M\)</span> del seesaw.</p>
+<p><strong>3.2</strong> EFT y el limite del Modelo Estandar. El Modelo Estandar puede interpretarse como la EFT mas general invariante bajo <span class="arithmatex">\(SU(3)\times SU(2)\times U(1)\)</span> y renormalizable.
+- Clasifica los operadores del SMEFT de dimension 6 segun si modifican el sector gauge, el sector fermionico o el sector de Higgs.
+- Explica por que ausencia de deviaciones en la fenomenologia de precision implica <span class="arithmatex">\(\Lambda\gg v\)</span> o coeficientes de Wilson muy pequenos, no la ausencia de fisica nueva.
+- Conecta con el problema de la jerarquia del modulo 09: el hecho de que <span class="arithmatex">\(m_H\ll M_{\text{Pl}}\)</span> requiere ajuste fino de coeficientes en la EFT.</p>
+<hr />
+<h2 id="soluciones-sugeridas-bloque-1">Soluciones sugeridas (Bloque 1)</h2>
+<p><strong>1.1</strong> Relevantes: <span class="arithmatex">\(\phi^2\)</span> (<span class="arithmatex">\(n=2\)</span>). Marginales: <span class="arithmatex">\((\partial\phi)^2\)</span> (<span class="arithmatex">\(n=4\)</span>). Irrelevantes: <span class="arithmatex">\(\phi^6\)</span> (<span class="arithmatex">\(n=6\)</span>), <span class="arithmatex">\((\bar\psi\psi)^2\)</span> (<span class="arithmatex">\(n=6\)</span>).</p>
+<p><strong>1.2</strong> <span class="arithmatex">\(G_F/\sqrt{2} = (0.65)^2/(8\cdot(80)^2)\approx 8.3\times 10^{-6}\)</span> GeV<span class="arithmatex">\(^{-2}\)</span>. Acuerdo razonable con <span class="arithmatex">\(1.17\times 10^{-5}\)</span> GeV<span class="arithmatex">\(^{-2}\)</span> (la diferencia incluye correcciones radiativas).</p>
+<p><strong>1.3</strong> <span class="arithmatex">\(\Lambda\sim cv^2/m_\nu\sim (246)^2/(0.1\times 10^{-9})\sim 6\times 10^{14}\)</span> GeV <span class="arithmatex">\(\sim 10^{15}\)</span> GeV. Cercano a la escala de GUT, lo que es una coincidencia sugestiva.</p>
+<p><strong>1.4</strong> <span class="arithmatex">\(M\sim m_D^2/m_\nu\sim (173\text{ GeV})^2/(0.1\text{ eV})\sim 3\times 10^{14}\)</span> GeV <span class="arithmatex">\(\sim 10^{14}\)</span>–<span class="arithmatex">\(10^{15}\)</span> GeV.</p>
+<p><strong>1.5</strong> La supresion es <span class="arithmatex">\((\omega/m_e)^4\sim (1\text{ eV}/0.5\text{ MeV})^4\sim 10^{-24}\)</span>: la interaccion luz-luz es completamente despreciable a energias opticas.</p>
+<hr />
+<h2 id="navegacion-del-tutorial">Navegacion del tutorial</h2>
+<p><a href="../08_matching_uv_y_coeficientes_de_wilson/">(anterior) Matching UV y Coeficientes de Wilson</a> | <a href="../../">(volver al inicio) Tutorial QFT</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "navigation.expand", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+        <script src="../../../javascripts/mermaid-init.js"></script>
+      
+    
+  </body>
+</html>

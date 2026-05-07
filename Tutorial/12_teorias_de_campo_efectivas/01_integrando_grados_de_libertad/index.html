@@ -1,0 +1,1652 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Tutorial completo sobre Teoría Cuántica de Campos">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Integrando grados de libertad - QFT Tutorial</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#integrando-grados-de-libertad" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="QFT Tutorial" class="md-header__button md-logo" aria-label="QFT Tutorial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            QFT Tutorial
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Integrando grados de libertad
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="QFT Tutorial" class="md-nav__button md-logo" aria-label="QFT Tutorial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    QFT Tutorial
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutorial
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tutorial
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Índice
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../como_estudiar_este_tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cómo Estudiarlo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../problemas_recomendados_por_semana/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemas por Semana
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rutas_de_lectura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rutas de Lectura
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tabla_maestra_del_tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tabla Maestra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sintesis_por_modulo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Síntesis por Módulo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../catalogo_de_capitulos_y_etiquetas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catálogo de Capítulos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mapa_de_dependencias_conceptuales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mapa de Dependencias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../00_prerrequisitos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    00. Prerrequisitos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_fundamentos_conceptuales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01. Fundamentos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_relatividad_y_campos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02. Relatividad y Campos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_accion_y_simetrias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03. Acción y Simetrías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_cuantizacion_del_campo_escalar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04. Campo Escalar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05_interacciones_y_perturbaciones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05. Interacciones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06_fermiones_y_dirac/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06. Fermiones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07_gauge_y_qed/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07. Gauge y QED
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../08_integral_de_camino/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08. Integral de Camino
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../09_renormalizacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09. Renormalización
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../10_modelo_estandar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Modelo Estándar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../11_qft_informacion_y_agujeros_negros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. QFT e Información
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Teorías de Campo Efectivas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Apéndices
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Apéndices
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/bibliografia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bibliografía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/computacion_qft/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Herramientas Computacionales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/errores_comunes_y_recetas_practicas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Errores Comunes y Recetas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/reglas_de_feynman_y_propagadores/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reglas de Feynman y Propagadores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/simetrias_discretas_cpt_y_anomalias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Simetrías Discretas, CPT y Anomalías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/mezcla_de_sabor_ckm_y_pmns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mezcla de Sabor, CKM y PMNS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/anomalia_axial_y_cancelacion_de_anomalias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anomalía Axial y Cancelación de Anomalías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/glosario_notacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glosario de Notación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/convenciones_globales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Convenciones Globales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../99_apendices/plantilla_de_capitulo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plantilla Editorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-proposito" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Proposito
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-la-intuicion-fisica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. La intuicion fisica
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-ejemplo-minimo-con-campo-ligero-y-pesado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Ejemplo minimo con campo ligero y pesado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-integral-de-camino-y-accion-efectiva" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Integral de camino y accion efectiva
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-integrar-no-es-olvidar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Integrar no es olvidar
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-expansion-en-operadores-efectivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Expansion en operadores efectivos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-power-counting-y-supresion-por-escala" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Power counting y supresion por escala
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-ejemplo-de-eliminacion-clasica-del-campo-pesado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Ejemplo de eliminacion clasica del campo pesado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-desacoplamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Desacoplamiento
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-ejemplo-corto-de-lectura" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Ejemplo corto de lectura
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-donde-aparece-esta-idea-en-fisica-real" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Donde aparece esta idea en fisica real
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cuaderno-asociado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cuaderno asociado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-advertencias-utiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Advertencias utiles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-preguntas-de-comprobacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Preguntas de comprobacion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicios-sugeridos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejercicios sugeridos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-referencias-y-lecturas-recomendadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. Referencias y lecturas recomendadas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navegacion-del-tutorial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Navegacion del tutorial
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="integrando-grados-de-libertad">Integrando grados de libertad</h1>
+<p><strong>Nivel:</strong> Avanzado<br />
+<strong>Dificultad:</strong> Alta<br />
+<strong>Tiempo estimado:</strong> 25-35 min<br />
+<strong>Prerequisitos recomendados:</strong> <a href="../../11_qft_informacion_y_agujeros_negros/">Modulo anterior</a> · <a href="../">Resumen del modulo</a></p>
+<h2 id="1-proposito">1. Proposito</h2>
+<p>Este documento introduce el corazon conceptual de una teoria de campo efectiva: describir fisica a baja energia sin retener explicitamente todos los grados de libertad microscopicos.</p>
+<h2 id="2-la-intuicion-fisica">2. La intuicion fisica</h2>
+<p>Si un experimento opera a energias <span class="arithmatex">\(E \ll \Lambda\)</span>, no puede producir de forma real estados con masa del orden de <span class="arithmatex">\(\Lambda\)</span>. Esos estados pesados no desaparecen por completo, pero su efecto puede resumirse en correcciones locales para los campos ligeros.</p>
+<p>La idea es muy parecida a muchas aproximaciones de la fisica:</p>
+<ul>
+<li>no hace falta seguir cada molecula para describir hidrodinamica;</li>
+<li>no hace falta seguir cada detalle del nucleo para escribir una teoria atomica efectiva;</li>
+<li>no hace falta retener todas las particulas pesadas para describir fisica IR.</li>
+</ul>
+<h2 id="3-ejemplo-minimo-con-campo-ligero-y-pesado">3. Ejemplo minimo con campo ligero y pesado</h2>
+<p>Consideremos una teoria con un campo ligero <span class="arithmatex">\(\phi\)</span> y un campo pesado <span class="arithmatex">\(\Phi\)</span>:</p>
+<div class="arithmatex">\[
+\mathcal{L} = \frac{1}{2}(\partial \phi)^2 - \frac{1}{2}m^2 \phi^2
++ \frac{1}{2}(\partial \Phi)^2 - \frac{1}{2}M^2 \Phi^2
+- g\, \Phi \phi^2,
+\]</div>
+<p>con <span class="arithmatex">\(M \gg m\)</span>.</p>
+<p>Si trabajamos a energias mucho menores que <span class="arithmatex">\(M\)</span>, el campo <span class="arithmatex">\(\Phi\)</span> no se produce como particula real. Sin embargo, al intercambiarse virtualmente induce una interaccion efectiva entre campos ligeros.</p>
+<h2 id="4-integral-de-camino-y-accion-efectiva">4. Integral de camino y accion efectiva</h2>
+<p>En el formalismo funcional:</p>
+<div class="arithmatex">\[
+Z[J] = \int \mathcal{D}\phi \, \mathcal{D}\Phi \;
+\exp\!\left(iS[\phi,\Phi] + i \int d^4x\, J\phi \right).
+\]</div>
+<p>Definimos una accion efectiva para el campo ligero integrando el campo pesado:</p>
+<div class="arithmatex">\[
+\exp\!\left(iS_{\mathrm{eff}}[\phi]\right)
+= \int \mathcal{D}\Phi \; \exp\!\left(iS[\phi,\Phi]\right).
+\]</div>
+<p>La teoria resultante ya no contiene <span class="arithmatex">\(\Phi\)</span> de forma explicita, pero si retiene sus efectos en una expansion en operadores locales.</p>
+<p>Si el campo pesado aparece de manera cuadratica o casi cuadratica, esta integracion puede hacerse exactamente o en expansion controlada. En lenguaje menos tecnico: no estamos "adivinando" la EFT, sino derivandola a partir de la teoria completa bajo el supuesto clave de separacion de escalas.</p>
+<h2 id="5-integrar-no-es-olvidar">5. Integrar no es olvidar</h2>
+<p>Una confusion comun es pensar que integrar un grado de libertad pesado equivale a negar su existencia. No es asi. Integrarlo significa:</p>
+<ul>
+<li>dejar de describirlo como una excitacion explicita en el espectro accesible;</li>
+<li>conservar su huella en coeficientes y operadores efectivos;</li>
+<li>reorganizar la teoria para energias donde ese grado de libertad no puede ponerse on-shell.</li>
+</ul>
+<p>En particular, una particula pesada puede seguir afectando fuertemente:</p>
+<ul>
+<li>masas y acoplamientos renormalizados;</li>
+<li>procesos virtuales;</li>
+<li>simetrias efectivas del sector ligero.</li>
+</ul>
+<h2 id="6-expansion-en-operadores-efectivos">6. Expansion en operadores efectivos</h2>
+<p>La forma general de la densidad lagrangiana efectiva es</p>
+<div class="arithmatex">\[
+\mathcal{L}_{\mathrm{eff}}
+= \mathcal{L}_{d\leq 4}
++ \sum_{n&gt;4}\frac{c_n}{\Lambda^{\,n-4}}\mathcal{O}_n,
+\]</div>
+<p>donde <span class="arithmatex">\(\Lambda\)</span> representa la escala pesada relevante y <span class="arithmatex">\(\mathcal{O}_n\)</span> es un operador de dimension de masa <span class="arithmatex">\(n\)</span>.</p>
+<p>Esto organiza la teoria de forma muy poderosa:</p>
+<ul>
+<li>operadores relevantes: <span class="arithmatex">\(d&lt;4\)</span>;</li>
+<li>operadores marginales: <span class="arithmatex">\(d=4\)</span>;</li>
+<li>operadores irrelevantes: <span class="arithmatex">\(d&gt;4\)</span>.</li>
+</ul>
+<p>A bajas energias, los operadores irrelevantes quedan suprimidos por potencias de <span class="arithmatex">\(E/\Lambda\)</span>.</p>
+<p>Esta expansion no es solo una lista de correcciones. Es una jerarquia organizada por simetria y dimension. Si dos operadores tienen la misma dimension, las simetrias del problema y el detalle de la UV completion determinan cual aparece y con que coeficiente.</p>
+<h2 id="7-power-counting-y-supresion-por-escala">7. Power counting y supresion por escala</h2>
+<p>Si un operador tiene dimension seis, su contribucion tipica aparece como</p>
+<div class="arithmatex">\[
+\frac{1}{\Lambda^2}\mathcal{O}_6.
+\]</div>
+<p>Eso significa que sus efectos relativos suelen escalar como</p>
+<div class="arithmatex">\[
+\left(\frac{E}{\Lambda}\right)^2.
+\]</div>
+<p>Pedagogicamente, esta es una de las ideas mas importantes del modulo: la EFT no ignora nueva fisica UV, sino que organiza de forma controlada cuan visible es a la escala de interes.</p>
+<p>Conviene no interpretar esta estimacion como una ley exacta independiente del proceso. El factor <span class="arithmatex">\((E/\Lambda)^2\)</span> da el orden de magnitud esperado, pero el tamaño real tambien depende de:</p>
+<ul>
+<li>el coeficiente de Wilson del operador;</li>
+<li>factores cinematicos adicionales;</li>
+<li>simetrias que puedan anular o suprimir ciertos terminos;</li>
+<li>si el observable aparece ya a nivel arbol o solo a lazo.</li>
+</ul>
+<h2 id="8-ejemplo-de-eliminacion-clasica-del-campo-pesado">8. Ejemplo de eliminacion clasica del campo pesado</h2>
+<p>En el ejemplo con</p>
+<div class="arithmatex">\[
+\mathcal{L}_{\text{int}} = -g\,\Phi \phi^2,
+\]</div>
+<p>si buscamos la ecuacion de movimiento clasica del campo pesado y despreciamos derivadas frente a <span class="arithmatex">\(M^2\)</span>, obtenemos esquematicamente</p>
+<div class="arithmatex">\[
+\Phi \approx -\frac{g}{M^2}\phi^2.
+\]</div>
+<p>Al sustituir esta solucion de vuelta en el lagrangiano, aparece un operador efectivo del tipo</p>
+<div class="arithmatex">\[
+\Delta \mathcal{L}_{\mathrm{eff}} \sim \frac{g^2}{M^2}\phi^4.
+\]</div>
+<p>Esta cuenta no reemplaza la derivacion funcional completa, pero comunica muy bien la logica del desacoplamiento: el propagador pesado se colapsa en una interaccion local cuando el momento transferido es pequeño comparado con <span class="arithmatex">\(M\)</span>.</p>
+<h2 id="9-desacoplamiento">9. Desacoplamiento</h2>
+<p>El teorema de Appelquist-Carazzone resume la intuicion de que, en muchas teorias renormalizables, los grados de libertad muy pesados desacoplan de la fisica IR salvo por:</p>
+<ul>
+<li>redefiniciones de parametros ligeros;</li>
+<li>correcciones locales suprimidas por potencias de la escala pesada.</li>
+</ul>
+<p>Ese desacoplamiento no es magia: nace de la combinacion entre simetrias, expansion en momentos y separacion clara de escalas.</p>
+<p>Tambien conviene registrar el matiz importante: no todo grado de libertad pesado desacopla de manera ingenua. Si su masa esta ligada a la ruptura de una simetria o a una estructura anomala, pueden sobrevivir efectos menos triviales en bajas energias. Por eso el desacoplamiento debe leerse como principio muy poderoso, pero no como reflejo automatico sin revisar la estructura teorica.</p>
+<h2 id="10-ejemplo-corto-de-lectura">10. Ejemplo corto de lectura</h2>
+<p>Si una particula pesada de masa <span class="arithmatex">\(M\)</span> media una interaccion entre campos ligeros, a energias muy por debajo de <span class="arithmatex">\(M\)</span> no necesitamos seguir su propagador completo. Su efecto dominante se puede reemplazar por un contacto local mas coeficientes suprimidos por <span class="arithmatex">\(1/M^2\)</span>, <span class="arithmatex">\(1/M^4\)</span>, etc.</p>
+<h2 id="11-donde-aparece-esta-idea-en-fisica-real">11. Donde aparece esta idea en fisica real</h2>
+<p>La idea de integrar grados de libertad aparece en casi todos los grandes ejemplos modernos:</p>
+<ul>
+<li>la teoria de Fermi al eliminar el boson <span class="arithmatex">\(W\)</span> a bajas energias;</li>
+<li>el lagrangiano de Euler-Heisenberg al integrar electrones en procesos de fotones suaves;</li>
+<li>SMEFT al parametrizar nueva fisica pesada por encima de la escala electrodébil;</li>
+<li>gravedad efectiva al organizar correcciones de energia baja a la relatividad general.</li>
+</ul>
+<p>Por eso este lenguaje no es una tecnica marginal, sino una forma estandar de pensar en QFT contemporanea.</p>
+<h2 id="cuaderno-asociado">Cuaderno asociado</h2>
+<ul>
+<li><code>../../Cuadernos/ejemplos/15_operadores_efectivos_y_power_counting.ipynb</code>: usarlo para fijar el conteo dimensional y la lectura de operadores efectivos segun la escala de corte.</li>
+</ul>
+<h2 id="13-advertencias-utiles">13. Advertencias utiles</h2>
+<ul>
+<li>Integrar un campo pesado no siempre significa simplemente "borrarlo"; significa resumir su efecto en nuevos operadores y coeficientes.</li>
+<li>La expansion efectiva depende de la jerarquia de escalas. Si <span class="arithmatex">\(E\)</span> deja de ser pequeño frente a <span class="arithmatex">\(\Lambda\)</span>, la EFT pierde control.</li>
+<li>No toda EFT es perturbativamente simple, pero casi siempre sigue siendo una organizacion muy util.</li>
+</ul>
+<h2 id="14-preguntas-de-comprobacion">14. Preguntas de comprobacion</h2>
+<ul>
+<li>Que significa integrar grados de libertad pesados.</li>
+<li>Por que aparecen operadores de dimension mayor que cuatro.</li>
+<li>Como se estima la importancia de un operador usando <span class="arithmatex">\(E/\Lambda\)</span>.</li>
+</ul>
+<h2 id="ejercicios-sugeridos">Ejercicios sugeridos</h2>
+<ol>
+<li>Explicar por que eliminar grados de libertad pesados no significa ignorar sus efectos a baja energia.</li>
+<li>Describir como el cociente <span class="arithmatex">\(E/\Lambda\)</span> organiza la relevancia de operadores efectivos.</li>
+<li>Comparar la idea general de EFT con alguno de los ejemplos citados en el capitulo.</li>
+</ol>
+<h2 id="15-referencias-y-lecturas-recomendadas">15. Referencias y lecturas recomendadas</h2>
+<ul>
+<li>Base: notas introductorias sobre EFT y desacoplamiento.</li>
+<li>Complementaria: Burgess, introducciones pedagogicas a EFT.</li>
+<li>Profundizacion: textos sobre matching funcional y expansion de operadores.</li>
+</ul>
+<hr />
+<h2 id="navegacion-del-tutorial">Navegacion del tutorial</h2>
+<p><a href="../../11_qft_informacion_y_agujeros_negros/04_curva_de_page_y_unitaridad/">(anterior) Curva de Page y Unitaridad</a> | <a href="../02_teoria_de_fermi_como_eft/">(siguiente) Teoria de Fermi como EFT</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "navigation.expand", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+        <script src="../../../javascripts/mermaid-init.js"></script>
+      
+    
+  </body>
+</html>

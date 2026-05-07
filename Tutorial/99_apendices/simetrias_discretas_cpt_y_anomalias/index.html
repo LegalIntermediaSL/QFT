@@ -1,0 +1,1863 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Tutorial completo sobre Teoría Cuántica de Campos">
+      
+      
+      
+      
+        <link rel="prev" href="../reglas_de_feynman_y_propagadores/">
+      
+      
+        <link rel="next" href="../mezcla_de_sabor_ckm_y_pmns/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Simetrías Discretas, CPT y Anomalías - QFT Tutorial</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#simetrias-discretas-cpt-y-anomalias" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="QFT Tutorial" class="md-header__button md-logo" aria-label="QFT Tutorial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            QFT Tutorial
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Simetrías Discretas, CPT y Anomalías
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="QFT Tutorial" class="md-nav__button md-logo" aria-label="QFT Tutorial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    QFT Tutorial
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutorial
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tutorial
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Índice
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../como_estudiar_este_tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cómo Estudiarlo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../problemas_recomendados_por_semana/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemas por Semana
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rutas_de_lectura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rutas de Lectura
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tabla_maestra_del_tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tabla Maestra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sintesis_por_modulo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Síntesis por Módulo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../catalogo_de_capitulos_y_etiquetas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catálogo de Capítulos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mapa_de_dependencias_conceptuales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mapa de Dependencias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../00_prerrequisitos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    00. Prerrequisitos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_fundamentos_conceptuales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01. Fundamentos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_relatividad_y_campos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02. Relatividad y Campos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_accion_y_simetrias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03. Acción y Simetrías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_cuantizacion_del_campo_escalar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04. Campo Escalar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05_interacciones_y_perturbaciones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05. Interacciones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06_fermiones_y_dirac/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06. Fermiones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07_gauge_y_qed/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07. Gauge y QED
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../08_integral_de_camino/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08. Integral de Camino
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../09_renormalizacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09. Renormalización
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../10_modelo_estandar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Modelo Estándar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../11_qft_informacion_y_agujeros_negros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. QFT e Información
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../12_teorias_de_campo_efectivas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Teorías de Campo Efectivas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Apéndices
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Apéndices
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bibliografia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bibliografía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../computacion_qft/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Herramientas Computacionales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../errores_comunes_y_recetas_practicas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Errores Comunes y Recetas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reglas_de_feynman_y_propagadores/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reglas de Feynman y Propagadores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Simetrías Discretas, CPT y Anomalías
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Simetrías Discretas, CPT y Anomalías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objetivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-simetrias-discretas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Simetrias discretas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-conjugacion-de-carga-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Conjugacion de carga \(C\)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-paridad-p" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Paridad \(P\)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-inversion-temporal-t" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Inversion temporal \(T\)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-combinaciones-cp-pt-y-cpt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Combinaciones \(CP\), \(PT\) y \(CPT\)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-importancia-del-teorema-cpt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Importancia del teorema CPT
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-violacion-de-paridad-y-de-cp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Violacion de paridad y de \(CP\)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-que-es-una-anomalia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Que es una anomalia
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-anomalias-globales-y-gauge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Anomalias globales y gauge
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-ejemplo-pedagogico-anomalia-quiral" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Ejemplo pedagogico: anomalia quiral
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-conexion-con-el-modelo-estandar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Conexion con el Modelo Estandar
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-uso-recomendado-dentro-del-tutorial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Uso recomendado dentro del tutorial
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-cuaderno-asociado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Cuaderno asociado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-preguntas-de-comprobacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Preguntas de comprobacion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-cierre" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. Cierre
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-referencias-y-lecturas-recomendadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16. Referencias y lecturas recomendadas
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mezcla_de_sabor_ckm_y_pmns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mezcla de Sabor, CKM y PMNS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../anomalia_axial_y_cancelacion_de_anomalias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anomalía Axial y Cancelación de Anomalías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../glosario_notacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glosario de Notación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../convenciones_globales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Convenciones Globales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plantilla_de_capitulo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plantilla Editorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objetivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-simetrias-discretas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Simetrias discretas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-conjugacion-de-carga-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Conjugacion de carga \(C\)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-paridad-p" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Paridad \(P\)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-inversion-temporal-t" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Inversion temporal \(T\)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-combinaciones-cp-pt-y-cpt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Combinaciones \(CP\), \(PT\) y \(CPT\)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-importancia-del-teorema-cpt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Importancia del teorema CPT
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-violacion-de-paridad-y-de-cp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Violacion de paridad y de \(CP\)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-que-es-una-anomalia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Que es una anomalia
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-anomalias-globales-y-gauge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Anomalias globales y gauge
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-ejemplo-pedagogico-anomalia-quiral" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Ejemplo pedagogico: anomalia quiral
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-conexion-con-el-modelo-estandar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Conexion con el Modelo Estandar
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-uso-recomendado-dentro-del-tutorial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Uso recomendado dentro del tutorial
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-cuaderno-asociado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Cuaderno asociado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-preguntas-de-comprobacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Preguntas de comprobacion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-cierre" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. Cierre
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-referencias-y-lecturas-recomendadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16. Referencias y lecturas recomendadas
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="simetrias-discretas-cpt-y-anomalias">Simetrias Discretas, CPT y Anomalias</h1>
+<h2 id="objetivo">Objetivo</h2>
+<p>Este apendice ofrece una vista compacta de tres temas que aparecen una y otra vez al avanzar en QFT: las simetrias discretas <span class="arithmatex">\(C\)</span>, <span class="arithmatex">\(P\)</span> y <span class="arithmatex">\(T\)</span>, el papel estructural del teorema CPT y la idea de anomalia cuantica. No pretende sustituir un tratamiento formal completo, pero si fijar el mapa conceptual para enlazar los modulos de fermiones, gauge y Modelo Estandar.</p>
+<p>La meta es que el lector pueda responder tres preguntas basicas:</p>
+<ul>
+<li>que significa cada transformacion discreta;</li>
+<li>por que la combinacion <span class="arithmatex">\(CPT\)</span> ocupa un lugar privilegiado;</li>
+<li>que quiere decir que una simetria clasica se vuelva anomala al cuantizar.</li>
+</ul>
+<h2 id="1-simetrias-discretas">1. Simetrias discretas</h2>
+<p>A diferencia de una simetria continua, una simetria discreta no se parametriza por un numero pequeno continuamente variable. En QFT las tres mas importantes son:</p>
+<ul>
+<li><strong><span class="arithmatex">\(C\)</span></strong>: conjugacion de carga;</li>
+<li><strong><span class="arithmatex">\(P\)</span></strong>: paridad;</li>
+<li><strong><span class="arithmatex">\(T\)</span></strong>: inversion temporal.</li>
+</ul>
+<p>Estas transformaciones no organizan corrientes de Noether del mismo modo que una simetria continua, pero siguen imponiendo restricciones fuertes sobre lagrangianas, amplitudes y observables.</p>
+<h2 id="2-conjugacion-de-carga-c">2. Conjugacion de carga <span class="arithmatex">\(C\)</span></h2>
+<p>La conjugacion de carga intercambia, de forma esquematica, particulas y antiparticulas. En una teoria con fermiones cargados, esto cambia el signo de cargas internas relevantes y reorganiza la lectura de corrientes y bilineales.</p>
+<p>Pedagogicamente, <span class="arithmatex">\(C\)</span> sirve para entender mejor:</p>
+<ul>
+<li>por que aparecen antiparticulas en la ecuacion de Dirac;</li>
+<li>como se transforman corrientes vectoriales y axiales;</li>
+<li>por que ciertos terminos son compatibles o incompatibles con una simetria dada.</li>
+</ul>
+<h2 id="3-paridad-p">3. Paridad <span class="arithmatex">\(P\)</span></h2>
+<p>La paridad invierte la orientacion espacial:</p>
+<div class="arithmatex">\[
+\mathbf{x} \to -\mathbf{x}.
+\]</div>
+<p>En teorias relativistas esto afecta de forma distinta a escalares, pseudoescalares, vectores y axial-vectores. Por eso la clasificacion de bilineales de Dirac no es solo notacional: ayuda a leer rapidamente como se comporta un termino frente a <span class="arithmatex">\(P\)</span>.</p>
+<p>Una de las grandes lecciones historicas de la fisica de particulas es que la interaccion debil viola paridad.</p>
+<h2 id="4-inversion-temporal-t">4. Inversion temporal <span class="arithmatex">\(T\)</span></h2>
+<p>La transformacion temporal invierte el sentido del tiempo. Su tratamiento tecnico es mas delicado que el de <span class="arithmatex">\(C\)</span> y <span class="arithmatex">\(P\)</span>, pero conceptualmente importa porque conecta:</p>
+<ul>
+<li>estructura de amplitudes;</li>
+<li>propiedades de reversibilidad;</li>
+<li>formulaciones profundas del teorema CPT.</li>
+</ul>
+<p>En un primer contacto pedagogico conviene recordar que la accion de <span class="arithmatex">\(T\)</span> en teoria cuantica no se reduce a cambiar <span class="arithmatex">\(t \to -t\)</span> de manera ingenua. Involucra tambien conjugacion compleja y una estructura antiunitaria.</p>
+<h2 id="5-combinaciones-cp-pt-y-cpt">5. Combinaciones <span class="arithmatex">\(CP\)</span>, <span class="arithmatex">\(PT\)</span> y <span class="arithmatex">\(CPT\)</span></h2>
+<p>En la practica, muchas discusiones fisicas se formulan no solo en terminos de <span class="arithmatex">\(C\)</span>, <span class="arithmatex">\(P\)</span> o <span class="arithmatex">\(T\)</span> por separado, sino de sus combinaciones. La mas importante es:</p>
+<div class="arithmatex">\[
+CPT.
+\]</div>
+<p>El teorema CPT afirma, de manera esquematica, que una QFT local, relativista y unitaria bien construida debe ser invariante bajo la transformacion combinada <span class="arithmatex">\(CPT\)</span>.</p>
+<h2 id="6-importancia-del-teorema-cpt">6. Importancia del teorema CPT</h2>
+<p>El teorema CPT no es un detalle decorativo. Resume una conexion profunda entre:</p>
+<ul>
+<li>localidad;</li>
+<li>covariancia relativista;</li>
+<li>estructura cuantica consistente.</li>
+</ul>
+<p>Por eso cualquier discusion sobre una posible violacion de CPT suele tomarse como una señal de que alguna hipotesis estructural muy profunda de la teoria esta siendo modificada.</p>
+<p>No es simplemente “otra simetria mas”, sino una prueba muy exigente de consistencia del marco entero.</p>
+<h2 id="7-violacion-de-paridad-y-de-cp">7. Violacion de paridad y de <span class="arithmatex">\(CP\)</span></h2>
+<p>El sector debil del Modelo Estandar ofrece dos lecciones centrales:</p>
+<ul>
+<li>viola paridad de forma maxima en su estructura quiral;</li>
+<li>permite violacion de <span class="arithmatex">\(CP\)</span> en el sector de sabor.</li>
+</ul>
+<p>Esto vuelve especialmente util estudiar <span class="arithmatex">\(C\)</span>, <span class="arithmatex">\(P\)</span> y <span class="arithmatex">\(CP\)</span> despues de los modulos <code>06</code>, <code>07</code> y <code>10</code>, donde la quiralidad y las corrientes electrodébiles ya estan sobre la mesa.</p>
+<p>La leccion importante es que violar <span class="arithmatex">\(P\)</span> o incluso <span class="arithmatex">\(CP\)</span> no contradice automaticamente el teorema <span class="arithmatex">\(CPT\)</span>. Son niveles distintos de restriccion.</p>
+<h2 id="8-que-es-una-anomalia">8. Que es una anomalia</h2>
+<p>Una anomalia aparece cuando una simetria de la teoria clasica no sobrevive intacta tras la cuantizacion o la regularizacion. Esta idea debe manejarse con cuidado:</p>
+<ul>
+<li>no toda ruptura cuantica de una simetria tiene el mismo estatus fisico;</li>
+<li>algunas anomalias son consistentes y observables;</li>
+<li>otras harian inconsistente la teoria si afectaran a una simetria gauge.</li>
+</ul>
+<h2 id="9-anomalias-globales-y-gauge">9. Anomalias globales y gauge</h2>
+<p>Conviene distinguir, al menos conceptualmente:</p>
+<ul>
+<li><strong>anomalias globales</strong>, que pueden reflejar efectos fisicos reales sin destruir necesariamente la consistencia de la teoria;</li>
+<li><strong>anomalias gauge</strong>, que en una teoria fundamental local suelen ser inaceptables porque rompen la consistencia de la simetria gauge cuantica.</li>
+</ul>
+<p>Esta distincion es crucial para entender por que la cancelacion de anomalias en el Modelo Estandar no es un accidente numerologico, sino una condicion estructural.</p>
+<h2 id="10-ejemplo-pedagogico-anomalia-quiral">10. Ejemplo pedagogico: anomalia quiral</h2>
+<p>La anomalia quiral es el ejemplo mas famoso. Muestra que una corriente axial que parece conservada en el nivel clasico puede dejar de serlo al cuantizar. Sin entrar aqui en la cuenta completa, la leccion conceptual es fuerte:</p>
+<ul>
+<li>la cuantizacion no siempre preserva todas las simetrias aparentes del lagrangiano clasico;</li>
+<li>el lenguaje de diagramas y regularizacion puede revelar obstrucciones profundas;</li>
+<li>las corrientes axiales merecen tratarse con especial cuidado.</li>
+</ul>
+<h2 id="11-conexion-con-el-modelo-estandar">11. Conexion con el Modelo Estandar</h2>
+<p>En el Modelo Estandar, la asignacion de cargas y representaciones fermionicas esta fuertemente restringida por la necesidad de cancelar anomalias gauge. Esto enlaza de forma muy natural con:</p>
+<ul>
+<li>quiralidad de los fermiones;</li>
+<li>estructura electrodébil;</li>
+<li>contenido por generaciones.</li>
+</ul>
+<p>Esa es una de las razones por las que el contenido fermionico del Modelo Estandar parece tan rigidamente organizado.</p>
+<h2 id="12-uso-recomendado-dentro-del-tutorial">12. Uso recomendado dentro del tutorial</h2>
+<p>Este apendice se aprovecha mejor despues de estudiar:</p>
+<ul>
+<li><a href="../../06_fermiones_y_dirac/03_algebra_gamma_y_bilineales_de_dirac/">Algebra gamma y bilineales de Dirac</a></li>
+<li><a href="../../06_fermiones_y_dirac/05_quiralidad_weyl_y_majorana/">Quiralidad, espinores de Weyl y fermiones de Majorana</a></li>
+<li><a href="../../07_gauge_y_qed/02_qed_y_lagrangiano_fundamental/">QED y lagrangiano fundamental</a></li>
+<li><a href="../../10_modelo_estandar/03_sector_fermionico_y_quiralidad/">Sector fermionico y quiralidad</a></li>
+<li><a href="../../10_modelo_estandar/06_corrientes_cargadas_y_neutras/">Corrientes cargadas y neutras</a></li>
+</ul>
+<h2 id="13-cuaderno-asociado">13. Cuaderno asociado</h2>
+<ul>
+<li><code>../../Cuadernos/ejemplos/13_simetrias_discretas_y_cpt.ipynb</code>: usarlo para fijar el mapa conceptual entre <span class="arithmatex">\(C\)</span>, <span class="arithmatex">\(P\)</span>, <span class="arithmatex">\(T\)</span> y <span class="arithmatex">\(CPT\)</span>, y distinguir violaciones discretas concretas de la estructura global protegida por el teorema CPT.</li>
+</ul>
+<h2 id="14-preguntas-de-comprobacion">14. Preguntas de comprobacion</h2>
+<ul>
+<li>Por que la violacion de paridad no contradice el teorema CPT.</li>
+<li>Que diferencia conceptual hay entre una anomalia global y una anomalia gauge.</li>
+<li>Por que la anomalia quiral es un ejemplo tan importante en QFT.</li>
+<li>Como se conecta la cancelacion de anomalias con la consistencia del Modelo Estandar.</li>
+</ul>
+<h2 id="15-cierre">15. Cierre</h2>
+<p>Las simetrias discretas y las anomalias muestran muy bien que la consistencia de una QFT no depende solo de sus ecuaciones de movimiento o de su lagrangiano clasico. Tambien depende de como se cuantiza, de que simetrias sobreviven y de que restricciones profundas siguen protegiendo la teoria.</p>
+<h2 id="16-referencias-y-lecturas-recomendadas">16. Referencias y lecturas recomendadas</h2>
+<ul>
+<li>Base: Schwartz o Peskin, discusiones introductorias sobre simetrias discretas y anomalias.</li>
+<li>Complementaria: Tong, notas utiles para quiralidad y estructura gauge.</li>
+<li>Profundizacion: textos de QFT avanzados sobre anomalia axial, cancelacion de anomalias y teorema CPT.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "navigation.expand", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+        <script src="../../../javascripts/mermaid-init.js"></script>
+      
+    
+  </body>
+</html>

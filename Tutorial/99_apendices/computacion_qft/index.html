@@ -1,0 +1,1897 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Tutorial completo sobre Teoría Cuántica de Campos">
+      
+      
+      
+      
+        <link rel="prev" href="../bibliografia/">
+      
+      
+        <link rel="next" href="../errores_comunes_y_recetas_practicas/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Herramientas Computacionales - QFT Tutorial</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#herramientas-computacionales-en-qft" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="QFT Tutorial" class="md-header__button md-logo" aria-label="QFT Tutorial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            QFT Tutorial
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Herramientas Computacionales
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="QFT Tutorial" class="md-nav__button md-logo" aria-label="QFT Tutorial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    QFT Tutorial
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutorial
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tutorial
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Índice
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../como_estudiar_este_tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cómo Estudiarlo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../problemas_recomendados_por_semana/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemas por Semana
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rutas_de_lectura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rutas de Lectura
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tabla_maestra_del_tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tabla Maestra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sintesis_por_modulo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Síntesis por Módulo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../catalogo_de_capitulos_y_etiquetas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catálogo de Capítulos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mapa_de_dependencias_conceptuales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mapa de Dependencias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../00_prerrequisitos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    00. Prerrequisitos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_fundamentos_conceptuales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01. Fundamentos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_relatividad_y_campos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02. Relatividad y Campos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_accion_y_simetrias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03. Acción y Simetrías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_cuantizacion_del_campo_escalar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04. Campo Escalar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05_interacciones_y_perturbaciones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05. Interacciones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06_fermiones_y_dirac/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06. Fermiones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07_gauge_y_qed/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07. Gauge y QED
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../08_integral_de_camino/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08. Integral de Camino
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../09_renormalizacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09. Renormalización
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../10_modelo_estandar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Modelo Estándar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../11_qft_informacion_y_agujeros_negros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. QFT e Información
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../12_teorias_de_campo_efectivas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Teorías de Campo Efectivas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Apéndices
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Apéndices
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bibliografia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bibliografía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Herramientas Computacionales
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Herramientas Computacionales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-feyncalc-mathematica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. FeynCalc (Mathematica)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-herramientas-en-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Herramientas en Python
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Herramientas en Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sympy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SymPy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyfeyn2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PyFeyn2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pysecdec" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        pySecDec
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-ejemplo-traza-de-dirac-en-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Ejemplo: Traza de Dirac en Python
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-herramientas-para-fenomenologia-y-estadistica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Herramientas para fenomenologia y estadistica
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-comparativa-rapida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Comparativa rapida
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-flujo-de-trabajo-razonable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Flujo de trabajo razonable
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-casos-de-uso-tipicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Casos de uso tipicos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Casos de uso tipicos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#si-quieres-comprobar-una-traza-o-una-identidad-corta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Si quieres comprobar una traza o una identidad corta
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#si-quieres-producir-una-figura-limpia-de-un-diagrama" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Si quieres producir una figura limpia de un diagrama
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#si-quieres-evaluar-una-integral-de-lazo-compleja" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Si quieres evaluar una integral de lazo compleja
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#si-quieres-documentar-un-ejemplo-del-tutorial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Si quieres documentar un ejemplo del tutorial
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-buenas-practicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Buenas practicas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-advertencias-utiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Advertencias utiles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-cierre" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Cierre
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../errores_comunes_y_recetas_practicas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Errores Comunes y Recetas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reglas_de_feynman_y_propagadores/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reglas de Feynman y Propagadores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../simetrias_discretas_cpt_y_anomalias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Simetrías Discretas, CPT y Anomalías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mezcla_de_sabor_ckm_y_pmns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mezcla de Sabor, CKM y PMNS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../anomalia_axial_y_cancelacion_de_anomalias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anomalía Axial y Cancelación de Anomalías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../glosario_notacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glosario de Notación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../convenciones_globales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Convenciones Globales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plantilla_de_capitulo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plantilla Editorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-feyncalc-mathematica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. FeynCalc (Mathematica)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-herramientas-en-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Herramientas en Python
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Herramientas en Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sympy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SymPy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyfeyn2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PyFeyn2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pysecdec" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        pySecDec
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-ejemplo-traza-de-dirac-en-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Ejemplo: Traza de Dirac en Python
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-herramientas-para-fenomenologia-y-estadistica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Herramientas para fenomenologia y estadistica
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-comparativa-rapida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Comparativa rapida
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-flujo-de-trabajo-razonable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Flujo de trabajo razonable
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-casos-de-uso-tipicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Casos de uso tipicos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Casos de uso tipicos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#si-quieres-comprobar-una-traza-o-una-identidad-corta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Si quieres comprobar una traza o una identidad corta
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#si-quieres-producir-una-figura-limpia-de-un-diagrama" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Si quieres producir una figura limpia de un diagrama
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#si-quieres-evaluar-una-integral-de-lazo-compleja" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Si quieres evaluar una integral de lazo compleja
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#si-quieres-documentar-un-ejemplo-del-tutorial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Si quieres documentar un ejemplo del tutorial
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-buenas-practicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Buenas practicas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-advertencias-utiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Advertencias utiles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-cierre" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Cierre
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="herramientas-computacionales-en-qft">Herramientas Computacionales en QFT</h1>
+<p>Este apendice resume herramientas utiles para calculo simbolico, automatizacion y exploracion computacional en teoria cuantica de campos. No pretende sustituir a un curso de software cientifico, sino orientar sobre que tipo de herramienta conviene usar segun el problema.</p>
+<p>La idea de fondo es simple: en QFT moderna no todo se hace a mano. Gran parte del trabajo real combina intuicion teorica con sistemas de algebra simbolica, evaluacion numerica y automatizacion de tareas repetitivas.</p>
+<h2 id="1-feyncalc-mathematica">1. FeynCalc (Mathematica)</h2>
+<p><a href="https://feyncalc.github.io/">FeynCalc</a> es una de las herramientas mas usadas para calculos simbolicos en fisica de altas energias.</p>
+<ul>
+<li><strong>Puntos fuertes</strong>: Manipulacion de algebra de Dirac, trazas gamma, tensores de Lorentz, amplitudes y apoyo para integrales de lazo mediante complementos.</li>
+<li><strong>Uso tipico</strong>:</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c">(* Ejemplo basico: traza de matrices gamma *)</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">DiracTrace</span><span class="p">[</span><span class="n">GA</span><span class="p">[</span><span class="n">mu</span><span class="p">,</span><span class="w"> </span><span class="n">nu</span><span class="p">,</span><span class="w"> </span><span class="n">rho</span><span class="p">,</span><span class="w"> </span><span class="n">sigma</span><span class="p">]]</span>
+</code></pre></div>
+<ul>
+<li><strong>Cuando conviene</strong>: cuando el cuello de botella principal es algebra simbolica relativista pesada.</li>
+</ul>
+<p>FeynCalc resulta especialmente comodo si ya se trabaja en Mathematica y se necesita una herramienta madura para pasar de expresiones lagrangianas a amplitudes y simplificaciones algebraicas serias.</p>
+<h2 id="2-herramientas-en-python">2. Herramientas en Python</h2>
+<p>Aunque Mathematica domina buena parte del algebra simbolica tradicional, Python ha ganado mucho terreno para automatizacion, analisis numerico, visualizacion e integracion con pipelines reproducibles.</p>
+<h3 id="sympy">SymPy</h3>
+<p>Es la libreria de algebra simbolica por excelencia en Python. Permite definir algebras, manipular matrices y trabajar con objetos simbolicos de forma bastante flexible.</p>
+<ul>
+<li><strong>Proyecto sugerido</strong>: utilizar <code>sympy.physics.hep</code> para objetos de altas energias y trazas sencillas.</li>
+<li><strong>Cuando conviene</strong>: para prototipos rapidos, cuadernos reproducibles y flujos totalmente open source.</li>
+</ul>
+<h3 id="pyfeyn2">PyFeyn2</h3>
+<p>Herramienta orientada a la creacion de diagramas de Feynman con calidad de publicacion.</p>
+<ul>
+<li><strong>Instalacion</strong>: <code>pip install pyfeyn2</code></li>
+<li><strong>Cuando conviene</strong>: cuando se necesita generar diagramas de forma programatica y consistente con un documento o cuaderno.</li>
+</ul>
+<h3 id="pysecdec">pySecDec</h3>
+<p>Herramienta para evaluacion numerica de integrales de lazo complicadas.</p>
+<ul>
+<li><strong>Cuando conviene</strong>: cuando la parte simbolica ya esta preparada y el problema real pasa a ser la evaluacion numerica de integrales no triviales.</li>
+</ul>
+<h2 id="3-ejemplo-traza-de-dirac-en-python">3. Ejemplo: Traza de Dirac en Python</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sympy.physics.hep.gamma_matrices</span><span class="w"> </span><span class="kn">import</span> <span class="n">GammaMatrix</span> <span class="k">as</span> <span class="n">G</span><span class="p">,</span> <span class="n">gamma_trace</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sympy</span><span class="w"> </span><span class="kn">import</span> <span class="n">symbols</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="n">mu</span><span class="p">,</span> <span class="n">nu</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span><span class="s1">&#39;mu nu&#39;</span><span class="p">)</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">expr</span> <span class="o">=</span> <span class="n">G</span><span class="p">(</span><span class="n">mu</span><span class="p">)</span> <span class="o">*</span> <span class="n">G</span><span class="p">(</span><span class="n">nu</span><span class="p">)</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">gamma_trace</span><span class="p">(</span><span class="n">expr</span><span class="p">))</span>
+</code></pre></div>
+<p>Este tipo de ejemplo no sustituye a paquetes mas especializados, pero sirve muy bien para cuadernos pedagogicos y comprobaciones pequenas dentro del tutorial.</p>
+<h2 id="4-herramientas-para-fenomenologia-y-estadistica">4. Herramientas para fenomenologia y estadistica</h2>
+<p>En un flujo mas cercano a fenomenologia o analisis de datos, suelen entrar otras herramientas complementarias:</p>
+<ul>
+<li><code>pyhf</code> para ajustes estadisticos y construccion de limites;</li>
+<li>bibliotecas de Python cientifico como <code>numpy</code>, <code>scipy</code> y <code>matplotlib</code>;</li>
+<li>herramientas de Monte Carlo y generadores de eventos en contextos mas avanzados.</li>
+</ul>
+<p>La leccion practica es que no existe una unica herramienta universal. El mejor entorno depende de si el problema es algebraico, numerico, estadistico o de visualizacion.</p>
+<h2 id="5-comparativa-rapida">5. Comparativa rapida</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Herramienta</th>
+<th style="text-align: left;">Caso de uso ideal</th>
+<th style="text-align: left;">Comentario</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>FeynCalc</strong></td>
+<td style="text-align: left;">Algebra de Dirac, amplitudes y trazas complejas</td>
+<td style="text-align: left;">Muy potente, pero requiere Mathematica</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>SymPy</strong></td>
+<td style="text-align: left;">Prototipos simbolicos y cuadernos reproducibles</td>
+<td style="text-align: left;">Flexible y open source</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>PyFeyn2</strong></td>
+<td style="text-align: left;">Diagramas de Feynman programaticos</td>
+<td style="text-align: left;">Bueno para documentacion y figuras</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>pySecDec</strong></td>
+<td style="text-align: left;">Integrales de lazo numericas</td>
+<td style="text-align: left;">Especializado</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>pyhf</strong></td>
+<td style="text-align: left;">Ajustes y limites estadisticos</td>
+<td style="text-align: left;">Mas orientado a fenomenologia experimental</td>
+</tr>
+</tbody>
+</table>
+<h2 id="6-flujo-de-trabajo-razonable">6. Flujo de trabajo razonable</h2>
+<p>Una estrategia muy realista para estudiantes e investigadores junior es:</p>
+<ol>
+<li>entender primero el calculo a mano en un ejemplo pequeno;</li>
+<li>usar software para comprobar trazas, signos y factores;</li>
+<li>automatizar solo cuando el problema ya esta conceptualmente claro;</li>
+<li>documentar bien que parte del resultado es analitica y cual es puramente computacional.</li>
+</ol>
+<p>Este orden ayuda a evitar dos errores comunes:</p>
+<ul>
+<li>depender del software sin entender la estructura fisica;</li>
+<li>intentar hacerlo todo a mano cuando el problema ya exige automatizacion seria.</li>
+</ul>
+<h2 id="7-casos-de-uso-tipicos">7. Casos de uso tipicos</h2>
+<h3 id="si-quieres-comprobar-una-traza-o-una-identidad-corta">Si quieres comprobar una traza o una identidad corta</h3>
+<p>Usa <code>SymPy</code> o <code>FeynCalc</code>, segun el entorno que ya manejes.</p>
+<h3 id="si-quieres-producir-una-figura-limpia-de-un-diagrama">Si quieres producir una figura limpia de un diagrama</h3>
+<p>Usa <code>PyFeyn2</code> o una herramienta similar de diagramacion.</p>
+<h3 id="si-quieres-evaluar-una-integral-de-lazo-compleja">Si quieres evaluar una integral de lazo compleja</h3>
+<p>Piensa en un flujo mixto: algebra simbolica en FeynCalc y evaluacion numerica con <code>pySecDec</code> u otra herramienta especializada.</p>
+<h3 id="si-quieres-documentar-un-ejemplo-del-tutorial">Si quieres documentar un ejemplo del tutorial</h3>
+<p>Conviene priorizar Python y notebooks cuando el objetivo principal es pedagogico y reproducible.</p>
+<h2 id="8-buenas-practicas">8. Buenas practicas</h2>
+<ul>
+<li>valida siempre con un caso simple conocido;</li>
+<li>deja claras las convenciones de metrica y normalizacion;</li>
+<li>documenta versiones y dependencias si el resultado debe reproducirse;</li>
+<li>no mezcles sin control notacion del tutorial con notacion por defecto del paquete;</li>
+<li>conserva ejemplos minimos que permitan detectar si un cambio de libreria rompió signos o factores.</li>
+</ul>
+<h2 id="9-advertencias-utiles">9. Advertencias utiles</h2>
+<ul>
+<li>Un resultado computacional no sustituye la interpretacion fisica.</li>
+<li>Distintos paquetes usan convenciones diferentes de signos, metricas o normalizaciones.</li>
+<li>Siempre conviene validar con un caso simple conocido antes de confiar en un pipeline largo.</li>
+<li>La reproducibilidad importa: cuadernos, scripts y versiones de dependencias deben quedar claros.</li>
+</ul>
+<h2 id="10-cierre">10. Cierre</h2>
+<p>Las herramientas computacionales no reemplazan la intuicion teorica, pero amplian enormemente el tipo de problemas que pueden abordarse con rigor. Usadas bien, permiten dedicar menos tiempo a algebra mecanica y mas tiempo a interpretar la fisica.</p>
+<hr />
+<p><a href="../../">Volver al Índice del Tutorial</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "navigation.expand", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+        <script src="../../../javascripts/mermaid-init.js"></script>
+      
+    
+  </body>
+</html>
